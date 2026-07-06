@@ -1,0 +1,32 @@
+{
+  "source": "Company RHP/DRHP filings, exchange announcements",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "slug": "bharat-precision-engineering",
+  "companyName": "Bharat Precision Engineering",
+  "sector": "Industrial Manufacturing",
+  "status": "upcoming",
+  "exchange": "NSE, BSE",
+  "openDate": "2026-08-19",
+  "closeDate": "2026-08-21",
+  "listingDate": null,
+  "priceBand": "\u20b9610\u2013645",
+  "issuePrice": null,
+  "listingPrice": null,
+  "currentPrice": null,
+  "listingGain": null,
+  "currentGain": null,
+  "direction": null,
+  "issueSize": "\u20b9960 cr",
+  "lotSize": "23 shares",
+  "subscriptionTimes": null,
+  "description": "Bharat Precision Engineering makes machined components and sub-assemblies for auto, aerospace and industrial-equipment manufacturers, exporting roughly a third of its output.",
+  "highlights": [
+    "Long-standing supplier to two of India's largest auto component majors",
+    "Export revenue growing faster than the domestic business",
+    "Entirely a fresh issue \u2014 proceeds fund a new plant in Gujarat"
+  ],
+  "chart": null
+}

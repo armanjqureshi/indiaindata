@@ -1,0 +1,31 @@
+{
+  "slug": "unemployment-rate",
+  "name": "Unemployment Rate (Urban)",
+  "category": "employment",
+  "unit": "%",
+  "currentValue": "5.9%",
+  "previousValue": "6.1%",
+  "change": "-0.2pp",
+  "direction": "down",
+  "asOf": "2026-03-31",
+  "frequency": "Quarterly",
+  "description": "The urban unemployment rate measures the share of the urban labour force (15 years and above) that is without work but seeking it, using the current weekly status method. It's the most timely official labour-market read India publishes.",
+  "source": "Periodic Labour Force Survey (PLFS), MoSPI",
+  "releaseSchedule": "Released quarterly, roughly two months after quarter-end.",
+  "topics": [
+    "economy",
+    "society"
+  ],
+  "chart": {
+    "type": "area",
+    "title": "Urban unemployment, quarter by quarter",
+    "subtitle": "Urban unemployment rate (15+), current weekly status, %",
+    "source": "PLFS quarterly bulletins; illustrative series",
+    "xKey": "quarter",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "%",
+    "data": "[{\"quarter\": \"Q1 24\", \"value\": 6.7}, {\"quarter\": \"Q2 24\", \"value\": 6.6}, {\"quarter\": \"Q3 24\", \"value\": 6.5}, {\"quarter\": \"Q4 24\", \"value\": 6.4}, {\"quarter\": \"Q1 25\", \"value\": 6.7}, {\"quarter\": \"Q2 25\", \"value\": 6.4}, {\"quarter\": \"Q3 25\", \"value\": 6.2}, {\"quarter\": \"Q4 25\", \"value\": 6.1}, {\"quarter\": \"Q1 26\", \"value\": 5.9}]"
+  }
+}

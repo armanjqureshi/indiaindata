@@ -1,0 +1,30 @@
+{
+  "slug": "india-vix",
+  "name": "India VIX",
+  "category": "markets",
+  "unit": "index",
+  "currentValue": "12.4",
+  "previousValue": "13.8",
+  "change": "-1.4",
+  "direction": "down",
+  "asOf": "2026-06-30",
+  "frequency": "Daily (shown monthly)",
+  "description": "India VIX measures the market's expectation of near-term volatility in the Nifty 50, derived from options prices. A lower reading signals calmer, more confident markets; sharp spikes usually accompany major shocks or events.",
+  "source": "National Stock Exchange (NSE)",
+  "releaseSchedule": "Computed continuously on market days; month-end level shown here.",
+  "topics": [
+    "markets"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "Volatility has eased through the year",
+    "subtitle": "India VIX, month-end level",
+    "source": "NSE; illustrative levels",
+    "xKey": "month",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"month\": \"Jul 25\", \"value\": 15.2}, {\"month\": \"Aug 25\", \"value\": 16.1}, {\"month\": \"Sep 25\", \"value\": 17.4}, {\"month\": \"Oct 25\", \"value\": 15.8}, {\"month\": \"Nov 25\", \"value\": 14.6}, {\"month\": \"Dec 25\", \"value\": 13.9}, {\"month\": \"Jan 26\", \"value\": 14.2}, {\"month\": \"Feb 26\", \"value\": 13.6}, {\"month\": \"Mar 26\", \"value\": 13.1}, {\"month\": \"Apr 26\", \"value\": 13.4}, {\"month\": \"May 26\", \"value\": 13.8}, {\"month\": \"Jun 26\", \"value\": 12.4}]"
+  }
+}

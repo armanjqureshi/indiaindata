@@ -1,0 +1,32 @@
+{
+  "source": "Company RHP/DRHP filings, exchange announcements",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "slug": "kaveri-fintech",
+  "companyName": "Kaveri FinTech",
+  "sector": "Financial Technology",
+  "status": "upcoming",
+  "exchange": "NSE, BSE",
+  "openDate": "2026-08-05",
+  "closeDate": "2026-08-07",
+  "listingDate": null,
+  "priceBand": "\u20b9268\u2013284",
+  "issuePrice": null,
+  "listingPrice": null,
+  "currentPrice": null,
+  "listingGain": null,
+  "currentGain": null,
+  "direction": null,
+  "issueSize": "\u20b91,480 cr",
+  "lotSize": "52 shares",
+  "subscriptionTimes": null,
+  "description": "Kaveri FinTech runs a lending and payments platform focused on small and medium enterprises in tier-2 and tier-3 towns, disbursing working-capital loans through partner banks.",
+  "highlights": [
+    "Loan book has grown roughly fourfold over the past three years",
+    "Partnerships with over 20 banks and NBFCs for co-lending",
+    "IPO is a mix of fresh issue and an offer for sale by early investors"
+  ],
+  "chart": null
+}

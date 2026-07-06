@@ -1,0 +1,358 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Uploaded images (hero photos, author photos) land here and are served as
+# normal static files from the built site.
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+publish_mode: simple
+locale: "en"
+
+collections:
+  # ---------------------------------------------------------------------
+  # Articles — the main thing you'll use day to day. One file per article
+  # under content/articles/. Add, edit, or delete freely from here.
+  # ---------------------------------------------------------------------
+  - name: "articles"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "content/articles"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    summary: "{{title}} — {{section}} — {{date}}"
+    sortable_fields: ["date", "title", "section"]
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "The headline — change this any time." }
+      - { label: "URL slug", name: "slug", widget: "string", hint: "Used in the web address: /article/your-slug. Avoid changing this after publishing, or the old link will stop working." }
+      - { label: "Dek (subheadline)", name: "dek", widget: "text", hint: "The one- or two-line summary shown under the title and on article cards." }
+      - { label: "Hero image (optional)", name: "heroImage", widget: "image", required: false, hint: "If left empty, a generated chart-style cover is used instead." }
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        options:
+          - { label: "News", value: "news" }
+          - { label: "Business", value: "business" }
+          - { label: "Market", value: "market" }
+          - { label: "Blogs", value: "blogs" }
+      - label: "Topics"
+        name: "topics"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Economy", value: "economy" }
+          - { label: "Society", value: "society" }
+          - { label: "Policy", value: "policy" }
+          - { label: "Data methods", value: "data-methods" }
+          - { label: "Markets", value: "markets" }
+      - label: "Author"
+        name: "author"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Bio", name: "bio", widget: "text" }
+          - { label: "Photo (optional)", name: "avatar", widget: "image", required: false }
+      - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+      - { label: "Reading time (minutes)", name: "readingTime", widget: "number", value_type: "int", min: 1, max: 60 }
+      - { label: "Feature on homepage", name: "featured", widget: "boolean", default: false }
+      - label: "Body"
+        name: "body"
+        widget: "list"
+        hint: "The article's content, block by block, in order."
+        types:
+          - label: "Paragraph"
+            name: "paragraph"
+            widget: "object"
+            summary: "{{fields.text}}"
+            fields:
+              - { label: "Type", name: "type", widget: "hidden", default: "paragraph" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Heading"
+            name: "heading"
+            widget: "object"
+            summary: "{{fields.text}}"
+            fields:
+              - { label: "Type", name: "type", widget: "hidden", default: "heading" }
+              - { label: "Text", name: "text", widget: "string" }
+          - label: "Pull quote"
+            name: "quote"
+            widget: "object"
+            summary: "{{fields.text}}"
+            fields:
+              - { label: "Type", name: "type", widget: "hidden", default: "quote" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Chart"
+            name: "chart"
+            widget: "object"
+            summary: "Chart #{{fields.chartIndex}}"
+            fields:
+              - { label: "Type", name: "type", widget: "hidden", default: "chart" }
+              - { label: "Which chart (0 = first chart below, 1 = second, ...)", name: "chartIndex", widget: "number", value_type: "int", min: 0 }
+      - label: "Charts"
+        name: "charts"
+        widget: "list"
+        hint: "The chart(s) referenced by the Body above. Titles, subtitles and sources are point-and-click; the underlying numbers are edited as a data snippet (see below)."
+        fields:
+          - label: "Chart type"
+            name: "type"
+            widget: "select"
+            options:
+              - { label: "Line", value: "line" }
+              - { label: "Bar", value: "bar" }
+              - { label: "Area (filled line)", value: "area" }
+              - { label: "Pie / donut", value: "pie" }
+              - { label: "Stacked bar", value: "stackedBar" }
+          - { label: "Chart title", name: "title", widget: "string" }
+          - { label: "Chart subtitle", name: "subtitle", widget: "string" }
+          - { label: "Source line", name: "source", widget: "string", hint: "Shown under the chart, e.g. \"MoSPI, CPI releases\"." }
+          - { label: "X-axis field name", name: "xKey", widget: "string", required: false, hint: "The data field used along the bottom axis, e.g. \"month\" or \"year\"." }
+          - { label: "Name field (pie charts only)", name: "nameKey", widget: "string", required: false }
+          - label: "Data field name(s)"
+            name: "dataKeys"
+            widget: "list"
+            allow_add: true
+            hint: "The value column(s) to plot, e.g. \"inflation\", or several for a stacked bar."
+          - { label: "Unit (optional)", name: "unit", widget: "string", required: false, hint: "e.g. %, or leave blank." }
+          - label: "Data (advanced)"
+            name: "data"
+            widget: "text"
+            hint: 'A JSON array of data points, e.g. [{"month":"Jul 25","inflation":5.4},{"month":"Aug 25","inflation":6.8}]. Edit carefully — the chart will break if this isn\u2019t valid JSON.'
+
+  # ---------------------------------------------------------------------
+  # Indicators — India's tracked economic and market numbers. One file per
+  # indicator under content/indicators/. Update the current value whenever
+  # fresh data drops; add a new indicator any time.
+  # ---------------------------------------------------------------------
+  - name: "indicators"
+    label: "Indicators"
+    label_singular: "Indicator"
+    folder: "content/indicators"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "name"
+    summary: "{{name}} — {{currentValue}} ({{category}})"
+    sortable_fields: ["name", "category", "asOf"]
+    fields:
+      - { label: "Name", name: "name", widget: "string", hint: "e.g. \"CPI Inflation\"" }
+      - { label: "URL slug", name: "slug", widget: "string", hint: "Used in the web address: /indicators/your-slug." }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Prices & Inflation", value: "prices" }
+          - { label: "Growth & Output", value: "growth" }
+          - { label: "Employment & Labour", value: "employment" }
+          - { label: "Monetary Policy & Rates", value: "monetary" }
+          - { label: "External Sector", value: "external" }
+          - { label: "Public Finance", value: "public-finance" }
+          - { label: "Markets", value: "markets" }
+          - { label: "Real-Time Proxies", value: "real-time" }
+      - { label: "Unit label", name: "unit", widget: "string", hint: "Short label shown near the value, e.g. \"%\", \"$bn\", \"index\"." }
+      - { label: "Current value", name: "currentValue", widget: "string", hint: "Exactly as shown on the card, e.g. \"6.6%\" or \"₹1.94 lakh cr\"." }
+      - { label: "Previous value", name: "previousValue", widget: "string" }
+      - { label: "Change label", name: "change", widget: "string", hint: "e.g. \"+0.5pp\", \"-25bps\", \"+3.7%\"." }
+      - { label: "Direction", name: "direction", widget: "select", options: ["up", "down"] }
+      - { label: "As of (date this reading covers)", name: "asOf", widget: "date", format: "YYYY-MM-DD" }
+      - { label: "Update frequency", name: "frequency", widget: "string", hint: "e.g. \"Monthly\", \"Quarterly\", \"As announced\"." }
+      - { label: "What this measures", name: "description", widget: "text" }
+      - { label: "Source", name: "source", widget: "string" }
+      - { label: "Release schedule", name: "releaseSchedule", widget: "string" }
+      - label: "Related topics"
+        name: "topics"
+        widget: "select"
+        multiple: true
+        hint: "Articles tagged with any of these topics will show as related stories on this indicator's page."
+        options:
+          - { label: "Economy", value: "economy" }
+          - { label: "Society", value: "society" }
+          - { label: "Policy", value: "policy" }
+          - { label: "Data methods", value: "data-methods" }
+          - { label: "Markets", value: "markets" }
+      - label: "Chart"
+        name: "chart"
+        widget: "object"
+        fields:
+          - label: "Chart type"
+            name: "type"
+            widget: "select"
+            options:
+              - { label: "Line", value: "line" }
+              - { label: "Bar", value: "bar" }
+              - { label: "Area (filled line)", value: "area" }
+          - { label: "Chart title", name: "title", widget: "string" }
+          - { label: "Chart subtitle", name: "subtitle", widget: "string" }
+          - { label: "Source line", name: "source", widget: "string" }
+          - { label: "X-axis field name", name: "xKey", widget: "string", hint: "e.g. \"month\" or \"quarter\"." }
+          - label: "Data field name(s)"
+            name: "dataKeys"
+            widget: "list"
+            hint: "Usually just one field, e.g. \"value\"."
+          - { label: "Unit (optional)", name: "unit", widget: "string", required: false }
+          - label: "Data (advanced)"
+            name: "data"
+            widget: "text"
+            hint: 'A JSON array of data points, e.g. [{"month":"May 26","value":5.1},{"month":"Jun 26","value":5.4}]. Edit carefully — the chart will break if this isn\u2019t valid JSON.'
+
+  # ---------------------------------------------------------------------
+  # IPOs — upcoming, open, closed and listed offerings. One file per IPO
+  # under content/ipos/. Update status and prices as things move (e.g. an
+  # "upcoming" IPO becomes "open" on its opening day).
+  # ---------------------------------------------------------------------
+  - name: "ipos"
+    label: "IPOs"
+    label_singular: "IPO"
+    folder: "content/ipos"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "companyName"
+    summary: "{{companyName}} — {{status}} ({{sector}})"
+    sortable_fields: ["companyName", "status", "listingDate"]
+    fields:
+      - { label: "Company name", name: "companyName", widget: "string" }
+      - { label: "URL slug", name: "slug", widget: "string", hint: "Used in the web address: /ipos/your-slug." }
+      - { label: "Sector", name: "sector", widget: "string", hint: "e.g. \"Renewable Energy\", \"Financial Technology\"." }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        hint: "Update this as the IPO moves through its lifecycle."
+        options:
+          - { label: "Upcoming", value: "upcoming" }
+          - { label: "Open for subscription", value: "open" }
+          - { label: "Closed — awaiting listing", value: "closed" }
+          - { label: "Listed", value: "listed" }
+      - { label: "Exchange(s)", name: "exchange", widget: "string", default: "NSE, BSE" }
+      - { label: "Subscription opens", name: "openDate", widget: "date", format: "YYYY-MM-DD", required: false }
+      - { label: "Subscription closes", name: "closeDate", widget: "date", format: "YYYY-MM-DD", required: false }
+      - { label: "Listing date", name: "listingDate", widget: "date", format: "YYYY-MM-DD", required: false }
+      - { label: "Price band", name: "priceBand", widget: "string", required: false, hint: "e.g. \"₹142–150\", for upcoming/open IPOs." }
+      - { label: "Issue price", name: "issuePrice", widget: "string", required: false, hint: "Final price, once set." }
+      - { label: "Listing price (day 1)", name: "listingPrice", widget: "string", required: false }
+      - { label: "Current price", name: "currentPrice", widget: "string", required: false, hint: "Update this periodically for listed IPOs." }
+      - { label: "Listing day gain", name: "listingGain", widget: "string", required: false, hint: "e.g. \"+24.6%\"" }
+      - { label: "Current gain (vs issue price)", name: "currentGain", widget: "string", required: false }
+      - { label: "Direction (for current gain)", name: "direction", widget: "select", options: ["up", "down"], required: false }
+      - { label: "Issue size", name: "issueSize", widget: "string", hint: "e.g. \"₹1,240 cr\"" }
+      - { label: "Lot size", name: "lotSize", widget: "string", required: false }
+      - { label: "Subscription level", name: "subscriptionTimes", widget: "string", required: false, hint: "e.g. \"38.7x overall\" or \"Subscribed 2.1x so far (day 2 of 3)\"." }
+      - { label: "About the company", name: "description", widget: "text" }
+      - label: "Key facts"
+        name: "highlights"
+        widget: "list"
+        hint: "Short bullet points — 2 to 4 works well."
+      - { label: "Source", name: "source", widget: "string" }
+      - label: "Related topics"
+        name: "topics"
+        widget: "select"
+        multiple: true
+        hint: "Articles tagged with any of these topics will show as related stories on this IPO's page."
+        options:
+          - { label: "Economy", value: "economy" }
+          - { label: "Society", value: "society" }
+          - { label: "Policy", value: "policy" }
+          - { label: "Data methods", value: "data-methods" }
+          - { label: "Markets", value: "markets" }
+      - label: "Price chart (listed IPOs only)"
+        name: "chart"
+        widget: "object"
+        required: false
+        hint: "Leave empty until the company lists — add this once trading begins."
+        fields:
+          - { label: "Chart type", name: "type", widget: "select", options: ["line", "area"] }
+          - { label: "Chart title", name: "title", widget: "string" }
+          - { label: "Chart subtitle", name: "subtitle", widget: "string" }
+          - { label: "Source line", name: "source", widget: "string" }
+          - { label: "X-axis field name", name: "xKey", widget: "string", hint: "e.g. \"period\"" }
+          - label: "Data field name(s)"
+            name: "dataKeys"
+            widget: "list"
+            hint: "Usually just one field, e.g. \"value\"."
+          - { label: "Unit (optional)", name: "unit", widget: "string", required: false }
+          - label: "Data (advanced)"
+            name: "data"
+            widget: "text"
+            hint: 'A JSON array of data points, e.g. [{"period":"Wk 1","value":268},{"period":"Wk 2","value":334}]. Edit carefully — the chart will break if this isn\u2019t valid JSON.'
+
+  # ---------------------------------------------------------------------
+  # Site pages & settings — things that change rarely, but should still be
+  # editable without a developer: hero copy, About text, footer numbers.
+  # ---------------------------------------------------------------------
+  - name: "pages"
+    label: "Site pages"
+    editor:
+      preview: false
+    files:
+      - label: "Home page"
+        name: "home"
+        file: "content/pages/home.json"
+        fields:
+          - { label: "Hero headline (line 1)", name: "heroLine1", widget: "string" }
+          - { label: "Hero headline (accent word)", name: "heroAccent", widget: "string", hint: "Shown in teal on the second line, e.g. \"data\"." }
+          - { label: "Hero subtitle", name: "heroSubtitle", widget: "text" }
+
+      - label: "About page"
+        name: "about"
+        file: "content/pages/about.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Intro paragraph", name: "intro", widget: "text" }
+          - { label: "\"Using our work\" text", name: "usingOurWork", widget: "text" }
+
+      - label: "Contact page"
+        name: "contact"
+        file: "content/pages/contact.json"
+        fields:
+          - { label: "Intro line", name: "intro", widget: "text" }
+
+      - label: "Team (About page)"
+        name: "authors"
+        file: "content/authors.json"
+        fields:
+          - label: "Team members"
+            name: "team"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Bio", name: "bio", widget: "text" }
+              - { label: "Photo (optional)", name: "photo", widget: "image", required: false }
+
+      - label: "Site settings"
+        name: "site"
+        file: "content/settings/site.json"
+        fields:
+          - label: "Section descriptions"
+            name: "sectionDescriptions"
+            widget: "object"
+            fields:
+              - { label: "News", name: "news", widget: "text" }
+              - { label: "Business", name: "business", widget: "text" }
+              - { label: "Market", name: "market", widget: "text" }
+              - { label: "Blogs", name: "blogs", widget: "text" }
+          - label: "Topic descriptions"
+            name: "topicDescriptions"
+            widget: "object"
+            fields:
+              - { label: "Economy", name: "economy", widget: "text" }
+              - { label: "Society", name: "society", widget: "text" }
+              - { label: "Policy", name: "policy", widget: "text" }
+              - { label: "Data methods", name: "data-methods", widget: "text" }
+              - { label: "Markets", name: "markets", widget: "text" }
+          - label: "Market ticker (demo values)"
+            name: "marketTickers"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Change", name: "change", widget: "string" }
+              - { label: "Direction", name: "direction", widget: "select", options: ["up", "down"] }
+          - label: "Footer stats band"
+            name: "siteStats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }

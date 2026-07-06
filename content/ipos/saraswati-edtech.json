@@ -1,0 +1,43 @@
+{
+  "source": "Company RHP/DRHP filings, exchange announcements",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "slug": "saraswati-edtech",
+  "companyName": "Saraswati EdTech",
+  "sector": "Education Technology",
+  "status": "listed",
+  "exchange": "NSE, BSE",
+  "openDate": "2025-10-14",
+  "closeDate": "2025-10-16",
+  "listingDate": "2025-10-29",
+  "priceBand": "\u20b988\u201394",
+  "issuePrice": "\u20b994",
+  "listingPrice": "\u20b999",
+  "currentPrice": "\u20b971",
+  "listingGain": "+5.3%",
+  "currentGain": "-24.5%",
+  "direction": "down",
+  "issueSize": "\u20b9740 cr",
+  "lotSize": "159 shares",
+  "subscriptionTimes": "2.4x overall",
+  "description": "Saraswati EdTech provides online test-preparation courses for competitive school and college entrance exams, alongside a smaller tutoring marketplace.",
+  "highlights": [
+    "Subscriber growth has slowed sharply since listing",
+    "Increased marketing spend has yet to translate into renewed growth",
+    "One of several recent edtech listings to trade well below issue price"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "A difficult first year as a public company",
+    "subtitle": "Share price since listing, \u20b9",
+    "source": "NSE; illustrative series",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"Wk 1\", \"value\": 94}, {\"period\": \"Wk 2\", \"value\": 99}, {\"period\": \"Wk 3\", \"value\": 92}, {\"period\": \"Wk 4\", \"value\": 85}, {\"period\": \"Wk 6\", \"value\": 79}, {\"period\": \"Wk 8\", \"value\": 74}, {\"period\": \"Wk 10\", \"value\": 81}, {\"period\": \"Wk 12\", \"value\": 77}, {\"period\": \"Wk 16\", \"value\": 69}, {\"period\": \"Wk 20\", \"value\": 66}, {\"period\": \"Wk 24\", \"value\": 71}]"
+  }
+}

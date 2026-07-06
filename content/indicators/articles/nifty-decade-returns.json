@@ -1,0 +1,76 @@
+{
+  "id": 9,
+  "slug": "nifty-decade-returns",
+  "title": "A decade of Nifty 50 returns, in one chart",
+  "dek": "Ten years, three crashes, one pandemic \u2014 and an index that still compounded near 12% a year. The long view on Indian equities.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "author": {
+    "name": "Arjun Nair",
+    "bio": "Arjun writes on markets and corporate finance. Before journalism, he spent five years as a sell-side equity analyst.",
+    "avatar": null
+  },
+  "date": "2026-06-27",
+  "readingTime": 6,
+  "featured": true,
+  "charts": [
+    {
+      "type": "line",
+      "title": "The long compounding of the Nifty 50",
+      "subtitle": "Nifty 50 index level, year-end close",
+      "source": "NSE historical data; illustrative levels",
+      "dataKeys": [
+        "nifty"
+      ],
+      "xKey": "year",
+      "unit": "",
+      "data": "[{\"year\":\"2016\",\"nifty\":8186},{\"year\":\"2017\",\"nifty\":10531},{\"year\":\"2018\",\"nifty\":10863},{\"year\":\"2019\",\"nifty\":12168},{\"year\":\"2020\",\"nifty\":13982},{\"year\":\"2021\",\"nifty\":17354},{\"year\":\"2022\",\"nifty\":18105},{\"year\":\"2023\",\"nifty\":21731},{\"year\":\"2024\",\"nifty\":23645},{\"year\":\"2025\",\"nifty\":26200}]"
+    },
+    {
+      "type": "bar",
+      "title": "The same decade, year by year",
+      "subtitle": "Nifty 50 annual return, %",
+      "source": "NSE historical data; illustrative returns",
+      "dataKeys": [
+        "return"
+      ],
+      "xKey": "year",
+      "unit": "%",
+      "data": "[{\"year\":\"2017\",\"return\":28.6},{\"year\":\"2018\",\"return\":3.2},{\"year\":\"2019\",\"return\":12},{\"year\":\"2020\",\"return\":14.9},{\"year\":\"2021\",\"return\":24.1},{\"year\":\"2022\",\"return\":4.3},{\"year\":\"2023\",\"return\":20},{\"year\":\"2024\",\"return\":8.8},{\"year\":\"2025\",\"return\":10.8}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Zoom out far enough and every equity market chart looks calm. The Nifty\u2019s past decade included a taper scare, a pandemic crash of nearly 40% and two election-night whipsaws \u2014 none of which are visible in the year-end series."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "The distribution behind the average"
+    },
+    {
+      "type": "paragraph",
+      "text": "The annual returns are where the honest story lives. \u201cAbout 12% a year\u201d is an average almost never delivered in any single year; the actual sequence lurches between near-zero and near-30."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "quote",
+      "text": "The average return is a destination. No single year is obliged to take you there directly."
+    },
+    {
+      "type": "paragraph",
+      "text": "The structural change beneath the index is domestic ownership. Monthly SIP flows now provide a bid that did not exist a decade ago, which has visibly dampened the drawdowns that foreign outflows used to cause."
+    }
+  ]
+}
