@@ -1,0 +1,56 @@
+{
+  "id": 2,
+  "slug": "urban-unemployment-quarterly",
+  "title": "Urban unemployment fell again. The fine print is more interesting",
+  "dek": "The headline rate is at a survey-era low, but the composition of new work \u2014 self-employment versus salaried jobs \u2014 tells a subtler story.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "economy",
+    "society"
+  ],
+  "author": {
+    "name": "Meera Kulkarni",
+    "bio": "Meera covers the macro economy and public finance. She previously reported on the RBI and the Union Budget for a national daily.",
+    "avatar": null
+  },
+  "date": "2026-06-21",
+  "readingTime": 6,
+  "featured": false,
+  "charts": [
+    {
+      "type": "area",
+      "title": "Urban unemployment, quarter by quarter",
+      "subtitle": "Urban unemployment rate (15+), current weekly status, %",
+      "source": "PLFS quarterly bulletins; illustrative series",
+      "dataKeys": [
+        "rate"
+      ],
+      "xKey": "quarter",
+      "unit": "%",
+      "data": "[{\"quarter\":\"Q1 24\",\"rate\":6.7},{\"quarter\":\"Q2 24\",\"rate\":6.6},{\"quarter\":\"Q3 24\",\"rate\":6.5},{\"quarter\":\"Q4 24\",\"rate\":6.4},{\"quarter\":\"Q1 25\",\"rate\":6.7},{\"quarter\":\"Q2 25\",\"rate\":6.4},{\"quarter\":\"Q3 25\",\"rate\":6.2},{\"quarter\":\"Q4 25\",\"rate\":6.1},{\"quarter\":\"Q1 26\",\"rate\":5.9}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The quarterly labour force survey delivered a headline the government will like: urban unemployment at its lowest level since the series began. But surveys reward readers who go past the first table."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "What kind of jobs?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Roughly half the improvement over the past year comes from a rise in self-employment rather than salaried positions. That can mean genuine entrepreneurship, or it can mean people creating their own work because no one will hire them. The wage data, when it lands, will settle which."
+    },
+    {
+      "type": "paragraph",
+      "text": "Female labour force participation in cities also ticked up for the fourth straight quarter \u2014 a slow-moving but genuinely structural shift that deserves more attention than the headline rate."
+    }
+  ]
+}

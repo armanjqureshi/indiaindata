@@ -1,0 +1,31 @@
+{
+  "slug": "cpi-inflation",
+  "name": "CPI Inflation",
+  "category": "prices",
+  "unit": "%",
+  "currentValue": "5.4%",
+  "previousValue": "5.1%",
+  "change": "+0.3pp",
+  "direction": "up",
+  "asOf": "2026-06-30",
+  "frequency": "Monthly",
+  "description": "The Consumer Price Index measures the average change in prices paid by households for a fixed basket of goods and services. It is India's headline inflation number and the RBI's primary policy target, with a medium-term goal of 4%, within a 2-6% tolerance band.",
+  "source": "Ministry of Statistics and Programme Implementation (MoSPI)",
+  "releaseSchedule": "Released monthly, typically around the 12th, for the previous month.",
+  "topics": [
+    "economy",
+    "policy"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "CPI inflation, year-on-year",
+    "subtitle": "Headline consumer price inflation, % change, monthly",
+    "source": "MoSPI, CPI releases; illustrative series",
+    "xKey": "month",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "%",
+    "data": "[{\"month\": \"Jul 25\", \"value\": 4.9}, {\"month\": \"Aug 25\", \"value\": 5.2}, {\"month\": \"Sep 25\", \"value\": 5.6}, {\"month\": \"Oct 25\", \"value\": 5.3}, {\"month\": \"Nov 25\", \"value\": 4.8}, {\"month\": \"Dec 25\", \"value\": 4.2}, {\"month\": \"Jan 26\", \"value\": 3.9}, {\"month\": \"Feb 26\", \"value\": 3.7}, {\"month\": \"Mar 26\", \"value\": 4.1}, {\"month\": \"Apr 26\", \"value\": 4.6}, {\"month\": \"May 26\", \"value\": 5.1}, {\"month\": \"Jun 26\", \"value\": 5.4}]"
+  }
+}

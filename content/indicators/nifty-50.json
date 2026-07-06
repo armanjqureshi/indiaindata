@@ -1,0 +1,31 @@
+{
+  "slug": "nifty-50",
+  "name": "Nifty 50",
+  "category": "markets",
+  "unit": "index",
+  "currentValue": "26,412.30",
+  "previousValue": "26,248.10",
+  "change": "+0.62%",
+  "direction": "up",
+  "asOf": "2026-06-30",
+  "frequency": "Daily (shown monthly)",
+  "description": "The Nifty 50 tracks the 50 largest, most liquid companies listed on the National Stock Exchange, and is India's most widely quoted equity benchmark. It's the reference index for most Indian mutual funds and index funds.",
+  "source": "National Stock Exchange (NSE)",
+  "releaseSchedule": "Trades continuously on market days; month-end close shown here.",
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "The index kept climbing through the year",
+    "subtitle": "Nifty 50 index level, month-end close",
+    "source": "NSE; illustrative levels",
+    "xKey": "month",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"month\": \"Jul 25\", \"value\": 23980}, {\"month\": \"Aug 25\", \"value\": 24210}, {\"month\": \"Sep 25\", \"value\": 24450}, {\"month\": \"Oct 25\", \"value\": 24680}, {\"month\": \"Nov 25\", \"value\": 25010}, {\"month\": \"Dec 25\", \"value\": 25360}, {\"month\": \"Jan 26\", \"value\": 25580}, {\"month\": \"Feb 26\", \"value\": 25790}, {\"month\": \"Mar 26\", \"value\": 26010}, {\"month\": \"Apr 26\", \"value\": 26180}, {\"month\": \"May 26\", \"value\": 26248}, {\"month\": \"Jun 26\", \"value\": 26412}]"
+  }
+}

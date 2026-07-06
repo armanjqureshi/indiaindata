@@ -1,0 +1,79 @@
+{
+  "id": 5,
+  "slug": "manufacturing-output-sectors",
+  "title": "India's manufacturing output, sector by sector",
+  "dek": "Electronics and pharmaceuticals are pulling away from the pack, while textiles tread water. A visual audit of the index of industrial production.",
+  "heroImage": null,
+  "section": "business",
+  "topics": [
+    "economy"
+  ],
+  "author": {
+    "name": "Sana Qureshi",
+    "bio": "Sana reports on industry, manufacturing and trade, with a focus on what official datasets reveal about India\u2019s factories.",
+    "avatar": null
+  },
+  "date": "2026-06-25",
+  "readingTime": 8,
+  "featured": true,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Not all factories are having the same year",
+      "subtitle": "Output growth by sector, year-on-year %, FY26",
+      "source": "Index of Industrial Production, MoSPI; illustrative figures",
+      "dataKeys": [
+        "growth"
+      ],
+      "xKey": "sector",
+      "unit": "%",
+      "data": "[{\"sector\":\"Electronics\",\"growth\":18.4},{\"sector\":\"Pharma\",\"growth\":11.2},{\"sector\":\"Autos\",\"growth\":8.6},{\"sector\":\"Machinery\",\"growth\":7.1},{\"sector\":\"Chemicals\",\"growth\":5.3},{\"sector\":\"Steel\",\"growth\":4.8},{\"sector\":\"Cement\",\"growth\":4.1},{\"sector\":\"Textiles\",\"growth\":1.2}]"
+    },
+    {
+      "type": "stackedBar",
+      "title": "Where the value added comes from",
+      "subtitle": "Share of manufacturing gross value added, %, selected years",
+      "source": "Annual Survey of Industries; illustrative shares",
+      "dataKeys": [
+        "electronics",
+        "autos",
+        "chemicals",
+        "textiles",
+        "others"
+      ],
+      "xKey": "year",
+      "unit": "%",
+      "data": "[{\"year\":\"FY16\",\"electronics\":6,\"autos\":12,\"chemicals\":14,\"textiles\":12,\"others\":56},{\"year\":\"FY21\",\"electronics\":9,\"autos\":13,\"chemicals\":15,\"textiles\":10,\"others\":53},{\"year\":\"FY26\",\"electronics\":14,\"autos\":14,\"chemicals\":15,\"textiles\":8,\"others\":49}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "\u201cManufacturing growth\u201d is a single number that hides eight different stories. Disaggregate the index of industrial production and India\u2019s factory floor splits cleanly into sprinters, joggers and sectors running in place."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "The electronics decade"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electronics is the standout, and the production-linked incentive schemes are only part of the reason. Global supply chains looking for a second home after China have found India\u2019s assembly ecosystem just mature enough to bet on. The value-added share tells the longer arc."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "Textiles is the uncomfortable line on the chart. It employs more people than electronics and pharma combined, and it is the sector where India is losing export share to Bangladesh and Vietnam. Any honest manufacturing story has to hold both facts at once."
+    },
+    {
+      "type": "quote",
+      "text": "India is industrialising in the sectors of the future while stalling in the sector that employs its present."
+    }
+  ]
+}

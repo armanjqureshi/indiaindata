@@ -1,0 +1,30 @@
+{
+  "slug": "gdp-growth",
+  "name": "GDP Growth",
+  "category": "growth",
+  "unit": "%",
+  "currentValue": "7.2%",
+  "previousValue": "6.9%",
+  "change": "+0.3pp",
+  "direction": "up",
+  "asOf": "2026-03-31",
+  "frequency": "Quarterly",
+  "description": "Gross Domestic Product growth measures the year-on-year expansion of India's economy at constant prices. It's the single most-watched number in Indian economic policy, and the headline figure most often quoted in budget and RBI commentary.",
+  "source": "Ministry of Statistics and Programme Implementation (MoSPI), National Accounts",
+  "releaseSchedule": "Released quarterly, roughly two months after quarter-end.",
+  "topics": [
+    "economy"
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "GDP growth has stayed above 6.5% for two years",
+    "subtitle": "Real GDP growth, year-on-year %, quarterly",
+    "source": "MoSPI National Accounts; illustrative series",
+    "xKey": "quarter",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "%",
+    "data": "[{\"quarter\": \"Q3 24\", \"value\": 6.7}, {\"quarter\": \"Q4 24\", \"value\": 6.8}, {\"quarter\": \"Q1 25\", \"value\": 7.4}, {\"quarter\": \"Q2 25\", \"value\": 6.6}, {\"quarter\": \"Q3 25\", \"value\": 6.9}, {\"quarter\": \"Q4 25\", \"value\": 7.0}, {\"quarter\": \"Q1 26\", \"value\": 6.9}, {\"quarter\": \"Q2 26\", \"value\": 7.2}]"
+  }
+}

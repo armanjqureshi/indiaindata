@@ -1,0 +1,31 @@
+{
+  "slug": "g-sec-10y-yield",
+  "name": "10-Year G-Sec Yield",
+  "category": "monetary",
+  "unit": "%",
+  "currentValue": "6.28%",
+  "previousValue": "6.34%",
+  "change": "-6bps",
+  "direction": "down",
+  "asOf": "2026-06-30",
+  "frequency": "Daily (shown monthly)",
+  "description": "The yield on the 10-year government bond is the benchmark long-term borrowing cost for the Indian government, and a reference point for corporate bond pricing and long-term loan rates across the economy.",
+  "source": "Clearing Corporation of India (CCIL), RBI",
+  "releaseSchedule": "Trades daily; month-end levels shown here.",
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "The 10-year yield ground lower",
+    "subtitle": "India 10-year government bond yield, %, month-end",
+    "source": "CCIL, RBI; illustrative series",
+    "xKey": "month",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "%",
+    "data": "[{\"month\": \"Jul 25\", \"value\": 6.78}, {\"month\": \"Aug 25\", \"value\": 6.71}, {\"month\": \"Sep 25\", \"value\": 6.66}, {\"month\": \"Oct 25\", \"value\": 6.61}, {\"month\": \"Nov 25\", \"value\": 6.55}, {\"month\": \"Dec 25\", \"value\": 6.5}, {\"month\": \"Jan 26\", \"value\": 6.46}, {\"month\": \"Feb 26\", \"value\": 6.41}, {\"month\": \"Mar 26\", \"value\": 6.38}, {\"month\": \"Apr 26\", \"value\": 6.35}, {\"month\": \"May 26\", \"value\": 6.34}, {\"month\": \"Jun 26\", \"value\": 6.28}]"
+  }
+}

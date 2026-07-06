@@ -1,0 +1,56 @@
+{
+  "id": 15,
+  "slug": "survey-vs-satellite",
+  "title": "Survey vs satellite: the new ways India is being measured",
+  "dek": "Night-time lights, GST invoices, FASTag pings \u2014 administrative and remote-sensed data are filling gaps the surveys leave. With new blind spots of their own.",
+  "heroImage": null,
+  "section": "blogs",
+  "topics": [
+    "data-methods",
+    "society"
+  ],
+  "author": {
+    "name": "Dev Patel",
+    "bio": "Dev is our data editor. He writes explainers on statistics, survey design and the fine print behind India\u2019s official numbers.",
+    "avatar": null
+  },
+  "date": "2026-06-08",
+  "readingTime": 8,
+  "featured": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "The new instruments, by refresh rate",
+      "subtitle": "How often each data source updates, days between releases",
+      "source": "Author compilation; illustrative cadence",
+      "dataKeys": [
+        "days"
+      ],
+      "xKey": "source",
+      "unit": " days",
+      "data": "[{\"source\":\"FASTag tolls\",\"days\":1},{\"source\":\"GST e-way bills\",\"days\":30},{\"source\":\"Night lights\",\"days\":30},{\"source\":\"PLFS quarterly\",\"days\":90},{\"source\":\"NFHS survey\",\"days\":1800}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "India\u2019s classic statistical instruments \u2014 the census, the big household surveys \u2014 are slow, careful and increasingly stale. In the gaps, a new generation of measurements has grown up: toll-booth pings, tax invoices, electricity meters, satellite photos of the country at night."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "The trade is speed against representativeness. A survey painstakingly includes the household with no vehicle, no GST number and no electricity connection; the new instruments see only the connected. Night-lights data famously suggested growth in places the surveys showed distress \u2014 and both were measuring truthfully, just measuring different Indias."
+    },
+    {
+      "type": "quote",
+      "text": "Administrative data tells you what the formal economy did yesterday. Surveys tell you what the whole country did two years ago. India needs both eyes open."
+    },
+    {
+      "type": "paragraph",
+      "text": "The craft for readers is provenance: before trusting a chart, ask what instrument produced it, whom that instrument can see, and who is standing outside its frame."
+    }
+  ]
+}

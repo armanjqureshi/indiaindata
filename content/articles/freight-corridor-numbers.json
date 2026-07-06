@@ -1,0 +1,48 @@
+{
+  "id": 4,
+  "slug": "freight-corridor-numbers",
+  "title": "The freight corridors are finally moving the needle on logistics",
+  "dek": "Average freight train speeds on the dedicated corridors are more than double the old network. The cost data is starting to follow.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "policy",
+    "economy"
+  ],
+  "author": {
+    "name": "Sana Qureshi",
+    "bio": "Sana reports on industry, manufacturing and trade, with a focus on what official datasets reveal about India\u2019s factories.",
+    "avatar": null
+  },
+  "date": "2026-06-07",
+  "readingTime": 6,
+  "featured": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Freight speeds: corridor vs legacy network",
+      "subtitle": "Average freight train speed, km/h",
+      "source": "DFCCIL, Indian Railways yearbooks; illustrative figures",
+      "dataKeys": [
+        "speed"
+      ],
+      "xKey": "network",
+      "unit": " km/h",
+      "data": "[{\"network\":\"Legacy network\",\"speed\":25},{\"network\":\"Eastern DFC\",\"speed\":55},{\"network\":\"Western DFC\",\"speed\":60}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "India has talked about logistics costs for two decades. The dedicated freight corridors \u2014 a project old enough to vote \u2014 are now carrying enough traffic to test whether the promised savings are real."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "Speed is the headline metric, but reliability matters more to shippers. Corridor trains now arrive within their scheduled window far more often than trains on the mixed-use network, which lets factories hold thinner inventories. That inventory saving, invisible in freight rates, may be the biggest gain of all."
+    }
+  ]
+}

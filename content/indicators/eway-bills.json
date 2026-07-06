@@ -1,0 +1,30 @@
+{
+  "slug": "eway-bills",
+  "name": "E-Way Bills Issued",
+  "category": "real-time",
+  "unit": "cr/month",
+  "currentValue": "11.2cr",
+  "previousValue": "10.6cr",
+  "change": "+5.7%",
+  "direction": "up",
+  "asOf": "2026-06-30",
+  "frequency": "Monthly",
+  "description": "An e-way bill is generated for nearly every movement of goods worth over \u20b950,000 under GST. The volume issued each month is a near-real-time proxy for how much freight is actually moving through the economy.",
+  "source": "GST Network (GSTN)",
+  "releaseSchedule": "Released monthly, shortly after month-end.",
+  "topics": [
+    "economy"
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "Goods movement kept accelerating",
+    "subtitle": "E-way bills issued, crore, monthly",
+    "source": "GSTN; illustrative series",
+    "xKey": "month",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": " cr",
+    "data": "[{\"month\": \"Jul 25\", \"value\": 9.4}, {\"month\": \"Aug 25\", \"value\": 9.6}, {\"month\": \"Sep 25\", \"value\": 9.9}, {\"month\": \"Oct 25\", \"value\": 9.7}, {\"month\": \"Nov 25\", \"value\": 9.5}, {\"month\": \"Dec 25\", \"value\": 9.8}, {\"month\": \"Jan 26\", \"value\": 10.1}, {\"month\": \"Feb 26\", \"value\": 10.3}, {\"month\": \"Mar 26\", \"value\": 10.5}, {\"month\": \"Apr 26\", \"value\": 10.8}, {\"month\": \"May 26\", \"value\": 10.6}, {\"month\": \"Jun 26\", \"value\": 11.2}]"
+  }
+}
