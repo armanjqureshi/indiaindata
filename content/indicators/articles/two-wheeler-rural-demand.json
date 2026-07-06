@@ -1,0 +1,48 @@
+{
+  "id": 8,
+  "slug": "two-wheeler-rural-demand",
+  "title": "What two-wheeler sales say about rural demand",
+  "dek": "Motorcycle registrations are the closest thing India has to a real-time rural income indicator. They are finally accelerating again.",
+  "heroImage": null,
+  "section": "business",
+  "topics": [
+    "economy",
+    "society"
+  ],
+  "author": {
+    "name": "Ishita Rao",
+    "bio": "Ishita covers society, consumption and technology adoption across urban and rural India.",
+    "avatar": null
+  },
+  "date": "2026-06-03",
+  "readingTime": 5,
+  "featured": false,
+  "charts": [
+    {
+      "type": "line",
+      "title": "The rural demand proxy turns up",
+      "subtitle": "Two-wheeler registrations, millions per quarter",
+      "source": "VAHAN registrations; illustrative series",
+      "dataKeys": [
+        "registrations"
+      ],
+      "xKey": "quarter",
+      "unit": "M",
+      "data": "[{\"quarter\":\"Q1 25\",\"registrations\":4.1},{\"quarter\":\"Q2 25\",\"registrations\":4.3},{\"quarter\":\"Q3 25\",\"registrations\":4.9},{\"quarter\":\"Q4 25\",\"registrations\":4.6},{\"quarter\":\"Q1 26\",\"registrations\":4.8},{\"quarter\":\"Q2 26\",\"registrations\":5.2}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Economists watch two-wheeler sales for the same reason doctors take a pulse: it is fast, cheap and surprisingly informative. A motorcycle is the first big discretionary purchase for millions of rural households, so registrations track rural cash flow almost in real time."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "The current upturn coincides with two good harvests and firm rural wages. The electric share of the mix is rising too \u2014 now roughly one in five scooters \u2014 which is quietly reshaping which companies benefit from the recovery."
+    }
+  ]
+}

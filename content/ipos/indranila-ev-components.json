@@ -1,0 +1,43 @@
+{
+  "source": "Company RHP/DRHP filings, exchange announcements",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "slug": "indranila-ev-components",
+  "companyName": "Indranila EV Components",
+  "sector": "Electric Vehicles",
+  "status": "listed",
+  "exchange": "NSE, BSE",
+  "openDate": "2026-02-10",
+  "closeDate": "2026-02-12",
+  "listingDate": "2026-02-24",
+  "priceBand": "\u20b9255\u2013268",
+  "issuePrice": "\u20b9268",
+  "listingPrice": "\u20b9334",
+  "currentPrice": "\u20b9389",
+  "listingGain": "+24.6%",
+  "currentGain": "+45.1%",
+  "direction": "up",
+  "issueSize": "\u20b91,760 cr",
+  "lotSize": "55 shares",
+  "subscriptionTimes": "56.2x overall",
+  "description": "Indranila EV Components makes battery packs and motor controllers for two- and three-wheeler electric vehicle manufacturers.",
+  "highlights": [
+    "Listed at a 24.6% premium to its issue price on debut",
+    "Has extended gains steadily as EV sales data came in ahead of expectations",
+    "Now supplies four of the top six electric two-wheeler makers"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "A strong debut, extended over time",
+    "subtitle": "Share price since listing, \u20b9",
+    "source": "NSE; illustrative series",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"Wk 1\", \"value\": 268}, {\"period\": \"Wk 2\", \"value\": 334}, {\"period\": \"Wk 3\", \"value\": 352}, {\"period\": \"Wk 4\", \"value\": 341}, {\"period\": \"Wk 6\", \"value\": 368}, {\"period\": \"Wk 8\", \"value\": 375}, {\"period\": \"Wk 10\", \"value\": 362}, {\"period\": \"Wk 12\", \"value\": 371}, {\"period\": \"Wk 16\", \"value\": 380}, {\"period\": \"Wk 20\", \"value\": 384}, {\"period\": \"Wk 24\", \"value\": 389}]"
+  }
+}

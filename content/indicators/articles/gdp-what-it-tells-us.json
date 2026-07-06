@@ -1,0 +1,68 @@
+{
+  "id": 13,
+  "slug": "gdp-what-it-tells-us",
+  "title": "What GDP does and doesn't tell us about India",
+  "dek": "GDP is the most quoted and least understood number in Indian public life. A field guide to what it measures, what it misses, and how to read it.",
+  "heroImage": null,
+  "section": "blogs",
+  "topics": [
+    "economy",
+    "data-methods"
+  ],
+  "author": {
+    "name": "Dev Patel",
+    "bio": "Dev is our data editor. He writes explainers on statistics, survey design and the fine print behind India\u2019s official numbers.",
+    "avatar": null
+  },
+  "date": "2026-06-24",
+  "readingTime": 10,
+  "featured": true,
+  "charts": [
+    {
+      "type": "pie",
+      "title": "What Indian GDP is made of",
+      "subtitle": "Share of gross value added by sector, FY26, %",
+      "source": "MoSPI national accounts; illustrative shares",
+      "dataKeys": [
+        "value"
+      ],
+      "nameKey": "name",
+      "unit": "%",
+      "data": "[{\"name\":\"Services\",\"value\":55},{\"name\":\"Industry\",\"value\":28},{\"name\":\"Agriculture\",\"value\":17}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Every quarter, a single number briefly organises Indian public debate: GDP growth. Politicians claim it, opponents dispute it, markets trade it. Almost nobody reads the press note it comes from. This explainer is for the reading."
+    },
+    {
+      "type": "heading",
+      "text": "What the number actually measures"
+    },
+    {
+      "type": "paragraph",
+      "text": "GDP is the market value of everything produced within India\u2019s borders in a period. Three words in that sentence carry all the weight. \u201cMarket\u201d means unpaid work \u2014 most of it done by women \u2014 is invisible. \u201cProduced\u201d means asset price gains don\u2019t count. \u201cBorders\u201d means an Indian firm\u2019s Dubai profits don\u2019t either."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Where the blind spots are"
+    },
+    {
+      "type": "paragraph",
+      "text": "India\u2019s statistical system measures its formal sector well and its informal sector by proxy. Roughly half of the workforce sits in the part measured by assumption. When the formal and informal economies diverge \u2014 as they did after demonetisation and the pandemic \u2014 GDP tracks the half that is easier to see."
+    },
+    {
+      "type": "quote",
+      "text": "GDP is a speedometer, not a dashboard. It tells you how fast, never how well, and only for the vehicle it can see."
+    },
+    {
+      "type": "paragraph",
+      "text": "None of this makes the number useless. It makes it a number \u2014 one input among several, best read alongside employment surveys, consumption data and the humble two-wheeler registration series. The mistake is not trusting GDP too little. It is asking it questions it was never designed to answer."
+    }
+  ]
+}

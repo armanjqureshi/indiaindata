@@ -1,0 +1,43 @@
+{
+  "source": "Company RHP/DRHP filings, exchange announcements",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "slug": "meridian-saas-labs",
+  "companyName": "Meridian SaaS Labs",
+  "sector": "Software / IT",
+  "status": "listed",
+  "exchange": "NSE, BSE",
+  "openDate": "2026-01-20",
+  "closeDate": "2026-01-22",
+  "listingDate": "2026-02-03",
+  "priceBand": "\u20b9610\u2013642",
+  "issuePrice": "\u20b9642",
+  "listingPrice": "\u20b9701",
+  "currentPrice": "\u20b9665",
+  "listingGain": "+9.2%",
+  "currentGain": "+3.6%",
+  "direction": "up",
+  "issueSize": "\u20b92,050 cr",
+  "lotSize": "23 shares",
+  "subscriptionTimes": "18.4x overall",
+  "description": "Meridian SaaS Labs builds workflow-automation software sold to mid-sized enterprises across India, Southeast Asia and the Gulf.",
+  "highlights": [
+    "Gave back part of its listing-day gain as broader tech stocks cooled",
+    "Annual recurring revenue growth remains above 30% year-on-year",
+    "Roughly 45% of revenue now comes from outside India"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "Gains have cooled since a strong debut",
+    "subtitle": "Share price since listing, \u20b9",
+    "source": "NSE; illustrative series",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"Wk 1\", \"value\": 642}, {\"period\": \"Wk 2\", \"value\": 701}, {\"period\": \"Wk 3\", \"value\": 684}, {\"period\": \"Wk 4\", \"value\": 672}, {\"period\": \"Wk 6\", \"value\": 658}, {\"period\": \"Wk 8\", \"value\": 691}, {\"period\": \"Wk 10\", \"value\": 703}, {\"period\": \"Wk 12\", \"value\": 679}, {\"period\": \"Wk 16\", \"value\": 662}, {\"period\": \"Wk 20\", \"value\": 671}, {\"period\": \"Wk 24\", \"value\": 665}]"
+  }
+}

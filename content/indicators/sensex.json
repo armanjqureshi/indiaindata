@@ -1,0 +1,31 @@
+{
+  "slug": "sensex",
+  "name": "BSE Sensex",
+  "category": "markets",
+  "unit": "index",
+  "currentValue": "86,948.11",
+  "previousValue": "86,481.60",
+  "change": "+0.54%",
+  "direction": "up",
+  "asOf": "2026-06-30",
+  "frequency": "Daily (shown monthly)",
+  "description": "The Sensex tracks 30 large, established companies listed on the Bombay Stock Exchange and is India's oldest and most recognised equity benchmark, in continuous use since 1986.",
+  "source": "Bombay Stock Exchange (BSE)",
+  "releaseSchedule": "Trades continuously on market days; month-end close shown here.",
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "A steady climb alongside the Nifty",
+    "subtitle": "BSE Sensex index level, month-end close",
+    "source": "BSE; illustrative levels",
+    "xKey": "month",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"month\": \"Jul 25\", \"value\": 78900}, {\"month\": \"Aug 25\", \"value\": 79600}, {\"month\": \"Sep 25\", \"value\": 80300}, {\"month\": \"Oct 25\", \"value\": 81100}, {\"month\": \"Nov 25\", \"value\": 82200}, {\"month\": \"Dec 25\", \"value\": 83400}, {\"month\": \"Jan 26\", \"value\": 84100}, {\"month\": \"Feb 26\", \"value\": 84900}, {\"month\": \"Mar 26\", \"value\": 85700}, {\"month\": \"Apr 26\", \"value\": 86200}, {\"month\": \"May 26\", \"value\": 86482}, {\"month\": \"Jun 26\", \"value\": 86948}]"
+  }
+}

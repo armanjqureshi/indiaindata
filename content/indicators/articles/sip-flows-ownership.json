@@ -1,0 +1,52 @@
+{
+  "id": 11,
+  "slug": "sip-flows-ownership",
+  "title": "How SIP money changed who owns the Indian market",
+  "dek": "Systematic investment plans now channel over \u20b926,000 crore a month into equities. Domestic investors, not FIIs, set the marginal price.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets",
+    "society"
+  ],
+  "author": {
+    "name": "Arjun Nair",
+    "bio": "Arjun writes on markets and corporate finance. Before journalism, he spent five years as a sell-side equity analyst.",
+    "avatar": null
+  },
+  "date": "2026-06-12",
+  "readingTime": 6,
+  "featured": false,
+  "charts": [
+    {
+      "type": "area",
+      "title": "The steadiest bid in the market",
+      "subtitle": "Monthly SIP inflows, \u20b9 thousand crore",
+      "source": "AMFI monthly data; illustrative series",
+      "dataKeys": [
+        "sip"
+      ],
+      "xKey": "year",
+      "unit": "k cr",
+      "data": "[{\"year\":\"2020\",\"sip\":8.5},{\"year\":\"2021\",\"sip\":10.4},{\"year\":\"2022\",\"sip\":13.6},{\"year\":\"2023\",\"sip\":17.1},{\"year\":\"2024\",\"sip\":21.3},{\"year\":\"2025\",\"sip\":24.5},{\"year\":\"2026\",\"sip\":26.4}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "For most of Indian market history, the marginal buyer was foreign. When FIIs sold, the index fell, the rupee wobbled, and television anchors reached for the word \u201ccarnage\u201d. That reflex is now out of date."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "The SIP is a boring product \u2014 a fixed monthly debit into a mutual fund \u2014 and that is exactly why it changed the market\u2019s character. Flows that do not react to headlines absorb the selling of flows that do. Foreign investors sold heavily in two separate quarters last year; the index barely noticed."
+    },
+    {
+      "type": "quote",
+      "text": "India\u2019s market found its shock absorber in the most unglamorous instrument ever invented: the standing instruction."
+    }
+  ]
+}

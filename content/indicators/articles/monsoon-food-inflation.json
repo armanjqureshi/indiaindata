@@ -1,0 +1,80 @@
+{
+  "id": 1,
+  "slug": "monsoon-food-inflation",
+  "title": "How India's monsoon shaped this year's food inflation",
+  "dek": "A patchy June and a heavy August moved vegetable prices more than any policy decision did. We trace the rain, mandi by mandi.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "economy",
+    "policy"
+  ],
+  "author": {
+    "name": "Meera Kulkarni",
+    "bio": "Meera covers the macro economy and public finance. She previously reported on the RBI and the Union Budget for a national daily.",
+    "avatar": null
+  },
+  "date": "2026-06-28",
+  "readingTime": 7,
+  "featured": true,
+  "charts": [
+    {
+      "type": "line",
+      "title": "Food inflation tracked the rain, with a lag",
+      "subtitle": "Consumer food price inflation, year-on-year % change, monthly",
+      "source": "MoSPI, CPI releases; illustrative series",
+      "dataKeys": [
+        "inflation"
+      ],
+      "xKey": "month",
+      "unit": "%",
+      "data": "[{\"month\":\"Jul 25\",\"inflation\":5.4},{\"month\":\"Aug 25\",\"inflation\":6.8},{\"month\":\"Sep 25\",\"inflation\":7.9},{\"month\":\"Oct 25\",\"inflation\":7.1},{\"month\":\"Nov 25\",\"inflation\":6.2},{\"month\":\"Dec 25\",\"inflation\":5.1},{\"month\":\"Jan 26\",\"inflation\":4.4},{\"month\":\"Feb 26\",\"inflation\":4},{\"month\":\"Mar 26\",\"inflation\":4.6},{\"month\":\"Apr 26\",\"inflation\":5.3},{\"month\":\"May 26\",\"inflation\":6.1},{\"month\":\"Jun 26\",\"inflation\":6.6}]"
+    },
+    {
+      "type": "bar",
+      "title": "Vegetables did most of the damage",
+      "subtitle": "Contribution to food inflation by category, June 2026, percentage points",
+      "source": "MoSPI; illustrative decomposition",
+      "dataKeys": [
+        "contribution"
+      ],
+      "xKey": "category",
+      "unit": " pp",
+      "data": "[{\"category\":\"Vegetables\",\"contribution\":2.9},{\"category\":\"Cereals\",\"contribution\":1.2},{\"category\":\"Pulses\",\"contribution\":0.9},{\"category\":\"Milk\",\"contribution\":0.7},{\"category\":\"Edible oils\",\"contribution\":0.5},{\"category\":\"Others\",\"contribution\":0.4}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Every monsoon tells a price story. This year\u2019s version began with a June that arrived ten days late over the grain belt, and ended with an August that dumped a month\u2019s rain on Maharashtra\u2019s vegetable districts in a single week. Both showed up, almost on schedule, in the consumer price index."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "Food inflation is not one number but a bundle of very different markets. Cereals respond slowly, because stocks and procurement smooth the shock. Vegetables respond within weeks, because tomatoes and onions cannot be warehoused through a flood."
+    },
+    {
+      "type": "heading",
+      "text": "Where the pressure came from"
+    },
+    {
+      "type": "paragraph",
+      "text": "Decompose June\u2019s reading and the pattern is stark: vegetables alone contributed nearly half of the food inflation print, more than cereals, pulses and milk combined. That is the signature of a weather shock, not a demand surge."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "quote",
+      "text": "When inflation is made of onions, interest rates are a blunt instrument. The relevant policy lever is cold storage, not the repo rate."
+    },
+    {
+      "type": "paragraph",
+      "text": "The practical takeaway for readers watching the RBI: a rain-driven spike tends to reverse as the winter crop arrives. What matters is whether households\u2019 inflation expectations reset before it does."
+    }
+  ]
+}

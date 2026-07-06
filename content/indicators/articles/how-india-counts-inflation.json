@@ -1,0 +1,57 @@
+{
+  "id": 14,
+  "slug": "how-india-counts-inflation",
+  "title": "How India counts inflation, and why your grocery bill disagrees",
+  "dek": "The CPI basket was weighted from a 2011-12 consumption survey. Your household in 2026 spends nothing like that. An anatomy of the gap.",
+  "heroImage": null,
+  "section": "blogs",
+  "topics": [
+    "data-methods",
+    "economy"
+  ],
+  "author": {
+    "name": "Dev Patel",
+    "bio": "Dev is our data editor. He writes explainers on statistics, survey design and the fine print behind India\u2019s official numbers.",
+    "avatar": null
+  },
+  "date": "2026-06-16",
+  "readingTime": 9,
+  "featured": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "The basket vs your basket",
+      "subtitle": "CPI weight vs estimated urban household share, %, selected categories",
+      "source": "MoSPI CPI weights, HCES 2023-24; illustrative comparison",
+      "dataKeys": [
+        "cpiWeight",
+        "actualShare"
+      ],
+      "xKey": "category",
+      "unit": "%",
+      "data": "[{\"category\":\"Food\",\"cpiWeight\":45.9,\"actualShare\":33},{\"category\":\"Housing\",\"cpiWeight\":10.1,\"actualShare\":16.5},{\"category\":\"Transport\",\"cpiWeight\":8.6,\"actualShare\":12.2},{\"category\":\"Health\",\"cpiWeight\":5.9,\"actualShare\":7.1},{\"category\":\"Education\",\"cpiWeight\":4.5,\"actualShare\":6.8}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "If official inflation says 4% and your household budget screams 9%, you are not imagining things \u2014 you are living in a different basket. The consumer price index measures the price of a fixed bundle of goods, and India\u2019s bundle was fixed a long time ago."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "The CPI gives food nearly 46% of the index. Urban household surveys suggest the real share has fallen toward a third, while housing, transport and services have grown. When food is cheap and rent is dear, the index flatters your reality; when onions spike, it exaggerates it."
+    },
+    {
+      "type": "heading",
+      "text": "The fix is underway"
+    },
+    {
+      "type": "paragraph",
+      "text": "A rebased CPI built on the new consumption survey is in the works. Until it lands, the practical advice is simple: read the sub-indices, not the headline. The index for \u201cmiscellaneous services\u201d is closer to an urban professional\u2019s life than the aggregate will ever be."
+    }
+  ]
+}

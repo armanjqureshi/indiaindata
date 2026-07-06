@@ -1,0 +1,29 @@
+{
+  "team": [
+    {
+      "name": "Meera Kulkarni",
+      "bio": "Meera covers the macro economy and public finance. She previously reported on the RBI and the Union Budget for a national daily.",
+      "photo": null
+    },
+    {
+      "name": "Arjun Nair",
+      "bio": "Arjun writes on markets and corporate finance. Before journalism, he spent five years as a sell-side equity analyst.",
+      "photo": null
+    },
+    {
+      "name": "Sana Qureshi",
+      "bio": "Sana reports on industry, manufacturing and trade, with a focus on what official datasets reveal about India\u2019s factories.",
+      "photo": null
+    },
+    {
+      "name": "Dev Patel",
+      "bio": "Dev is our data editor. He writes explainers on statistics, survey design and the fine print behind India\u2019s official numbers.",
+      "photo": null
+    },
+    {
+      "name": "Ishita Rao",
+      "bio": "Ishita covers society, consumption and technology adoption across urban and rural India.",
+      "photo": null
+    }
+  ]
+}
