@@ -21,7 +21,7 @@ export default function TopicPage() {
     <>
       <section className={`border-b border-ink/10 ${colors.bgLight}`}>
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
-          <p className={`text-xs font-semiboldst ${colors.text}`}>
+          <p className={`text-xs font-semibold ${colors.text}`}>
             Topic · {items.length} {items.length === 1 ? 'article' : 'articles'}
           </p>
           <h1 className="mt-2 font-display text-4xl font-semibold sm:text-5xl">{topic.name}</h1>

@@ -31,6 +31,8 @@ const INDICATOR_CATEGORY_NAMES = {
   'public-finance': 'Public Finance',
   markets: 'Markets',
   'real-time': 'Real-Time Proxies',
+  flows: 'Capital Flows',
+  'currency-commodities': 'Currencies & Commodities',
 }
 
 function readJson(relPath) {

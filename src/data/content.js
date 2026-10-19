@@ -14,18 +14,18 @@
 // ---------------------------------------------------------------------------
 
 const SECTION_META = [
-  { slug: 'news', name: 'News', color: 'news', hex: '#7FA9EA' },
-  { slug: 'business', name: 'Business', color: 'business', hex: '#A39BFF' },
-  { slug: 'market', name: 'Market', color: 'market', hex: '#3FD08D' },
-  { slug: 'blogs', name: 'Blogs', color: 'blogs', hex: '#3FC8CF' },
+  { slug: 'news', name: 'News', color: 'news', hex: 'rgb(var(--news))' },
+  { slug: 'business', name: 'Business', color: 'business', hex: 'rgb(var(--business))' },
+  { slug: 'market', name: 'Market', color: 'market', hex: 'rgb(var(--market))' },
+  { slug: 'blogs', name: 'Blogs', color: 'blogs', hex: 'rgb(var(--blogs))' },
 ]
 
 const TOPIC_META = [
-  { slug: 'economy', name: 'Economy', color: 'economy', hex: '#E9CB4F' },
-  { slug: 'society', name: 'Society', color: 'society', hex: '#D08CF0' },
-  { slug: 'policy', name: 'Policy', color: 'news', hex: '#7FA9EA' },
-  { slug: 'data-methods', name: 'Data methods', color: 'blogs', hex: '#3FC8CF' },
-  { slug: 'markets', name: 'Markets', color: 'market', hex: '#3FD08D' },
+  { slug: 'economy', name: 'Economy', color: 'economy', hex: 'rgb(var(--economy))' },
+  { slug: 'society', name: 'Society', color: 'society', hex: 'rgb(var(--society))' },
+  { slug: 'policy', name: 'Policy', color: 'news', hex: 'rgb(var(--news))' },
+  { slug: 'data-methods', name: 'Data methods', color: 'blogs', hex: 'rgb(var(--blogs))' },
+  { slug: 'markets', name: 'Markets', color: 'market', hex: 'rgb(var(--market))' },
 ]
 
 const INDICATOR_CATEGORY_META = [
@@ -37,6 +37,8 @@ const INDICATOR_CATEGORY_META = [
   { slug: 'public-finance', name: 'Public Finance', color: 'economy' },
   { slug: 'markets', name: 'Markets', color: 'market' },
   { slug: 'real-time', name: 'Real-Time Proxies', color: 'blogs' },
+  { slug: 'flows', name: 'Capital Flows', color: 'business' },
+  { slug: 'currency-commodities', name: 'Currencies & Commodities', color: 'society' },
 ]
 
 const IPO_STATUS_META = [
@@ -195,13 +197,13 @@ export const formatDate = (iso) =>
   })
 
 export const sectionColorMap = {
-  news: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: '#7FA9EA' },
-  business: { text: 'text-business', bg: 'bg-business', bgLight: 'bg-business-light', border: 'border-business', hex: '#A39BFF' },
-  market: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: '#3FD08D' },
-  blogs: { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: '#3FC8CF' },
-  economy: { text: 'text-economy', bg: 'bg-economy', bgLight: 'bg-economy-light', border: 'border-economy', hex: '#E9CB4F' },
-  society: { text: 'text-society', bg: 'bg-society', bgLight: 'bg-society-light', border: 'border-society', hex: '#D08CF0' },
-  policy: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: '#7FA9EA' },
-  'data-methods': { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: '#3FC8CF' },
-  markets: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: '#3FD08D' },
+  news: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: 'rgb(var(--news))' },
+  business: { text: 'text-business', bg: 'bg-business', bgLight: 'bg-business-light', border: 'border-business', hex: 'rgb(var(--business))' },
+  market: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: 'rgb(var(--market))' },
+  blogs: { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: 'rgb(var(--blogs))' },
+  economy: { text: 'text-economy', bg: 'bg-economy', bgLight: 'bg-economy-light', border: 'border-economy', hex: 'rgb(var(--economy))' },
+  society: { text: 'text-society', bg: 'bg-society', bgLight: 'bg-society-light', border: 'border-society', hex: 'rgb(var(--society))' },
+  policy: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: 'rgb(var(--news))' },
+  'data-methods': { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: 'rgb(var(--blogs))' },
+  markets: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: 'rgb(var(--market))' },
 }

@@ -1,0 +1,32 @@
+{
+  "slug": "fpi-equity-flows",
+  "name": "FPI Net Equity Flows",
+  "category": "flows",
+  "unit": "₹ cr",
+  "currentValue": "-₹35,861 cr",
+  "previousValue": "+₹29,631 cr",
+  "change": "-₹65,492 cr swing",
+  "direction": "down",
+  "asOf": "2026-09-30",
+  "frequency": "Monthly",
+  "description": "Foreign portfolio investors' net buying or selling of Indian equities in a month, as reported by the depositories. Sustained outflows put pressure on the rupee and on index levels; inflows do the opposite.",
+  "source": "NSDL FPI monitor via Finnovate, September 2026 report",
+  "releaseSchedule": "Daily provisional data; monthly totals after month-end.",
+  "verified": true,
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "chart": {
+    "type": "bar",
+    "title": "FPIs swung from buying to heavy selling",
+    "subtitle": "Net FPI equity flow, ₹ crore, last two months",
+    "source": "NSDL FPI monitor via Finnovate, September 2026 report",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"Aug 26\", \"value\": 29631}, {\"period\": \"Sep 26\", \"value\": -35861}]"
+  }
+}

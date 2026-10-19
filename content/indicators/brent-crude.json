@@ -1,0 +1,32 @@
+{
+  "slug": "brent-crude",
+  "name": "Brent Crude Oil",
+  "category": "currency-commodities",
+  "unit": "US$/bbl",
+  "currentValue": "$107",
+  "previousValue": "$102.95",
+  "change": "+3.9%",
+  "direction": "up",
+  "asOf": "2026-10-13",
+  "frequency": "Daily",
+  "description": "The global benchmark oil price in dollars per barrel. India imports most of its oil, so higher crude widens the trade deficit, weakens the rupee and feeds into fuel and transport prices.",
+  "source": "Upstox (9 Oct) and Trading Economics (13 Oct), approximate",
+  "releaseSchedule": "Daily.",
+  "verified": true,
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "Crude moved back toward $107",
+    "subtitle": "Brent, US$ per barrel, approximate levels on two dates",
+    "source": "Upstox (9 Oct) and Trading Economics (13 Oct), approximate",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"9 Oct\", \"value\": 102.95}, {\"period\": \"13 Oct\", \"value\": 107}]"
+  }
+}

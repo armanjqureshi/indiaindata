@@ -17,11 +17,11 @@ import {
 } from 'recharts'
 import { sectionColorMap } from '../data/content.js'
 
-const STACK_PALETTE = ['#3FC8CF', '#7FA9EA', '#E9CB4F', '#D08CF0', '#9CA3AF']
-const PIE_PALETTE = ['#3FC8CF', '#7FA9EA', '#E9CB4F', '#D08CF0', '#3FD08D']
+const STACK_PALETTE = ['rgb(var(--blogs))', 'rgb(var(--news))', 'rgb(var(--economy))', 'rgb(var(--society))', 'rgb(var(--ink) / 0.5)']
+const PIE_PALETTE = ['rgb(var(--blogs))', 'rgb(var(--news))', 'rgb(var(--economy))', 'rgb(var(--society))', 'rgb(var(--market))']
 
-const axisStyle = { fontSize: 12, fill: '#E6EDF1', fontFamily: 'Inter, sans-serif' }
-const gridStroke = '#E6EDF114'
+const axisStyle = { fontSize: 12, fill: 'rgb(var(--ink))', fontFamily: 'Inter, sans-serif' }
+const gridStroke = 'rgb(var(--ink) / 0.08)'
 
 function ChartBody({ chart, accent }) {
   const height = 300
@@ -32,7 +32,7 @@ function ChartBody({ chart, accent }) {
       <ResponsiveContainer width="100%" height={height}>
         <LineChart data={chart.data} margin={margin}>
           <CartesianGrid stroke={gridStroke} vertical={false} />
-          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#E6EDF133' }} />
+          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: 'rgb(var(--ink) / 0.2)' }} />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={52} />
           <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} />
           {chart.dataKeys.map((k) => (
@@ -56,7 +56,7 @@ function ChartBody({ chart, accent }) {
       <ResponsiveContainer width="100%" height={height}>
         <AreaChart data={chart.data} margin={margin}>
           <CartesianGrid stroke={gridStroke} vertical={false} />
-          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#E6EDF133' }} />
+          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: 'rgb(var(--ink) / 0.2)' }} />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={52} />
           <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} />
           {chart.dataKeys.map((k) => (
@@ -77,14 +77,14 @@ function ChartBody({ chart, accent }) {
             dataKey={chart.xKey}
             tick={{ ...axisStyle, fontSize: 11 }}
             tickLine={false}
-            axisLine={{ stroke: '#E6EDF133' }}
+            axisLine={{ stroke: 'rgb(var(--ink) / 0.2)' }}
             interval={0}
             angle={chart.data.length > 6 ? -30 : 0}
             textAnchor={chart.data.length > 6 ? 'end' : 'middle'}
             height={chart.data.length > 6 ? 60 : 30}
           />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={44} />
-          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: '#E6EDF10D' }} />
+          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: 'rgb(var(--ink) / 0.05)' }} />
           {multi && <Legend wrapperStyle={{ fontSize: 12 }} />}
           {chart.dataKeys.map((k, i) => (
             <Bar key={k} dataKey={k} fill={multi ? STACK_PALETTE[i] : accent} radius={[3, 3, 0, 0]} maxBarSize={56} />
@@ -99,9 +99,9 @@ function ChartBody({ chart, accent }) {
       <ResponsiveContainer width="100%" height={height}>
         <BarChart data={chart.data} margin={margin}>
           <CartesianGrid stroke={gridStroke} vertical={false} />
-          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#E6EDF133' }} />
+          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: 'rgb(var(--ink) / 0.2)' }} />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={44} />
-          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: '#E6EDF10D' }} />
+          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: 'rgb(var(--ink) / 0.05)' }} />
           <Legend wrapperStyle={{ fontSize: 12 }} />
           {chart.dataKeys.map((k, i) => (
             <Bar key={k} dataKey={k} stackId="stack" fill={STACK_PALETTE[i % STACK_PALETTE.length]} maxBarSize={72} />

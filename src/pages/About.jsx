@@ -30,7 +30,7 @@ export default function About() {
     <>
       <section className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
-          <p className="text-xs font-semiboldst text-brand">About</p>
+          <p className="text-xs font-semibold text-brand">About</p>
           <h1 className="mt-2 font-display text-4xl font-semibold leading-tight sm:text-5xl">
             We tell India&rsquo;s stories with the numbers attached
           </h1>

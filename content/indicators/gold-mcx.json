@@ -1,0 +1,32 @@
+{
+  "slug": "gold-mcx",
+  "name": "Gold (MCX)",
+  "category": "currency-commodities",
+  "unit": "₹/10 g",
+  "currentValue": "₹1,47,427",
+  "previousValue": "₹1,45,848",
+  "change": "+1.08%",
+  "direction": "up",
+  "asOf": "2026-10-15",
+  "frequency": "Daily",
+  "description": "MCX gold futures price per 10 grams. Gold is both an inflation hedge for households and a large import item that affects the current account.",
+  "source": "Angel One commodity report, 15 Oct 2026 (December futures, morning)",
+  "releaseSchedule": "Daily.",
+  "verified": true,
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "Gold rose above ₹1.47 lakh",
+    "subtitle": "MCX December gold, ₹ per 10 grams, morning of 15 October",
+    "source": "Angel One commodity report, 15 Oct 2026 (December futures, morning)",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"14 Oct\", \"value\": 145848}, {\"period\": \"15 Oct\", \"value\": 147427}]"
+  }
+}

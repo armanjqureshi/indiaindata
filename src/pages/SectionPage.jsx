@@ -50,7 +50,7 @@ export default function SectionPage({ slug }) {
       {/* Section header */}
       <section className={`border-b border-ink/10 ${colors.bgLight}`}>
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
-          <p className={`text-xs font-semiboldst ${colors.text}`}>
+          <p className={`text-xs font-semibold ${colors.text}`}>
             Section · {all.length} articles
           </p>
           <h1 className="mt-2 font-display text-4xl font-semibold sm:text-5xl">{section.name}</h1>

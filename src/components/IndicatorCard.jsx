@@ -28,26 +28,27 @@ function MiniSparkline({ data, dataKey, hex }) {
   )
 }
 
-export default function IndicatorCard({ indicator }) {
+export default function IndicatorCard({ indicator, watched = false, onToggleWatch }) {
   const category = getIndicatorCategory(indicator.category)
   const colors = sectionColorMap[category?.color] || sectionColorMap.economy
   const dirColor = indicator.direction === 'up' ? 'text-up' : indicator.direction === 'down' ? 'text-down' : ''
 
   return (
+    <div className="relative">
     <Link
       to={`/indicators/${indicator.slug}`}
-      className={`group flex flex-col gap-3 rounded-sm border border-ink/10 bg-panel p-5 transition-all duration-200 hover:${colors.border}`}
+      className={`group flex h-full flex-col gap-3 rounded-sm border border-ink/10 bg-panel p-5 transition-all duration-200 hover:${colors.border}`}
     >
       <div className="flex items-start justify-between gap-2">
-        <h3 className="font-display text-base font-semibold leading-snug text-ink group-hover:text-brand-dark">
+        <h3 className="flex items-center gap-2 pr-7 font-display text-base font-semibold leading-snug text-ink group-hover:text-brand-dark">
+          <span aria-hidden="true" className={`h-2 w-2 shrink-0 ${colors.bg}`} />
           {indicator.name}
         </h3>
-        <span aria-hidden="true" className={`mt-1 h-2 w-2 shrink-0 ${colors.bg}`} />
       </div>
 
       <div className="flex items-end justify-between gap-3">
         <div>
-          <p className="num text-2xl font-semibold leading-none">{indicator.currentValue}</p>
+          <p className={`num font-semibold leading-tight ${indicator.currentValue.length > 9 ? 'text-lg' : 'text-2xl'}`}>{indicator.currentValue}</p>
           <p className={`num mt-1.5 inline-flex items-center gap-1 text-xs font-medium ${dirColor}`}>
             {indicator.direction === 'up' && <span aria-hidden="true">▲</span>}
             {indicator.direction === 'down' && <span aria-hidden="true">▼</span>}
@@ -67,5 +68,19 @@ export default function IndicatorCard({ indicator }) {
         {indicator.frequency}
       </p>
     </Link>
+    {onToggleWatch && (
+      <button
+        type="button"
+        onClick={() => onToggleWatch(indicator.slug)}
+        aria-pressed={watched}
+        aria-label={watched ? `Remove ${indicator.name} from watchlist` : `Add ${indicator.name} to watchlist`}
+        className={`absolute right-3 top-3 p-1 transition-colors ${watched ? 'text-brand' : 'text-ink/30 hover:text-ink'}`}
+      >
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill={watched ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinejoin="round">
+          <path d="m12 3 2.7 5.8 6.3.7-4.7 4.3 1.3 6.2L12 17l-5.6 3 1.3-6.2L3 9.5l6.3-.7z" />
+        </svg>
+      </button>
+    )}
+    </div>
   )
 }

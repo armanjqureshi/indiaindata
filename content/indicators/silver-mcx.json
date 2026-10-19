@@ -1,0 +1,32 @@
+{
+  "slug": "silver-mcx",
+  "name": "Silver (MCX)",
+  "category": "currency-commodities",
+  "unit": "₹/kg",
+  "currentValue": "₹2,09,499",
+  "previousValue": "₹2,08,338",
+  "change": "+0.56%",
+  "direction": "up",
+  "asOf": "2026-10-15",
+  "frequency": "Daily",
+  "description": "MCX silver futures price per kilogram. Silver tracks both jewellery demand and industrial use, so it is more volatile than gold.",
+  "source": "Angel One commodity report, 15 Oct 2026 (December futures, morning)",
+  "releaseSchedule": "Daily.",
+  "verified": true,
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "Silver edged higher",
+    "subtitle": "MCX December silver, ₹ per kg, morning of 15 October",
+    "source": "Angel One commodity report, 15 Oct 2026 (December futures, morning)",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"14 Oct\", \"value\": 208338}, {\"period\": \"15 Oct\", \"value\": 209499}]"
+  }
+}

@@ -162,6 +162,8 @@ collections:
           - { label: "Public Finance", value: "public-finance" }
           - { label: "Markets", value: "markets" }
           - { label: "Real-Time Proxies", value: "real-time" }
+          - { label: "Capital Flows", value: "flows" }
+          - { label: "Currencies & Commodities", value: "currency-commodities" }
       - { label: "Unit label", name: "unit", widget: "string", hint: "Short label shown near the value, e.g. \"%\", \"$bn\", \"index\"." }
       - { label: "Current value", name: "currentValue", widget: "string", hint: "Exactly as shown on the card, e.g. \"6.6%\" or \"₹1.94 lakh cr\"." }
       - { label: "Previous value", name: "previousValue", widget: "string" }

@@ -1,0 +1,32 @@
+{
+  "slug": "dollar-index",
+  "name": "US Dollar Index (DXY)",
+  "category": "currency-commodities",
+  "unit": "index",
+  "currentValue": "102.09",
+  "previousValue": "102.13",
+  "change": "-0.04%",
+  "direction": "down",
+  "asOf": "2026-10-09",
+  "frequency": "Daily",
+  "description": "A measure of the dollar against a basket of major currencies. A stronger dollar usually weakens the rupee and pulls foreign money out of emerging markets.",
+  "source": "Upstox market report, 9 Oct 2026",
+  "releaseSchedule": "Daily.",
+  "verified": true,
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "The dollar was little changed",
+    "subtitle": "DXY, last two sessions",
+    "source": "Upstox market report, 9 Oct 2026",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"8 Oct\", \"value\": 102.13}, {\"period\": \"9 Oct\", \"value\": 102.09}]"
+  }
+}

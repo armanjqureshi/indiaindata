@@ -2,7 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; color-scheme: dark; }
+html { scroll-behavior: smooth; }
+
+:root, :root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: 11 21 30; --panel: 17 34 48; --raise: 23 48 63; --ink: 230 237 241;
+  --brand: 255 154 61; --brand-dark: 255 184 114;
+  --news: 127 169 234; --business: 163 155 255; --market: 63 208 141;
+  --economy: 233 203 79; --society: 208 140 240; --blogs: 63 200 207;
+  --up: 63 208 141; --down: 255 107 91;
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+  --paper: 242 245 247; --panel: 255 255 255; --raise: 232 238 242; --ink: 18 30 41;
+  --brand: 196 90 0; --brand-dark: 150 64 0;
+  --news: 40 95 180; --business: 79 66 200; --market: 12 125 78;
+  --economy: 150 100 0; --society: 135 55 175; --blogs: 10 125 135;
+  --up: 12 125 78; --down: 196 45 35;
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -17,5 +34,5 @@ body {
 h1, h2, h3 { font-stretch: 88%; letter-spacing: -0.01em; }
 .num { font-family: 'JetBrains Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 
-:focus-visible { outline: 2px solid #FF9A3D; outline-offset: 2px; }
-::selection { background: #FF9A3D; color: #0B151E; }
+:focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
+::selection { background: rgb(var(--brand)); color: rgb(var(--paper)); }

@@ -24,7 +24,7 @@ export default function IposPage() {
     <>
       <section className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
-          <p className="text-xs font-semiboldst text-brand">IPOs</p>
+          <p className="text-xs font-semibold text-brand">IPOs</p>
           <h1 className="mt-2 font-display text-4xl font-semibold sm:text-5xl">
             India&rsquo;s IPO pipeline, tracked
           </h1>
