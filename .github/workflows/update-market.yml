@@ -34,12 +34,13 @@ jobs:
         run: node scripts/data/update-market.mjs
         env:
           BACKFILL_DAYS: ${{ inputs.backfill_days || '0' }}
-          DEBUG_DIR: ${{ inputs.debug && '/tmp/debug' || '' }}
+          DEBUG_DIR: ${{ (inputs.debug == true || inputs.debug == 'true') && 'live/debug' || '' }}
       - name: Commit if anything changed
         run: |
           git config user.name "india-in-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add live/market.json
+          [ -d live/debug ] && git add live/debug
           if git diff --cached --quiet; then echo "No new data."; exit 0; fi
           git add live/market-log.json
           git commit -m "Market data $(TZ=Asia/Kolkata date +%F' '%H:%M) IST [skip netlify]"
@@ -47,10 +48,3 @@ jobs:
       - name: Refresh CDN copy
         run: |
           for f in market.json market-log.json; do curl -fsS "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/live/$f" > /dev/null || true; done
-      - name: Publish debug output
-        if: ${{ inputs.debug }}
-        run: |
-          git push -q origin --delete probe-output 2>/dev/null || true
-          cp -r /tmp/debug /tmp/out && cp live/market-log.json /tmp/out/ || true
-          git checkout -q --orphan probe-output && git rm -rfq . && rm -rf out && cp -r /tmp/out out
-          git add out && git commit -qm "debug output" && git push -qf origin probe-output

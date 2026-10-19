@@ -353,8 +353,8 @@ function parseNsdl(html) {
 }
 
 // --- save ------------------------------------------------------------------------------
-store.updatedAt = new Date().toISOString()
-store.session = nseDate
+if (log.accepted.length) store.updatedAt = new Date().toISOString()
+if (nseDate) store.session = nseDate
 fs.mkdirSync(LIVE, { recursive: true })
 fs.writeFileSync(FILE, JSON.stringify(store, null, 1) + '\n')
 fs.writeFileSync(LOG, JSON.stringify(log, null, 1) + '\n')
