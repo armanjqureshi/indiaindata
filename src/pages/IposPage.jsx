@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
 import IpoTable from '../components/ipo/IpoTable.jsx'
-import { useIpos, useTodayIST, ipoStatus, fetchLive, fmt } from '../data/live.js'
+import { useIpos, useTodayIST, ipoStatus, fetchLive, fmt, istDateOf } from '../data/live.js'
 import { median, gainClass } from '../components/ipo/ipoUtil.js'
 
 const TABS = [
@@ -70,7 +70,7 @@ export default function IposPage() {
       'Every mainboard and SME IPO on NSE: live subscription by category, price bands, lot sizes, timetables, listing gains and returns since listing. Updated through the day from NSE data.',
   })
   const data = useIpos()
-  const today = useTodayIST(data.updatedAt ? data.updatedAt.slice(0, 10) : null)
+  const today = useTodayIST(istDateOf(data.updatedAt))
   const [tab, setTab] = useState('live')
   const [archive, setArchive] = useState([])
   const [board, setBoard] = useState('all')

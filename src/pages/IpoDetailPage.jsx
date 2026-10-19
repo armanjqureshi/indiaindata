@@ -4,7 +4,7 @@ import useSeo from '../components/Seo.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
 import NotFound from './NotFound.jsx'
 import { useEffect } from 'react'
-import { useLiveState, useLive, useTodayIST, ipoStatus, getDetailSnapshot, getRowSnapshot, fetchLive, fmt } from '../data/live.js'
+import { useLiveState, useLive, useTodayIST, ipoStatus, getDetailSnapshot, getRowSnapshot, fetchLive, fmt, istDateOf, getMeta } from '../data/live.js'
 import { getIpoEditorial, getArticlesForIpo } from '../data/content.js'
 import { BOARD_LABEL, STATUS_CLASS, STATUS_LABEL, priceLabel, gainClass, allotmentLinks } from '../components/ipo/ipoUtil.js'
 
@@ -106,7 +106,7 @@ export default function IpoDetailPage() {
   }, [done, fromIndex, slug])
   const row = fromIndex || archiveRow || null
   const detail = useLive(`live/ipo/${slug}.json`, getDetailSnapshot(slug) || null)
-  const today = useTodayIST(index.updatedAt ? index.updatedAt.slice(0, 10) : null)
+  const today = useTodayIST(istDateOf(index.updatedAt || getMeta().iposUpdatedAt))
   const ed = row ? getIpoEditorial(row.symbol, slug) : null
   const name = row?.name?.replace(/\s+Limited$/i, '') || ed?.companyName
   useSeo({

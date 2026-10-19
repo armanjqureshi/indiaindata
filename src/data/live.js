@@ -100,6 +100,9 @@ export const useIpos = () => useLive('live/ipos.json', getIposSnapshot())
 export function todayIST() {
   return new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10)
 }
+// India date of a timestamp (used so prerendered pages and the first client
+// render agree on the date)
+export const istDateOf = (iso) => (iso ? new Date(Date.parse(iso) + 5.5 * 3600e3).toISOString().slice(0, 10) : null)
 export function useTodayIST(initial) {
   const [d, setD] = useState(initial)
   useEffect(() => setD(todayIST()), [])
