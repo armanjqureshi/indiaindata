@@ -1,47 +1,69 @@
-const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
-async function get(url, headers = {}, n = 600) {
-  try {
-    const r = await fetch(url, { headers: { 'User-Agent': UA, Accept: '*/*', 'Accept-Language': 'en-US,en;q=0.9', ...headers }, redirect: 'follow' })
-    const t = await r.text()
-    return { status: r.status, len: t.length, head: t.slice(0, n).replace(/\s+/g, ' '), _set: r.headers.getSetCookie?.() || [] }
-  } catch (e) { return { status: 'ERR', err: String(e).slice(0, 200) } }
+import fs from 'node:fs'
+import { execSync } from 'node:child_process'
+import { createNseSession, fetchText, UA } from '../data/http.mjs'
+fs.mkdirSync('out', { recursive: true })
+const save = (n, d) => fs.writeFileSync('out/' + n, typeof d === 'string' ? d : JSON.stringify(d, null, 1))
+const log = []
+const nse = createNseSession()
+for (const [n, p] of [
+  ['past.json', '/api/public-past-issues'],
+  ['current.json', '/api/ipo-current-issue'],
+  ['upcoming-ipo.json', '/api/all-upcoming-issues?category=ipo'],
+  ['detail-tonbo.json', '/api/ipo-detail?symbol=TONBO&series=EQ'],
+  ['detail-zetwerk.json', '/api/ipo-detail?symbol=ZETWERK&series=EQ'],
+  ['active-tonbo.json', '/api/ipo-active-category?symbol=TONBO'],
+  ['fiidii.json', '/api/fiidiiTradeReact'],
+  ['refrates-cur.json', '/api/NextApi/apiClient?functionName=getReferenceRates&&type=null&&flag=CUR'],
+  ['refrates-int.json', '/api/NextApi/apiClient?functionName=getReferenceRates&&type=null&&flag=INT'],
+  ['refrates-com.json', '/api/NextApi/apiClient?functionName=getReferenceRates&&type=null&&flag=COM'],
+  ['symdata.json', '/api/NextApi/apiClient?functionName=getSymbolData&marketType=N&series=EQ&symbol=HDFIRE'],
+  ['eq-hist.json', '/api/historical/cm/equity?symbol=INFY&series=[%22EQ%22]&from=13-10-2026&to=19-10-2026'],
+  ['ipo-sme-past.json', '/api/public-past-issues?category=sme'],
+]) {
+  try { save(n, await nse.get(p)); log.push(n + ' ok') } catch (e) { log.push(n + ' FAIL ' + e.message) }
 }
-const out = {}
-// NSE session
-const jar = new Map()
-const take = (r) => (r._set || []).forEach((c) => { const [kv] = c.split(';'); const i = kv.indexOf('='); jar.set(kv.slice(0, i), kv.slice(i + 1)) })
-take(await get('https://www.nseindia.com/', { Accept: 'text/html' }))
-take(await get('https://www.nseindia.com/market-data/all-upcoming-issues-ipo', { Accept: 'text/html' }))
-const ck = () => [...jar].map(([k, v]) => `${k}=${v}`).join('; ')
-const nse = async (p, n = 1500) => { const r = await get('https://www.nseindia.com' + p, { Cookie: ck(), Referer: 'https://www.nseindia.com/market-data/all-upcoming-issues-ipo', Accept: 'application/json' }, n); take(r); delete r._set; return r }
-const ai = await nse('/api/allIndices', 200000)
-try { const j = JSON.parse(ai.head.length ? (await (await fetch('https://www.nseindia.com/api/allIndices', { headers: { 'User-Agent': UA, Cookie: ck(), Referer: 'https://www.nseindia.com/' } })).text()) : '{}'); out['nse vix'] = j.data?.find((d) => /VIX/i.test(d.index)); out['nse ts'] = j.timestamp; out['nse dates'] = { previousDay: j.dates?.previousDay, oneWeekAgo: j.dates?.oneWeekAgo } } catch (e) { out['nse vix'] = String(e) }
-out['nse ipo-detail TONBO'] = await nse('/api/ipo-detail?symbol=TONBO&series=EQ', 4000)
-out['nse active-category TONBO'] = await nse('/api/ipo-active-category?symbol=TONBO', 2500)
-out['nse past (sample SME)'] = await nse('/api/public-past-issues', 200)
-out['nse upcoming sme'] = await nse('/api/all-upcoming-issues?category=sme', 1200)
-out['nse current sme?'] = await nse('/api/ipo-current-issue?category=sme', 800)
-out['nse quote HDFIRE?'] = await nse('/api/quote-equity?symbol=TONBO', 600)
-out['nse idx hist'] = await nse('/api/historical/indicesHistory?indexType=NIFTY%2050&from=01-10-2026&to=19-10-2026', 800)
-out['nse ref rate'] = await nse('/api/NextApi/apiClient?functionName=getReferenceRates&&type=null&&flag=CUR', 800)
-out['nse cur'] = await nse('/api/currency-derivatives?index=USDINR', 400)
-// Sensex alternatives
-out['google sensex'] = await get('https://www.google.com/finance/quote/SENSEX:INDEXBOM', { Accept: 'text/html' }, 200)
-out['bse web'] = await get('https://www.bseindia.com/', { Accept: 'text/html' }, 200)
-out['bse api alt'] = await get('https://api.bseindia.com/RealTimeBseIndiaAPI/api/GetSensexData/w', { Referer: 'https://www.bseindia.com/', Origin: 'https://www.bseindia.com' }, 300)
-out['stooq brent'] = await get('https://stooq.com/q/l/?s=cb.f&f=sd2t2ohlc&h&e=csv', {}, 300)
-out['stooq sensex'] = await get('https://stooq.com/q/l/?s=^snx&f=sd2t2ohlc&h&e=csv', {}, 300)
-out['stooq usdinr'] = await get('https://stooq.com/q/l/?s=usdinr&f=sd2t2ohlc&h&e=csv', {}, 300)
-out['stooq dxy'] = await get('https://stooq.com/q/l/?s=dx.f&f=sd2t2ohlc&h&e=csv', {}, 300)
-out['moneycontrol sensex'] = await get('https://priceapi.moneycontrol.com/pricefeed/notapplicable/inidicesindia/in%3BSEN', {}, 500)
-out['moneycontrol 10y'] = await get('https://priceapi.moneycontrol.com/pricefeed/notapplicable/inidicesindia/in%3BGIND10Y', {}, 500)
-out['fbil api1'] = await get('https://www.fbil.org.in/wasdm/refrates/fetchfiltered?fromDate=2026-10-16&toDate=2026-10-19&authenticated=false', { Referer: 'https://www.fbil.org.in/' }, 600)
-out['fbil api2'] = await get('https://www.fbil.org.in/wasdm/refrates/fetch?authenticated=false', { Referer: 'https://www.fbil.org.in/' }, 600)
-out['ccil'] = await get('https://www.ccilindia.com/web/ccil/tenor-wise-yields', { Accept: 'text/html' }, 300)
-out['eia brent'] = await get('https://www.eia.gov/dnav/pet/hist/rbrteD.htm', { Accept: 'text/html' }, 200)
-// IBJA table snippet
-const ib = await (await fetch('https://ibjarates.com/', { headers: { 'User-Agent': UA } })).text()
-const m = ib.match(/Gold\s*999[\s\S]{0,1500}/i); out['ibja snippet'] = m ? m[0].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 700) : 'no match'
-const nsdl = await (await fetch('https://www.fpi.nsdl.co.in/web/Reports/Latest.aspx', { headers: { 'User-Agent': UA } })).text()
-out['nsdl snippet'] = nsdl.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 1500)
-for (const [k, v] of Object.entries(out)) console.log(k.padEnd(30), JSON.stringify(v))
+// Bhavcopies (official end-of-day files)
+for (const [n, u] of [
+  ['bhav-cm.zip', 'https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip'],
+  ['bhav-sme.csv', 'https://nsearchives.nseindia.com/archives/sme/bhavcopy/sme19102026.csv'],
+  ['ind-close.csv', 'https://nsearchives.nseindia.com/content/indices/ind_close_all_19102026.csv'],
+]) {
+  try {
+    const r = await fetch(u, { headers: { 'User-Agent': UA, Referer: 'https://www.nseindia.com/' } })
+    const b = Buffer.from(await r.arrayBuffer()); fs.writeFileSync('out/' + n, b); log.push(`${n} ${r.status} ${b.length}`)
+  } catch (e) { log.push(n + ' FAIL ' + e.message) }
+}
+try { execSync('cd out && unzip -o bhav-cm.zip && head -c 3000 BhavCopy*.csv > bhav-cm-head.csv && grep -E "HDFIRE|FUSIONCX|TONBO|ZETWERK" BhavCopy*.csv > bhav-cm-ipos.csv; rm -f BhavCopy*.csv bhav-cm.zip') } catch (e) { log.push('unzip ' + e.message) }
+// Sensex candidates
+try { save('mc-sensex.json', (await fetchText('https://priceapi.moneycontrol.com/pricefeed/notapplicable/inidicesindia/in%3BSEN')).text) } catch (e) { log.push('mc ' + e.message) }
+try {
+  const g = (await fetchText('https://www.google.com/finance/quote/SENSEX:INDEXBOM', { headers: { Accept: 'text/html' } })).text
+  const i = g.indexOf('data-last-price'); save('google-sensex.txt', g.slice(i - 200, i + 800))
+} catch (e) { log.push('google ' + e.message) }
+for (const [n, k] of [['mc-dxy.json', 'in%3BDXY'], ['mc-nifty.json', 'in%3BNSX']]) {
+  try { save(n, (await fetchText('https://priceapi.moneycontrol.com/pricefeed/notapplicable/inidicesindia/' + k)).text) } catch (e) { log.push(n + ' ' + e.message) }
+}
+for (const [n, u] of [
+  ['google-dxy.txt', 'https://www.google.com/finance/quote/.DXY:INDEXDXY'],
+  ['google-10y.txt', 'https://www.google.com/finance/quote/IN10Y:INDEXBOM'],
+]) { try { const g = (await fetchText(u, { headers: { Accept: 'text/html' } })).text; const i = g.indexOf('data-last-price'); save(n, i > 0 ? g.slice(i - 200, i + 600) : 'no price attr; len ' + g.length) } catch (e) { log.push(n + ' ' + e.message) } }
+// FBIL variants
+for (const [n, u] of [
+  ['fbil-fetch.json', 'https://www.fbil.org.in/wasdm/refrates/fetch?authenticated=false'],
+  ['fbil-gsec.json', 'https://www.fbil.org.in/wasdm/gsec/fetch?authenticated=false'],
+  ['fbil-par.json', 'https://www.fbil.org.in/wasdm/parYield/fetch?authenticated=false'],
+]) { try { save(n, (await fetchText(u, { headers: { Referer: 'https://www.fbil.org.in/' } })).text) } catch (e) { log.push(n + ' ' + e.message) } }
+// IBJA table and EIA
+try {
+  const ib = (await fetchText('https://ibjarates.com/')).text
+  save('ibja.txt', ib.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 6000))
+} catch (e) { log.push('ibja ' + e.message) }
+try { const e = (await fetchText('https://www.eia.gov/dnav/pet/hist/rbrteD.htm')).text; save('eia.txt', e.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(-2500)) } catch (e) { log.push('eia ' + e.message) }
+try { const e = (await fetchText('https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls')); log.push('eia xls ' + e.text.length) } catch (e) { log.push('eia xls ' + e.message) }
+// NSDL with priming
+try {
+  const h = await fetch('https://www.fpi.nsdl.co.in/web/Default.aspx', { headers: { 'User-Agent': UA } }); const c = (h.headers.getSetCookie?.() || []).map((x) => x.split(';')[0]).join('; '); await h.text()
+  const r = await fetch('https://www.fpi.nsdl.co.in/web/Reports/Monthly.aspx', { headers: { 'User-Agent': UA, Cookie: c, Referer: 'https://www.fpi.nsdl.co.in/web/Default.aspx' } })
+  save('nsdl.txt', (await r.text()).replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 4000))
+} catch (e) { log.push('nsdl ' + e.message) }
+save('log.txt', log.join('\n'))
