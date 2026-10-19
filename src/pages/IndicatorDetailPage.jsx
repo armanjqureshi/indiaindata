@@ -60,7 +60,7 @@ export default function IndicatorDetailPage() {
               </p>
             </div>
             <p className="pb-1 text-sm text-ink/60">
-              As of {asOfLabel}
+              As of {asOfLabel}{indicator.verified === false ? ' (sample data)' : ''}
               <span className="mx-1.5" aria-hidden="true">•</span>
               {indicator.frequency}
             </p>

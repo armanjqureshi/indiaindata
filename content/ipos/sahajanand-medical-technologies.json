@@ -1,0 +1,30 @@
+{
+  "source": "IPO calendars (Angel One, ipomarket.in, Business Today). Secondary sources: confirm against the RHP and exchange notices.",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "slug": "sahajanand-medical-technologies",
+  "companyName": "Sahajanand Medical Technologies",
+  "sector": "Medical devices",
+  "status": "closed",
+  "exchange": "NSE, BSE",
+  "openDate": "2026-10-15",
+  "closeDate": "2026-10-19",
+  "listingDate": "2026-10-23",
+  "priceBand": "₹327–344",
+  "issuePrice": null,
+  "listingPrice": null,
+  "currentPrice": null,
+  "listingGain": null,
+  "currentGain": null,
+  "direction": null,
+  "issueSize": "₹475.48 cr",
+  "lotSize": "Not yet confirmed",
+  "subscriptionTimes": null,
+  "description": "Sahajanand Medical Technologies closed its offer on 19 October 2026 and lists on 23 October.",
+  "highlights": [
+    "Price band ₹327–344"
+  ],
+  "chart": null
+}

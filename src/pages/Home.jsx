@@ -17,7 +17,7 @@ import {
   getSection,
   formatDate,
 } from '../data/content.js'
-const HERO_SLUGS = ['cpi-inflation','gdp-growth','repo-rate','unemployment-rate','bank-credit-growth','gst-collections']
+const HERO_SLUGS = ['cpi-inflation','gdp-growth','repo-rate','g-sec-10y-yield','inr-usd','forex-reserves']
 
 function BoardTile({ ind }) {
   const cat = getIndicatorCategory(ind.category)

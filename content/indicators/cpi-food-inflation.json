@@ -3,11 +3,11 @@
   "name": "CPI Food Inflation",
   "category": "prices",
   "unit": "%",
-  "currentValue": "6.6%",
-  "previousValue": "6.1%",
-  "change": "+0.5pp",
+  "currentValue": "7.74%",
+  "previousValue": "5.97%",
+  "change": "+1.77pp",
   "direction": "up",
-  "asOf": "2026-06-30",
+  "asOf": "2026-09-30",
   "frequency": "Monthly",
   "description": "The food and beverages sub-index of CPI, covering cereals, vegetables, pulses, milk and other staples. It is the most volatile part of headline inflation and the component most exposed to monsoon and harvest swings.",
   "source": "Ministry of Statistics and Programme Implementation (MoSPI)",
@@ -18,14 +18,15 @@
   ],
   "chart": {
     "type": "line",
-    "title": "Food inflation tracked the rain, with a lag",
-    "subtitle": "Consumer food price inflation, year-on-year % change, monthly",
-    "source": "MoSPI, CPI releases; illustrative series",
+    "title": "Food prices drove the September jump",
+    "subtitle": "Consumer food price index, year-on-year %, last two readings",
+    "source": "MoSPI (CFPI, base 2024), released 12 Oct 2026",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "%",
-    "data": "[{\"month\": \"Jul 25\", \"value\": 5.4}, {\"month\": \"Aug 25\", \"value\": 6.8}, {\"month\": \"Sep 25\", \"value\": 7.9}, {\"month\": \"Oct 25\", \"value\": 7.1}, {\"month\": \"Nov 25\", \"value\": 6.2}, {\"month\": \"Dec 25\", \"value\": 5.1}, {\"month\": \"Jan 26\", \"value\": 4.4}, {\"month\": \"Feb 26\", \"value\": 4.0}, {\"month\": \"Mar 26\", \"value\": 4.6}, {\"month\": \"Apr 26\", \"value\": 5.3}, {\"month\": \"May 26\", \"value\": 6.1}, {\"month\": \"Jun 26\", \"value\": 6.6}]"
-  }
+    "data": "[{\"month\": \"Aug 26\", \"value\": 5.97}, {\"month\": \"Sep 26\", \"value\": 7.74}]"
+  },
+  "verified": true
 }

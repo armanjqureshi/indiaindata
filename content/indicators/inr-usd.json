@@ -2,12 +2,12 @@
   "slug": "inr-usd",
   "name": "INR / USD Exchange Rate",
   "category": "external",
-  "unit": "\u20b9",
-  "currentValue": "89.86",
-  "previousValue": "89.42",
-  "change": "-0.11%",
+  "unit": "₹",
+  "currentValue": "96.72",
+  "previousValue": "96.88",
+  "change": "-0.16",
   "direction": "down",
-  "asOf": "2026-06-30",
+  "asOf": "2026-10-09",
   "frequency": "Daily (shown monthly)",
   "description": "The rupee's exchange rate against the US dollar, the reference point for import costs, foreign travel, and dollar-denominated debt. India's rupee has depreciated gradually over the past decade, with the RBI managing the pace rather than defending a fixed level.",
   "source": "Reserve Bank of India, reference rate",
@@ -18,14 +18,15 @@
   ],
   "chart": {
     "type": "line",
-    "title": "A managed, gradual descent",
-    "subtitle": "INR per USD, RBI reference rate, month-end",
-    "source": "RBI reference rates; illustrative series",
+    "title": "Rupee edged up from record lows",
+    "subtitle": "Rupees per US dollar, last two closes",
+    "source": "Interbank forex close (provisional), 9 Oct 2026 via Upstox",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"month\": \"Jul 25\", \"value\": 86.1}, {\"month\": \"Aug 25\", \"value\": 86.6}, {\"month\": \"Sep 25\", \"value\": 87.3}, {\"month\": \"Oct 25\", \"value\": 87.9}, {\"month\": \"Nov 25\", \"value\": 88.2}, {\"month\": \"Dec 25\", \"value\": 88.6}, {\"month\": \"Jan 26\", \"value\": 88.9}, {\"month\": \"Feb 26\", \"value\": 89.1}, {\"month\": \"Mar 26\", \"value\": 89.3}, {\"month\": \"Apr 26\", \"value\": 89.5}, {\"month\": \"May 26\", \"value\": 89.4}, {\"month\": \"Jun 26\", \"value\": 89.9}]"
-  }
+    "data": "[{\"month\": \"8 Oct\", \"value\": 96.88}, {\"month\": \"9 Oct\", \"value\": 96.72}]"
+  },
+  "verified": true
 }

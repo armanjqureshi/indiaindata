@@ -146,6 +146,7 @@ export const topics = TOPIC_META.map((t) => ({
 }))
 
 export const marketTickers = siteSettings.marketTickers || []
+export const tickerAsOf = siteSettings.tickerAsOf || ''
 export const siteStats = siteSettings.siteStats || []
 
 // ---------------------------------------------------------------------------

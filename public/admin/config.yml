@@ -168,6 +168,7 @@ collections:
       - { label: "Change label", name: "change", widget: "string", hint: "e.g. \"+0.5pp\", \"-25bps\", \"+3.7%\"." }
       - { label: "Direction", name: "direction", widget: "select", options: ["up", "down"] }
       - { label: "As of (date this reading covers)", name: "asOf", widget: "date", format: "YYYY-MM-DD" }
+      - { label: "Verified against source", name: "verified", widget: "boolean", default: false, hint: "Turn on once you have checked this reading against the source. Off shows a Sample data tag." }
       - { label: "Update frequency", name: "frequency", widget: "string", hint: "e.g. \"Monthly\", \"Quarterly\", \"As announced\"." }
       - { label: "What this measures", name: "description", widget: "text" }
       - { label: "Source", name: "source", widget: "string" }

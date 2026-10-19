@@ -3,11 +3,11 @@
   "name": "RBI Repo Rate",
   "category": "monetary",
   "unit": "%",
-  "currentValue": "6.25%",
-  "previousValue": "6.50%",
-  "change": "-25bps",
-  "direction": "down",
-  "asOf": "2026-06-06",
+  "currentValue": "5.50%",
+  "previousValue": "5.25%",
+  "change": "+25bps",
+  "direction": "up",
+  "asOf": "2026-10-07",
   "frequency": "As announced",
   "description": "The repo rate is the interest rate at which the RBI lends short-term funds to commercial banks. It is the central bank's main lever for steering inflation and growth, and every other lending rate in the economy takes its cue from it.",
   "source": "Reserve Bank of India, Monetary Policy Committee",
@@ -18,14 +18,15 @@
   ],
   "chart": {
     "type": "line",
-    "title": "The rate-cutting cycle has begun",
-    "subtitle": "RBI repo rate, %, at each policy review",
-    "source": "RBI Monetary Policy Committee; illustrative series",
+    "title": "RBI raised the repo rate and turned to tightening",
+    "subtitle": "Policy repo rate, %, before and after the October 2026 decision",
+    "source": "Reserve Bank of India, MPC decision of 7 Oct 2026",
     "xKey": "period",
     "dataKeys": [
       "value"
     ],
     "unit": "%",
-    "data": "[{\"period\": \"Aug 25\", \"value\": 6.5}, {\"period\": \"Oct 25\", \"value\": 6.5}, {\"period\": \"Dec 25\", \"value\": 6.5}, {\"period\": \"Feb 26\", \"value\": 6.5}, {\"period\": \"Apr 26\", \"value\": 6.5}, {\"period\": \"Jun 26\", \"value\": 6.25}]"
-  }
+    "data": "[{\"period\": \"Before Oct 26\", \"value\": 5.25}, {\"period\": \"7 Oct 26\", \"value\": 5.5}]"
+  },
+  "verified": true
 }

@@ -1,4 +1,4 @@
-import { marketTickers } from '../data/content.js'
+import { marketTickers, tickerAsOf } from '../data/content.js'
 
 // Static strip of headline market numbers. Edit values in Settings > Site in the CMS.
 export default function TickerTape() {
@@ -6,6 +6,7 @@ export default function TickerTape() {
   return (
     <div className="border-b border-ink/10 bg-panel" role="region" aria-label="Market snapshot">
       <ul className="mx-auto flex max-w-site gap-6 overflow-x-auto px-4 py-1.5 text-xs sm:px-6 [scrollbar-width:none]">
+        {tickerAsOf && <li className="shrink-0 whitespace-nowrap text-ink/40">{tickerAsOf}</li>}
         {marketTickers.map((t) => (
           <li key={t.label} className="num flex shrink-0 items-baseline gap-2 whitespace-nowrap">
             <span className="font-sans text-ink/60">{t.label}</span>

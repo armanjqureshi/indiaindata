@@ -15,41 +15,48 @@
   "marketTickers": [
     {
       "label": "Nifty 50",
-      "value": "26,412.30",
-      "change": "+0.62%",
+      "value": "22,997.35",
+      "change": "+1.66%",
       "direction": "up"
     },
     {
       "label": "Sensex",
-      "value": "86,948.11",
-      "change": "+0.54%",
+      "value": "74,315.61",
+      "change": "+2.11%",
       "direction": "up"
     },
     {
       "label": "INR / USD",
-      "value": "89.86",
-      "change": "-0.11%",
+      "value": "96.72",
+      "change": "-0.16",
       "direction": "down"
     },
     {
       "label": "10Y G-Sec",
-      "value": "6.28%",
-      "change": "-3 bps",
+      "value": "7.38%",
+      "change": "-2 bps",
       "direction": "down"
+    },
+    {
+      "label": "Repo rate",
+      "value": "5.50%",
+      "change": "+25 bps",
+      "direction": "up"
     }
   ],
   "siteStats": [
     {
-      "value": "120",
+      "value": "15",
       "label": "data stories published"
     },
     {
-      "value": "28",
-      "label": "datasets tracked"
+      "value": "25",
+      "label": "indicators tracked"
     },
     {
       "value": "8",
-      "label": "sections and topics covered"
+      "label": "IPOs tracked"
     }
-  ]
+  ],
+  "tickerAsOf": "Closing levels, mid-Oct 2026"
 }

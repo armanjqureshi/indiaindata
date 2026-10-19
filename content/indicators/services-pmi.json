@@ -26,5 +26,6 @@
     ],
     "unit": "",
     "data": "[{\"month\": \"Jul 25\", \"value\": 58.9}, {\"month\": \"Aug 25\", \"value\": 59.4}, {\"month\": \"Sep 25\", \"value\": 59.1}, {\"month\": \"Oct 25\", \"value\": 59.8}, {\"month\": \"Nov 25\", \"value\": 60.2}, {\"month\": \"Dec 25\", \"value\": 60.6}, {\"month\": \"Jan 26\", \"value\": 59.9}, {\"month\": \"Feb 26\", \"value\": 60.3}, {\"month\": \"Mar 26\", \"value\": 60.7}, {\"month\": \"Apr 26\", \"value\": 60.9}, {\"month\": \"May 26\", \"value\": 60.5}, {\"month\": \"Jun 26\", \"value\": 61.3}]"
-  }
+  },
+  "verified": false
 }

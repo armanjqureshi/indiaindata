@@ -1,0 +1,30 @@
+{
+  "source": "IPO calendars (Angel One, ipomarket.in, Business Today). Secondary sources: confirm against the RHP and exchange notices.",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "slug": "bonfiglioli-transmissions",
+  "companyName": "Bonfiglioli Transmissions",
+  "sector": "Industrial equipment",
+  "status": "closed",
+  "exchange": "NSE, BSE",
+  "openDate": "2026-10-15",
+  "closeDate": "2026-10-19",
+  "listingDate": "2026-10-23",
+  "priceBand": "₹558–586",
+  "issuePrice": null,
+  "listingPrice": null,
+  "currentPrice": null,
+  "listingGain": null,
+  "currentGain": null,
+  "direction": null,
+  "issueSize": "₹2,533.66 cr",
+  "lotSize": "Not yet confirmed",
+  "subscriptionTimes": null,
+  "description": "Bonfiglioli Transmissions closed its offer on 19 October 2026 and lists on 23 October.",
+  "highlights": [
+    "Price band ₹558–586"
+  ],
+  "chart": null
+}

@@ -2,9 +2,9 @@
   "slug": "gst-collections",
   "name": "GST Collections",
   "category": "public-finance",
-  "unit": "\u20b9 lakh cr",
-  "currentValue": "\u20b91.94 lakh cr",
-  "previousValue": "\u20b91.87 lakh cr",
+  "unit": "₹ lakh cr",
+  "currentValue": "₹1.94 lakh cr",
+  "previousValue": "₹1.87 lakh cr",
   "change": "+3.7%",
   "direction": "up",
   "asOf": "2026-06-30",
@@ -19,7 +19,7 @@
   "chart": {
     "type": "bar",
     "title": "GST collections keep setting new highs",
-    "subtitle": "Gross GST collections, \u20b9 lakh crore, monthly",
+    "subtitle": "Gross GST collections, ₹ lakh crore, monthly",
     "source": "GST Network; illustrative series",
     "xKey": "month",
     "dataKeys": [
@@ -27,5 +27,6 @@
     ],
     "unit": " lakh cr",
     "data": "[{\"month\": \"Jul 25\", \"value\": 1.75}, {\"month\": \"Aug 25\", \"value\": 1.78}, {\"month\": \"Sep 25\", \"value\": 1.81}, {\"month\": \"Oct 25\", \"value\": 1.73}, {\"month\": \"Nov 25\", \"value\": 1.68}, {\"month\": \"Dec 25\", \"value\": 1.77}, {\"month\": \"Jan 26\", \"value\": 1.84}, {\"month\": \"Feb 26\", \"value\": 1.79}, {\"month\": \"Mar 26\", \"value\": 1.86}, {\"month\": \"Apr 26\", \"value\": 1.9}, {\"month\": \"May 26\", \"value\": 1.87}, {\"month\": \"Jun 26\", \"value\": 1.94}]"
-  }
+  },
+  "verified": false
 }

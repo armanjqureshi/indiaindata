@@ -9,7 +9,7 @@
   "direction": "down",
   "asOf": "2026-06-30",
   "frequency": "Monthly",
-  "description": "The merchandise trade balance is the gap between what India exports and imports in goods each month. India runs a structural goods deficit, financed partly by a services surplus and remittances, so the size of the gap \u2014 not just its existence \u2014 is what matters.",
+  "description": "The merchandise trade balance is the gap between what India exports and imports in goods each month. India runs a structural goods deficit, financed partly by a services surplus and remittances, so the size of the gap — not just its existence — is what matters.",
   "source": "Ministry of Commerce and Industry",
   "releaseSchedule": "Released monthly, in the second week of the following month.",
   "topics": [
@@ -27,5 +27,6 @@
     ],
     "unit": "bn",
     "data": "[{\"month\": \"Jul 25\", \"value\": -19.2}, {\"month\": \"Aug 25\", \"value\": -20.1}, {\"month\": \"Sep 25\", \"value\": -23.5}, {\"month\": \"Oct 25\", \"value\": -21.8}, {\"month\": \"Nov 25\", \"value\": -18.9}, {\"month\": \"Dec 25\", \"value\": -17.6}, {\"month\": \"Jan 26\", \"value\": -18.4}, {\"month\": \"Feb 26\", \"value\": -19.1}, {\"month\": \"Mar 26\", \"value\": -20.3}, {\"month\": \"Apr 26\", \"value\": -19.5}, {\"month\": \"May 26\", \"value\": -19.8}, {\"month\": \"Jun 26\", \"value\": -21.4}]"
-  }
+  },
+  "verified": false
 }

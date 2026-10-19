@@ -27,5 +27,6 @@
     ],
     "unit": "%",
     "data": "[{\"quarter\": \"Q1 24\", \"value\": 6.7}, {\"quarter\": \"Q2 24\", \"value\": 6.6}, {\"quarter\": \"Q3 24\", \"value\": 6.5}, {\"quarter\": \"Q4 24\", \"value\": 6.4}, {\"quarter\": \"Q1 25\", \"value\": 6.7}, {\"quarter\": \"Q2 25\", \"value\": 6.4}, {\"quarter\": \"Q3 25\", \"value\": 6.2}, {\"quarter\": \"Q4 25\", \"value\": 6.1}, {\"quarter\": \"Q1 26\", \"value\": 5.9}]"
-  }
+  },
+  "verified": false
 }
