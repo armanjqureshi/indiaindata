@@ -1,6 +1,7 @@
 {
  "subscription": {
-  "total": null,
+  "total": 131.7,
+  "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
@@ -61,9 +62,9 @@
  "issueSizeText": "Initial Public offer comprising of Offer for sale up to 26,284,500 Equity Shares (Including Eligible Employee Reservation up to Rs. 17.50 million and Anchor portion 78,64,008 Equity Shares)",
  "issueSize": {
   "freshCr": 0,
-  "ofsCr": 1.75,
-  "totalCr": 1.75,
-  "method": "At ₹271 per share, from the issue size NSE publishes"
+  "ofsCr": 712.31,
+  "totalCr": 712.31,
+  "method": "Calculated at ₹271 per share from the issue size NSE publishes"
  },
  "employeeDiscount": "Rs. 25/- per equity share is being offered to Eligible Employees Bidding in the Employee Reservation Portion",
  "retailMax": "Rs. 2,00,000",
@@ -80,7 +81,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_HDFIRE.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HDFIRE.zip"
  },
- "fetchedAt": "2026-10-19T22:07:40.797Z",
+ "fetchedAt": "2026-10-19T22:17:19.204Z",
  "slug": "hd-fire-protect",
  "symbol": "HDFIRE",
  "board": "mainboard",

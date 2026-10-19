@@ -1,0 +1,81 @@
+{
+ "subscription": {
+  "total": 38.94,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 7310345,
+    "bid": 674366280,
+    "times": 92.25
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 5482759,
+    "bid": 237639710,
+    "times": 43.34
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3655173,
+    "bid": 174490890,
+    "times": 47.74
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1827586,
+    "bid": 63148820,
+    "times": 34.55
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 12793103,
+    "bid": 84318710,
+    "times": 6.59
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 25586207,
+    "bid": 996324700,
+    "times": 38.94
+   }
+  ],
+  "asOf": "13-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 70,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating up to Rs. 5,420 million and Offer for Sale aggregating up to Rs. 2,000 million. (Including Anchor investor portion of 1,04,01,867 Equity Shares)",
+ "issueSize": {
+  "freshCr": 542,
+  "ofsCr": 200,
+  "totalCr": 742,
+  "method": "Calculated at ₹214 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "IIFL Capital Services Limited",
+  "ICICI Securities Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan,+91 810 811 4949, laserpower.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_LASERPOWER.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_LASERPOWER.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_LASERPOWER.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:11.367Z",
+ "slug": "laser-power-and-infra",
+ "symbol": "LASERPOWER",
+ "board": "mainboard",
+ "name": "Laser Power & Infra Limited"
+}

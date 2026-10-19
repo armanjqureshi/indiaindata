@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 38.69,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2376690,
+    "bid": 100439010,
+    "times": 42.26
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1782150,
+    "bid": 115944080,
+    "times": 65.06
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1188100,
+    "bid": 76000680,
+    "times": 63.97
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 594050,
+    "bid": 39943400,
+    "times": 67.24
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4158350,
+    "bid": 105398790,
+    "times": 25.35
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 8317190,
+    "bid": 321781880,
+    "times": 38.69
+   }
+  ],
+  "asOf": "11-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 70,
+ "faceValue": 0.1,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial public offering comprising of Fresh Issue of up to 9,505,000 equity shares and Offer for Sale of up to 2,376,000 equity shares (including Anchor Investor portion of 35,63,810 equity shares)",
+ "issueSize": {
+  "freshCr": 201.51,
+  "ofsCr": 50.37,
+  "totalCr": 251.88,
+  "method": "Calculated at ₹212 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Khambatta Securities Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Babu Rapheal, +91 22 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_TECHNOCRAF.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_TECHNOCRAF.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_TECHNOCRAF.zip"
+ },
+ "fetchedAt": "2026-10-19T22:17:52.113Z",
+ "slug": "technocraft-ventures",
+ "symbol": "TECHNOCRAF",
+ "board": "mainboard",
+ "name": "Technocraft Ventures Limited"
+}

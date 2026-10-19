@@ -1,0 +1,88 @@
+{
+ "subscription": {
+  "total": 7.25,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 7719423,
+    "bid": 70357350,
+    "times": 9.11
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3859711,
+    "bid": 26338200,
+    "times": 6.82
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2573141,
+    "bid": 18910465,
+    "times": 7.35
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1286570,
+    "bid": 7427735,
+    "times": 5.77
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 2573140,
+    "bid": 7115325,
+    "times": 2.77
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 200000,
+    "bid": 277305,
+    "times": 1.39
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 14352274,
+    "bid": 104088180,
+    "times": 7.25
+   }
+  ],
+  "asOf": "27-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 35,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Offer for Sale of up to 25,931,407 Equity Shares. (Including eligible employees reservation portion of up to 2,00,000 Equity Shares and Anchor Investor portion of 1,15,79,133 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 1102.08,
+  "totalCr": 1102.08,
+  "method": "Calculated at ₹425 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 40 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Equirus Capital Limited",
+  "Motilal Oswal Investment Advisors Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 81 0811 4949, lohiacorp.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_LCL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_LCL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_LCL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:40.987Z",
+ "slug": "lohia-corp",
+ "symbol": "LCL",
+ "board": "mainboard",
+ "name": "Lohia Corp Limited"
+}

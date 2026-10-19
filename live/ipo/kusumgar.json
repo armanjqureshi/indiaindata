@@ -1,0 +1,89 @@
+{
+ "subscription": {
+  "total": 128.85,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 3248743,
+    "bid": 922968200,
+    "times": 284.1
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2436558,
+    "bid": 403147255,
+    "times": 165.46
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1624372,
+    "bid": 292078395,
+    "times": 179.81
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 812186,
+    "bid": 111068860,
+    "times": 136.75
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5685302,
+    "bid": 150480400,
+    "times": 26.47
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 97491,
+    "bid": 1021580,
+    "times": 10.48
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 11468094,
+    "bid": 1477617435,
+    "times": 128.85
+   }
+  ],
+  "asOf": "10-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 35,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer of Offer for Sale aggregating upto Rs. 6500 million (including Employee Reservation Portion aggregating up to Rs. 35 million and Anchor investor portion of 46,28,877 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 650,
+  "totalCr": 650,
+  "method": "Calculated at ₹419 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 39 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Axis Capital Limited",
+  "IIFL Capital Services Limited",
+  "Motilal Oswal Investment Advisors Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Babu Rapheal C, +91 22 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_KUSUMGAR.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_KUSUMGAR.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_KUSUMGAR.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:22.150Z",
+ "slug": "kusumgar",
+ "symbol": "KUSUMGAR",
+ "board": "mainboard",
+ "name": "Kusumgar Limited"
+}

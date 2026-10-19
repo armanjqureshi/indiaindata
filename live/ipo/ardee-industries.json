@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 133.66,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 16435297,
+    "bid": 3250436028,
+    "times": 197.77
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 12596166,
+    "bid": 3215058971,
+    "times": 255.24
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 8397444,
+    "bid": 2329123014,
+    "times": 277.36
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 4198722,
+    "bid": 885935957,
+    "times": 211
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 29391053,
+    "bid": 1343324434,
+    "times": 45.71
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 58422516,
+    "bid": 7808819433,
+    "times": 133.66
+   }
+  ],
+  "asOf": "07-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 281,
+ "faceValue": 0.2,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offer comprising Fresh issue of aggregating up to Rs. 3200 million and offer for sale of up to 1,99,75,000 Equity shares (including Anchor Investor portion of 2,41,05,584 Equity Shares)",
+ "issueSize": {
+  "freshCr": 320,
+  "ofsCr": 105.87,
+  "totalCr": 425.87,
+  "method": "Calculated at ₹53 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Pantomath Capital Advisors Private Limited"
+ ],
+ "registrar": "Kfin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222/1800 309 4001, ardeeindustries.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ARDEE.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ARDEE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ARDEE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:01.815Z",
+ "slug": "ardee-industries",
+ "symbol": "ARDEE",
+ "board": "mainboard",
+ "name": "Ardee Industries Limited"
+}

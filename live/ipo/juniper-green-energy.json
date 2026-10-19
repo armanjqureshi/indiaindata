@@ -1,0 +1,91 @@
+{
+ "subscription": {
+  "total": 7.97,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 16803737,
+    "bid": 419036376,
+    "times": 24.94
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 12602804,
+    "bid": 22969386,
+    "times": 1.82
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 8401870,
+    "bid": 16576230,
+    "times": 1.97
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 4200934,
+    "bid": 6393156,
+    "times": 1.52
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 29406542,
+    "bid": 27223812,
+    "times": 0.93
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 103626,
+    "bid": 371184,
+    "times": 3.58
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 58916709,
+    "bid": 469600758,
+    "times": 7.97
+   }
+  ],
+  "asOf": "03-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 66,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer of Fresh Issue aggregating upto Rs. 18,000 million (including Employee Reservation Portion aggregating up to Rs. 20 million and Anchor Investor Portion of 2,39,73,333 Equity Shares)",
+ "issueSize": {
+  "freshCr": 1800,
+  "ofsCr": 0,
+  "totalCr": 1800,
+  "method": "Calculated at ₹225 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 21 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "ICICI Securities Limited",
+  "HSBC Securities",
+  "Capital Markets (India) Private Limited",
+  "JM Financial Limited",
+  "Kotak Mahindra Capital Company Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, junipergreen.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_JNPR.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_JNPR.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_JNPR.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:18.267Z",
+ "slug": "juniper-green-energy",
+ "symbol": "JNPR",
+ "board": "mainboard",
+ "name": "Juniper Green Energy Limited"
+}

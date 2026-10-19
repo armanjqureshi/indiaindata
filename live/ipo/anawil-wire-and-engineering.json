@@ -1,0 +1,37 @@
+{
+ "subscription": {
+  "total": 138.72,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "05-Aug-2026 17:42:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 400,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 52,84,800 equity shares and Offer for Sale of up to 13,00,800 Equity Shares (Including Market Maker portion of 3,31,200 Equity Shares and Anchor Allocation of 18,75,600 Equity Shares)",
+ "issueSize": {
+  "freshCr": 142.69,
+  "ofsCr": 35.12,
+  "totalCr": 177.81,
+  "method": "Calculated at ₹270 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Hem Securities Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Babu Rapheal C., +91 022-6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ANAWIL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ANAWIL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ANAWIL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:07.365Z",
+ "slug": "anawil-wire-and-engineering",
+ "symbol": "ANAWIL",
+ "board": "sme",
+ "name": "Anawil Wire and Engineering Limited"
+}

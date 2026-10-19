@@ -1,0 +1,38 @@
+{
+ "subscription": {
+  "total": 1.91,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "11-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 800,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial public offer of Fresh issue up to 50,00,000 equity shares and Offer for sale up to 12,00,000 equity shares (Including Market Maker Reservation Portion of 6,20,000 Equity Shares and Anchor Allocation 16,70,400 Equity Shares)",
+ "issueSize": {
+  "freshCr": 87.5,
+  "ofsCr": 21,
+  "totalCr": 108.5,
+  "method": "Calculated at ₹175 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "LSI Financial Services Private Limited",
+  "Nexgen Financial Solutions Private Limited"
+ ],
+ "registrar": "Maashitla Securities Private Limited",
+ "registrarContact": "Mr. Mukul Agrawal, 011-47581432, investor.ipo@maashitla.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_OPTIMYSTIX.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_OPTIMYSTIX.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_OPTIMYSTIX.zip"
+ },
+ "fetchedAt": "2026-10-19T22:17:56.912Z",
+ "slug": "optimystix-entertainment-india",
+ "symbol": "OPTIMYSTIX",
+ "board": "sme",
+ "name": "Optimystix Entertainment India Limited"
+}

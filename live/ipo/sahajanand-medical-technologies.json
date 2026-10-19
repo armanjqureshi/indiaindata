@@ -1,0 +1,91 @@
+{
+ "subscription": {
+  "total": 14.2,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2714423,
+    "bid": 94179804,
+    "times": 34.7
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2035818,
+    "bid": 29808460,
+    "times": 14.64
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1357212,
+    "bid": 22212725,
+    "times": 16.37
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 678606,
+    "bid": 7595735,
+    "times": 11.19
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4750241,
+    "bid": 14391713,
+    "times": 3.03
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 250000,
+    "bid": 92794,
+    "times": 0.37
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 9750482,
+    "bid": 138472771,
+    "times": 14.2
+   }
+  ],
+  "asOf": "19-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 43,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Offer for sale upto 13,822,116 Equity Shares (Including Eligible Employees Reservation Portion of up to 2,50,000 Equity Shares and Anchor Allocation of 40,71,634 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 475.48,
+  "totalCr": 475.48,
+  "method": "Calculated at ₹344 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Motilal Oswal Investment Advisors Limited",
+  "Avendus Capital Private Limited",
+  "HSBC Securities",
+  "Capital Markets (India) Private Limited",
+  "Nuvama Wealth Management Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949 , Tel: +91 810 811 4949, sahajanandmedical.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SMT.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SMT.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SMT.zip"
+ },
+ "fetchedAt": "2026-10-19T22:17:00.245Z",
+ "slug": "sahajanand-medical-technologies",
+ "symbol": "SMT",
+ "board": "mainboard",
+ "name": "Sahajanand Medical Technologies Limited"
+}

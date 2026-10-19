@@ -1,0 +1,90 @@
+{
+ "subscription": {
+  "total": 8.38,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 32831138,
+    "bid": 552845866,
+    "times": 16.84
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 24623345,
+    "bid": 311183804,
+    "times": 12.64
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 16415564,
+    "bid": 225971018,
+    "times": 13.77
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 8207781,
+    "bid": 85212786,
+    "times": 10.38
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 57454471,
+    "bid": 98321744,
+    "times": 1.71
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 82781,
+    "bid": 909356,
+    "times": 10.99
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 114991735,
+    "bid": 963260770,
+    "times": 8.38
+   }
+  ],
+  "asOf": "11-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 94,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 4,800 million and Offer for Sale aggregating upto Rs. 20,000 million (including Employee Reservation Portion aggregating up to Rs. 12.50 million and Anchor Investor Portion of 46,768,854 Equity Shares)",
+ "issueSize": {
+  "freshCr": 480,
+  "ofsCr": 2000,
+  "totalCr": 2480,
+  "method": "Calculated at ₹159 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "JM Financial Limited",
+  "Avendus Capital Private Limited",
+  "IIFL Capital Services Limited",
+  "UBS Securities India Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalakrishnan, +91 810 811 4949, leapindia.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_LEAP.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_LEAP.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_LEAP.zip"
+ },
+ "fetchedAt": "2026-10-19T22:17:46.675Z",
+ "slug": "leap-india",
+ "symbol": "LEAP",
+ "board": "mainboard",
+ "name": "Leap India Limited"
+}

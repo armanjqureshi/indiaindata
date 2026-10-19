@@ -1,0 +1,37 @@
+{
+ "subscription": {
+  "total": 7.95,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "23-Jul-2026 18:54:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1600,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial public offer of Fresh issue up to 64,88,000 equity shares (Including Market Maker Reservation Portion of 3,28,000 Equity Shares and Anchor Allocation 18,40,000 Equity Shares)",
+ "issueSize": {
+  "freshCr": 49.96,
+  "ofsCr": 0,
+  "totalCr": 49.96,
+  "method": "Calculated at ₹77 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Smart Horizon Capital Advisors Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Mr. Aniket Seebag, 022 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_METALIC.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_METALIC.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_METALIC.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:50.337Z",
+ "slug": "metalic-technoforge",
+ "symbol": "METALIC",
+ "board": "sme",
+ "name": "Metalic Technoforge Limited"
+}

@@ -1,0 +1,37 @@
+{
+ "subscription": {
+  "total": 390.83,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "07-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial Public Offer of fresh Issue up to 48,39,600 Equity Shares (including Market Maker portion of 2,42,400 Equity Shares and Anchor Allocation 13,68,000 Equity Shares)",
+ "issueSize": {
+  "freshCr": 47.91,
+  "ofsCr": 0,
+  "totalCr": 47.91,
+  "method": "Calculated at ₹99 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Nexgen Financial Solutions Private Limited"
+ ],
+ "registrar": "Skyline Financial Services Private Limited",
+ "registrarContact": "Mr. Anuj Rana ,011-40450193-197, ipo@skylinerta.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ICELCO.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ICELCO.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ICELCO.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:27.933Z",
+ "slug": "ic-electricals-company",
+ "symbol": "ICELCO",
+ "board": "sme",
+ "name": "IC Electricals Company Limited"
+}

@@ -1,0 +1,88 @@
+{
+ "subscription": {
+  "total": 135.9,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2432009,
+    "bid": 713933115,
+    "times": 293.56
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1824007,
+    "bid": 311801574,
+    "times": 170.94
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1216005,
+    "bid": 224627487,
+    "times": 184.73
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 608002,
+    "bid": 87174087,
+    "times": 143.38
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4256017,
+    "bid": 132223938,
+    "times": 31.07
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 14000,
+    "bid": 760620,
+    "times": 54.33
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 8526033,
+    "bid": 1158719247,
+    "times": 135.9
+   }
+  ],
+  "asOf": "19-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 21,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Offer for Sale of up to 12,174,046 Equity Shares (including Employee Reservation Portion of up to 14,000 Equity Shares and Anchor reservation portion of 36,48,013 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 852.18,
+  "totalCr": 852.18,
+  "method": "Calculated at ₹700 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 65 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "JM Financial Limited",
+  "IIFL Capital Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "Williams R, +91 40 6716 2222, tonbo.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_TONBO.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_TONBO.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_TONBO.zip"
+ },
+ "fetchedAt": "2026-10-19T22:16:50.880Z",
+ "slug": "tonbo-imaging-india",
+ "symbol": "TONBO",
+ "board": "mainboard",
+ "name": "Tonbo Imaging India Limited"
+}

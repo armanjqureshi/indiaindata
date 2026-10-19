@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 4.64,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2720000,
+    "bid": 8982380,
+    "times": 3.3
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 5440000,
+    "bid": 41454490,
+    "times": 7.62
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3626667,
+    "bid": 30354830,
+    "times": 8.37
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1813333,
+    "bid": 11099660,
+    "times": 6.12
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5440000,
+    "bid": 12690370,
+    "times": 2.33
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 13600000,
+    "bid": 63127240,
+    "times": 4.64
+   }
+  ],
+  "asOf": "01-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 110,
+ "faceValue": 0.1,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offer of Fresh issue of aggregating up to Rs. 17,000 lakhs",
+ "issueSize": {
+  "freshCr": 170,
+  "ofsCr": 0,
+  "totalCr": 170,
+  "method": "Calculated at ₹136 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "BOI Merchant Bankers Limited",
+  "PNB Investment Services Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Vinayak Morbale, +91 22-6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_AASTHA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_AASTHA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:49.468Z",
+ "slug": "aastha-spintex",
+ "symbol": "AASTHA",
+ "board": "mainboard",
+ "name": "Aastha Spintex Limited"
+}

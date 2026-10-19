@@ -1,0 +1,90 @@
+{
+ "subscription": {
+  "total": 83.33,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 5336957,
+    "bid": 823707192,
+    "times": 154.34
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 4046739,
+    "bid": 565792040,
+    "times": 139.81
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2697826,
+    "bid": 421622960,
+    "times": 156.28
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1348913,
+    "bid": 144169080,
+    "times": 106.88
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 9442391,
+    "bid": 189500872,
+    "times": 20.07
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 137931,
+    "bid": 1277936,
+    "times": 9.27
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 18964018,
+    "bid": 1580278040,
+    "times": 83.33
+   }
+  ],
+  "asOf": "03-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 88,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh issue aggregating up to Rs. 3,800 million and Offer for Sale of up to 35,00,000 Equity Shares (including Employee Reservation Portion aggregating up to Rs. 20 million and Anchor portion of 77,20,587 Equity Shares)",
+ "issueSize": {
+  "freshCr": 380,
+  "ofsCr": 59.5,
+  "totalCr": 439.5,
+  "method": "Calculated at ₹170 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 16 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Systematix Corporate Services Limited",
+  "IDBI Capital Markets",
+  "Securities Limited",
+  "Pantomath Capital Advisors Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 8108114949, knackpackaging.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_KNACK.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_KNACK.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_KNACK.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:33.462Z",
+ "slug": "knack-packaging",
+ "symbol": "KNACK",
+ "board": "mainboard",
+ "name": "Knack Packaging Limited"
+}

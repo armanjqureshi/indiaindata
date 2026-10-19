@@ -1,43 +1,8 @@
 {
  "subscription": {
   "total": 6.68,
-  "categories": [
-   {
-    "key": "qib",
-    "label": "QIB",
-    "offered": 0,
-    "bid": 26012400,
-    "times": 0
-   },
-   {
-    "key": "nii",
-    "label": "NII",
-    "offered": 0,
-    "bid": 11473200,
-    "times": 0
-   },
-   {
-    "key": "bnii",
-    "label": "NII above ₹10 lakh",
-    "offered": 0,
-    "bid": 9472800,
-    "times": 0
-   },
-   {
-    "key": "snii",
-    "label": "NII ₹2–10 lakh",
-    "offered": 0,
-    "bid": 2000400,
-    "times": 0
-   },
-   {
-    "key": "total",
-    "label": "Total",
-    "offered": 0,
-    "bid": 37485600,
-    "times": 0
-   }
-  ],
+  "totalMethod": "NSE",
+  "categories": [],
   "asOf": "16-Oct-2026 19:00:00",
   "scope": "NSE and BSE combined"
  },
@@ -45,7 +10,12 @@
  "faceValue": 0.5,
  "issueType": "Book Building",
  "issueSizeText": "Initial Public Offer comprising of Fresh Issue of 1,03,62,000 Equity Shares (Including Market Maker portion of 5,22,000 Equity Shares and Anchor allocation of 29,48,400 Equity Shares)",
- "issueSize": null,
+ "issueSize": {
+  "freshCr": 116.05,
+  "ofsCr": 0,
+  "totalCr": 116.05,
+  "method": "Calculated at ₹112 per share from the issue size NSE publishes"
+ },
  "employeeDiscount": null,
  "retailMax": null,
  "leadManagers": [
@@ -59,7 +29,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_RAVITA.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_RAVITA.zip"
  },
- "fetchedAt": "2026-10-19T22:07:36.199Z",
+ "fetchedAt": "2026-10-19T22:17:14.561Z",
  "slug": "ravita-engineering-services",
  "symbol": "RAVITA",
  "board": "sme",

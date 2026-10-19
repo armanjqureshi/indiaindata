@@ -1,0 +1,36 @@
+{
+ "subscription": {
+  "total": 1.58,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "02-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 800,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial Public Offer of fresh issue upto 21,60,000 Equity Shares (Including Market Maker Portion of 1,08,000 Equity Shares)",
+ "issueSize": {
+  "freshCr": 34.13,
+  "ofsCr": 0,
+  "totalCr": 34.13,
+  "method": "Calculated at ₹158 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Comfort Securities Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Babu Rapheal, 022-6263-8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_VMOBILE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_VMOBILE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:39.082Z",
+ "slug": "vinit-mobile",
+ "symbol": "VMOBILE",
+ "board": "sme",
+ "name": "Vinit Mobile Limited"
+}

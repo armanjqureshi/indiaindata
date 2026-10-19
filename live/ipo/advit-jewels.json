@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 212.63,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2392600,
+    "bid": 418647500,
+    "times": 174.98
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1796700,
+    "bid": 963711700,
+    "times": 536.38
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1197800,
+    "bid": 663167800,
+    "times": 553.65
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 598900,
+    "bid": 300543900,
+    "times": 501.83
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4190000,
+    "bid": 399292800,
+    "times": 95.3
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 8379300,
+    "bid": 1781652000,
+    "times": 212.63
+   }
+  ],
+  "asOf": "25-Jun-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 100,
+ "faceValue": 0.1,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer of Fresh Issue of up to 1,19,68,000 Equity Shares (Including Anchor investor portion of 35,88,700 Equity Shares)",
+ "issueSize": {
+  "freshCr": 165.16,
+  "ofsCr": 0,
+  "totalCr": 165.16,
+  "method": "Calculated at ₹138 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "HOLANI CONSULTANTS PRIVATE LIMITED"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Mr. Babu Rapheal C, +91 22-6263 8200, cmr.ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_RAMBHAJO.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_RAMBHAJO.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_RAMBHAJO.zip"
+ },
+ "fetchedAt": "2026-10-19T22:20:00.644Z",
+ "slug": "advit-jewels",
+ "symbol": "RAMBHAJO",
+ "board": "mainboard",
+ "name": "Advit Jewels Limited"
+}

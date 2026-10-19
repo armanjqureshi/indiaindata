@@ -1,0 +1,37 @@
+{
+ "subscription": {
+  "total": 6.17,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "25-Jun-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 2000,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial Public offering of Fresh Issue of up to 57,88,000 Equity shares (Including Market Maker portion of 3,86,000 Equity shares and Anchor Allocation of 16,18,000 Equity Shares)",
+ "issueSize": {
+  "freshCr": 30.68,
+  "ofsCr": 0,
+  "totalCr": 30.68,
+  "method": "Calculated at ₹53 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Marwadi Chandarana Intermediaries Brokers Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, shreedharspinners.smeipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SHREEDHAR.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SHREEDHAR.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SHREEDHAR.zip"
+ },
+ "fetchedAt": "2026-10-19T22:20:11.118Z",
+ "slug": "shreedhar-spinners",
+ "symbol": "SHREEDHAR",
+ "board": "sme",
+ "name": "Shreedhar Spinners Limited"
+}

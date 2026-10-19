@@ -1,0 +1,36 @@
+{
+ "subscription": {
+  "total": 1.5,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "29-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 2000,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial public offer of Fresh issue up to 33,40,000 equity shares and Offer for Sale Up to 8,00,000 Equity Shares (Including Market Maker Reservation Portion of 2,16,000 Equity Shares)",
+ "issueSize": {
+  "freshCr": 23.05,
+  "ofsCr": 5.52,
+  "totalCr": 28.57,
+  "method": "Calculated at ₹69 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Unistone Capital Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan,+91 810 811 4949, propshopevents.smeipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_PROPSHOP.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PROPSHOP.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:28.769Z",
+ "slug": "propshop-events-and-exhibitions",
+ "symbol": "PROPSHOP",
+ "board": "sme",
+ "name": "Propshop Events and Exhibitions Limited"
+}

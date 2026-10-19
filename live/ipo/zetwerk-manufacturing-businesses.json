@@ -1,0 +1,94 @@
+{
+ "subscription": {
+  "total": 3.06,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 98917930,
+    "bid": 468202185,
+    "times": 4.73
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 51269349,
+    "bid": 71853111,
+    "times": 1.4
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 34179566,
+    "bid": 57549987,
+    "times": 1.68
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 17089783,
+    "bid": 14303124,
+    "times": 0.84
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 34179566,
+    "bid": 25090659,
+    "times": 0.73
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 700000,
+    "bid": 1114740,
+    "times": 1.59
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 185066845,
+    "bid": 566260695,
+    "times": 3.06
+   }
+  ],
+  "asOf": "19-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 99,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising Fresh issue of aggregating up to Rs. 28,300 million and offer for sale up to 14,45,25,036 Equity Shares (Including Eligible Employee Reservation up to 7,00,000 Equity Shares and Anchor portion 14,90,88,220 Equity Shares)",
+ "issueSize": {
+  "freshCr": 2830,
+  "ofsCr": 2182.33,
+  "totalCr": 5012.33,
+  "method": "Calculated at ₹151 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 14/- per equity share is being offered to Eligible Employees Bidding in the Employee Reservation Portion",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Kotak Mahindra Capital Company Limited",
+  "Morgan Stanley India Company Private Limited",
+  "Goldman Sachs (India) Securities Private Limited",
+  "Avendus Capital Private Limited",
+  "JM Financial Limited",
+  "HSBC Securities",
+  "Capital Markets (India) Private Limited",
+  "Pantomath Capital Advisors Private Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "Williams R., +91 40 6716 2222/180 0309 4001, zetwerk.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ZETWERK.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ZETWERK.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ZETWERK.zip"
+ },
+ "fetchedAt": "2026-10-19T22:17:05.081Z",
+ "slug": "zetwerk-manufacturing-businesses",
+ "symbol": "ZETWERK",
+ "board": "mainboard",
+ "name": "Zetwerk Manufacturing Businesses Limited"
+}

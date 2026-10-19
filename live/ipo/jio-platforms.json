@@ -1,0 +1,31 @@
+{
+ "subscription": null,
+ "lotSize": 12,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 27,00,00,000 equity shares (including Employee Reservation Portion aggregating up to Rs. 5,000 million, Eligible RIL shareholders portion aggregating up to Rs. 25,000 million and Anchor reservation portion of 7,24,74,066 equity shares)",
+ "issueSize": {
+  "freshCr": 30213,
+  "ofsCr": 0,
+  "totalCr": 30213,
+  "method": "Calculated at ₹1119 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 54 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Kotak Mahindra Capital Company Limited"
+ ],
+ "registrar": "Kfin Technologies Limited",
+ "registrarContact": "Williams R, +91 40 6716 2222, jioplatforms.ipo@kfintech.com",
+ "marketTimings": "October 21, 2026 9:00 am - 7:00 pm",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_JPL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_JPL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_JPL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:16:41.361Z",
+ "slug": "jio-platforms",
+ "symbol": "JPL",
+ "board": "mainboard",
+ "name": "Jio Platforms Limited"
+}

@@ -1,0 +1,93 @@
+{
+ "subscription": {
+  "total": 4.92,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 48739889,
+    "bid": 402159425,
+    "times": 8.25
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 24630467,
+    "bid": 25039675,
+    "times": 1.02
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 16420312,
+    "bid": 17678100,
+    "times": 1.08
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 8210155,
+    "bid": 7361575,
+    "times": 0.9
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 16420311,
+    "bid": 15223475,
+    "times": 0.93
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 297619,
+    "bid": 650450,
+    "times": 2.19
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 90088286,
+    "bid": 443073025,
+    "times": 4.92
+   }
+  ],
+  "asOf": "31-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 25,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 80,000 million and Offer for Sale of upto 2,16,13,834 Equity Shares (including Employee Reservation Portion aggregating up to Rs. 150 million and Anchor Investor portion of 7,06,28,768 Equity Shares)",
+ "issueSize": {
+  "freshCr": 8000,
+  "ofsCr": 1275.22,
+  "totalCr": 9275.22,
+  "method": "Calculated at ₹590 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 56 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Kotak Mahindra Capital Company Limited",
+  "Axis Capital Limited",
+  "Goldman Sachs (India) Securities Private Limited",
+  "Jefferies India Private Limited",
+  "J.P. Morgan India Private Limited",
+  "UBS Securities India Private Limited",
+  "DBS Bank India Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, manipal.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MANIPALHOS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MANIPALHOS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MANIPALHOS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:23.236Z",
+ "slug": "manipal-health-enterprises",
+ "symbol": "MANIPALHOS",
+ "board": "mainboard",
+ "name": "Manipal Health Enterprises Limited"
+}

@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 1.4,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 120240,
+    "bid": 131492,
+    "times": 1.09
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3486960,
+    "bid": 3815966,
+    "times": 1.09
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2324640,
+    "bid": 2094784,
+    "times": 0.9
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1162320,
+    "bid": 1721182,
+    "times": 1.48
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 8416800,
+    "bid": 12928816,
+    "times": 1.54
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 12024000,
+    "bid": 16876274,
+    "times": 1.4
+   }
+  ],
+  "asOf": "16-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 142,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 1,20,24,000 Equity Shares",
+ "issueSize": {
+  "freshCr": 126.25,
+  "ofsCr": 0,
+  "totalCr": 126.25,
+  "method": "Calculated at ₹105 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "D",
+  "A Financial Services Private Limited"
+ ],
+ "registrar": "Kfin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, alpine.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ALPINETEX.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ALPINETEX.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:01.168Z",
+ "slug": "alpine-texworld",
+ "symbol": "ALPINETEX",
+ "board": "mainboard",
+ "name": "Alpine Texworld Limited"
+}

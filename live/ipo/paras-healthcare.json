@@ -1,0 +1,33 @@
+{
+ "subscription": null,
+ "lotSize": 21,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 5000 million and Offer for Sale aggregating upto Rs. 9,500 million (including Anchor reservation portion of 94,15,584 Equity Shares)",
+ "issueSize": {
+  "freshCr": 500,
+  "ofsCr": 950,
+  "totalCr": 1450,
+  "method": "Calculated at ₹693 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "JM Financial Limited",
+  "BofA Securities India Limited",
+  "Nuvama Wealth Management Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, Tel: +91 810 811 4949, parashealthcare.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_PARASHLTH.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PARASHLTH.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PARASHLTH.zip"
+ },
+ "fetchedAt": "2026-10-19T22:16:46.139Z",
+ "slug": "paras-healthcare",
+ "symbol": "PARASHLTH",
+ "board": "mainboard",
+ "name": "Paras Healthcare Limited"
+}

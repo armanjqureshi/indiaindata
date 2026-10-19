@@ -1,0 +1,91 @@
+{
+ "subscription": {
+  "total": 72.34,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 15683772,
+    "bid": 3204897090,
+    "times": 204.34
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 11762829,
+    "bid": 595592640,
+    "times": 50.63
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 7841885,
+    "bid": 452325030,
+    "times": 57.68
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 3920944,
+    "bid": 143267610,
+    "times": 36.54
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 27446600,
+    "bid": 183131610,
+    "times": 6.67
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 200000,
+    "bid": 1888680,
+    "times": 9.44
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 55093201,
+    "bid": 3985510020,
+    "times": 72.34
+   }
+  ],
+  "asOf": "27-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 30,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating up to Rs. 5,000 million and Offer for Sale of up to 68,291,022 Equity Shares. (Including eligible employees reservation portion of up to 2,00,000 Equity Shares and Anchor investor portion of 2,35,25,656 Equity Shares)",
+ "issueSize": {
+  "freshCr": 500,
+  "ofsCr": 3312.11,
+  "totalCr": 3812.11,
+  "method": "Calculated at ₹485 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 45 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "HDFC Bank Limited",
+  "Axis Capital Limited",
+  "ICICI Securities Limited",
+  "Kotak Mahindra Capital Company Limited",
+  "SBI Capital Markets Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 81 0811 4949, indomim.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_INDOMIM.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_INDOMIM.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_INDOMIM.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:45.707Z",
+ "slug": "indo-mim",
+ "symbol": "INDOMIM",
+ "board": "mainboard",
+ "name": "INDO-MIM Limited"
+}

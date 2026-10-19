@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 1.67,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2282184,
+    "bid": 2307762,
+    "times": 1.01
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1141092,
+    "bid": 1488960,
+    "times": 1.3
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 760728,
+    "bid": 827442,
+    "times": 1.09
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 380364,
+    "bid": 661518,
+    "times": 1.74
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 760728,
+    "bid": 3187944,
+    "times": 4.19
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 4184004,
+    "bid": 6984666,
+    "times": 1.67
+   }
+  ],
+  "asOf": "25-Jun-2026 20:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 18,
+ "faceValue": 0.1,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer of Fresh Issue aggregating value up to Rs. 5,850 million (Including Anchor investor portion of 32,58,045 Equity Shares)",
+ "issueSize": {
+  "freshCr": 585,
+  "ofsCr": 0,
+  "totalCr": 585,
+  "method": "Calculated at ₹808 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 200000",
+ "leadManagers": [
+  "Centrum Broking Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 81081 14949 waterwaysleisure.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_CORD.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_CORDELIA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_CORD.zip"
+ },
+ "fetchedAt": "2026-10-19T22:20:06.263Z",
+ "slug": "waterways-leisure-tourism",
+ "symbol": "CORDELIA",
+ "board": "mainboard",
+ "name": "Waterways Leisure Tourism Limited"
+}

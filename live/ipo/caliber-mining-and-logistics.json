@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 146.64,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2238805,
+    "bid": 538897485,
+    "times": 240.71
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1679105,
+    "bid": 448930195,
+    "times": 267.36
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1119404,
+    "bid": 328274450,
+    "times": 293.26
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 559701,
+    "bid": 120655745,
+    "times": 215.57
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 3917911,
+    "bid": 161209720,
+    "times": 41.15
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 7835821,
+    "bid": 1149037400,
+    "times": 146.64
+   }
+  ],
+  "asOf": "21-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 35,
+ "faceValue": 0.1,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating up to Rs. 40,000 Lakhs and Offer for Sale aggregating up to Rs. 5,000 Lakhs. (including Anchor Investor portion of 31,83,961 Equity Shares)",
+ "issueSize": {
+  "freshCr": 400,
+  "ofsCr": 50,
+  "totalCr": 450,
+  "method": "Calculated at ₹424 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "DAM Capital Advisors Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna,+91 4067162222, cmll.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_CMLL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_CMLL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_CMLL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:55.686Z",
+ "slug": "caliber-mining-and-logistics",
+ "symbol": "CMLL",
+ "board": "mainboard",
+ "name": "Caliber Mining and Logistics Limited"
+}

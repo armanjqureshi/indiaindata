@@ -1,6 +1,7 @@
 {
  "subscription": {
   "total": 4.45,
+  "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
@@ -56,7 +57,7 @@
   "freshCr": 500,
   "ofsCr": 202,
   "totalCr": 702,
-  "method": "At ₹289 per share, from the issue size NSE publishes"
+  "method": "Calculated at ₹289 per share from the issue size NSE publishes"
  },
  "employeeDiscount": "NA",
  "retailMax": "Rs. 2,00,000",
@@ -73,7 +74,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_FUSIONCX.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_FUSIONCX.zip"
  },
- "fetchedAt": "2026-10-19T22:07:35.923Z",
+ "fetchedAt": "2026-10-19T22:17:09.881Z",
  "slug": "fusion-cx",
  "symbol": "FUSIONCX",
  "board": "mainboard",

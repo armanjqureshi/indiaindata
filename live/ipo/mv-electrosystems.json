@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 188.85,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2174994,
+    "bid": 196774048,
+    "times": 90.47
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1087498,
+    "bid": 407351552,
+    "times": 374.58
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 724999,
+    "bid": 286360954,
+    "times": 394.98
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 362499,
+    "bid": 120990598,
+    "times": 333.77
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 724999,
+    "bid": 148925678,
+    "times": 205.42
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 3987491,
+    "bid": 753051278,
+    "times": 188.85
+   }
+  ],
+  "asOf": "03-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 34,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 2900 million (Including anchor portion of 30,70,587 Equity Shares)",
+ "issueSize": {
+  "freshCr": 290,
+  "ofsCr": 0,
+  "totalCr": 290,
+  "method": "Calculated at ₹425 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Sundae Capital Advisors Private Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, mvelectrosystems.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MVELECTRO.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MVELECTRO.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MVELECTRO.zip"
+ },
+ "fetchedAt": "2026-10-19T22:18:12.900Z",
+ "slug": "mv-electrosystems",
+ "symbol": "MVELECTRO",
+ "board": "mainboard",
+ "name": "MV Electrosystems Limited"
+}

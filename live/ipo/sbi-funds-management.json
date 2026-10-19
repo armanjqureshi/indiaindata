@@ -1,0 +1,103 @@
+{
+ "subscription": {
+  "total": 41.66,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 30928731,
+    "bid": 4333271956,
+    "times": 140.11
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 23196549,
+    "bid": 522184416,
+    "times": 22.51
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 15464366,
+    "bid": 402220000,
+    "times": 26.01
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 7732183,
+    "bid": 119964416,
+    "times": 15.51
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 54125280,
+    "bid": 194677574,
+    "times": 3.6
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 3257347,
+    "bid": 15149992,
+    "times": 4.65
+   },
+   {
+    "key": "shareholder",
+    "label": "Shareholders",
+    "offered": 13055629,
+    "bid": 124263542,
+    "times": 9.52
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 124563536,
+    "bid": 5189547480,
+    "times": 41.66
+   }
+  ],
+  "asOf": "16-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 26,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Offer for Sale of up to 17,09,56,631 Equity Shares (Including eligible employees reservation portion of up to 32,57,347 Equity Shares and Shareholder Reservation Portion of up to 1,30,55,629 Equity and Anchor Investor Portion of 4,63,93,095 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 9812.91,
+  "totalCr": 9812.91,
+  "method": "Calculated at ₹574 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 54 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Kotak Mahindra Capital Company Limited",
+  "Axis Capital Limited",
+  "BofA Securities India Limited",
+  "HSBC Securities",
+  "Capital Markets (India) Private Limited",
+  "ICICI Securities Limited",
+  "Jefferies India Private Limited",
+  "JM Financial Limited",
+  "Motilal Oswal Investment Advisors Limited",
+  "SBI Capital Markets Limited."
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 4067162222, sbifml.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SBIFUNDS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SBIFUNDS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SBIFUNDS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:06.662Z",
+ "slug": "sbi-funds-management",
+ "symbol": "SBIFUNDS",
+ "board": "mainboard",
+ "name": "SBI Funds Management Limited"
+}

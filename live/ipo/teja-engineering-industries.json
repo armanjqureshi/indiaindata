@@ -1,0 +1,30 @@
+{
+ "subscription": {
+  "total": 1.06,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "02-Jul-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 600,
+ "faceValue": 0.1,
+ "issueType": "Fixed Price",
+ "issueSizeText": "Initial Public Offer of 16,98,000 Equity Shares (Including Market Maker portion of 85,200 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Interactive Financial Services Limited"
+ ],
+ "registrar": "Kfin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, teja.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_TEJA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:44.472Z",
+ "slug": "teja-engineering-industries",
+ "symbol": "TEJA",
+ "board": "sme",
+ "name": "Teja Engineering Industries Limited"
+}

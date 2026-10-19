@@ -1,0 +1,37 @@
+{
+ "subscription": {
+  "total": 354.99,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "22-Jun-2026 18:06:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 600,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial Public offering of Fresh Issue of up to 14,53,800 Equity shares (Including Market Maker portion of 82,200 Equity shares and Anchor Allocation of 4,09,800 Equity Shares)",
+ "issueSize": {
+  "freshCr": 30.24,
+  "ofsCr": 0,
+  "totalCr": 30.24,
+  "method": "Calculated at ₹208 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Fintellectual Corporate Advisors Private Limited"
+ ],
+ "registrar": "Skyline Financial Services Private Limited",
+ "registrarContact": "Mr. Anuj Rana, 011 40450193-197, ipo@skylinerta.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_AVIENCE.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_AVIENCE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_AVIENCE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:20:21.666Z",
+ "slug": "avience-biomedicals",
+ "symbol": "AVIENCE",
+ "board": "sme",
+ "name": "Avience Biomedicals Limited"
+}

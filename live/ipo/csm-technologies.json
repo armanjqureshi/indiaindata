@@ -1,0 +1,87 @@
+{
+ "subscription": {
+  "total": 1.36,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 4615380,
+    "bid": 4708968,
+    "times": 1.02
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1915650,
+    "bid": 2958912,
+    "times": 1.54
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1277100,
+    "bid": 2110680,
+    "times": 1.65
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 638550,
+    "bid": 848232,
+    "times": 1.33
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4469850,
+    "bid": 7223436,
+    "times": 1.62
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 130000,
+    "bid": 236808,
+    "times": 1.82
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 11130880,
+    "bid": 15128124,
+    "times": 1.36
+   }
+  ],
+  "asOf": "29-Jun-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 132,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer of Offer for Sale of up to 1,29,01,000 Equity Shares (including Employee Reservation Portion up to 1,30,000 Equity Shares and Anchor Investor portion of 17,70,120 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 145.78,
+  "totalCr": 145.78,
+  "method": "Calculated at ₹113 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Keynote Financial Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 67162222, csmtechnologies.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_CSM.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_CSM.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_CSM.zip"
+ },
+ "fetchedAt": "2026-10-19T22:19:54.885Z",
+ "slug": "csm-technologies",
+ "symbol": "CSM",
+ "board": "mainboard",
+ "name": "CSM Technologies Limited"
+}

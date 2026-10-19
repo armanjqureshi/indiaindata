@@ -1,0 +1,90 @@
+{
+ "subscription": {
+  "total": 46.06,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 8637808,
+    "bid": 1043308675,
+    "times": 120.78
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 6478357,
+    "bid": 261705075,
+    "times": 40.4
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 4318905,
+    "bid": 200562075,
+    "times": 46.44
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 2159452,
+    "bid": 61143000,
+    "times": 28.31
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 15116165,
+    "bid": 89271650,
+    "times": 5.91
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 50000,
+    "bid": 371425,
+    "times": 7.43
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 30282330,
+    "bid": 1394656825,
+    "times": 46.06
+   }
+  ],
+  "asOf": "19-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 25,
+ "faceValue": 10,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer of offer for sale up to 4,32,39,042 Equity Shares (Including Eligible Employee Reservation of up to 50,000 Equity Shares and Anchor portion 1,29,56,712 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 2533.81,
+  "totalCr": 2533.81,
+  "method": "Calculated at ₹586 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 29 per equity share to eligible employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Axis Capital Limited",
+  "BNP Paribas",
+  "ICICI Securities Limited",
+  "Jefferies India Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan,+91 810 811 4949, bonfigliolitransmissions.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_BONFIG.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_BONFIG.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BONFIG.zip"
+ },
+ "fetchedAt": "2026-10-19T22:16:55.621Z",
+ "slug": "bonfiglioli-transmissions",
+ "symbol": "BONFIG",
+ "board": "mainboard",
+ "name": "Bonfiglioli Transmissions Limited"
+}

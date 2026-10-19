@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": 1.2,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 17780550,
+    "bid": 28332486,
+    "times": 1.59
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 9072797,
+    "bid": 4760840,
+    "times": 0.52
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 6048532,
+    "bid": 3140508,
+    "times": 0.52
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 3024265,
+    "bid": 1620332,
+    "times": 0.54
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 6048531,
+    "bid": 6454378,
+    "times": 1.07
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 32901878,
+    "bid": 39547704,
+    "times": 1.2
+   }
+  ],
+  "asOf": "23-Jun-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 98,
+ "faceValue": 0.1,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer of Fresh Issue aggregating up to Rs. 6,607.22 million and Offer for Sale aggregating up to 14,601,846 Equity Shares (Including anchor portion 2,61,31,680 Equity Shares)",
+ "issueSize": {
+  "freshCr": 660.72,
+  "ofsCr": 221.95,
+  "totalCr": 882.67,
+  "method": "Calculated at ₹152 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "ICICI Securities Limited; Jefferies India Private Limited; JM Financial Limited; Motilal Oswal Investment Advisors Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222/18003094001, Turtlemint.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_TURTLEMINT.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_TURTLEMINT.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_TURTLEMINT.zip"
+ },
+ "fetchedAt": "2026-10-19T22:20:15.970Z",
+ "slug": "turtlemint-fintech-solutions",
+ "symbol": "TURTLEMINT",
+ "board": "mainboard",
+ "name": "Turtlemint Fintech Solutions Limited"
+}
