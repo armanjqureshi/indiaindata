@@ -26,6 +26,7 @@ export default {
         economy: { DEFAULT: 'rgb(var(--economy) / <alpha-value>)', light: 'rgb(var(--economy) / 0.14)' },
         society: { DEFAULT: 'rgb(var(--society) / <alpha-value>)', light: 'rgb(var(--society) / 0.14)' },
         blogs: { DEFAULT: 'rgb(var(--blogs) / <alpha-value>)', light: 'rgb(var(--blogs) / 0.14)' },
+        'deco-gold': 'rgb(var(--deco-gold) / <alpha-value>)',
         up: 'rgb(var(--up) / <alpha-value>)',
         down: 'rgb(var(--down) / <alpha-value>)',
       },

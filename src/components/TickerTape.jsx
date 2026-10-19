@@ -23,27 +23,36 @@ export default function TickerTape() {
   const market = useMarket()
   const rows = ITEMS.map(([k, label, kind]) => [k, label, kind, market.items?.[k]]).filter((r) => r[3])
   if (!rows.length) return null
+  const cells = (hidden) =>
+    rows.map(([k, label, kind, it]) => {
+      const [v, c] = show(kind, it)
+      const up = kind === 'flow' ? it.value >= 0 : it.change > 0
+      const down = kind === 'flow' ? it.value < 0 : it.change < 0
+      return (
+        <li key={k} aria-hidden={hidden || undefined} className="num flex shrink-0 items-baseline gap-2 whitespace-nowrap pr-8" title={`${it.source}, ${fmt.date(it.asOf)}`}>
+          <span className="font-sans text-ink/60">{label}</span>
+          <span className={`font-medium ${kind === 'flow' ? (up ? 'text-up' : 'text-down') : 'text-ink'}`}>{v}</span>
+          {c && (
+            <span className={up ? 'text-up' : down ? 'text-down' : 'text-ink/60'}>
+              {up ? '\u25b2' : down ? '\u25bc' : ''} {c}
+            </span>
+          )}
+        </li>
+      )
+    })
   return (
-    <div className="border-b border-ink/10 bg-panel" role="region" aria-label="Market snapshot">
-      <ul className="mx-auto flex max-w-site gap-6 overflow-x-auto px-4 py-1.5 text-xs sm:px-6 [scrollbar-width:none]">
-        {market.session && <li className="shrink-0 whitespace-nowrap text-ink/50">Close {fmt.shortDate(market.session)}</li>}
-        {rows.map(([k, label, kind, it]) => {
-          const [v, c] = show(kind, it)
-          const up = kind === 'flow' ? it.value >= 0 : it.change > 0
-          const down = kind === 'flow' ? it.value < 0 : it.change < 0
-          return (
-            <li key={k} className="num flex shrink-0 items-baseline gap-2 whitespace-nowrap" title={`${it.source}, ${fmt.date(it.asOf)}`}>
-              <span className="font-sans text-ink/60">{label}</span>
-              <span className={`font-medium ${kind === 'flow' ? (up ? 'text-up' : 'text-down') : 'text-ink'}`}>{v}</span>
-              {c && (
-                <span className={up ? 'text-up' : down ? 'text-down' : 'text-ink/60'}>
-                  {up ? '▲' : down ? '▼' : ''} {c}
-                </span>
-              )}
-            </li>
-          )
-        })}
-      </ul>
+    <div className="flex items-center border-b border-ink/10 bg-panel text-xs" role="region" aria-label="Market snapshot">
+      {market.session && (
+        <span className="relative z-10 shrink-0 whitespace-nowrap bg-panel py-1.5 pl-4 pr-4 text-ink/50 shadow-[8px_0_8px_-4px_rgb(var(--panel))] sm:pl-6">
+          Close {fmt.shortDate(market.session)}
+        </span>
+      )}
+      <div className="ticker-viewport min-w-0 flex-1 overflow-hidden">
+        <ul className="ticker-track flex w-max py-1.5">
+          {cells(false)}
+          {cells(true)}
+        </ul>
+      </div>
     </div>
   )
 }
