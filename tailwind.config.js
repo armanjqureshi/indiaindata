@@ -30,7 +30,7 @@ export default {
         down: 'rgb(var(--down) / <alpha-value>)',
       },
       fontFamily: {
-        display: ['Archivo', 'system-ui', 'sans-serif'],
+        display: ['Fraunces', 'Georgia', 'serif'],
         sans: ['Archivo', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },

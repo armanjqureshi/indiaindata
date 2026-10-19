@@ -63,7 +63,7 @@ export default function NewsletterSignup({ compact = false, inverse = false }) {
         <button
           type="button"
           onClick={submit}
-          className="shrink-0 rounded-sm bg-brand px-5 py-2.5 text-sm font-semibold text-paper transition-colors hover:bg-brand-dark"
+          className={`shrink-0 rounded-sm px-5 py-2.5 text-sm font-semibold transition-colors ${inverse ? "bg-paper text-brand hover:bg-panel" : "bg-brand text-paper hover:bg-brand-dark"}`}
         >
           Subscribe
         </button>

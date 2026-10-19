@@ -47,7 +47,7 @@ export default function Navbar() {
         }`}
       >
         <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label="India in Data — home">
-          <span aria-hidden="true" className="flex h-8 w-8 items-end justify-center gap-[3px] rounded-sm bg-brand p-1.5">
+          <span aria-hidden="true" className="flex h-9 w-8 items-end justify-center gap-[3px] bg-brand p-1.5" style={{ clipPath: "url(#arch-sm)" }}>
             <span className="h-2 w-1 bg-panel" />
             <span className="h-3.5 w-1 bg-panel" />
             <span className="h-5 w-1 bg-panel" />

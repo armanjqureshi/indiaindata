@@ -6,20 +6,37 @@ html { scroll-behavior: smooth; }
 
 :root, :root[data-theme='dark'] {
   color-scheme: dark;
-  --paper: 11 21 30; --panel: 17 34 48; --raise: 23 48 63; --ink: 230 237 241;
-  --brand: 255 154 61; --brand-dark: 255 184 114;
-  --news: 127 169 234; --business: 163 155 255; --market: 63 208 141;
-  --economy: 233 203 79; --society: 208 140 240; --blogs: 63 200 207;
-  --up: 63 208 141; --down: 255 107 91;
+  /* night-lit monument: deep indigo, stone text, gold */
+  --paper: 15 17 35; --panel: 24 27 50; --raise: 34 38 68; --ink: 238 228 208;
+  --brand: 226 168 75; --brand-dark: 241 197 123;
+  --news: 130 160 240; --business: 175 150 235; --market: 90 205 140;
+  --economy: 232 196 90; --society: 232 140 190; --blogs: 80 200 205;
+  --up: 90 205 140; --down: 255 120 100;
 }
 :root[data-theme='light'] {
   color-scheme: light;
-  --paper: 242 245 247; --panel: 255 255 255; --raise: 232 238 242; --ink: 18 30 41;
-  --brand: 196 90 0; --brand-dark: 150 64 0;
-  --news: 40 95 180; --business: 79 66 200; --market: 12 125 78;
-  --economy: 150 100 0; --society: 135 55 175; --blogs: 10 125 135;
-  --up: 12 125 78; --down: 196 45 35;
+  /* sandstone paper, indigo ink, terracotta */
+  --paper: 244 237 224; --panel: 251 247 238; --raise: 234 224 206; --ink: 27 31 59;
+  --brand: 163 64 32; --brand-dark: 122 44 18;
+  --news: 48 78 160; --business: 100 62 150; --market: 28 110 68;
+  --economy: 140 94 10; --society: 150 48 100; --blogs: 14 110 116;
+  --up: 28 110 68; --down: 178 40 34;
 }
+
+/* Architecture motifs ------------------------------------------------- */
+/* Pointed arch: apply to any box. Needs the #arch clipPath (see ArchDefs). */
+.arch-top { clip-path: url(#arch-top); }
+/* Jaali lattice, drawn as a mask so it takes the brand colour in both themes. */
+.jaali { position: relative; isolation: isolate; }
+.jaali::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: rgb(var(--brand) / 0.22);
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'><g fill='none' stroke='black' stroke-width='1.1'><rect x='11' y='11' width='22' height='22'/><rect x='11' y='11' width='22' height='22' transform='rotate(45 22 22)'/><circle cx='22' cy='22' r='4.5'/><path d='M0 0L11 11M44 0L33 11M0 44L11 33M44 44L33 33'/></g></svg>"), linear-gradient(100deg, transparent 20%, black 85%);
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'><g fill='none' stroke='black' stroke-width='1.1'><rect x='11' y='11' width='22' height='22'/><rect x='11' y='11' width='22' height='22' transform='rotate(45 22 22)'/><circle cx='22' cy='22' r='4.5'/><path d='M0 0L11 11M44 0L33 11M0 44L11 33M44 44L33 33'/></g></svg>"), linear-gradient(100deg, transparent 20%, black 85%);
+  -webkit-mask-size: 44px 44px, 100% 100%; mask-size: 44px 44px, 100% 100%;
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+}
+.jaali-soft::before { background: rgb(var(--paper) / 0.35); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

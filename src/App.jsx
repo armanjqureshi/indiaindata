@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import TickerTape from './components/TickerTape.jsx'
 import Navbar from './components/Navbar.jsx'
+import ArchDefs from './components/ArchDefs.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
 import SectionPage from './pages/SectionPage.jsx'
@@ -36,6 +37,7 @@ export default function App() {
         Skip to content
       </a>
       <TickerTape />
+      <ArchDefs />
       <Navbar />
       <main id="main" className="flex-1">
         <Routes>

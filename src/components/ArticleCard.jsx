@@ -45,8 +45,10 @@ export default function ArticleCard({ article, variant = 'default' }) {
     <article
       className={`group flex h-full flex-col overflow-hidden rounded-sm border border-ink/10 bg-panel transition-colors duration-150 hover:${colors.border}`}
     >
-      <Link to={`/article/${article.slug}`} aria-hidden="true" tabIndex={-1} className="block">
-        <CardCover article={article} tall={isLarge} />
+      <Link to={`/article/${article.slug}`} aria-hidden="true" tabIndex={-1} className="block p-3 pb-0">
+        <div className="arch-top overflow-hidden">
+          <CardCover article={article} tall={isLarge} />
+        </div>
       </Link>
       <div className={`flex flex-1 flex-col gap-2.5 ${isLarge ? 'p-6 sm:p-8' : 'p-5'}`}>
         <div>
