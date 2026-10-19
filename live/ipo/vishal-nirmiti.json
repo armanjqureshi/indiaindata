@@ -1,0 +1,78 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 84710,
+    "bid": 107372,
+    "times": 1.27
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2456635,
+    "bid": 4445908,
+    "times": 1.81
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1637757,
+    "bid": 2804184,
+    "times": 1.71
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 818878,
+    "bid": 1641724,
+    "times": 2
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5929808,
+    "bid": 9893524,
+    "times": 1.67
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 8471153,
+    "bid": 14446804,
+    "times": 1.71
+   }
+  ],
+  "asOf": "05-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 68,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offering comprising fresh issue aggregating up to Rs. 14500 lakhs and offer for sale up to 15,00,000 Equity Shares",
+ "issueSize": {
+  "freshCr": 145,
+  "ofsCr": 33,
+  "totalCr": 178,
+  "method": "At ₹220 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Saffron Capital Advisors Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishna , +91 810 811 4949, vishalnirmiti.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_VNL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_VNL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:07:56.667Z",
+ "slug": "vishal-nirmiti",
+ "symbol": "VNL",
+ "board": "mainboard",
+ "name": "Vishal Nirmiti Limited"
+}

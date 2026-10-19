@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 1830310,
+    "bid": 16576630,
+    "times": 9.06
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 784500,
+    "bid": 218965648,
+    "times": 279.11
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 523000,
+    "bid": 158898374,
+    "times": 303.82
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 261500,
+    "bid": 60067274,
+    "times": 229.7
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 523000,
+    "bid": 102437640,
+    "times": 195.87
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 3137810,
+    "bid": 337979918,
+    "times": 107.71
+   }
+  ],
+  "asOf": "03-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 62,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 52,30,000 Equity Shares (including Anchor Investor portion of 20,92,190 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Mefcom Capital Markets Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, robl.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MOMSBELIEF.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MOMSBELIEF.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MOMSBELIEF.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:27.786Z",
+ "slug": "rays-of-belief-for-profit-social-enterprise-fpse",
+ "symbol": "MOMSBELIEF",
+ "board": "mainboard",
+ "name": "Rays of Belief Limited- For Profit Social Enterprise (FPSE)"
+}

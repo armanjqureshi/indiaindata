@@ -1,0 +1,76 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 25316456,
+    "bid": 37755046,
+    "times": 1.49
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 18987342,
+    "bid": 187138520,
+    "times": 9.86
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 12658228,
+    "bid": 102602048,
+    "times": 8.11
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 6329114,
+    "bid": 84536472,
+    "times": 13.36
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 44303798,
+    "bid": 364833072,
+    "times": 8.23
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 88607596,
+    "bid": 589726638,
+    "times": 6.66
+   }
+  ],
+  "asOf": "18-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 178,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 6,000 million and Offer for sale aggregating up to Rs. 4,000 million (including Anchor reservation portion of 3,57,14,284 equity shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "ICICI Securities Limited",
+  "DAM Capital Advisors Limited",
+  "JM Financial Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, heromotors.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_HEROMOTORS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_HEROMOTORS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HEROMOTORS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:06.787Z",
+ "slug": "hero-motors",
+ "symbol": "HEROMOTORS",
+ "board": "mainboard",
+ "name": "Hero Motors Limited"
+}

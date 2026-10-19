@@ -1,0 +1,86 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 25207867,
+    "bid": 319715504,
+    "times": 12.68
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 18900483,
+    "bid": 123751624,
+    "times": 6.55
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 12600322,
+    "bid": 97971576,
+    "times": 7.78
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 6300161,
+    "bid": 25780048,
+    "times": 4.09
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 44101125,
+    "bid": 61305464,
+    "times": 1.39
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 433436,
+    "bid": 1038792,
+    "times": 2.4
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 88642911,
+    "bid": 505811384,
+    "times": 5.71
+   }
+  ],
+  "asOf": "21-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 8,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Offer for Sale of upto 126,436,650 Equity Shares (including Employee Reservation Portion aggregating up to Rs. 700 million and Anchor Portion of 37,793,739 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 70,
+  "totalCr": 70,
+  "method": "At ₹1785 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 170 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Kotak Mahindra Capital Company Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949 , nse.ipo@in.mpms.mufg.com",
+ "marketTimings": "September 17, 2026 9:00 am - 7:00 pm",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_NSE.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_NSE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_NSE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:52.606Z",
+ "slug": "national-stock-exchange-of-india",
+ "symbol": "NSE",
+ "board": "mainboard",
+ "name": "National Stock Exchange of India Limited"
+}

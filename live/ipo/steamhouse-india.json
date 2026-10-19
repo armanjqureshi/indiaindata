@@ -1,0 +1,79 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 10753246,
+    "bid": 472123700,
+    "times": 43.91
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 8064935,
+    "bid": 357257755,
+    "times": 44.3
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 5376624,
+    "bid": 231193760,
+    "times": 43
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 2688311,
+    "bid": 126063995,
+    "times": 46.89
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 18818182,
+    "bid": 318110275,
+    "times": 16.9
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 37636363,
+    "bid": 1147491730,
+    "times": 30.49
+   }
+  ],
+  "asOf": "11-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 185,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial public offer comprising of Fresh Issue aggregating up to Rs. 3530 million and Offer for sale aggregating up to Rs. 610 million (Including Anchor portion of 1,53,33,332 equity shares)",
+ "issueSize": {
+  "freshCr": 353,
+  "ofsCr": 61,
+  "totalCr": 414,
+  "method": "At ₹81 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Equirus Capital Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, steamhouse.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_STEAMHOUSE.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_STEAMHOUSE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_STEAMHOUSE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:40.310Z",
+ "slug": "steamhouse-india",
+ "symbol": "STEAMHOUSE",
+ "board": "mainboard",
+ "name": "Steamhouse India Limited"
+}

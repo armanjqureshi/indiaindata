@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 3736264,
+    "bid": 5327218,
+    "times": 1.43
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1868131,
+    "bid": 1574612,
+    "times": 0.84
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1245421,
+    "bid": 1252342,
+    "times": 1.01
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 622710,
+    "bid": 322270,
+    "times": 0.52
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 1245421,
+    "bid": 1964742,
+    "times": 1.58
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 6849816,
+    "bid": 8866572,
+    "times": 1.29
+   }
+  ],
+  "asOf": "02-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 26,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising Fresh issue of aggregating up to Rs. 6800 million (Including Anchor portion of 53,21,739 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Axis Capital Limited",
+  "IIFL Capital Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 40 67162222, purplestyle.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_PERNIASPOP.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PERNIASPOP.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PERNIASPOP.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:37.216Z",
+ "slug": "purple-style-labs",
+ "symbol": "PERNIASPOP",
+ "board": "mainboard",
+ "name": "Purple Style Labs Limited"
+}

@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 1788572,
+    "bid": 5755941,
+    "times": 3.22
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1363929,
+    "bid": 25233525,
+    "times": 18.5
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 909286,
+    "bid": 18189522,
+    "times": 20
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 454643,
+    "bid": 7044003,
+    "times": 15.49
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 3182500,
+    "bid": 17161794,
+    "times": 5.39
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 6335001,
+    "bid": 48151260,
+    "times": 7.6
+   }
+  ],
+  "asOf": "25-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 81,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 12,850 Lakhs and Offer for Sale of upto 17,50,000 Equity Shares (including Anchor investor portion of 26,08,782 Equity shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Srujan Alpha Capital Advisors LLP",
+  "PhillipCapital (India) Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, swastikainfra.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SWASTIKAIN.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SWASTIKAIN.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SWASTIKAIN.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:10.080Z",
+ "slug": "swastika-infra",
+ "symbol": "SWASTIKAIN",
+ "board": "mainboard",
+ "name": "Swastika Infra Limited"
+}

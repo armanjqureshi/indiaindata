@@ -1,0 +1,76 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 8432000,
+    "bid": 1177854000,
+    "times": 139.69
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 6351600,
+    "bid": 554086200,
+    "times": 87.24
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 4234400,
+    "bid": 386745500,
+    "times": 91.33
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 2117200,
+    "bid": 167340700,
+    "times": 79.04
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 14800000,
+    "bid": 375970500,
+    "times": 25.4
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 29583600,
+    "bid": 2107910700,
+    "times": 71.25
+   }
+  ],
+  "asOf": "27-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 100,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 2,88,98,300 equity shares and Offer for Sale of up to 1,33,33,300 Equity Shares (including Anchor Investor portion of 1,26,48,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Holani Consultants Private Limited",
+  "Shannon Advisors Private Limited",
+  "Dolat Finserv Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Vinayak Morbale ,+91 22-6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SKYWAYS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SKYWAYS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SKYWAYS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:24.497Z",
+ "slug": "skyways-air-services",
+ "symbol": "SKYWAYS",
+ "board": "mainboard",
+ "name": "Skyways Air Services Limited"
+}

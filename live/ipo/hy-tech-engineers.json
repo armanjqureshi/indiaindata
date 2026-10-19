@@ -1,0 +1,79 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 5000680,
+    "bid": 1279002086,
+    "times": 255.77
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3943418,
+    "bid": 1586394139,
+    "times": 402.29
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2628946,
+    "bid": 873818534,
+    "times": 332.38
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1314472,
+    "bid": 712575605,
+    "times": 542.1
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 9201308,
+    "bid": 1569574317,
+    "times": 170.58
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 18145406,
+    "bid": 4434970542,
+    "times": 244.41
+   }
+  ],
+  "asOf": "27-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 283,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offer comprising Fresh Issue aggregating up to Rs.600 million and Offer for Sale of up to 14,289,450 Equity Shares (including Anchor Investor portion of 76,83,060 Equity Shares)",
+ "issueSize": {
+  "freshCr": 60,
+  "ofsCr": 75.73,
+  "totalCr": 135.73,
+  "method": "At ₹53 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "New Berry Capitals Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Babu Raphael , +91 22 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_HTEL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_HTEL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HTEL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:19.766Z",
+ "slug": "hy-tech-engineers",
+ "symbol": "HTEL",
+ "board": "mainboard",
+ "name": "Hy-Tech Engineers Limited"
+}

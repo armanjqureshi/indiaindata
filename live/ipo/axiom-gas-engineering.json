@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 1.37,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 782000,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 3986000,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 2896000,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 1090000,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 4768000,
+    "times": 0
+   }
+  ],
+  "asOf": "22-Sep-2026 17:42:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 2000,
+ "faceValue": 0.5,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 93,98,000 Equity Shares (including Market Maker portion of 4,78,000 Equity Shares and Anchor allocation 10,70,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "SKI Capital Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, 91 40 6716 2222, agel.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_AXIOMGAS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_AXIOMGAS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_AXIOMGAS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:43.101Z",
+ "slug": "axiom-gas-engineering",
+ "symbol": "AXIOMGAS",
+ "board": "sme",
+ "name": "Axiom Gas Engineering Limited"
+}

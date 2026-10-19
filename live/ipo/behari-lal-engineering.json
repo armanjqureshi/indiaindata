@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2036900,
+    "bid": 336752156,
+    "times": 165.33
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1612761,
+    "bid": 266614140,
+    "times": 165.32
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1075174,
+    "bid": 171757300,
+    "times": 159.75
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 537587,
+    "bid": 94856840,
+    "times": 176.45
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 3763108,
+    "bid": 200463744,
+    "times": 53.27
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 7412769,
+    "bid": 803830040,
+    "times": 108.44
+   }
+  ],
+  "asOf": "14-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 52,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offer comprising Fresh Issue aggregating up to Rs.930 million and Offer for Sale of up to 7,320,001 Equity Shares (including Anchor Investor portion of 31,74,946 Equity Shares)",
+ "issueSize": {
+  "freshCr": 93,
+  "ofsCr": 208.62,
+  "totalCr": 301.62,
+  "method": "At ₹285 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Emkay Global Financial Services Limited",
+  "Systematix Corporate Services Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 8108114949, Tel: +91 8108114949, beharilalengineering.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_BLEL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_BLEL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BLEL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:13:21.200Z",
+ "slug": "behari-lal-engineering",
+ "symbol": "BLEL",
+ "board": "mainboard",
+ "name": "Behari Lal Engineering Limited"
+}

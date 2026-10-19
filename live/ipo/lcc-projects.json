@@ -1,0 +1,79 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 5854205,
+    "bid": 460657806,
+    "times": 78.69
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 4521923,
+    "bid": 284856624,
+    "times": 62.99
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3014616,
+    "bid": 180027960,
+    "times": 59.72
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1507307,
+    "bid": 104828664,
+    "times": 69.55
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 10551153,
+    "bid": 269718192,
+    "times": 25.56
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 20927281,
+    "bid": 1015232622,
+    "times": 48.51
+   }
+  ],
+  "asOf": "11-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 102,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial public offer comprising of Fresh Issue aggregating up to Rs. 2580 million and Offer for sale of up to 11,585,000 Equity shares (Including Anchor Investor portion of 87,76,869 Equity Shares)",
+ "issueSize": {
+  "freshCr": 258,
+  "ofsCr": 169.14,
+  "totalCr": 427.14,
+  "method": "At ₹146 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Motilal Oswal Investment Advisors Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, lccpl.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_LCCPROJECT.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_LCCPROJECT.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_LCCPROJECT.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:30.627Z",
+ "slug": "lcc-projects",
+ "symbol": "LCCPROJECT",
+ "board": "mainboard",
+ "name": "LCC Projects Limited"
+}

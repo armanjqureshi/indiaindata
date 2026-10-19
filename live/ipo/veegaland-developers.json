@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 3230768,
+    "bid": 57383779,
+    "times": 17.76
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2423077,
+    "bid": 43676009,
+    "times": 18.03
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1615385,
+    "bid": 27882274,
+    "times": 17.26
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 807692,
+    "bid": 15793735,
+    "times": 19.55
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5653847,
+    "bid": 52214609,
+    "times": 9.24
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 11307692,
+    "bid": 153274397,
+    "times": 13.55
+   }
+  ],
+  "asOf": "15-Sep-2026 17:42:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 107,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue of aggregating up to Rs 21,000 lakhs (including Anchor portion of 45,00,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Cumulative Capital Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, veegalanddevelopers.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_VEEGALAND.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_VEEGALAND.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_VEEGALAND.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:25.961Z",
+ "slug": "veegaland-developers",
+ "symbol": "VEEGALAND",
+ "board": "mainboard",
+ "name": "Veegaland Developers Limited"
+}

@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 915000,
+    "bid": 36480225,
+    "times": 39.87
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 686250,
+    "bid": 114256350,
+    "times": 166.49
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 457500,
+    "bid": 69640125,
+    "times": 152.22
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 228750,
+    "bid": 44616225,
+    "times": 195.04
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 1601250,
+    "bid": 170954700,
+    "times": 106.76
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 3202500,
+    "bid": 321691275,
+    "times": 100.45
+   }
+  ],
+  "asOf": "01-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 75,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 45,75,000 Equity Shares (Including Anchor Portion of 13,72,500 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Mefcom Capital Markets Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 81081 14949 , priorityjewels.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_PRIORITY.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PRIORITY.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PRIORITY.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:55.879Z",
+ "slug": "priority-jewels",
+ "symbol": "PRIORITY",
+ "board": "mainboard",
+ "name": "Priority Jewels Limited"
+}

@@ -1,0 +1,76 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 9365510,
+    "bid": 29622290,
+    "times": 3.16
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 7361217,
+    "bid": 6770838,
+    "times": 0.92
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 4907478,
+    "bid": 4518437,
+    "times": 0.92
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 2453739,
+    "bid": 2252401,
+    "times": 0.92
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 17176172,
+    "bid": 17092735,
+    "times": 1
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 33902899,
+    "bid": 53485863,
+    "times": 1.58
+   }
+  ],
+  "asOf": "24-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 101,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offering comprising of fresh issue of aggregating up to Rs. 3,200.00 million and Offer for sale up to 26,217,634 Equity shares (including Anchor portion of 1,43,51,775 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "JM Financial Limited",
+  "Goldman Sachs (India) Securities Private Limited",
+  "SBI Capital Markets Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 40 6716 2222, vgl.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_VARMORA.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_VARMORA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_VARMORA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:38.251Z",
+ "slug": "varmora-granito",
+ "symbol": "VARMORA",
+ "board": "mainboard",
+ "name": "Varmora Granito Limited"
+}

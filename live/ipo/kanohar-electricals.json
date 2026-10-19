@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 3340950,
+    "bid": 719539590,
+    "times": 215.37
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2505713,
+    "bid": 219849456,
+    "times": 87.74
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1670476,
+    "bid": 157086665,
+    "times": 94.04
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 835237,
+    "bid": 62762791,
+    "times": 75.14
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5846663,
+    "bid": 119899460,
+    "times": 20.51
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 11693326,
+    "bid": 1059288506,
+    "times": 90.59
+   }
+  ],
+  "asOf": "10-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 23,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial public offer of comprising a fresh issue of aggregating up to Rs. 3,000 million and offer for sale up to 11,957,915 equity shares (Including Anchor Portion of 50,11,424 Equity shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Nuvama Wealth Management Limited",
+  "IIFL Capital Services Limited (Formerly known as IIFL Securities Limited)"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, kanoharelectricals.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_KANOHAR.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_KANOHAR.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_KANOHAR.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:08.796Z",
+ "slug": "kanohar-electricals",
+ "symbol": "KANOHAR",
+ "board": "mainboard",
+ "name": "Kanohar Electricals Limited"
+}

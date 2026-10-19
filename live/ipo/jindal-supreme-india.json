@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2685600,
+    "bid": 339488625,
+    "times": 126.41
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2014200,
+    "bid": 660643214,
+    "times": 327.99
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1342800,
+    "bid": 408458610,
+    "times": 304.18
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 671400,
+    "bid": 252184604,
+    "times": 375.61
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4699800,
+    "bid": 701851164,
+    "times": 149.34
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 9399600,
+    "bid": 1701983003,
+    "times": 181.07
+   }
+  ],
+  "asOf": "18-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 161,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offering comprising of fresh issue up to 1,07,41,149 Equity shares and Offer for Sale upto 26,86,851 Equity Shares (including Anchor portion 40,28,400 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Sarthi Capital Advisors Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Mr. Babu Raphael,+91 22 6263 8200,ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_JSIPL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_JSIPL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_JSIPL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:16.388Z",
+ "slug": "jindal-supreme-india",
+ "symbol": "JSIPL",
+ "board": "mainboard",
+ "name": "Jindal Supreme (India) Limited"
+}

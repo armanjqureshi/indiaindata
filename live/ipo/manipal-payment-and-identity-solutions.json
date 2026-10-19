@@ -1,0 +1,78 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 7123895,
+    "bid": 8964164,
+    "times": 1.26
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3561946,
+    "bid": 4346144,
+    "times": 1.22
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2374631,
+    "bid": 2940828,
+    "times": 1.24
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1187315,
+    "bid": 1405316,
+    "times": 1.18
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 2374631,
+    "bid": 5202296,
+    "times": 2.19
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 13060472,
+    "bid": 18512604,
+    "times": 1.42
+   }
+  ],
+  "asOf": "11-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 44,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of fresh issue aggregating up to 3200 million and offer for sale up to 14,306,785 Equity shares (including Anchor portion of 1,06,85,841 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Motilal Oswal Investment Advisors Limited",
+  "Axis Capital Limited",
+  "ICICI Securities Limited",
+  "IIFL Capital Services Limited",
+  "Nuvama Wealth Management Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 8108114949, manipalpayment.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MPIMANIPAL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MPIMANIPAL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MPIMANIPAL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:54.548Z",
+ "slug": "manipal-payment-and-identity-solutions",
+ "symbol": "MPIMANIPAL",
+ "board": "mainboard",
+ "name": "Manipal Payment and Identity Solutions Limited"
+}

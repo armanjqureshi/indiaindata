@@ -1,0 +1,81 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 10546389,
+    "bid": 555244079,
+    "times": 52.65
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 7909792,
+    "bid": 124096460,
+    "times": 15.69
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 5273195,
+    "bid": 88295972,
+    "times": 16.74
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 2636597,
+    "bid": 35800488,
+    "times": 13.58
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 18456182,
+    "bid": 62634055,
+    "times": 3.39
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 36912363,
+    "bid": 741974594,
+    "times": 20.1
+   }
+  ],
+  "asOf": "11-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 107,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Offer for Sale of up to 5,27,31,946 Equity shares (including Anchor portion of 1,58,19,583 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 732.97,
+  "totalCr": 732.97,
+  "method": "At ₹139 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "IIFL Capital Services Limited",
+  "IDBI Capital Markets & Securities Limited",
+  "JM Financial Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 8108114949, arcil@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ARCIL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ARCIL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ARCIL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:35.414Z",
+ "slug": "asset-reconstruction-company-india",
+ "symbol": "ARCIL",
+ "board": "mainboard",
+ "name": "Asset Reconstruction Company (India) Limited"
+}

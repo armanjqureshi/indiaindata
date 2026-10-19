@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2860000,
+    "bid": 3325800,
+    "times": 1.16
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2145000,
+    "bid": 4280250,
+    "times": 2
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1430000,
+    "bid": 2878500,
+    "times": 2.01
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 715000,
+    "bid": 1401750,
+    "times": 1.96
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5005000,
+    "bid": 12534150,
+    "times": 2.5
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 10010000,
+    "bid": 20140200,
+    "times": 2.01
+   }
+  ],
+  "asOf": "21-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 150,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue of up to 14,300,000 Equity Shares (including Anchor Investor portion of 4,290,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Choice Capital Advisors Private Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, sona.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SONA.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SONA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SONA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:47.948Z",
+ "slug": "sonaselection-india",
+ "symbol": "SONA",
+ "board": "mainboard",
+ "name": "Sonaselection India Limited"
+}

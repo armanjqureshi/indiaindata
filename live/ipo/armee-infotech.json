@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 1001784,
+    "bid": 2996200,
+    "times": 2.99
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1928572,
+    "bid": 4036760,
+    "times": 2.09
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1285715,
+    "bid": 1790800,
+    "times": 1.39
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 642857,
+    "bid": 2245960,
+    "times": 3.49
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4500000,
+    "bid": 11126280,
+    "times": 2.47
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 7430356,
+    "bid": 18159240,
+    "times": 2.44
+   }
+  ],
+  "asOf": "25-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 40,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offering comprising of fresh issue aggregating up to Rs. 30,000 Lakhs (including Anchor portion of 10,65,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Khandwala Securities Limited",
+  "Saffron Capital Advisors Private Limited"
+ ],
+ "registrar": "Cameo Corporate Services Limited",
+ "registrarContact": "K. Sreepriya, +91 44 4002 0700, priya@cameoindia.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ARMEE.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ARMEE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ARMEE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:14.693Z",
+ "slug": "armee-infotech",
+ "symbol": "ARMEE",
+ "board": "mainboard",
+ "name": "ArMee Infotech Limited"
+}

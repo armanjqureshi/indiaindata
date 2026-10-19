@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 132.3,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 141654400,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 158900800,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 116860800,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 42040000,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 300555200,
+    "times": 0
+   }
+  ],
+  "asOf": "02-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1600,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 56,91,200 Equity Shares (including Market Maker portion of 2,84,800 Equity Shares and Anchor portion of 16,19,200 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Vivro Financial Services Private Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 40 67162222 / 1800 309 4001 , shanti.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SHANTIINOR.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SHANTIINOR.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SHANTIINOR.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:41.811Z",
+ "slug": "shanti-inorganics",
+ "symbol": "SHANTIINOR",
+ "board": "sme",
+ "name": "Shanti Inorganics Limited"
+}

@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 4279069,
+    "bid": 782053085,
+    "times": 182.76
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3209302,
+    "bid": 371091875,
+    "times": 115.63
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2139535,
+    "bid": 263545535,
+    "times": 123.18
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1069767,
+    "bid": 107546340,
+    "times": 100.53
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 7488372,
+    "bid": 228753745,
+    "times": 30.55
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 14976743,
+    "bid": 1381898705,
+    "times": 92.27
+   }
+  ],
+  "asOf": "29-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 55,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 3,200 million and Offer for Sale aggregating up to Rs. 2,320 million (including Anchor investor portion of 60,88,233 Equity shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "IIFL Capital Services Limited",
+  "JM Financial Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, orient.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ORIENTCABL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ORIENTCABL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ORIENTCABL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:41.987Z",
+ "slug": "orient-cables-india",
+ "symbol": "ORIENTCABL",
+ "board": "mainboard",
+ "name": "Orient Cables (India) Limited"
+}

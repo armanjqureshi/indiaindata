@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 5155438,
+    "bid": 190776852,
+    "times": 37
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 4009394,
+    "bid": 424823532,
+    "times": 105.96
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2672930,
+    "bid": 331295244,
+    "times": 123.94
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1336464,
+    "bid": 93528288,
+    "times": 69.98
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 9355253,
+    "bid": 173505948,
+    "times": 18.55
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 18520085,
+    "bid": 789106332,
+    "times": 42.61
+   }
+  ],
+  "asOf": "03-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 84,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh Issue aggregating up to Rs.2,500 million and Offer for Sale of up to 11,848,340 Equity Shares. (Including Anchor portion of 77,91,789 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Not applicable",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Emkay Global Financial Services Limited",
+  "Valmiki Leela Capital Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Babu Raphael C, +91 22 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_DEEPA.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_DEEPA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_DEEPA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:32.559Z",
+ "slug": "deepa-jewellers",
+ "symbol": "DEEPA",
+ "board": "mainboard",
+ "name": "Deepa Jewellers Limited"
+}

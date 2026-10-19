@@ -1,0 +1,84 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2325145,
+    "bid": 433382148,
+    "times": 186.39
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1743860,
+    "bid": 86840604,
+    "times": 49.8
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1162574,
+    "bid": 59076594,
+    "times": 50.82
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 581286,
+    "bid": 27764010,
+    "times": 47.76
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4069005,
+    "bid": 52719318,
+    "times": 12.96
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 20519,
+    "bid": 272466,
+    "times": 13.28
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 8158529,
+    "bid": 573214536,
+    "times": 70.26
+   }
+  ],
+  "asOf": "12-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 18,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offering comprising of Fresh Issue aggregating up to Rs. 2,000 million and Offer for Sale of up to 9,166,000 Equity Shares (including Employee reservation portion aggregating up to Rs. 15 million and Anchor Investor portion of up to 34,87,717 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 76 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Kotak Mahindra Capital Company Limited",
+  "IIFL Capital Services Limited",
+  "Jefferies India Private Limited",
+  "Motilal Oswal Investment Advisors Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 40 6716 2222, molbio.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MOLBIO.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MOLBIO.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MOLBIO.zip"
+ },
+ "fetchedAt": "2026-10-19T22:13:45.142Z",
+ "slug": "molbio-diagnostics",
+ "symbol": "MOLBIO",
+ "board": "mainboard",
+ "name": "Molbio Diagnostics Limited"
+}

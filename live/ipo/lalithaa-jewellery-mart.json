@@ -1,0 +1,82 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 17831578,
+    "bid": 2592436894,
+    "times": 145.38
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 13373685,
+    "bid": 988270222,
+    "times": 73.9
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 8915790,
+    "bid": 762426736,
+    "times": 85.51
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 4457895,
+    "bid": 225843486,
+    "times": 50.66
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 31205263,
+    "bid": 368509566,
+    "times": 11.81
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 350877,
+    "bid": 3000922,
+    "times": 8.55
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 62761403,
+    "bid": 3952217604,
+    "times": 62.97
+   }
+  ],
+  "asOf": "19-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 74,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 12,000 million and Offer for Sale aggregating upto Rs. 5,000 million (including Employee Reservation Portion aggregating up to Rs. 60 million and Anchor Investor portion of 2,52,83,581 Equity shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 19 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Anand Rathi Advisors Limited",
+  "Equirus Capital Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, lalithaajewellery.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_LALITHAA.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_LALITHAA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_LALITHAA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:13:02.422Z",
+ "slug": "lalithaa-jewellery-mart",
+ "symbol": "LALITHAA",
+ "board": "mainboard",
+ "name": "Lalithaa Jewellery Mart Limited"
+}

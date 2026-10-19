@@ -1,0 +1,76 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 7261410,
+    "bid": 1158819885,
+    "times": 159.59
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 5446058,
+    "bid": 264390092,
+    "times": 48.55
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3630706,
+    "bid": 185452635,
+    "times": 51.08
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1815352,
+    "bid": 78937457,
+    "times": 43.48
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 12707469,
+    "bid": 168541288,
+    "times": 13.26
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 25414937,
+    "bid": 1591751265,
+    "times": 62.63
+   }
+  ],
+  "asOf": "11-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 59,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial public offer of comprising a fresh issue of aggregating up to Rs. 6,750 million and offer for sale up to Rs. 2,000 million (Including Anchor portion of 1,03,34,644 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "JM Financial Limited",
+  "ICICI Securities Limited",
+  "IIFL Capital Services Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, karamtara.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_KARAMTARA.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_KARAMTARA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_KARAMTARA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:49.860Z",
+ "slug": "karamtara-engineering",
+ "symbol": "KARAMTARA",
+ "board": "mainboard",
+ "name": "Karamtara Engineering Limited"
+}

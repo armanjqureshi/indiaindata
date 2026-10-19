@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 1.18,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 836400,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 2103600,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 1921200,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 182400,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 2940000,
+    "times": 0
+   }
+  ],
+  "asOf": "29-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 58,90,800 Equity Shares and Offer for Sale up to 7,14,000 (Including market maker portion of 3,31,200 Equity Shares and Anchor Allocation of 7,52,400 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Finshore Management Services Limited"
+ ],
+ "registrar": "Maashitla Securities Private Limited",
+ "registrarContact": "Mr Mukul Agrawal ,011-47581432 , ipo@maashitla.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_HIMALAYAN.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_HIMALAYAN.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HIMALAYAN.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:51.581Z",
+ "slug": "himalayan-solar",
+ "symbol": "HIMALAYAN",
+ "board": "sme",
+ "name": "Himalayan Solar Limited"
+}

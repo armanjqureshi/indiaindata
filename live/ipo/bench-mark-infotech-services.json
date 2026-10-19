@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 95.97,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 64972800,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 75608400,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 57018000,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 18590400,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 140581200,
+    "times": 0
+   }
+  ],
+  "asOf": "29-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 34,00,000 Equity Shares and Offer for sale of up to 4,58,000 Equity Shares (Including Market Maker portion of 1,93,200 Equity Shares and Anchor Allotment of 10,96,800 Equity shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "GYR Capital Advisors Private Limited"
+ ],
+ "registrar": "KFIN Technologies Limited",
+ "registrarContact": "M Murali Krishna ,+914067162222 ,benchmarkinfo.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_BMISL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_BMISL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BMISL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:46.674Z",
+ "slug": "bench-mark-infotech-services",
+ "symbol": "BMISL",
+ "board": "sme",
+ "name": "Bench Mark Infotech Services Limited"
+}

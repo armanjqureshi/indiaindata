@@ -1,0 +1,87 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 6899735,
+    "bid": 1469058281,
+    "times": 212.92
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 5392957,
+    "bid": 280059292,
+    "times": 51.93
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3595305,
+    "bid": 208793082,
+    "times": 58.07
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1797652,
+    "bid": 71266210,
+    "times": 39.64
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 12583565,
+    "bid": 102201620,
+    "times": 8.12
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 80106,
+    "bid": 652392,
+    "times": 8.14
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 24956363,
+    "bid": 1851971585,
+    "times": 74.21
+   }
+  ],
+  "asOf": "12-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 17,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer of Fresh Issue of Aggregating Up to Rs. 14,000 million and Offer for sale up to 19,137,602 Equity Shares (Including Eligible Employees Reservation Portion of Aggregating up to Rs. 60 million and Anchor Investor portion of 1,05,42,657 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 80 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Axis Capital Limited",
+  "Jefferies India Private Limited",
+  "Kotak Mahindra Capital Company Limited",
+  "Nomura Financial Advisory",
+  "Securities (India) Private Limited",
+  "SBI Capital Markets Limited",
+  "360 ONE WAM Limited."
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91- 40 6716 2222/ 1800 309 4001, dhoot.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_DHOOTTRANS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_DHOOTTRANS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_DHOOTTRANS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:13:49.960Z",
+ "slug": "dhoot-transmission",
+ "symbol": "DHOOTTRANS",
+ "board": "mainboard",
+ "name": "Dhoot Transmission Limited"
+}

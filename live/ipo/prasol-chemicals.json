@@ -1,0 +1,79 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 1555209,
+    "bid": 11228140,
+    "times": 7.22
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1166406,
+    "bid": 2095302,
+    "times": 1.8
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 777604,
+    "bid": 901560,
+    "times": 1.16
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 388802,
+    "bid": 1193742,
+    "times": 3.07
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 2721614,
+    "bid": 4639206,
+    "times": 1.7
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 5443229,
+    "bid": 17962648,
+    "times": 3.3
+   }
+  ],
+  "asOf": "10-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 22,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 800 million and Offer for sale aggregating up to Rs. 4200 million (including Anchor portion of 22,18,930 Equity Shares)",
+ "issueSize": {
+  "freshCr": 80,
+  "ofsCr": 420,
+  "totalCr": 500,
+  "method": "At ₹676 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "DAM Capital Advisors Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 6716 2222/18003094001, prasol.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_PRASOLCHEM.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PRASOLCHEM.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PRASOLCHEM.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:04.103Z",
+ "slug": "prasol-chemicals",
+ "symbol": "PRASOLCHEM",
+ "board": "mainboard",
+ "name": "Prasol Chemicals Limited"
+}

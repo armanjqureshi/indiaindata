@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 3529412,
+    "bid": 922992424,
+    "times": 261.51
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2647059,
+    "bid": 510716856,
+    "times": 192.94
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1764706,
+    "bid": 368536268,
+    "times": 208.84
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 882353,
+    "bid": 142180588,
+    "times": 161.14
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 6176471,
+    "bid": 244854060,
+    "times": 39.64
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 12352942,
+    "bid": 1678563340,
+    "times": 135.88
+   }
+  ],
+  "asOf": "01-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 34,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising Fresh issue of aggregating up to Rs. 7200 million (including Anchor Investor portion of 50,34,964 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "DAM Capital Advisors Limited",
+  "Systematix Corporate Services Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 8108114949, esdssoftware.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ESDS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ESDS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ESDS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:51.260Z",
+ "slug": "esds-software-solution",
+ "symbol": "ESDS",
+ "board": "mainboard",
+ "name": "ESDS Software Solution Limited"
+}

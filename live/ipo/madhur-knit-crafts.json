@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 1.47,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 204000,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 1953600,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 1348800,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 604800,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 2157600,
+    "times": 0
+   }
+  ],
+  "asOf": "27-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 53,26,800 Equity Shares (including Market Maker portion of 2,66,400 Equity Shares and Anchor allocation of 3,02,400 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "SKI Capital Services Limited"
+ ],
+ "registrar": "Skyline Financial Services Private Limited",
+ "registrarContact": "Anuj Rana, 011-40450193, ipo@skylinerta.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MADHURKNIT.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MADHURKNIT.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MADHURKNIT.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:34.100Z",
+ "slug": "madhur-knit-crafts",
+ "symbol": "MADHURKNIT",
+ "board": "sme",
+ "name": "Madhur Knit Crafts Limited"
+}

@@ -1,0 +1,72 @@
+{
+ "subscription": {
+  "total": 3.66,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 4282800,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 5095200,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 3552000,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 1543200,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 9378000,
+    "times": 0
+   }
+  ],
+  "asOf": "14-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial public offer comprising Fresh offer up to 53,50,800 equity shares and Offer for sale up to 5,00,400 equity shares (Including Market Maker Reservation Portion 3,36,000 Equity Shares and Anchor Allocation 13,60,800 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 5.9,
+  "totalCr": 5.9,
+  "method": "At ₹118 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Smart Horizon Capital Advisors Private Limited"
+ ],
+ "registrar": "Purva Sharegistry (India) Private Limited",
+ "registrarContact": "Ms. Deepali Gaonkar, 022 - 49614132, newissue@purvashare.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_PRAMODINI.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PRAMODINI.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PRAMODINI.zip"
+ },
+ "fetchedAt": "2026-10-19T22:13:30.912Z",
+ "slug": "pramodini-medicare",
+ "symbol": "PRAMODINI",
+ "board": "sme",
+ "name": "Pramodini Medicare Limited"
+}

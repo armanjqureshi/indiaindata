@@ -1,0 +1,66 @@
+{
+ "subscription": {
+  "total": 0.98,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 3907200,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 1774400,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 1427200,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 347200,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 5681600,
+    "times": 0
+   }
+  ],
+  "asOf": "01-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1600,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offering comprising of Fresh Issue of upto Rs. 5,310 Lakhs Equity Shares and Offer for Sale up to Rs. 700 Lakhs (Including Market Maker portion of 3,55,200 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Indorient Financial Services Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Aniket Seebag ,022 6263 8200 , ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_GREENASIA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_GREENASIA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:05.501Z",
+ "slug": "green-asia-impex",
+ "symbol": "GREENASIA",
+ "board": "sme",
+ "name": "Green Asia Impex Limited"
+}

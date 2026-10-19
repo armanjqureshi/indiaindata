@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 4701558,
+    "bid": 1216322400,
+    "times": 258.71
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 4440395,
+    "bid": 924549840,
+    "times": 208.21
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2960264,
+    "bid": 685246320,
+    "times": 231.48
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1480131,
+    "bid": 239303520,
+    "times": 161.68
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 13321184,
+    "bid": 577173840,
+    "times": 43.33
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 22463137,
+    "bid": 2718046080,
+    "times": 121
+   }
+  ],
+  "asOf": "09-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 120,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial public offer comprising of fresh issue aggregating up to Rs. 3,156 million and offer for sale of up to 2,856,869 equity shares (including Anchor Investor portion of 67,94,034 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Centrum Broking Limited",
+  "PNB Investment Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 6716 2222/18003094001, pcpl.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_PRANAV .zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PRANAV.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PRANAV .zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:18.241Z",
+ "slug": "pranav-constructions",
+ "symbol": "PRANAV",
+ "board": "mainboard",
+ "name": "Pranav Constructions Limited"
+}

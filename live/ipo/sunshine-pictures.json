@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 1567436,
+    "bid": 193602041,
+    "times": 123.52
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1175592,
+    "bid": 231634994,
+    "times": 197.04
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 783728,
+    "bid": 155509269,
+    "times": 198.42
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 391864,
+    "bid": 76125725,
+    "times": 194.27
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 2743023,
+    "bid": 155253347,
+    "times": 56.6
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 5486051,
+    "bid": 580490382,
+    "times": 105.81
+   }
+  ],
+  "asOf": "20-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 41,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 48,00,034 Equity Shares and Offer for sale upto 30,37,157 Equity Shares (including Anchor Investor portion of 23,51,140 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "GYR Capital Advisors Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Vinayak Morbale , +91 8108114949, Tel: +91 22-6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SUNSHINE.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SUNSHINE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SUNSHINE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:52.865Z",
+ "slug": "sunshine-pictures",
+ "symbol": "SUNSHINE",
+ "board": "mainboard",
+ "name": "Sunshine Pictures Limited"
+}

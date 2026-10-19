@@ -1,0 +1,81 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 39921876,
+    "bid": 134853264,
+    "times": 3.38
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 20584374,
+    "bid": 167937120,
+    "times": 8.16
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 13722916,
+    "bid": 122401656,
+    "times": 8.92
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 6861458,
+    "bid": 45535464,
+    "times": 6.64
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 13722916,
+    "bid": 63352692,
+    "times": 4.62
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 74229166,
+    "bid": 366143076,
+    "times": 4.93
+   }
+  ],
+  "asOf": "29-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 468,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offering comprising of Fresh issue aggregating up to Rs. 2870 million and offer for sale up to 4,15,62,500 Equity Shares (including Anchor portion of 5,90,62,500 Equity Shares)",
+ "issueSize": {
+  "freshCr": 287,
+  "ofsCr": 133,
+  "totalCr": 420,
+  "method": "At ₹32 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "IIFL Capital Services Limited",
+  "CLSA India Private Limited",
+  "Systematix Corporate Services Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishna , +91 810 811 4949, acevector.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ACEVECTOR.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ACEVECTOR.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ACEVECTOR.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:37.272Z",
+ "slug": "acevector",
+ "symbol": "ACEVECTOR",
+ "board": "mainboard",
+ "name": "AceVector Limited"
+}

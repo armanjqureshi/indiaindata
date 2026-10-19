@@ -1,0 +1,79 @@
+{
+ "subscription": {
+  "total": 151.74,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 118178400,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 197119200,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 153268800,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 43850400,
+    "times": 0
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 0,
+    "bid": 202800,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 315500400,
+    "times": 0
+   }
+  ],
+  "asOf": "28-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial public offer comprising Fresh offer up to 42,91,200 equity shares and Offer for sale up to 9,96,000 equity shares (Including Market Maker Reservation Portion of up to 2,66,400, reservation for employees of 1,92,000 equity shares and Anchor Allocation 14,35,200 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 10.06,
+  "totalCr": 10.06,
+  "method": "At ₹101 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "GYR Capital Advisors Private Limited"
+ ],
+ "registrar": "KFIN Technologies Limited",
+ "registrarContact": "Mr. M. Murali Krishna, Tel: +91-40-67162222/18003094001; sumax.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SUMAX.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SUMAX.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SUMAX.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:09.955Z",
+ "slug": "sumax-engineering",
+ "symbol": "SUMAX",
+ "board": "sme",
+ "name": "Sumax Engineering Limited"
+}

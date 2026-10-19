@@ -1,0 +1,81 @@
+{
+ "subscription": {
+  "total": 4.45,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 7658183,
+    "bid": 30688026,
+    "times": 4.01
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3829090,
+    "bid": 17234736,
+    "times": 4.5
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2552727,
+    "bid": 11462913,
+    "times": 4.49
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1276363,
+    "bid": 5771823,
+    "times": 4.52
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 2552727,
+    "bid": 14541630,
+    "times": 5.7
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 14040000,
+    "bid": 62464392,
+    "times": 4.45
+   }
+  ],
+  "asOf": "16-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 51,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 5000 million and Offer for Sale aggregating upto Rs.2020 million (including Anchor reservation portion of 1,09,30,795 Equity Shares)",
+ "issueSize": {
+  "freshCr": 500,
+  "ofsCr": 202,
+  "totalCr": 702,
+  "method": "At ₹289 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Nuvama Wealth Management Limited",
+  "IIFL Capital Services Limited",
+  "Motilal Oswal Investment Advisors Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "Williams R, +91 40 6716 2222, fusion.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_FUSIONCX.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_FUSIONCX.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_FUSIONCX.zip"
+ },
+ "fetchedAt": "2026-10-19T22:07:35.923Z",
+ "slug": "fusion-cx",
+ "symbol": "FUSIONCX",
+ "board": "mainboard",
+ "name": "Fusion CX Limited"
+}

@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 4702085,
+    "bid": 789608094,
+    "times": 167.93
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3526564,
+    "bid": 281115762,
+    "times": 79.71
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2351043,
+    "bid": 173747340,
+    "times": 73.9
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1175521,
+    "bid": 107368422,
+    "times": 91.34
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 8228649,
+    "bid": 273004732,
+    "times": 33.18
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 16457298,
+    "bid": 1343728588,
+    "times": 81.65
+   }
+  ],
+  "asOf": "10-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 82,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial public offer comprising of Fresh Issue aggregating up to Rs. 600 million and Offer for sale of up to 2,02,13,722 Equity shares (Including Anchor Investor Portion of 70,53,127 Equity shares)",
+ "issueSize": {
+  "freshCr": 60,
+  "ofsCr": 367.89,
+  "totalCr": 427.89,
+  "method": "At ₹182 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "IIFL Capital Services Limited (Formerly known as IIFL Securities Limited)",
+  "Motilal Oswal Investment Advisors Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, glasswallsystems.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_GLASSWALL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_GLASSWALL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_GLASSWALL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:13.467Z",
+ "slug": "glass-wall-systems-india",
+ "symbol": "GLASSWALL",
+ "board": "mainboard",
+ "name": "Glass Wall Systems (India) Limited"
+}

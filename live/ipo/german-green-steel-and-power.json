@@ -1,0 +1,76 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 4578030,
+    "bid": 95805874,
+    "times": 20.93
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3445455,
+    "bid": 186164592,
+    "times": 54.03
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2296970,
+    "bid": 124143647,
+    "times": 54.05
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1148485,
+    "bid": 62020945,
+    "times": 54
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 8039394,
+    "bid": 183523725,
+    "times": 22.83
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 16062879,
+    "bid": 465494191,
+    "times": 28.98
+   }
+  ],
+  "asOf": "29-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 107,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 29,000 lakhs and Offer for Sale of up to 10,00,000 Equity Shares (including Anchor investor portion of 65,58,991 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Systematix Corporate Services Limited",
+  "Emkay Global Financial Services Limited",
+  "Pantomath Capital Advisors Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Babu Rapheal, +91 22 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_GERMAN.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_GERMAN.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_GERMAN.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:32.584Z",
+ "slug": "german-green-steel-and-power",
+ "symbol": "GERMAN",
+ "board": "mainboard",
+ "name": "German Green Steel and Power Limited"
+}

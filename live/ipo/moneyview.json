@@ -1,0 +1,82 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 65089575,
+    "bid": 14804683992,
+    "times": 227.45
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 50230380,
+    "bid": 5797094940,
+    "times": 115.41
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 33486920,
+    "bid": 4404889251,
+    "times": 131.54
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 16743460,
+    "bid": 1392205689,
+    "times": 83.15
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 117204220,
+    "bid": 2293385661,
+    "times": 19.57
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 232524175,
+    "bid": 22895164593,
+    "times": 98.46
+   }
+  ],
+  "asOf": "28-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 441,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial public offering comprising of aggregating up to Rs. 7500 million and offer for sale up to 10,04,94,200 Equity Shares (including Anchor portion of 9,63,24,729 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 341.68,
+  "totalCr": 341.68,
+  "method": "At ₹34 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Axis Capital Limited",
+  "BofA Securities India Limited",
+  "IIFL Capital Services Limited",
+  "Kotak Mahindra Capital Company Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishna , +91 810 811 4949, moneyview.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MONEYVIEW.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MONEYVIEW.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MONEYVIEW.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:00.829Z",
+ "slug": "moneyview",
+ "symbol": "MONEYVIEW",
+ "board": "mainboard",
+ "name": "Moneyview Limited"
+}

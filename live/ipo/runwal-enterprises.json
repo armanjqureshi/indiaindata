@@ -1,0 +1,82 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 3424137,
+    "bid": 13332508,
+    "times": 3.89
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2568104,
+    "bid": 10108308,
+    "times": 3.94
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1712070,
+    "bid": 7441238,
+    "times": 4.35
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 856034,
+    "bid": 2667070,
+    "times": 3.12
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5992242,
+    "bid": 6735099,
+    "times": 1.12
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 126811,
+    "bid": 143766,
+    "times": 1.13
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 12111294,
+    "bid": 30319681,
+    "times": 2.5
+   }
+  ],
+  "asOf": "29-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 49,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offering Comprising of Fresh Issue aggregating up to Rs. 5,000 million (including Employee reservation portion aggregating up to Rs. 35 million and Anchor portion of 48,83,605 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Discount of Rs. 14 per equity share is being offered to Eligible Employees bidding in the Employee Reservation Portion",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "ICICI Securities",
+  "Jefferies India Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishna , +91 810 811 4949, runwalenterprises.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_RUNWALENTR.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_RUNWALENTR.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_RUNWALENTR.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:27.249Z",
+ "slug": "runwal-enterprises",
+ "symbol": "RUNWALENTR",
+ "board": "mainboard",
+ "name": "Runwal Enterprises Limited"
+}

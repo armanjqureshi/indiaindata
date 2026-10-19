@@ -1,0 +1,73 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 1768300,
+    "bid": 3044764,
+    "times": 1.72
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 7073200,
+    "bid": 25118246,
+    "times": 3.55
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 4715467,
+    "bid": 14569235,
+    "times": 3.09
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 2357733,
+    "bid": 10549011,
+    "times": 4.47
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 8841500,
+    "bid": 23681481,
+    "times": 2.68
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 17683000,
+    "bid": 51844491,
+    "times": 2.93
+   }
+  ],
+  "asOf": "28-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 151,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 1,76,83,000 Equity Shares",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Mefcom Capital Markets Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 49 6716 2222, annuprojects.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ANNU.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ANNU.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:05.348Z",
+ "slug": "annu-projects",
+ "symbol": "ANNU",
+ "board": "mainboard",
+ "name": "Annu Projects Limited"
+}

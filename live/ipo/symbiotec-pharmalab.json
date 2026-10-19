@@ -1,0 +1,85 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 3739872,
+    "bid": 643359195,
+    "times": 172.03
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2804904,
+    "bid": 206535120,
+    "times": 73.63
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1869936,
+    "bid": 155046495,
+    "times": 82.92
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 934968,
+    "bid": 51488625,
+    "times": 55.07
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 6544776,
+    "bid": 84810330,
+    "times": 12.96
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 35377,
+    "bid": 545055,
+    "times": 15.41
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 13124929,
+    "bid": 935249700,
+    "times": 71.26
+   }
+  ],
+  "asOf": "27-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 15,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer of Fresh Issue of Aggregating Up to Rs. 1,500 million and Offer for sale up to Rs. 16,070 million (Including Eligible Employees Reservation Portion of Aggregating up to Rs. 30 million and Anchor portion of 53,25,909 Equity shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 90 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "JM Financial Limited",
+  "Avendus Capital Private Limited",
+  "Motilal Oswal Investment Advisors Limited",
+  "Nomura Financial Advisory",
+  "Securities (India) Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949 , symbiotecpharmalab.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SYMBIOTEC.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SYMBIOTEC.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SYMBIOTEC.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:15.034Z",
+ "slug": "symbiotec-pharmalab",
+ "symbol": "SYMBIOTEC",
+ "board": "mainboard",
+ "name": "Symbiotec Pharmalab Limited"
+}

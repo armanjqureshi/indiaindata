@@ -1,0 +1,87 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 4323333,
+    "bid": 1309462300,
+    "times": 302.88
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3242500,
+    "bid": 1019583800,
+    "times": 314.44
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2161667,
+    "bid": 716241200,
+    "times": 331.34
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1080833,
+    "bid": 303342600,
+    "times": 280.66
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 7565834,
+    "bid": 459165650,
+    "times": 60.69
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 50000,
+    "bid": 6247300,
+    "times": 124.95
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 15181667,
+    "bid": 2794459050,
+    "times": 184.07
+   }
+  ],
+  "asOf": "24-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 50,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 950 million and Offer for Sale of upto 1,85,00,000 Equity Shares (Including Eligible Employee reservation portion aggregating upto Rs. 15 million and Anchor Investor portion of 64,84,999 Equity Shares)",
+ "issueSize": {
+  "freshCr": 95,
+  "ofsCr": 1.5,
+  "totalCr": 96.5,
+  "method": "At ₹300 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Not Applicable",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "ICICI Securities Limited",
+  "JM Financial Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, tempsens.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_TEMPSENS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_TEMPSENS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_TEMPSENS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:43.357Z",
+ "slug": "tempsens-instruments-india",
+ "symbol": "TEMPSENS",
+ "board": "mainboard",
+ "name": "Tempsens Instruments (India) Limited"
+}

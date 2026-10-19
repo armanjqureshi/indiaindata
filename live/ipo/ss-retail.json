@@ -1,0 +1,82 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2421834,
+    "bid": 493099775,
+    "times": 203.61
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1816377,
+    "bid": 260327515,
+    "times": 143.32
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1210918,
+    "bid": 189979440,
+    "times": 156.89
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 605459,
+    "bid": 70348075,
+    "times": 116.19
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 4238213,
+    "bid": 154118475,
+    "times": 36.36
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 317460,
+    "bid": 853230,
+    "times": 2.69
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 8793884,
+    "bid": 908398995,
+    "times": 103.3
+   }
+  ],
+  "asOf": "18-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 35,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh Issue aggregating up to Rs.3,600 million and Offer for Sale aggregating up to Rs.1,400 million (including Anchor portion 34,52,829 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 25/- per equity share is being offered to Eligible Employees Biding in the Employee Reservation Portion",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Anand Rathi Advisors Limited",
+  "Emkay Global Financial Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 6716 2222/18003094001, ssretail.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SSRETAIL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SSRETAIL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SSRETAIL.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:11.605Z",
+ "slug": "ss-retail",
+ "symbol": "SSRETAIL",
+ "board": "mainboard",
+ "name": "SS Retail Limited"
+}

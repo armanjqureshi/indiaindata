@@ -1,0 +1,88 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 17692307,
+    "bid": 3917611516,
+    "times": 221.43
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 13269231,
+    "bid": 2341020318,
+    "times": 176.42
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 8846154,
+    "bid": 1698986016,
+    "times": 192.06
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 4423077,
+    "bid": 642034302,
+    "times": 145.16
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 30961538,
+    "bid": 1192079980,
+    "times": 38.5
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 1282051,
+    "bid": 15240316,
+    "times": 11.89
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 63205127,
+    "bid": 7465952130,
+    "times": 118.12
+   }
+  ],
+  "asOf": "31-Aug-2026 18:57:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 182,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer of Fresh Issue of Aggregating up to Rs. 5000 million and Offer for sale up to Rs. 2000 million (Including Eligible Employees Reservation Portion of Aggregating up to Rs. 100 million and Anchor portion of 25,243,901 Equity Shares)",
+ "issueSize": {
+  "freshCr": 500,
+  "ofsCr": 200,
+  "totalCr": 700,
+  "method": "At ₹82 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Motilal Oswal Investment Advisors Limited",
+  "JM Financial Limited",
+  "Monarch Networth Capital Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Vinayak Morbale, +91 22 6263 8200,ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_LUMINO.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_LUMINO.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_LUMINO.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:00.612Z",
+ "slug": "lumino-industries",
+ "symbol": "LUMINO",
+ "board": "mainboard",
+ "name": "Lumino Industries Limited"
+}

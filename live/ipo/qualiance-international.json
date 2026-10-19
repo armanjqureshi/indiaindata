@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 426.78,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 201929000,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 354874000,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 286034000,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 68840000,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 556803000,
+    "times": 0
+   }
+  ],
+  "asOf": "08-Sep-2026 17:42:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1000,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 35,52,000 Equity Shares (including Market Maker portion of 1,80,000 Equity Shares and Anchor reservation portion of 10,09,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Hem Securities Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, qualiance.smeipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_QUALIANCE.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_QUALIANCE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_QUALIANCE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:22.988Z",
+ "slug": "qualiance-international",
+ "symbol": "QUALIANCE",
+ "board": "sme",
+ "name": "Qualiance International Limited"
+}

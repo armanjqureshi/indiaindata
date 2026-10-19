@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 3360000,
+    "bid": 308570990,
+    "times": 91.84
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2520000,
+    "bid": 788735205,
+    "times": 312.99
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1680000,
+    "bid": 597740330,
+    "times": 355.8
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 840000,
+    "bid": 190994875,
+    "times": 227.37
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5880000,
+    "bid": 374579610,
+    "times": 63.7
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 11760000,
+    "bid": 1471885805,
+    "times": 125.16
+   }
+  ],
+  "asOf": "30-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 115,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue up to 1,68,00,000 Equity shares (Including Anchor Portion of 50,40,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Choice Capital Advisors Private Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M Murali Krishna ,Tel: 040-67162222/18003094001 ,srit.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SRIT.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SRIT.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SRIT.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:22.501Z",
+ "slug": "srit-india",
+ "symbol": "SRIT",
+ "board": "mainboard",
+ "name": "Srit India Limited"
+}

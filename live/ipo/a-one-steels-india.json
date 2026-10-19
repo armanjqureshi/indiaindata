@@ -1,0 +1,82 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2093531,
+    "bid": 15292803,
+    "times": 7.3
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1570130,
+    "bid": 38482886,
+    "times": 24.51
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1046753,
+    "bid": 26038010,
+    "times": 24.88
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 523377,
+    "bid": 12444876,
+    "times": 23.78
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 3663637,
+    "bid": 31646433,
+    "times": 8.64
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 57636,
+    "bid": 280867,
+    "times": 4.87
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 7384934,
+    "bid": 85702989,
+    "times": 11.61
+   }
+  ],
+  "asOf": "28-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 37,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial public offer comprising Fresh Issue aggregating up to Rs. 35,500 Lakhs and Offer for Sale aggregating up to Rs. 5,000 Lakhs (Including Employee Reservation Portion aggregating up to Rs. 200 lakhs and Anchor portion of 29,85,160 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 38 per Equity Share is being offered to Eligible Employees bidding in the Employee Reservation Portion",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "PL Capital Markets Private Limited",
+  "Khambatta Securities Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Vinayak Morbale, +91 22 6263 8200,ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_AONESTEELS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_AONESTEELS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_AONESTEELS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:56.205Z",
+ "slug": "a-one-steels-india",
+ "symbol": "AONESTEELS",
+ "board": "mainboard",
+ "name": "A-One Steels India Limited"
+}

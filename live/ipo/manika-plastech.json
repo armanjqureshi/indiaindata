@@ -1,0 +1,79 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 5987209,
+    "bid": 65479332,
+    "times": 10.94
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 4619913,
+    "bid": 291469836,
+    "times": 63.09
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3079942,
+    "bid": 216432336,
+    "times": 70.27
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1539971,
+    "bid": 75037500,
+    "times": 48.73
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 10779797,
+    "bid": 244944672,
+    "times": 22.72
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 21386919,
+    "bid": 601893840,
+    "times": 28.14
+   }
+  ],
+  "asOf": "16-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 348,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 925 million and Offer for Sale of up to 7,674,418 Equity shares (Including Anchor Investor portion of 87,55,813 Equity Shares)",
+ "issueSize": {
+  "freshCr": 92.5,
+  "ofsCr": 33,
+  "totalCr": 125.5,
+  "method": "At ₹43 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Pantomath Capital Advisors Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, manikaplastech.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MANIKA.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MANIKA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MANIKA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:21.163Z",
+ "slug": "manika-plastech",
+ "symbol": "MANIKA",
+ "board": "mainboard",
+ "name": "Manika Plastech Limited"
+}

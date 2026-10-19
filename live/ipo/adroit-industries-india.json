@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 2249400,
+    "bid": 438719397,
+    "times": 195.04
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1687050,
+    "bid": 560683422,
+    "times": 332.35
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1124700,
+    "bid": 389115939,
+    "times": 345.97
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 562350,
+    "bid": 171567483,
+    "times": 305.09
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 3936450,
+    "bid": 392892381,
+    "times": 99.81
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 7872900,
+    "bid": 1392295200,
+    "times": 176.85
+   }
+  ],
+  "asOf": "25-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 111,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue up to 9,897,000 and offer for sale up to 1,350,000 Equity Shares (including Anchor portion of 33,74,100 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Choice Capital Advisors Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Babu Rapheal C, +91 022 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ADROITIND.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ADROITIND.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ADROITIND.zip"
+ },
+ "fetchedAt": "2026-10-19T22:09:24.149Z",
+ "slug": "adroit-industries-india",
+ "symbol": "ADROITIND",
+ "board": "mainboard",
+ "name": "Adroit Industries (India) Limited"
+}

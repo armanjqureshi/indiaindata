@@ -1,0 +1,83 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 23323308,
+    "bid": 3634517685,
+    "times": 155.83
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 17492481,
+    "bid": 610743267,
+    "times": 34.91
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 11661654,
+    "bid": 433028037,
+    "times": 37.13
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 5830827,
+    "bid": 177715230,
+    "times": 30.48
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 40815789,
+    "bid": 343090685,
+    "times": 8.41
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 166666,
+    "bid": 2071199,
+    "times": 12.43
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 81798244,
+    "bid": 4590422836,
+    "times": 56.12
+   }
+  ],
+  "asOf": "13-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 107,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 14,280 million and Offer for Sale aggregating upto Rs. 1,250 million (including Employee Reservation Portion aggregating up to Rs. 20 million & Anchor Investor portion of 3,32,35,713 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 13 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "JM Financial Limited",
+  "Axis Capital Limited",
+  "IIFL Capital Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, milky.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MILKYMIST.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MILKYMIST.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MILKYMIST.zip"
+ },
+ "fetchedAt": "2026-10-19T22:13:35.599Z",
+ "slug": "milky-mist-dairy-food",
+ "symbol": "MILKYMIST",
+ "board": "mainboard",
+ "name": "Milky Mist Dairy Food Limited"
+}

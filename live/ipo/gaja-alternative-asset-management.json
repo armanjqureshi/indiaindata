@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 7236840,
+    "bid": 315382716,
+    "times": 43.58
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 5427632,
+    "bid": 338417979,
+    "times": 62.35
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3618422,
+    "bid": 261336138,
+    "times": 72.22
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1809210,
+    "bid": 77081841,
+    "times": 42.61
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 12664474,
+    "bid": 139759656,
+    "times": 11.04
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 25328946,
+    "bid": 793560351,
+    "times": 31.33
+   }
+  ],
+  "asOf": "21-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 93,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating up to Rs. 4,500 million and Offer for Sale aggregating up to Rs. 1,000 million. (Including Anchor Investor portion of 1,03,12,500 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "JM Financial Limited",
+  "IIFL Capital Services Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 810 811 4949, gajaalternative.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_GAJA.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_GAJA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_GAJA.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:48.159Z",
+ "slug": "gaja-alternative-asset-management",
+ "symbol": "GAJA",
+ "board": "mainboard",
+ "name": "Gaja Alternative Asset Management Limited"
+}

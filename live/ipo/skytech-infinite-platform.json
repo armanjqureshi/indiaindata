@@ -1,0 +1,66 @@
+{
+ "subscription": {
+  "total": 1.99,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 30400,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 1136000,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 534400,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 601600,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 1166400,
+    "times": 0
+   }
+  ],
+  "asOf": "18-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1600,
+ "faceValue": 0.1,
+ "issueType": "100 % Book Building",
+ "issueSizeText": "Initial Public Offering of Fresh Issue of up to 29,45,600 Equity Shares (including Market Maker portion of 1,48,800 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Finshore Management Services Limited"
+ ],
+ "registrar": "Integrated Registry Management Services Private Limited",
+ "registrarContact": "Mr. S Giridhar, 080-23460815, smeipo@integratedindia.in",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SKYTECH.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SKYTECH.zip"
+ },
+ "fetchedAt": "2026-10-19T22:13:11.866Z",
+ "slug": "skytech-infinite-platform",
+ "symbol": "SKYTECH",
+ "board": "sme",
+ "name": "Skytech Infinite Platform Limited"
+}

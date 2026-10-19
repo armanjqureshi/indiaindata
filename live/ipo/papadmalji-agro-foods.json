@@ -1,0 +1,66 @@
+{
+ "subscription": {
+  "total": 2.46,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 2779200,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 1180800,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 1011200,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 169600,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 3960000,
+    "times": 0
+   }
+  ],
+  "asOf": "01-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1600,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh issue of up to 25,72,800 equity shares and offer for sale of up to 2,30,400 equity shares (including Market Maker portion of 1,44,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Kreo Capital Private Limited"
+ ],
+ "registrar": "MAS Services Limited",
+ "registrarContact": "Mr. N. C. Pal, 011 4132 0335, ipo@masserv.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_PAPADMALJI.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PAPADMALJI.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:11.560Z",
+ "slug": "papadmalji-agro-foods",
+ "symbol": "PAPADMALJI",
+ "board": "sme",
+ "name": "Papadmalji Agro Foods Limited"
+}

@@ -1,0 +1,84 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 50969864,
+    "bid": 6259338316,
+    "times": 122.8
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 26007411,
+    "bid": 2314403938,
+    "times": 88.99
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 17338274,
+    "bid": 1719535048,
+    "times": 99.18
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 8669137,
+    "bid": 594868890,
+    "times": 68.62
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 17338274,
+    "bid": 804852202,
+    "times": 46.42
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 120481,
+    "bid": 6687758,
+    "times": 55.51
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 94436030,
+    "bid": 9385282214,
+    "times": 99.38
+   }
+  ],
+  "asOf": "14-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 154,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 8,855 million and Offer for Sale aggregating upto Rs.7,319.85 million (including Employee Reservation Portion aggregating up to Rs. 10 million & Anchor Investor portion of 74,991,568 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 9 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Axis Capital Limited",
+  "BofA Securities India Limited",
+  "JM Financial Limited",
+  "Kotak Mahindra Capital Company Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, shiprocket.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SHIPROCKET.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SHIPROCKET.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SHIPROCKET.zip"
+ },
+ "fetchedAt": "2026-10-19T22:13:26.036Z",
+ "slug": "shiprocket",
+ "symbol": "SHIPROCKET",
+ "board": "mainboard",
+ "name": "Shiprocket Limited"
+}

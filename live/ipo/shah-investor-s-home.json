@@ -1,0 +1,74 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 1079840,
+    "bid": 30289750,
+    "times": 28.05
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 809880,
+    "bid": 77375415,
+    "times": 95.54
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 539920,
+    "bid": 56772435,
+    "times": 105.15
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 269960,
+    "bid": 20602980,
+    "times": 76.32
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 1889720,
+    "bid": 36394875,
+    "times": 19.26
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 3779440,
+    "bid": 144060040,
+    "times": 38.12
+   }
+  ],
+  "asOf": "30-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 85,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 53,99,200 Equity Shares (including Anchor investor portion of 16,19,760 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Beeline Capital Advisors Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan ,8108114949 ,shahInvestors.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SHAHINVEST.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SHAHINVEST.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SHAHINVEST.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:16.889Z",
+ "slug": "shah-investor-s-home",
+ "symbol": "SHAHINVEST",
+ "board": "mainboard",
+ "name": "Shah Investor's Home Limited"
+}

@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 3.08,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 2398000,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 7810000,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 6248000,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 1562000,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 10208000,
+    "times": 0
+   }
+  ],
+  "asOf": "15-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 2000,
+ "faceValue": 0.5,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of Upto 77,96,000 Equity Shares (Including market maker portion of 3,90,000 Equity Shares and Anchor Allocation of 22,00,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Getfive Advisors Private Limited"
+ ],
+ "registrar": "Kfin Technologies Limited",
+ "registrarContact": "Williams R, +91-40-67162222/18003094001 , vaibhav.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_LOANFRONT.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_LOANFRONT.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_LOANFRONT.zip"
+ },
+ "fetchedAt": "2026-10-19T22:07:46.392Z",
+ "slug": "vaibhav-vyapaar",
+ "symbol": "LOANFRONT",
+ "board": "sme",
+ "name": "Vaibhav Vyapaar Limited"
+}

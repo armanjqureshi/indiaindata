@@ -1,0 +1,80 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 7178000,
+    "bid": 7575600,
+    "times": 1.06
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 2153400,
+    "bid": 4411800,
+    "times": 2.05
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 1435600,
+    "bid": 2242400,
+    "times": 1.56
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 717800,
+    "bid": 2169400,
+    "times": 3.02
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 5024600,
+    "bid": 20314800,
+    "times": 4.04
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 100000,
+    "bid": 281800,
+    "times": 2.82
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 14456000,
+    "bid": 32584000,
+    "times": 2.25
+   }
+  ],
+  "asOf": "05-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 200,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue of up to 1,44,56,000 Equity Shares (including Employee Reservation upto 1,00,000 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Discount of Rs. 7 per equity share is being offered to Eligible Employees bidding in the Employee Reservation Portion",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Choice Capital Advisors Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Vikram Morbale, Tel:+91 22 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_NITYAS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_NITYAS.zip"
+ },
+ "fetchedAt": "2026-10-19T22:08:02.164Z",
+ "slug": "nityas-gems-and-jewellery",
+ "symbol": "NITYAS",
+ "board": "mainboard",
+ "name": "Nityas Gems and Jewellery Limited"
+}

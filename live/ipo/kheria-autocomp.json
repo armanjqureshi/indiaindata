@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 2.37,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 916800,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 2179200,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 1285200,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 894000,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 3096000,
+    "times": 0
+   }
+  ],
+  "asOf": "21-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 45,98,400 Equity Shares (Including Market Maker portion of 2,30,400 Equity Shares and Anchor reservation portion of 13,10,400 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "SMC Capitals Limited"
+ ],
+ "registrar": "Kfin Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 40 6716 2222, kheria.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_KHERIAAUTO.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_KHERIAAUTO.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_KHERIAAUTO.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:02.052Z",
+ "slug": "kheria-autocomp",
+ "symbol": "KHERIAAUTO",
+ "board": "sme",
+ "name": "Kheria Autocomp Limited"
+}

@@ -1,0 +1,67 @@
+{
+ "subscription": {
+  "total": 124.44,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 0,
+    "bid": 167359200,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 0,
+    "bid": 175773600,
+    "times": 0
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 0,
+    "bid": 140390400,
+    "times": 0
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 0,
+    "bid": 35383200,
+    "times": 0
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 0,
+    "bid": 343132800,
+    "times": 0
+   }
+  ],
+  "asOf": "02-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 61,24,800 Equity Shares (including Market Maker Portion of 3,07,200 Equity Shares and Anchor reservation portion of 17,43,600 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Mefcom Capital Markets Limited"
+ ],
+ "registrar": "Kfintech Technologies Limited",
+ "registrarContact": "M Murali Krishna, +91 40 6716 2222, ashutosh.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_ASHUTOSH.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_ASHUTOSH.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_ASHUTOSH.zip"
+ },
+ "fetchedAt": "2026-10-19T22:11:46.576Z",
+ "slug": "ashutosh-fibre",
+ "symbol": "ASHUTOSH",
+ "board": "sme",
+ "name": "Ashutosh Fibre Limited"
+}

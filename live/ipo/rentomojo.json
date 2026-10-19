@@ -1,0 +1,83 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 6205779,
+    "bid": 1100238438,
+    "times": 177.29
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 4654335,
+    "bid": 316147203,
+    "times": 67.93
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3102890,
+    "bid": 227015424,
+    "times": 73.16
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1551445,
+    "bid": 89131779,
+    "times": 57.45
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 10860114,
+    "bid": 169329945,
+    "times": 15.59
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 52083,
+    "bid": 1095126,
+    "times": 21.03
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 21772311,
+    "bid": 1586810712,
+    "times": 72.88
+   }
+  ],
+  "asOf": "11-Sep-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 37,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 1,500 million and Offer for Sale of upto 27,365,529 Equity Shares (including Employee Reservation Portion aggregating up to Rs. 20 million and Anchor reservation portion of 93,08,667 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "Rs. 20 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Motilal Oswal Investment Advisors Limited",
+  "Axis Capital Limited",
+  "IIFL Capital Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "M. Murali Krishna, +91 40 6716 2222, rentomojo.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_RENTOMOJO.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_RENTOMOJO.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_RENTOMOJO.zip"
+ },
+ "fetchedAt": "2026-10-19T22:10:45.082Z",
+ "slug": "rentomojo",
+ "symbol": "RENTOMOJO",
+ "board": "mainboard",
+ "name": "Rentomojo Limited"
+}

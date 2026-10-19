@@ -1,0 +1,88 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 5242672,
+    "bid": 1345542605,
+    "times": 256.65
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3932005,
+    "bid": 799003480,
+    "times": 203.21
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2621337,
+    "bid": 619076590,
+    "times": 236.17
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1310668,
+    "bid": 179926890,
+    "times": 137.28
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 9174677,
+    "bid": 279775375,
+    "times": 30.49
+   },
+   {
+    "key": "employee",
+    "label": "Employees",
+    "offered": 71138,
+    "bid": 1679810,
+    "times": 23.61
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 18420492,
+    "bid": 2426001270,
+    "times": 131.7
+   }
+  ],
+  "asOf": "15-Oct-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 55,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Offer for sale up to 26,284,500 Equity Shares (Including Eligible Employee Reservation up to Rs. 17.50 million and Anchor portion 78,64,008 Equity Shares)",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 1.75,
+  "totalCr": 1.75,
+  "method": "At ₹271 per share, from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 25/- per equity share is being offered to Eligible Employees Bidding in the Employee Reservation Portion",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Ambit Private Limited",
+  "Anand Rathi Advisors Limited",
+  "IIFL Capital Services Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 81081 14949, hdfire.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_HDFIRE.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_HDFIRE.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HDFIRE.zip"
+ },
+ "fetchedAt": "2026-10-19T22:07:40.797Z",
+ "slug": "hd-fire-protect",
+ "symbol": "HDFIRE",
+ "board": "mainboard",
+ "name": "HD Fire Protect Limited"
+}

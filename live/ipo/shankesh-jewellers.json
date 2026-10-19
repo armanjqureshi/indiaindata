@@ -1,0 +1,75 @@
+{
+ "subscription": {
+  "total": null,
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 7896400,
+    "bid": 10392160,
+    "times": 1.32
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 5922300,
+    "bid": 33616960,
+    "times": 5.68
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 3948200,
+    "bid": 20869120,
+    "times": 5.29
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1974100,
+    "bid": 12747840,
+    "times": 6.46
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 13818700,
+    "bid": 33429280,
+    "times": 2.42
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 27637400,
+    "bid": 77438400,
+    "times": 2.8
+   }
+  ],
+  "asOf": "20-Aug-2026 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 160,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offer comprising Fresh Issue pf up to 29,482,000 Equity Shares and Offer for Sale of up to 10,000,000 Equity Shares (including Anchor Investor portion of 1,18,44,600 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Aryaman Financial Services Limited",
+  "Smart Horizon Capital Advisors Private Limited"
+ ],
+ "registrar": "KFIN Technologies Limited",
+ "registrarContact": "M. Murali Krishna , +91 8108114949, Tel: 040-67162222/18003094001, shankesh.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SHANKESH.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SHANKESH.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SHANKESH.zip"
+ },
+ "fetchedAt": "2026-10-19T22:12:57.601Z",
+ "slug": "shankesh-jewellers",
+ "symbol": "SHANKESH",
+ "board": "mainboard",
+ "name": "Shankesh Jewellers Limited"
+}
