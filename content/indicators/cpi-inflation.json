@@ -9,24 +9,24 @@
   "direction": "up",
   "asOf": "2026-09-30",
   "frequency": "Monthly",
-  "description": "The Consumer Price Index measures the average change in prices paid by households for a fixed basket of goods and services. It is India's headline inflation number and the RBI's primary policy target, with a medium-term goal of 4%, within a 2-6% tolerance band.",
+  "description": "The Consumer Price Index (base 2024=100) measures the average change in prices households pay for a basket of goods and services. It is India's headline inflation number and the RBI's policy target of 4%, with a tolerance band of 2-6%.",
   "source": "Ministry of Statistics and Programme Implementation (MoSPI)",
-  "releaseSchedule": "Released monthly, typically around the 12th, for the previous month.",
+  "releaseSchedule": "Released monthly, around the 12th, for the previous month. The latest month is provisional.",
   "topics": [
     "economy",
     "policy"
   ],
   "chart": {
     "type": "line",
-    "title": "Retail inflation jumped in September",
-    "subtitle": "CPI combined, year-on-year %, last two readings",
-    "source": "MoSPI (CPI, base 2024), released 12 Oct 2026",
+    "title": "Retail inflation has risen every month this year",
+    "subtitle": "All-India CPI (combined), year-on-year %, 2026. September is provisional.",
+    "source": "MoSPI CPI press release, 12 Oct 2026 (Annexure IV)",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "%",
-    "data": "[{\"month\": \"Aug 26\", \"value\": 4.83}, {\"month\": \"Sep 26\", \"value\": 5.54}]"
+    "data": "[{\"month\": \"Jan 26\", \"value\": 2.74}, {\"month\": \"Feb 26\", \"value\": 3.21}, {\"month\": \"Mar 26\", \"value\": 3.4}, {\"month\": \"Apr 26\", \"value\": 3.48}, {\"month\": \"May 26\", \"value\": 3.93}, {\"month\": \"Jun 26\", \"value\": 4.38}, {\"month\": \"Jul 26\", \"value\": 4.45}, {\"month\": \"Aug 26\", \"value\": 4.83}, {\"month\": \"Sep 26\", \"value\": 5.54}]"
   },
   "verified": true
 }

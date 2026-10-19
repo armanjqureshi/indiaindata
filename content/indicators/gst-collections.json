@@ -3,14 +3,14 @@
   "name": "GST Collections",
   "category": "public-finance",
   "unit": "₹ lakh cr",
-  "currentValue": "₹1.94 lakh cr",
-  "previousValue": "₹1.87 lakh cr",
-  "change": "+3.7%",
+  "currentValue": "₹2.04 lakh cr",
+  "previousValue": "₹1.77 lakh cr",
+  "change": "+14.7% y/y",
   "direction": "up",
-  "asOf": "2026-06-30",
+  "asOf": "2026-09-30",
   "frequency": "Monthly",
-  "description": "Gross GST collections track total goods-and-services tax revenue each month. Because GST is paid on almost every transaction in the formal economy, it's one of the best real-time proxies for overall economic activity, not just a tax number.",
-  "source": "GST Network, Ministry of Finance",
+  "description": "Gross GST collections track total goods-and-services tax revenue each month. In September 2026 net collections after refunds were ₹1.77 lakh crore, up 18.1% year-on-year.",
+  "source": "Ministry of Finance",
   "releaseSchedule": "Released monthly, on the 1st, for the previous month.",
   "topics": [
     "economy",
@@ -18,15 +18,15 @@
   ],
   "chart": {
     "type": "bar",
-    "title": "GST collections keep setting new highs",
-    "subtitle": "Gross GST collections, ₹ lakh crore, monthly",
-    "source": "GST Network; illustrative series",
+    "title": "GST revenue grew 14.7% from a year earlier",
+    "subtitle": "Gross GST collections, ₹ lakh crore, September",
+    "source": "Ministry of Finance data via Business Today, 1 Oct 2026",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": " lakh cr",
-    "data": "[{\"month\": \"Jul 25\", \"value\": 1.75}, {\"month\": \"Aug 25\", \"value\": 1.78}, {\"month\": \"Sep 25\", \"value\": 1.81}, {\"month\": \"Oct 25\", \"value\": 1.73}, {\"month\": \"Nov 25\", \"value\": 1.68}, {\"month\": \"Dec 25\", \"value\": 1.77}, {\"month\": \"Jan 26\", \"value\": 1.84}, {\"month\": \"Feb 26\", \"value\": 1.79}, {\"month\": \"Mar 26\", \"value\": 1.86}, {\"month\": \"Apr 26\", \"value\": 1.9}, {\"month\": \"May 26\", \"value\": 1.87}, {\"month\": \"Jun 26\", \"value\": 1.94}]"
+    "data": "[{\"month\": \"Sep 25\", \"value\": 1.77}, {\"month\": \"Sep 26\", \"value\": 2.04}]"
   },
-  "verified": false
+  "verified": true
 }

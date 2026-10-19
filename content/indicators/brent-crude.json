@@ -3,14 +3,14 @@
   "name": "Brent Crude Oil",
   "category": "currency-commodities",
   "unit": "US$/bbl",
-  "currentValue": "$107",
-  "previousValue": "$102.95",
-  "change": "+3.9%",
+  "currentValue": "$109.86",
+  "previousValue": "$105.92",
+  "change": "+3.7%",
   "direction": "up",
-  "asOf": "2026-10-13",
+  "asOf": "2026-10-16",
   "frequency": "Daily",
   "description": "The global benchmark oil price in dollars per barrel. India imports most of its oil, so higher crude widens the trade deficit, weakens the rupee and feeds into fuel and transport prices.",
-  "source": "Upstox (9 Oct) and Trading Economics (13 Oct), approximate",
+  "source": "ICE Brent futures settlement",
   "releaseSchedule": "Daily.",
   "verified": true,
   "topics": [
@@ -19,14 +19,14 @@
   ],
   "chart": {
     "type": "line",
-    "title": "Crude moved back toward $107",
-    "subtitle": "Brent, US$ per barrel, approximate levels on two dates",
-    "source": "Upstox (9 Oct) and Trading Economics (13 Oct), approximate",
+    "title": "Brent settled near $110",
+    "subtitle": "Brent front-month settlement, US$ per barrel",
+    "source": "Settlement prices via FinanceFeeds (Yahoo Finance data), 17 Oct 2026",
     "xKey": "period",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"period\": \"9 Oct\", \"value\": 102.95}, {\"period\": \"13 Oct\", \"value\": 107}]"
+    "data": "[{\"period\": \"15 Oct\", \"value\": 105.92}, {\"period\": \"16 Oct\", \"value\": 109.86}]"
   }
 }

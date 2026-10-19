@@ -15,32 +15,38 @@
   "marketTickers": [
     {
       "label": "Nifty 50",
-      "value": "22,997.35",
-      "change": "+1.66%",
-      "direction": "up"
+      "value": "22,888.95",
+      "change": "-1.11%",
+      "direction": "down"
     },
     {
       "label": "Sensex",
-      "value": "74,315.61",
-      "change": "+2.11%",
+      "value": "73,852.90",
+      "change": "-1.17%",
+      "direction": "down"
+    },
+    {
+      "label": "USD / INR",
+      "value": "94.92",
+      "change": "+0.03",
       "direction": "up"
     },
     {
-      "label": "INR / USD",
-      "value": "96.72",
-      "change": "-0.16",
+      "label": "10Y G-Sec",
+      "value": "7.36%",
+      "change": "-1 bp",
       "direction": "down"
     },
     {
-      "label": "10Y G-Sec",
-      "value": "7.38%",
-      "change": "-2 bps",
-      "direction": "down"
+      "label": "Brent",
+      "value": "$109.86",
+      "change": "+3.7%",
+      "direction": "up"
     },
     {
       "label": "Repo rate",
       "value": "5.50%",
-      "change": "+25 bps",
+      "change": "+25 bps on 7 Oct",
       "direction": "up"
     }
   ],
@@ -58,5 +64,5 @@
       "label": "IPOs tracked"
     }
   ],
-  "tickerAsOf": "Closing levels, mid-Oct 2026"
+  "tickerAsOf": "Closes on 19 Oct 2026 (10Y and Brent: 16 Oct)"
 }

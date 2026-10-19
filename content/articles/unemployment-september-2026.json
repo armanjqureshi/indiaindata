@@ -1,0 +1,59 @@
+{
+  "id": 103,
+  "slug": "unemployment-september-2026",
+  "title": "Unemployment held at 5% in September",
+  "dek": "Joblessness was 6.9% in cities and 4.2% in villages, according to the monthly labour force survey.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "economy",
+    "society"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "India's unemployment rate for people aged 15 and above was 5.0% in September 2026, unchanged from August, according to the monthly Periodic Labour Force Survey (PLFS) bulletin released by MoSPI on 15 October. The figures use current weekly status, which looks at what a person did in the week before the survey."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Cities remain the harder market"
+    },
+    {
+      "type": "paragraph",
+      "text": "Urban unemployment edged up to 6.9% from 6.8%, and rural unemployment to 4.2% from 4.1%. The all-India rate was unchanged at 5.0%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Labour force participation, the share of people working or looking for work, was 55.5%, against 55.6% in August. Participation rose in cities, to 50.7% from 50.4%, and fell in villages, to 58.0% from 58.2%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Monthly PLFS estimates usually move by fractions of a percentage point, so they are best read as a trend over several months rather than month to month."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Urban unemployment is well above rural",
+      "subtitle": "Unemployment rate, persons 15+, current weekly status, %",
+      "source": "MoSPI PLFS monthly press note, 15 Oct 2026",
+      "xKey": "area",
+      "dataKeys": [
+        "Aug 2026",
+        "Sep 2026"
+      ],
+      "unit": "%",
+      "data": "[{\"area\": \"Rural\", \"Aug 2026\": 4.1, \"Sep 2026\": 4.2}, {\"area\": \"Urban\", \"Aug 2026\": 6.8, \"Sep 2026\": 6.9}, {\"area\": \"All India\", \"Aug 2026\": 5.0, \"Sep 2026\": 5.0}]"
+    }
+  ]
+}

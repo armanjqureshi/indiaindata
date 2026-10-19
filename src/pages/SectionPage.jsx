@@ -42,8 +42,8 @@ export default function SectionPage({ slug }) {
   const shown = items.slice(0, visible)
   const trending = [...all].sort((a, b) => b.readingTime - a.readingTime).slice(0, 4)
 
-  const embeddedChartArticle = isBusiness ? getArticle('manufacturing-output-sectors') : null
-  const marketChartArticle = isMarket ? getArticle('nifty-decade-returns') : null
+  const embeddedChartArticle = isBusiness ? getBySection('business').find((a) => a.charts.length) : null
+  const marketChartArticle = isMarket ? getBySection('market').find((a) => a.charts.length) : null
 
   return (
     <>

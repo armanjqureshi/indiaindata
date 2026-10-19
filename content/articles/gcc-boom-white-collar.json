@@ -9,7 +9,7 @@
     "economy",
     "society"
   ],
-  "author": "arjun-nair",
+  "author": "sarah-qureshi",
   "date": "2026-06-10",
   "readingTime": 7,
   "featured": false,
@@ -30,7 +30,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "While the IT services majors dominate the headlines, the fastest-growing employer of India\u2019s engineering graduates is a category most people cannot name: the global capability centre, the in-house India arm of a multinational."
+      "text": "While the IT services majors dominate the headlines, the fastest-growing employer of India’s engineering graduates is a category most people cannot name: the global capability centre, the in-house India arm of a multinational."
     },
     {
       "type": "chart",
@@ -38,7 +38,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The salary data is where the story sharpens. Median GCC compensation runs meaningfully above services-industry benchmarks for equivalent roles, and the roles themselves are shifting from support functions toward product engineering, design and research. Hyderabad and Pune are gaining share from Bengaluru \u2014 a decentralisation the office-rental data confirms."
+      "text": "The salary data is where the story sharpens. Median GCC compensation runs meaningfully above services-industry benchmarks for equivalent roles, and the roles themselves are shifting from support functions toward product engineering, design and research. Hyderabad and Pune are gaining share from Bengaluru — a decentralisation the office-rental data confirms."
     }
-  ]
+  ],
+  "draft": true
 }

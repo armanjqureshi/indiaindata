@@ -9,7 +9,7 @@
     "economy",
     "society"
   ],
-  "author": "ishita-rao",
+  "author": "sarah-qureshi",
   "date": "2026-06-03",
   "readingTime": 5,
   "featured": false,
@@ -38,7 +38,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The current upturn coincides with two good harvests and firm rural wages. The electric share of the mix is rising too \u2014 now roughly one in five scooters \u2014 which is quietly reshaping which companies benefit from the recovery."
+      "text": "The current upturn coincides with two good harvests and firm rural wages. The electric share of the mix is rising too — now roughly one in five scooters — which is quietly reshaping which companies benefit from the recovery."
     }
-  ]
+  ],
+  "draft": true
 }

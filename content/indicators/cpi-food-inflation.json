@@ -9,7 +9,7 @@
   "direction": "up",
   "asOf": "2026-09-30",
   "frequency": "Monthly",
-  "description": "The food and beverages sub-index of CPI, covering cereals, vegetables, pulses, milk and other staples. It is the most volatile part of headline inflation and the component most exposed to monsoon and harvest swings.",
+  "description": "The Consumer Food Price Index (CFPI) tracks year-on-year change in food prices within the CPI basket. It is the most volatile part of headline inflation and the most exposed to monsoon and harvest swings.",
   "source": "Ministry of Statistics and Programme Implementation (MoSPI)",
   "releaseSchedule": "Released monthly alongside headline CPI, around the 12th.",
   "topics": [
@@ -18,9 +18,9 @@
   ],
   "chart": {
     "type": "line",
-    "title": "Food prices drove the September jump",
-    "subtitle": "Consumer food price index, year-on-year %, last two readings",
-    "source": "MoSPI (CFPI, base 2024), released 12 Oct 2026",
+    "title": "Food inflation jumped in September",
+    "subtitle": "All-India CFPI (combined), year-on-year %. September is provisional.",
+    "source": "MoSPI CPI press release, 12 Oct 2026",
     "xKey": "month",
     "dataKeys": [
       "value"

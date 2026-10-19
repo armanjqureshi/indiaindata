@@ -3,30 +3,30 @@
   "name": "Bank Credit Growth",
   "category": "monetary",
   "unit": "%",
-  "currentValue": "13.8%",
-  "previousValue": "13.1%",
-  "change": "+0.7pp",
+  "currentValue": "19.4%",
+  "previousValue": "18.1%",
+  "change": "+1.3pp",
   "direction": "up",
-  "asOf": "2026-06-13",
-  "frequency": "Fortnightly (shown monthly)",
-  "description": "Bank credit growth tracks how fast outstanding loans from scheduled commercial banks are expanding year-on-year. It's a real-time gauge of how much businesses and households are borrowing to spend or invest.",
+  "asOf": "2026-09-30",
+  "frequency": "Fortnightly",
+  "description": "How fast outstanding loans of scheduled commercial banks are growing year-on-year. At the end of September 2026 outstanding credit was about ₹229.9 lakh crore and deposits grew 17.8%.",
   "source": "Reserve Bank of India",
-  "releaseSchedule": "Released fortnightly; month-end figures shown here.",
+  "releaseSchedule": "Released fortnightly by the RBI.",
   "topics": [
     "economy",
     "markets"
   ],
   "chart": {
     "type": "line",
-    "title": "Lending has picked up through the year",
-    "subtitle": "Non-food bank credit growth, year-on-year %, monthly",
-    "source": "RBI; illustrative series",
+    "title": "Credit growth rose at quarter-end",
+    "subtitle": "Scheduled commercial bank credit, year-on-year %, last two fortnights",
+    "source": "RBI data via CareEdge Ratings, fortnight ended 30 Sep 2026",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "%",
-    "data": "[{\"month\": \"Jul 25\", \"value\": 11.9}, {\"month\": \"Aug 25\", \"value\": 12.1}, {\"month\": \"Sep 25\", \"value\": 12.4}, {\"month\": \"Oct 25\", \"value\": 12.6}, {\"month\": \"Nov 25\", \"value\": 12.5}, {\"month\": \"Dec 25\", \"value\": 12.8}, {\"month\": \"Jan 26\", \"value\": 13.0}, {\"month\": \"Feb 26\", \"value\": 13.2}, {\"month\": \"Mar 26\", \"value\": 13.4}, {\"month\": \"Apr 26\", \"value\": 13.5}, {\"month\": \"May 26\", \"value\": 13.1}, {\"month\": \"Jun 26\", \"value\": 13.8}]"
+    "data": "[{\"month\": \"15 Sep 26\", \"value\": 18.1}, {\"month\": \"30 Sep 26\", \"value\": 19.4}]"
   },
-  "verified": false
+  "verified": true
 }

@@ -9,7 +9,7 @@
     "markets",
     "policy"
   ],
-  "author": "meera-kulkarni",
+  "author": "sarah-qureshi",
   "date": "2026-06-05",
   "readingTime": 6,
   "featured": false,
@@ -30,7 +30,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "When Indian government bonds entered the global indices, sceptics predicted hot money and volatility. Two years in, the flows have been large, steady and overwhelmingly from long-horizon investors \u2014 pension funds and central banks, not hedge funds."
+      "text": "When Indian government bonds entered the global indices, sceptics predicted hot money and volatility. Two years in, the flows have been large, steady and overwhelmingly from long-horizon investors — pension funds and central banks, not hedge funds."
     },
     {
       "type": "chart",
@@ -38,7 +38,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The deeper effect is on the government\u2019s own borrowing cost. A structurally lower 10-year yield compounds across every budget: cheaper roads, cheaper railways, cheaper deficits. Index inclusion may end up being one of the highest-return policy decisions of the decade, and it barely made the front pages."
+      "text": "The deeper effect is on the government’s own borrowing cost. A structurally lower 10-year yield compounds across every budget: cheaper roads, cheaper railways, cheaper deficits. Index inclusion may end up being one of the highest-return policy decisions of the decade, and it barely made the front pages."
     }
-  ]
+  ],
+  "draft": true
 }

@@ -1,0 +1,71 @@
+{
+  "id": 109,
+  "slug": "wholesale-vs-retail-inflation",
+  "title": "Why wholesale and retail inflation can tell different stories",
+  "dek": "In September, wholesale inflation was 11.39% and retail inflation 5.54%. Here is why two price indices can sit so far apart.",
+  "heroImage": null,
+  "section": "blogs",
+  "topics": [
+    "data-methods",
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "India publishes two main inflation numbers every month. The Consumer Price Index (CPI), from MoSPI, measures the prices households pay. The Wholesale Price Index (WPI), from the Ministry of Commerce and Industry, measures prices at the wholesale and producer level. In September 2026 they were far apart: retail inflation was 5.54% and wholesale inflation 11.39%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Different baskets"
+    },
+    {
+      "type": "paragraph",
+      "text": "The two indices price different things. The WPI covers goods only, including fuel, metals, chemicals and other industrial inputs. The CPI also includes services such as housing, education and health, which the WPI leaves out. So when fuel and raw materials get more expensive, wholesale inflation rises faster, as it did in September, when WPI fuel and power prices were up 25.85% from a year earlier."
+    },
+    {
+      "type": "heading",
+      "text": "Different weights"
+    },
+    {
+      "type": "paragraph",
+      "text": "Even for the same goods, the weights differ. Food takes a bigger share of household budgets than of wholesale trade, so a jump in vegetable or cereal prices shows up strongly in the CPI. In September, CPI food inflation was 7.74%, against 8.66% for the WPI food index."
+    },
+    {
+      "type": "heading",
+      "text": "Which one to watch"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RBI sets policy against CPI inflation, with a target of 4% and a tolerance band of 2-6%, so the CPI is the number that drives interest rates. The WPI is an early signal of cost pressure on businesses. A wide gap shows that costs are rising faster for producers than prices are for households, at least for now."
+    },
+    {
+      "type": "paragraph",
+      "text": "Both numbers are revised. The CPI for the latest month is provisional, and the WPI is revised again two months after first release."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Wholesale inflation is about double retail",
+      "subtitle": "Year-on-year %",
+      "source": "MoSPI CPI release (12 Oct 2026); Ministry of Commerce WPI data via PTI (14 Oct 2026)",
+      "xKey": "month",
+      "dataKeys": [
+        "CPI",
+        "WPI"
+      ],
+      "unit": "%",
+      "data": "[{\"month\": \"Aug 2026\", \"CPI\": 4.83, \"WPI\": 9.92}, {\"month\": \"Sep 2026\", \"CPI\": 5.54, \"WPI\": 11.39}]"
+    }
+  ]
+}

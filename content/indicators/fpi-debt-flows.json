@@ -10,7 +10,7 @@
   "asOf": "2026-09-30",
   "frequency": "Monthly",
   "description": "Foreign portfolio investors' net flows into Indian bonds across the general limit, Voluntary Retention Route and Fully Accessible Route. Debt flows react to yields, the rate outlook and the rupee.",
-  "source": "NSDL FPI monitor via Finnovate, September 2026 report",
+  "source": "NSDL depository data",
   "releaseSchedule": "Daily provisional data; monthly totals after month-end.",
   "verified": true,
   "topics": [
@@ -21,7 +21,7 @@
     "type": "bar",
     "title": "Outflows hit every debt route in September",
     "subtitle": "FPI net debt flow by route, ₹ crore, September 2026",
-    "source": "NSDL FPI monitor via Finnovate, September 2026 report",
+    "source": "NSDL data via Finnovate, September 2026",
     "xKey": "period",
     "dataKeys": [
       "value"

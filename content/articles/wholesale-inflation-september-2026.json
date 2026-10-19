@@ -1,0 +1,62 @@
+{
+  "id": 102,
+  "slug": "wholesale-inflation-september-2026",
+  "title": "Wholesale inflation climbed to 11.39% in September",
+  "dek": "Fuel and power prices rose 25.85% from a year earlier, the fastest of the major groups.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Wholesale price inflation rose to 11.39% in September 2026 from 9.92% in August, according to Ministry of Commerce and Industry data published on 14 October. The all-India Wholesale Price Index stood at 112.5, up from 110.8 in August."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Fuel led, but the rise was broad"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fuel and power was the fastest-rising group, with prices up 25.85% from a year earlier, against 22.93% in August. Manufactured products rose 9.76%, up from 8.37%. Primary articles rose 8.67% and the WPI food index 8.66%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Brent crude, the global oil benchmark, settled at $109.86 a barrel on 16 October."
+    },
+    {
+      "type": "heading",
+      "text": "A wide gap with retail prices"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wholesale inflation in September was more than twice the 5.54% recorded by the consumer price index. Wholesale prices capture what producers and traders pay, including fuel and industrial inputs, while the CPI tracks what households pay, including services. A gap this wide can close in either direction: producers may pass higher costs on to consumers, or input prices may ease."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Every major group rose faster in September",
+      "subtitle": "WPI inflation by group, year-on-year %",
+      "source": "Ministry of Commerce and Industry data via PTI (Devdiscourse), 14 Oct 2026",
+      "xKey": "group",
+      "dataKeys": [
+        "Aug 2026",
+        "Sep 2026"
+      ],
+      "unit": "%",
+      "data": "[{\"group\": \"Fuel and power\", \"Aug 2026\": 22.93, \"Sep 2026\": 25.85}, {\"group\": \"Manufactured\", \"Aug 2026\": 8.37, \"Sep 2026\": 9.76}, {\"group\": \"Primary articles\", \"Aug 2026\": 7.76, \"Sep 2026\": 8.67}, {\"group\": \"Food index\", \"Aug 2026\": 7.05, \"Sep 2026\": 8.66}]"
+    }
+  ]
+}

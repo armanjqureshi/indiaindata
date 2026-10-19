@@ -1,5 +1,5 @@
 {
-  "source": "IPO calendars (Angel One, ipomarket.in, Business Today). Secondary sources: confirm against the RHP and exchange notices.",
+  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
   "topics": [
     "economy",
     "markets"
@@ -21,10 +21,11 @@
   "direction": null,
   "issueSize": "₹475.48 cr",
   "lotSize": "Not yet confirmed",
-  "subscriptionTimes": null,
-  "description": "Sahajanand Medical Technologies closed its offer on 19 October 2026 and lists on 23 October.",
+  "subscriptionTimes": "14.21 times as of 5:54 pm on the final day (QIB 34.70x, NII 14.64x, retail 3.04x)",
+  "description": "Sahajanand Medical Technologies closed its offer on 19 October 2026. Allotment is due on 21 October and listing is tentatively scheduled for 23 October.",
   "highlights": [
-    "Price band ₹327–344"
+    "Price band ₹327–344",
+    "Issue size ₹475.48 crore"
   ],
   "chart": null
 }

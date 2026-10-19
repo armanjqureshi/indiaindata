@@ -105,9 +105,11 @@ function resolveAuthor(authorRef) {
   return { name: 'India in Data staff', bio: '', avatar: null }
 }
 
+// Articles marked draft in the CMS stay in the repo but are not published.
 export const articles = Object.values(articleFiles)
   .map((m) => m.default)
   .filter(Boolean)
+  .filter((a) => !a.draft)
   .map((a) => ({
     ...a,
     author: resolveAuthor(a.author),
@@ -149,7 +151,12 @@ export const topics = TOPIC_META.map((t) => ({
 
 export const marketTickers = siteSettings.marketTickers || []
 export const tickerAsOf = siteSettings.tickerAsOf || ''
-export const siteStats = siteSettings.siteStats || []
+// Counted from the content itself so the numbers can never drift from what is published.
+export const siteStats = [
+  { value: String(articles.length), label: articles.length === 1 ? 'data story published' : 'data stories published' },
+  { value: String(indicators.length), label: 'indicators tracked' },
+  { value: String(ipos.length), label: 'IPOs tracked' },
+]
 
 // ---------------------------------------------------------------------------
 // Helpers (unchanged from the original data model)

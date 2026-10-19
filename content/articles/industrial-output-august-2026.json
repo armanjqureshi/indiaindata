@@ -1,0 +1,65 @@
+{
+  "id": 104,
+  "slug": "industrial-output-august-2026",
+  "title": "Industrial output grew 8% in August",
+  "dek": "Manufacturing rose 9% and electricity 12.3%, while mining shrank 5.6%.",
+  "heroImage": null,
+  "section": "business",
+  "topics": [
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": true,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "India's Index of Industrial Production (IIP) grew 8.0% in August 2026 from a year earlier, according to the quick estimate released by MoSPI on 28 September. That is faster than the 4.7% recorded in August 2025 and the revised 7.4% for July 2026, which was first estimated at 6.7%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Factories and power plants carried the month"
+    },
+    {
+      "type": "paragraph",
+      "text": "Manufacturing grew 9.0% and electricity output 12.3%. Mining and quarrying was the only sector to contract, falling 5.6%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Cumulative growth for April to August 2026 was 6.7%. The index uses 2022-23 as its base year."
+    },
+    {
+      "type": "heading",
+      "text": "Other data point the same way"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electricity consumption in September was 162.19 billion units, 11.35% higher than a year earlier, and peak demand reached 269.06 GW. The HSBC India Manufacturing PMI, a private survey of purchasing managers, rose to 55.1 in September from 52.8 in August, a seven-month high."
+    },
+    {
+      "type": "paragraph",
+      "text": "August's figure is a quick estimate and will be revised in next month's release."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Mining was the only sector to shrink",
+      "subtitle": "IIP growth by sector, August 2026, year-on-year % (quick estimate)",
+      "source": "MoSPI IIP press release, 28 Sep 2026",
+      "xKey": "sector",
+      "dataKeys": [
+        "growth"
+      ],
+      "unit": "%",
+      "data": "[{\"sector\": \"Mining\", \"growth\": -5.6}, {\"sector\": \"Manufacturing\", \"growth\": 9.0}, {\"sector\": \"Electricity\", \"growth\": 12.3}, {\"sector\": \"Overall IIP\", \"growth\": 8.0}]"
+    }
+  ]
+}

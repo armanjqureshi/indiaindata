@@ -1,7 +1,7 @@
 {
   "id": 10,
   "slug": "rupee-real-story",
-  "title": "The rupee is weaker \u2014 and more stable \u2014 than ever",
+  "title": "The rupee is weaker — and more stable — than ever",
   "dek": "The INR has drifted past 90 to the dollar, yet its volatility is among the lowest of any emerging-market currency. Both facts matter.",
   "heroImage": null,
   "section": "market",
@@ -9,7 +9,7 @@
     "markets",
     "economy"
   ],
-  "author": "arjun-nair",
+  "author": "sarah-qureshi",
   "date": "2026-06-20",
   "readingTime": 5,
   "featured": false,
@@ -30,7 +30,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "Two things are true about the rupee at once: it has never been weaker against the dollar, and it has rarely been steadier. Realised volatility on the INR is now among the lowest in the emerging-market complex \u2014 the fingerprint of a central bank managing the descent."
+      "text": "Two things are true about the rupee at once: it has never been weaker against the dollar, and it has rarely been steadier. Realised volatility on the INR is now among the lowest in the emerging-market complex — the fingerprint of a central bank managing the descent."
     },
     {
       "type": "chart",
@@ -38,7 +38,8 @@
     },
     {
       "type": "paragraph",
-      "text": "For exporters, the slow drift is a tailwind. For anyone paying for imported oil, electronics or a foreign education, it is a quiet annual tax. The data suggests the RBI\u2019s priority is predictability over level \u2014 smoothing the path rather than defending a line."
+      "text": "For exporters, the slow drift is a tailwind. For anyone paying for imported oil, electronics or a foreign education, it is a quiet annual tax. The data suggests the RBI’s priority is predictability over level — smoothing the path rather than defending a line."
     }
-  ]
+  ],
+  "draft": true
 }

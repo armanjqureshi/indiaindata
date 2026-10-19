@@ -2,17 +2,17 @@
   "id": 9,
   "slug": "nifty-decade-returns",
   "title": "A decade of Nifty 50 returns, in one chart",
-  "dek": "Ten years, three crashes, one pandemic \u2014 and an index that still compounded near 12% a year. The long view on Indian equities.",
+  "dek": "Ten years, three crashes, one pandemic — and an index that still compounded near 12% a year. The long view on Indian equities.",
   "heroImage": null,
   "section": "market",
   "topics": [
     "markets",
     "economy"
   ],
-  "author": "arjun-nair",
+  "author": "sarah-qureshi",
   "date": "2026-06-27",
   "readingTime": 6,
-  "featured": true,
+  "featured": false,
   "charts": [
     {
       "type": "line",
@@ -42,7 +42,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "Zoom out far enough and every equity market chart looks calm. The Nifty\u2019s past decade included a taper scare, a pandemic crash of nearly 40% and two election-night whipsaws \u2014 none of which are visible in the year-end series."
+      "text": "Zoom out far enough and every equity market chart looks calm. The Nifty’s past decade included a taper scare, a pandemic crash of nearly 40% and two election-night whipsaws — none of which are visible in the year-end series."
     },
     {
       "type": "chart",
@@ -54,7 +54,7 @@
     },
     {
       "type": "paragraph",
-      "text": "The annual returns are where the honest story lives. \u201cAbout 12% a year\u201d is an average almost never delivered in any single year; the actual sequence lurches between near-zero and near-30."
+      "text": "The annual returns are where the honest story lives. “About 12% a year” is an average almost never delivered in any single year; the actual sequence lurches between near-zero and near-30."
     },
     {
       "type": "chart",
@@ -68,5 +68,6 @@
       "type": "paragraph",
       "text": "The structural change beneath the index is domestic ownership. Monthly SIP flows now provide a bid that did not exist a decade ago, which has visibly dampened the drawdowns that foreign outflows used to cause."
     }
-  ]
+  ],
+  "draft": true
 }

@@ -8,10 +8,10 @@
   "topics": [
     "economy"
   ],
-  "author": "sana-qureshi",
+  "author": "sarah-qureshi",
   "date": "2026-06-25",
   "readingTime": 8,
-  "featured": true,
+  "featured": false,
   "charts": [
     {
       "type": "bar",
@@ -45,7 +45,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "\u201cManufacturing growth\u201d is a single number that hides eight different stories. Disaggregate the index of industrial production and India\u2019s factory floor splits cleanly into sprinters, joggers and sectors running in place."
+      "text": "“Manufacturing growth” is a single number that hides eight different stories. Disaggregate the index of industrial production and India’s factory floor splits cleanly into sprinters, joggers and sectors running in place."
     },
     {
       "type": "chart",
@@ -57,7 +57,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Electronics is the standout, and the production-linked incentive schemes are only part of the reason. Global supply chains looking for a second home after China have found India\u2019s assembly ecosystem just mature enough to bet on. The value-added share tells the longer arc."
+      "text": "Electronics is the standout, and the production-linked incentive schemes are only part of the reason. Global supply chains looking for a second home after China have found India’s assembly ecosystem just mature enough to bet on. The value-added share tells the longer arc."
     },
     {
       "type": "chart",
@@ -71,5 +71,6 @@
       "type": "quote",
       "text": "India is industrialising in the sectors of the future while stalling in the sector that employs its present."
     }
-  ]
+  ],
+  "draft": true
 }

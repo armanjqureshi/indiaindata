@@ -9,9 +9,9 @@
   "direction": "up",
   "asOf": "2026-10-07",
   "frequency": "As announced",
-  "description": "The repo rate is the interest rate at which the RBI lends short-term funds to commercial banks. It is the central bank's main lever for steering inflation and growth, and every other lending rate in the economy takes its cue from it.",
+  "description": "The repo rate is the rate at which the RBI lends short-term funds to banks. It is the central bank's main policy lever. On 7 October 2026 the MPC raised it to 5.50% and changed its stance from neutral to calibrated tightening.",
   "source": "Reserve Bank of India, Monetary Policy Committee",
-  "releaseSchedule": "Reviewed roughly every two months by the Monetary Policy Committee; changes only when the MPC votes to change it.",
+  "releaseSchedule": "Reviewed by the Monetary Policy Committee, usually every two months.",
   "topics": [
     "economy",
     "policy"
@@ -26,7 +26,7 @@
       "value"
     ],
     "unit": "%",
-    "data": "[{\"period\": \"Before Oct 26\", \"value\": 5.25}, {\"period\": \"7 Oct 26\", \"value\": 5.5}]"
+    "data": "[{\"period\": \"Before 7 Oct 2026\", \"value\": 5.25}, {\"period\": \"From 7 Oct 2026\", \"value\": 5.5}]"
   },
   "verified": true
 }

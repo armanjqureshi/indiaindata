@@ -9,7 +9,7 @@
     "policy",
     "economy"
   ],
-  "author": "sana-qureshi",
+  "author": "sarah-qureshi",
   "date": "2026-06-07",
   "readingTime": 6,
   "featured": false,
@@ -30,7 +30,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "India has talked about logistics costs for two decades. The dedicated freight corridors \u2014 a project old enough to vote \u2014 are now carrying enough traffic to test whether the promised savings are real."
+      "text": "India has talked about logistics costs for two decades. The dedicated freight corridors — a project old enough to vote — are now carrying enough traffic to test whether the promised savings are real."
     },
     {
       "type": "chart",
@@ -40,5 +40,6 @@
       "type": "paragraph",
       "text": "Speed is the headline metric, but reliability matters more to shippers. Corridor trains now arrive within their scheduled window far more often than trains on the mixed-use network, which lets factories hold thinner inventories. That inventory saving, invisible in freight rates, may be the biggest gain of all."
     }
-  ]
+  ],
+  "draft": true
 }

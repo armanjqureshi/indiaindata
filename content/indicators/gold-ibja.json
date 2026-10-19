@@ -1,0 +1,32 @@
+{
+  "slug": "gold-ibja",
+  "name": "Gold (IBJA 999)",
+  "category": "currency-commodities",
+  "unit": "₹/10 g",
+  "currentValue": "₹1,46,406",
+  "previousValue": "₹1,46,426",
+  "change": "-₹20",
+  "direction": "down",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
+  "description": "IBJA's benchmark rate for 999-purity gold per 10 grams, before GST and making charges. It is a widely used reference for Indian bullion prices.",
+  "source": "India Bullion and Jewellers Association (IBJA)",
+  "releaseSchedule": "Published every trading day (AM and PM rates).",
+  "verified": true,
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "Gold was steady near ₹1.46 lakh",
+    "subtitle": "IBJA 999 gold, AM rate, ₹ per 10 grams",
+    "source": "IBJA rates via 5paisa, 19 Oct 2026",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"16 Oct\", \"value\": 146426}, {\"period\": \"19 Oct\", \"value\": 146406}]"
+  }
+}

@@ -45,6 +45,7 @@ function readArticles() {
     .readdirSync(dir)
     .filter((f) => f.endsWith('.json'))
     .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')))
+    .filter((a) => !a.draft)
 }
 
 function readIndicators() {

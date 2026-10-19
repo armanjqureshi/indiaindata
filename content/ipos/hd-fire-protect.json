@@ -1,5 +1,5 @@
 {
-  "source": "IPO calendars (Angel One, ipomarket.in, Business Today). Secondary sources: confirm against the RHP and exchange notices.",
+  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
   "topics": [
     "economy",
     "markets"
@@ -21,10 +21,11 @@
   "direction": null,
   "issueSize": "₹712.31 cr",
   "lotSize": "Not yet confirmed",
-  "subscriptionTimes": null,
-  "description": "HD Fire Protect closed its offer on 15 October 2026 and lists on 21 October.",
+  "subscriptionTimes": "131.73 times (QIB 256.65x, NII 203.21x, retail 30.55x)",
+  "description": "HD Fire Protect closed its offer on 15 October 2026. Allotment was finalised on 16 October and listing is scheduled for 21 October on BSE and NSE.",
   "highlights": [
-    "Price band ₹258–271"
+    "Price band ₹258–271",
+    "Issue size ₹712.31 crore"
   ],
   "chart": null
 }

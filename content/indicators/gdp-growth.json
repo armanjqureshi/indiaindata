@@ -4,28 +4,28 @@
   "category": "growth",
   "unit": "%",
   "currentValue": "7.8%",
-  "previousValue": "8.6%",
-  "change": "-0.8pp",
-  "direction": "down",
+  "previousValue": "6.9%",
+  "change": "+0.9pp",
+  "direction": "up",
   "asOf": "2026-06-30",
   "frequency": "Quarterly",
-  "description": "Gross Domestic Product growth measures the year-on-year expansion of India's economy at constant prices. It's the single most-watched number in Indian economic policy, and the headline figure most often quoted in budget and RBI commentary.",
+  "description": "Real GDP growth (base 2022-23) measures the year-on-year expansion of India's economy at constant prices. The latest reading compares April-June 2026 with April-June 2025.",
   "source": "Ministry of Statistics and Programme Implementation (MoSPI), National Accounts",
-  "releaseSchedule": "Released quarterly, roughly two months after quarter-end.",
+  "releaseSchedule": "Released quarterly, about two months after quarter-end. Q2 FY27 (July-September) is due on 30 November 2026.",
   "topics": [
     "economy"
   ],
   "chart": {
     "type": "bar",
-    "title": "Growth beat forecasts in April-June",
-    "subtitle": "Real GDP, year-on-year %, last two quarters (Q4 FY26 as revised)",
-    "source": "MoSPI, Q1 FY27 estimates released 31 Aug 2026 (secondary report)",
+    "title": "Growth picked up from a year earlier",
+    "subtitle": "Real GDP, year-on-year %, April-June quarter",
+    "source": "MoSPI press note on GDP estimates for Q1 2026-27, 31 Aug 2026",
     "xKey": "quarter",
     "dataKeys": [
       "value"
     ],
     "unit": "%",
-    "data": "[{\"quarter\": \"Q4 FY26\", \"value\": 8.6}, {\"quarter\": \"Q1 FY27\", \"value\": 7.8}]"
+    "data": "[{\"quarter\": \"Q1 FY26\", \"value\": 6.9}, {\"quarter\": \"Q1 FY27\", \"value\": 7.8}]"
   },
   "verified": true
 }

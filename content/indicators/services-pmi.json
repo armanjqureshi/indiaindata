@@ -3,29 +3,29 @@
   "name": "Services PMI",
   "category": "growth",
   "unit": "index",
-  "currentValue": "61.3",
-  "previousValue": "60.5",
-  "change": "+0.8",
+  "currentValue": "55.2",
+  "previousValue": "54.1",
+  "change": "+1.1",
   "direction": "up",
-  "asOf": "2026-06-30",
+  "asOf": "2026-09-30",
   "frequency": "Monthly",
-  "description": "The services-sector counterpart to Manufacturing PMI, surveying firms in IT, finance, transport and other services on new business, output and hiring intentions. India's services PMI has run persistently strong on the back of export demand and domestic consumption.",
-  "source": "S&P Global / HSBC India Services PMI",
+  "description": "The services-sector counterpart to the Manufacturing PMI, surveying firms in IT, finance, transport and other services on new business, output and hiring. A reading above 50 signals expansion.",
+  "source": "HSBC India Services PMI, compiled by S&P Global",
   "releaseSchedule": "Released monthly, a few days after month-end.",
   "topics": [
     "economy"
   ],
   "chart": {
     "type": "line",
-    "title": "Services have led the expansion",
-    "subtitle": "Services PMI, monthly (50 = no change)",
-    "source": "S&P Global; illustrative series",
+    "title": "Services growth picked up in September",
+    "subtitle": "HSBC India Services PMI, final reading (above 50 = expansion)",
+    "source": "HSBC / S&P Global via Angel One, 6 Oct 2026",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"month\": \"Jul 25\", \"value\": 58.9}, {\"month\": \"Aug 25\", \"value\": 59.4}, {\"month\": \"Sep 25\", \"value\": 59.1}, {\"month\": \"Oct 25\", \"value\": 59.8}, {\"month\": \"Nov 25\", \"value\": 60.2}, {\"month\": \"Dec 25\", \"value\": 60.6}, {\"month\": \"Jan 26\", \"value\": 59.9}, {\"month\": \"Feb 26\", \"value\": 60.3}, {\"month\": \"Mar 26\", \"value\": 60.7}, {\"month\": \"Apr 26\", \"value\": 60.9}, {\"month\": \"May 26\", \"value\": 60.5}, {\"month\": \"Jun 26\", \"value\": 61.3}]"
+    "data": "[{\"month\": \"Aug 26\", \"value\": 54.1}, {\"month\": \"Sep 26\", \"value\": 55.2}]"
   },
-  "verified": false
+  "verified": true
 }

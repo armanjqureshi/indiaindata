@@ -10,7 +10,7 @@
   "asOf": "2026-10-16",
   "frequency": "Daily",
   "description": "How many rupees one euro buys. The euro is India's second most important trading currency after the dollar, so this pair shows how the rupee is moving against Europe, not only against the US.",
-  "source": "PoundSterlingLive daily closing rates",
+  "source": "Daily closing rates",
   "releaseSchedule": "Daily.",
   "verified": true,
   "topics": [
@@ -21,12 +21,12 @@
     "type": "line",
     "title": "The rupee gained on the euro in October",
     "subtitle": "Rupees per euro, daily close, 1 and 16 October 2026",
-    "source": "PoundSterlingLive daily closing rates",
+    "source": "PoundSterlingLive EUR/INR history, 1 and 16 Oct 2026",
     "xKey": "period",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"period\": \"1 Oct\", \"value\": 108.302}, {\"period\": \"16 Oct\", \"value\": 106.725}]"
+    "data": "[{\"period\": \"1 Oct\", \"value\": 108.3}, {\"period\": \"16 Oct\", \"value\": 106.73}]"
   }
 }

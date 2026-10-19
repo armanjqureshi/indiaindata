@@ -1,0 +1,71 @@
+{
+  "id": 106,
+  "slug": "rbi-repo-rate-hike-october-2026",
+  "title": "RBI raised the repo rate to 5.50% and turned to tightening",
+  "dek": "It is the first increase since February 2023. The policy stance moved from neutral to calibrated tightening.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "economy",
+    "policy",
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": true,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The Reserve Bank of India's Monetary Policy Committee (MPC) raised the repo rate by 25 basis points to 5.50% on 7 October 2026, from 5.25%. It also changed its policy stance from neutral to calibrated tightening. It is the first increase in the repo rate since February 2023."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "What changed"
+    },
+    {
+      "type": "paragraph",
+      "text": "The other policy rates moved with it. The standing deposit facility rate, which banks earn on surplus funds parked with the RBI, is now 5.25%. The marginal standing facility rate and the Bank Rate are 5.75%."
+    },
+    {
+      "type": "paragraph",
+      "text": "The RBI projected consumer inflation of 5.2% for 2026-27 and raised its growth projection for the year to 7.1% from 6.7%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Under RBI rules, floating-rate retail loans from banks that are linked to an external benchmark such as the repo rate, which covers most bank home loans taken since October 2019, must reset at least once every three months. Borrowers on these loans will see the change within a quarter."
+    },
+    {
+      "type": "heading",
+      "text": "The backdrop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The decision came as price pressures built. Consumer inflation rose every month of 2026, reaching 4.83% in August; September's figure, released five days after the decision, was 5.54%. Wholesale inflation was 11.39% in September, and Brent crude settled at $109.86 a barrel on 16 October."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bond yields rose. The benchmark 10-year government bond yield was around 7.4% on 13 October, its highest in more than three years, before easing to 7.36% on 16 October."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "The policy rate corridor after 7 October",
+      "subtitle": "RBI policy rates, %",
+      "source": "RBI Monetary Policy Statement of 7 Oct 2026, via SCC Times and TaxCorp",
+      "xKey": "rate",
+      "dataKeys": [
+        "level"
+      ],
+      "unit": "%",
+      "data": "[{\"rate\": \"SDF\", \"level\": 5.25}, {\"rate\": \"Repo\", \"level\": 5.5}, {\"rate\": \"MSF / Bank Rate\", \"level\": 5.75}]"
+    }
+  ]
+}

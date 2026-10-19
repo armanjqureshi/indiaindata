@@ -1,16 +1,16 @@
 {
   "slug": "inr-usd",
-  "name": "INR / USD Exchange Rate",
+  "name": "USD / INR (dollar to rupee)",
   "category": "external",
   "unit": "₹",
-  "currentValue": "96.72",
-  "previousValue": "96.88",
-  "change": "-0.16",
-  "direction": "down",
-  "asOf": "2026-10-09",
-  "frequency": "Daily (shown monthly)",
-  "description": "The rupee's exchange rate against the US dollar, the reference point for import costs, foreign travel, and dollar-denominated debt. India's rupee has depreciated gradually over the past decade, with the RBI managing the pace rather than defending a fixed level.",
-  "source": "Reserve Bank of India, reference rate",
+  "currentValue": "94.92",
+  "previousValue": "94.89",
+  "change": "+0.03",
+  "direction": "up",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
+  "description": "How many rupees one US dollar buys. A higher number means a weaker rupee. The rupee strengthened from 96.72 on 9 October to 94.89 on 16 October before slipping slightly on 19 October.",
+  "source": "Interbank foreign exchange market, provisional close",
   "releaseSchedule": "Trades continuously; month-end reference rate shown here.",
   "topics": [
     "markets",
@@ -18,15 +18,15 @@
   ],
   "chart": {
     "type": "line",
-    "title": "Rupee edged up from record lows",
-    "subtitle": "Rupees per US dollar, last two closes",
-    "source": "Interbank forex close (provisional), 9 Oct 2026 via Upstox",
+    "title": "The rupee recovered in mid-October",
+    "subtitle": "Rupees per US dollar, interbank close (provisional)",
+    "source": "PTI forex reports via Upstox (9 Oct) and HDFC Sky (19 Oct)",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"month\": \"8 Oct\", \"value\": 96.88}, {\"month\": \"9 Oct\", \"value\": 96.72}]"
+    "data": "[{\"month\": \"9 Oct\", \"value\": 96.72}, {\"month\": \"16 Oct\", \"value\": 94.89}, {\"month\": \"19 Oct\", \"value\": 94.92}]"
   },
   "verified": true
 }

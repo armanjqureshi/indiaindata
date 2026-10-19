@@ -1,5 +1,5 @@
 {
-  "source": "IPO calendars (Angel One, ipomarket.in, Business Today). Secondary sources: confirm against the RHP and exchange notices.",
+  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
   "topics": [
     "economy",
     "markets"
@@ -20,12 +20,12 @@
   "currentGain": null,
   "direction": null,
   "issueSize": "₹5,012.33 cr",
-  "lotSize": "Not yet confirmed",
-  "subscriptionTimes": null,
-  "description": "Zetwerk Manufacturing Business closed its offer on 19 October 2026 and lists on 23 October.",
+  "lotSize": "99 shares",
+  "subscriptionTimes": "3.10 times at 5:04 pm on the final day (QIB 4.71x, NII 1.45x, retail 0.77x)",
+  "description": "Zetwerk Manufacturing Business closed its offer on 19 October 2026. Allotment is due on 21 October and listing is tentatively scheduled for 23 October.",
   "highlights": [
-    "Fresh issue about ₹2,830 cr; offer for sale about ₹2,182.33 cr",
-    "Price band ₹143–151"
+    "Fresh issue about ₹2,830 crore; offer for sale about ₹2,182.33 crore",
+    "Price band ₹143–151; minimum application ₹14,949"
   ],
   "chart": null
 }

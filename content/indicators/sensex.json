@@ -3,12 +3,12 @@
   "name": "BSE Sensex",
   "category": "markets",
   "unit": "index",
-  "currentValue": "74,315.61",
-  "previousValue": "72,781.89",
-  "change": "+2.11%",
-  "direction": "up",
-  "asOf": "2026-10-15",
-  "frequency": "Daily (shown monthly)",
+  "currentValue": "73,852.90",
+  "previousValue": "74,729.27",
+  "change": "-1.17%",
+  "direction": "down",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
   "description": "The Sensex tracks 30 large, established companies listed on the Bombay Stock Exchange and is India's oldest and most recognised equity benchmark, in continuous use since 1986.",
   "source": "Bombay Stock Exchange (BSE)",
   "releaseSchedule": "Trades continuously on market days; month-end close shown here.",
@@ -18,15 +18,15 @@
   ],
   "chart": {
     "type": "line",
-    "title": "Sensex gained over 1,500 points in a day",
-    "subtitle": "Index close, last two sessions",
-    "source": "BSE closing levels via HDFC Securities market report, 15 Oct 2026",
+    "title": "Sensex fell 876 points on 19 October",
+    "subtitle": "Index close, last three sessions",
+    "source": "BSE closing levels via HDFC Sky and Business Standard, 15-19 Oct 2026",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"month\": \"14 Oct\", \"value\": 72781.89}, {\"month\": \"15 Oct\", \"value\": 74315.61}]"
+    "data": "[{\"month\": \"15 Oct\", \"value\": 74315.61}, {\"month\": \"16 Oct\", \"value\": 74729.27}, {\"month\": \"19 Oct\", \"value\": 73852.9}]"
   },
   "verified": true
 }

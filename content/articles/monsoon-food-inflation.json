@@ -9,10 +9,10 @@
     "economy",
     "policy"
   ],
-  "author": "meera-kulkarni",
+  "author": "sarah-qureshi",
   "date": "2026-06-28",
   "readingTime": 7,
-  "featured": true,
+  "featured": false,
   "charts": [
     {
       "type": "line",
@@ -42,7 +42,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "Every monsoon tells a price story. This year\u2019s version began with a June that arrived ten days late over the grain belt, and ended with an August that dumped a month\u2019s rain on Maharashtra\u2019s vegetable districts in a single week. Both showed up, almost on schedule, in the consumer price index."
+      "text": "Every monsoon tells a price story. This year’s version began with a June that arrived ten days late over the grain belt, and ended with an August that dumped a month’s rain on Maharashtra’s vegetable districts in a single week. Both showed up, almost on schedule, in the consumer price index."
     },
     {
       "type": "chart",
@@ -58,7 +58,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Decompose June\u2019s reading and the pattern is stark: vegetables alone contributed nearly half of the food inflation print, more than cereals, pulses and milk combined. That is the signature of a weather shock, not a demand surge."
+      "text": "Decompose June’s reading and the pattern is stark: vegetables alone contributed nearly half of the food inflation print, more than cereals, pulses and milk combined. That is the signature of a weather shock, not a demand surge."
     },
     {
       "type": "chart",
@@ -70,7 +70,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The practical takeaway for readers watching the RBI: a rain-driven spike tends to reverse as the winter crop arrives. What matters is whether households\u2019 inflation expectations reset before it does."
+      "text": "The practical takeaway for readers watching the RBI: a rain-driven spike tends to reverse as the winter crop arrives. What matters is whether households’ inflation expectations reset before it does."
     }
-  ]
+  ],
+  "draft": true
 }

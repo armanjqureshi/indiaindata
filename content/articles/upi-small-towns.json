@@ -9,7 +9,7 @@
     "society",
     "economy"
   ],
-  "author": "ishita-rao",
+  "author": "sarah-qureshi",
   "date": "2026-06-14",
   "readingTime": 5,
   "featured": false,
@@ -38,11 +38,12 @@
     },
     {
       "type": "paragraph",
-      "text": "Growth in per-capita transaction counts is now fastest in districts classified as semi-urban and rural. Kirana stores, agricultural mandis and small-town services are the new frontier \u2014 and average ticket sizes there are falling, a sign that everyday purchases, not just large transfers, have moved on-rail."
+      "text": "Growth in per-capita transaction counts is now fastest in districts classified as semi-urban and rural. Kirana stores, agricultural mandis and small-town services are the new frontier — and average ticket sizes there are falling, a sign that everyday purchases, not just large transfers, have moved on-rail."
     },
     {
       "type": "quote",
       "text": "The most important payments chart in India is no longer about whether the line goes up. It is about where the line goes up."
     }
-  ]
+  ],
+  "draft": true
 }

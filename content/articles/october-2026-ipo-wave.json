@@ -1,0 +1,65 @@
+{
+  "id": 108,
+  "slug": "october-2026-ipo-wave",
+  "title": "Eight mainboard IPOs in two weeks, led by Jio Platforms",
+  "dek": "Together they aim to raise about ₹41,950 crore. Jio’s ₹30,213 crore issue opens on 21 October.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Eight companies are raising money through mainboard IPOs on BSE and NSE between 13 and 23 October 2026. Six have closed for bidding; Jio Platforms and Paras Healthcare open on 21 October. Together the eight issues add up to about ₹41,950 crore, counting Jio at the top of its price band."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Jio dwarfs the rest"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jio Platforms is offering 27 crore shares at ₹1,065-1,119 each, which would raise ₹30,213 crore at the top of the band. That is more than twice the other seven issues combined. Investors can bid for a minimum of 12 shares, about ₹13,428 at the upper band. Listing is tentatively set for 28 October."
+    },
+    {
+      "type": "heading",
+      "text": "How the closed issues fared"
+    },
+    {
+      "type": "paragraph",
+      "text": "Demand varied widely. HD Fire Protect was subscribed 131.73 times, with qualified institutional buyers bidding for 256.65 times the shares reserved for them. Sahajanand Medical Technologies was subscribed 14.21 times late on its final day, Fusion CX 4.68 times and Zetwerk Manufacturing Business 3.10 times. Zetwerk's retail portion was subscribed 0.77 times, meaning individual investors bid for fewer shares than were set aside for them."
+    },
+    {
+      "type": "paragraph",
+      "text": "HD Fire Protect is scheduled to list on 21 October and Fusion CX on 22 October. Zetwerk, Bonfiglioli Transmissions, Tonbo Imaging India and Sahajanand are expected to list on 23 October. Listing dates are tentative until the exchanges confirm them."
+    },
+    {
+      "type": "paragraph",
+      "text": "Subscription figures are as reported near the close of bidding by Chittorgarh and HDFC Sky; final exchange figures can differ slightly."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Jio is larger than the other seven combined",
+      "subtitle": "IPO issue size, ₹ crore (Jio at the upper price band)",
+      "source": "IPO calendars (Angel One, ipomarket.in, Chittorgarh) and Business Today, Oct 2026",
+      "xKey": "company",
+      "dataKeys": [
+        "size"
+      ],
+      "unit": " cr",
+      "data": "[{\"company\": \"Jio Platforms\", \"size\": 30213}, {\"company\": \"Zetwerk\", \"size\": 5012.33}, {\"company\": \"Bonfiglioli\", \"size\": 2533.66}, {\"company\": \"Paras Healthcare\", \"size\": 1450}, {\"company\": \"Tonbo Imaging\", \"size\": 852.18}, {\"company\": \"HD Fire Protect\", \"size\": 712.31}, {\"company\": \"Fusion CX\", \"size\": 702}, {\"company\": \"Sahajanand Medical\", \"size\": 475.48}]"
+    }
+  ]
+}

@@ -3,12 +3,12 @@
   "name": "Nifty 50",
   "category": "markets",
   "unit": "index",
-  "currentValue": "22,997.35",
-  "previousValue": "22,622.70",
-  "change": "+1.66%",
-  "direction": "up",
-  "asOf": "2026-10-15",
-  "frequency": "Daily (shown monthly)",
+  "currentValue": "22,888.95",
+  "previousValue": "23,146.15",
+  "change": "-1.11%",
+  "direction": "down",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
   "description": "The Nifty 50 tracks the 50 largest, most liquid companies listed on the National Stock Exchange, and is India's most widely quoted equity benchmark. It's the reference index for most Indian mutual funds and index funds.",
   "source": "National Stock Exchange (NSE)",
   "releaseSchedule": "Trades continuously on market days; month-end close shown here.",
@@ -18,15 +18,15 @@
   ],
   "chart": {
     "type": "line",
-    "title": "Nifty 50 rebounded sharply",
-    "subtitle": "Index close, last two sessions",
-    "source": "NSE closing levels via HDFC Securities market report, 15 Oct 2026",
+    "title": "Nifty 50 fell on 19 October",
+    "subtitle": "Index close, last three sessions",
+    "source": "NSE closing levels via HDFC Sky and Business Standard, 15-19 Oct 2026",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"month\": \"14 Oct\", \"value\": 22622.7}, {\"month\": \"15 Oct\", \"value\": 22997.35}]"
+    "data": "[{\"month\": \"15 Oct\", \"value\": 22997.35}, {\"month\": \"16 Oct\", \"value\": 23146.15}, {\"month\": \"19 Oct\", \"value\": 22888.95}]"
   },
   "verified": true
 }

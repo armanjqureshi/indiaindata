@@ -2,14 +2,14 @@
   "id": 6,
   "slug": "startup-funding-reset",
   "title": "The startup funding reset, two years on",
-  "dek": "Venture funding has stabilised well below the 2021 peak \u2014 and founders have quietly rebuilt their unit economics around the new normal.",
+  "dek": "Venture funding has stabilised well below the 2021 peak — and founders have quietly rebuilt their unit economics around the new normal.",
   "heroImage": null,
   "section": "business",
   "topics": [
     "economy",
     "markets"
   ],
-  "author": "arjun-nair",
+  "author": "sarah-qureshi",
   "date": "2026-06-18",
   "readingTime": 6,
   "featured": false,
@@ -30,7 +30,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "The funding winter is over, but spring looks nothing like the old summer. Venture investment into Indian startups has settled into a band roughly a third of the 2021 peak \u2014 and almost nobody in the ecosystem expects that peak to return."
+      "text": "The funding winter is over, but spring looks nothing like the old summer. Venture investment into Indian startups has settled into a band roughly a third of the 2021 peak — and almost nobody in the ecosystem expects that peak to return."
     },
     {
       "type": "chart",
@@ -38,7 +38,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The more interesting shift is qualitative. The median funded startup in 2025 was older, closer to profitability, and priced at a lower revenue multiple than its 2021 counterpart. IPOs, not late-stage private rounds, have become the exit story \u2014 and public-market scrutiny is quietly disciplining private valuations."
+      "text": "The more interesting shift is qualitative. The median funded startup in 2025 was older, closer to profitability, and priced at a lower revenue multiple than its 2021 counterpart. IPOs, not late-stage private rounds, have become the exit story — and public-market scrutiny is quietly disciplining private valuations."
     }
-  ]
+  ],
+  "draft": true
 }

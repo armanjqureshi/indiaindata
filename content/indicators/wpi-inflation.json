@@ -3,29 +3,29 @@
   "name": "WPI Inflation",
   "category": "prices",
   "unit": "%",
-  "currentValue": "2.1%",
-  "previousValue": "1.7%",
-  "change": "+0.4pp",
+  "currentValue": "11.39%",
+  "previousValue": "9.92%",
+  "change": "+1.47pp",
   "direction": "up",
-  "asOf": "2026-06-30",
+  "asOf": "2026-09-30",
   "frequency": "Monthly",
   "description": "The Wholesale Price Index tracks prices at the producer/wholesale level rather than what consumers pay. It's more volatile than CPI and often moves first when input costs shift, making it an early-warning read on pipeline inflation.",
-  "source": "Ministry of Commerce and Industry",
-  "releaseSchedule": "Released monthly, typically around the 14th, for the previous month.",
+  "source": "Office of the Economic Adviser, Ministry of Commerce and Industry",
+  "releaseSchedule": "Released monthly, around the 14th, for the previous month.",
   "topics": [
     "economy"
   ],
   "chart": {
     "type": "line",
-    "title": "Wholesale prices are turning up again",
-    "subtitle": "WPI inflation, year-on-year % change, monthly",
-    "source": "Ministry of Commerce and Industry; illustrative series",
+    "title": "Wholesale inflation crossed 11%",
+    "subtitle": "All-India WPI, year-on-year %",
+    "source": "Ministry of Commerce and Industry data via PTI (Devdiscourse), 14 Oct 2026",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "%",
-    "data": "[{\"month\": \"Jul 25\", \"value\": -0.2}, {\"month\": \"Aug 25\", \"value\": 0.3}, {\"month\": \"Sep 25\", \"value\": 0.6}, {\"month\": \"Oct 25\", \"value\": 0.9}, {\"month\": \"Nov 25\", \"value\": 1.1}, {\"month\": \"Dec 25\", \"value\": 0.8}, {\"month\": \"Jan 26\", \"value\": 0.6}, {\"month\": \"Feb 26\", \"value\": 0.9}, {\"month\": \"Mar 26\", \"value\": 1.3}, {\"month\": \"Apr 26\", \"value\": 1.6}, {\"month\": \"May 26\", \"value\": 1.7}, {\"month\": \"Jun 26\", \"value\": 2.1}]"
+    "data": "[{\"month\": \"Aug 26\", \"value\": 9.92}, {\"month\": \"Sep 26\", \"value\": 11.39}]"
   },
-  "verified": false
+  "verified": true
 }

@@ -176,3 +176,11 @@ which is exactly what `netlify.toml` points at.
 - Article cards without a hero image show a generated chart-style sparkline
   cover drawn from that article's own data (`CardCover.jsx`) — upload a hero
   image through `/admin` any time to replace it with a real photo.
+
+## Accuracy rules (October 2026 refresh)
+
+- Every indicator, ticker value, IPO and article figure is taken from a named release or report, and the chart's source line says which one and for what date.
+- Provisional figures, quick estimates, month-to-date totals and intraday snapshots are labelled as such next to the number.
+- If a figure cannot be traced to a source, it is not published. Use the **Verified against source** toggle on indicators, and the **Draft** toggle on articles, to keep anything unchecked off the live site.
+- The 15 launch articles are kept as drafts in the CMS: their figures were illustrative. Rewrite them with sourced numbers before turning Draft off.
+- Footer and About-page counts are calculated from the published content, so they update automatically.

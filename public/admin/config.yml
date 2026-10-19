@@ -67,6 +67,8 @@ collections:
       - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
       - { label: "Reading time (minutes)", name: "readingTime", widget: "number", value_type: "int", min: 1, max: 60 }
       - { label: "Feature on homepage", name: "featured", widget: "boolean", default: false }
+      - { label: "Use as chart of the week", name: "chartOfWeek", widget: "boolean", default: false, required: false, hint: "The homepage shows the first chart of the newest article with this on." }
+      - { label: "Draft (hidden from the site)", name: "draft", widget: "boolean", default: false, required: false, hint: "Turn on to keep an article in the CMS without publishing it." }
       - label: "Body"
         name: "body"
         widget: "list"
@@ -168,7 +170,7 @@ collections:
       - { label: "Current value", name: "currentValue", widget: "string", hint: "Exactly as shown on the card, e.g. \"6.6%\" or \"₹1.94 lakh cr\"." }
       - { label: "Previous value", name: "previousValue", widget: "string" }
       - { label: "Change label", name: "change", widget: "string", hint: "e.g. \"+0.5pp\", \"-25bps\", \"+3.7%\"." }
-      - { label: "Direction", name: "direction", widget: "select", options: ["up", "down"] }
+      - { label: "Direction", name: "direction", widget: "select", options: ["up", "down", "flat"] }
       - { label: "As of (date this reading covers)", name: "asOf", widget: "date", format: "YYYY-MM-DD" }
       - { label: "Verified against source", name: "verified", widget: "boolean", default: false, hint: "Turn on once you have checked this reading against the source. Off shows a Sample data tag." }
       - { label: "Update frequency", name: "frequency", widget: "string", hint: "e.g. \"Monthly\", \"Quarterly\", \"As announced\"." }
@@ -380,7 +382,7 @@ collections:
               - { label: "Label", name: "label", widget: "string" }
               - { label: "Value", name: "value", widget: "string" }
               - { label: "Change", name: "change", widget: "string" }
-              - { label: "Direction", name: "direction", widget: "select", options: ["up", "down"] }
+              - { label: "Direction", name: "direction", widget: "select", options: ["up", "down", "flat"] }
           - label: "Footer stats band"
             name: "siteStats"
             widget: "list"

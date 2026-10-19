@@ -1,5 +1,5 @@
 {
-  "source": "IPO calendars (Angel One, ipomarket.in, Business Today). Secondary sources: confirm against the RHP and exchange notices.",
+  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
   "topics": [
     "economy",
     "markets"
@@ -19,13 +19,13 @@
   "listingGain": null,
   "currentGain": null,
   "direction": null,
-  "issueSize": "Not yet confirmed",
+  "issueSize": "₹1,450 cr",
   "lotSize": "Not yet confirmed",
   "subscriptionTimes": null,
-  "description": "Paras Healthcare opens for subscription on 21 October 2026.",
+  "description": "Paras Healthcare opens for subscription on 21 October 2026. Listing is tentatively scheduled for 28 October.",
   "highlights": [
-    "Price band ₹660–693",
-    "Issue size and lot size to be added from the prospectus"
+    "Fresh issue of ₹500 crore and offer for sale of ₹950 crore (per Angel One)",
+    "Price band ₹660–693"
   ],
   "chart": null
 }

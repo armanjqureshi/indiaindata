@@ -1,5 +1,5 @@
 {
-  "source": "IPO calendars (Angel One, ipomarket.in, Business Today). Secondary sources: confirm against the RHP and exchange notices.",
+  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
   "topics": [
     "economy",
     "markets"
@@ -20,11 +20,12 @@
   "currentGain": null,
   "direction": null,
   "issueSize": "₹702 cr",
-  "lotSize": "Not yet confirmed",
-  "subscriptionTimes": null,
-  "description": "Fusion CX closed its offer on 16 October 2026 and lists on 22 October.",
+  "lotSize": "51 shares",
+  "subscriptionTimes": "4.68 times at 5:09 pm on the final day (retail 5.99x, NII 4.73x, QIB 4.21x)",
+  "description": "Fusion CX closed its offer on 16 October 2026. Listing is tentatively scheduled for 22 October on BSE and NSE.",
   "highlights": [
-    "Price band ₹275–289"
+    "Price band ₹275–289",
+    "Minimum application ₹14,739 at the upper band"
   ],
   "chart": null
 }

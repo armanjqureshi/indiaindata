@@ -1,0 +1,32 @@
+{
+  "slug": "silver-ibja",
+  "name": "Silver (IBJA 999)",
+  "category": "currency-commodities",
+  "unit": "₹/kg",
+  "currentValue": "₹2,09,467",
+  "previousValue": "₹2,10,918",
+  "change": "-0.69%",
+  "direction": "down",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
+  "description": "IBJA's benchmark rate for 999-purity silver per kilogram, before GST. Silver tracks both jewellery demand and industrial use, so it moves more than gold.",
+  "source": "India Bullion and Jewellers Association (IBJA)",
+  "releaseSchedule": "Published every trading day (AM and PM rates).",
+  "verified": true,
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "chart": {
+    "type": "line",
+    "title": "Silver slipped",
+    "subtitle": "IBJA 999 silver, AM rate, ₹ per kg",
+    "source": "IBJA rates via 5paisa, 19 Oct 2026",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[{\"period\": \"16 Oct\", \"value\": 210918}, {\"period\": \"19 Oct\", \"value\": 209467}]"
+  }
+}

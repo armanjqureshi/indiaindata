@@ -124,7 +124,7 @@ export default function Home() {
 
   const featured = getFeatured().slice(0, 3)
   const latest = getLatest(9)
-  const chartOfWeek = getArticle('nifty-decade-returns')
+  const chartOfWeek = getLatest(50).find((a) => a.chartOfWeek && a.charts.length) || getFeatured().find((a) => a.charts.length)
 
   return (
     <>

@@ -5,15 +5,15 @@ import { authors, siteStats } from '../data/content.js'
 const SOURCING = [
   {
     title: 'Official statistics first',
-    text: 'Our starting point is always the primary source: MoSPI releases, RBI data, PLFS bulletins, NSE/BSE records and ministry dashboards — not second-hand summaries of them.',
+    text: 'We start from the primary source wherever we can reach it: MoSPI press releases, RBI data, PLFS bulletins, exchange records and ministry statements. When the official release is not directly available, we use a reputable report of it and name that report.',
   },
   {
     title: 'Every chart cites its source',
-    text: 'Each chart carries a source line naming the dataset it is built from, so any reader can trace the number back to where it came from.',
+    text: 'Each chart and indicator carries a source line naming the release or report it is built from, and the date it covers, so any reader can trace the number back.',
   },
   {
     title: 'Methods in the open',
-    text: 'When we adjust, rebase or estimate, we say so in the piece. Our Blogs section exists partly to explain how India\u2019s numbers are made — including their flaws.',
+    text: 'When a figure is provisional, a quick estimate, month to date or a snapshot during the trading day, we say so next to it. Our Blogs section explains how India\u2019s numbers are made.',
   },
 ]
 
@@ -56,10 +56,9 @@ export default function About() {
       </section>
 
       <section id="team" className="mx-auto max-w-site scroll-mt-24 px-4 py-12 sm:px-6">
-        <h2 className="font-display text-2xl font-semibold sm:text-3xl">The team</h2>
+        <h2 className="font-display text-2xl font-semibold sm:text-3xl">Who writes India in Data</h2>
         <p className="mt-2 max-w-2xl text-sm leading-body text-ink/60">
-          A small newsroom of reporters and data editors who read the press notes so you don&rsquo;t
-          have to.
+          India in Data is written and edited by Sarah Qureshi.
         </p>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {team.map((m) => (

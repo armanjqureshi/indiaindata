@@ -1,5 +1,5 @@
 {
-  "source": "IPO calendars (Angel One, ipomarket.in, Business Today). Secondary sources: confirm against the RHP and exchange notices.",
+  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
   "topics": [
     "economy",
     "markets"
@@ -22,9 +22,10 @@
   "issueSize": "₹852.18 cr",
   "lotSize": "Not yet confirmed",
   "subscriptionTimes": null,
-  "description": "Tonbo Imaging India closed its offer on 19 October 2026 and lists on 23 October.",
+  "description": "Tonbo Imaging India closed its offer on 19 October 2026. Listing is tentatively scheduled for 23 October. Final subscription figures will be added once confirmed.",
   "highlights": [
-    "Price band ₹665–700"
+    "Price band ₹665–700",
+    "Issue size ₹852.18 crore"
   ],
   "chart": null
 }

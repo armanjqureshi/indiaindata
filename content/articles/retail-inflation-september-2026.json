@@ -1,0 +1,83 @@
+{
+  "id": 101,
+  "slug": "retail-inflation-september-2026",
+  "title": "Retail inflation rose to 5.54% in September, the highest this year",
+  "dek": "Food prices drove the jump. Inflation has risen every month since January, when it was 2.74%.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "economy",
+    "policy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": true,
+  "chartOfWeek": true,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "India's retail inflation rose to 5.54% in September 2026 from 4.83% in August, according to provisional data released by the Ministry of Statistics and Programme Implementation (MoSPI) on 12 October. It is the highest reading of the year, and inflation has now risen every month since January, when it stood at 2.74%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Food did most of the work"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Consumer Food Price Index rose 7.74% from a year earlier, up from 5.97% in August. Food inflation was higher in villages than in cities: 8.06% in rural areas against 7.18% in urban areas."
+    },
+    {
+      "type": "paragraph",
+      "text": "Headline inflation showed the same split. Rural inflation was 6.08% and urban inflation 4.88%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "Why the number matters now"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RBI targets CPI inflation of 4%, with a tolerance band of 2-6%. September's reading is inside the band but closer to its upper edge than at any point this year. Five days before the release, on 7 October, the RBI's Monetary Policy Committee raised the repo rate by 25 basis points to 5.50% and projected inflation of 5.2% for 2026-27."
+    },
+    {
+      "type": "paragraph",
+      "text": "These figures use the new CPI series, with 2024 as the base year. September's numbers are provisional and will be revised in next month's release."
+    }
+  ],
+  "charts": [
+    {
+      "type": "line",
+      "title": "Inflation has climbed every month of 2026",
+      "subtitle": "All-India CPI (combined), year-on-year %. September is provisional.",
+      "source": "MoSPI CPI press release, 12 Oct 2026 (Annexure IV)",
+      "xKey": "month",
+      "dataKeys": [
+        "inflation"
+      ],
+      "unit": "%",
+      "data": "[{\"month\": \"Jan\", \"inflation\": 2.74}, {\"month\": \"Feb\", \"inflation\": 3.21}, {\"month\": \"Mar\", \"inflation\": 3.4}, {\"month\": \"Apr\", \"inflation\": 3.48}, {\"month\": \"May\", \"inflation\": 3.93}, {\"month\": \"Jun\", \"inflation\": 4.38}, {\"month\": \"Jul\", \"inflation\": 4.45}, {\"month\": \"Aug\", \"inflation\": 4.83}, {\"month\": \"Sep\", \"inflation\": 5.54}]"
+    },
+    {
+      "type": "bar",
+      "title": "Prices rose faster in rural India",
+      "subtitle": "Year-on-year %, September 2026 (provisional)",
+      "source": "MoSPI CPI press release, 12 Oct 2026",
+      "xKey": "measure",
+      "dataKeys": [
+        "Rural",
+        "Urban"
+      ],
+      "unit": "%",
+      "data": "[{\"measure\": \"Headline CPI\", \"Rural\": 6.08, \"Urban\": 4.88}, {\"measure\": \"Food (CFPI)\", \"Rural\": 8.06, \"Urban\": 7.18}]"
+    }
+  ]
+}

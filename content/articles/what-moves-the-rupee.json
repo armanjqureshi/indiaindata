@@ -1,0 +1,78 @@
+{
+  "id": 110,
+  "slug": "what-moves-the-rupee",
+  "title": "What moves the dollar-rupee rate",
+  "dek": "Oil, foreign investors, the dollar and the RBI all pull on the rupee. October showed each of them at work.",
+  "heroImage": null,
+  "section": "blogs",
+  "topics": [
+    "markets",
+    "data-methods"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The USD/INR rate tells you how many rupees one US dollar buys. When the number goes up, the rupee has weakened. On 9 October 2026 the rupee closed at 96.72 to the dollar. By 16 October it had strengthened to 94.89, and on 19 October it closed at 94.92."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Oil"
+    },
+    {
+      "type": "paragraph",
+      "text": "India imports most of the crude oil it uses and pays for it in dollars. Higher oil prices mean more dollars are needed, which tends to weaken the rupee. Brent crude settled at $109.86 a barrel on 16 October, up 3.7% in a day."
+    },
+    {
+      "type": "heading",
+      "text": "Foreign investors"
+    },
+    {
+      "type": "paragraph",
+      "text": "When foreign portfolio investors sell Indian shares or bonds and take the money home, they sell rupees and buy dollars. FPIs sold a net ₹52,100 crore of Indian equities in October up to mid-month. On 16 October, a day the rupee gained 10 paise, foreign institutional investors were net buyers of ₹1,165.92 crore."
+    },
+    {
+      "type": "heading",
+      "text": "The dollar itself"
+    },
+    {
+      "type": "paragraph",
+      "text": "The rupee also moves with the dollar's strength against other currencies, measured by the US Dollar Index. On 9 October, PTI reported that a slightly weaker dollar and lower crude prices supported the rupee. The index stood at 102.09 that day and at 101.93 on 19 October."
+    },
+    {
+      "type": "heading",
+      "text": "The RBI"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RBI says it does not target a level for the rupee, but it buys and sells dollars to smooth sharp moves. Its foreign exchange reserves fell from $734.61 billion to $726.03 billion in the week to 9 October. Reserves also change with valuations, such as the price of the gold the RBI holds, which fell by $1.32 billion that week, so a drop in reserves does not by itself show how many dollars were sold."
+    },
+    {
+      "type": "paragraph",
+      "text": "The rupee gained against the euro as well, from 108.30 on 1 October to 106.73 on 16 October."
+    }
+  ],
+  "charts": [
+    {
+      "type": "line",
+      "title": "The rupee recovered in mid-October",
+      "subtitle": "Rupees per US dollar, interbank close (provisional). Lower means a stronger rupee.",
+      "source": "PTI forex reports via Upstox (9 Oct) and HDFC Sky (16 and 19 Oct 2026)",
+      "xKey": "date",
+      "dataKeys": [
+        "rate"
+      ],
+      "unit": "",
+      "data": "[{\"date\": \"9 Oct\", \"rate\": 96.72}, {\"date\": \"16 Oct\", \"rate\": 94.89}, {\"date\": \"19 Oct\", \"rate\": 94.92}]"
+    }
+  ]
+}

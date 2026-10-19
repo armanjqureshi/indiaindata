@@ -1,0 +1,70 @@
+{
+  "id": 105,
+  "slug": "gdp-q1-fy27",
+  "title": "GDP grew 7.8% in April-June, led by services and investment",
+  "dek": "Investment grew 11.9%, about double the pace of a year earlier, while farm growth slowed.",
+  "heroImage": null,
+  "section": "business",
+  "topics": [
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "India's real GDP grew 7.8% in the April-June quarter of 2026-27, up from 6.9% in the same quarter a year earlier, according to MoSPI estimates released on 31 August. Nominal GDP, which includes inflation, grew 10.3%. Real gross value added (GVA) grew 8.2%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Services and construction did the lifting"
+    },
+    {
+      "type": "paragraph",
+      "text": "The services sector grew 10.0%, against 8.0% a year earlier. Within it, financial, real estate and professional services grew 12.1%, and public administration, defence and other services 7.5%. Trade, hotels, transport and communication slowed to 8.5% from 9.8%."
+    },
+    {
+      "type": "paragraph",
+      "text": "In industry, manufacturing grew 9.2% and construction 7.7%. Electricity, gas and water supply grew 8.9% after shrinking 1.8% a year earlier. Mining contracted 2.4%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Farming was the weak spot. Agriculture, livestock, forestry and fishing grew 3.6%, slower than 4.4% a year ago."
+    },
+    {
+      "type": "heading",
+      "text": "Investment picked up"
+    },
+    {
+      "type": "paragraph",
+      "text": "On the spending side, gross fixed capital formation, which measures investment in buildings, machinery and infrastructure, grew 11.9% against 5.8% a year earlier. Private consumption grew 7.1%, up from 6.8%."
+    },
+    {
+      "type": "paragraph",
+      "text": "These estimates use the new 2022-23 base year. Estimates for July-September are due on 30 November 2026."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Most sectors grew faster than a year ago",
+      "subtitle": "Real GVA growth by sector, April-June, year-on-year %",
+      "source": "MoSPI press note on GDP estimates for Q1 2026-27, 31 Aug 2026",
+      "xKey": "sector",
+      "dataKeys": [
+        "Apr-Jun 2025",
+        "Apr-Jun 2026"
+      ],
+      "unit": "%",
+      "data": "[{\"sector\": \"Agriculture\", \"Apr-Jun 2025\": 4.4, \"Apr-Jun 2026\": 3.6}, {\"sector\": \"Mining\", \"Apr-Jun 2025\": 12.4, \"Apr-Jun 2026\": -2.4}, {\"sector\": \"Manufacturing\", \"Apr-Jun 2025\": 8.3, \"Apr-Jun 2026\": 9.2}, {\"sector\": \"Utilities\", \"Apr-Jun 2025\": -1.8, \"Apr-Jun 2026\": 8.9}, {\"sector\": \"Construction\", \"Apr-Jun 2025\": 5.2, \"Apr-Jun 2026\": 7.7}, {\"sector\": \"Trade, transport\", \"Apr-Jun 2025\": 9.8, \"Apr-Jun 2026\": 8.5}, {\"sector\": \"Finance, real estate\", \"Apr-Jun 2025\": 8.8, \"Apr-Jun 2026\": 12.1}, {\"sector\": \"Public admin\", \"Apr-Jun 2025\": 4.6, \"Apr-Jun 2026\": 7.5}]"
+    }
+  ]
+}

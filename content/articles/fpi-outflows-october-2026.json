@@ -1,0 +1,65 @@
+{
+  "id": 107,
+  "slug": "fpi-outflows-october-2026",
+  "title": "Foreign investors pulled ₹52,100 crore from Indian shares in October so far",
+  "dek": "Net selling this year has reached about ₹3.12 lakh crore, almost double the outflow for all of 2025.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-20",
+  "readingTime": 2,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Foreign portfolio investors (FPIs) have sold a net ₹52,100 crore of Indian equities in October 2026, according to depository data reported on 18 October. That is already more than the ₹35,861 crore they withdrew in all of September."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "The selling follows a brief reversal. In August, FPIs were net buyers of ₹29,631 crore. Including October so far, net outflows from Indian equities in 2026 total about ₹3.12 lakh crore, against ₹1.66 lakh crore for the whole of 2025."
+    },
+    {
+      "type": "heading",
+      "text": "Bonds too"
+    },
+    {
+      "type": "paragraph",
+      "text": "The selling was not limited to shares. In September, FPIs withdrew ₹20,727 crore from Indian debt, with outflows across the general limit, the Voluntary Retention Route and the Fully Accessible Route."
+    },
+    {
+      "type": "heading",
+      "text": "The rupee and reserves"
+    },
+    {
+      "type": "paragraph",
+      "text": "Foreign selling adds pressure on the rupee, because investors convert rupees into dollars when they leave. In mid-October the currency recovered for a while: it strengthened from 96.72 to the dollar on 9 October to 94.89 on 16 October, a day on which exchange data showed foreign institutional investors were net buyers of ₹1,165.92 crore. On 19 October the rupee slipped to 94.92 and the Sensex fell 876 points to 73,852.90."
+    },
+    {
+      "type": "paragraph",
+      "text": "India's foreign exchange reserves fell by $12.95 billion in the week to 2 October and by a further $8.58 billion in the week to 9 October, to $726.03 billion."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Selling deepened in October",
+      "subtitle": "FPI net equity flows, ₹ crore. October is month to date (to mid-October).",
+      "source": "NSDL data via Finnovate (Aug, Sep) and PTI/ETV Bharat (Oct, 18 Oct 2026)",
+      "xKey": "month",
+      "dataKeys": [
+        "flow"
+      ],
+      "unit": " cr",
+      "data": "[{\"month\": \"Aug 2026\", \"flow\": 29631}, {\"month\": \"Sep 2026\", \"flow\": -35861}, {\"month\": \"Oct 2026 (to date)\", \"flow\": -52100}]"
+    }
+  ]
+}

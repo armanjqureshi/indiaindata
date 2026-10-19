@@ -30,6 +30,9 @@ function formatDate(iso) {
   return new Date(iso + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
 }
 
+// Card shows just the multiple; the detail page shows the full breakdown.
+const shortSub = (t) => t.split(' (')[0].split(' at ')[0].split(' as of ')[0]
+
 export default function IpoCard({ ipo }) {
   const status = getIpoStatus(ipo.status)
   const colors = sectionColorMap[status?.color] || sectionColorMap.news
@@ -77,10 +80,10 @@ export default function IpoCard({ ipo }) {
             <p className="text-xs text-ink/60">Opens {formatDate(ipo.openDate)}</p>
           )}
           {ipo.status === 'open' && (
-            <p className="text-xs text-ink/60">{ipo.subscriptionTimes} · Closes {formatDate(ipo.closeDate)}</p>
+            <p className="text-xs text-ink/60">{ipo.subscriptionTimes ? `${shortSub(ipo.subscriptionTimes)} · ` : ''}Closes {formatDate(ipo.closeDate)}</p>
           )}
           {ipo.status === 'closed' && (
-            <p className="text-xs text-ink/60">{ipo.subscriptionTimes} · Listing {formatDate(ipo.listingDate)}</p>
+            <p className="text-xs text-ink/60">{ipo.subscriptionTimes ? `Subscribed ${shortSub(ipo.subscriptionTimes)} · ` : ''}Lists {formatDate(ipo.listingDate)} (tentative)</p>
           )}
         </div>
       )}

@@ -2,14 +2,14 @@
   "id": 2,
   "slug": "urban-unemployment-quarterly",
   "title": "Urban unemployment fell again. The fine print is more interesting",
-  "dek": "The headline rate is at a survey-era low, but the composition of new work \u2014 self-employment versus salaried jobs \u2014 tells a subtler story.",
+  "dek": "The headline rate is at a survey-era low, but the composition of new work — self-employment versus salaried jobs — tells a subtler story.",
   "heroImage": null,
   "section": "news",
   "topics": [
     "economy",
     "society"
   ],
-  "author": "meera-kulkarni",
+  "author": "sarah-qureshi",
   "date": "2026-06-21",
   "readingTime": 6,
   "featured": false,
@@ -46,7 +46,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Female labour force participation in cities also ticked up for the fourth straight quarter \u2014 a slow-moving but genuinely structural shift that deserves more attention than the headline rate."
+      "text": "Female labour force participation in cities also ticked up for the fourth straight quarter — a slow-moving but genuinely structural shift that deserves more attention than the headline rate."
     }
-  ]
+  ],
+  "draft": true
 }

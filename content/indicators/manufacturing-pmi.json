@@ -3,29 +3,29 @@
   "name": "Manufacturing PMI",
   "category": "growth",
   "unit": "index",
-  "currentValue": "58.2",
-  "previousValue": "57.6",
-  "change": "+0.6",
+  "currentValue": "55.1",
+  "previousValue": "52.8",
+  "change": "+2.3",
   "direction": "up",
-  "asOf": "2026-06-30",
+  "asOf": "2026-09-30",
   "frequency": "Monthly",
   "description": "The Purchasing Managers' Index surveys factory managers on new orders, output, employment and prices. A reading above 50 signals expansion; below 50 signals contraction. It's a private, forward-looking survey, not an official statistic.",
-  "source": "S&P Global / HSBC India Manufacturing PMI",
+  "source": "HSBC India Manufacturing PMI, compiled by S&P Global",
   "releaseSchedule": "Released monthly, on the first working day of the following month.",
   "topics": [
     "economy"
   ],
   "chart": {
     "type": "line",
-    "title": "Factories have stayed firmly in expansion",
-    "subtitle": "Manufacturing PMI, monthly (50 = no change)",
-    "source": "S&P Global; illustrative series",
+    "title": "Factory activity hit a seven-month high",
+    "subtitle": "HSBC India Manufacturing PMI (above 50 = expansion)",
+    "source": "HSBC / S&P Global via Upstox, 1 Oct 2026",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"month\": \"Jul 25\", \"value\": 56.4}, {\"month\": \"Aug 25\", \"value\": 57.1}, {\"month\": \"Sep 25\", \"value\": 56.8}, {\"month\": \"Oct 25\", \"value\": 57.3}, {\"month\": \"Nov 25\", \"value\": 57.9}, {\"month\": \"Dec 25\", \"value\": 58.1}, {\"month\": \"Jan 26\", \"value\": 57.4}, {\"month\": \"Feb 26\", \"value\": 57.8}, {\"month\": \"Mar 26\", \"value\": 58.0}, {\"month\": \"Apr 26\", \"value\": 57.9}, {\"month\": \"May 26\", \"value\": 57.6}, {\"month\": \"Jun 26\", \"value\": 58.2}]"
+    "data": "[{\"month\": \"Aug 26\", \"value\": 52.8}, {\"month\": \"Sep 26\", \"value\": 55.1}]"
   },
-  "verified": false
+  "verified": true
 }

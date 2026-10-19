@@ -3,30 +3,30 @@
   "name": "Merchandise Trade Balance",
   "category": "external",
   "unit": "$bn",
-  "currentValue": "-$21.4bn",
-  "previousValue": "-$19.8bn",
-  "change": "-$1.6bn",
+  "currentValue": "-$30.21bn",
+  "previousValue": "-$26.86bn",
+  "change": "Wider by $3.35bn",
   "direction": "down",
-  "asOf": "2026-06-30",
+  "asOf": "2026-09-30",
   "frequency": "Monthly",
-  "description": "The merchandise trade balance is the gap between what India exports and imports in goods each month. India runs a structural goods deficit, financed partly by a services surplus and remittances, so the size of the gap — not just its existence — is what matters.",
+  "description": "The gap between India's merchandise exports and imports. In September 2026 exports were $44.4 billion and imports $74.61 billion.",
   "source": "Ministry of Commerce and Industry",
-  "releaseSchedule": "Released monthly, in the second week of the following month.",
+  "releaseSchedule": "Released monthly, around the 15th, for the previous month.",
   "topics": [
     "economy",
     "policy"
   ],
   "chart": {
     "type": "bar",
-    "title": "The goods deficit widened again in June",
-    "subtitle": "Merchandise trade balance, $ billion, monthly (negative = deficit)",
-    "source": "Ministry of Commerce and Industry; illustrative series",
+    "title": "The goods deficit widened from August",
+    "subtitle": "Merchandise trade balance, US$ billion",
+    "source": "Ministry of Commerce data via Business Today (15 Oct 2026) and Trading Economics",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "bn",
-    "data": "[{\"month\": \"Jul 25\", \"value\": -19.2}, {\"month\": \"Aug 25\", \"value\": -20.1}, {\"month\": \"Sep 25\", \"value\": -23.5}, {\"month\": \"Oct 25\", \"value\": -21.8}, {\"month\": \"Nov 25\", \"value\": -18.9}, {\"month\": \"Dec 25\", \"value\": -17.6}, {\"month\": \"Jan 26\", \"value\": -18.4}, {\"month\": \"Feb 26\", \"value\": -19.1}, {\"month\": \"Mar 26\", \"value\": -20.3}, {\"month\": \"Apr 26\", \"value\": -19.5}, {\"month\": \"May 26\", \"value\": -19.8}, {\"month\": \"Jun 26\", \"value\": -21.4}]"
+    "data": "[{\"month\": \"Aug 26\", \"value\": -26.86}, {\"month\": \"Sep 26\", \"value\": -30.21}]"
   },
-  "verified": false
+  "verified": true
 }

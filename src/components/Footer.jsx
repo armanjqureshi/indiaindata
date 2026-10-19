@@ -16,7 +16,7 @@ const BROWSE = [
 
 const ABOUT = [
   { label: 'About', to: '/about' },
-  { label: 'Team', to: '/about#team' },
+  { label: 'Who writes this', to: '/about#team' },
   { label: 'Using our work', to: '/about#using-our-work' },
   { label: 'Contact', to: '/contact' },
 ]

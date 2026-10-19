@@ -23,11 +23,7 @@
 // correctly in previews; if you forget, the preview just falls back to
 // showing their slug, which is harmless.
 var TEAM_NAMES = {
-  'meera-kulkarni': 'Meera Kulkarni',
-  'arjun-nair': 'Arjun Nair',
-  'sana-qureshi': 'Sana Qureshi',
-  'dev-patel': 'Dev Patel',
-  'ishita-rao': 'Ishita Rao',
+  'sarah-qureshi': 'Sarah Qureshi',
 }
 
 var CATEGORY_COLORS = {

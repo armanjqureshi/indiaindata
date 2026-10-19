@@ -9,10 +9,10 @@
     "economy",
     "data-methods"
   ],
-  "author": "dev-patel",
+  "author": "sarah-qureshi",
   "date": "2026-06-24",
   "readingTime": 10,
-  "featured": true,
+  "featured": false,
   "charts": [
     {
       "type": "pie",
@@ -38,7 +38,7 @@
     },
     {
       "type": "paragraph",
-      "text": "GDP is the market value of everything produced within India\u2019s borders in a period. Three words in that sentence carry all the weight. \u201cMarket\u201d means unpaid work \u2014 most of it done by women \u2014 is invisible. \u201cProduced\u201d means asset price gains don\u2019t count. \u201cBorders\u201d means an Indian firm\u2019s Dubai profits don\u2019t either."
+      "text": "GDP is the market value of everything produced within India’s borders in a period. Three words in that sentence carry all the weight. “Market” means unpaid work — most of it done by women — is invisible. “Produced” means asset price gains don’t count. “Borders” means an Indian firm’s Dubai profits don’t either."
     },
     {
       "type": "chart",
@@ -50,7 +50,7 @@
     },
     {
       "type": "paragraph",
-      "text": "India\u2019s statistical system measures its formal sector well and its informal sector by proxy. Roughly half of the workforce sits in the part measured by assumption. When the formal and informal economies diverge \u2014 as they did after demonetisation and the pandemic \u2014 GDP tracks the half that is easier to see."
+      "text": "India’s statistical system measures its formal sector well and its informal sector by proxy. Roughly half of the workforce sits in the part measured by assumption. When the formal and informal economies diverge — as they did after demonetisation and the pandemic — GDP tracks the half that is easier to see."
     },
     {
       "type": "quote",
@@ -58,7 +58,8 @@
     },
     {
       "type": "paragraph",
-      "text": "None of this makes the number useless. It makes it a number \u2014 one input among several, best read alongside employment surveys, consumption data and the humble two-wheeler registration series. The mistake is not trusting GDP too little. It is asking it questions it was never designed to answer."
+      "text": "None of this makes the number useless. It makes it a number — one input among several, best read alongside employment surveys, consumption data and the humble two-wheeler registration series. The mistake is not trusting GDP too little. It is asking it questions it was never designed to answer."
     }
-  ]
+  ],
+  "draft": true
 }

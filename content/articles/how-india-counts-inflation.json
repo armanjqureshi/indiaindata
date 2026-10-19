@@ -9,7 +9,7 @@
     "data-methods",
     "economy"
   ],
-  "author": "dev-patel",
+  "author": "sarah-qureshi",
   "date": "2026-06-16",
   "readingTime": 9,
   "featured": false,
@@ -31,7 +31,7 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "If official inflation says 4% and your household budget screams 9%, you are not imagining things \u2014 you are living in a different basket. The consumer price index measures the price of a fixed bundle of goods, and India\u2019s bundle was fixed a long time ago."
+      "text": "If official inflation says 4% and your household budget screams 9%, you are not imagining things — you are living in a different basket. The consumer price index measures the price of a fixed bundle of goods, and India’s bundle was fixed a long time ago."
     },
     {
       "type": "chart",
@@ -47,7 +47,8 @@
     },
     {
       "type": "paragraph",
-      "text": "A rebased CPI built on the new consumption survey is in the works. Until it lands, the practical advice is simple: read the sub-indices, not the headline. The index for \u201cmiscellaneous services\u201d is closer to an urban professional\u2019s life than the aggregate will ever be."
+      "text": "A rebased CPI built on the new consumption survey is in the works. Until it lands, the practical advice is simple: read the sub-indices, not the headline. The index for “miscellaneous services” is closer to an urban professional’s life than the aggregate will ever be."
     }
-  ]
+  ],
+  "draft": true
 }

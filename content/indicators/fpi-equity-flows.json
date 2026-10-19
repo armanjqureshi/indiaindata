@@ -3,14 +3,14 @@
   "name": "FPI Net Equity Flows",
   "category": "flows",
   "unit": "₹ cr",
-  "currentValue": "-₹35,861 cr",
-  "previousValue": "+₹29,631 cr",
-  "change": "-₹65,492 cr swing",
+  "currentValue": "-₹52,100 cr",
+  "previousValue": "-₹35,861 cr",
+  "change": "October to date",
   "direction": "down",
-  "asOf": "2026-09-30",
-  "frequency": "Monthly",
-  "description": "Foreign portfolio investors' net buying or selling of Indian equities in a month, as reported by the depositories. Sustained outflows put pressure on the rupee and on index levels; inflows do the opposite.",
-  "source": "NSDL FPI monitor via Finnovate, September 2026 report",
+  "asOf": "2026-10-16",
+  "frequency": "Monthly (current month to date)",
+  "description": "Foreign portfolio investors' net buying or selling of Indian equities, as reported by the depositories. October is month to date. Outflows in 2026 so far total about ₹3.12 lakh crore.",
+  "source": "NSDL depository data",
   "releaseSchedule": "Daily provisional data; monthly totals after month-end.",
   "verified": true,
   "topics": [
@@ -19,14 +19,14 @@
   ],
   "chart": {
     "type": "bar",
-    "title": "FPIs swung from buying to heavy selling",
-    "subtitle": "Net FPI equity flow, ₹ crore, last two months",
-    "source": "NSDL FPI monitor via Finnovate, September 2026 report",
+    "title": "Foreign selling deepened in October",
+    "subtitle": "FPI net equity flows, ₹ crore. October is month to date.",
+    "source": "NSDL data via Finnovate (Aug-Sep) and PTI/ETV Bharat (October, 18 Oct 2026)",
     "xKey": "period",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"period\": \"Aug 26\", \"value\": 29631}, {\"period\": \"Sep 26\", \"value\": -35861}]"
+    "data": "[{\"period\": \"Aug 26\", \"value\": 29631}, {\"period\": \"Sep 26\", \"value\": -35861}, {\"period\": \"Oct 26 (to date)\", \"value\": -52100}]"
   }
 }
