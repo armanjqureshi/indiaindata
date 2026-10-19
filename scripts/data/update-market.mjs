@@ -246,26 +246,22 @@ try {
 }
 
 function parseIbja(html) {
-  // The "previous dates" tables list dated rows. We only trust dated values:
-  // find each table whose caption/heading says AM or PM, and read its rows.
-  const out = { history: [], latest: null }
-  const text = html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '')
-  const tables = [...text.matchAll(/<table[\s\S]*?<\/table>/gi)].map((m) => m[0])
-  for (const t of tables) {
-    const before = text.slice(Math.max(0, text.indexOf(t) - 600), text.indexOf(t)).replace(/<[^>]+>/g, ' ')
-    const head = (t.match(/<th[\s\S]*?<\/tr>/i)?.[0] || '').replace(/<[^>]+>/g, ' ')
-    const session = /\bPM\b/i.test(head) && !/\bAM\b/i.test(head) ? 'PM' : /\bAM\b/i.test(head) && !/\bPM\b/i.test(head) ? 'AM' : /\bPM\b[^A]*$/i.test(before.trim().slice(-40)) ? 'PM' : null
-    const rows = [...t.matchAll(/<tr[\s\S]*?<\/tr>/gi)].map((r) => [...r[0].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)].map((c) => c[1].replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim()))
-    for (const cells of rows) {
-      const date = /^\d{2}\/\d{2}\/\d{4}$/.test(cells[0]) ? isoDate(cells[0].replace(/\//g, '-')) : null
-      if (!date || cells.length < 7) continue
-      out.history.push({ date, session, gold999: num(cells[1]), silver999: num(cells[6]) })
-    }
+  // The "Previous Dates Rate" block has two tab panes, #tab-am and #tab-pm,
+  // each a table of dated rows: date | Gold 999 | 995 | 916 | 750 | 585 | Silver 999 | Platinum 999.
+  const pane = (id) => {
+    const i = html.indexOf(`id="${id}"`)
+    if (i < 0) return ''
+    const rest = html.slice(i + 10)
+    const j = rest.search(/id="tab-(am|pm)"/)
+    return j >= 0 ? rest.slice(0, j) : rest
   }
-  const pm = out.history.filter((r) => r.session === 'PM').sort((a, b) => b.date.localeCompare(a.date))
-  out.history = pm
-  if (pm[0]) out.latest = { ...pm[0], session: 'PM (closing)' }
-  return out
+  const rowsOf = (seg, session) =>
+    [...seg.matchAll(/<tr[\s\S]*?<\/tr>/gi)]
+      .map((r) => [...r[0].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((c) => c[1].replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim()))
+      .filter((c) => c.length >= 7 && /^\d{2}\/\d{2}\/\d{4}$/.test(c[0]))
+      .map((c) => ({ date: isoDate(c[0].replace(/\//g, '-')), session, gold999: num(c[1]), silver999: num(c[6]) }))
+  const pm = rowsOf(pane('tab-pm'), 'PM').sort((a, b) => b.date.localeCompare(a.date))
+  return { history: pm, latest: pm[0] ? { ...pm[0], session: 'PM (closing)' } : null }
 }
 
 // --- 6. Brent crude spot (US EIA, daily, published with a lag) -------------------
