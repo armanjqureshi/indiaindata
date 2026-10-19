@@ -64,7 +64,7 @@ function accept(key, r) {
   if (!Number.isFinite(r.value)) return log.skipped.push(`${key}: value not numeric`)
   if (!r.asOf || r.asOf > todayIST()) return log.skipped.push(`${key}: bad date ${r.asOf}`)
   if (old && old.asOf > r.asOf) return log.skipped.push(`${key}: source date ${r.asOf} older than stored ${old.asOf}`)
-  if (old && old.asOf === r.asOf && old.value === r.value) return // unchanged
+  if (old && old.asOf === r.asOf && old.value === round(r.value, r.dp ?? 2)) return // unchanged
   const prev = Number.isFinite(r.prev) ? r.prev : old && old.asOf < r.asOf ? old.value : old?.prev ?? null
   // continuity: if we hold the previous session's close, the source's previous close must match it
   if (old && Number.isFinite(r.prev) && old.asOf < r.asOf && r.checkContinuity !== false) {
@@ -234,7 +234,8 @@ try {
     for (const [key, label, field, max] of [['gold-ibja', 'Gold 999 (IBJA, per 10 g)', 'gold999', 10], ['silver-ibja', 'Silver 999 (IBJA, per kg)', 'silver999', 15]]) {
       const v = parsed.latest[field]
       if (!Number.isFinite(v)) continue
-      accept(key, { label, value: v, asOf: parsed.latest.date, source: `IBJA ${parsed.latest.session} rate (excl. GST and making charges)`, sourceUrl: 'https://ibjarates.com/', unit: '₹', dp: 0, maxMovePct: max, checkContinuity: false })
+      const prevRow = parsed.history.find((h) => h.date < parsed.latest.date)
+      accept(key, { label, value: v, prev: prevRow?.[field], asOf: parsed.latest.date, source: `IBJA ${parsed.latest.session} rate (excl. GST and making charges)`, sourceUrl: 'https://ibjarates.com/', unit: '₹', dp: 0, maxMovePct: max, checkContinuity: false })
     }
     for (const row of parsed.history) {
       if (Number.isFinite(row.gold999)) addHistory('gold-ibja', row.date, row.gold999)
