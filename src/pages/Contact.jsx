@@ -28,13 +28,13 @@ export default function Contact() {
   }
 
   const inputCls = (field) =>
-    `w-full rounded-md border px-3.5 py-2.5 text-sm outline-none transition-colors focus:border-brand ${
+    `w-full rounded-sm border px-3.5 py-2.5 text-sm outline-none transition-colors focus:border-brand ${
       errors[field] ? 'border-down' : 'border-ink/20'
-    } bg-white`
+    } bg-panel`
 
   return (
     <>
-      <section className="border-b border-ink/10 bg-white">
+      <section className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
           <h1 className="font-display text-4xl font-semibold sm:text-5xl">Contact</h1>
           <p className="mt-3 max-w-2xl leading-body text-ink/70">
@@ -45,14 +45,14 @@ export default function Contact() {
 
       <section className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
         {sent ? (
-          <div role="status" className="rounded-lg border border-market/30 bg-market-light p-8 text-center">
+          <div role="status" className="rounded-sm border border-market/30 bg-market-light p-8 text-center">
             <p className="font-display text-2xl font-semibold text-market">Message sent</p>
             <p className="mt-2 text-sm leading-body text-ink/70">
               Thanks, {values.name.trim()}. We reply to most messages within two working days.
             </p>
           </div>
         ) : (
-          <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm sm:p-8">
+          <div className="rounded-sm border border-ink/10 bg-panel p-6 sm:p-8">
             <div className="flex flex-col gap-5">
               <div>
                 <label htmlFor="c-name" className="mb-1.5 block text-sm font-semibold">
@@ -114,7 +114,7 @@ export default function Contact() {
               <button
                 type="button"
                 onClick={submit}
-                className="self-start rounded-md bg-brand px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+                className="self-start rounded-sm bg-brand px-6 py-2.5 text-sm font-semibold text-paper transition-colors hover:bg-brand-dark"
               >
                 Send message
               </button>

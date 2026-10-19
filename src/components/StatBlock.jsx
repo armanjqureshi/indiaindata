@@ -5,8 +5,8 @@ export default function StatBlock({ value, label, sub, direction, inverse = fals
   return (
     <div className="flex flex-col gap-1">
       <span
-        className={`font-display text-3xl font-semibold leading-none sm:text-4xl ${
-          inverse ? 'text-white' : 'text-ink'
+        className={`num text-3xl font-semibold leading-none sm:text-4xl ${
+          inverse ? 'text-paper' : 'text-ink'
         }`}
       >
         {value}
@@ -19,7 +19,7 @@ export default function StatBlock({ value, label, sub, direction, inverse = fals
           {direction && <span className="sr-only">{direction === 'up' ? ' (up)' : ' (down)'}</span>}
         </span>
       )}
-      <span className={`text-sm leading-body ${inverse ? 'text-white/70' : 'text-ink/60'}`}>{label}</span>
+      <span className={`text-sm leading-body ${inverse ? 'text-paper/70' : 'text-ink/60'}`}>{label}</span>
     </div>
   )
 }

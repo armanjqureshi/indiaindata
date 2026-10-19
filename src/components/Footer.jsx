@@ -55,7 +55,7 @@ const SOCIALS = [
 
 export default function Footer() {
   return (
-    <footer className="mt-16 bg-ink text-white">
+    <footer className="mt-16 bg-panel text-ink">
       <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
         <div className="grid gap-10 md:grid-cols-3">
           <nav aria-label="Browse">
@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {BROWSE.map((l) => (
                 <li key={l.label}>
-                  <Link to={l.to} className="text-sm text-white/70 transition-colors hover:text-white">
+                  <Link to={l.to} className="text-sm text-ink/70 transition-colors hover:text-ink">
                     {l.label}
                   </Link>
                 </li>
@@ -75,7 +75,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {ABOUT.map((l) => (
                 <li key={l.label}>
-                  <Link to={l.to} className="text-sm text-white/70 transition-colors hover:text-white">
+                  <Link to={l.to} className="text-sm text-ink/70 transition-colors hover:text-ink">
                     {l.label}
                   </Link>
                 </li>
@@ -88,7 +88,7 @@ export default function Footer() {
               <NewsletterSignup inverse />
             </div>
             <div className="mt-6">
-              <p className="text-sm text-white/70">Follow us</p>
+              <p className="text-sm text-ink/70">Follow us</p>
               <div className="mt-2.5 flex gap-2">
                 {SOCIALS.map((s) => (
                   <a
@@ -97,7 +97,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`India in Data on ${s.label}`}
-                    className="rounded-md border border-white/20 p-2 text-white/70 transition-colors hover:border-white/50 hover:text-white"
+                    className="rounded-md border border-ink/20 p-2 text-ink/70 transition-colors hover:border-ink/50 hover:text-ink"
                   >
                     {s.icon}
                   </a>
@@ -108,13 +108,13 @@ export default function Footer() {
         </div>
 
         {/* Stats band */}
-        <div className="mt-12 grid gap-8 border-t border-white/15 pt-10 sm:grid-cols-3">
+        <div className="mt-12 grid gap-8 border-t border-ink/15 pt-10 sm:grid-cols-3">
           {siteStats.map((s) => (
             <StatBlock key={s.label} value={s.value} label={s.label} inverse />
           ))}
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-white/15 pt-6 text-xs text-white/50">
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-ink/15 pt-6 text-xs text-ink/50">
           <p>© {new Date().getFullYear()} India in Data · indiaindata.online</p>
           <p>Charts and data free to reuse with attribution.</p>
         </div>

@@ -38,12 +38,12 @@ export default function IpoCard({ ipo }) {
   return (
     <Link
       to={`/ipos/${ipo.slug}`}
-      className={`group flex flex-col gap-3 rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:${colors.border}`}
+      className={`group flex flex-col gap-3 rounded-sm border border-ink/10 bg-panel p-5 transition-colors duration-150 hover:${colors.border}`}
     >
       <div className="flex items-start justify-between gap-2">
         <div>
           <span
-            className={`inline-flex items-center gap-1.5 rounded-full ${colors.bgLight} ${colors.text} px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide`}
+            className={`inline-flex items-center gap-1.5 rounded-full ${colors.bgLight} ${colors.text} px-2 py-0.5 text-[10px] font-semibold`}
           >
             {status?.name}
           </span>

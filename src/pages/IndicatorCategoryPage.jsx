@@ -23,7 +23,7 @@ export default function IndicatorCategoryPage() {
     <>
       <section className={`border-b border-ink/10 ${colors.bgLight}`}>
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
-          <p className={`text-xs font-semibold uppercase tracking-widest ${colors.text}`}>
+          <p className={`text-xs font-semiboldst ${colors.text}`}>
             Indicators · {items.length} tracked
           </p>
           <h1 className="mt-2 font-display text-4xl font-semibold sm:text-5xl">{category.name}</h1>
@@ -37,7 +37,7 @@ export default function IndicatorCategoryPage() {
             ))}
           </div>
         ) : (
-          <div className="rounded-lg border border-ink/10 bg-white p-10 text-center">
+          <div className="rounded-sm border border-ink/10 bg-panel p-10 text-center">
             <p className="font-display text-lg font-semibold">Nothing tracked here yet</p>
           </div>
         )}

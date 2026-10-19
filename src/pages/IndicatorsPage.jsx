@@ -13,9 +13,9 @@ export default function IndicatorsPage() {
 
   return (
     <>
-      <section className="border-b border-ink/10 bg-white">
+      <section className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand">Indicators</p>
+          <p className="text-xs font-semiboldst text-brand">Indicators</p>
           <h1 className="mt-2 font-display text-4xl font-semibold sm:text-5xl">
             India&rsquo;s vital signs, in one place
           </h1>
@@ -48,7 +48,7 @@ export default function IndicatorsPage() {
       })}
 
       <section className="mx-auto max-w-site px-4 py-10 sm:px-6">
-        <div className="rounded-lg border border-ink/10 bg-white p-6 text-sm leading-normal text-ink/60 shadow-sm">
+        <div className="rounded-sm border border-ink/10 bg-panel p-6 text-sm leading-normal text-ink/60">
           Values shown here are illustrative reference points, updated periodically — not a live
           market or data feed. Each indicator page lists its official source and release schedule.
           Have a correction or a source to suggest? <Link to="/contact" className="font-semibold text-brand hover:text-brand-dark">Get in touch</Link>.

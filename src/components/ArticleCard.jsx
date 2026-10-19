@@ -13,7 +13,7 @@ export default function ArticleCard({ article, variant = 'default' }) {
   if (variant === 'wide') {
     return (
       <article
-        className={`group grid gap-0 overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:${colors.border} sm:grid-cols-[2fr_3fr]`}
+        className={`group grid gap-0 overflow-hidden rounded-sm border border-ink/10 bg-panel transition-colors duration-150 hover:${colors.border} sm:grid-cols-[2fr_3fr]`}
       >
         <Link to={`/article/${article.slug}`} aria-hidden="true" tabIndex={-1} className="block">
           <CardCover article={article} tall />
@@ -43,7 +43,7 @@ export default function ArticleCard({ article, variant = 'default' }) {
   const isLarge = variant === 'large'
   return (
     <article
-      className={`group flex h-full flex-col overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:${colors.border}`}
+      className={`group flex h-full flex-col overflow-hidden rounded-sm border border-ink/10 bg-panel transition-colors duration-150 hover:${colors.border}`}
     >
       <Link to={`/article/${article.slug}`} aria-hidden="true" tabIndex={-1} className="block">
         <CardCover article={article} tall={isLarge} />
@@ -83,12 +83,12 @@ function Byline({ article, withBioHint = false }) {
         <img
           src={avatar}
           alt=""
-          className="h-7 w-7 shrink-0 rounded-full object-cover"
+          className="h-7 w-7 shrink-0 object-cover"
         />
       ) : (
         <span
           aria-hidden="true"
-          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-light text-[10px] font-bold text-brand"
+          className="flex h-7 w-7 shrink-0 items-center justify-center bg-brand-light text-[10px] font-bold text-brand"
         >
           {name
             .split(' ')
@@ -101,7 +101,7 @@ function Byline({ article, withBioHint = false }) {
         <span className="mx-1.5" aria-hidden="true">
           •
         </span>
-        <time dateTime={article.date}>{formatDate(article.date)}</time>
+        <time className="num" dateTime={article.date}>{formatDate(article.date)}</time>
         {withBioHint && (
           <>
             <span className="mx-1.5" aria-hidden="true">

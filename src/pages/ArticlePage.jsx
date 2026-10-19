@@ -53,7 +53,7 @@ export default function ArticlePage() {
   return (
     <article>
       {/* Header */}
-      <header className="border-b border-ink/10 bg-white">
+      <header className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
           <div className="flex flex-wrap items-center gap-2">
             <CategoryChip slug={article.section} />
@@ -91,7 +91,7 @@ export default function ArticlePage() {
         </div>
         {/* Hero visual */}
         <div className="mx-auto max-w-4xl px-4 pb-10 sm:px-6">
-          <div className="overflow-hidden rounded-lg border border-ink/10">
+          <div className="overflow-hidden rounded-sm border border-ink/10">
             <CardCover article={article} tall />
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function ArticlePage() {
                 key={s.label}
                 type="button"
                 aria-label={s.label}
-                className="rounded-md border border-ink/15 bg-white p-2.5 text-ink/60 transition-colors hover:border-brand hover:text-brand"
+                className="rounded-sm border border-ink/15 bg-panel p-2.5 text-ink/60 transition-colors hover:border-brand hover:text-brand"
               >
                 {s.icon}
               </button>
@@ -154,7 +154,7 @@ export default function ArticlePage() {
           })}
 
           {/* Author bio */}
-          <div className="mt-12 flex gap-4 rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
+          <div className="mt-12 flex gap-4 rounded-sm border border-ink/10 bg-panel p-6">
             {article.author.avatar ? (
               <img src={article.author.avatar} alt="" className="h-14 w-14 shrink-0 rounded-full object-cover" />
             ) : (
@@ -169,7 +169,7 @@ export default function ArticlePage() {
               </span>
             )}
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">Written by</p>
+              <p className="text-xs font-semibold text-ink/50">Written by</p>
               <p className="mt-0.5 font-display text-lg font-semibold">{article.author.name}</p>
               <p className="mt-1 text-sm leading-body text-ink/70">{article.author.bio}</p>
             </div>

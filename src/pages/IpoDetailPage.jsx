@@ -23,7 +23,7 @@ function Fact({ label, value }) {
   if (!value) return null
   return (
     <div>
-      <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">{label}</p>
+      <p className="text-xs font-semibold text-ink/50">{label}</p>
       <p className="mt-1 font-display text-lg font-semibold">{value}</p>
     </div>
   )
@@ -50,7 +50,7 @@ export default function IpoDetailPage() {
         <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
           <div className="mb-3">
             <span
-              className={`inline-flex items-center gap-1.5 rounded-full ${colors.bg} px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-white`}
+              className={`inline-flex items-center gap-1.5 rounded-full ${colors.bg} px-2.5 py-1 text-xs font-semibold text-paper`}
             >
               {status?.name}
             </span>
@@ -82,7 +82,7 @@ export default function IpoDetailPage() {
       </header>
 
       <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
-        <div className="grid grid-cols-2 gap-6 rounded-lg border border-ink/10 bg-white p-6 shadow-sm sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-6 rounded-sm border border-ink/10 bg-panel p-6 sm:grid-cols-4">
           <Fact label="Price band" value={ipo.priceBand} />
           <Fact label="Issue price" value={ipo.issuePrice} />
           <Fact label="Listing price" value={ipo.listingPrice} />
@@ -101,17 +101,17 @@ export default function IpoDetailPage() {
             <ChartCard chart={ipo.chart} sectionSlug={status?.color || 'news'} />
           </div>
         ) : (
-          <div className="mt-8 rounded-lg border border-dashed border-ink/20 bg-white p-6 text-center text-sm text-ink/50">
+          <div className="mt-8 rounded-sm border border-dashed border-ink/20 bg-panel p-6 text-center text-sm text-ink/50">
             A price chart will appear here once {ipo.companyName} starts trading.
           </div>
         )}
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
-          <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
+          <div className="rounded-sm border border-ink/10 bg-panel p-6">
             <h2 className="font-display text-lg font-semibold">About the company</h2>
             <p className="mt-2 text-sm leading-normal text-ink/70">{ipo.description}</p>
           </div>
-          <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
+          <div className="rounded-sm border border-ink/10 bg-panel p-6">
             <h2 className="font-display text-lg font-semibold">Key facts</h2>
             <ul className="mt-2 space-y-2 text-sm leading-normal text-ink/70">
               {ipo.highlights.map((h, i) => (

@@ -12,48 +12,55 @@ import {
   getBySection,
   getArticle,
   sectionColorMap,
+  indicators,
+  getIndicatorCategory,
+  getSection,
+  formatDate,
 } from '../data/content.js'
-import {
-  ResponsiveContainer,
-  AreaChart,
-  Area,
-  XAxis,
-} from 'recharts'
+const HERO_SLUGS = ['cpi-inflation','gdp-growth','repo-rate','unemployment-rate','bank-credit-growth','gst-collections']
 
-const HERO_SERIES = [
-  { x: '2016', v: 22 },
-  { x: '2017', v: 31 },
-  { x: '2018', v: 29 },
-  { x: '2019', v: 38 },
-  { x: '2020', v: 34 },
-  { x: '2021', v: 52 },
-  { x: '2022', v: 58 },
-  { x: '2023', v: 71 },
-  { x: '2024', v: 83 },
-  { x: '2025', v: 96 },
-]
+function BoardTile({ ind }) {
+  const cat = getIndicatorCategory(ind.category)
+  const colors = sectionColorMap[cat?.color] || sectionColorMap.economy
+  const dir = ind.direction === 'up' ? 'text-up' : ind.direction === 'down' ? 'text-down' : 'text-ink/60'
+  const key = ind.chart.dataKeys[0]
+  const vals = ind.chart.data.map((d) => Number(d[key]) || 0)
+  const min = Math.min(...vals), max = Math.max(...vals), r = max - min || 1
+  const pts = vals.map((v, i) => `${(i / (vals.length - 1)) * 100},${28 - ((v - min) / r) * 24}`).join(' ')
+  return (
+    <Link to={`/indicators/${ind.slug}`} className="group flex flex-col gap-1 bg-panel p-3 transition-colors hover:bg-raise">
+      <span className="truncate text-xs text-ink/60 group-hover:text-ink">{ind.name}</span>
+      <span className={`num font-semibold leading-tight ${ind.currentValue.length > 8 ? "text-base" : "text-xl"}`}>{ind.currentValue}</span>
+      <span className={`num text-xs ${dir}`}>
+        {ind.direction === 'up' ? '▲' : ind.direction === 'down' ? '▼' : ''} {ind.change}
+      </span>
+      <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="mt-1 h-6 w-full" aria-hidden="true">
+        <polyline points={pts} fill="none" stroke={colors.hex} strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
+      </svg>
+    </Link>
+  )
+}
 
 function Hero() {
   const [q, setQ] = useState('')
   const navigate = useNavigate()
   const go = () => navigate(q.trim() ? `/search?q=${encodeURIComponent(q.trim())}` : '/search')
+  const board = HERO_SLUGS.map((slug) => indicators.find((i) => i.slug === slug)).filter(Boolean)
 
   return (
-    <section className="border-b border-ink/10 bg-white">
-      <div className="mx-auto grid max-w-site items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[3fr_2fr] lg:py-20">
+    <section className="border-b border-ink/10">
+      <div className="mx-auto grid max-w-site gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[5fr_6fr] lg:items-center lg:py-16">
         <div>
-          <h1 className="font-display text-4xl font-semibold leading-[1.1] sm:text-5xl lg:text-6xl">
-            Understanding India
-            <br />
-            through <span className="text-brand">data</span>
+          <h1 className="text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-[3.5rem]">
+            India&rsquo;s numbers, read plainly.
           </h1>
-          <p className="mt-4 max-w-xl text-base leading-body text-ink/70 sm:text-lg">
-            Chart-led stories on India&rsquo;s news, business, markets and economy — written in plain
-            language, anchored in the numbers.
+          <p className="mt-4 max-w-md text-base leading-body text-ink/70">
+            Every story starts with a chart and a source. Track the indicators, follow the IPOs, and
+            read what the data says about news, business and markets.
           </p>
-          <div className="mt-7 flex max-w-xl gap-2">
+          <div className="mt-7 flex max-w-md gap-2">
             <label htmlFor="hero-search" className="sr-only">
-              Search across articles, charts and datasets
+              Search articles, indicators and IPOs
             </label>
             <input
               id="hero-search"
@@ -61,45 +68,50 @@ function Hero() {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && go()}
-              placeholder="Search across articles, charts and datasets"
-              className="w-full rounded-md border border-ink/20 bg-paper px-4 py-3 text-sm outline-none transition-colors focus:border-brand"
+              placeholder="Search articles, indicators, IPOs"
+              className="w-full rounded-sm border border-ink/20 bg-panel px-3 py-2.5 text-sm outline-none transition-colors focus:border-brand"
             />
             <button
               type="button"
               onClick={go}
-              className="shrink-0 rounded-md bg-brand px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+              className="shrink-0 rounded-sm bg-brand px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-brand-dark"
             >
               Search
             </button>
           </div>
         </div>
-        <div aria-hidden="true" className="hidden lg:block">
-          <div className="rounded-lg border border-ink/10 bg-paper p-5 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">
-              India, one line at a time
-            </p>
-            <div className="mt-2 h-52">
-              <ResponsiveContainer width="100%" height="100%">
-                <AreaChart data={HERO_SERIES} margin={{ top: 8, right: 4, bottom: 0, left: 4 }}>
-                  <XAxis dataKey="x" tick={{ fontSize: 11, fill: '#1A1A1A99' }} tickLine={false} axisLine={false} interval={2} />
-                  <Area
-                    type="monotone"
-                    dataKey="v"
-                    stroke="#0E6E6E"
-                    strokeWidth={2.5}
-                    fill="#0E6E6E"
-                    fillOpacity={0.12}
-                    isAnimationActive
-                    animationDuration={1200}
-                  />
-                </AreaChart>
-              </ResponsiveContainer>
-            </div>
-            <p className="mt-1 text-xs text-ink/50">A decade of stories, told in charts like this one.</p>
+        <div>
+          <div className="mb-2 flex items-baseline justify-between">
+            <h2 className="text-sm font-bold">Key indicators</h2>
+            <Link to="/indicators" className="text-xs font-semibold text-brand hover:underline">
+              All {indicators.length} indicators
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 gap-px border border-ink/10 bg-ink/10 sm:grid-cols-3">
+            {board.map((ind) => (
+              <BoardTile key={ind.slug} ind={ind} />
+            ))}
           </div>
         </div>
       </div>
     </section>
+  )
+}
+
+function LatestRow({ a }) {
+  const colors = sectionColorMap[a.section]
+  return (
+    <li className="border-b border-ink/10">
+      <Link
+        to={`/article/${a.slug}`}
+        className="group grid grid-cols-[auto_1fr] items-baseline gap-x-4 gap-y-1 py-3 sm:grid-cols-[6.5rem_6rem_1fr_auto]"
+      >
+        <time className="num text-xs text-ink/50" dateTime={a.date}>{formatDate(a.date)}</time>
+        <span className={`text-xs font-semibold ${colors.text}`}>{getSection(a.section)?.name}</span>
+        <span className="col-span-2 font-semibold leading-snug group-hover:text-brand sm:col-span-1">{a.title}</span>
+        <span className="num hidden text-xs text-ink/50 sm:block">{a.readingTime} min</span>
+      </Link>
+    </li>
   )
 }
 
@@ -119,7 +131,7 @@ export default function Home() {
       <Hero />
 
       {/* Featured work */}
-      <section className="mx-auto max-w-site px-4 py-12 sm:px-6">
+      <section className="mx-auto max-w-site px-4 py-10 sm:px-6">
         <SectionHeader
           title="Featured work"
           description="Hand-picked pieces from across our sections."
@@ -136,12 +148,12 @@ export default function Home() {
 
       {/* Latest */}
       <section className="mx-auto max-w-site px-4 py-8 sm:px-6">
-        <SectionHeader title="Latest" description="The newest stories across every section." />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <SectionHeader title="Latest" description="Newest stories across every section." />
+        <ul className="border-t border-ink/10">
           {latest.map((a) => (
-            <ArticleCard key={a.id} article={a} />
+            <LatestRow key={a.id} a={a} />
           ))}
-        </div>
+        </ul>
       </section>
 
       {/* Chart of the week */}
@@ -183,13 +195,13 @@ export default function Home() {
 
       {/* Newsletter band */}
       <section id="newsletter" className="mx-auto max-w-site scroll-mt-24 px-4 py-10 sm:px-6">
-        <div className="rounded-lg bg-brand px-6 py-10 text-white sm:px-10">
+        <div className="rounded-sm bg-brand px-6 py-10 text-paper sm:px-10">
           <div className="grid items-center gap-8 lg:grid-cols-2">
             <div>
               <h2 className="font-display text-2xl font-semibold sm:text-3xl">
                 The week&rsquo;s most important charts, in your inbox
               </h2>
-              <p className="mt-2 text-sm leading-body text-white/80 sm:text-base">
+              <p className="mt-2 text-sm leading-body text-paper/80 sm:text-base">
                 A short, free weekly brief: the data behind India&rsquo;s biggest stories, with no noise
                 and no paywall.
               </p>
@@ -213,9 +225,9 @@ export default function Home() {
               <Link
                 key={s.slug}
                 to={`/${s.slug}`}
-                className={`group rounded-lg border border-ink/10 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md`}
+                className={`group rounded-sm border border-ink/10 bg-panel p-6`}
               >
-                <p className={`text-xs font-semibold uppercase tracking-wide ${colors.text}`}>
+                <p className={`text-xs font-semibold ${colors.text}`}>
                   {count} {count === 1 ? 'article' : 'articles'}
                 </p>
                 <h3 className="mt-2 font-display text-xl font-semibold group-hover:text-brand-dark">

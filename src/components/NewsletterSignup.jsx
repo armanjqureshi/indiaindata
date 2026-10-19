@@ -21,9 +21,9 @@ export default function NewsletterSignup({ compact = false, inverse = false }) {
     return (
       <div
         role="status"
-        className={`rounded-lg border px-4 py-3 text-sm font-medium ${
+        className={`rounded-sm border px-4 py-3 text-sm font-medium ${
           inverse
-            ? 'border-white/20 bg-white/10 text-white'
+            ? 'border-paper/20 bg-paper/15 text-paper'
             : 'border-market/30 bg-market-light text-market'
         }`}
       >
@@ -35,7 +35,7 @@ export default function NewsletterSignup({ compact = false, inverse = false }) {
   return (
     <div>
       {!compact && (
-        <p className={`mb-3 text-sm leading-body ${inverse ? 'text-white/70' : 'text-ink/60'}`}>
+        <p className={`mb-3 text-sm leading-body ${inverse ? 'text-paper/70' : 'text-ink/60'}`}>
           One email a week. The charts that explain India, and the stories behind them.
         </p>
       )}
@@ -54,16 +54,16 @@ export default function NewsletterSignup({ compact = false, inverse = false }) {
           onKeyDown={(e) => e.key === 'Enter' && submit()}
           placeholder="you@example.com"
           aria-invalid={!!error}
-          className={`w-full rounded-md border px-3.5 py-2.5 text-sm outline-none transition-colors focus:border-brand ${
+          className={`w-full rounded-sm border px-3.5 py-2.5 text-sm outline-none transition-colors focus:border-brand ${
             inverse
-              ? 'border-white/25 bg-white/10 text-white placeholder:text-white/50'
-              : 'border-ink/20 bg-white text-ink placeholder:text-ink/40'
+              ? 'border-paper/25 bg-paper/15 text-paper placeholder:text-paper/50'
+              : 'border-ink/20 bg-panel text-ink placeholder:text-ink/40'
           } ${error ? 'border-down' : ''}`}
         />
         <button
           type="button"
           onClick={submit}
-          className="shrink-0 rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+          className="shrink-0 rounded-sm bg-brand px-5 py-2.5 text-sm font-semibold text-paper transition-colors hover:bg-brand-dark"
         >
           Subscribe
         </button>

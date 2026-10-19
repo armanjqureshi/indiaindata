@@ -28,9 +28,9 @@ export default function About() {
 
   return (
     <>
-      <section className="border-b border-ink/10 bg-white">
+      <section className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand">About</p>
+          <p className="text-xs font-semiboldst text-brand">About</p>
           <h1 className="mt-2 font-display text-4xl font-semibold leading-tight sm:text-5xl">
             We tell India&rsquo;s stories with the numbers attached
           </h1>
@@ -47,7 +47,7 @@ export default function About() {
         <h2 className="font-display text-2xl font-semibold sm:text-3xl">How we source the data</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {SOURCING.map((s) => (
-            <div key={s.title} className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
+            <div key={s.title} className="rounded-sm border border-ink/10 bg-panel p-6">
               <h3 className="font-display text-lg font-semibold">{s.title}</h3>
               <p className="mt-2 text-sm leading-body text-ink/70">{s.text}</p>
             </div>
@@ -63,7 +63,7 @@ export default function About() {
         </p>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {team.map((m) => (
-            <div key={m.name} className="flex gap-4 rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
+            <div key={m.name} className="flex gap-4 rounded-sm border border-ink/10 bg-panel p-6">
               {m.photo ? (
                 <img src={m.photo} alt="" className="h-12 w-12 shrink-0 rounded-full object-cover" />
               ) : (
@@ -87,7 +87,7 @@ export default function About() {
       </section>
 
       <section id="using-our-work" className="mx-auto max-w-site scroll-mt-24 px-4 py-12 sm:px-6">
-        <div className="rounded-lg bg-brand-light p-8 sm:p-10">
+        <div className="rounded-sm bg-brand-light p-8 sm:p-10">
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">Using our work</h2>
           <p className="mt-3 max-w-2xl leading-body text-ink/75">
             Our charts and write-ups are free to share, embed and reuse for non-commercial purposes,
@@ -98,7 +98,7 @@ export default function About() {
       </section>
 
       <section className="mx-auto max-w-site px-4 py-12 sm:px-6">
-        <div className="grid gap-8 rounded-lg border border-ink/10 bg-white p-8 shadow-sm sm:grid-cols-3">
+        <div className="grid gap-8 rounded-sm border border-ink/10 bg-panel p-8 sm:grid-cols-3">
           {siteStats.map((s) => (
             <StatBlock key={s.label} value={s.value} label={s.label} />
           ))}

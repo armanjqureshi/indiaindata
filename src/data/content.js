@@ -14,18 +14,18 @@
 // ---------------------------------------------------------------------------
 
 const SECTION_META = [
-  { slug: 'news', name: 'News', color: 'news', hex: '#4A6FA5' },
-  { slug: 'business', name: 'Business', color: 'business', hex: '#4F46B8' },
-  { slug: 'market', name: 'Market', color: 'market', hex: '#1E7F4F' },
-  { slug: 'blogs', name: 'Blogs', color: 'blogs', hex: '#0E6E6E' },
+  { slug: 'news', name: 'News', color: 'news', hex: '#7FA9EA' },
+  { slug: 'business', name: 'Business', color: 'business', hex: '#A39BFF' },
+  { slug: 'market', name: 'Market', color: 'market', hex: '#3FD08D' },
+  { slug: 'blogs', name: 'Blogs', color: 'blogs', hex: '#3FC8CF' },
 ]
 
 const TOPIC_META = [
-  { slug: 'economy', name: 'Economy', color: 'economy', hex: '#B45309' },
-  { slug: 'society', name: 'Society', color: 'society', hex: '#7E3FA8' },
-  { slug: 'policy', name: 'Policy', color: 'news', hex: '#4A6FA5' },
-  { slug: 'data-methods', name: 'Data methods', color: 'blogs', hex: '#0E6E6E' },
-  { slug: 'markets', name: 'Markets', color: 'market', hex: '#1E7F4F' },
+  { slug: 'economy', name: 'Economy', color: 'economy', hex: '#E9CB4F' },
+  { slug: 'society', name: 'Society', color: 'society', hex: '#D08CF0' },
+  { slug: 'policy', name: 'Policy', color: 'news', hex: '#7FA9EA' },
+  { slug: 'data-methods', name: 'Data methods', color: 'blogs', hex: '#3FC8CF' },
+  { slug: 'markets', name: 'Markets', color: 'market', hex: '#3FD08D' },
 ]
 
 const INDICATOR_CATEGORY_META = [
@@ -194,13 +194,13 @@ export const formatDate = (iso) =>
   })
 
 export const sectionColorMap = {
-  news: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: '#4A6FA5' },
-  business: { text: 'text-business', bg: 'bg-business', bgLight: 'bg-business-light', border: 'border-business', hex: '#4F46B8' },
-  market: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: '#1E7F4F' },
-  blogs: { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: '#0E6E6E' },
-  economy: { text: 'text-economy', bg: 'bg-economy', bgLight: 'bg-economy-light', border: 'border-economy', hex: '#B45309' },
-  society: { text: 'text-society', bg: 'bg-society', bgLight: 'bg-society-light', border: 'border-society', hex: '#7E3FA8' },
-  policy: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: '#4A6FA5' },
-  'data-methods': { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: '#0E6E6E' },
-  markets: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: '#1E7F4F' },
+  news: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: '#7FA9EA' },
+  business: { text: 'text-business', bg: 'bg-business', bgLight: 'bg-business-light', border: 'border-business', hex: '#A39BFF' },
+  market: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: '#3FD08D' },
+  blogs: { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: '#3FC8CF' },
+  economy: { text: 'text-economy', bg: 'bg-economy', bgLight: 'bg-economy-light', border: 'border-economy', hex: '#E9CB4F' },
+  society: { text: 'text-society', bg: 'bg-society', bgLight: 'bg-society-light', border: 'border-society', hex: '#D08CF0' },
+  policy: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: '#7FA9EA' },
+  'data-methods': { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: '#3FC8CF' },
+  markets: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: '#3FD08D' },
 }

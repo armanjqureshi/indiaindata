@@ -50,7 +50,7 @@ export default function SectionPage({ slug }) {
       {/* Section header */}
       <section className={`border-b border-ink/10 ${colors.bgLight}`}>
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
-          <p className={`text-xs font-semibold uppercase tracking-widest ${colors.text}`}>
+          <p className={`text-xs font-semiboldst ${colors.text}`}>
             Section · {all.length} articles
           </p>
           <h1 className="mt-2 font-display text-4xl font-semibold sm:text-5xl">{section.name}</h1>
@@ -60,7 +60,7 @@ export default function SectionPage({ slug }) {
 
       {/* Market ticker row */}
       {isMarket && (
-        <section aria-label="Market snapshot" className="border-b border-ink/10 bg-white">
+        <section aria-label="Market snapshot" className="border-b border-ink/10 bg-panel">
           <div className="mx-auto grid max-w-site grid-cols-2 gap-6 px-4 py-6 sm:px-6 lg:grid-cols-4">
             {marketTickers.map((t) => (
               <StatBlock key={t.label} value={t.value} sub={t.change} direction={t.direction} label={t.label} />
@@ -93,7 +93,7 @@ export default function SectionPage({ slug }) {
 
         {/* Filter/sort row */}
         <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-          <div role="group" aria-label="Sort articles" className="flex gap-1 rounded-md border border-ink/15 bg-white p-1">
+          <div role="group" aria-label="Sort articles" className="flex gap-1 rounded-sm border border-ink/15 bg-panel p-1">
             {[
               { id: 'latest', label: 'Latest' },
               { id: 'mostRead', label: 'Most read' },
@@ -104,7 +104,7 @@ export default function SectionPage({ slug }) {
                 onClick={() => setSort(o.id)}
                 aria-pressed={sort === o.id}
                 className={`rounded px-3 py-1.5 text-sm font-medium transition-colors ${
-                  sort === o.id ? 'bg-brand text-white' : 'text-ink/60 hover:bg-ink/5'
+                  sort === o.id ? 'bg-brand text-paper' : 'text-ink/60 hover:bg-ink/5'
                 }`}
               >
                 {o.label}
@@ -120,7 +120,7 @@ export default function SectionPage({ slug }) {
                 onClick={() => setTopicFilter(null)}
                 aria-pressed={topicFilter === null}
                 className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
-                  topicFilter === null ? 'bg-ink text-white' : 'bg-ink/5 text-ink/60 hover:bg-ink/10'
+                  topicFilter === null ? 'bg-ink text-paper' : 'bg-ink/5 text-ink/60 hover:bg-ink/10'
                 }`}
               >
                 All topics
@@ -133,7 +133,7 @@ export default function SectionPage({ slug }) {
                   aria-pressed={topicFilter === t.slug}
                   className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
                     topicFilter === t.slug
-                      ? `${sectionColorMap[t.slug].bg} text-white`
+                      ? `${sectionColorMap[t.slug].bg} text-paper`
                       : `${sectionColorMap[t.slug].bgLight} ${sectionColorMap[t.slug].text} hover:brightness-95`
                   }`}
                 >
@@ -186,7 +186,7 @@ export default function SectionPage({ slug }) {
             )}
 
             {shown.length === 0 && (
-              <div className="rounded-lg border border-ink/10 bg-white p-10 text-center">
+              <div className="rounded-sm border border-ink/10 bg-panel p-10 text-center">
                 <p className="font-display text-lg font-semibold">No articles under this topic yet</p>
                 <p className="mt-1 text-sm text-ink/60">Clear the filter to see everything in {section.name}.</p>
               </div>
@@ -197,7 +197,7 @@ export default function SectionPage({ slug }) {
                 <button
                   type="button"
                   onClick={() => setVisible((v) => v + PAGE_SIZE)}
-                  className="rounded-md border border-ink/20 bg-white px-6 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
+                  className="rounded-sm border border-ink/20 bg-panel px-6 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
                 >
                   Load more
                 </button>
@@ -208,7 +208,7 @@ export default function SectionPage({ slug }) {
           {/* Right rail */}
           <aside className="hidden lg:block" aria-label="Sidebar">
             <div className="sticky top-24 flex flex-col gap-6">
-              <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+              <div className="rounded-sm border border-ink/10 bg-panel p-5">
                 <h2 className="font-display text-lg font-semibold">Trending in {section.name}</h2>
                 <ol className="mt-4 space-y-4">
                   {trending.map((a, i) => (
@@ -229,7 +229,7 @@ export default function SectionPage({ slug }) {
                   ))}
                 </ol>
               </div>
-              <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+              <div className="rounded-sm border border-ink/10 bg-panel p-5">
                 <h2 className="font-display text-lg font-semibold">The weekly brief</h2>
                 <div className="mt-3">
                   <NewsletterSignup compact />

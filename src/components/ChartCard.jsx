@@ -17,11 +17,11 @@ import {
 } from 'recharts'
 import { sectionColorMap } from '../data/content.js'
 
-const STACK_PALETTE = ['#0E6E6E', '#4A6FA5', '#B45309', '#7E3FA8', '#9CA3AF']
-const PIE_PALETTE = ['#0E6E6E', '#4A6FA5', '#B45309', '#7E3FA8', '#1E7F4F']
+const STACK_PALETTE = ['#3FC8CF', '#7FA9EA', '#E9CB4F', '#D08CF0', '#9CA3AF']
+const PIE_PALETTE = ['#3FC8CF', '#7FA9EA', '#E9CB4F', '#D08CF0', '#3FD08D']
 
-const axisStyle = { fontSize: 12, fill: '#1A1A1A', fontFamily: 'Inter, sans-serif' }
-const gridStroke = '#1A1A1A14'
+const axisStyle = { fontSize: 12, fill: '#E6EDF1', fontFamily: 'Inter, sans-serif' }
+const gridStroke = '#E6EDF114'
 
 function ChartBody({ chart, accent }) {
   const height = 300
@@ -32,7 +32,7 @@ function ChartBody({ chart, accent }) {
       <ResponsiveContainer width="100%" height={height}>
         <LineChart data={chart.data} margin={margin}>
           <CartesianGrid stroke={gridStroke} vertical={false} />
-          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#1A1A1A33' }} />
+          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#E6EDF133' }} />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={52} />
           <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} />
           {chart.dataKeys.map((k) => (
@@ -56,7 +56,7 @@ function ChartBody({ chart, accent }) {
       <ResponsiveContainer width="100%" height={height}>
         <AreaChart data={chart.data} margin={margin}>
           <CartesianGrid stroke={gridStroke} vertical={false} />
-          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#1A1A1A33' }} />
+          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#E6EDF133' }} />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={52} />
           <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} />
           {chart.dataKeys.map((k) => (
@@ -77,14 +77,14 @@ function ChartBody({ chart, accent }) {
             dataKey={chart.xKey}
             tick={{ ...axisStyle, fontSize: 11 }}
             tickLine={false}
-            axisLine={{ stroke: '#1A1A1A33' }}
+            axisLine={{ stroke: '#E6EDF133' }}
             interval={0}
             angle={chart.data.length > 6 ? -30 : 0}
             textAnchor={chart.data.length > 6 ? 'end' : 'middle'}
             height={chart.data.length > 6 ? 60 : 30}
           />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={44} />
-          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: '#1A1A1A0A' }} />
+          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: '#E6EDF10D' }} />
           {multi && <Legend wrapperStyle={{ fontSize: 12 }} />}
           {chart.dataKeys.map((k, i) => (
             <Bar key={k} dataKey={k} fill={multi ? STACK_PALETTE[i] : accent} radius={[3, 3, 0, 0]} maxBarSize={56} />
@@ -99,9 +99,9 @@ function ChartBody({ chart, accent }) {
       <ResponsiveContainer width="100%" height={height}>
         <BarChart data={chart.data} margin={margin}>
           <CartesianGrid stroke={gridStroke} vertical={false} />
-          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#1A1A1A33' }} />
+          <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: '#E6EDF133' }} />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={44} />
-          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: '#1A1A1A0A' }} />
+          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: '#E6EDF10D' }} />
           <Legend wrapperStyle={{ fontSize: 12 }} />
           {chart.dataKeys.map((k, i) => (
             <Bar key={k} dataKey={k} stackId="stack" fill={STACK_PALETTE[i % STACK_PALETTE.length]} maxBarSize={72} />
@@ -142,7 +142,7 @@ export default function ChartCard({ chart, sectionSlug = 'blogs', caption }) {
   const accent = (sectionColorMap[sectionSlug] || sectionColorMap.blogs).hex
 
   return (
-    <figure className="overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm">
+    <figure className="overflow-hidden rounded-sm border border-ink/10 bg-panel">
       <div className="border-b border-ink/10 px-5 py-4 sm:px-6">
         <h3 className="font-display text-lg font-semibold leading-snug">{chart.title}</h3>
         {chart.subtitle && <p className="mt-0.5 text-sm text-ink/60">{chart.subtitle}</p>}

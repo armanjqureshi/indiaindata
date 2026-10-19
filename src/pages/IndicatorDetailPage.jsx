@@ -37,7 +37,7 @@ export default function IndicatorDetailPage() {
           {category && (
             <div className="mb-3">
               <span
-                className={`inline-flex items-center gap-1.5 rounded-full ${colors.bg} px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-white`}
+                className={`inline-flex items-center gap-1.5 rounded-full ${colors.bg} px-2.5 py-1 text-xs font-semibold text-paper`}
               >
                 {category.name}
               </span>
@@ -72,11 +72,11 @@ export default function IndicatorDetailPage() {
         <ChartCard chart={indicator.chart} sectionSlug={category?.color || 'economy'} />
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
-          <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
+          <div className="rounded-sm border border-ink/10 bg-panel p-6">
             <h2 className="font-display text-lg font-semibold">What this measures</h2>
             <p className="mt-2 text-sm leading-normal text-ink/70">{indicator.description}</p>
           </div>
-          <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
+          <div className="rounded-sm border border-ink/10 bg-panel p-6">
             <h2 className="font-display text-lg font-semibold">Source & release schedule</h2>
             <p className="mt-2 text-sm leading-normal text-ink/70">
               <span className="font-semibold text-ink">{indicator.source}</span>

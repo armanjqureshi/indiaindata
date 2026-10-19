@@ -36,19 +36,19 @@ export default function IndicatorCard({ indicator }) {
   return (
     <Link
       to={`/indicators/${indicator.slug}`}
-      className={`group flex flex-col gap-3 rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:${colors.border}`}
+      className={`group flex flex-col gap-3 rounded-sm border border-ink/10 bg-panel p-5 transition-all duration-200 hover:${colors.border}`}
     >
       <div className="flex items-start justify-between gap-2">
         <h3 className="font-display text-base font-semibold leading-snug text-ink group-hover:text-brand-dark">
           {indicator.name}
         </h3>
-        <span aria-hidden="true" className={`mt-1 h-2 w-2 shrink-0 rounded-full ${colors.bg}`} />
+        <span aria-hidden="true" className={`mt-1 h-2 w-2 shrink-0 ${colors.bg}`} />
       </div>
 
       <div className="flex items-end justify-between gap-3">
         <div>
-          <p className="font-display text-2xl font-semibold leading-none">{indicator.currentValue}</p>
-          <p className={`mt-1.5 inline-flex items-center gap-1 text-xs font-semibold ${dirColor}`}>
+          <p className="num text-2xl font-semibold leading-none">{indicator.currentValue}</p>
+          <p className={`num mt-1.5 inline-flex items-center gap-1 text-xs font-medium ${dirColor}`}>
             {indicator.direction === 'up' && <span aria-hidden="true">▲</span>}
             {indicator.direction === 'down' && <span aria-hidden="true">▼</span>}
             {indicator.change}

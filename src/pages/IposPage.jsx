@@ -22,9 +22,9 @@ export default function IposPage() {
 
   return (
     <>
-      <section className="border-b border-ink/10 bg-white">
+      <section className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand">IPOs</p>
+          <p className="text-xs font-semiboldst text-brand">IPOs</p>
           <h1 className="mt-2 font-display text-4xl font-semibold sm:text-5xl">
             India&rsquo;s IPO pipeline, tracked
           </h1>
@@ -42,7 +42,7 @@ export default function IposPage() {
             onClick={() => setSectorFilter(null)}
             aria-pressed={sectorFilter === null}
             className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
-              sectorFilter === null ? 'bg-ink text-white' : 'bg-ink/5 text-ink/60 hover:bg-ink/10'
+              sectorFilter === null ? 'bg-ink text-paper' : 'bg-ink/5 text-ink/60 hover:bg-ink/10'
             }`}
           >
             All sectors
@@ -54,7 +54,7 @@ export default function IposPage() {
               onClick={() => setSectorFilter(sectorFilter === s ? null : s)}
               aria-pressed={sectorFilter === s}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
-                sectorFilter === s ? 'bg-brand text-white' : 'bg-brand-light text-brand hover:brightness-95'
+                sectorFilter === s ? 'bg-brand text-paper' : 'bg-brand-light text-brand hover:brightness-95'
               }`}
             >
               {s}
@@ -79,7 +79,7 @@ export default function IposPage() {
       })}
 
       <section className="mx-auto max-w-site px-4 py-10 sm:px-6">
-        <div className="rounded-lg border border-ink/10 bg-white p-6 text-sm leading-normal text-ink/60 shadow-sm">
+        <div className="rounded-sm border border-ink/10 bg-panel p-6 text-sm leading-normal text-ink/60">
           Values shown here are illustrative reference points, not live market data. Each IPO page
           lists its source. Have a correction, or an IPO to add?{' '}
           <Link to="/contact" className="font-semibold text-brand hover:text-brand-dark">

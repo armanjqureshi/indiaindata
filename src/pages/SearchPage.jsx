@@ -45,7 +45,7 @@ export default function SearchPage() {
 
   return (
     <>
-      <section className="border-b border-ink/10 bg-white">
+      <section className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
           <h1 className="font-display text-4xl font-semibold sm:text-5xl">Search</h1>
           <div className="mt-6 max-w-2xl">
@@ -59,7 +59,7 @@ export default function SearchPage() {
               value={query}
               onChange={(e) => onChange(e.target.value)}
               placeholder="Search across articles, charts and datasets"
-              className="w-full rounded-md border border-ink/20 bg-paper px-4 py-3 text-base outline-none transition-colors focus:border-brand"
+              className="w-full rounded-sm border border-ink/20 bg-paper px-4 py-3 text-base outline-none transition-colors focus:border-brand"
             />
           </div>
           <p role="status" className="mt-3 text-sm text-ink/60">
@@ -71,7 +71,7 @@ export default function SearchPage() {
       </section>
       <section className="mx-auto max-w-site px-4 py-10 sm:px-6">
         {query.trim() && results.length === 0 && (
-          <div className="rounded-lg border border-ink/10 bg-white p-10 text-center">
+          <div className="rounded-sm border border-ink/10 bg-panel p-10 text-center">
             <p className="font-display text-lg font-semibold">No matches found</p>
             <p className="mt-1 text-sm text-ink/60">
               Try a broader term — for example &ldquo;inflation&rdquo;, &ldquo;Nifty&rdquo; or &ldquo;manufacturing&rdquo;.

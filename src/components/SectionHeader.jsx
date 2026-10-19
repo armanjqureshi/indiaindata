@@ -4,21 +4,17 @@ import { sectionColorMap } from '../data/content.js'
 export default function SectionHeader({ title, description, to, linkLabel = 'View all', colorSlug }) {
   const colors = colorSlug ? sectionColorMap[colorSlug] : null
   return (
-    <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+    <div className="mb-5 flex flex-wrap items-end justify-between gap-3 border-b border-ink/15 pb-3">
       <div className="max-w-2xl">
-        <h2 className="font-display text-2xl font-semibold sm:text-3xl">
-          {colors && <span aria-hidden="true" className={`mr-3 inline-block h-5 w-1.5 rounded-full align-[-2px] ${colors.bg}`} />}
+        <h2 className="flex items-center gap-3 font-display text-xl font-bold sm:text-2xl">
+          {colors && <span aria-hidden="true" className={`inline-block h-4 w-4 ${colors.bg}`} />}
           {title}
         </h2>
-        {description && <p className="mt-1.5 text-sm leading-body text-ink/60 sm:text-base">{description}</p>}
+        {description && <p className="mt-1 text-sm leading-body text-ink/60">{description}</p>}
       </div>
       {to && (
-        <Link
-          to={to}
-          className="group inline-flex items-center gap-1.5 text-sm font-semibold text-brand transition-colors hover:text-brand-dark"
-        >
+        <Link to={to} className="text-sm font-semibold text-brand transition-colors hover:text-brand-dark hover:underline">
           {linkLabel}
-          <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
         </Link>
       )}
     </div>
