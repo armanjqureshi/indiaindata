@@ -1,0 +1,33 @@
+{
+ "data": {
+  "currencySpotRates": [
+   {
+    "currency": "USD",
+    "unit": "1",
+    "value": "94.7691",
+    "prevDayValue": "95.0194"
+   },
+   {
+    "currency": "YEN",
+    "unit": "100",
+    "value": "59.9500",
+    "prevDayValue": "60.1800"
+   },
+   {
+    "currency": "GBP",
+    "unit": "1",
+    "value": "126.2928",
+    "prevDayValue": "126.4081"
+   },
+   {
+    "currency": "EURO",
+    "unit": "1",
+    "value": "106.3300",
+    "prevDayValue": "106.6995"
+   }
+  ],
+  "intrestRates": null,
+  "commoditySpotRates": null,
+  "timeStamp": "19-Oct-2026 13:00:00"
+ }
+}

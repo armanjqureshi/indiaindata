@@ -193,7 +193,7 @@
    "source": "NSDL, daily trends in FPI investment (equity, all routes)",
    "sourceUrl": "https://www.fpi.nsdl.co.in/web/Reports/Monthly.aspx",
    "note": "Sum of 12 reporting days in 2026-10",
-   "updatedAt": "2026-10-19T22:05:13.952Z"
+   "updatedAt": "2026-10-19T22:07:14.996Z"
   }
  },
  "history": {
@@ -6980,6 +6980,6 @@
    ]
   ]
  },
- "updatedAt": "2026-10-19T22:05:13.952Z",
+ "updatedAt": "2026-10-19T22:07:14.996Z",
  "session": "2026-10-19"
 }
