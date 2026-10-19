@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useMarket, fmt } from '../data/live.js'
 import useSeo from '../components/Seo.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
 import ChartCard from '../components/ChartCard.jsx'
@@ -10,7 +11,6 @@ import {
   getSection,
   getBySection,
   getArticle,
-  marketTickers,
   topics as allTopics,
   sectionColorMap,
   formatDate,
@@ -30,12 +30,13 @@ export default function SectionPage({ slug }) {
   const colors = sectionColorMap[slug]
   const isBlogs = slug === 'blogs'
   const isMarket = slug === 'market'
+  const market = useMarket()
   const isBusiness = slug === 'business'
 
   const items = useMemo(() => {
     let list = [...all]
     if (isBlogs && topicFilter) list = list.filter((a) => a.topics.includes(topicFilter))
-    if (sort === 'mostRead') list.sort((a, b) => a.readingTime - b.readingTime) // demo proxy
+    if (sort === 'mostRead') list.sort((a, b) => a.readingTime - b.readingTime)
     return list
   }, [all, sort, topicFilter, isBlogs])
 
@@ -62,12 +63,18 @@ export default function SectionPage({ slug }) {
       {isMarket && (
         <section aria-label="Market snapshot" className="border-b border-ink/10 bg-panel">
           <div className="mx-auto grid max-w-site grid-cols-2 gap-6 px-4 py-6 sm:px-6 lg:grid-cols-4">
-            {marketTickers.map((t) => (
-              <StatBlock key={t.label} value={t.value} sub={t.change} direction={t.direction} label={t.label} />
-            ))}
+            {[['nifty-50', 'Nifty 50', 2], ['sensex', 'Sensex', 2], ['usd-inr', 'USD / INR (FBIL)', 4], ['india-vix', 'India VIX', 2]].map(([k, label, dp]) => {
+              const it = market.items?.[k]
+              if (!it) return null
+              return (
+                <StatBlock key={k} value={fmt.inr(it.value, dp)} label={label}
+                  sub={it.changePct === null ? '' : `${it.changePct > 0 ? '+' : ''}${fmt.inr(it.changePct, 2)}%`}
+                  direction={it.change > 0 ? 'up' : it.change < 0 ? 'down' : undefined} />
+              )
+            })}
           </div>
           <div className="mx-auto max-w-site px-4 pb-2 sm:px-6">
-            <p className="pb-3 text-xs text-ink/40">Demo values — live feeds arrive in phase 2.</p>
+            <p className="pb-3 text-xs text-ink/50">Closing levels on {fmt.date(market.session)}. Updated automatically after each trading session. <Link to="/indicators" className="text-brand hover:underline">More market indicators</Link></p>
           </div>
         </section>
       )}
@@ -96,7 +103,7 @@ export default function SectionPage({ slug }) {
           <div role="group" aria-label="Sort articles" className="flex gap-1 rounded-sm border border-ink/15 bg-panel p-1">
             {[
               { id: 'latest', label: 'Latest' },
-              { id: 'mostRead', label: 'Most read' },
+              { id: 'mostRead', label: 'Quick reads' },
             ].map((o) => (
               <button
                 key={o.id}

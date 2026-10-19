@@ -13,11 +13,12 @@ import {
   getArticle,
   sectionColorMap,
   indicators,
+  useIndicators,
   getIndicatorCategory,
   getSection,
   formatDate,
 } from '../data/content.js'
-const HERO_SLUGS = ['cpi-inflation','gdp-growth','repo-rate','g-sec-10y-yield','inr-usd','forex-reserves']
+const HERO_SLUGS = ['nifty-50','sensex','inr-usd','cpi-inflation','repo-rate','gdp-growth']
 
 function BoardTile({ ind }) {
   const cat = getIndicatorCategory(ind.category)
@@ -45,7 +46,8 @@ function Hero() {
   const [q, setQ] = useState('')
   const navigate = useNavigate()
   const go = () => navigate(q.trim() ? `/search?q=${encodeURIComponent(q.trim())}` : '/search')
-  const board = HERO_SLUGS.map((slug) => indicators.find((i) => i.slug === slug)).filter(Boolean)
+  const all = useIndicators()
+  const board = HERO_SLUGS.map((slug) => all.find((i) => i.slug === slug)).filter(Boolean)
 
   return (
     <section className="border-b border-ink/10">

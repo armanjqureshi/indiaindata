@@ -1,6 +1,6 @@
 import useSeo from '../components/Seo.jsx'
 import StatBlock from '../components/StatBlock.jsx'
-import { authors, siteStats } from '../data/content.js'
+import { authors, getSiteStats } from '../data/content.js'
 
 const SOURCING = [
   {
@@ -98,7 +98,7 @@ export default function About() {
 
       <section className="mx-auto max-w-site px-4 py-12 sm:px-6">
         <div className="grid gap-8 rounded-sm border border-ink/10 bg-panel p-8 sm:grid-cols-3">
-          {siteStats.map((s) => (
+          {getSiteStats().map((s) => (
             <StatBlock key={s.label} value={s.value} label={s.label} />
           ))}
         </div>

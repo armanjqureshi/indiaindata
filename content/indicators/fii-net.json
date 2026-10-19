@@ -1,0 +1,38 @@
+{
+  "slug": "fii-net",
+  "name": "FII/FPI net buying (cash market, daily)",
+  "category": "flows",
+  "unit": "₹ cr",
+  "currentValue": "—",
+  "previousValue": "—",
+  "change": "—",
+  "direction": "flat",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
+  "description": "Net value of shares bought minus sold by foreign institutional and portfolio investors in the cash market on the latest trading day, across NSE, BSE and MSEI. These are provisional exchange figures; NSDL's depository data, reported a day later, can differ.",
+  "source": "NSE provisional FII/DII data",
+  "releaseSchedule": "Exchanges publish provisional figures for foreign and domestic institutional trading after each session. Updated automatically.",
+  "verified": true,
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "live": {
+    "key": "fii-net",
+    "format": "flow",
+    "points": 120,
+    "chartType": "bar"
+  },
+  "chart": {
+    "type": "bar",
+    "title": "FII/FPI daily net flows",
+    "subtitle": "₹ crore, provisional",
+    "source": "NSE provisional FII/DII data",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[]"
+  }
+}

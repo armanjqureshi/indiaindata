@@ -9,9 +9,9 @@
   "direction": "down",
   "asOf": "2026-10-19",
   "frequency": "Daily",
-  "description": "IBJA's benchmark rate for 999-purity gold per 10 grams, before GST and making charges. It is a widely used reference for Indian bullion prices.",
+  "description": "IBJA's closing benchmark rate for 999-purity gold per 10 grams, before 3% GST and making charges. It is the reference rate used for Sovereign Gold Bonds.",
   "source": "India Bullion and Jewellers Association (IBJA)",
-  "releaseSchedule": "Published every trading day (AM and PM rates).",
+  "releaseSchedule": "IBJA publishes opening (AM) and closing (PM) rates on each business day. The closing rate is shown; updated automatically.",
   "verified": true,
   "topics": [
     "economy",
@@ -28,5 +28,10 @@
     ],
     "unit": "",
     "data": "[{\"period\": \"16 Oct\", \"value\": 146426}, {\"period\": \"19 Oct\", \"value\": 146406}]"
+  },
+  "live": {
+    "key": "gold-ibja",
+    "format": "bullion",
+    "points": 120
   }
 }

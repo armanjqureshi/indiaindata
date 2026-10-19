@@ -4,7 +4,7 @@ import ChartCard from '../components/ChartCard.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
 import NotFound from './NotFound.jsx'
 import {
-  getIndicator,
+  useIndicators,
   getIndicatorCategory,
   getArticlesForIndicator,
   sectionColorMap,
@@ -12,7 +12,8 @@ import {
 
 export default function IndicatorDetailPage() {
   const { slug } = useParams()
-  const indicator = getIndicator(slug)
+  const all = useIndicators()
+  const indicator = all.find((i) => i.slug === slug)
   useSeo({
     title: indicator ? indicator.name : 'Indicator not found',
     description: indicator ? indicator.description : undefined,
@@ -61,6 +62,8 @@ export default function IndicatorDetailPage() {
             </div>
             <p className="pb-1 text-sm text-ink/60">
               As of {asOfLabel}{indicator.verified === false ? ' (sample data)' : ''}
+              {indicator.liveNote ? `. ${indicator.liveNote}` : ''}
+              {indicator.live ? '. Updated automatically.' : ''}
               <span className="mx-1.5" aria-hidden="true">•</span>
               {indicator.frequency}
             </p>

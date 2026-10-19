@@ -184,3 +184,24 @@ which is exactly what `netlify.toml` points at.
 - If a figure cannot be traced to a source, it is not published. Use the **Verified against source** toggle on indicators, and the **Draft** toggle on articles, to keep anything unchecked off the live site.
 - The 15 launch articles are kept as drafts in the CMS: their figures were illustrative. Rewrite them with sourced numbers before turning Draft off.
 - Footer and About-page counts are calculated from the published content, so they update automatically.
+
+## Automatic data updates (no manual work)
+
+Two scheduled jobs run on GitHub Actions (free for public repositories) and write to `live/`:
+
+| Job | When (IST) | What it updates | Sources |
+|---|---|---|---|
+| `Update market data` | 19:05 and 21:50 on weekdays; 10:00 Saturday | Nifty 50, Nifty Bank, Nifty IT, Midcap 150, Smallcap 250, India VIX, Sensex, USD/EUR/GBP/JPY reference rates, FII/DII daily flows, IBJA gold and silver, Brent spot, FPI equity flows month to date | NSE end-of-day index file, Moneycontrol price feed (Sensex, cross-checked against the Nifty), FBIL reference rates via NSE, NSE FII/DII data, IBJA, US EIA, NSDL |
+| `Update IPO data` | 12:00, 15:15, 19:30 on weekdays; 00:15 daily | Every NSE mainboard and SME IPO: dates, price band, lot size, issue size, consolidated subscription by category, timetable, listing price and gain, latest close | NSE public issue data, NSE end-of-day price files, NSE holiday calendar |
+
+How it stays accurate:
+- A value is written only if it parses, its date is not older than the stored one, and it passes sanity checks (size of move, continuity with the previous close, and for Sensex a cross-check against the Nifty). Otherwise the old value stays and the reason is logged in `live/market-log.json` or `live/ipos-log.json`.
+- Derived numbers say how they were made (issue size "calculated at ₹X per share", expected dates "under SEBI's T+3 timetable").
+
+How it avoids Netlify costs: Netlify's free plan charges 15 credits per production deploy (300 a month). Data commits are marked `[skip netlify]` and `netlify.toml` ignores changes that only touch `live/`, `.github/` or `scripts/data/`. The site loads the newest `live/` files in the browser (from jsDelivr, with raw.githubusercontent.com as a fallback), so it stays current without rebuilding. A rebuild happens only when you publish content in the CMS or change the code; each rebuild also refreshes the prerendered snapshot used by search engines.
+
+What is still manual: monthly macro indicators (CPI, WPI, GDP, IIP, PMIs, jobs, trade, GST, UPI, e-way bills, power, fiscal deficit, current account, bank credit) and the 10-year G-Sec yield. Update them in the CMS when new releases come out.
+
+Running a job by hand: GitHub → Actions → pick the job → Run workflow. `Update IPO data` accepts `backfill_days` to fetch listing-day prices for older listings.
+
+Known gaps: IPOs listed only on BSE (including BSE SME) are not covered, because BSE's data endpoints block automated requests from GitHub's servers.

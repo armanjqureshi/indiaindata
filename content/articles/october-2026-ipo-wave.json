@@ -37,15 +37,15 @@
     },
     {
       "type": "paragraph",
-      "text": "Demand varied widely. HD Fire Protect was subscribed 131.73 times, with qualified institutional buyers bidding for 256.65 times the shares reserved for them. Sahajanand Medical Technologies was subscribed 14.21 times late on its final day, Fusion CX 4.68 times and Zetwerk Manufacturing Business 3.10 times. Zetwerk's retail portion was subscribed 0.77 times, meaning individual investors bid for fewer shares than were set aside for them."
+      "text": "Demand varied widely. Tonbo Imaging India was subscribed 135.9 times and HD Fire Protect 131.7 times, with qualified institutional buyers bidding for 293.56 and 256.65 times the shares reserved for them. Bonfiglioli Transmissions was subscribed 46.06 times and Sahajanand Medical Technologies 14.2 times. Fusion CX was subscribed 4.45 times and Zetwerk Manufacturing Businesses 3.06 times. Zetwerk's retail portion was subscribed 0.73 times, meaning individual investors bid for fewer shares than were set aside for them."
     },
     {
       "type": "paragraph",
-      "text": "HD Fire Protect is scheduled to list on 21 October and Fusion CX on 22 October. Zetwerk, Bonfiglioli Transmissions, Tonbo Imaging India and Sahajanand are expected to list on 23 October. Listing dates are tentative until the exchanges confirm them."
+      "text": "HD Fire Protect is due to list on 21 October and Fusion CX on 22 October. Zetwerk, Bonfiglioli Transmissions, Tonbo Imaging India and Sahajanand are expected to list on 23 October, three working days after bidding closed under SEBI's T+3 timetable. Listing dates are confirmed when the exchanges announce them."
     },
     {
       "type": "paragraph",
-      "text": "Subscription figures are as reported near the close of bidding by Chittorgarh and HDFC Sky; final exchange figures can differ slightly."
+      "text": "Subscription figures are NSE's final consolidated figures for bids on NSE and BSE, published at 7 pm on each issue's last day. Live figures for every issue are on the IPO tracker."
     }
   ],
   "charts": [
@@ -53,13 +53,13 @@
       "type": "bar",
       "title": "Jio is larger than the other seven combined",
       "subtitle": "IPO issue size, ₹ crore (Jio at the upper price band)",
-      "source": "IPO calendars (Angel One, ipomarket.in, Chittorgarh) and Business Today, Oct 2026",
+      "source": "NSE issue details (sizes calculated at the upper price band); Business Today for Jio Platforms",
       "xKey": "company",
       "dataKeys": [
         "size"
       ],
       "unit": " cr",
-      "data": "[{\"company\": \"Jio Platforms\", \"size\": 30213}, {\"company\": \"Zetwerk\", \"size\": 5012.33}, {\"company\": \"Bonfiglioli\", \"size\": 2533.66}, {\"company\": \"Paras Healthcare\", \"size\": 1450}, {\"company\": \"Tonbo Imaging\", \"size\": 852.18}, {\"company\": \"HD Fire Protect\", \"size\": 712.31}, {\"company\": \"Fusion CX\", \"size\": 702}, {\"company\": \"Sahajanand Medical\", \"size\": 475.48}]"
+      "data": "[{\"company\": \"Jio Platforms\", \"size\": 30213}, {\"company\": \"Zetwerk\", \"size\": 5012.33}, {\"company\": \"Bonfiglioli\", \"size\": 2533.81}, {\"company\": \"Paras Healthcare\", \"size\": 1450}, {\"company\": \"Tonbo Imaging\", \"size\": 852.18}, {\"company\": \"HD Fire Protect\", \"size\": 712.31}, {\"company\": \"Fusion CX\", \"size\": 702}, {\"company\": \"Sahajanand Medical\", \"size\": 475.48}]"
     }
   ]
 }

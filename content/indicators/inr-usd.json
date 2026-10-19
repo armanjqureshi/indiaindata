@@ -9,9 +9,9 @@
   "direction": "up",
   "asOf": "2026-10-19",
   "frequency": "Daily",
-  "description": "How many rupees one US dollar buys. A higher number means a weaker rupee. The rupee strengthened from 96.72 on 9 October to 94.89 on 16 October before slipping slightly on 19 October.",
-  "source": "Interbank foreign exchange market, provisional close",
-  "releaseSchedule": "Trades continuously; month-end reference rate shown here.",
+  "description": "How many rupees one US dollar buys, using the FBIL reference rate, India's official benchmark for the rupee. A higher number means a weaker rupee. Market rates move through the day and can differ from the reference rate.",
+  "source": "Financial Benchmarks India (FBIL) reference rate",
+  "releaseSchedule": "FBIL fixes the reference rate around 1:30 pm IST on each trading day. Updated automatically.",
   "topics": [
     "markets",
     "economy"
@@ -28,5 +28,10 @@
     "unit": "",
     "data": "[{\"month\": \"9 Oct\", \"value\": 96.72}, {\"month\": \"16 Oct\", \"value\": 94.89}, {\"month\": \"19 Oct\", \"value\": 94.92}]"
   },
-  "verified": true
+  "verified": true,
+  "live": {
+    "key": "usd-inr",
+    "format": "fx",
+    "points": 120
+  }
 }

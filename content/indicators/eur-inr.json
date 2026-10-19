@@ -9,9 +9,9 @@
   "direction": "down",
   "asOf": "2026-10-16",
   "frequency": "Daily",
-  "description": "How many rupees one euro buys. The euro is India's second most important trading currency after the dollar, so this pair shows how the rupee is moving against Europe, not only against the US.",
-  "source": "Daily closing rates",
-  "releaseSchedule": "Daily.",
+  "description": "How many rupees one euro buys, using the FBIL reference rate. The euro is one of the rupee's main trading currencies after the dollar.",
+  "source": "Financial Benchmarks India (FBIL) reference rate",
+  "releaseSchedule": "FBIL fixes the reference rate around 1:30 pm IST on each trading day. Updated automatically.",
   "verified": true,
   "topics": [
     "economy",
@@ -28,5 +28,10 @@
     ],
     "unit": "",
     "data": "[{\"period\": \"1 Oct\", \"value\": 108.3}, {\"period\": \"16 Oct\", \"value\": 106.73}]"
+  },
+  "live": {
+    "key": "eur-inr",
+    "format": "fx",
+    "points": 120
   }
 }

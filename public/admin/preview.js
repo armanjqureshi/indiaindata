@@ -199,12 +199,8 @@ var IpoPreview = createClass({
       var entry = this.props.entry
       var companyName = safeGet(entry, ['data', 'companyName'], 'Unnamed company')
       var sector = safeGet(entry, ['data', 'sector'], '')
-      var status = safeGet(entry, ['data', 'status'], '')
+      var symbol = safeGet(entry, ['data', 'symbol'], '')
       var description = safeGet(entry, ['data', 'description'], '')
-      var priceBand = safeGet(entry, ['data', 'priceBand'], '')
-      var currentPrice = safeGet(entry, ['data', 'currentPrice'], '')
-      var currentGain = safeGet(entry, ['data', 'currentGain'], '')
-      var issueSize = safeGet(entry, ['data', 'issueSize'], '')
 
       var highlightItems = []
       try {
@@ -220,18 +216,11 @@ var IpoPreview = createClass({
       return h(
         'div',
         { style: { maxWidth: '640px', margin: '0 auto', padding: '24px', fontFamily: 'Inter, sans-serif', color: '#1A1A1A' } },
-        categoryBadge(status, status),
-        h('h1', { style: { fontFamily: 'Fraunces, Georgia, serif', fontSize: '30px', margin: '0 0 4px' } }, companyName),
-        h('p', { style: { fontSize: '13px', color: '#888', marginBottom: '16px' } }, sector),
-        status === 'listed'
-          ? h('div', { style: { marginBottom: '16px' } },
-              h('p', { style: { fontSize: '30px', fontWeight: 700, margin: 0 } }, currentPrice),
-              h('p', { style: { fontSize: '13px', fontWeight: 700, color: '#1E7F4F' } }, currentGain + ' since issue')
-            )
-          : h('p', { style: { fontSize: '20px', fontWeight: 700, marginBottom: '16px' } }, priceBand),
+        h('h1', { style: { fontSize: '30px', margin: '0 0 4px' } }, companyName + ' IPO'),
+        h('p', { style: { fontSize: '13px', color: '#888', marginBottom: '16px' } }, (symbol ? 'NSE: ' + symbol + '  ' : '') + sector),
+        h('p', { style: { fontSize: '12px', color: '#888', marginBottom: '16px' } }, 'Dates, prices and subscription are added automatically from NSE.'),
         h('p', { style: { fontSize: '15px', lineHeight: 1.6, color: '#444', marginBottom: '16px' } }, description),
-        h('ul', { style: { fontSize: '14px', paddingLeft: '18px', marginBottom: '12px' } }, highlightItems),
-        h('p', { style: { fontSize: '12px', color: '#888' } }, 'Issue size: ' + issueSize)
+        h('ul', { style: { fontSize: '14px', paddingLeft: '18px', marginBottom: '12px' } }, highlightItems)
       )
     } catch (e) {
       return h('div', { style: { padding: '20px', color: '#C0392B' } }, 'Preview unavailable for this entry yet.')

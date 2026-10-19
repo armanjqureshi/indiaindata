@@ -1,6 +1,6 @@
 {
   "slug": "brent-crude",
-  "name": "Brent Crude Oil",
+  "name": "Brent crude (spot)",
   "category": "currency-commodities",
   "unit": "US$/bbl",
   "currentValue": "$109.86",
@@ -8,10 +8,10 @@
   "change": "+3.7%",
   "direction": "up",
   "asOf": "2026-10-16",
-  "frequency": "Daily",
-  "description": "The global benchmark oil price in dollars per barrel. India imports most of its oil, so higher crude widens the trade deficit, weakens the rupee and feeds into fuel and transport prices.",
-  "source": "ICE Brent futures settlement",
-  "releaseSchedule": "Daily.",
+  "frequency": "Daily, published with a lag",
+  "description": "The physical spot price of Brent crude, free on board, in US dollars per barrel, as published by the US Energy Information Administration. India imports most of its oil, so higher crude widens the trade deficit and weighs on the rupee. News reports usually quote Brent futures, which can be well below the spot price when physical supply is tight.",
+  "source": "US Energy Information Administration (EIA)",
+  "releaseSchedule": "EIA publishes daily spot prices weekly, usually several days after the trading date. Updated automatically.",
   "verified": true,
   "topics": [
     "economy",
@@ -28,5 +28,10 @@
     ],
     "unit": "",
     "data": "[{\"period\": \"15 Oct\", \"value\": 105.92}, {\"period\": \"16 Oct\", \"value\": 109.86}]"
+  },
+  "live": {
+    "key": "brent-spot",
+    "format": "usd",
+    "points": 120
   }
 }

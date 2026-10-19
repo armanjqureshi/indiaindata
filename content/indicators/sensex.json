@@ -11,7 +11,7 @@
   "frequency": "Daily",
   "description": "The Sensex tracks 30 large, established companies listed on the Bombay Stock Exchange and is India's oldest and most recognised equity benchmark, in continuous use since 1986.",
   "source": "Bombay Stock Exchange (BSE)",
-  "releaseSchedule": "Trades continuously on market days; month-end close shown here.",
+  "releaseSchedule": "Updated automatically each trading day after the close.",
   "topics": [
     "markets",
     "economy"
@@ -28,5 +28,10 @@
     "unit": "",
     "data": "[{\"month\": \"15 Oct\", \"value\": 74315.61}, {\"month\": \"16 Oct\", \"value\": 74729.27}, {\"month\": \"19 Oct\", \"value\": 73852.9}]"
   },
-  "verified": true
+  "verified": true,
+  "live": {
+    "key": "sensex",
+    "format": "index",
+    "points": 120
+  }
 }

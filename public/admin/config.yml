@@ -219,8 +219,9 @@ collections:
   # "upcoming" IPO becomes "open" on its opening day).
   # ---------------------------------------------------------------------
   - name: "ipos"
-    label: "IPOs"
-    label_singular: "IPO"
+    label: "IPO notes"
+    label_singular: "IPO note"
+    description: "Dates, prices, subscription and listing figures come from NSE automatically. Use this only to add a sector, a short description and key facts to an IPO page. Match the IPO by its NSE symbol."
     folder: "content/ipos"
     extension: "json"
     format: "json"
@@ -228,79 +229,27 @@ collections:
     delete: true
     slug: "{{slug}}"
     identifier_field: "companyName"
-    summary: "{{companyName}} — {{status}} ({{sector}})"
-    sortable_fields: ["companyName", "status", "listingDate"]
+    summary: "{{companyName}} ({{symbol}})"
     fields:
       - { label: "Company name", name: "companyName", widget: "string" }
-      - { label: "URL slug", name: "slug", widget: "string", hint: "Used in the web address: /ipos/your-slug." }
-      - { label: "Sector", name: "sector", widget: "string", hint: "e.g. \"Renewable Energy\", \"Financial Technology\"." }
-      - label: "Status"
-        name: "status"
-        widget: "select"
-        hint: "Update this as the IPO moves through its lifecycle."
-        options:
-          - { label: "Upcoming", value: "upcoming" }
-          - { label: "Open for subscription", value: "open" }
-          - { label: "Closed — awaiting listing", value: "closed" }
-          - { label: "Listed", value: "listed" }
-      - { label: "Exchange(s)", name: "exchange", widget: "string", default: "NSE, BSE" }
-      - { label: "Subscription opens", name: "openDate", widget: "date", format: "YYYY-MM-DD", required: false }
-      - { label: "Subscription closes", name: "closeDate", widget: "date", format: "YYYY-MM-DD", required: false }
-      - { label: "Listing date", name: "listingDate", widget: "date", format: "YYYY-MM-DD", required: false }
-      - { label: "Price band", name: "priceBand", widget: "string", required: false, hint: "e.g. \"₹142–150\", for upcoming/open IPOs." }
-      - { label: "Issue price", name: "issuePrice", widget: "string", required: false, hint: "Final price, once set." }
-      - { label: "Listing price (day 1)", name: "listingPrice", widget: "string", required: false }
-      - { label: "Current price", name: "currentPrice", widget: "string", required: false, hint: "Update this periodically for listed IPOs." }
-      - { label: "Listing day gain", name: "listingGain", widget: "string", required: false, hint: "e.g. \"+24.6%\"" }
-      - { label: "Current gain (vs issue price)", name: "currentGain", widget: "string", required: false }
-      - { label: "Direction (for current gain)", name: "direction", widget: "select", options: ["up", "down"], required: false }
-      - { label: "Issue size", name: "issueSize", widget: "string", hint: "e.g. \"₹1,240 cr\"" }
-      - { label: "Lot size", name: "lotSize", widget: "string", required: false }
-      - { label: "Subscription level", name: "subscriptionTimes", widget: "string", required: false, hint: "e.g. \"38.7x overall\" or \"Subscribed 2.1x so far (day 2 of 3)\"." }
-      - { label: "About the company", name: "description", widget: "text" }
-      - label: "Key facts"
-        name: "highlights"
-        widget: "list"
-        hint: "Short bullet points — 2 to 4 works well."
-      - { label: "Source", name: "source", widget: "string" }
+      - { label: "NSE symbol", name: "symbol", widget: "string", hint: "Exactly as on NSE, e.g. JPL or HDFIRE. Shown on each IPO page under the company name." }
+      - { label: "URL slug", name: "slug", widget: "string", hint: "Lowercase with hyphens. Used only if the symbol does not match." }
+      - { label: "Sector", name: "sector", widget: "string", required: false }
+      - { label: "About the company", name: "description", widget: "text", required: false }
+      - { label: "Key facts", name: "highlights", widget: "list", required: false, hint: "Short bullet points with a source for any number." }
+      - { label: "Source for the notes", name: "source", widget: "string", required: false }
       - label: "Related topics"
         name: "topics"
         widget: "select"
         multiple: true
-        hint: "Articles tagged with any of these topics will show as related stories on this IPO's page."
+        required: false
         options:
           - { label: "Economy", value: "economy" }
           - { label: "Society", value: "society" }
           - { label: "Policy", value: "policy" }
           - { label: "Data methods", value: "data-methods" }
           - { label: "Markets", value: "markets" }
-      - label: "Price chart (listed IPOs only)"
-        name: "chart"
-        widget: "object"
-        required: false
-        hint: "Leave empty until the company lists — add this once trading begins."
-        fields:
-          - { label: "Chart type", name: "type", widget: "select", options: ["line", "area"] }
-          - { label: "Chart title", name: "title", widget: "string" }
-          - { label: "Chart subtitle", name: "subtitle", widget: "string" }
-          - { label: "Source line", name: "source", widget: "string" }
-          - { label: "X-axis field name", name: "xKey", widget: "string", hint: "e.g. \"period\"" }
-          - label: "Data field name(s)"
-            name: "dataKeys"
-            widget: "list"
-            hint: "Usually just one field, e.g. \"value\"."
-          - { label: "Unit (optional)", name: "unit", widget: "string", required: false }
-          - label: "Data (advanced)"
-            name: "data"
-            widget: "json-data-validator"
-            hint: 'A JSON array of data points, e.g. [{"period":"Wk 1","value":268},{"period":"Wk 2","value":334}]. Edit carefully — the chart will break if this isn\u2019t valid JSON.'
 
-  # ---------------------------------------------------------------------
-  # Team — the people whose bylines appear on articles, and who show up on
-  # the About page. Add someone here first, then pick them as an author on
-  # any article — edit their bio once and it updates everywhere they're
-  # credited.
-  # ---------------------------------------------------------------------
   - name: "team"
     label: "Team"
     label_singular: "Team member"
@@ -375,17 +324,3 @@ collections:
               - { label: "Policy", name: "policy", widget: "text" }
               - { label: "Data methods", name: "data-methods", widget: "text" }
               - { label: "Markets", name: "markets", widget: "text" }
-          - label: "Market ticker (demo values)"
-            name: "marketTickers"
-            widget: "list"
-            fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Value", name: "value", widget: "string" }
-              - { label: "Change", name: "change", widget: "string" }
-              - { label: "Direction", name: "direction", widget: "select", options: ["up", "down", "flat"] }
-          - label: "Footer stats band"
-            name: "siteStats"
-            widget: "list"
-            fields:
-              - { label: "Number", name: "value", widget: "string" }
-              - { label: "Label", name: "label", widget: "string" }

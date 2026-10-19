@@ -11,7 +11,7 @@
   "frequency": "Daily",
   "description": "The yield on the 10-year government bond is the benchmark long-term borrowing cost for the Indian government, and a reference point for corporate bond pricing and long-term loan rates across the economy.",
   "source": "Benchmark 10-year government bond",
-  "releaseSchedule": "Trades daily; month-end levels shown here.",
+  "releaseSchedule": "Updated manually: no free official daily feed is available for automatic updates.",
   "topics": [
     "markets",
     "economy"

@@ -1,31 +1,9 @@
 {
-  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
+  "companyName": "Paras Healthcare",
+  "symbol": "PARASHLTH",
+  "slug": "paras-healthcare",
   "topics": [
     "economy",
     "markets"
-  ],
-  "slug": "paras-healthcare",
-  "companyName": "Paras Healthcare",
-  "sector": "Healthcare",
-  "status": "upcoming",
-  "exchange": "NSE, BSE",
-  "openDate": "2026-10-21",
-  "closeDate": "2026-10-23",
-  "listingDate": "2026-10-28",
-  "priceBand": "₹660–693",
-  "issuePrice": null,
-  "listingPrice": null,
-  "currentPrice": null,
-  "listingGain": null,
-  "currentGain": null,
-  "direction": null,
-  "issueSize": "₹1,450 cr",
-  "lotSize": "Not yet confirmed",
-  "subscriptionTimes": null,
-  "description": "Paras Healthcare opens for subscription on 21 October 2026. Listing is tentatively scheduled for 28 October.",
-  "highlights": [
-    "Fresh issue of ₹500 crore and offer for sale of ₹950 crore (per Angel One)",
-    "Price band ₹660–693"
-  ],
-  "chart": null
+  ]
 }

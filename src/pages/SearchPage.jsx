@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
-import { articles } from '../data/content.js'
+import { articles, indicatorsBase } from '../data/content.js'
+import { fetchLive, fmt } from '../data/live.js'
 
 export default function SearchPage() {
   const [params, setParams] = useSearchParams()
@@ -26,6 +27,19 @@ export default function SearchPage() {
     title: 'Search',
     description: 'Search across every article, chart and dataset on India in Data.',
   })
+
+  // IPO lists are loaded only once someone searches
+  const [ipoList, setIpoList] = useState([])
+  useEffect(() => {
+    if (!query.trim() || ipoList.length) return
+    Promise.all([fetchLive('live/ipos.json'), fetchLive('live/ipos-archive.json')]).then(([a, b]) =>
+      setIpoList([...(a?.ipos || []), ...(b?.ipos || [])])
+    )
+  }, [query])
+  const words = query.trim().toLowerCase().split(/\s+/).filter(Boolean)
+  const match = (text) => words.length && words.every((w) => text.toLowerCase().includes(w))
+  const indicatorHits = useMemo(() => indicatorsBase.filter((i) => match(`${i.name} ${i.description} ${i.source}`)).slice(0, 8), [query])
+  const ipoHits = useMemo(() => ipoList.filter((i) => match(`${i.name} ${i.symbol} ipo ${i.board}`)).slice(0, 10), [query, ipoList])
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -58,19 +72,40 @@ export default function SearchPage() {
               autoFocus
               value={query}
               onChange={(e) => onChange(e.target.value)}
-              placeholder="Search across articles, charts and datasets"
+              placeholder="Search articles, indicators and IPOs"
               className="w-full rounded-sm border border-ink/20 bg-paper px-4 py-3 text-base outline-none transition-colors focus:border-brand"
             />
           </div>
           <p role="status" className="mt-3 text-sm text-ink/60">
             {query.trim()
-              ? `${results.length} ${results.length === 1 ? 'result' : 'results'} for \u201C${query.trim()}\u201D`
-              : 'Type to search titles, deks, topics and authors.'}
+              ? `${results.length + indicatorHits.length + ipoHits.length} results for \u201C${query.trim()}\u201D`
+              : 'Search articles, indicators and IPOs by name, symbol or topic.'}
           </p>
         </div>
       </section>
       <section className="mx-auto max-w-site px-4 py-10 sm:px-6">
-        {query.trim() && results.length === 0 && (
+        {indicatorHits.length > 0 && (
+          <div className="mb-8">
+            <h2 className="mb-2 text-sm font-bold">Indicators</h2>
+            <ul className="divide-y divide-ink/10 border-y border-ink/10">
+              {indicatorHits.map((i) => (
+                <li key={i.slug}><Link to={`/indicators/${i.slug}`} className="flex justify-between gap-3 py-2.5 hover:text-brand"><span className="font-semibold">{i.name}</span><span className="text-xs text-ink/50">{i.source}</span></Link></li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {ipoHits.length > 0 && (
+          <div className="mb-8">
+            <h2 className="mb-2 text-sm font-bold">IPOs</h2>
+            <ul className="divide-y divide-ink/10 border-y border-ink/10">
+              {ipoHits.map((i) => (
+                <li key={i.slug + i.board}><Link to={`/ipos/${i.slug}`} className="flex justify-between gap-3 py-2.5 hover:text-brand"><span className="font-semibold">{i.name.replace(/\s+Limited$/i, '')} <span className="num text-xs font-normal text-ink/50">{i.symbol}</span></span><span className="num text-xs text-ink/50">{i.board === 'sme' ? 'SME' : 'Mainboard'}, {fmt.date(i.open)}</span></Link></li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {results.length > 0 && (indicatorHits.length > 0 || ipoHits.length > 0) && <h2 className="mb-3 text-sm font-bold">Articles</h2>}
+        {query.trim() && results.length + indicatorHits.length + ipoHits.length === 0 && (
           <div className="rounded-sm border border-ink/10 bg-panel p-10 text-center">
             <p className="font-display text-lg font-semibold">No matches found</p>
             <p className="mt-1 text-sm text-ink/60">

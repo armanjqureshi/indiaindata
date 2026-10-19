@@ -1,32 +1,9 @@
 {
-  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
+  "companyName": "Bonfiglioli Transmissions",
+  "symbol": "BONFIG",
+  "slug": "bonfiglioli-transmissions",
   "topics": [
     "economy",
     "markets"
-  ],
-  "slug": "bonfiglioli-transmissions",
-  "companyName": "Bonfiglioli Transmissions",
-  "sector": "Industrial equipment",
-  "status": "closed",
-  "exchange": "NSE, BSE",
-  "openDate": "2026-10-15",
-  "closeDate": "2026-10-19",
-  "listingDate": "2026-10-23",
-  "priceBand": "₹558–586",
-  "issuePrice": null,
-  "listingPrice": null,
-  "currentPrice": null,
-  "listingGain": null,
-  "currentGain": null,
-  "direction": null,
-  "issueSize": "₹2,533.66 cr",
-  "lotSize": "Not yet confirmed",
-  "subscriptionTimes": null,
-  "description": "Bonfiglioli Transmissions closed its offer on 19 October 2026. Allotment is due on 21 October and listing is tentatively scheduled for 23 October. Final subscription figures will be added once confirmed.",
-  "highlights": [
-    "Price band ₹558–586",
-    "Anchor allocation at ₹586 per share",
-    "Issue size ₹2,533.66 crore"
-  ],
-  "chart": null
+  ]
 }

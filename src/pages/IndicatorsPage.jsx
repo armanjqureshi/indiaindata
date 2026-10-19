@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
 import IndicatorCard from '../components/IndicatorCard.jsx'
-import { indicatorCategories, indicators } from '../data/content.js'
+import { indicatorCategories, useIndicators } from '../data/content.js'
 
 const num = (v) => {
   const n = parseFloat(String(v ?? '').replace(/[^0-9.\-]/g, ''))
@@ -30,6 +30,7 @@ export default function IndicatorsPage() {
       "India's key economic and market indicators in one marketplace: inflation, growth, rates, FPI flows, currencies, commodities, markets and more.",
   })
 
+  const indicators = useIndicators()
   const [q, setQ] = useState('')
   const [cat, setCat] = useState('all')
   const [sort, setSort] = useState('default')
@@ -54,7 +55,7 @@ export default function IndicatorsPage() {
     const c = { all: indicators.length, watch: 0 }
     indicators.forEach((i) => (c[i.category] = (c[i.category] || 0) + 1))
     return c
-  }, [])
+  }, [indicators])
   counts.watch = indicators.filter((i) => watch.includes(i.slug)).length
 
   const list = useMemo(() => {
@@ -72,7 +73,7 @@ export default function IndicatorsPage() {
     if (sort === 'recent') out = [...out].sort((a, b) => b.asOf.localeCompare(a.asOf))
     if (sort === 'name') out = [...out].sort((a, b) => a.name.localeCompare(b.name))
     return out
-  }, [q, cat, sort, verifiedOnly, watch])
+  }, [q, cat, sort, verifiedOnly, watch, indicators])
 
   const verifiedCount = indicators.filter((i) => i.verified !== false).length
   const chip = (id, label, count) => (
@@ -151,8 +152,8 @@ export default function IndicatorsPage() {
           </div>
         )}
         <p className="mt-10 border-t border-ink/10 pt-4 text-sm leading-body text-ink/60">
-          Verified readings link to their source on each indicator page. Sample data is illustrative
-          and being replaced. Spotted an error or want an indicator added? <Link to="/contact" className="font-semibold text-brand hover:text-brand-dark">Tell us</Link>.
+          Indicators marked Auto-updated refresh after each trading session from NSE, FBIL, IBJA, EIA and
+          NSDL. The others are updated when new official releases come out; each page names its source. Spotted an error or want an indicator added? <Link to="/contact" className="font-semibold text-brand hover:text-brand-dark">Tell us</Link>.
         </p>
       </section>
     </>

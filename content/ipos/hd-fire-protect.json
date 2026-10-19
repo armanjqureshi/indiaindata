@@ -1,31 +1,9 @@
 {
-  "source": "Dates, price bands and issue sizes: IPO calendars (Angel One, ipomarket.in, Chittorgarh) and company announcements. Subscription: Chittorgarh and HDFC Sky at the close of bidding. Listing dates are tentative until the exchanges confirm them.",
+  "companyName": "HD Fire Protect",
+  "symbol": "HDFIRE",
+  "slug": "hd-fire-protect",
   "topics": [
     "economy",
     "markets"
-  ],
-  "slug": "hd-fire-protect",
-  "companyName": "HD Fire Protect",
-  "sector": "Fire safety",
-  "status": "closed",
-  "exchange": "NSE, BSE",
-  "openDate": "2026-10-13",
-  "closeDate": "2026-10-15",
-  "listingDate": "2026-10-21",
-  "priceBand": "₹258–271",
-  "issuePrice": null,
-  "listingPrice": null,
-  "currentPrice": null,
-  "listingGain": null,
-  "currentGain": null,
-  "direction": null,
-  "issueSize": "₹712.31 cr",
-  "lotSize": "Not yet confirmed",
-  "subscriptionTimes": "131.73 times (QIB 256.65x, NII 203.21x, retail 30.55x)",
-  "description": "HD Fire Protect closed its offer on 15 October 2026. Allotment was finalised on 16 October and listing is scheduled for 21 October on BSE and NSE.",
-  "highlights": [
-    "Price band ₹258–271",
-    "Issue size ₹712.31 crore"
-  ],
-  "chart": null
+  ]
 }

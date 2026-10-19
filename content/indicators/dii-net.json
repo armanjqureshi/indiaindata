@@ -1,0 +1,38 @@
+{
+  "slug": "dii-net",
+  "name": "DII net buying (cash market, daily)",
+  "category": "flows",
+  "unit": "₹ cr",
+  "currentValue": "—",
+  "previousValue": "—",
+  "change": "—",
+  "direction": "flat",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
+  "description": "Net value of shares bought minus sold by domestic institutions, such as mutual funds, insurers and banks, in the cash market on the latest trading day. Provisional exchange figures.",
+  "source": "NSE provisional FII/DII data",
+  "releaseSchedule": "Exchanges publish provisional figures for foreign and domestic institutional trading after each session. Updated automatically.",
+  "verified": true,
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "live": {
+    "key": "dii-net",
+    "format": "flow",
+    "points": 120,
+    "chartType": "bar"
+  },
+  "chart": {
+    "type": "bar",
+    "title": "DII daily net flows",
+    "subtitle": "₹ crore, provisional",
+    "source": "NSE provisional FII/DII data",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[]"
+  }
+}

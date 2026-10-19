@@ -1,3 +1,5 @@
+import { useMemo } from 'react'
+import { applyLive, useMarket, getMeta } from './live.js'
 // ---------------------------------------------------------------------------
 // India in Data — content layer
 //
@@ -116,11 +118,19 @@ export const articles = Object.values(articleFiles)
     charts: (a.charts || []).map(normalizeChart),
   }))
 
-export const indicators = Object.values(indicatorFiles)
+// Indicators with a `live` key take their numbers from live/market.json (written
+// by the scheduled job). The snapshot is applied at build time; pages call
+// useIndicators() to apply the newest copy in the browser.
+export const indicatorsBase = Object.values(indicatorFiles)
   .map((m) => m.default)
   .filter(Boolean)
   .map((ind) => ({ ...ind, chart: normalizeChart(ind.chart) }))
   .sort((a, b) => a.name.localeCompare(b.name))
+export const indicators = indicatorsBase
+export function useIndicators() {
+  const market = useMarket()
+  return useMemo(() => indicatorsBase.map((i) => applyLive(i, market)), [market])
+}
 
 export const indicatorCategories = INDICATOR_CATEGORY_META
 
@@ -139,6 +149,12 @@ export const ipos = Object.values(ipoFiles)
 
 export const ipoStatuses = IPO_STATUS_META
 
+// Editorial notes for IPOs (sector, description, highlights) entered in the CMS
+// and matched to NSE data by NSE symbol (or by slug as a fallback).
+const ipoEditorialBySymbol = Object.fromEntries(ipos.filter((i) => i.symbol).map((i) => [i.symbol.toUpperCase(), i]))
+const ipoEditorialBySlug = Object.fromEntries(ipos.map((i) => [i.slug, i]))
+export const getIpoEditorial = (symbol, slug) => ipoEditorialBySymbol[(symbol || '').toUpperCase()] || ipoEditorialBySlug[slug] || null
+
 export const sections = SECTION_META.map((s) => ({
   ...s,
   description: siteSettings.sectionDescriptions?.[s.slug] || '',
@@ -149,13 +165,11 @@ export const topics = TOPIC_META.map((t) => ({
   description: siteSettings.topicDescriptions?.[t.slug] || '',
 }))
 
-export const marketTickers = siteSettings.marketTickers || []
-export const tickerAsOf = siteSettings.tickerAsOf || ''
 // Counted from the content itself so the numbers can never drift from what is published.
-export const siteStats = [
+export const getSiteStats = () => [
   { value: String(articles.length), label: articles.length === 1 ? 'data story published' : 'data stories published' },
   { value: String(indicators.length), label: 'indicators tracked' },
-  { value: String(ipos.length), label: 'IPOs tracked' },
+  { value: String(getMeta().iposTotal || ipos.length), label: 'IPOs tracked' },
 ]
 
 // ---------------------------------------------------------------------------

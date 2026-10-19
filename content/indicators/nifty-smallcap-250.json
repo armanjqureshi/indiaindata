@@ -1,0 +1,37 @@
+{
+  "slug": "nifty-smallcap-250",
+  "name": "Nifty Smallcap 250",
+  "category": "markets",
+  "unit": "index",
+  "currentValue": "—",
+  "previousValue": "—",
+  "change": "—",
+  "direction": "flat",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
+  "description": "Tracks 250 companies ranked 251 to 500 by market value on NSE. It is the broadest read on smaller listed companies.",
+  "source": "National Stock Exchange (NSE)",
+  "releaseSchedule": "Updated automatically each trading day from NSE’s end-of-day index file.",
+  "verified": true,
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "live": {
+    "key": "nifty-smallcap-250",
+    "format": "index",
+    "points": 120
+  },
+  "chart": {
+    "type": "line",
+    "title": "Nifty Smallcap 250",
+    "subtitle": "Index close, daily",
+    "source": "National Stock Exchange (NSE)",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[]"
+  }
+}

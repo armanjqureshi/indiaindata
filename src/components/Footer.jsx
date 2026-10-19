@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import NewsletterSignup from './NewsletterSignup.jsx'
 import StatBlock from './StatBlock.jsx'
-import { siteStats } from '../data/content.js'
+import { getSiteStats } from '../data/content.js'
 
 const BROWSE = [
   { label: 'News', to: '/news' },
@@ -109,7 +109,7 @@ export default function Footer() {
 
         {/* Stats band */}
         <div className="mt-12 grid gap-8 border-t border-ink/15 pt-10 sm:grid-cols-3">
-          {siteStats.map((s) => (
+          {getSiteStats().map((s) => (
             <StatBlock key={s.label} value={s.value} label={s.label} inverse />
           ))}
         </div>

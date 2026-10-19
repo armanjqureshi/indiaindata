@@ -1,0 +1,37 @@
+{
+  "slug": "nifty-midcap-150",
+  "name": "Nifty Midcap 150",
+  "category": "markets",
+  "unit": "index",
+  "currentValue": "—",
+  "previousValue": "—",
+  "change": "—",
+  "direction": "flat",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
+  "description": "Tracks the 150 companies ranked 101 to 250 by market value on NSE. Mid-caps usually rise and fall more sharply than large caps.",
+  "source": "National Stock Exchange (NSE)",
+  "releaseSchedule": "Updated automatically each trading day from NSE’s end-of-day index file.",
+  "verified": true,
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "live": {
+    "key": "nifty-midcap-150",
+    "format": "index",
+    "points": 120
+  },
+  "chart": {
+    "type": "line",
+    "title": "Nifty Midcap 150",
+    "subtitle": "Index close, daily",
+    "source": "National Stock Exchange (NSE)",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[]"
+  }
+}

@@ -45,6 +45,8 @@ jobs:
           git add live/market-log.json
           git commit -m "Market data $(TZ=Asia/Kolkata date +%F' '%H:%M) IST [skip netlify]"
           for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
+      - name: Remove old probe branch (one-off, harmless afterwards)
+        run: git push -q origin --delete probe-output 2>/dev/null || true
       - name: Refresh CDN copy
         run: |
           for f in market.json market-log.json; do curl -fsS "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/live/$f" > /dev/null || true; done

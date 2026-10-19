@@ -1,0 +1,37 @@
+{
+  "slug": "gbp-inr",
+  "name": "GBP / INR",
+  "category": "currency-commodities",
+  "unit": "₹",
+  "currentValue": "—",
+  "previousValue": "—",
+  "change": "—",
+  "direction": "flat",
+  "asOf": "2026-10-19",
+  "frequency": "Daily",
+  "description": "How many rupees one British pound buys, using the FBIL reference rate.",
+  "source": "Financial Benchmarks India (FBIL) reference rate",
+  "releaseSchedule": "FBIL fixes the reference rate around 1:30 pm IST on each trading day. Updated automatically.",
+  "verified": true,
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "live": {
+    "key": "gbp-inr",
+    "format": "fx",
+    "points": 120
+  },
+  "chart": {
+    "type": "line",
+    "title": "GBP / INR",
+    "subtitle": "FBIL reference rate, rupees per pound",
+    "source": "Financial Benchmarks India (FBIL) reference rate",
+    "xKey": "period",
+    "dataKeys": [
+      "value"
+    ],
+    "unit": "",
+    "data": "[]"
+  }
+}

@@ -57,13 +57,13 @@ function readIndicators() {
     .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')))
 }
 
+// IPO pages come from the scheduled NSE data job (live/ipos.json). Older
+// issues in live/ipos-archive.json are served by the client-side fallback
+// (see public/_redirects) instead of being prerendered one by one.
 function readIpos() {
-  const dir = path.join(contentDir, 'ipos')
-  if (!fs.existsSync(dir)) return []
-  return fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith('.json'))
-    .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')))
+  const f = path.join(contentDir, '..', 'live', 'ipos.json')
+  if (!fs.existsSync(f)) return []
+  return JSON.parse(fs.readFileSync(f, 'utf-8')).ipos || []
 }
 
 export function getRoutes() {
@@ -147,21 +147,22 @@ export function getRoutes() {
 
   routes.push({
     path: '/ipos',
-    title: 'IPOs',
+    title: 'IPO tracker: mainboard and SME IPOs',
     description:
-      'Upcoming, open, and recently listed IPOs on Indian exchanges, alongside performance history for past listings.',
+      'Every mainboard and SME IPO on NSE: live subscription by category, price bands, lot sizes, timetables, listing gains and returns since listing.',
     changefreq: 'daily',
     priority: 0.9,
   })
 
   for (const ipo of ipoList) {
+    const name = (ipo.name || '').replace(/\s+Limited$/i, '')
     routes.push({
       path: `/ipos/${ipo.slug}`,
-      title: `${ipo.companyName} IPO`,
-      description: ipo.description,
+      title: `${name} IPO: dates, price band, subscription, listing`,
+      description: `${name} IPO on NSE ${ipo.board === 'sme' ? 'SME' : 'mainboard'}: bidding ${ipo.open} to ${ipo.close}. Price band, lot size, subscription by category, timetable and listing performance.`,
       changefreq: ipo.status === 'listed' ? 'monthly' : 'daily',
-      priority: 0.6,
-      lastmod: ipo.listingDate || ipo.closeDate || ipo.openDate,
+      priority: ipo.status === 'listed' ? 0.5 : 0.7,
+      lastmod: ipo.listingDate || ipo.close || ipo.open,
     })
   }
 

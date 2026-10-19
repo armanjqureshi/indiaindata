@@ -1,0 +1,173 @@
+// Live data written by the scheduled GitHub Actions jobs (scripts/data/*).
+// The build embeds a snapshot so prerendered pages have real numbers; in the
+// browser we fetch the latest copy from the repo so values stay current
+// between Netlify deploys.
+import { useEffect, useState } from 'react'
+
+const REPO = 'armanjqureshi/indiaindata'
+
+// Snapshots: during prerendering, scripts read the files in /live via
+// live-server.js and record which ones each page used; prerender.mjs embeds
+// exactly those in the page as JSON (#__LIVE__). In the browser we read that
+// embedded copy, so hydration matches, then fetch the newest version.
+const isServer = typeof document === 'undefined'
+let serverSource = null
+const used = new Map()
+let injected = null
+export function __setServerSource(src) {
+  serverSource = src
+}
+export function __collectUsed() {
+  const out = Object.fromEntries(used)
+  used.clear()
+  return out
+}
+function readInjected() {
+  if (injected) return injected
+  try {
+    injected = JSON.parse(document.getElementById('__LIVE__')?.textContent || '{}')
+  } catch {
+    injected = {}
+  }
+  return injected
+}
+function snap(key) {
+  if (isServer) {
+    if (!serverSource) return null
+    const [kind, arg] = key.split(':')
+    const v =
+      kind === 'market' ? serverSource.market
+      : kind === 'ipos' ? serverSource.ipos
+      : kind === 'meta' ? serverSource.meta
+      : kind === 'ipo' ? serverSource.details[arg] ?? null
+      : kind === 'row' ? serverSource.rowsBySlug[arg] ?? null
+      : null
+    used.set(key, v)
+    return v
+  }
+  return readInjected()[key] ?? null
+}
+export const getMarketSnapshot = () => snap('market') || { items: {}, history: {} }
+export const getIposSnapshot = () => snap('ipos') || { ipos: [] }
+export const getMeta = () => snap('meta') || {}
+export const getDetailSnapshot = (slug) => snap('ipo:' + slug)
+export const getRowSnapshot = (slug) => snap('row:' + slug)
+
+const sources = (p) => [
+  `https://cdn.jsdelivr.net/gh/${REPO}@main/${p}`,
+  `https://raw.githubusercontent.com/${REPO}/main/${p}`,
+]
+const stamp = (d) => d?.updatedAt || d?.fetchedAt || d?.subscription?.asOf || ''
+const inflight = new Map()
+
+// Fetch both copies and keep whichever is newer (the CDN can lag after an update).
+export function fetchLive(path) {
+  if (!inflight.has(path)) {
+    inflight.set(
+      path,
+      Promise.all(
+        sources(path).map((u) =>
+          fetch(u, { cache: 'no-cache' })
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null)
+        )
+      ).then((all) => all.filter(Boolean).sort((a, b) => stamp(b).localeCompare(stamp(a)))[0] || null)
+    )
+  }
+  return inflight.get(path)
+}
+
+export function useLiveState(path, snapshot) {
+  const [state, setState] = useState({ data: snapshot, done: false })
+  useEffect(() => {
+    let on = true
+    fetchLive(path).then((d) => {
+      if (!on) return
+      setState((s) => (d && stamp(d) >= stamp(s.data) ? { data: d, done: true } : { ...s, done: true }))
+    })
+    return () => {
+      on = false
+    }
+  }, [path])
+  return state
+}
+export const useLive = (path, snapshot) => useLiveState(path, snapshot).data
+
+export const useMarket = () => useLive('live/market.json', getMarketSnapshot())
+export const useIpos = () => useLive('live/ipos.json', getIposSnapshot())
+
+// --- India-date helpers (IPO status rolls over at midnight IST) -------------
+export function todayIST() {
+  return new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10)
+}
+export function useTodayIST(initial) {
+  const [d, setD] = useState(initial)
+  useEffect(() => setD(todayIST()), [])
+  return d
+}
+export function ipoStatus(ipo, today) {
+  if (!today) return ipo.status
+  if (ipo.listingDate && ipo.listingDate <= today) return 'listed'
+  if (ipo.status === 'unlisted') return 'unlisted'
+  if (ipo.open && today < ipo.open) return 'upcoming'
+  if (ipo.open && ipo.close && today >= ipo.open && today <= ipo.close) return 'open'
+  if (ipo.close && today > ipo.close) return 'closed'
+  return ipo.status
+}
+
+// --- formatting -----------------------------------------------------------
+const inr = (v, dp = 2) =>
+  v === null || v === undefined ? '' : Number(v).toLocaleString('en-IN', { minimumFractionDigits: dp, maximumFractionDigits: dp })
+export const fmt = {
+  inr,
+  crore: (v) => (v === null || v === undefined ? '—' : `₹${inr(v, v >= 100 ? 0 : 2)} cr`),
+  rupees: (v, dp = 0) => (v === null || v === undefined ? '—' : `₹${inr(v, dp)}`),
+  times: (v) => (v === null || v === undefined ? '—' : `${v >= 100 ? inr(v, 0) : inr(v, 2)}x`),
+  pct: (v) => (v === null || v === undefined ? '—' : `${v > 0 ? '+' : ''}${inr(v, 1)}%`),
+  date: (iso, opts = { day: 'numeric', month: 'short', year: 'numeric' }) =>
+    iso ? new Date(iso + 'T00:00:00').toLocaleDateString('en-IN', opts) : '—',
+  shortDate: (iso) => (iso ? new Date(iso + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }) : '—'),
+}
+
+// How each live market series is displayed when it feeds an indicator card.
+const LIVE_FORMAT = {
+  index: { value: (v) => inr(v, 2), change: (it) => `${it.changePct > 0 ? '+' : ''}${inr(it.changePct, 2)}%` },
+  vix: { value: (v) => inr(v, 2), change: (it) => `${it.changePct > 0 ? '+' : ''}${inr(it.changePct, 2)}%` },
+  fx: { value: (v) => inr(v, 4), change: (it) => `${it.change > 0 ? '+' : ''}${inr(it.change, 4)}` },
+  bullion: { value: (v) => `₹${inr(v, 0)}`, change: (it) => `${it.changePct > 0 ? '+' : ''}${inr(it.changePct, 2)}%` },
+  flow: { value: (v) => `${v < 0 ? '-' : ''}₹${inr(Math.abs(v), 2)} cr`, change: (it) => (it.value >= 0 ? 'Net buyers' : 'Net sellers') },
+  usd: { value: (v) => `$${inr(v, 2)}`, change: (it) => `${it.changePct > 0 ? '+' : ''}${inr(it.changePct, 2)}%` },
+}
+
+// Merge a live series into an indicator from the CMS. Only indicators with a
+// `live` key are touched; everything else keeps its hand-entered values.
+export function applyLive(indicator, market) {
+  const key = indicator.live?.key
+  const it = key && market?.items?.[key]
+  if (!it) return indicator
+  const f = LIVE_FORMAT[indicator.live.format] || LIVE_FORMAT.index
+  const hist = (market.history?.[key] || []).slice(-(indicator.live.points || 60))
+  const xKey = indicator.chart?.xKey || 'period'
+  const dir = it.change === null || it.change === undefined ? (it.value >= 0 ? 'up' : 'down') : it.change > 0 ? 'up' : it.change < 0 ? 'down' : 'flat'
+  return {
+    ...indicator,
+    currentValue: f.value(it.value),
+    previousValue: it.prev === null || it.prev === undefined ? indicator.previousValue : f.value(it.prev),
+    change: it.change === null || it.change === undefined ? (indicator.live.format === 'flow' ? f.change(it) : indicator.change) : f.change(it),
+    direction: dir,
+    asOf: it.asOf,
+    source: it.source,
+    verified: true,
+    liveNote: it.note || null,
+    chart: hist.length >= 2
+      ? {
+          ...indicator.chart,
+          type: indicator.live.chartType || indicator.chart?.type || 'line',
+          title: indicator.name,
+          subtitle: `${it.label || indicator.name}${it.unit ? ` (${it.unit})` : ''}, ${hist.length} most recent readings to ${fmt.date(it.asOf)}`,
+          data: hist.map(([d, v]) => ({ [xKey]: d.length === 7 ? d : fmt.shortDate(d), value: v })),
+          source: `${it.source}. Updated automatically after each session.`,
+        }
+      : indicator.chart,
+  }
+}

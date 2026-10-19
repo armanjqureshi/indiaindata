@@ -33,8 +33,8 @@ function ChartBody({ chart, accent }) {
         <LineChart data={chart.data} margin={margin}>
           <CartesianGrid stroke={gridStroke} vertical={false} />
           <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: 'rgb(var(--ink) / 0.2)' }} />
-          <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={52} />
-          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} />
+          <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={60} domain={['auto', 'auto']} tickFormatter={(v) => Number(v).toLocaleString('en-IN')} />
+          <Tooltip formatter={(v) => [`${Number(v).toLocaleString('en-IN')}${chart.unit || ''}`]} />
           {chart.dataKeys.map((k) => (
             <Line
               key={k}
@@ -42,7 +42,7 @@ function ChartBody({ chart, accent }) {
               dataKey={k}
               stroke={accent}
               strokeWidth={2.5}
-              dot={{ r: 3, fill: accent, strokeWidth: 0 }}
+              dot={chart.data.length <= 24 ? { r: 3, fill: accent, strokeWidth: 0 } : false}
               activeDot={{ r: 5 }}
             />
           ))}

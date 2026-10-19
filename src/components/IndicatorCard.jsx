@@ -61,9 +61,9 @@ export default function IndicatorCard({ indicator, watched = false, onToggleWatc
       </div>
 
       <p className="text-xs text-ink/50">
-        {indicator.verified === false ? 'Sample data' : 'Verified'}
+        {indicator.live ? 'Auto-updated' : indicator.verified === false ? 'Sample data' : 'Verified'}
         <span className="mx-1.5" aria-hidden="true">•</span>
-        As of {new Date(indicator.asOf + 'T00:00:00').toLocaleDateString('en-IN', { month: 'short', year: 'numeric' })}
+        As of {new Date(indicator.asOf + 'T00:00:00').toLocaleDateString('en-IN', indicator.live ? { day: 'numeric', month: 'short', year: 'numeric' } : { month: 'short', year: 'numeric' })}
         <span className="mx-1.5" aria-hidden="true">•</span>
         {indicator.frequency}
       </p>

@@ -51,19 +51,30 @@ async function main() {
   const template = fs.readFileSync(path.join(clientDir, 'index.html'), 'utf-8')
   const { render } = await import(serverEntry)
 
+  // Empty shell for IPO pages that are not prerendered (older issues and ones
+  // that appeared after the last deploy): the browser renders them from live data.
+  fs.writeFileSync(path.join(clientDir, 'ipo-shell.html'), injectMeta(template, { path: '/ipos', title: 'IPO', description: 'IPO details from NSE data on India in Data.' }))
+
   const routes = [...getRoutes(), getNotFoundRoute()]
   let ok = 0
 
   for (const route of routes) {
     let appHtml
+    let live = null
     try {
-      appHtml = render(route.path)
+      const out = render(route.path)
+      appHtml = typeof out === 'string' ? out : out.html
+      live = typeof out === 'string' ? null : out.live
     } catch (err) {
       console.error(`Failed to prerender ${route.path}:`, err.message)
       continue
     }
 
     let html = template.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
+    if (live) {
+      const json = JSON.stringify(live).replace(/</g, '\\u003c')
+      html = html.replace('<div id="root">', `<script id="__LIVE__" type="application/json">${json}</script><div id="root">`)
+    }
     html = injectMeta(html, route)
 
     let outPath

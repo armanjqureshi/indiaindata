@@ -1,6 +1,6 @@
 {
   "slug": "fpi-equity-flows",
-  "name": "FPI Net Equity Flows",
+  "name": "FPI net equity investment (month to date)",
   "category": "flows",
   "unit": "₹ cr",
   "currentValue": "-₹52,100 cr",
@@ -8,10 +8,10 @@
   "change": "October to date",
   "direction": "down",
   "asOf": "2026-10-16",
-  "frequency": "Monthly (current month to date)",
-  "description": "Foreign portfolio investors' net buying or selling of Indian equities, as reported by the depositories. October is month to date. Outflows in 2026 so far total about ₹3.12 lakh crore.",
-  "source": "NSDL depository data",
-  "releaseSchedule": "Daily provisional data; monthly totals after month-end.",
+  "frequency": "Daily (month to date)",
+  "description": "Foreign portfolio investors' net investment in Indian equities so far this month, from NSDL depository data. It includes stock-exchange trades and primary-market investments such as IPOs, so it can differ from reports that count stock-exchange trades only.",
+  "source": "NSDL, daily trends in FPI investment",
+  "releaseSchedule": "NSDL reports FPI investment daily, a day after trading. Updated automatically.",
   "verified": true,
   "topics": [
     "economy",
@@ -19,14 +19,19 @@
   ],
   "chart": {
     "type": "bar",
-    "title": "Foreign selling deepened in October",
-    "subtitle": "FPI net equity flows, ₹ crore. October is month to date.",
-    "source": "NSDL data via Finnovate (Aug-Sep) and PTI/ETV Bharat (October, 18 Oct 2026)",
+    "title": "Monthly FPI net equity flows",
+    "subtitle": "₹ crore, completed months",
+    "source": "NSDL data via Finnovate (Aug and Sep 2026)",
     "xKey": "period",
     "dataKeys": [
       "value"
     ],
     "unit": "",
-    "data": "[{\"period\": \"Aug 26\", \"value\": 29631}, {\"period\": \"Sep 26\", \"value\": -35861}, {\"period\": \"Oct 26 (to date)\", \"value\": -52100}]"
+    "data": "[{\"period\": \"Aug 26\", \"value\": 29631}, {\"period\": \"Sep 26\", \"value\": -35861}]"
+  },
+  "live": {
+    "key": "fpi-equity-mtd",
+    "format": "flow",
+    "points": 120
   }
 }

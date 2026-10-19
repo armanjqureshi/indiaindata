@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
 import IndicatorCard from '../components/IndicatorCard.jsx'
 import NotFound from './NotFound.jsx'
-import { getIndicatorCategory, getIndicatorsByCategory, sectionColorMap } from '../data/content.js'
+import { getIndicatorCategory, useIndicators, sectionColorMap } from '../data/content.js'
 
 export default function IndicatorCategoryPage() {
   const { slug } = useParams()
@@ -16,7 +16,8 @@ export default function IndicatorCategoryPage() {
 
   if (!category) return <NotFound />
 
-  const items = getIndicatorsByCategory(slug)
+  const all = useIndicators()
+  const items = all.filter((i) => i.category === slug)
   const colors = sectionColorMap[category.color] || sectionColorMap.economy
 
   return (

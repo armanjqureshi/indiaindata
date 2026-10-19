@@ -10,8 +10,8 @@
   "asOf": "2026-10-19",
   "frequency": "Daily",
   "description": "India VIX measures the market's expectation of near-term volatility in the Nifty 50, derived from options prices. A lower reading signals calmer, more confident markets; sharp spikes usually accompany major shocks or events.",
-  "source": "National Stock Exchange (NSE), end-of-day index file",
-  "releaseSchedule": "Computed continuously on market days; month-end level shown here.",
+  "source": "National Stock Exchange (NSE)",
+  "releaseSchedule": "Updated automatically each trading day from NSE’s end-of-day index file.",
   "topics": [
     "markets"
   ],
@@ -27,5 +27,10 @@
     "unit": "",
     "data": "[{\"month\": \"16 Oct\", \"value\": 14.06}, {\"month\": \"19 Oct\", \"value\": 14.77}]"
   },
-  "verified": true
+  "verified": true,
+  "live": {
+    "key": "india-vix",
+    "format": "vix",
+    "points": 120
+  }
 }

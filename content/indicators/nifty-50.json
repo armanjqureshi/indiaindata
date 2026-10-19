@@ -11,7 +11,7 @@
   "frequency": "Daily",
   "description": "The Nifty 50 tracks the 50 largest, most liquid companies listed on the National Stock Exchange, and is India's most widely quoted equity benchmark. It's the reference index for most Indian mutual funds and index funds.",
   "source": "National Stock Exchange (NSE)",
-  "releaseSchedule": "Trades continuously on market days; month-end close shown here.",
+  "releaseSchedule": "Updated automatically each trading day after NSE publishes its end-of-day index file.",
   "topics": [
     "markets",
     "economy"
@@ -28,5 +28,10 @@
     "unit": "",
     "data": "[{\"month\": \"15 Oct\", \"value\": 22997.35}, {\"month\": \"16 Oct\", \"value\": 23146.15}, {\"month\": \"19 Oct\", \"value\": 22888.95}]"
   },
-  "verified": true
+  "verified": true,
+  "live": {
+    "key": "nifty-50",
+    "format": "index",
+    "points": 120
+  }
 }
