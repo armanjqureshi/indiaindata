@@ -64,7 +64,7 @@ function accept(key, r) {
   if (!Number.isFinite(r.value)) return log.skipped.push(`${key}: value not numeric`)
   if (!r.asOf || r.asOf > todayIST()) return log.skipped.push(`${key}: bad date ${r.asOf}`)
   if (old && old.asOf > r.asOf) return log.skipped.push(`${key}: source date ${r.asOf} older than stored ${old.asOf}`)
-  if (old && old.asOf === r.asOf && old.value === round(r.value, r.dp ?? 2)) return // unchanged
+  if (old && old.asOf === r.asOf && old.value === round(r.value, r.dp ?? 2) && (old.prev !== null || !Number.isFinite(r.prev))) return // unchanged
   const prev = Number.isFinite(r.prev) ? r.prev : old && old.asOf < r.asOf ? old.value : old?.prev ?? null
   // continuity: if we hold the previous session's close, the source's previous close must match it
   if (old && Number.isFinite(r.prev) && old.asOf < r.asOf && r.checkContinuity !== false) {
