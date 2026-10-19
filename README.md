@@ -135,6 +135,19 @@ footer stats and market ticker demo numbers, update or add **indicators**
 manage **IPOs** — add a new one, move it from upcoming → open → closed →
 listed as it progresses, and update prices.
 
+**Editing extras built into the CMS:**
+- **Live preview** — Articles, Indicators, and IPOs all show a styled
+  preview of the actual page while you edit, not a blank form.
+- **Team collection** — authors are managed once under "Team," and picked
+  per-article from a dropdown (a Decap "relation" field). Fix a typo in
+  someone's bio once, and it updates on every article that credits them.
+- **Live chart-data validation** — the "Data (advanced)" field on any
+  chart shows an immediate "✓ Valid JSON — N data points" or
+  "✗ Invalid JSON: ..." message as you type, so a typo is caught right
+  away instead of silently breaking a chart after publish.
+- Uploaded images are organized into `public/uploads/articles/` and
+  `public/uploads/team/` automatically.
+
 **Can't (needs a code change):** new page templates, layout/design changes,
 new site sections. That's normal for any CMS — content is yours to touch
 freely; structure and design stay a code change.

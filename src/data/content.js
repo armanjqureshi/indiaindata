@@ -50,14 +50,13 @@ const IPO_STATUS_META = [
 const articleFiles = import.meta.glob('/content/articles/*.json', { eager: true })
 const indicatorFiles = import.meta.glob('/content/indicators/*.json', { eager: true })
 const ipoFiles = import.meta.glob('/content/ipos/*.json', { eager: true })
-const authorsFile = import.meta.glob('/content/authors.json', { eager: true })
+const teamFiles = import.meta.glob('/content/team/*.json', { eager: true })
 const siteSettingsFile = import.meta.glob('/content/settings/site.json', { eager: true })
 const homePageFile = import.meta.glob('/content/pages/home.json', { eager: true })
 const aboutPageFile = import.meta.glob('/content/pages/about.json', { eager: true })
 const contactPageFile = import.meta.glob('/content/pages/contact.json', { eager: true })
 
 const siteSettings = Object.values(siteSettingsFile)[0]?.default || {}
-const authorsData = Object.values(authorsFile)[0]?.default || { team: [] }
 
 export const homeCopy = Object.values(homePageFile)[0]?.default || {}
 export const aboutCopy = Object.values(aboutPageFile)[0]?.default || {}
@@ -79,10 +78,39 @@ function normalizeChart(chart) {
   return { ...chart, data }
 }
 
+// Team members are their own folder collection (content/team/*.json) so
+// Decap's "relation" widget can let editors pick an existing person for an
+// article's author instead of retyping their bio each time — edit a bio
+// once here, and it updates on every article that references them.
+export const authors = Object.values(teamFiles)
+  .map((m) => m.default)
+  .filter(Boolean)
+  .sort((a, b) => a.name.localeCompare(b.name))
+
+const authorBySlug = Object.fromEntries(authors.map((a) => [a.slug, a]))
+
+// An article's `author` field is a slug string referencing a team member
+// (e.g. "meera-kulkarni"). Resolve it to the {name, bio, avatar} shape the
+// rest of the app expects. Falls back gracefully if a slug doesn't match
+// anything, so a typo or an unpublished reference doesn't crash the build.
+function resolveAuthor(authorRef) {
+  if (authorRef && typeof authorRef === 'object') {
+    // Back-compat: an older embedded-object author (pre-migration).
+    return { name: authorRef.name, bio: authorRef.bio, avatar: authorRef.avatar || null }
+  }
+  const match = authorBySlug[authorRef]
+  if (match) return { name: match.name, bio: match.bio, avatar: match.photo || null }
+  return { name: 'India in Data staff', bio: '', avatar: null }
+}
+
 export const articles = Object.values(articleFiles)
   .map((m) => m.default)
   .filter(Boolean)
-  .map((a) => ({ ...a, charts: (a.charts || []).map(normalizeChart) }))
+  .map((a) => ({
+    ...a,
+    author: resolveAuthor(a.author),
+    charts: (a.charts || []).map(normalizeChart),
+  }))
 
 export const indicators = Object.values(indicatorFiles)
   .map((m) => m.default)
@@ -116,11 +144,6 @@ export const topics = TOPIC_META.map((t) => ({
   ...t,
   description: siteSettings.topicDescriptions?.[t.slug] || '',
 }))
-
-// About.jsx does `Object.values(authors)` for its team grid — that works
-// whether `authors` is an object or (as here) already an array, so no
-// changes are needed there.
-export const authors = authorsData.team || []
 
 export const marketTickers = siteSettings.marketTickers || []
 export const siteStats = siteSettings.siteStats || []

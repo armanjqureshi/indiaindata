@@ -18,5 +18,19 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Netlify Identity invite/recovery links can land here (on the
+         homepage) rather than directly on /admin. If there's a token in the
+         URL, this sends the person on to /admin, which is where Decap's own
+         Identity widget can actually do something with it. -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user && window.location.hash && window.location.hash.includes('token')) {
+            window.location.href = '/admin/' + window.location.hash
+          }
+        })
+      }
+    </script>
   </body>
 </html>
