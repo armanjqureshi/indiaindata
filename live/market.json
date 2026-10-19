@@ -193,7 +193,33 @@
    "source": "NSDL, daily trends in FPI investment (equity, all routes)",
    "sourceUrl": "https://www.fpi.nsdl.co.in/web/Reports/Monthly.aspx",
    "note": "Sum of 12 reporting days in 2026-10",
-   "updatedAt": "2026-10-19T22:07:14.996Z"
+   "updatedAt": "2026-10-19T22:36:25.476Z"
+  },
+  "gold-ibja": {
+   "label": "Gold 999 (IBJA, per 10 g)",
+   "value": 145944,
+   "prev": null,
+   "change": null,
+   "changePct": null,
+   "asOf": "2026-10-19",
+   "unit": "₹",
+   "source": "IBJA PM (closing) rate (excl. GST and making charges)",
+   "sourceUrl": "https://ibjarates.com/",
+   "note": null,
+   "updatedAt": "2026-10-19T22:36:13.098Z"
+  },
+  "silver-ibja": {
+   "label": "Silver 999 (IBJA, per kg)",
+   "value": 208750,
+   "prev": null,
+   "change": null,
+   "changePct": null,
+   "asOf": "2026-10-19",
+   "unit": "₹",
+   "source": "IBJA PM (closing) rate (excl. GST and making charges)",
+   "sourceUrl": "https://ibjarates.com/",
+   "note": null,
+   "updatedAt": "2026-10-19T22:36:13.098Z"
   }
  },
  "history": {
@@ -6978,8 +7004,44 @@
     "2026-10-19",
     -49457.17
    ]
+  ],
+  "gold-ibja": [
+   [
+    "2026-10-14",
+    146064
+   ],
+   [
+    "2026-10-15",
+    145942
+   ],
+   [
+    "2026-10-16",
+    146426
+   ],
+   [
+    "2026-10-19",
+    145944
+   ]
+  ],
+  "silver-ibja": [
+   [
+    "2026-10-14",
+    213822
+   ],
+   [
+    "2026-10-15",
+    208275
+   ],
+   [
+    "2026-10-16",
+    210918
+   ],
+   [
+    "2026-10-19",
+    208750
+   ]
   ]
  },
- "updatedAt": "2026-10-19T22:07:14.996Z",
+ "updatedAt": "2026-10-19T22:36:25.476Z",
  "session": "2026-10-19"
 }

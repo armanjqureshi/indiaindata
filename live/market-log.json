@@ -1,10 +1,10 @@
 {
- "runAt": "2026-10-19T22:06:54.071Z",
+ "runAt": "2026-10-19T22:36:09.213Z",
  "accepted": [
+  "gold-ibja = 145944 (2026-10-19)",
+  "silver-ibja = 208750 (2026-10-19)",
   "fpi-equity-mtd = -49457.17 (2026-10-19)"
  ],
- "skipped": [
-  "IBJA: could not identify dated PM rates"
- ],
+ "skipped": [],
  "errors": []
 }
