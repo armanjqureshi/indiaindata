@@ -45,7 +45,7 @@ const canProject = (iso) => haveHolidays && iso.slice(0, 4) === today.slice(0, 4
 const slugify = (name) =>
   name.toLowerCase().replace(/&/g, ' and ').replace(/\b(limited|ltd)\b\.?/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 const priceRange = (s) => {
-  const m = String(s || '').replace(/,/g, '').match(/([\d.]+)\s*(?:to|-)\s*(?:Rs\.?\s*)?([\d.]+)/i)
+  const m = String(s || '').replace(/,/g, '').replace(/Rs\.?\s*/gi, '').match(/([\d.]+)\s*(?:to|-)\s*(?:Rs\.?\s*)?([\d.]+)/i)
   if (m) return [num(m[1]), num(m[2])]
   const one = num(String(s || '').replace(/Rs\.?/i, ''))
   return one ? [one, one] : [null, null]
@@ -55,7 +55,8 @@ const read = (f, d) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')
 const write = (f, d) => fs.writeFileSync(f, JSON.stringify(d, null, 1) + '\n')
 
 const prevIndex = read(INDEX, { ipos: [] })
-const prevBySym = new Map(prevIndex.ipos.map((i) => [i.symbol + '|' + i.board, i]))
+const prevArchiveAll = read(path.join(LIVE, 'ipos-archive.json'), { ipos: [] })
+const prevBySym = new Map([...prevArchiveAll.ipos, ...prevIndex.ipos].map((i) => [i.symbol + '|' + i.board, i]))
 
 // --- 1. every issue NSE lists ----------------------------------------------------------
 const past = await nse.get('/api/public-past-issues')
@@ -107,6 +108,8 @@ function timetable(ipo) {
 }
 function statusOf(ipo, t) {
   if (ipo.listingDate && ipo.listingDate <= today) return 'listed'
+  // NSE gives no listing date for a few old issues (withdrawn, or listed elsewhere)
+  if (!ipo.listingDate && ipo.close && ipo.close < addDays(today, -20)) return 'unlisted'
   if (ipo.open && today < ipo.open) return 'upcoming'
   if (ipo.open && ipo.close && today >= ipo.open && today <= ipo.close) return 'open'
   if (ipo.close && today > ipo.close) return 'closed'
@@ -146,29 +149,26 @@ function parseMoneyCr(s) {
 const sharesIn = (s) => { const m = s.match(/([\d,]{4,})\s*(?:Equity\s*)?Shares/i); return m ? num(m[1]) : null }
 function parseIssueSize(text, price) {
   // Returns { freshCr, ofsCr, totalCr, method } or null if the text is not unambiguous.
+  // Bracketed notes (employee, anchor and market-maker portions) are ignored: they
+  // are parts of the issue, not additions to it.
   if (!text || !price) return null
-  const t = text.replace(/\s+/g, ' ')
-  const freshPart = (t.match(/fresh issue[^,;]*?(?=(?:and|,)\s*(?:an\s*)?offer for sale|$)/i) || [])[0] || ''
-  const ofsPart = (t.match(/offer for sale[^;]*/i) || [])[0] || ''
-  const hasFresh = /fresh issue/i.test(t), hasOfs = /offer for sale/i.test(t)
-  if (!hasFresh && !hasOfs) return null
-  let freshCr = 0, ofsCr = 0
-  if (hasFresh) {
-    const amt = parseMoneyCr(freshPart)
-    const sh = amt === null ? sharesIn(freshPart) : null
-    if (amt !== null) freshCr = amt
-    else if (sh) freshCr = (sh * price) / 1e7
-    else return null
+  const t = text.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ')
+  const iF = t.search(/fresh issue/i)
+  const iO = t.search(/offer for sale/i)
+  if (iF < 0 && iO < 0) return null
+  const fresh = iF >= 0 ? t.slice(iF, iO > iF ? iO : undefined) : ''
+  const ofs = iO >= 0 ? t.slice(iO, iF > iO ? iF : undefined) : ''
+  const value = (part) => {
+    const amt = parseMoneyCr(part)
+    if (amt !== null) return amt
+    const sh = sharesIn(part)
+    return sh ? (sh * price) / 1e7 : null
   }
-  if (hasOfs) {
-    const amt = parseMoneyCr(ofsPart)
-    const sh = amt === null ? sharesIn(ofsPart) : null
-    if (amt !== null) ofsCr = amt
-    else if (sh) ofsCr = (sh * price) / 1e7
-    else return null
-  }
+  const freshCr = iF >= 0 ? value(fresh) : 0
+  const ofsCr = iO >= 0 ? value(ofs) : 0
+  if (freshCr === null || ofsCr === null) return null
   const r2 = (v) => Math.round(v * 100) / 100
-  return { freshCr: r2(freshCr), ofsCr: r2(ofsCr), totalCr: r2(freshCr + ofsCr), method: `At ₹${price} per share, from the issue size NSE publishes` }
+  return { freshCr: r2(freshCr), ofsCr: r2(ofsCr), totalCr: r2(freshCr + ofsCr), method: `Calculated at ₹${price} per share from the issue size NSE publishes` }
 }
 async function fetchDetail(ipo) {
   const series = ipo.board === 'sme' ? 'SME' : 'EQ'
@@ -180,10 +180,17 @@ async function fetchDetail(ipo) {
     const hit = CAT.find(([re]) => re.test(cat))
     if (!hit || !/^\d+(\.\d+)?$|^Total/i.test(String(r.srNo || cat))) continue
     const times = num(r.noOfTotalMeant)
-    if (times === null) continue
+    if (times === null || !num(r.noOfShareOffered)) continue
     cats.push({ key: hit[1], label: hit[2], offered: num(r.noOfShareOffered), bid: num(r.noOfSharesBid), times: Math.round(times * 100) / 100 })
   }
-  const total = num(d?.demandGraphALL?.noOfTimesIssueSubscribed)
+  // Prefer NSE's own consolidated total; otherwise compute it from the category rows.
+  let total = cats.find((c) => c.key === 'total')?.times ?? num(d?.demandGraphALL?.noOfTimesIssueSubscribed)
+  let totalMethod = 'NSE'
+  if (total === null || total === undefined) {
+    const top = cats.filter((c) => ['qib', 'nii', 'retail', 'employee', 'shareholder', 'policyholder'].includes(c.key) && c.offered)
+    const off = top.reduce((a, c) => a + c.offered, 0), bid = top.reduce((a, c) => a + c.bid, 0)
+    if (off > 0) { total = bid / off; totalMethod = 'calculated from category bids' }
+  }
   const asOf = (d?.activeCat?.updateTime || d?.demandGraphALL?.timestamp || '').replace(/^(Updated as on|As on)\s*/i, '').replace(/\s*IST$/, '') || null
   const lot = num((info['Bid Lot'] || info['Lot Size'] || info['Minimum Order Quantity'] || '').match(/[\d,]+/)?.[0])
   const docs = {}
@@ -191,7 +198,7 @@ async function fetchDetail(ipo) {
     if (/^https?:\/\//.test(info[k] || '')) docs[label] = info[k]
   const price = ipo.issuePrice || ipo.priceHigh
   return {
-    subscription: cats.length || total ? { total: total !== null ? Math.round(total * 100) / 100 : null, categories: cats, asOf, scope: 'NSE and BSE combined' } : null,
+    subscription: cats.length || total ? { total: total !== null && total !== undefined ? Math.round(total * 100) / 100 : null, totalMethod, categories: cats, asOf, scope: 'NSE and BSE combined' } : null,
     lotSize: lot || null,
     faceValue: num((info['Face Value'] || '').match(/[\d.]+/)?.[0]) || null,
     issueType: clean(info['Issue Type']) || null,
@@ -213,7 +220,7 @@ const bhavCache = new Map()
 const ddmmyyyy = (iso) => iso.slice(8, 10) + iso.slice(5, 7) + iso.slice(0, 4)
 const MONS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 async function getBuffer(url) {
-  const r = await fetch(url, { headers: { 'User-Agent': UA, Referer: 'https://www.nseindia.com/' } })
+  const r = await fetch(url, { headers: { 'User-Agent': UA, Referer: 'https://www.nseindia.com/' }, signal: AbortSignal.timeout(30000) })
   if (!r.ok) throw new Error(`HTTP ${r.status}`)
   return Buffer.from(await r.arrayBuffer())
 }
@@ -267,8 +274,10 @@ const lastPrices = lastSession ? await bhav(lastSession) : new Map()
 // --- 5. assemble ---------------------------------------------------------------------------------------
 const list = []
 let detailsFetched = 0
-for (const ipo of bySym.values()) {
-  if (!ipo.open) continue
+let detailsTried = 0
+// newest first, so the per-run detail budget goes to current issues
+const ordered = [...bySym.values()].filter((i) => i.open).sort((a, b) => b.open.localeCompare(a.open))
+for (const ipo of ordered) {
   const prev = prevBySym.get(ipo.symbol + '|' + ipo.board) || {}
   const slug = prev.slug || slugify(ipo.name) || ipo.symbol.toLowerCase()
   const t = timetable(ipo)
@@ -278,8 +287,9 @@ for (const ipo of bySym.values()) {
   // Refresh detail while the issue is upcoming/open/closed and for 10 days after listing,
   // and fetch once for anything in the last 120 days that has no detail yet.
   const recent = ipo.close && ipo.close >= addDays(today, -120)
-  const active = status !== 'listed' || (ipo.listingDate && ipo.listingDate >= addDays(today, -10))
-  if ((active || (recent && !detail)) && detailsFetched < 80) {
+  const active = ['upcoming', 'open', 'closed'].includes(status) || (status === 'listed' && ipo.listingDate >= addDays(today, -7))
+  if ((active || (recent && !detail && status !== 'unlisted')) && detailsTried < 70) {
+    detailsTried++
     try {
       const fresh = await fetchDetail(ipo)
       detailsFetched++
@@ -326,15 +336,21 @@ for (const ipo of bySym.values()) {
 }
 list.sort((a, b) => (b.open || '').localeCompare(a.open || '') || a.name.localeCompare(b.name))
 
-const changed = JSON.stringify(prevIndex.ipos) !== JSON.stringify(list)
-const out = {
-  updatedAt: changed || !prevIndex.updatedAt ? new Date().toISOString() : prevIndex.updatedAt,
+// Recent and active issues go in ipos.json (loaded on every IPO page); older
+// listings go in ipos-archive.json (loaded only for the full archive view).
+const cutoff = addDays(today, -365)
+const recentList = list.filter((i) => i.status !== 'listed' && i.status !== 'unlisted' ? true : (i.open || '') >= cutoff)
+const archiveList = list.filter((i) => !recentList.includes(i)).map(({ timetable, hasDetail, ...rest }) => rest)
+const prevArchive = read(path.join(LIVE, 'ipos-archive.json'), { ipos: [] })
+const changed = JSON.stringify(prevIndex.ipos) !== JSON.stringify(recentList)
+const meta = {
   lastPriceSession: lastSession,
   holidaysKnownFor: haveHolidays ? today.slice(0, 4) : null,
-  coverage: 'All public issues listed on NSE (mainboard and NSE Emerge SME). Issues listed only on BSE are not included.',
-  ipos: list,
+  coverage: 'All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.',
 }
-write(INDEX, out)
+write(INDEX, { updatedAt: changed || !prevIndex.updatedAt ? new Date().toISOString() : prevIndex.updatedAt, ...meta, ipos: recentList })
+const archChanged = JSON.stringify(prevArchive.ipos) !== JSON.stringify(archiveList)
+write(path.join(LIVE, 'ipos-archive.json'), { updatedAt: archChanged || !prevArchive.updatedAt ? new Date().toISOString() : prevArchive.updatedAt, ...meta, ipos: archiveList })
 log.notes.push(`${list.length} issues; ${detailsFetched} detail pages refreshed; last price session ${lastSession}`)
 write(LOG, log)
 console.log(JSON.stringify(log, null, 1))

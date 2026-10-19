@@ -52,7 +52,7 @@ export function createNseSession() {
   async function prime() {
     for (const p of ['/', '/market-data/all-upcoming-issues-ipo']) {
       try {
-        const res = await fetch('https://www.nseindia.com' + p, { headers: { 'User-Agent': UA, Accept: 'text/html' } })
+        const res = await fetch('https://www.nseindia.com' + p, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) })
         absorb(res)
         await res.text()
       } catch {}
@@ -64,7 +64,10 @@ export function createNseSession() {
     let lastErr
     for (let attempt = 0; attempt < 3; attempt++) {
       try {
+        const ctrl = new AbortController()
+        const timer = setTimeout(() => ctrl.abort(), 20000)
         const res = await fetch('https://www.nseindia.com' + path, {
+          signal: ctrl.signal,
           headers: {
             'User-Agent': UA,
             Accept: 'application/json, text/plain, */*',
@@ -74,6 +77,7 @@ export function createNseSession() {
         })
         absorb(res)
         const text = await res.text()
+        clearTimeout(timer)
         if (!res.ok) throw new Error(`NSE HTTP ${res.status} for ${path}`)
         return JSON.parse(text)
       } catch (e) {
