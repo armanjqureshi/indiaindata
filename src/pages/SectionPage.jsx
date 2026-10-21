@@ -7,7 +7,6 @@ import ChartCard from '../components/ChartCard.jsx'
 import StatBlock from '../components/StatBlock.jsx'
 import NewsletterSignup from '../components/NewsletterSignup.jsx'
 import CategoryChip from '../components/CategoryChip.jsx'
-import DecoFan from '../components/DecoFan.jsx'
 import {
   getSection,
   getBySection,
@@ -50,20 +49,6 @@ export default function SectionPage({ slug }) {
   return (
     <>
       {/* Section header */}
-      {isMarket ? (
-        <section className="deco-header">
-          <DecoFan className="pointer-events-none absolute -bottom-2 right-4 hidden h-48 w-96 text-deco-gold opacity-60 sm:block lg:right-24 lg:h-60 lg:w-[30rem]" />
-          <div className="relative mx-auto max-w-site px-4 pb-14 pt-12 sm:px-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-deco-gold">
-              Dalal Street &middot; Mumbai &middot; {all.length} articles
-            </p>
-            <h1 className="mt-3 font-display text-5xl font-semibold sm:text-6xl">{section.name}</h1>
-            <p className="mt-3 max-w-xl text-base leading-body" style={{ color: 'rgb(var(--deco-ink) / 0.8)' }}>
-              {section.description}
-            </p>
-          </div>
-        </section>
-      ) : (
       <section className={`border-b border-ink/10 ${colors.bgLight}`}>
         <div className="mx-auto max-w-site px-4 py-12 sm:px-6">
           <p className={`text-xs font-semibold ${colors.text}`}>
@@ -73,29 +58,23 @@ export default function SectionPage({ slug }) {
           <p className="mt-3 max-w-2xl text-base leading-body text-ink/70">{section.description}</p>
         </div>
       </section>
-      )}
 
       {/* Market ticker row */}
       {isMarket && (
         <section aria-label="Market snapshot" className="border-b border-ink/10 bg-panel">
-          <div className="deco-band" aria-hidden="true" />
-          <div className="mx-auto grid max-w-site grid-cols-2 gap-4 px-4 py-6 sm:px-6 lg:grid-cols-4">
+          <div className="mx-auto grid max-w-site grid-cols-2 gap-6 px-4 py-6 sm:px-6 lg:grid-cols-4">
             {[['nifty-50', 'Nifty 50', 2], ['sensex', 'Sensex', 2], ['usd-inr', 'USD / INR (FBIL)', 4], ['india-vix', 'India VIX', 2]].map(([k, label, dp]) => {
               const it = market.items?.[k]
               if (!it) return null
               return (
-                <div key={k} className="deco-tile">
-                  <div className="deco-tile-in p-4">
-                    <StatBlock value={fmt.inr(it.value, dp)} label={label}
-                      sub={it.changePct === null ? '' : `${it.changePct > 0 ? '+' : ''}${fmt.inr(it.changePct, 2)}%`}
-                      direction={it.change > 0 ? 'up' : it.change < 0 ? 'down' : undefined} />
-                  </div>
-                </div>
+                <StatBlock key={k} value={fmt.inr(it.value, dp)} label={label}
+                  sub={it.changePct === null ? '' : `${it.changePct > 0 ? '+' : ''}${fmt.inr(it.changePct, 2)}%`}
+                  direction={it.change > 0 ? 'up' : it.change < 0 ? 'down' : undefined} />
               )
             })}
           </div>
           <div className="mx-auto max-w-site px-4 pb-2 sm:px-6">
-            <p className="pb-3 text-xs text-ink/50">Closing levels on {fmt.date(market.session)}. Regular session 9:15 am to 3:30 pm IST, Monday to Friday. Updated automatically after each trading session. <Link to="/indicators" className="text-brand hover:underline">More market indicators</Link></p>
+            <p className="pb-3 text-xs text-ink/50">Closing levels on {fmt.date(market.session)}. Updated automatically after each trading session. <Link to="/indicators" className="text-brand hover:underline">More market indicators</Link></p>
           </div>
         </section>
       )}

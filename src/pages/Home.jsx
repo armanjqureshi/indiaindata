@@ -50,10 +50,10 @@ function Hero() {
   const board = HERO_SLUGS.map((slug) => all.find((i) => i.slug === slug)).filter(Boolean)
 
   return (
-    <section className="jaali border-b border-ink/10">
+    <section className="border-b border-ink/10">
       <div className="mx-auto grid max-w-site gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[5fr_6fr] lg:items-center lg:py-16">
         <div>
-          <h1 className="text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-[3.5rem]">
+          <h1 className="text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-[3.5rem]">
             India&rsquo;s numbers, read plainly.
           </h1>
           <p className="mt-4 max-w-md text-base leading-body text-ink/70">
@@ -82,19 +82,17 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="arch-top bg-brand pt-[3px]">
-          <div className="arch-top bg-panel px-4 pb-4 pt-12 sm:px-6">
-            <div className="mb-3 text-center">
-              <h2 className="font-display text-base font-bold">Key indicators</h2>
-              <Link to="/indicators" className="text-xs font-semibold text-brand hover:underline">
-                All {indicators.length} indicators
-              </Link>
-            </div>
-            <div className="grid grid-cols-2 gap-px border border-ink/10 bg-ink/10 sm:grid-cols-3">
-              {board.map((ind) => (
-                <BoardTile key={ind.slug} ind={ind} />
-              ))}
-            </div>
+        <div>
+          <div className="mb-2 flex items-baseline justify-between">
+            <h2 className="text-sm font-bold">Key indicators</h2>
+            <Link to="/indicators" className="text-xs font-semibold text-brand hover:underline">
+              All {indicators.length} indicators
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 gap-px border border-ink/10 bg-ink/10 sm:grid-cols-3">
+            {board.map((ind) => (
+              <BoardTile key={ind.slug} ind={ind} />
+            ))}
           </div>
         </div>
       </div>
@@ -199,7 +197,7 @@ export default function Home() {
 
       {/* Newsletter band */}
       <section id="newsletter" className="mx-auto max-w-site scroll-mt-24 px-4 py-10 sm:px-6">
-        <div className="jaali jaali-soft arch-top bg-brand px-6 pb-10 pt-16 text-paper sm:px-10">
+        <div className="rounded-sm bg-brand px-6 py-10 text-paper sm:px-10">
           <div className="grid items-center gap-8 lg:grid-cols-2">
             <div>
               <h2 className="font-display text-2xl font-semibold sm:text-3xl">
