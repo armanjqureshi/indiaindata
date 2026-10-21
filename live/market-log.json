@@ -1,8 +1,23 @@
 {
- "runAt": "2026-10-21T06:52:31.755Z",
- "accepted": [],
- "skipped": [
-  "sensex: feed date 2026-10-21 does not match NSE session 2026-10-19"
+ "runAt": "2026-10-21T18:13:05.291Z",
+ "accepted": [
+  "nifty-50 = 22811.35 (2026-10-21)",
+  "nifty-bank = 54976.9 (2026-10-21)",
+  "nifty-it = 32422.5 (2026-10-21)",
+  "nifty-midcap-150 = 21200.25 (2026-10-21)",
+  "nifty-smallcap-250 = 17041.95 (2026-10-21)",
+  "sensex = 73709.69 (2026-10-21)",
+  "usd-inr = 94.7145 (2026-10-21)",
+  "jpy-inr = 59.89 (2026-10-21)",
+  "gbp-inr = 126.6835 (2026-10-21)",
+  "eur-inr = 106.2839 (2026-10-21)",
+  "dii-net = 1614.32 (2026-10-21)",
+  "fii-net = 1022.32 (2026-10-21)",
+  "brent-spot = 115.22 (2026-10-20)",
+  "fpi-equity-mtd = -49870.37 (2026-10-21)"
  ],
- "errors": []
+ "skipped": [],
+ "errors": [
+  "india-vix: continuity check failed (source prev 14.78, stored 14.77 on 2026-10-19)"
+ ]
 }
