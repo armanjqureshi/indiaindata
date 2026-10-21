@@ -8,7 +8,6 @@ import StatBlock from '../components/StatBlock.jsx'
 import NewsletterSignup from '../components/NewsletterSignup.jsx'
 import CategoryChip from '../components/CategoryChip.jsx'
 import DecoFan from '../components/DecoFan.jsx'
-import TradingViewWidget, { TAPE_CONFIG, CHART_CONFIG } from '../components/TradingViewWidget.jsx'
 import {
   getSection,
   getBySection,
@@ -97,21 +96,6 @@ export default function SectionPage({ slug }) {
           </div>
           <div className="mx-auto max-w-site px-4 pb-2 sm:px-6">
             <p className="pb-3 text-xs text-ink/50">Closing levels on {fmt.date(market.session)}. Regular session 9:15 am to 3:30 pm IST, Monday to Friday. Updated automatically after each trading session. <Link to="/indicators" className="text-brand hover:underline">More market indicators</Link></p>
-          </div>
-        </section>
-      )}
-
-      {isMarket && (
-        <section aria-label="Live markets" className="border-b border-ink/10">
-          <div className="mx-auto max-w-site px-4 py-6 sm:px-6">
-            <div className="mb-2 flex items-center gap-2">
-              <span aria-hidden="true" className="inline-block h-2 w-2 rounded-full bg-up" />
-              <h2 className="font-display text-lg font-semibold">Live markets</h2>
-            </div>
-            <TradingViewWidget kind="ticker-tape" config={TAPE_CONFIG} height={78} label="Live market ticker" />
-            <div className="mt-4">
-              <TradingViewWidget kind="symbol-overview" config={CHART_CONFIG} height={420} label="Live index charts" />
-            </div>
           </div>
         </section>
       )}
