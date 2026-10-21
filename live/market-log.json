@@ -1,9 +1,8 @@
 {
- "runAt": "2026-10-19T22:37:53.940Z",
- "accepted": [
-  "gold-ibja = 145944 (2026-10-19)",
-  "silver-ibja = 208750 (2026-10-19)"
+ "runAt": "2026-10-21T06:52:31.755Z",
+ "accepted": [],
+ "skipped": [
+  "sensex: feed date 2026-10-21 does not match NSE session 2026-10-19"
  ],
- "skipped": [],
  "errors": []
 }
