@@ -1,5 +1,54 @@
 {
- "subscription": null,
+ "subscription": {
+  "total": 0.15,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 6590908,
+    "bid": 588,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3295454,
+    "bid": 254562,
+    "times": 0.08
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2196970,
+    "bid": 104790,
+    "times": 0.05
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1098484,
+    "bid": 149772,
+    "times": 0.14
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 2196969,
+    "bid": 1523487,
+    "times": 0.69
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 12083331,
+    "bid": 1778637,
+    "times": 0.15
+   }
+  ],
+  "asOf": "21-Oct-2026 16:57:00",
+  "scope": "NSE and BSE combined"
+ },
  "lotSize": 21,
  "faceValue": null,
  "issueType": "Book Building",
@@ -25,7 +74,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PARASHLTH.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PARASHLTH.zip"
  },
- "fetchedAt": "2026-10-19T22:16:46.139Z",
+ "fetchedAt": "2026-10-21T12:11:10.947Z",
  "slug": "paras-healthcare",
  "symbol": "PARASHLTH",
  "board": "mainboard",
