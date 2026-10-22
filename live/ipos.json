@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T14:18:56.913Z",
+ "updatedAt": "2026-10-22T22:50:14.605Z",
  "lastPriceSession": "2026-10-22",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -199,10 +199,10 @@
    "symbol": "BONFIG",
    "board": "mainboard",
    "name": "Bonfiglioli Transmissions Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-15",
    "close": "2026-10-19",
-   "listingDate": null,
+   "listingDate": "2026-10-23",
    "timetable": {
     "open": "2026-10-15",
     "close": "2026-10-19",
@@ -211,7 +211,6 @@
     "demat": "2026-10-22",
     "listing": "2026-10-23",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -219,7 +218,7 @@
    },
    "priceLow": 558,
    "priceHigh": 586,
-   "issuePrice": null,
+   "issuePrice": 586,
    "lotSize": 25,
    "lotValue": 14650,
    "sizeCr": 2533.81,
@@ -237,10 +236,10 @@
    "symbol": "SMT",
    "board": "mainboard",
    "name": "Sahajanand Medical Technologies Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-15",
    "close": "2026-10-19",
-   "listingDate": null,
+   "listingDate": "2026-10-23",
    "timetable": {
     "open": "2026-10-15",
     "close": "2026-10-19",
@@ -249,7 +248,6 @@
     "demat": "2026-10-22",
     "listing": "2026-10-23",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -257,7 +255,7 @@
    },
    "priceLow": 327,
    "priceHigh": 344,
-   "issuePrice": null,
+   "issuePrice": 344,
    "lotSize": 43,
    "lotValue": 14792,
    "sizeCr": 475.48,
@@ -275,10 +273,10 @@
    "symbol": "TONBO",
    "board": "mainboard",
    "name": "Tonbo Imaging India Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-15",
    "close": "2026-10-19",
-   "listingDate": null,
+   "listingDate": "2026-10-23",
    "timetable": {
     "open": "2026-10-15",
     "close": "2026-10-19",
@@ -287,7 +285,6 @@
     "demat": "2026-10-22",
     "listing": "2026-10-23",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -295,7 +292,7 @@
    },
    "priceLow": 665,
    "priceHigh": 700,
-   "issuePrice": null,
+   "issuePrice": 700,
    "lotSize": 21,
    "lotValue": 14700,
    "sizeCr": 852.18,
@@ -313,10 +310,10 @@
    "symbol": "ZETWERK",
    "board": "mainboard",
    "name": "Zetwerk Manufacturing Businesses Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-15",
    "close": "2026-10-19",
-   "listingDate": null,
+   "listingDate": "2026-10-23",
    "timetable": {
     "open": "2026-10-15",
     "close": "2026-10-19",
@@ -325,7 +322,6 @@
     "demat": "2026-10-22",
     "listing": "2026-10-23",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -333,7 +329,7 @@
    },
    "priceLow": 143,
    "priceHigh": 151,
-   "issuePrice": null,
+   "issuePrice": 151,
    "lotSize": 99,
    "lotValue": 14949,
    "sizeCr": 5012.33,
