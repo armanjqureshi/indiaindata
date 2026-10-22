@@ -1,0 +1,99 @@
+{
+  "id": 125,
+  "slug": "jio-platforms-ipo-review",
+  "title": "Jio Platforms IPO review: a record offer priced at about 32 times earnings",
+  "dek": "The ₹30,213 crore issue is all fresh shares, mostly to repay debt. After two days of bidding it is subscribed 5.57 times, with retail investors at 1.54 times.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-22",
+  "readingTime": 4,
+  "featured": true,
+  "chartOfWeek": false,
+  "draft": false,
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Jio Platforms is selling up to 27 crore new shares at ₹1,065 to ₹1,119 each, raising up to ₹30,213 crore, which Business Standard calls the largest IPO India has seen. Bidding runs from 21 to 23 October. At the top of the band, the company is valued at about ₹10.3 lakh crore. Allotment is expected on 26 October and listing on 28 October, both tentative until the exchanges confirm. Everything below is the case for and against, drawn from the offer documents and published analysis. It is not investment advice."
+    },
+    {
+      "type": "heading",
+      "text": "What the company is"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jio Platforms is the parent of Reliance Jio Infocomm, the telecom operator. According to The Ken, that unit produced about 95% of the group's consolidated profit over the past three years. As of 30 June 2026 it had about 533.3 million subscribers, and TelecomLead reports it carries nearly 60% of India's mobile data traffic. Business Standard puts its share at 50% of wireless broadband and 42.6% of fixed broadband."
+    },
+    {
+      "type": "paragraph",
+      "text": "In FY26 it reported revenue from operations of ₹1,46,885 crore, up 14.6% from ₹1,28,218 crore, and profit after tax of ₹30,049 crore, up 15.1% from ₹26,109 crore. In the June 2026 quarter, revenue was ₹39,173 crore and profit ₹7,764 crore, against ₹35,032 crore and ₹7,110 crore a year earlier."
+    },
+    {
+      "type": "heading",
+      "text": "How it is priced"
+    },
+    {
+      "type": "paragraph",
+      "text": "Business Standard calculates that the price band values Jio at 31.7 to 33.3 times FY26 earnings and 15 to 15.6 times FY26 EV/EBITDA. On FY28 estimates the multiple falls to 10.5 to 12 times EV/EBITDA, which the paper describes as a 12% to 17% premium to the multiple implied for Bharti Airtel's India business."
+    },
+    {
+      "type": "paragraph",
+      "text": "Brokerages are not unanimous. Emkay Research calls the issue reasonably priced for its growth and rates it a subscribe. Nomura says easy subscriber gains are ending, so tariff increases may drive earnings, and that medium- to long-term investors can consider the issue. Motilal Oswal sees no case for a big discount for Airtel relative to Jio, noting Airtel's stronger free cash flow and return on capital employed. Centrum Research expects a tariff increase of about 12% within three to four months, which Centrum calls the biggest near-term boost."
+    },
+    {
+      "type": "heading",
+      "text": "Where the money goes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The whole issue is fresh shares: existing investors are not selling. The Ken reports that up to ₹27,500 crore is meant to prepay borrowings of Reliance Jio Infocomm, which Business Standard says should reduce finance costs and leverage. Reliance Industries is expected to hold about 64.5% after the issue, according to TelecomLead. Up to ₹500 crore is reserved for employees, who get a ₹54 per share discount, and up to ₹2,500 crore for eligible Reliance shareholders."
+    },
+    {
+      "type": "heading",
+      "text": "Who is bidding"
+    },
+    {
+      "type": "paragraph",
+      "text": "The anchor round raised about ₹8,110 crore at ₹1,119 a share, Inc42 reports, with domestic mutual funds, LIC and other insurers, and foreign investors including Fidelity, BlackRock, the Government of Singapore and the Abu Dhabi Investment Authority named among the participants."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the public book, NSE's consolidated figures for NSE and BSE bids show the issue 3.16 times subscribed at the end of day one (as of 6:57 pm on 21 October) and 5.57 times at the end of day two (as of 6:57 pm on 22 October). Qualified institutional buyers bid 13.29 times their quota. Non-institutional investors bid 5.97 times, with bids above ₹10 lakh at 6.76 times. Retail investors were at 1.54 times, up from 0.73 times on day one. Eligible shareholders were at 4.04 times and employees at 2.10 times."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "What to watch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Retail demand is the number to watch on the last day. A retail bid is capped at ₹2 lakh, which is 14 lots of 12 shares, or ₹1,87,992 at the upper band. In Indian IPOs, institutional bids typically arrive late, so the day-two figures will change. Beyond the subscription, the investment case rests on tariff increases arriving as analysts expect and on the debt repayment lowering finance costs. If tariffs do not rise, the earnings growth that Nomura and Centrum describe would be weaker."
+    },
+    {
+      "type": "paragraph",
+      "text": "Live subscription figures, the timetable and a lot calculator are on the Jio Platforms page of our IPO tracker. Sources: Business Standard (18 October 2026), TelecomLead, Inc42 (anchor round), The Ken, and NSE issue and subscription data."
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Cumulative demand at the end of day one and day two",
+      "subtitle": "Jio Platforms IPO subscription, times the shares reserved (NSE and BSE combined)",
+      "source": "NSE consolidated subscription, as of 6:57 pm on 21 and 22 October 2026",
+      "xKey": "category",
+      "dataKeys": [
+        "Day 1",
+        "Day 2"
+      ],
+      "unit": "x",
+      "data": "[{\"category\": \"QIB\", \"Day 1\": 9.42, \"Day 2\": 13.29}, {\"category\": \"NII\", \"Day 1\": 1.68, \"Day 2\": 5.97}, {\"category\": \"Retail\", \"Day 1\": 0.73, \"Day 2\": 1.54}, {\"category\": \"Employees\", \"Day 1\": 1.36, \"Day 2\": 2.1}, {\"category\": \"Shareholders\", \"Day 1\": 1.46, \"Day 2\": 4.04}]"
+    }
+  ]
+}
