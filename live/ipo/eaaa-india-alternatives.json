@@ -1,0 +1,33 @@
+{
+ "subscription": null,
+ "lotSize": 9,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Offer for Sale aggregating upto Rs. 12,000 million",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 1200,
+  "totalCr": 1200,
+  "method": "Calculated at ₹1665 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Axis Capital Limited",
+  "Jefferies India Private Limited",
+  "Motilal Oswal Investment Advisors Limited",
+  "Nuvama Wealth Management Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, Tel: +91 810 811 4949, eaaaindia.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_EDELALTS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_EDELALTS.zip"
+ },
+ "fetchedAt": "2026-10-22T12:38:34.970Z",
+ "slug": "eaaa-india-alternatives",
+ "symbol": "EDELALTS",
+ "board": "mainboard",
+ "name": "EAAA India Alternatives Limited"
+}

@@ -1,0 +1,32 @@
+{
+ "subscription": null,
+ "lotSize": 45,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offering comprising Fresh issue of aggregating up to Rs. 1500 million and offer for sale up to 1,56,82,750 Equity Shares",
+ "issueSize": {
+  "freshCr": 150,
+  "ofsCr": 517.53,
+  "totalCr": 667.53,
+  "method": "Calculated at ₹330 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "IIFL Capital Services Limited",
+  "JM Financial Limited",
+  "Nuvama Wealth Management Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 8108114949, sfcenvironmental.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SFCTECH.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SFCTECH.zip"
+ },
+ "fetchedAt": "2026-10-22T12:38:34.681Z",
+ "slug": "sfc-environmental-technologies",
+ "symbol": "SFCTECH",
+ "board": "mainboard",
+ "name": "SFC Environmental Technologies Limited"
+}
