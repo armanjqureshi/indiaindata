@@ -3,10 +3,7 @@ name: Update IPO data
 # and live/ is excluded from Netlify builds; the site loads these at runtime.
 on:
   schedule:
-    - cron: '30 6 * * 1-5'    # 12:00 IST, subscription during bidding
-    - cron: '45 9 * * 1-5'    # 15:15 IST
-    - cron: '0 14 * * 1-5'    # 19:30 IST, after NSE's 19:00 final subscription update
-    - cron: '45 18 * * *'     # 00:15 IST daily, rolls statuses to the new date
+    - cron: '0 2,5,8,11,14,17,20,23 * * *'    # every 3 hours (07:30, 10:30, 13:30, 16:30, 19:30, 22:30, 01:30, 04:30 IST); 19:30 follows NSE's 19:00 final subscription update
   workflow_dispatch:
     inputs:
       backfill_days:
