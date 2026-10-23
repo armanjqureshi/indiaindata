@@ -1,52 +1,52 @@
 {
  "subscription": {
-  "total": 0.34,
+  "total": 0.43,
   "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
     "label": "QIB",
     "offered": 6590908,
-    "bid": 427560,
-    "times": 0.06
+    "bid": 552321,
+    "times": 0.08
    },
    {
     "key": "nii",
     "label": "NII",
     "offered": 3295454,
-    "bid": 827253,
-    "times": 0.25
+    "bid": 1165941,
+    "times": 0.35
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 2196970,
-    "bid": 486843,
-    "times": 0.22
+    "bid": 681639,
+    "times": 0.31
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 1098484,
-    "bid": 340410,
-    "times": 0.31
+    "bid": 484302,
+    "times": 0.44
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 2196969,
-    "bid": 2868831,
-    "times": 1.31
+    "bid": 3530268,
+    "times": 1.61
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 12083331,
-    "bid": 4123644,
-    "times": 0.34
+    "bid": 5248530,
+    "times": 0.43
    }
   ],
-  "asOf": "22-Oct-2026 17:00:00",
+  "asOf": "23-Oct-2026 12:03:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 21,
@@ -74,7 +74,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PARASHLTH.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PARASHLTH.zip"
  },
- "fetchedAt": "2026-10-22T12:38:35.240Z",
+ "fetchedAt": "2026-10-23T06:37:34.501Z",
  "slug": "paras-healthcare",
  "symbol": "PARASHLTH",
  "board": "mainboard",
