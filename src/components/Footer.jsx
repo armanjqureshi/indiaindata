@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-ink/15 pt-6 text-xs text-ink/50">
-          <p className="flex items-center gap-2"><img src="/logo-mark.svg" alt="" width="14" height="16" className="h-4 w-auto" />© {new Date().getFullYear()} India in Data · indiaindata.online</p>
+          <p className="flex items-center gap-2"><img src="/logo-64.png" srcSet="/logo-64.png 1x, /logo-128.png 2x" alt="" width="20" height="20" className="h-5 w-5 rounded-sm" />© {new Date().getFullYear()} India in Data · indiaindata.online</p>
           <p>Charts and data free to reuse with attribution.</p>
         </div>
       </div>

@@ -47,7 +47,7 @@ export default function Navbar() {
         }`}
       >
         <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label="India in Data — home">
-          <img src="/logo-mark.svg" alt="" width="29" height="32" className="h-8 w-auto shrink-0" />
+          <img src="/logo-64.png" srcSet="/logo-64.png 1x, /logo-128.png 2x, /logo-256.png 3x" alt="" width="36" height="36" className="h-9 w-9 shrink-0 rounded-md" />
           <span className="font-display text-lg font-semibold leading-none sm:text-xl">
             India <span className="text-brand">in</span> Data
           </span>
