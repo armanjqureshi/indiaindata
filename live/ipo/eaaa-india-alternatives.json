@@ -3,7 +3,7 @@
  "lotSize": 9,
  "faceValue": null,
  "issueType": "Book Building",
- "issueSizeText": "Initial Public Offer comprising of Offer for Sale aggregating upto Rs. 12,000 million",
+ "issueSizeText": "Initial Public Offer comprising of Offer for Sale aggregating upto Rs. 12,000 million (including Anchor reservation portion of 21,62,161 Equity Shares)",
  "issueSize": {
   "freshCr": 0,
   "ofsCr": 1200,
@@ -23,9 +23,10 @@
  "marketTimings": "10.00 a.m. to 5.00 p.m.",
  "documents": {
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_EDELALTS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_EDELALTS.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_EDELALTS.zip"
  },
- "fetchedAt": "2026-10-22T12:38:34.970Z",
+ "fetchedAt": "2026-10-23T17:59:26.247Z",
  "slug": "eaaa-india-alternatives",
  "symbol": "EDELALTS",
  "board": "mainboard",

@@ -14,7 +14,7 @@
     "key": "nii",
     "label": "NII",
     "offered": 3295454,
-    "bid": 2166213,
+    "bid": 2166507,
     "times": 0.66
    },
    {
@@ -28,25 +28,25 @@
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 1098484,
-    "bid": 876330,
+    "bid": 876624,
     "times": 0.8
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 2196969,
-    "bid": 4395573,
+    "bid": 4395615,
     "times": 2
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 12083331,
-    "bid": 26943378,
+    "bid": 26943714,
     "times": 2.23
    }
   ],
-  "asOf": "23-Oct-2026 18:18:00",
+  "asOf": "23-Oct-2026 19:00:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 21,
@@ -74,7 +74,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_PARASHLTH.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_PARASHLTH.zip"
  },
- "fetchedAt": "2026-10-23T12:54:10.683Z",
+ "fetchedAt": "2026-10-23T17:59:31.112Z",
  "slug": "paras-healthcare",
  "symbol": "PARASHLTH",
  "board": "mainboard",
