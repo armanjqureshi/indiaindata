@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
+logo_url: /logo-mark.svg
+
 # Uploaded images (hero photos, author photos) land here and are served as
 # normal static files from the built site.
 media_folder: "public/uploads"
