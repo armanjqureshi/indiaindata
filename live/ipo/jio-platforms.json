@@ -1,66 +1,66 @@
 {
  "subscription": {
-  "total": 6.91,
+  "total": 20.68,
   "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
     "label": "QIB",
     "offered": 49007827,
-    "bid": 708499944,
-    "times": 14.46
+    "bid": 3162484080,
+    "times": 64.53
    },
    {
     "key": "nii",
     "label": "NII",
     "offered": 36444569,
-    "bid": 345423888,
-    "times": 9.48
+    "bid": 509778060,
+    "times": 13.99
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 24296380,
-    "bid": 263877780,
-    "times": 10.86
+    "bid": 386020356,
+    "times": 15.89
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 12148189,
-    "bid": 81546108,
-    "times": 6.71
+    "bid": 123757704,
+    "times": 10.19
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 85037327,
-    "bid": 172173552,
-    "times": 2.02
+    "bid": 229573212,
+    "times": 2.7
    },
    {
     "key": "employee",
     "label": "Employees",
     "offered": 4694835,
-    "bid": 11657436,
-    "times": 2.48
+    "bid": 13657200,
+    "times": 2.91
    },
    {
     "key": "shareholder",
     "label": "Shareholders",
     "offered": 22341376,
-    "bid": 127171092,
-    "times": 5.69
+    "bid": 169277904,
+    "times": 7.58
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 197525934,
-    "bid": 1364925912,
-    "times": 6.91
+    "bid": 4084770456,
+    "times": 20.68
    }
   ],
-  "asOf": "23-Oct-2026 12:03:00",
+  "asOf": "23-Oct-2026 18:18:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 12,
@@ -86,7 +86,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_JPL.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_JPL.zip"
  },
- "fetchedAt": "2026-10-23T06:37:34.754Z",
+ "fetchedAt": "2026-10-23T12:54:11.003Z",
  "slug": "jio-platforms",
  "symbol": "JPL",
  "board": "mainboard",

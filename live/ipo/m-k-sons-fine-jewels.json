@@ -1,0 +1,30 @@
+{
+ "subscription": null,
+ "lotSize": 91,
+ "faceValue": null,
+ "issueType": "100% Book Building",
+ "issueSizeText": "Initial Public offering comprising of Fresh issue up to 1,36,00,000 Equity Shares and offer for sale up to 34,00,000 Equity shares",
+ "issueSize": {
+  "freshCr": 220.32,
+  "ofsCr": 55.08,
+  "totalCr": 275.4,
+  "method": "Calculated at ₹162 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Aryaman Financial Services Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Vinayak Morbale, +91 022 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MKSONS.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MKSONS.zip"
+ },
+ "fetchedAt": "2026-10-23T12:53:50.752Z",
+ "slug": "m-k-sons-fine-jewels",
+ "symbol": "MKSONS",
+ "board": "mainboard",
+ "name": "M. K. Sons Fine Jewels Limited"
+}
