@@ -305,6 +305,19 @@ collections:
         fields:
           - { label: "Intro line", name: "intro", widget: "text" }
 
+      - label: "Corrections log"
+        name: "corrections"
+        file: "content/pages/corrections.json"
+        fields:
+          - label: "Entries"
+            name: "entries"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.page}}"
+            fields:
+              - { label: "Date", name: "date", widget: "string", hint: "YYYY-MM-DD" }
+              - { label: "Page or figure", name: "page", widget: "string" }
+              - { label: "What was wrong and what we changed", name: "what", widget: "text" }
+
       - label: "Site settings"
         name: "site"
         file: "content/settings/site.json"

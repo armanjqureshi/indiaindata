@@ -1,0 +1,19 @@
+{
+  "entries": [
+    {
+      "date": "2026-10-19",
+      "page": "Eight mainboard IPOs in two weeks, led by Jio Platforms",
+      "what": "Two subscription figures came from broker websites and differed from the exchange. Zetwerk Manufacturing Businesses is 3.06 times subscribed (not 3.10) and Fusion CX is 4.45 times (not 4.68), the final consolidated NSE figures. Corrected."
+    },
+    {
+      "date": "2026-10-19",
+      "page": "Indicators: gold and silver",
+      "what": "The previous value used to calculate the daily change compared two different sessions. It now compares one IBJA closing rate with the previous closing rate."
+    },
+    {
+      "date": "2026-10-19",
+      "page": "Market section",
+      "what": "The section showed placeholder values labelled as demo values. They were replaced with official closing levels, updated automatically after each trading session."
+    }
+  ]
+}

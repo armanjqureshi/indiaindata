@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import TickerTape from './components/TickerTape.jsx'
 import Navbar from './components/Navbar.jsx'
+import { Methodology, Corrections, Privacy, Terms, Disclaimer } from './pages/Info.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
 import SectionPage from './pages/SectionPage.jsx'
@@ -54,6 +55,11 @@ export default function App() {
           <Route path="/ipos/:slug" element={<IpoDetailPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/methodology" element={<Methodology />} />
+          <Route path="/corrections" element={<Corrections />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

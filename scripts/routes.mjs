@@ -182,6 +182,16 @@ export function getRoutes() {
     priority: 0.3,
   })
 
+  for (const [slug, title, description, priority] of [
+    ['methodology', 'Methodology', 'Where every figure on India in Data comes from, how often it updates, and the checks we run before publishing.', 0.5],
+    ['corrections', 'Corrections', 'How India in Data handles errors, and a log of corrections.', 0.4],
+    ['privacy', 'Privacy policy', 'What information India in Data collects and who else receives it.', 0.2],
+    ['terms', 'Terms of use', 'The terms for using India in Data, including how you may reuse our charts and data.', 0.2],
+    ['disclaimer', 'Disclaimer', 'India in Data does not give investment advice. Read this before you use our market and IPO information.', 0.3],
+  ]) {
+    routes.push({ path: `/${slug}`, title, description, changefreq: 'monthly', priority })
+  }
+
   routes.push({
     path: '/search',
     title: 'Search',

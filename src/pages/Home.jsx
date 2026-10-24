@@ -201,11 +201,11 @@ export default function Home() {
           <div className="grid items-center gap-8 lg:grid-cols-2">
             <div>
               <h2 className="font-display text-2xl font-semibold sm:text-3xl">
-                The week&rsquo;s most important charts, in your inbox
+                Get the charts that explain India
               </h2>
               <p className="mt-2 text-sm leading-body text-paper/80 sm:text-base">
-                A short, free weekly brief: the data behind India&rsquo;s biggest stories, with no noise
-                and no paywall.
+                We are preparing a short, free brief on the data behind India&rsquo;s biggest stories. Email us
+                to join the list.
               </p>
             </div>
             <NewsletterSignup compact inverse />

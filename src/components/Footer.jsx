@@ -18,7 +18,12 @@ const ABOUT = [
   { label: 'About', to: '/about' },
   { label: 'Who writes this', to: '/about#team' },
   { label: 'Using our work', to: '/about#using-our-work' },
+  { label: 'Methodology', to: '/methodology' },
+  { label: 'Corrections', to: '/corrections' },
   { label: 'Contact', to: '/contact' },
+  { label: 'Privacy policy', to: '/privacy' },
+  { label: 'Terms of use', to: '/terms' },
+  { label: 'Disclaimer', to: '/disclaimer' },
 ]
 
 const SOCIALS = [
@@ -85,7 +90,7 @@ export default function Footer() {
           <div>
             <h2 className="font-display text-lg font-semibold">Sign up for the newsletter</h2>
             <div className="mt-4">
-              <NewsletterSignup inverse />
+              <NewsletterSignup />
             </div>
             <div className="mt-6">
               <p className="text-sm text-ink/70">Follow us</p>
@@ -110,13 +115,13 @@ export default function Footer() {
         {/* Stats band */}
         <div className="mt-12 grid gap-8 border-t border-ink/15 pt-10 sm:grid-cols-3">
           {getSiteStats().map((s) => (
-            <StatBlock key={s.label} value={s.value} label={s.label} inverse />
+            <StatBlock key={s.label} value={s.value} label={s.label} />
           ))}
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-ink/15 pt-6 text-xs text-ink/50">
           <p className="flex items-center gap-2"><img src="/logo-64.png" srcSet="/logo-64.png 1x, /logo-128.png 2x" alt="" width="20" height="20" className="h-5 w-5 rounded-sm" />© {new Date().getFullYear()} India in Data · indiaindata.online</p>
-          <p>Charts and data free to reuse with attribution.</p>
+          <p>Not investment advice. Charts and data free to reuse with attribution.</p>
         </div>
       </div>
     </footer>

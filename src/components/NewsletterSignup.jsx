@@ -1,78 +1,21 @@
-import { useState } from 'react'
+import { CONTACT_EMAIL } from '../data/site.js'
 
-// Newsletter form with client-side validation and a success state.
-// No backend — phase 2 will wire a provider.
+// Honest newsletter prompt: opens an email to the editor. No backend yet.
 export default function NewsletterSignup({ compact = false, inverse = false }) {
-  const [email, setEmail] = useState('')
-  const [error, setError] = useState('')
-  const [done, setDone] = useState(false)
-
-  const submit = () => {
-    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())
-    if (!valid) {
-      setError('Enter a valid email address, like name@example.com.')
-      return
-    }
-    setError('')
-    setDone(true)
-  }
-
-  if (done) {
-    return (
-      <div
-        role="status"
-        className={`rounded-sm border px-4 py-3 text-sm font-medium ${
-          inverse
-            ? 'border-paper/20 bg-paper/15 text-paper'
-            : 'border-market/30 bg-market-light text-market'
-        }`}
-      >
-        Subscribed. Your first data brief arrives this week.
-      </div>
-    )
-  }
-
+  const href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Add me to the India in Data list')}&body=${encodeURIComponent('Please add this address to the India in Data email list.')}`
   return (
     <div>
       {!compact && (
         <p className={`mb-3 text-sm leading-body ${inverse ? 'text-paper/70' : 'text-ink/60'}`}>
-          One email a week. The charts that explain India, and the stories behind them.
+          We do not run an automated newsletter yet. Email us to join the list and we will write when the first edition is ready.
         </p>
       )}
-      <div className="flex flex-col gap-2 sm:flex-row">
-        <label htmlFor={`nl-email-${compact ? 'c' : 'f'}${inverse ? 'i' : ''}`} className="sr-only">
-          Email address
-        </label>
-        <input
-          id={`nl-email-${compact ? 'c' : 'f'}${inverse ? 'i' : ''}`}
-          type="email"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value)
-            if (error) setError('')
-          }}
-          onKeyDown={(e) => e.key === 'Enter' && submit()}
-          placeholder="you@example.com"
-          aria-invalid={!!error}
-          className={`w-full rounded-sm border px-3.5 py-2.5 text-sm outline-none transition-colors focus:border-brand ${
-            inverse
-              ? 'border-paper/25 bg-paper/15 text-paper placeholder:text-paper/50'
-              : 'border-ink/20 bg-panel text-ink placeholder:text-ink/40'
-          } ${error ? 'border-down' : ''}`}
-        />
-        <button
-          type="button"
-          onClick={submit}
-          className="shrink-0 rounded-sm bg-brand px-5 py-2.5 text-sm font-semibold text-paper transition-colors hover:bg-brand-dark"
-        >
-          Subscribe
-        </button>
-      </div>
-      {error && (
-        <p role="alert" className={`mt-2 text-xs font-medium ${inverse ? 'text-red-300' : 'text-down'}`}>
-          {error}
-        </p>
-      )}
+      <a
+        href={href}
+        className={`inline-block rounded-sm px-5 py-2.5 text-sm font-semibold transition-colors ${inverse ? 'bg-paper text-brand hover:bg-paper/90' : 'bg-brand text-paper hover:bg-brand-dark'}`}
+      >
+        Email to join the list
+      </a>
     </div>
   )
 }
