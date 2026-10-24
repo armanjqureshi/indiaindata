@@ -97,6 +97,15 @@ collections:
             fields:
               - { label: "Type", name: "type", widget: "hidden", default: "quote" }
               - { label: "Text", name: "text", widget: "text" }
+          - label: "Table"
+            name: "table"
+            widget: "object"
+            summary: "Table: {{fields.caption}}"
+            fields:
+              - { label: "Type", name: "type", widget: "hidden", default: "table" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+              - { label: "Column headings", name: "columns", widget: "list", field: { label: "Heading", name: "heading", widget: "string" } }
+              - { label: "Rows", name: "rows", widget: "text", hint: "One row per line, cells separated by | (for example: 2024 | 23,644.80 | +8.80%)" }
           - label: "Chart"
             name: "chart"
             widget: "object"

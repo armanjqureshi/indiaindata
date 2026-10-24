@@ -1,8 +1,8 @@
 {
   "id": 9,
   "slug": "nifty-decade-returns",
-  "title": "A decade of Nifty 50 returns, in one chart",
-  "dek": "Ten years, three crashes, one pandemic — and an index that still compounded near 12% a year. The long view on Indian equities.",
+  "title": "Nifty 50 returns in the last 10 years: year-by-year table and CAGR",
+  "dek": "Ten calendar years, all positive, and about 12.6% a year before dividends. Then 2026 so far: down 13.5% with two months to go.",
   "heroImage": null,
   "section": "market",
   "topics": [
@@ -10,55 +10,85 @@
     "economy"
   ],
   "author": "sarah-qureshi",
-  "date": "2026-06-27",
-  "readingTime": 6,
+  "date": "2026-10-25",
+  "readingTime": 4,
   "featured": false,
   "charts": [
     {
       "type": "line",
-      "title": "The long compounding of the Nifty 50",
-      "subtitle": "Nifty 50 index level, year-end close",
-      "source": "NSE historical data; illustrative levels",
+      "title": "Nifty 50 at each year-end, 2015 to 2025",
+      "subtitle": "Closing level, index points",
+      "source": "NSE closing levels as compiled by Forbes India (2015 to 2023) and Samco (2025)",
       "dataKeys": [
         "nifty"
       ],
       "xKey": "year",
       "unit": "",
-      "data": "[{\"year\":\"2016\",\"nifty\":8186},{\"year\":\"2017\",\"nifty\":10531},{\"year\":\"2018\",\"nifty\":10863},{\"year\":\"2019\",\"nifty\":12168},{\"year\":\"2020\",\"nifty\":13982},{\"year\":\"2021\",\"nifty\":17354},{\"year\":\"2022\",\"nifty\":18105},{\"year\":\"2023\",\"nifty\":21731},{\"year\":\"2024\",\"nifty\":23645},{\"year\":\"2025\",\"nifty\":26200}]"
+      "data": "[{\"year\":\"2015\",\"nifty\":7946.35},{\"year\":\"2016\",\"nifty\":8185.8},{\"year\":\"2017\",\"nifty\":10530.7},{\"year\":\"2018\",\"nifty\":10862.55},{\"year\":\"2019\",\"nifty\":12168.45},{\"year\":\"2020\",\"nifty\":13981.75},{\"year\":\"2021\",\"nifty\":17354.05},{\"year\":\"2022\",\"nifty\":18105.3},{\"year\":\"2023\",\"nifty\":21731.4},{\"year\":\"2024\",\"nifty\":23644.8},{\"year\":\"2025\",\"nifty\":26129.6}]"
     },
     {
       "type": "bar",
-      "title": "The same decade, year by year",
-      "subtitle": "Nifty 50 annual return, %",
-      "source": "NSE historical data; illustrative returns",
+      "title": "Nifty 50 calendar-year price return",
+      "subtitle": "Per cent. 2026 is year to date, to 23 October",
+      "source": "Calculated from NSE closing levels; 2026 from the NSE end-of-day index file",
       "dataKeys": [
         "return"
       ],
       "xKey": "year",
       "unit": "%",
-      "data": "[{\"year\":\"2017\",\"return\":28.6},{\"year\":\"2018\",\"return\":3.2},{\"year\":\"2019\",\"return\":12},{\"year\":\"2020\",\"return\":14.9},{\"year\":\"2021\",\"return\":24.1},{\"year\":\"2022\",\"return\":4.3},{\"year\":\"2023\",\"return\":20},{\"year\":\"2024\",\"return\":8.8},{\"year\":\"2025\",\"return\":10.8}]"
+      "data": "[{\"year\":\"2016\",\"return\":3.01},{\"year\":\"2017\",\"return\":28.65},{\"year\":\"2018\",\"return\":3.15},{\"year\":\"2019\",\"return\":12.02},{\"year\":\"2020\",\"return\":14.9},{\"year\":\"2021\",\"return\":24.12},{\"year\":\"2022\",\"return\":4.33},{\"year\":\"2023\",\"return\":20.03},{\"year\":\"2024\",\"return\":8.8},{\"year\":\"2025\",\"return\":10.51},{\"year\":\"2026*\",\"return\":-13.51}]"
     }
   ],
   "body": [
     {
       "type": "paragraph",
-      "text": "Zoom out far enough and every equity market chart looks calm. The Nifty’s past decade included a taper scare, a pandemic crash of nearly 40% and two election-night whipsaws — none of which are visible in the year-end series."
+      "text": "The Nifty 50 returned about 12.6% a year over the last 10 years, from 7,946 at the end of 2015 to 26,130 at the end of 2025. That is the price index alone, before dividends. Every one of those ten calendar years finished higher than it started."
+    },
+    {
+      "type": "heading",
+      "text": "Nifty 50 yearly returns, 2016 to 2025"
+    },
+    {
+      "type": "table",
+      "caption": "Nifty 50 calendar-year price return. Source: NSE closing levels; returns calculated by India in Data.",
+      "columns": [
+        "Year",
+        "Year-end close",
+        "Return"
+      ],
+      "rows": "2016 | 8,185.80 | +3.01%\n2017 | 10,530.70 | +28.65%\n2018 | 10,862.55 | +3.15%\n2019 | 12,168.45 | +12.02%\n2020 | 13,981.75 | +14.90%\n2021 | 17,354.05 | +24.12%\n2022 | 18,105.30 | +4.33%\n2023 | 21,731.40 | +20.03%\n2024 | 23,644.80 | +8.80%\n2025 | 26,129.60 | +10.51%"
     },
     {
       "type": "chart",
       "chartIndex": 0
     },
     {
-      "type": "heading",
-      "text": "The distribution behind the average"
-    },
-    {
       "type": "paragraph",
-      "text": "The annual returns are where the honest story lives. “About 12% a year” is an average almost never delivered in any single year; the actual sequence lurches between near-zero and near-30."
+      "text": "The 10-year average hides a wide spread. The best year was 2017 at +28.65%. The weakest was 2016 at +3.01%, and two other years (2018 and 2022) also returned less than 5%. In 2020 the index fell almost 40% from its January high to its March low, and still ended the year up 14.9%."
     },
     {
       "type": "chart",
       "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "What the 10-year number leaves out"
+    },
+    {
+      "type": "paragraph",
+      "text": "These are price returns. The Nifty 50 total return index adds the dividends paid by index companies, so it runs higher than the price index. Returns also depend on the start and end dates: the same index measured from the end of 2016 or the end of 2017 gives a different average."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 2015 start matters too. The index fell 4.06% that year, so a 10-year window starting from the 2015 close begins from a low base."
+    },
+    {
+      "type": "heading",
+      "text": "2026 so far"
+    },
+    {
+      "type": "paragraph",
+      "text": "At 22,600 on 23 October, the Nifty 50 is 13.5% below its 2025 year-end close of 26,130. If it finishes the year below that level, it would be the first down calendar year since 2015, ending a run of ten straight gains. There are still two months of trading left, so the final figure will differ."
     },
     {
       "type": "quote",
@@ -66,8 +96,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The structural change beneath the index is domestic ownership. Monthly SIP flows now provide a bid that did not exist a decade ago, which has visibly dampened the drawdowns that foreign outflows used to cause."
+      "text": "Sources: year-end closing levels for 2015 to 2023 from Forbes India’s Nifty 50 history table, the 2025 close and annual gain from Samco’s calendar-year review, 2024 and 2026 levels from NSE data. Annual returns and the 12.6% compound rate are our calculations from those closing levels."
     }
   ],
-  "draft": true
+  "draft": false
 }

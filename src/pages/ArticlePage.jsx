@@ -141,6 +141,34 @@ export default function ArticlePage() {
                 </blockquote>
               )
             }
+            if (block.type === 'table') {
+              const rows = String(block.rows || '').split('\n').map((r) => r.split('|').map((c) => c.trim())).filter((r) => r.length > 1)
+              return (
+                <figure key={i} className="my-8">
+                  <div className="overflow-x-auto rounded-sm border border-ink/10">
+                    <table className="w-full text-left text-sm">
+                      <thead className="bg-raise text-xs text-ink/70">
+                        <tr>
+                          {(block.columns || []).map((c, j) => (
+                            <th key={j} className={`p-3 font-semibold ${j > 0 ? 'text-right' : ''}`}>{c}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {rows.map((r, ri) => (
+                          <tr key={ri} className="border-t border-ink/10">
+                            {r.map((c, j) => (
+                              <td key={j} className={`p-3 ${j > 0 ? 'num text-right' : 'font-semibold'}`}>{c}</td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {block.caption && <figcaption className="mt-2 text-xs text-ink/60">{block.caption}</figcaption>}
+                </figure>
+              )
+            }
             if (block.type === 'chart') {
               const chart = article.charts[block.chartIndex]
               if (!chart) return null

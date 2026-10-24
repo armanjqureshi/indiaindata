@@ -12,6 +12,7 @@ import SearchPage from './pages/SearchPage.jsx'
 import IndicatorsPage from './pages/IndicatorsPage.jsx'
 import IndicatorCategoryPage from './pages/IndicatorCategoryPage.jsx'
 import IndicatorDetailPage from './pages/IndicatorDetailPage.jsx'
+import IpoSubscriptionPage from './pages/IpoSubscriptionPage.jsx'
 import IposPage from './pages/IposPage.jsx'
 import IpoDetailPage from './pages/IpoDetailPage.jsx'
 import About from './pages/About.jsx'
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="/indicators/category/:slug" element={<IndicatorCategoryPage />} />
           <Route path="/indicators/:slug" element={<IndicatorDetailPage />} />
           <Route path="/ipos" element={<IposPage />} />
+          <Route path="/ipo-subscription-status" element={<IpoSubscriptionPage />} />
           <Route path="/ipos/:slug" element={<IpoDetailPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

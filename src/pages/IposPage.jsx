@@ -142,7 +142,8 @@ export default function IposPage() {
           <p className="mt-3 max-w-2xl text-base leading-body text-ink/70">
             Every mainboard and SME IPO on NSE, with subscription by investor category, price bands, lot
             sizes, timetables and how each issue has traded since listing. Figures come from NSE and
-            refresh several times a day while issues are open.
+            refresh several times a day while issues are open.{' '}
+            <Link to="/ipo-subscription-status" className="font-semibold text-brand hover:underline">IPO subscription status today</Link>.
           </p>
           <p className="num mt-3 text-xs text-ink/50">
             Updated {data.updatedAt ? new Date(data.updatedAt).toLocaleString('en-IN', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata' }) + ' IST' : '—'}

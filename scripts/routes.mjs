@@ -182,6 +182,14 @@ export function getRoutes() {
     priority: 0.3,
   })
 
+  routes.push({
+    path: '/ipo-subscription-status',
+    title: 'IPO subscription status today',
+    description: 'Subscription status of IPOs open now on NSE, upcoming issues and recently closed IPOs, with the consolidated NSE and BSE subscription multiple. Updated through the bidding day.',
+    changefreq: 'daily',
+    priority: 0.8,
+  })
+
   for (const [slug, title, description, priority] of [
     ['methodology', 'Methodology', 'Where every figure on India in Data comes from, how often it updates, and the checks we run before publishing.', 0.5],
     ['corrections', 'Corrections', 'How India in Data handles errors, and a log of corrections.', 0.4],
