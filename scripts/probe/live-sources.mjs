@@ -1,8 +1,10 @@
 // One-off probe: can the CI runner reach intraday index sources, and how fresh are they?
 // Read-only. Prints results; writes nothing.
+import fs from 'node:fs'
 import { createNseSession, fetchText } from '../data/http.mjs'
 
-const out = (k, v) => console.log(`\n=== ${k} ===\n${typeof v === 'string' ? v : JSON.stringify(v, null, 1)}`)
+const results = {}
+const out = (k, v) => { results[k] = v; console.log(`\n=== ${k} ===\n${typeof v === 'string' ? v : JSON.stringify(v, null, 1)}`) }
 const now = new Date()
 out('runner time', { utc: now.toISOString(), ist: new Date(+now + 5.5 * 36e5).toISOString().replace('Z', ' IST') })
 
@@ -31,3 +33,6 @@ try {
 } catch (e) {
   out('Moneycontrol Sensex feed', { ok: false, error: String(e.message || e) })
 }
+
+fs.mkdirSync('live/debug', { recursive: true })
+fs.writeFileSync('live/debug/probe-live.json', JSON.stringify(results, null, 1))
