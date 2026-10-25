@@ -330,6 +330,7 @@ collections:
               - { label: "Source (name it)", name: "source", widget: "string" }
               - { label: "Source link", name: "sourceUrl", widget: "string", required: false }
               - { label: "As of date", name: "asOf", widget: "string", hint: "YYYY-MM-DD" }
+              - { label: "Time (IST, optional)", name: "time", widget: "string", required: false, hint: "For example 14:30" }
               - { label: "Note", name: "note", widget: "text", required: false }
 
       - label: "Corrections log"

@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts'
 import useSeo from '../components/Seo.jsx'
 import NotFound from './NotFound.jsx'
 import { useIpos, useGmp, gmpFor, useLive, useTodayIST, ipoStatus, istDateOf, fetchLive, fmt, getDetailSnapshot, getRowSnapshot } from '../data/live.js'
@@ -36,12 +37,19 @@ export default function IpoGmpPage() {
   const pct = latest && price ? (latest.gmp / price) * 100 : null
   const implied = latest && price ? price + latest.gmp : null
   const sub = detail?.subscription
+  const perLot = latest && row.lotSize ? latest.gmp * row.lotSize : null
+  const series = [...history].reverse().map((e) => ({ label: fmt.shortDate(e.asOf) + (e.time ? ` ${e.time}` : ''), gmp: e.gmp }))
+  const prev = history.length > 1 ? history[1] : null
+  const delta = latest && prev ? latest.gmp - prev.gmp : null
+  const trend = delta === null ? null : delta > 0 ? 'Rising' : delta < 0 ? 'Falling' : 'Unchanged'
   const listing = row.timetable?.listing
   const open = status === 'open' || status === 'upcoming' || status === 'closed'
 
   const faqs = [
     [`What is the ${name} IPO GMP today?`, latest ? `The latest grey market premium we have for ${name} is ${latest.gmp > 0 ? '+' : ''}${fmt.rupees(latest.gmp)} per share${pct !== null ? `, about ${fmt.pct(pct)} of the ${fmt.rupees(price)} ${row.issuePrice ? 'issue price' : 'upper price band'}` : ''}, reported by ${latest.source} on ${fmt.date(latest.asOf)}. It is unofficial and may have changed since.` : `We do not have a grey market premium for ${name} from a source we can name. When one is reported it will appear on this page with its source and date.`],
     [`What is the expected listing price of ${name}?`, implied ? `Adding the reported GMP to the ${row.issuePrice ? 'issue price' : 'upper price band'} gives an implied grey market price of about ${fmt.rupees(implied)}. That is an illustration of what the grey market was saying. It is not a forecast, and the real listing price can be very different.` : `With no reported GMP there is no implied listing price. The ${row.issuePrice ? 'issue price' : 'price band'} is ${priceLabel(row)}.`],
+    [`What is the gain per lot at the current GMP?`, perLot !== null ? `One lot is ${fmt.inr(row.lotSize, 0)} shares. At a GMP of ${fmt.rupees(latest.gmp)} the grey market gain is about ${fmt.rupees(perLot)} per lot, before brokerage and tax. It only matters if the shares list at that price, which GMP does not guarantee.` : 'We need both a reported GMP and the lot size to show this. It will appear once a GMP is reported.'],
+    [`Is the ${name} GMP rising or falling?`, trend ? `Compared with the previous report, it is ${trend.toLowerCase()}${delta ? ` (${delta > 0 ? '+' : ''}${fmt.rupees(delta)})` : ''}. A change between two reports is not a trend, and GMP can reverse within hours.` : 'We have one report so far, so we cannot say. A trend needs at least two dated reports.'],
     [`When does ${name} list?`, listing ? `${name} is expected to list on ${fmt.date(listing)}${row.timetable?.expected?.listing ? ', based on the SEBI T+3 timetable. The exchange confirms the date.' : '.'}` : 'The listing date has not been announced yet.'],
     ['Is GMP guaranteed?', 'No. GMP is an unofficial, unverified figure from dealers in an informal market. It can change within hours and has often been far from the actual listing price. Read the offer document and do not rely on GMP alone. This is not investment advice.'],
   ]
@@ -67,9 +75,15 @@ export default function IpoGmpPage() {
                 <span className={`num text-4xl font-semibold ${gainClass(latest.gmp)}`}>{latest.gmp > 0 ? '+' : ''}{fmt.rupees(latest.gmp)}</span>
                 {pct !== null && <span className={`num text-xl font-semibold ${gainClass(pct)}`}>{fmt.pct(pct)}</span>}
                 {implied && <span className="text-sm text-ink/70">implied price <span className="num font-semibold text-ink">{fmt.rupees(implied)}</span></span>}
+                {trend && <span className={`rounded-[2px] px-1.5 py-0.5 text-xs font-semibold ${trend === 'Rising' ? 'bg-up/15 text-up' : trend === 'Falling' ? 'bg-down/15 text-down' : 'bg-ink/10 text-ink/70'}`}>{trend}{delta ? ` ${delta > 0 ? '+' : ''}${fmt.rupees(delta)} since previous report` : ''}</span>}
               </p>
+              {perLot !== null && (
+                <p className="mt-2 text-sm text-ink/80">
+                  Illustrative grey market gain per lot ({fmt.inr(row.lotSize, 0)} shares): <span className={`num font-semibold ${gainClass(perLot)}`}>{perLot > 0 ? '+' : ''}{fmt.rupees(perLot)}</span>, before costs and tax. Not a profit you can count on.
+                </p>
+              )}
               <p className="mt-2 text-sm text-ink/70">
-                Per {latest.sourceUrl ? <a href={latest.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">{latest.source}</a> : latest.source}, {fmt.date(latest.asOf)}.
+                Per {latest.sourceUrl ? <a href={latest.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">{latest.source}</a> : latest.source}, {fmt.date(latest.asOf)}{latest.time ? `, ${latest.time} IST` : ''}.
                 {latest.note ? ` ${latest.note}` : ''}
               </p>
             </>
@@ -89,11 +103,11 @@ export default function IpoGmpPage() {
             [row.issuePrice ? 'Issue price' : 'Price band', priceLabel(row)],
             ['Lot size', row.lotSize ? `${fmt.inr(row.lotSize, 0)} shares${row.lotValue ? `, ${fmt.rupees(row.lotValue)}` : ''}` : '—'],
             ['Bidding', dateRange(row)],
+            ['Allotment', row.timetable?.allotment ? `${fmt.date(row.timetable.allotment)}${row.timetable.expected?.allotment ? ' (expected)' : ''}` : '—'],
             ['Listing', listing ? `${fmt.date(listing)}${row.timetable?.expected?.listing ? ' (expected)' : ''}` : '—'],
             ['Issue size', detail?.issueSize?.totalCr ? fmt.crore(detail.issueSize.totalCr) : row.sizeCr ? fmt.crore(row.sizeCr) : '—'],
             ['Subscribed', sub?.total != null ? fmt.times(sub.total) : status === 'upcoming' ? 'Not open yet' : '—'],
             ['Status', { open: 'Open for bidding', upcoming: 'Upcoming', closed: 'Awaiting listing', listed: 'Listed' }[status] || '—'],
-            ['Listing gain', row.listingGainPct != null ? fmt.pct(row.listingGainPct) : '—'],
           ].map(([l, v]) => (
             <div key={l} className="bg-panel p-3">
               <p className="text-xs text-ink/60">{l}</p>
@@ -101,6 +115,23 @@ export default function IpoGmpPage() {
             </div>
           ))}
         </div>
+
+        <H>{name} GMP trend</H>
+        {series.length > 1 ? (
+          <div className="h-64 w-full rounded-sm border border-ink/10 bg-panel p-3" role="img" aria-label={`${name} reported GMP over time`}>
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={series} margin={{ top: 8, right: 16, left: 0, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="currentColor" strokeOpacity={0.12} />
+                <XAxis dataKey="label" tick={{ fontSize: 11, fill: 'currentColor' }} stroke="currentColor" strokeOpacity={0.3} />
+                <YAxis tick={{ fontSize: 11, fill: 'currentColor' }} stroke="currentColor" strokeOpacity={0.3} width={48} tickFormatter={(v) => `₹${v}`} />
+                <Tooltip formatter={(v) => [`₹${v}`, 'GMP']} contentStyle={{ background: 'var(--tw-panel, #12202c)', border: '1px solid rgba(255,255,255,0.15)', fontSize: 12 }} />
+                <Line type="monotone" dataKey="gmp" stroke="#ff9a3c" strokeWidth={2} dot={{ r: 3 }} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        ) : (
+          <p className="text-sm leading-body text-ink/70">The trend chart appears once there are two or more reported figures. Each report is dated and sourced.</p>
+        )}
 
         {history.length > 1 && (
           <>
@@ -118,7 +149,7 @@ export default function IpoGmpPage() {
                 <tbody>
                   {history.map((e, k) => (
                     <tr key={k} className="border-b border-ink/10 last:border-0">
-                      <td className="num px-3 py-2">{fmt.date(e.asOf)}</td>
+                      <td className="num px-3 py-2">{fmt.date(e.asOf)}{e.time ? ` ${e.time}` : ''}</td>
                       <td className="num px-3 py-2 text-right">{e.gmp > 0 ? '+' : ''}{fmt.rupees(e.gmp)}</td>
                       <td className="num px-3 py-2 text-right">{price ? fmt.pct((e.gmp / price) * 100) : '—'}</td>
                       <td className="px-3 py-2 text-xs">{e.sourceUrl ? <a href={e.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">{e.source}</a> : e.source}</td>

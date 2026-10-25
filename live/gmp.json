@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T01:00:00.000Z",
+  "updatedAt": "2026-10-25T01:10:00.000Z",
   "entries": [
     {
       "slug": "jio-platforms",
@@ -8,6 +8,14 @@
       "sourceUrl": "https://www.businesstoday.in/personal-finance/story/jio-platforms-ipo-gmp-at-21-what-could-investors-earn-on-listing-day-563403-2026-10-23",
       "asOf": "2026-10-24",
       "note": "Published 24 Oct 2026. The publisher does not name where the grey market figure came from."
+    },
+    {
+      "slug": "eaaa-india-alternatives",
+      "gmp": 121,
+      "source": "Investorgain",
+      "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
+      "asOf": "2026-10-24",
+      "note": "Latest figure shown on that page on 25 Oct 2026."
     }
   ]
 }
