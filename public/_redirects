@@ -1,3 +1,4 @@
 # IPO pages not prerendered at build time fall back to a client-rendered shell.
 # (Netlify only applies this when no file exists at the path.)
 /ipos/*  /ipo-shell.html  200
+/ipo-gmp/*  /ipo-shell.html  200

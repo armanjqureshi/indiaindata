@@ -166,6 +166,24 @@ export function getRoutes() {
     })
   }
 
+  // One GMP page per current mainboard issue (open, upcoming, awaiting listing, and
+  // the two weeks after listing), so people searching "<company> IPO GMP" land on it.
+  const gmpCutoff = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10)
+  for (const ipo of ipoList) {
+    if (ipo.board !== 'mainboard') continue
+    const current = ['open', 'upcoming', 'closed'].includes(ipo.status) || (ipo.status === 'listed' && ipo.listingDate >= gmpCutoff)
+    if (!current) continue
+    const name = (ipo.name || '').replace(/\s+Limited$/i, '')
+    routes.push({
+      path: `/ipo-gmp/${ipo.slug}`,
+      title: `${name} IPO GMP today: grey market premium and listing price`,
+      description: `${name} IPO GMP today: reported grey market premium with its source and date, implied listing price, price band, lot size, subscription status and listing date. Unofficial figure, not a forecast.`,
+      changefreq: 'daily',
+      priority: 0.7,
+      lastmod: ipo.close || ipo.open,
+    })
+  }
+
   routes.push({
     path: '/about',
     title: 'About',

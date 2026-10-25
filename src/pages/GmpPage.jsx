@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
-import { useIpos, useGmp, useTodayIST, ipoStatus, istDateOf, fmt } from '../data/live.js'
+import { useIpos, useGmp, gmpFor, useTodayIST, ipoStatus, istDateOf, fmt } from '../data/live.js'
 import { gainClass } from '../components/ipo/ipoUtil.js'
 
 const H = ({ children }) => <h2 className="mb-3 mt-10 font-display text-2xl font-semibold">{children}</h2>
@@ -22,7 +22,7 @@ export default function GmpPage() {
   const gmp = useGmp()
   const today = useTodayIST(istDateOf(data.updatedAt))
   const ipos = data.ipos.map((i) => ({ ...i, status: ipoStatus(i, today) }))
-  const bySlug = Object.fromEntries((gmp.entries || []).map((e) => [e.slug, e]))
+  const bySlug = new Proxy({}, { get: (_, slug) => gmpFor(gmp.entries, String(slug)).latest || undefined })
 
   const rank = { open: 0, upcoming: 1, closed: 2 }
   const rows = ipos
@@ -68,7 +68,7 @@ export default function GmpPage() {
                 const p = pct(i, e)
                 return (
                   <tr key={i.slug} className="border-b border-ink/10 align-top last:border-0">
-                    <td className="px-3 py-2.5"><Link to={`/ipos/${i.slug}`} className="font-semibold hover:text-brand">{i.name.replace(/\s+Limited$/i, '')}</Link></td>
+                    <td className="px-3 py-2.5"><Link to={`/ipo-gmp/${i.slug}`} className="font-semibold hover:text-brand">{i.name.replace(/\s+Limited$/i, '')} GMP</Link></td>
                     <td className="whitespace-nowrap px-3 py-2.5">{label[i.status]}</td>
                     <td className="num whitespace-nowrap px-3 py-2.5">{fmt.shortDate(i.open)} – {fmt.shortDate(i.close)}</td>
                     <td className="num px-3 py-2.5 text-right">{price(i) ? fmt.rupees(price(i)) : '—'}</td>

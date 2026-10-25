@@ -13,6 +13,7 @@ import IndicatorsPage from './pages/IndicatorsPage.jsx'
 import IndicatorCategoryPage from './pages/IndicatorCategoryPage.jsx'
 import IndicatorDetailPage from './pages/IndicatorDetailPage.jsx'
 import GmpPage from './pages/GmpPage.jsx'
+import IpoGmpPage from './pages/IpoGmpPage.jsx'
 import IpoSubscriptionPage from './pages/IpoSubscriptionPage.jsx'
 import IposPage from './pages/IposPage.jsx'
 import IpoDetailPage from './pages/IpoDetailPage.jsx'
@@ -55,6 +56,7 @@ export default function App() {
           <Route path="/indicators/:slug" element={<IndicatorDetailPage />} />
           <Route path="/ipos" element={<IposPage />} />
           <Route path="/ipo-gmp" element={<GmpPage />} />
+          <Route path="/ipo-gmp/:slug" element={<IpoGmpPage />} />
           <Route path="/ipo-subscription-status" element={<IpoSubscriptionPage />} />
           <Route path="/ipos/:slug" element={<IpoDetailPage />} />
           <Route path="/about" element={<About />} />

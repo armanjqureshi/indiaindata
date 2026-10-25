@@ -110,6 +110,12 @@ export function useGmp() {
   }, [])
   return d
 }
+// Latest reported GMP for an issue (entries are a log: later asOf wins, ties go to the later row)
+export function gmpFor(entries, slug) {
+  const all = (entries || []).map((e, i) => ({ e, i })).filter(({ e }) => e.slug === slug)
+  all.sort((a, b) => (a.e.asOf || '').localeCompare(b.e.asOf || '') || a.i - b.i)
+  return { latest: all.length ? all[all.length - 1].e : null, history: all.map(({ e }) => e).reverse() }
+}
 export const useIpos = () => useLive('live/ipos.json', getIposSnapshot())
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------

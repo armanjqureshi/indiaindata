@@ -4,7 +4,7 @@ import useSeo from '../components/Seo.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
 import NotFound from './NotFound.jsx'
 import { useEffect } from 'react'
-import { useGmp, useLiveState, useLive, useTodayIST, ipoStatus, getDetailSnapshot, getRowSnapshot, fetchLive, fmt, istDateOf, getMeta } from '../data/live.js'
+import { useGmp, gmpFor, useLiveState, useLive, useTodayIST, ipoStatus, getDetailSnapshot, getRowSnapshot, fetchLive, fmt, istDateOf, getMeta } from '../data/live.js'
 import { getIpoEditorial, getArticlesForIpo } from '../data/content.js'
 import { BOARD_LABEL, STATUS_CLASS, STATUS_LABEL, priceLabel, gainClass, allotmentLinks } from '../components/ipo/ipoUtil.js'
 
@@ -122,7 +122,7 @@ export default function IpoDetailPage() {
   const price = row.issuePrice || row.priceHigh
   const size = detail?.issueSize
   const sub = detail?.subscription
-  const gmpEntry = (gmpData.entries || []).find((e) => e.slug === row.slug)
+  const gmpEntry = gmpFor(gmpData.entries, row.slug).latest
   const related = ed ? getArticlesForIpo(ed, 3) : []
 
   return (
@@ -184,7 +184,7 @@ export default function IpoDetailPage() {
               <p className="mt-2 text-sm text-ink/70">No grey market premium reported yet from a source we can name.</p>
             )}
             <p className="mt-2 text-xs text-ink/60">
-              GMP is unofficial and unverified, and not a forecast of the listing price. See <Link to="/ipo-gmp" className="text-brand hover:underline">IPO GMP today</Link>.
+              GMP is unofficial and unverified, and not a forecast of the listing price. See <Link to={`/ipo-gmp/${row.slug}`} className="text-brand hover:underline">{name} GMP history</Link> and <Link to="/ipo-gmp" className="text-brand hover:underline">all IPO GMPs</Link>.
             </p>
           </section>
         )}
