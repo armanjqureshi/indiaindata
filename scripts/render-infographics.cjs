@@ -9,8 +9,17 @@ const slugs = process.argv.slice(2).length ? process.argv.slice(2) : ['fpi-sello
     const p = await b.newPage({ viewport: { width: 1200, height: 1600 }, deviceScaleFactor: 2 })
     await p.goto(`http://localhost:4173/infographics/${slug}/`)
     await p.waitForSelector('svg[role=img]')
-    const svg = p.locator('svg[role=img]').first()
-    await svg.screenshot({ path: `public/infographics/${slug}.png` })
+    // show only the infographic, at its native 1200px width (fonts stay loaded from <head>)
+    await p.evaluate(() => {
+      const svg = document.querySelector('svg[role=img]').cloneNode(true)
+      svg.style.width = '1200px'
+      document.body.innerHTML = ''
+      document.body.style.margin = '0'
+      document.body.appendChild(svg)
+    })
+    await p.evaluate(() => document.fonts.ready)
+    await p.waitForTimeout(300)
+    await p.locator('svg[role=img]').first().screenshot({ path: `public/infographics/${slug}.png` })
     // social card: top 1200x630 of the image (needs python3 with Pillow)
     require('child_process').execFileSync('python3', ['-c', `from PIL import Image
 im = Image.open('public/infographics/${slug}.png')
