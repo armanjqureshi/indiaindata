@@ -11,6 +11,7 @@ const BROWSE = [
   { label: 'Indicators', to: '/indicators' },
   { label: 'IPOs', to: '/ipos' },
   { label: 'IPO subscription status', to: '/ipo-subscription-status' },
+  { label: 'IPO GMP today', to: '/ipo-gmp' },
   { label: 'Economy', to: '/topic/economy' },
   { label: 'Society', to: '/topic/society' },
 ]

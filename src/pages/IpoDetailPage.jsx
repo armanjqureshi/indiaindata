@@ -4,7 +4,7 @@ import useSeo from '../components/Seo.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
 import NotFound from './NotFound.jsx'
 import { useEffect } from 'react'
-import { useLiveState, useLive, useTodayIST, ipoStatus, getDetailSnapshot, getRowSnapshot, fetchLive, fmt, istDateOf, getMeta } from '../data/live.js'
+import { useGmp, useLiveState, useLive, useTodayIST, ipoStatus, getDetailSnapshot, getRowSnapshot, fetchLive, fmt, istDateOf, getMeta } from '../data/live.js'
 import { getIpoEditorial, getArticlesForIpo } from '../data/content.js'
 import { BOARD_LABEL, STATUS_CLASS, STATUS_LABEL, priceLabel, gainClass, allotmentLinks } from '../components/ipo/ipoUtil.js'
 
@@ -105,6 +105,7 @@ export default function IpoDetailPage() {
       })
   }, [done, fromIndex, slug])
   const row = fromIndex || archiveRow || null
+  const gmpData = useGmp()
   const detail = useLive(`live/ipo/${slug}.json`, getDetailSnapshot(slug) || null)
   const today = useTodayIST(istDateOf(index.updatedAt || getMeta().iposUpdatedAt))
   const ed = row ? getIpoEditorial(row.symbol, slug) : null
@@ -121,6 +122,7 @@ export default function IpoDetailPage() {
   const price = row.issuePrice || row.priceHigh
   const size = detail?.issueSize
   const sub = detail?.subscription
+  const gmpEntry = (gmpData.entries || []).find((e) => e.slug === row.slug)
   const related = ed ? getArticlesForIpo(ed, 3) : []
 
   return (
@@ -168,6 +170,24 @@ export default function IpoDetailPage() {
             </div>
           )
         })()}
+
+        {status !== 'listed' && status !== 'unlisted' && row.board === 'mainboard' && (
+          <section className="mt-8 rounded-sm border border-ink/10 bg-panel p-4">
+            <h2 className="text-lg font-bold">{name} IPO GMP</h2>
+            {gmpEntry && price ? (
+              <p className="mt-2 text-sm leading-body">
+                Reported grey market premium: <span className="num font-semibold">{gmpEntry.gmp > 0 ? '+' : ''}{fmt.rupees(gmpEntry.gmp)}</span> per share
+                (<span className="num">{fmt.pct((gmpEntry.gmp / price) * 100)}</span> of the {fmt.rupees(price)} {row.issuePrice ? 'issue price' : 'upper price band'}), per{' '}
+                {gmpEntry.sourceUrl ? <a href={gmpEntry.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">{gmpEntry.source}</a> : gmpEntry.source}, {fmt.date(gmpEntry.asOf)}.
+              </p>
+            ) : (
+              <p className="mt-2 text-sm text-ink/70">No grey market premium reported yet from a source we can name.</p>
+            )}
+            <p className="mt-2 text-xs text-ink/60">
+              GMP is unofficial and unverified, and not a forecast of the listing price. See <Link to="/ipo-gmp" className="text-brand hover:underline">IPO GMP today</Link>.
+            </p>
+          </section>
+        )}
 
         <section className="mt-8">
           <h2 className="mb-3 text-lg font-bold">Timetable</h2>

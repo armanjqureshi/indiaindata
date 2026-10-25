@@ -314,6 +314,24 @@ collections:
         fields:
           - { label: "Intro line", name: "intro", widget: "text" }
 
+      - label: "IPO grey market premium"
+        name: "gmp"
+        file: "live/gmp.json"
+        fields:
+          - { label: "Last updated (UTC)", name: "updatedAt", widget: "string", hint: "ISO time, e.g. 2026-10-26T04:30:00.000Z. Update it whenever you edit." }
+          - label: "Entries"
+            name: "entries"
+            widget: "list"
+            summary: "{{fields.slug}}: {{fields.gmp}} ({{fields.asOf}})"
+            hint: "One row per IPO. Use the slug from the IPO page address (indiaindata.online/ipos/<slug>). GMP is in rupees per share, not a percent."
+            fields:
+              - { label: "IPO slug", name: "slug", widget: "string" }
+              - { label: "GMP (rupees per share)", name: "gmp", widget: "number", value_type: "float" }
+              - { label: "Source (name it)", name: "source", widget: "string" }
+              - { label: "Source link", name: "sourceUrl", widget: "string", required: false }
+              - { label: "As of date", name: "asOf", widget: "string", hint: "YYYY-MM-DD" }
+              - { label: "Note", name: "note", widget: "text", required: false }
+
       - label: "Corrections log"
         name: "corrections"
         file: "content/pages/corrections.json"

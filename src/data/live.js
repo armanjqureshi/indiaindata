@@ -38,6 +38,7 @@ function snap(key) {
     const v =
       kind === 'market' ? serverSource.market
       : kind === 'ipos' ? serverSource.ipos
+      : kind === 'gmp' ? serverSource.gmp
       : kind === 'meta' ? serverSource.meta
       : kind === 'ipo' ? serverSource.details[arg] ?? null
       : kind === 'row' ? serverSource.rowsBySlug[arg] ?? null
@@ -50,6 +51,7 @@ function snap(key) {
 export const getMarketSnapshot = () => snap('market') || { items: {}, history: {} }
 export const getIposSnapshot = () => snap('ipos') || { ipos: [] }
 export const getMeta = () => snap('meta') || {}
+export const getGmpSnapshot = () => snap('gmp') || { entries: [] }
 export const getDetailSnapshot = (slug) => snap('ipo:' + slug)
 export const getRowSnapshot = (slug) => snap('row:' + slug)
 
@@ -94,6 +96,20 @@ export function useLiveState(path, snapshot) {
 export const useLive = (path, snapshot) => useLiveState(path, snapshot).data
 
 export const useMarket = () => useLive('live/market.json', getMarketSnapshot())
+// GMP is edited by hand and changes during the day: read the GitHub raw copy
+// (about 5 minutes of cache) rather than the CDN, which can lag for hours.
+export function useGmp() {
+  const [d, setD] = useState(getGmpSnapshot())
+  useEffect(() => {
+    let on = true
+    fetch(`https://raw.githubusercontent.com/${REPO}/main/live/gmp.json`, { cache: 'no-cache' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => on && j && Array.isArray(j.entries) && setD(j))
+      .catch(() => {})
+    return () => { on = false }
+  }, [])
+  return d
+}
 export const useIpos = () => useLive('live/ipos.json', getIposSnapshot())
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------

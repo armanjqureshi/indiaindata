@@ -183,6 +183,14 @@ export function getRoutes() {
   })
 
   routes.push({
+    path: '/ipo-gmp',
+    title: 'IPO GMP today: grey market premium for upcoming IPOs',
+    description: 'Reported grey market premium (GMP) for open, upcoming and unlisted IPOs, with the source and time of each figure, and a record of how GMP compared with actual listing gains.',
+    changefreq: 'daily',
+    priority: 0.8,
+  })
+
+  routes.push({
     path: '/ipo-subscription-status',
     title: 'IPO subscription status today',
     description: 'Subscription status of IPOs open now on NSE, upcoming issues and recently closed IPOs, with the consolidated NSE and BSE subscription multiple. Updated through the bidding day.',
