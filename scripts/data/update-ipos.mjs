@@ -94,6 +94,31 @@ for (const e of past) upsert(e)
 for (const e of upcoming) upsert(e)
 for (const e of current) upsert(e)
 
+// NSE removes an issue from its current list when bidding ends and adds it to past
+// issues only after listing. Keep unlisted issues from the previous run in between,
+// so they do not disappear for the days before listing.
+for (const p of prevIndex.ipos) {
+  const key = p.symbol + '|' + p.board
+  if (bySym.has(key)) continue
+  if (p.status === 'listed' || p.status === 'unlisted') continue
+  if (!p.close || p.close < addDays(today, -30)) continue
+  bySym.set(key, {
+    symbol: p.symbol,
+    board: p.board,
+    series: p.series || null,
+    name: p.name,
+    open: p.open,
+    close: p.close,
+    priceLow: p.priceLow ?? null,
+    priceHigh: p.priceHigh ?? null,
+    issuePrice: p.issuePrice ?? null,
+    listingDate: p.listingDate || null,
+    sharesOffered: p.sharesOffered ?? null,
+    nseStatus: p.nseStatus || null,
+  })
+  log.notes.push(`kept ${p.symbol}: not in NSE lists, bidding closed ${p.close}, not yet listed`)
+}
+
 // --- 2. lifecycle status and timetable ---------------------------------------------------
 function timetable(ipo) {
   const t = { open: ipo.open, close: ipo.close, allotment: null, refunds: null, demat: null, listing: ipo.listingDate, expected: {} }
