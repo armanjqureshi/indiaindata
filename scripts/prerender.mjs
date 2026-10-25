@@ -26,7 +26,7 @@ function injectMeta(html, route) {
   const description = route.description || ''
   const canonical = `${SITE_URL}${route.path === '/' ? '' : route.path}`
 
-  return html
+  let out = html
     .replace(/<title id="seo-title">.*?<\/title>/, `<title id="seo-title">${escapeHtml(fullTitle)}</title>`)
     .replace(
       /(<meta id="seo-description"[^>]*content=")[^"]*(")/,
@@ -41,6 +41,13 @@ function injectMeta(html, route) {
       `$1${escapeHtml(description)}$2`
     )
     .replace(/(<link id="seo-canonical"[^>]*href=")[^"]*(")/, `$1${canonical}$2`)
+  if (route.image) {
+    const img = SITE_URL + route.image
+    out = out
+      .replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${img}$2`)
+      .replace(/(<meta name="twitter:image" content=")[^"]*(")/, `$1${img}$2`)
+  }
+  return out
 }
 
 async function main() {

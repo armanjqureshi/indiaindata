@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { to: '/blogs', label: 'Blogs' },
   { to: '/indicators', label: 'Indicators' },
   { to: '/ipos', label: 'IPOs' },
+  { to: '/infographics', label: 'Infographics' },
   { to: '/about', label: 'About' },
 ]
 

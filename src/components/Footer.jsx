@@ -10,6 +10,7 @@ const BROWSE = [
   { label: 'Blogs', to: '/blogs' },
   { label: 'Indicators', to: '/indicators' },
   { label: 'IPOs', to: '/ipos' },
+  { label: 'Infographics', to: '/infographics' },
   { label: 'IPO subscription status', to: '/ipo-subscription-status' },
   { label: 'IPO GMP today', to: '/ipo-gmp' },
   { label: 'Economy', to: '/topic/economy' },

@@ -66,6 +66,18 @@ function readIpos() {
   return JSON.parse(fs.readFileSync(f, 'utf-8')).ipos || []
 }
 
+// Infographics (keep in sync with src/infographics/registry.js)
+const INFOGRAPHICS_META = [
+  {
+    slug: 'fpi-selloff-october-2026',
+    title: 'Foreign investors pulled ₹48,056 crore out of Indian shares in 15 days',
+    dek: '92% of the selling came in the first six sessions of the month. Since 12 October the net flow has been small.',
+    source: 'NSDL trends in FPI investment (equity, all routes); NSE provisional FII/DII data',
+    ogImage: '/infographics/fpi-selloff-october-2026-og.png',
+    date: '2026-10-25',
+  },
+]
+
 export function getRoutes() {
   const settings = readJson('settings/site.json')
   const articles = readArticles()
@@ -199,6 +211,25 @@ export function getRoutes() {
     changefreq: 'yearly',
     priority: 0.3,
   })
+
+  routes.push({
+    path: '/infographics',
+    title: 'Infographics: India in data, one picture at a time',
+    description: 'Designed, shareable infographics on India’s markets, economy and society, built from official data. Download the image or embed it with credit.',
+    changefreq: 'weekly',
+    priority: 0.7,
+  })
+  for (const g of INFOGRAPHICS_META) {
+    routes.push({
+      path: `/infographics/${g.slug}`,
+      title: g.title,
+      description: `${g.dek} Source: ${g.source}.`,
+      image: g.ogImage,
+      changefreq: 'monthly',
+      priority: 0.7,
+      lastmod: g.date,
+    })
+  }
 
   routes.push({
     path: '/ipo-gmp',
