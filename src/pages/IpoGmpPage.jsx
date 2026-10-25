@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts'
+import { ResponsiveContainer, LineChart, Line, BarChart, Bar, Cell, XAxis, YAxis, Tooltip, CartesianGrid, LabelList } from 'recharts'
 import useSeo from '../components/Seo.jsx'
 import NotFound from './NotFound.jsx'
 import { useIpos, useGmp, gmpFor, useLive, useTodayIST, ipoStatus, istDateOf, fetchLive, fmt, getDetailSnapshot, getRowSnapshot } from '../data/live.js'
@@ -116,7 +116,7 @@ export default function IpoGmpPage() {
           ))}
         </div>
 
-        <H>{name} GMP trend</H>
+        <H>{name} GMP chart</H>
         {series.length > 1 ? (
           <div className="h-64 w-full rounded-sm border border-ink/10 bg-panel p-3" role="img" aria-label={`${name} reported GMP over time`}>
             <ResponsiveContainer width="100%" height="100%">
@@ -129,8 +129,29 @@ export default function IpoGmpPage() {
               </LineChart>
             </ResponsiveContainer>
           </div>
+        ) : implied && row.priceLow ? (
+          <>
+            <div className="h-64 w-full rounded-sm border border-ink/10 bg-panel p-3" role="img" aria-label={`${name} price band against the implied grey market price`}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={[
+                  { label: 'Lower band', v: row.priceLow, c: '#6b8aa6' },
+                  { label: row.issuePrice ? 'Issue price' : 'Upper band', v: price, c: '#6b8aa6' },
+                  { label: 'Implied by GMP', v: implied, c: '#ff9a3c' },
+                ].filter((d, k) => !(row.issuePrice && k === 0))} margin={{ top: 22, right: 16, left: 0, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="currentColor" strokeOpacity={0.12} vertical={false} />
+                  <XAxis dataKey="label" tick={{ fontSize: 11, fill: 'currentColor' }} stroke="currentColor" strokeOpacity={0.3} />
+                  <YAxis tick={{ fontSize: 11, fill: 'currentColor' }} stroke="currentColor" strokeOpacity={0.3} width={56} domain={[0, 'dataMax']} tickFormatter={(v) => `₹${v}`} />
+                  <Bar dataKey="v" radius={[2, 2, 0, 0]}>
+                    {[0, 1, 2].map((k) => <Cell key={k} fill={k === 2 ? '#ff9a3c' : '#6b8aa6'} />)}
+                    <LabelList dataKey="v" position="top" formatter={(v) => `₹${Number(v).toLocaleString('en-IN')}`} style={{ fontSize: 11, fill: 'currentColor' }} />
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+            <p className="mt-2 text-xs text-ink/60">One report so far, so this shows the price band against the price the reported GMP implies. The trend line appears once there are two or more dated reports.</p>
+          </>
         ) : (
-          <p className="text-sm leading-body text-ink/70">The trend chart appears once there are two or more reported figures. Each report is dated and sourced.</p>
+          <p className="text-sm leading-body text-ink/70">The chart appears once a GMP is reported. With two or more dated reports it becomes a trend line.</p>
         )}
 
         {history.length > 1 && (
