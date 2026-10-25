@@ -1,0 +1,98 @@
+{
+  "id": 130,
+  "slug": "march-2026-war-shock-markets",
+  "title": "March 2026, the month the Gulf war reached Dalal Street",
+  "dek": "The Nifty 50 fell 11.3% in March and India VIX doubled. The ceasefire on 8 April brought the best day of the spring, but October has since taken the index lower.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 4,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "line",
+      "title": "Five weeks of selling, one day of relief",
+      "subtitle": "Nifty 50 daily close, 20 February to 15 April 2026",
+      "source": "NSE index closing levels, compiled by India in Data",
+      "xKey": "date",
+      "dataKeys": [
+        "Nifty 50"
+      ],
+      "unit": "",
+      "data": "[{\"date\":\"02-20\",\"Nifty 50\":25571.25},{\"date\":\"02-23\",\"Nifty 50\":25713},{\"date\":\"02-24\",\"Nifty 50\":25424.65},{\"date\":\"02-25\",\"Nifty 50\":25482.5},{\"date\":\"02-26\",\"Nifty 50\":25496.55},{\"date\":\"02-27\",\"Nifty 50\":25178.65},{\"date\":\"03-02\",\"Nifty 50\":24865.7},{\"date\":\"03-04\",\"Nifty 50\":24480.5},{\"date\":\"03-05\",\"Nifty 50\":24765.9},{\"date\":\"03-06\",\"Nifty 50\":24450.45},{\"date\":\"03-09\",\"Nifty 50\":24028.05},{\"date\":\"03-10\",\"Nifty 50\":24261.6},{\"date\":\"03-11\",\"Nifty 50\":23866.85},{\"date\":\"03-12\",\"Nifty 50\":23639.15},{\"date\":\"03-13\",\"Nifty 50\":23151.1},{\"date\":\"03-16\",\"Nifty 50\":23408.8},{\"date\":\"03-17\",\"Nifty 50\":23581.15},{\"date\":\"03-18\",\"Nifty 50\":23777.8},{\"date\":\"03-19\",\"Nifty 50\":23002.15},{\"date\":\"03-20\",\"Nifty 50\":23114.5},{\"date\":\"03-23\",\"Nifty 50\":22512.65},{\"date\":\"03-24\",\"Nifty 50\":22912.4},{\"date\":\"03-25\",\"Nifty 50\":23306.45},{\"date\":\"03-27\",\"Nifty 50\":22819.6},{\"date\":\"03-30\",\"Nifty 50\":22331.4},{\"date\":\"04-01\",\"Nifty 50\":22679.4},{\"date\":\"04-02\",\"Nifty 50\":22713.1},{\"date\":\"04-06\",\"Nifty 50\":22968.25},{\"date\":\"04-07\",\"Nifty 50\":23123.65},{\"date\":\"04-08\",\"Nifty 50\":23997.35},{\"date\":\"04-09\",\"Nifty 50\":23775.1},{\"date\":\"04-10\",\"Nifty 50\":24050.6},{\"date\":\"04-13\",\"Nifty 50\":23842.65},{\"date\":\"04-15\",\"Nifty 50\":24231.3}]"
+    },
+    {
+      "type": "line",
+      "title": "Expected volatility doubled",
+      "subtitle": "India VIX daily close, 20 February to 15 April 2026",
+      "source": "NSE, compiled by India in Data",
+      "xKey": "date",
+      "dataKeys": [
+        "India VIX"
+      ],
+      "unit": "",
+      "data": "[{\"date\":\"02-20\",\"India VIX\":14.36},{\"date\":\"02-23\",\"India VIX\":14.17},{\"date\":\"02-24\",\"India VIX\":14.15},{\"date\":\"02-25\",\"India VIX\":13.49},{\"date\":\"02-26\",\"India VIX\":13.06},{\"date\":\"02-27\",\"India VIX\":13.7},{\"date\":\"03-02\",\"India VIX\":17.13},{\"date\":\"03-04\",\"India VIX\":21.14},{\"date\":\"03-05\",\"India VIX\":17.86},{\"date\":\"03-06\",\"India VIX\":19.88},{\"date\":\"03-09\",\"India VIX\":23.36},{\"date\":\"03-10\",\"India VIX\":18.91},{\"date\":\"03-11\",\"India VIX\":21.06},{\"date\":\"03-12\",\"India VIX\":21.52},{\"date\":\"03-13\",\"India VIX\":22.65},{\"date\":\"03-16\",\"India VIX\":21.6},{\"date\":\"03-17\",\"India VIX\":19.79},{\"date\":\"03-18\",\"India VIX\":18.72},{\"date\":\"03-19\",\"India VIX\":22.8},{\"date\":\"03-20\",\"India VIX\":22.81},{\"date\":\"03-23\",\"India VIX\":26.73},{\"date\":\"03-24\",\"India VIX\":24.74},{\"date\":\"03-25\",\"India VIX\":24.64},{\"date\":\"03-27\",\"India VIX\":26.8},{\"date\":\"03-30\",\"India VIX\":27.89},{\"date\":\"04-01\",\"India VIX\":25.01},{\"date\":\"04-02\",\"India VIX\":25.52},{\"date\":\"04-06\",\"India VIX\":25.47},{\"date\":\"04-07\",\"India VIX\":24.7},{\"date\":\"04-08\",\"India VIX\":19.7},{\"date\":\"04-09\",\"India VIX\":20.43},{\"date\":\"04-10\",\"India VIX\":18.85},{\"date\":\"04-13\",\"India VIX\":20.5},{\"date\":\"04-15\",\"India VIX\":18.67}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The Strait of Hormuz, through which about a fifth of the world’s oil passes, was effectively shut from late February 2026 as war spread in the Gulf. The International Energy Agency called it the largest supply disruption in the history of the oil market. India, which buys about half its crude from the Middle East and imports about 60% of its cooking gas, felt it in fuel queues within days. Its stock market felt it too."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Down in 11 of 19 sessions"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Nifty 50 closed February at 25,178.65. On 2 March, as oil jumped more than 10%, it fell 1.2%. By 30 March it was at 22,331.40, down 11.3% for the month, having fallen in 11 of the month’s 19 sessions. The steepest single-day falls came on 19 March (−3.3%) and 23 March (−2.6%)."
+    },
+    {
+      "type": "paragraph",
+      "text": "India VIX, which measures the volatility traders expect over the next month, rose from 13.70 at the end of February to 27.89 on 30 March, its highest close of the year."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "The government stepped in"
+    },
+    {
+      "type": "paragraph",
+      "text": "On 27 March the government cut excise duty on petrol and diesel by ₹10 a litre to hold pump prices, and raised export duties on diesel and aviation fuel to keep supplies at home. LPG, most of which comes through the strait, was the first fuel to run short. Some Gujarat ceramics units shut for lack of gas, and many Mumbai restaurants closed fully or partly in early March."
+    },
+    {
+      "type": "heading",
+      "text": "Relief, then a relapse"
+    },
+    {
+      "type": "paragraph",
+      "text": "A ceasefire was announced on 8 April. The Nifty rose 3.8% that day, from 23,123.65 to 23,997.35, its biggest gain of the spring, and VIX fell from 24.70 to 19.70. Shipping through the strait stayed well below pre-war levels."
+    },
+    {
+      "type": "paragraph",
+      "text": "The relief did not last. Renewed attacks on shipping and energy facilities from September pushed oil back above $100, and on 8 October the Nifty closed at 22,231.80, below its March low."
+    },
+    {
+      "type": "quote",
+      "text": "March was the shock. October is the test of whether markets can live with oil above $100."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: NSE index closing levels compiled by India in Data; war, oil and policy timeline from the Wikipedia article “2026 Iran war fuel crisis”, which cites the IEA and government announcements. Not investment advice."
+    }
+  ]
+}

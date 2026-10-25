@@ -1,0 +1,90 @@
+{
+  "id": 131,
+  "slug": "brent-spot-doubled-since-july",
+  "title": "Brent spot doubled in three months, and has now spent 34 trading days above $100",
+  "dek": "The physical price of Brent fell to $68.53 on 2 July and hit $135.51 on 2 October. September’s import bill shows what that means for India.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 4,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "line",
+      "title": "Brent spot since late April",
+      "subtitle": "Europe Brent spot price, US$ a barrel, every third trading day",
+      "source": "US Energy Information Administration, compiled by India in Data",
+      "xKey": "date",
+      "dataKeys": [
+        "Brent"
+      ],
+      "unit": " $/bbl",
+      "data": "[{\"date\":\"04-27\",\"Brent\":113.89},{\"date\":\"04-30\",\"Brent\":124.24},{\"date\":\"05-06\",\"Brent\":103.7},{\"date\":\"05-11\",\"Brent\":106.11},{\"date\":\"05-14\",\"Brent\":110.91},{\"date\":\"05-19\",\"Brent\":114.64},{\"date\":\"05-22\",\"Brent\":106.9},{\"date\":\"05-28\",\"Brent\":95.47},{\"date\":\"06-02\",\"Brent\":98.49},{\"date\":\"06-05\",\"Brent\":97.29},{\"date\":\"06-10\",\"Brent\":95.73},{\"date\":\"06-15\",\"Brent\":84.36},{\"date\":\"06-18\",\"Brent\":79.35},{\"date\":\"06-23\",\"Brent\":75.69},{\"date\":\"06-26\",\"Brent\":70.16},{\"date\":\"07-01\",\"Brent\":69.24},{\"date\":\"07-06\",\"Brent\":69.56},{\"date\":\"07-09\",\"Brent\":74.46},{\"date\":\"07-14\",\"Brent\":83.69},{\"date\":\"07-17\",\"Brent\":85.01},{\"date\":\"07-22\",\"Brent\":94.12},{\"date\":\"07-27\",\"Brent\":91.82},{\"date\":\"07-30\",\"Brent\":91.91},{\"date\":\"08-04\",\"Brent\":86.47},{\"date\":\"08-07\",\"Brent\":87.62},{\"date\":\"08-12\",\"Brent\":92.52},{\"date\":\"08-17\",\"Brent\":92.43},{\"date\":\"08-20\",\"Brent\":94},{\"date\":\"08-25\",\"Brent\":88.24},{\"date\":\"08-28\",\"Brent\":89.75},{\"date\":\"09-03\",\"Brent\":100.52},{\"date\":\"09-08\",\"Brent\":106.12},{\"date\":\"09-11\",\"Brent\":118.06},{\"date\":\"09-16\",\"Brent\":127.84},{\"date\":\"09-21\",\"Brent\":116.15},{\"date\":\"09-24\",\"Brent\":120.92},{\"date\":\"09-29\",\"Brent\":113.96},{\"date\":\"10-02\",\"Brent\":135.51},{\"date\":\"10-07\",\"Brent\":126},{\"date\":\"10-12\",\"Brent\":129.95},{\"date\":\"10-15\",\"Brent\":126.35},{\"date\":\"10-20\",\"Brent\":115.22}]"
+    },
+    {
+      "type": "bar",
+      "title": "Monthly average",
+      "subtitle": "Europe Brent spot price, US$ a barrel; October to the 20th",
+      "source": "US Energy Information Administration, compiled by India in Data",
+      "xKey": "month",
+      "dataKeys": [
+        "Average"
+      ],
+      "unit": " $/bbl",
+      "data": "[{\"month\":\"May\",\"Average\":107.14},{\"month\":\"Jun\",\"Average\":85.4},{\"month\":\"Jul\",\"Average\":83.76},{\"month\":\"Aug\",\"Average\":91.08},{\"month\":\"Sep\",\"Average\":114.16},{\"month\":\"Oct\",\"Average\":124.96}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Oil had seemed to be calming down by early summer. The Europe Brent spot price, the price for physical cargoes published by the US Energy Information Administration, fell from $124 at the end of April to $68.53 on 2 July. Three months later, on 2 October, it was $135.51, almost exactly double."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "Brent spot has closed above $100 on every trading day from 3 September to 20 October, the latest EIA data point: 34 trading days in a row. The September average was $114.16 and October to the 20th averaged $124.96, the highest monthly average in the data we hold from late April."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "Spot and futures have come apart"
+    },
+    {
+      "type": "paragraph",
+      "text": "The spot price is not the number most news reports quote. Brent futures for December delivery settled at $108.82 on 21 October and $113.17 on 22 October, their highest since late April, after strikes on Saudi infrastructure and on tankers in the Gulf. Spot was $115.22 on 20 October. When physical oil costs more than oil for later delivery, it usually means supply available now is scarce."
+    },
+    {
+      "type": "heading",
+      "text": "What it costs India"
+    },
+    {
+      "type": "paragraph",
+      "text": "India imports most of its crude, and about half of it has come from the Middle East. In September its merchandise imports were $74.61 billion and the trade deficit widened to $30.21 billion, from $26.86 billion in August. Wholesale inflation reached 11.39% in September and retail inflation 5.54%, and on 7 October the RBI raised the repo rate to 5.50%, its first increase since February 2023."
+    },
+    {
+      "type": "paragraph",
+      "text": "The rupee has absorbed part of the shock. It was at 94.94 to the dollar on 23 October, and the RBI’s foreign exchange reserves have fallen by $64.7 billion since early September."
+    },
+    {
+      "type": "quote",
+      "text": "Each month of $115 oil is another month of a $30 billion trade gap."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: US Energy Information Administration, Europe Brent spot price FOB (daily, to 20 October 2026); Brent futures settlement from DTN, 22 October 2026; trade data from the Ministry of Commerce (September 2026, via Business Today); inflation from MoSPI and the Office of the Economic Adviser; FBIL reference rate; RBI. Not investment advice."
+    }
+  ]
+}

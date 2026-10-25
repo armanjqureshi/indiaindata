@@ -28,21 +28,23 @@ function ChartBody({ chart, accent }) {
   const margin = { top: 8, right: 12, bottom: 4, left: 0 }
 
   if (chart.type === 'line') {
+    const multi = chart.dataKeys.length > 1
     return (
       <ResponsiveContainer width="100%" height={height}>
         <LineChart data={chart.data} margin={margin}>
           <CartesianGrid stroke={gridStroke} vertical={false} />
           <XAxis dataKey={chart.xKey} tick={axisStyle} tickLine={false} axisLine={{ stroke: 'rgb(var(--ink) / 0.2)' }} />
           <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={60} domain={['auto', 'auto']} tickFormatter={(v) => Number(v).toLocaleString('en-IN')} />
-          <Tooltip formatter={(v) => [`${Number(v).toLocaleString('en-IN')}${chart.unit || ''}`]} />
-          {chart.dataKeys.map((k) => (
+          <Tooltip formatter={(v, name) => [`${Number(v).toLocaleString('en-IN')}${chart.unit || ''}`, multi ? name : undefined]} />
+          {multi && <Legend wrapperStyle={{ fontSize: 12 }} />}
+          {chart.dataKeys.map((k, i) => (
             <Line
               key={k}
               type="monotone"
               dataKey={k}
-              stroke={accent}
+              stroke={multi ? STACK_PALETTE[i] : accent}
               strokeWidth={2.5}
-              dot={chart.data.length <= 24 ? { r: 3, fill: accent, strokeWidth: 0 } : false}
+              dot={chart.data.length <= 24 ? { r: 3, fill: multi ? STACK_PALETTE[i] : accent, strokeWidth: 0 } : false}
               activeDot={{ r: 5 }}
             />
           ))}
@@ -69,6 +71,8 @@ function ChartBody({ chart, accent }) {
 
   if (chart.type === 'bar') {
     const multi = chart.dataKeys.length > 1
+    const maxAbs = Math.max(0, ...chart.data.flatMap((d) => chart.dataKeys.map((k) => Math.abs(Number(d[k]) || 0))))
+    const yWidth = Math.max(44, String(Math.round(maxAbs).toLocaleString('en-IN')).length * 8 + 16)
     return (
       <ResponsiveContainer width="100%" height={height}>
         <BarChart data={chart.data} margin={margin}>
@@ -83,8 +87,8 @@ function ChartBody({ chart, accent }) {
             textAnchor={chart.data.length > 6 ? 'end' : 'middle'}
             height={chart.data.length > 6 ? 60 : 30}
           />
-          <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={44} />
-          <Tooltip formatter={(v) => [`${v}${chart.unit || ''}`]} cursor={{ fill: 'rgb(var(--ink) / 0.05)' }} />
+          <YAxis tick={axisStyle} tickLine={false} axisLine={false} width={yWidth} tickFormatter={(v) => Number(v).toLocaleString('en-IN')} />
+          <Tooltip formatter={(v) => [`${Number(v).toLocaleString('en-IN')}${chart.unit || ''}`]} cursor={{ fill: 'rgb(var(--ink) / 0.05)' }} />
           {multi && <Legend wrapperStyle={{ fontSize: 12 }} />}
           {chart.dataKeys.map((k, i) => (
             <Bar key={k} dataKey={k} fill={multi ? STACK_PALETTE[i] : accent} radius={[3, 3, 0, 0]} maxBarSize={56} />

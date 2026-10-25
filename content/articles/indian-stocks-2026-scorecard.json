@@ -1,0 +1,111 @@
+{
+  "id": 129,
+  "slug": "indian-stocks-2026-scorecard",
+  "title": "In 2026 India’s biggest companies fell the most: Nifty down 13.5%, small caps down 1.8%",
+  "dek": "All three fell together in March. Small caps then rallied 30% to September; the Nifty 50 never recovered and hit a new low for the year on 8 October.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 4,
+  "featured": true,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "2026 so far, by index",
+      "subtitle": "Change from the 31 December 2025 close to the 23 October 2026 close, %",
+      "source": "NSE index closing levels, compiled by India in Data",
+      "xKey": "index",
+      "dataKeys": [
+        "Change"
+      ],
+      "unit": "%",
+      "data": "[{\"index\":\"Nifty IT\",\"Change\":-15.5},{\"index\":\"Nifty 50\",\"Change\":-13.5},{\"index\":\"Nifty Bank\",\"Change\":-8.9},{\"index\":\"Midcap 150\",\"Change\":-7.6},{\"index\":\"Smallcap 250\",\"Change\":-1.8}]"
+    },
+    {
+      "type": "line",
+      "title": "Same fall in March, different paths after",
+      "subtitle": "Month-end close, rebased to 100 on 31 December 2025",
+      "source": "NSE index closing levels, compiled by India in Data",
+      "xKey": "month",
+      "dataKeys": [
+        "Nifty 50",
+        "Midcap 150",
+        "Smallcap 250"
+      ],
+      "unit": "",
+      "data": "[{\"month\":\"Dec 25\",\"Nifty 50\":100.0,\"Midcap 150\":100.0,\"Smallcap 250\":100.0},{\"month\":\"Jan\",\"Nifty 50\":96.9,\"Midcap 150\":96.5,\"Smallcap 250\":94.5},{\"month\":\"Feb\",\"Nifty 50\":96.4,\"Midcap 150\":98.1,\"Smallcap 250\":95.2},{\"month\":\"Mar\",\"Nifty 50\":85.5,\"Midcap 150\":87.2,\"Smallcap 250\":85.6},{\"month\":\"Apr\",\"Nifty 50\":91.8,\"Midcap 150\":98.8,\"Smallcap 250\":100.3},{\"month\":\"May\",\"Nifty 50\":90.1,\"Midcap 150\":101.3,\"Smallcap 250\":101.8},{\"month\":\"Jun\",\"Nifty 50\":91.3,\"Midcap 150\":102.2,\"Smallcap 250\":106.2},{\"month\":\"Jul\",\"Nifty 50\":93.3,\"Midcap 150\":103.9,\"Smallcap 250\":107.4},{\"month\":\"Aug\",\"Nifty 50\":92.2,\"Midcap 150\":105.7,\"Smallcap 250\":110.1},{\"month\":\"Sep\",\"Nifty 50\":86.6,\"Midcap 150\":98.2,\"Smallcap 250\":106.7},{\"month\":\"23 Oct\",\"Nifty 50\":86.5,\"Midcap 150\":92.4,\"Smallcap 250\":98.2}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The usual rule in Indian markets is that small companies fall harder in a sell-off. 2026 has gone the other way. From the last close of 2025 to 23 October 2026, the Nifty 50 fell 13.5% and the Nifty IT index 15.5%, while the Nifty Smallcap 250 lost 1.8% and the Midcap 150 7.6%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "March hit everything equally"
+    },
+    {
+      "type": "paragraph",
+      "text": "In January and February the indices moved roughly together. When the war in the Gulf began disrupting oil supply in March, all three fell by about the same amount: by 30 March the Nifty 50 was 14.5% below its 2025 close, the Smallcap 250 14.4% and the Midcap 150 12.8%."
+    },
+    {
+      "type": "paragraph",
+      "text": "The split came in the recovery. The Smallcap 250 rose 30.2% from its low on 23 March to a high of 18,527 on 8 September, ending August 10% above where it started the year. The Nifty 50 recovered only part of its March fall: its best close after March, 24,774.30 on 3 August, was still 5.2% below where it ended 2025."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "October has been worse than March for the Nifty"
+    },
+    {
+      "type": "paragraph",
+      "text": "September undid much of the small-cap rally, and the Smallcap 250 is now 11.6% below its September high. The Nifty 50 kept falling: its close of 22,231.80 on 8 October was its lowest of the year, below the 22,331.40 it reached on 30 March."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Index",
+        "31 Dec 2025",
+        "23 Oct 2026",
+        "Change",
+        "2026 high"
+      ],
+      "rows": "Nifty 50 | 26,129.60 | 22,600.00 | −13.5% | 26,328.55 (2 Jan)\nNifty IT | 37,884.05 | 31,995.50 | −15.5% | 39,086.65 (16 Jan)\nNifty Bank | 59,581.85 | 54,287.35 | −8.9% | 61,550.80 (18 Feb)\nNifty Midcap 150 | 22,276.90 | 20,592.75 | −7.6% | 23,539.35 (13 Aug)\nNifty Smallcap 250 | 16,684.75 | 16,385.15 | −1.8% | 18,527.20 (8 Sep)",
+      "caption": "Closing levels. Source: NSE."
+    },
+    {
+      "type": "heading",
+      "text": "Why the big companies lagged"
+    },
+    {
+      "type": "paragraph",
+      "text": "Foreign portfolio investors have been heavy sellers this year: about ₹3.12 lakh crore of net selling by 18 October, almost twice their outflow in all of 2025. Foreign money is concentrated in the largest, most liquid companies, so their selling lands hardest on the Nifty 50. Domestic institutions have kept buying: ₹10,942 crore in the four sessions to 23 October alone."
+    },
+    {
+      "type": "paragraph",
+      "text": "IT is the weakest of the major indices. Its 2026 low on 1 July was 34% below its January high. Banks fell less than the Nifty as a whole."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fear has eased since March but not gone. India VIX, the market’s measure of expected volatility, closed 2025 at 9.48 and peaked at 27.89 on 30 March. It was 16.86 on 23 October, still 78% above where it began the year."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: NSE index closing levels collected daily by India in Data; FPI flows from NSDL as reported to 18 October 2026. Not investment advice."
+    }
+  ]
+}

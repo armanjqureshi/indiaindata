@@ -1,0 +1,109 @@
+{
+  "id": 127,
+  "slug": "ipos-below-issue-price",
+  "title": "More than half of the IPOs listed in 2024 and 2025 now trade below their issue price",
+  "dek": "Of 282 mainboard issues listed since January 2024, 138 closed below their issue price on 23 October. 86 of them had opened above it.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 4,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Share of each year’s IPOs now below the issue price",
+      "subtitle": "Mainboard IPOs by year of listing, % trading below issue price at the 23 October 2026 close",
+      "source": "India in Data analysis of NSE issue data and end-of-day prices",
+      "xKey": "year",
+      "dataKeys": [
+        "Below issue price"
+      ],
+      "unit": "%",
+      "data": "[{\"year\":\"2021\",\"Below issue price\":52},{\"year\":\"2022\",\"Below issue price\":43},{\"year\":\"2023\",\"Below issue price\":47},{\"year\":\"2024\",\"Below issue price\":55},{\"year\":\"2025\",\"Below issue price\":54},{\"year\":\"2026\",\"Below issue price\":39}]"
+    },
+    {
+      "type": "bar",
+      "title": "The median return since issue",
+      "subtitle": "Mainboard IPOs by year of listing, % change from issue price to the 23 October 2026 close",
+      "source": "India in Data analysis of NSE issue data and end-of-day prices",
+      "xKey": "year",
+      "dataKeys": [
+        "Median return"
+      ],
+      "unit": "%",
+      "data": "[{\"year\":\"2021\",\"Median return\":-6.0},{\"year\":\"2022\",\"Median return\":19.0},{\"year\":\"2023\",\"Median return\":21.3},{\"year\":\"2024\",\"Median return\":-3.9},{\"year\":\"2025\",\"Median return\":-12.2},{\"year\":\"2026\",\"Median return\":9.5}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A good listing day does not mean a good investment. Of the 282 mainboard IPOs listed on NSE since January 2024 for which we have a current price, 138, or 49%, closed below their issue price on 23 October 2026. Eighty-six of those had opened above their issue price on listing day."
+    },
+    {
+      "type": "paragraph",
+      "text": "For each IPO we compared the issue price with the closing price on 23 October 2026. These are price returns only. They leave out dividends."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "The 2024 and 2025 classes are underwater"
+    },
+    {
+      "type": "paragraph",
+      "text": "Of the 2024 class, 55% trade below their issue price and the median issue is down 3.9%. The 2025 class is worse on the median: 54% are below issue and the typical issue is down 12.2%. About a third of both years’ issues are down 30% or more."
+    },
+    {
+      "type": "paragraph",
+      "text": "Older classes have had time to recover or compound. The median 2022 issue is up 19% and the median 2023 issue is up 21.3%, though even there almost half trade below the issue price. The 2021 class, which listed at the top of the last IPO boom, still has a median return of −6.0% five years on."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Listing year",
+        "Issues with a price",
+        "Below issue price",
+        "Down 30% or more",
+        "Doubled or better"
+      ],
+      "rows": "2021 | 58 | 52% | 36% | 28%\n2022 | 35 | 43% | 31% | 31%\n2023 | 55 | 47% | 33% | 25%\n2024 | 86 | 55% | 33% | 12%\n2025 | 98 | 54% | 34% | 10%\n2026 | 98 | 39% | 13% | 8%",
+      "caption": "Mainboard IPOs. Price at the 23 October 2026 close against the issue price."
+    },
+    {
+      "type": "heading",
+      "text": "Why 2026 looks better, for now"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 2026 class is the exception, with a median return of +9.5% and 39% below issue, even though the Nifty 50 is down 13.5% this year. Part of that is time: a recent listing has had fewer months to drift, and it is too early to judge the class."
+    },
+    {
+      "type": "paragraph",
+      "text": "The returns are skewed. A small number of issues that doubled or better lift the averages, while the typical issue does much worse. That is why we report the median, the middle issue, rather than the mean."
+    },
+    {
+      "type": "heading",
+      "text": "SME issues"
+    },
+    {
+      "type": "paragraph",
+      "text": "SME issues show the same pattern: 55% of the 2024 SME class and 53% of the 2025 class trade below issue price. Our SME price coverage is less complete, because some SME shares trade rarely or have moved boards, so we treat those figures as indicative."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: NSE public issue data and NSE end-of-day price files, compiled by India in Data. Returns exclude dividends and corporate actions not reflected in prices. Not investment advice."
+    }
+  ]
+}

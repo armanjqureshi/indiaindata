@@ -1,0 +1,100 @@
+{
+  "id": 132,
+  "slug": "forex-reserves-fall-64-billion",
+  "title": "India’s forex reserves have fallen $64.7 billion in six weeks",
+  "dek": "Reserves peaked at a record $785.71 billion in early September. By 16 October they were $721.02 billion, after six straight weekly falls.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "economy",
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 4,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "line",
+      "title": "Six weeks, six falls",
+      "subtitle": "Foreign exchange reserves, US$ billion, week ended",
+      "source": "RBI Weekly Statistical Supplement, as reported by PTI and AIR",
+      "xKey": "week",
+      "dataKeys": [
+        "Reserves"
+      ],
+      "unit": " $bn",
+      "data": "[{\"week\":\"4 Sep\",\"Reserves\":785.71},{\"week\":\"11 Sep\",\"Reserves\":780.78},{\"week\":\"18 Sep\",\"Reserves\":765.9},{\"week\":\"25 Sep\",\"Reserves\":747.5},{\"week\":\"2 Oct\",\"Reserves\":734.6},{\"week\":\"9 Oct\",\"Reserves\":726.03},{\"week\":\"16 Oct\",\"Reserves\":721.02}]"
+    },
+    {
+      "type": "bar",
+      "title": "The weekly drop",
+      "subtitle": "Change in foreign exchange reserves, US$ billion, week ended",
+      "source": "RBI Weekly Statistical Supplement, as reported by PTI and AIR",
+      "xKey": "week",
+      "dataKeys": [
+        "Change"
+      ],
+      "unit": " $bn",
+      "data": "[{\"week\":\"11 Sep\",\"Change\":-4.9},{\"week\":\"18 Sep\",\"Change\":-14.88},{\"week\":\"25 Sep\",\"Change\":-18.3},{\"week\":\"2 Oct\",\"Change\":-12.95},{\"week\":\"9 Oct\",\"Change\":-8.58},{\"week\":\"16 Oct\",\"Change\":-5.01}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "India’s foreign exchange reserves reached a record $785.71 billion in the week ended 4 September 2026. Six weekly falls later, they stood at $721.02 billion on 16 October, down $64.7 billion, or 8.2%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "The largest drops came in the second half of September, when reserves fell $14.88 billion in the week to 18 September and $18.3 billion in the week to 25 September. Brent crude went above $100 again in early September and stayed there, and foreign investors sold Indian shares heavily through late September and early October."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "Not all of it is the RBI selling dollars"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reserves fall when the RBI sells dollars to steady the rupee, but also when the value of what it holds changes. Reserves include euros, yen and gold, so a stronger dollar or a fall in gold prices shrinks them without any intervention. In the week to 25 September, for example, gold holdings fell $2.5 billion and foreign currency assets $15.5 billion."
+    },
+    {
+      "type": "paragraph",
+      "text": "Foreign currency assets, the largest part, were $591.85 billion on 16 October, against $615.4 billion three weeks earlier. Gold holdings were $105.8 billion, up $706 million in the latest week."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Week ended",
+        "Reserves ($bn)",
+        "Weekly change ($bn)"
+      ],
+      "rows": "4 Sep | 785.71 | record\n11 Sep | 780.78 | −4.9\n18 Sep | 765.90 | −14.88\n25 Sep | 747.50 | −18.3\n2 Oct | 734.60 | −12.95\n9 Oct | 726.03 | −8.58\n16 Oct | 721.02 | −5.01",
+      "caption": "Source: RBI, as reported by PTI, AIR and the Millennium Post."
+    },
+    {
+      "type": "heading",
+      "text": "The buffer is still large"
+    },
+    {
+      "type": "paragraph",
+      "text": "The pace has slowed for three weeks running, and the level is still high. $721 billion covers about nine and a half months of imports at September’s pace of $74.61 billion of merchandise imports. The rupee was at 94.94 to the dollar on 23 October."
+    },
+    {
+      "type": "quote",
+      "text": "India entered this oil shock with record reserves. Six weeks have used about a twelfth of them."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: RBI Weekly Statistical Supplement data as reported by PTI (Devdiscourse, Times of Oman, Millennium Post) and All India Radio News for the weeks ended 11 September to 16 October 2026; merchandise imports from the Ministry of Commerce; FBIL reference rate."
+    }
+  ]
+}

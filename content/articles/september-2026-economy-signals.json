@@ -1,0 +1,104 @@
+{
+  "id": 135,
+  "slug": "september-2026-economy-signals",
+  "title": "September’s economy: record freight, busy factories and a widening oil bill",
+  "dek": "E-way bills hit a record, power use rose 11% and both PMIs reached 55. Against that, inflation is climbing and the trade deficit has passed $30 billion.",
+  "heroImage": null,
+  "section": "business",
+  "topics": [
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 4,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Activity was strong in September",
+      "subtitle": "Growth over September 2025, %",
+      "source": "GSTN, NPCI, Ministry of Power, Ministry of Finance and RBI data via Business Standard, Outlook Money, Construction World, Business Today and CareEdge",
+      "xKey": "measure",
+      "dataKeys": [
+        "Growth"
+      ],
+      "unit": "%",
+      "data": "[{\"measure\":\"UPI transactions\",\"Growth\":23.0},{\"measure\":\"Bank credit\",\"Growth\":19.4},{\"measure\":\"Gross GST\",\"Growth\":14.7},{\"measure\":\"Power use\",\"Growth\":11.35},{\"measure\":\"E-way bills\",\"Growth\":7.2}]"
+    },
+    {
+      "type": "bar",
+      "title": "Both PMIs rose in September",
+      "subtitle": "HSBC India PMI, above 50 means expansion",
+      "source": "HSBC and S&P Global via Upstox and Angel One",
+      "xKey": "month",
+      "dataKeys": [
+        "Manufacturing",
+        "Services"
+      ],
+      "unit": "",
+      "data": "[{\"month\":\"August\",\"Manufacturing\":52.8,\"Services\":54.1},{\"month\":\"September\",\"Manufacturing\":55.1,\"Services\":55.2}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The economy’s fast indicators for September point the same way: activity picked up. Goods movement hit a record, factories reported faster growth, and electricity demand jumped. The other set of numbers, prices and the trade balance, shows what the oil shock is costing."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "What rose"
+    },
+    {
+      "type": "paragraph",
+      "text": "E-way bills, required for most movements of goods worth more than ₹50,000, reached 141.53 million in September, a record and 7.2% more than a year earlier. Electricity consumption was 162.19 billion units, up 11.35%, and peak demand reached 269.06 GW against 229.15 GW a year before."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gross GST collections were ₹2.04 lakh crore, up 14.7%, and net collections after refunds ₹1.77 lakh crore, up 18.1%. Collections in a month mostly reflect sales made in the month before. UPI handled 24.07 billion payments worth ₹29.37 lakh crore, 23% more payments than a year earlier, though slightly fewer than in August. Bank credit was growing 19.4% a year at the end of September."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "The surveys agree. The HSBC India Manufacturing PMI rose from 52.8 to 55.1 and the Services PMI from 54.1 to 55.2. Both are private surveys of purchasing managers, not official statistics, and a reading above 50 means more firms reported growth than contraction."
+    },
+    {
+      "type": "heading",
+      "text": "What it is costing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Retail inflation rose to 5.54% in September from 4.83% in August, with food inflation at 7.74%. Wholesale inflation reached 11.39%. Merchandise imports were $74.61 billion against exports of $44.4 billion, and the trade deficit widened to $30.21 billion. On 7 October the RBI raised the repo rate by 25 basis points to 5.50% and moved its stance to tightening."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Indicator",
+        "September 2026",
+        "Earlier reading"
+      ],
+      "rows": "E-way bills | 141.53 million (record) | 139.08 million in August\nElectricity use | 162.19 BU | 145.66 BU in Sep 2025\nGross GST | ₹2.04 lakh crore | ₹1.77 lakh crore in Sep 2025\nUPI transactions | 24.07 billion | 24.51 billion in August\nManufacturing PMI | 55.1 | 52.8 in August\nServices PMI | 55.2 | 54.1 in August\nCPI inflation | 5.54% | 4.83% in August\nWPI inflation | 11.39% | 9.92% in August\nTrade deficit | $30.21 billion | $26.86 billion in August",
+      "caption": "Sources as listed below."
+    },
+    {
+      "type": "quote",
+      "text": "Demand is holding up. The question for the RBI is how much of it is real growth and how much is higher prices."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some of the strength is the season: September is the start of the festive buying period, and higher prices inflate tax collections and payment values. Volumes such as e-way bills, power use and transaction counts are less affected by inflation, and they rose too."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: GSTN (via Business Standard, 9 Oct 2026); NPCI (via Outlook Money, 2 Oct); Ministry of Power data (via Construction World, 8 Oct); Ministry of Finance (via Business Today, 1 Oct); RBI (via CareEdge, fortnight to 30 Sep); HSBC and S&P Global PMIs (via Upstox, 1 Oct, and Angel One, 6 Oct); MoSPI; Office of the Economic Adviser; Ministry of Commerce (via Business Today, 15 Oct); RBI MPC statement, 7 Oct 2026."
+    }
+  ]
+}

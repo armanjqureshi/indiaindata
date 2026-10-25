@@ -1,0 +1,111 @@
+{
+  "id": 126,
+  "slug": "ipo-listing-pop-fading",
+  "title": "The IPO listing pop is fading: median first-day gains have halved since 2024",
+  "dek": "In 2024 the typical mainboard IPO opened 17% above its issue price. In 2025 and 2026 it has been 6–8%, and one in four SME issues now lists below its price.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 4,
+  "featured": true,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "The typical listing gain has shrunk",
+      "subtitle": "Median listing-day gain, % over issue price, by year of listing",
+      "source": "India in Data analysis of NSE issue and price data; 2026 to 23 October",
+      "xKey": "year",
+      "dataKeys": [
+        "Mainboard",
+        "SME"
+      ],
+      "unit": "%",
+      "data": "[{\"year\":\"2023\",\"Mainboard\":16.7,\"SME\":22.9},{\"year\":\"2024\",\"Mainboard\":17.3,\"SME\":40.5},{\"year\":\"2025\",\"Mainboard\":6.2,\"SME\":5.1},{\"year\":\"2026\",\"Mainboard\":7.9,\"SME\":1.5}]"
+    },
+    {
+      "type": "bar",
+      "title": "More issues now open below their price",
+      "subtitle": "Share of IPOs that opened below the issue price on listing day, %",
+      "source": "India in Data analysis of NSE issue and price data; 2026 to 23 October",
+      "xKey": "year",
+      "dataKeys": [
+        "Mainboard",
+        "SME"
+      ],
+      "unit": "%",
+      "data": "[{\"year\":\"2023\",\"Mainboard\":13,\"SME\":5},{\"year\":\"2024\",\"Mainboard\":17,\"SME\":10},{\"year\":\"2025\",\"Mainboard\":20,\"SME\":27},{\"year\":\"2026\",\"Mainboard\":23,\"SME\":33}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The first-day pop used to be close to a sure thing for Indian IPOs. In 2024, 78% of mainboard issues opened above their issue price and the median gain on listing day was 17.3%. In 2026 so far, 67% have opened higher and the median gain is 7.9%."
+    },
+    {
+      "type": "paragraph",
+      "text": "We looked at every IPO listed on NSE since 2023 for which an opening price on listing day is available: 331 mainboard issues and 430 SME issues. The listing gain is the opening price on listing day compared with the final issue price."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "SME issues changed the most"
+    },
+    {
+      "type": "paragraph",
+      "text": "The swing is far larger on NSE Emerge, the platform for small and medium enterprises. In 2024 the median SME issue opened 40.5% above its price, and 64% opened at least 20% higher. In 2026 the median is 1.5%, and only 22% have opened 20% or more above their price."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the other end, one in three SME issues listed in 2026 has opened below its issue price, against one in ten in 2024. For mainboard issues the share has risen from 17% to 23%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Year",
+        "Issues",
+        "Median gain",
+        "Opened higher",
+        "Gained 20% or more"
+      ],
+      "rows": "2024 mainboard | 86 | +17.3% | 78% | 48%\n2025 mainboard | 100 | +6.2% | 70% | 21%\n2026 mainboard | 99 | +7.9% | 67% | 29%\n2024 SME | 176 | +40.5% | 86% | 64%\n2025 SME | 117 | +5.1% | 62% | 28%\n2026 SME | 64 | +1.5% | 55% | 22%",
+      "caption": "Listing-day opening price against issue price. 2026 covers listings to 23 October."
+    },
+    {
+      "type": "heading",
+      "text": "What changed"
+    },
+    {
+      "type": "paragraph",
+      "text": "More supply is one part of it. 2025 had 101 mainboard listings and 2026 has had 101 by late October, against 87 in 2024. More issues compete for the same pool of applications, and fewer are priced to leave room on the table."
+    },
+    {
+      "type": "paragraph",
+      "text": "The market itself is another. The Nifty 50 is down 13.5% in 2026, and IPOs listing into a falling market have less to ride on. The average is still positive: the mean 2026 mainboard listing gain is 14.4%, pulled up by a few large winners, while the median issue has gained far less."
+    },
+    {
+      "type": "quote",
+      "text": "A median gain of 8% is still a gain. But the odds of losing money on day one have roughly doubled for SME investors."
+    },
+    {
+      "type": "paragraph",
+      "text": "Our 2026 figures cover issues listed to 23 October. They do not include Jio Platforms, which lists on 28 October."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: NSE public issue data and NSE end-of-day price files, compiled by India in Data. Listing gains use the listing-day opening price. Issues without a listing price in NSE data are excluded. Not investment advice."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": 128,
+  "slug": "ipo-subscription-predicts-listing",
+  "title": "Does a high subscription mean a listing gain? In 2026, mostly yes at the extremes",
+  "dek": "All 16 IPOs subscribed 100 times or more since June listed above their price, with a median gain of 44.5%. Issues subscribed under 5 times had a median gain of zero.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 3,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Bigger subscription, bigger listing gain",
+      "subtitle": "Median listing-day gain by final subscription, %, IPOs that opened 18 June to 15 October 2026",
+      "source": "India in Data analysis of NSE consolidated subscription and listing prices",
+      "xKey": "bucket",
+      "dataKeys": [
+        "Median gain"
+      ],
+      "unit": "%",
+      "data": "[{\"bucket\":\"Under 5x (28)\",\"Median gain\":0.0},{\"bucket\":\"5–20x (7)\",\"Median gain\":7.9},{\"bucket\":\"20–50x (4)\",\"Median gain\":11.8},{\"bucket\":\"50–100x (4)\",\"Median gain\":6.8},{\"bucket\":\"100x and over (16)\",\"Median gain\":44.5}]"
+    },
+    {
+      "type": "bar",
+      "title": "How often the issue opened higher",
+      "subtitle": "Share of IPOs that opened above the issue price, by final subscription, %",
+      "source": "India in Data analysis of NSE consolidated subscription and listing prices",
+      "xKey": "bucket",
+      "dataKeys": [
+        "Opened higher"
+      ],
+      "unit": "%",
+      "data": "[{\"bucket\":\"Under 5x\",\"Opened higher\":39},{\"bucket\":\"5–20x\",\"Opened higher\":86},{\"bucket\":\"20–50x\",\"Opened higher\":75},{\"bucket\":\"50–100x\",\"Opened higher\":75},{\"bucket\":\"100x and over\",\"Opened higher\":100}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Investors read subscription figures as a forecast of listing day. For the 59 IPOs that opened on NSE between 18 June and 15 October 2026 and have both a final subscription figure and a listing price in our data, the extremes behave as expected. The middle is noisy."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "All 16 issues subscribed 100 times or more opened above their issue price, with a median gain of 44.5%. Of the 28 issues subscribed less than 5 times, only 11 opened higher, and the median gain was zero. The five weakest listings in the sample were all subscribed under 2 times and opened between 11% and 20% below their price."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "The middle tells you little"
+    },
+    {
+      "type": "paragraph",
+      "text": "Between 5 and 100 times there are only 15 issues, and their gains do not rise neatly with demand: issues subscribed 50–100 times had a lower median gain than those at 20–50 times. With four issues in some groups, one listing changes the median."
+    },
+    {
+      "type": "paragraph",
+      "text": "Across the whole sample, the correlation between the logarithm of the subscription and the listing gain is 0.68. That is a strong relationship for market data, but it describes the past few months, not a rule."
+    },
+    {
+      "type": "heading",
+      "text": "SME issues dominate both ends"
+    },
+    {
+      "type": "paragraph",
+      "text": "Of the 28 issues under 5 times, 20 were SME issues. Of the 16 issues over 100 times, 9 were SME issues, including the four most subscribed: Qualiance International at 427 times, IC Electricals at 391 times, Avience Biomedicals at 355 times and SpectraA Technology Solutions at 283 times. Small SME issues can draw huge multiples because the amount on offer is small."
+    },
+    {
+      "type": "quote",
+      "text": "Heavy demand has reliably meant a positive open this year. Weak demand has meant a coin toss, or worse."
+    },
+    {
+      "type": "paragraph",
+      "text": "Subscription measures demand during bidding, and part of that demand is from investors who plan to sell on listing day. It says nothing about the business. Jio Platforms, subscribed 22.19 times at the close of bidding, lists on 28 October and is not in this sample."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: NSE consolidated subscription figures (NSE and BSE combined) at the close of bidding, and listing-day opening prices from NSE end-of-day files, compiled by India in Data. Not investment advice."
+    }
+  ]
+}

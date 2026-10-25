@@ -1,0 +1,90 @@
+{
+  "id": 133,
+  "slug": "silver-price-crash-2026",
+  "title": "Silver has lost half its value since January",
+  "dek": "MCX silver futures closed at ₹3,99,893 a kilo on 29 January and ₹1,99,599 on 22 October. In the past week alone the IBJA rate fell 9%, three times as fast as gold.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 3,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "From the January peak to now",
+      "subtitle": "MCX silver futures closing price, ₹ per kg",
+      "source": "MCX closing prices as reported by Moneyvesta, 23 October 2026",
+      "xKey": "date",
+      "dataKeys": [
+        "Silver"
+      ],
+      "unit": " ₹/kg",
+      "data": "[{\"date\":\"29 Jan 2026\",\"Silver\":399893},{\"date\":\"22 Oct 2026\",\"Silver\":199599}]"
+    },
+    {
+      "type": "line",
+      "title": "Silver fell three times as fast as gold this month",
+      "subtitle": "IBJA closing rates, rebased to 100 on 14 October 2026",
+      "source": "India Bullion and Jewellers Association, compiled by India in Data",
+      "xKey": "date",
+      "dataKeys": [
+        "Silver",
+        "Gold"
+      ],
+      "unit": "",
+      "data": "[{\"date\":\"10-14\",\"Silver\":100.0,\"Gold\":100.0},{\"date\":\"10-15\",\"Silver\":97.4,\"Gold\":99.9},{\"date\":\"10-16\",\"Silver\":98.6,\"Gold\":100.2},{\"date\":\"10-19\",\"Silver\":97.6,\"Gold\":99.9},{\"date\":\"10-21\",\"Silver\":96.7,\"Gold\":98.7},{\"date\":\"10-22\",\"Silver\":93.4,\"Gold\":97.7},{\"date\":\"10-23\",\"Silver\":90.9,\"Gold\":97.0}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Silver was the trade of January. It rose about 70% in four weeks and on 29 January MCX silver futures closed at a record ₹3,99,893 a kilo. On 22 October they closed at ₹1,99,599, down 50.1%."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "The fall has sped up this month. The IBJA rate for 999 silver, the benchmark Indian jewellers use, fell 16.5% between 23 September and 23 October, and 9.1% in the seven sessions from 14 to 23 October alone, to ₹1,94,415 a kilo. Over those same seven sessions the IBJA gold rate fell 3.0%, to ₹1,41,630 for 10 grams."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "Why silver is falling harder than gold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Silver is half an industrial metal. About 58% of demand comes from industry, especially electronics and solar panels, and the Silver Institute expects industrial demand to fall about 3% in 2026 as solar makers use less silver per panel. When markets worry about growth, that side of silver suffers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Interest rates matter too. Silver pays no interest, so it becomes less attractive when rates rise. The US Federal Reserve raised its policy rate to 3.75–4.00% on 16 September, and oil above $100 has raised the odds of more increases. Exchanges have also raised margins, forcing some leveraged traders to sell."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gold has held up better because central banks keep buying it, and because a weaker rupee raises its rupee price. With gold falling more slowly, the gold-to-silver ratio, the number of grams of silver that buy a gram of gold, rose from 68 to 73 in a week."
+    },
+    {
+      "type": "quote",
+      "text": "In January silver behaved like a growth stock. It has fallen like one."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that prices differ by source. MCX futures, the IBJA rate (which excludes GST) and retail prices quoted by jewellers are not the same number, so compare like with like."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: MCX closing prices and the reasons for the fall as reported by Moneyvesta (23 October 2026), citing the Silver Institute and the US Federal Reserve; Goodreturns (23 October 2026) on rupee weakness and gold; IBJA rates collected daily by India in Data. Not investment advice."
+    }
+  ]
+}

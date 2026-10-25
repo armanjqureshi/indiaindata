@@ -1,0 +1,102 @@
+{
+  "id": 134,
+  "slug": "crime-in-india-2024-ncrb",
+  "title": "Crime in India fell 6% in 2024. Cybercrime rose 18%, crimes against children 6%",
+  "dek": "NCRB’s Crime in India 2024 recorded 58.85 lakh cognisable crimes and a crime rate of 418.9 per lakh people, the lowest since 2019. The mix is shifting online.",
+  "heroImage": null,
+  "section": "news",
+  "topics": [
+    "society",
+    "policy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-25",
+  "readingTime": 4,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "What rose and what fell in 2024",
+      "subtitle": "Change in registered cases, 2024 against 2023, %",
+      "source": "NCRB, Crime in India 2024, as summarised by Drishti IAS and InsightsIAS (May 2026)",
+      "xKey": "category",
+      "dataKeys": [
+        "Change"
+      ],
+      "unit": "%",
+      "data": "[{\"category\":\"Cybercrime\",\"Change\":17.9},{\"category\":\"Against senior citizens\",\"Change\":16.9},{\"category\":\"Against children\",\"Change\":5.9},{\"category\":\"Economic offences\",\"Change\":4.6},{\"category\":\"Against women\",\"Change\":-1.5},{\"category\":\"Murder\",\"Change\":-2.4},{\"category\":\"Total cognisable\",\"Change\":-5.7},{\"category\":\"Theft\",\"Change\":-9.8},{\"category\":\"Robbery\",\"Change\":-13.0},{\"category\":\"Kidnapping\",\"Change\":-15.4}]"
+    },
+    {
+      "type": "bar",
+      "title": "Cybercrime crossed one lakh cases",
+      "subtitle": "Cybercrime cases registered",
+      "source": "NCRB, Crime in India 2023 and 2024, as reported by InsightsIAS",
+      "xKey": "year",
+      "dataKeys": [
+        "Cases"
+      ],
+      "unit": "",
+      "data": "[{\"year\":\"2023\",\"Cases\":86420},{\"year\":\"2024\",\"Cases\":101928}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Police across India registered 58.85 lakh cognisable crimes in 2024, according to the National Crime Records Bureau’s Crime in India 2024 report, released in May 2026. That is about 6% fewer than the 62.41 lakh of 2023. The crime rate, cases per lakh people, fell from 448.3 to 418.9, the lowest since 2019."
+    },
+    {
+      "type": "paragraph",
+      "text": "The total hides a change in what crime looks like."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Online fraud is the growth area"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cybercrime cases rose from 86,420 in 2023 to 1,01,928 in 2024, the first time they have crossed one lakh. About 72.6% were linked to online fraud. Telangana had the highest cybercrime rate, more than 70 cases per lakh people, followed by Karnataka and Maharashtra."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "Economic offences, mostly forgery, cheating and fraud, rose 4.6%. Crimes against senior citizens rose 16.9%, with Madhya Pradesh recording the most cases for the third year running."
+    },
+    {
+      "type": "heading",
+      "text": "Children and the vulnerable"
+    },
+    {
+      "type": "paragraph",
+      "text": "Crimes against children rose 5.9%, and the rate rose from 39.9 to 42.3 per lakh children. Missing children cases rose 7.8%, and the number of juveniles in conflict with the law rose 11.2%. Crimes against women fell 1.5% to about 4.41 lakh cases, with cruelty by husbands or relatives the largest category."
+    },
+    {
+      "type": "heading",
+      "text": "Read the falls with care"
+    },
+    {
+      "type": "paragraph",
+      "text": "2024 was a year of new criminal laws. The Bharatiya Nyaya Sanhita replaced the Indian Penal Code from 1 July 2024, so the year’s figures mix cases under both. Some of the falls reflect how offences were reclassified. Cases of hurt, for example, fell 30.6%, from 6.36 lakh to 4.41 lakh, largely for this reason, according to summaries of the report."
+    },
+    {
+      "type": "paragraph",
+      "text": "Registered crime also measures reporting, not only offending. A rise in cybercrime cases may partly reflect easier online complaints, and a fall in a category can mean fewer people came forward."
+    },
+    {
+      "type": "quote",
+      "text": "The numbers say India’s streets got slightly safer in 2024 and its phones got more dangerous."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: NCRB, Crime in India 2024 (released May 2026), as summarised by Drishti IAS (9 May 2026), InsightsIAS (8 May 2026) and The Logical Indian (13 May 2026). We have not yet checked every figure against the NCRB tables; we will update this article when we do."
+    }
+  ]
+}
