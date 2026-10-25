@@ -178,8 +178,11 @@ export const getSiteStats = () => [
 export const getSection = (slug) => sections.find((s) => s.slug === slug)
 export const getTopic = (slug) => topics.find((t) => t.slug === slug)
 export const getArticle = (slug) => articles.find((a) => a.slug === slug)
+// Blogs is the full feed: every published article, newest first.
 export const getBySection = (slug) =>
-  articles.filter((a) => a.section === slug).sort((a, b) => b.date.localeCompare(a.date))
+  articles
+    .filter((a) => slug === 'blogs' || a.section === slug)
+    .sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id)
 export const getByTopic = (slug) =>
   articles.filter((a) => a.topics.includes(slug)).sort((a, b) => b.date.localeCompare(a.date))
 export const getLatest = (n = 9) =>
