@@ -3,7 +3,7 @@
  "lotSize": 100,
  "faceValue": null,
  "issueType": "Book Building",
- "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto 1,70,00,000 Equity Shares",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto 1,70,00,000 Equity Shares (including Anchor reservation portion of 51,00,000 Equity Shares)",
  "issueSize": {
   "freshCr": 255,
   "ofsCr": 0,
@@ -20,9 +20,10 @@
  "marketTimings": "10.00 a.m. to 5.00 p.m.",
  "documents": {
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_BLSPOLY.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_BLSPOLY.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BLSPOLY.zip"
  },
- "fetchedAt": "2026-10-22T12:38:29.485Z",
+ "fetchedAt": "2026-10-26T12:35:32.805Z",
  "slug": "bls-polymers",
  "symbol": "BLSPOLY",
  "board": "mainboard",

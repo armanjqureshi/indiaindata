@@ -1,0 +1,30 @@
+{
+ "subscription": null,
+ "lotSize": 182,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 1,830.57 million",
+ "issueSize": {
+  "freshCr": 183.06,
+  "ofsCr": 0,
+  "totalCr": 183.06,
+  "method": "Calculated at ₹82 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Smart Horizon Capital Advisors Private Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "Williams R, Tel: +91 40 6716 2222, 1800 309 400 , bombaycoated.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_BCSSL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BCSSL.zip"
+ },
+ "fetchedAt": "2026-10-26T12:35:27.508Z",
+ "slug": "bombay-coated-and-special-steels",
+ "symbol": "BCSSL",
+ "board": "mainboard",
+ "name": "Bombay Coated and Special Steels Limited"
+}
