@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
+import { POP_YEARS, POP_INDIA, POP_STATES, POP } from '../data/population.js'
 import { YEARS, STATES, PC_CURRENT, PC_CONSTANT, GSDP_CURRENT, GSDP_CONSTANT } from '../data/states.js'
 
 const LAST = YEARS.length - 1
@@ -309,12 +310,13 @@ export function StatesHub() {
     ['/state-wise-gdp-of-india', 'State-wise GDP of India', 'GSDP of every state and UT, with real growth, 2011-12 to 2024-25.'],
     ['/per-capita-income-by-state', 'Per capita income by state', 'Income per person for every state and UT, richest to poorest.'],
     ['/richest-state-in-india', 'Richest state in India', 'The answer by size of economy and by income per person.'],
+    ['/population-by-state', 'India population by state', 'Projected population of every state and UT, 2011 to 2036.'],
   ]
   return (
     <>
       <Hero title="Indian states, ranked" intro="State-level income and output from the RBI Handbook of Statistics on Indian States 2024-25, with the source and year on every page." />
       <section className="mx-auto max-w-site px-4 pb-14 sm:px-6">
-        <div className="mt-8 grid gap-px border border-ink/10 bg-ink/10 md:grid-cols-3">
+        <div className="mt-8 grid gap-px border border-ink/10 bg-ink/10 md:grid-cols-4">
           {cards.map(([to, t, d]) => (
             <Link key={to} to={to} className="bg-paper p-5 hover:bg-ink/[0.03]">
               <h2 className="font-display text-xl font-semibold">{t}</h2>
@@ -323,6 +325,90 @@ export function StatesHub() {
           ))}
         </div>
         <Footer />
+      </section>
+    </>
+  )
+}
+
+/* ---------- population ---------- */
+const POP_LAST = POP_YEARS.length - 1
+const POP_NOW = POP_YEARS.indexOf(2026)
+const popFmt = (thousand) => (thousand >= 10000 ? `${(thousand / 10000).toFixed(2)} crore` : `${(thousand / 100).toFixed(1)} lakh`)
+const popFmtShort = (thousand) => (thousand >= 10000 ? `${(thousand / 10000).toFixed(2)} cr` : `${(thousand / 100).toFixed(1)} lakh`)
+
+export function StatePopulation() {
+  useSeo({
+    title: 'India population by state (2026 projection)',
+    description: 'Projected population of every Indian state and UT from 2011 to 2036, from the National Commission on Population. Uttar Pradesh is largest. Ranked, with share of India.',
+  })
+  const [yi, setYi] = useState(POP_NOW)
+  const rows = POP_STATES.map((s) => ({ state: s, v: POP[s][yi], base: POP[s][0] })).sort((a, b) => b.v - a.v)
+  const max = rows[0].v
+  const now = POP_STATES.map((s) => ({ state: s, v: POP[s][POP_NOW] })).sort((a, b) => b.v - a.v)
+  const large = POP_STATES.filter((s) => POP[s][0] >= 10000)
+  const growth = large.map((s) => ({ s, g: (POP[s][POP_NOW] / POP[s][0] - 1) * 100 })).sort((a, b) => b.g - a.g)
+  const big = large.map((s) => ({ s, g: (POP[s][POP_LAST] / POP[s][POP_NOW] - 1) * 100 })).sort((a, b) => b.g - a.g)
+  const fiveShare = (now.slice(0, 5).reduce((a, r) => a + r.v, 0) / POP_INDIA[POP_NOW]) * 100
+  return (
+    <>
+      <Hero
+        title="India population by state"
+        intro={`India’s projected population on 1 March 2026 is ${popFmt(POP_INDIA[POP_NOW])}. ${now[0].state} is the largest state with ${popFmt(now[0].v)}, followed by ${now[1].state} (${popFmt(now[1].v)}) and ${now[2].state} (${popFmt(now[2].v)}). These are official projections, not a count: the last census was in 2011.`}
+      />
+      <section className="mx-auto max-w-site px-4 pb-14 sm:px-6">
+        <H>Population by state</H>
+        <label className="mb-3 flex items-center gap-2 text-sm">
+          <span className="font-semibold">Year</span>
+          <select value={yi} onChange={(e) => setYi(Number(e.target.value))} className="border border-ink/25 bg-paper px-2 py-1">
+            {POP_YEARS.map((y, i) => ({ y, i })).reverse().map(({ y, i }) => <option key={y} value={i}>{y}{y === 2011 ? ' (Census)' : ''}</option>)}
+          </select>
+        </label>
+        <div className="overflow-x-auto border-y border-ink/10">
+          <table className="w-full border-collapse text-sm">
+            <caption className="sr-only">Population by state and UT</caption>
+            <thead>
+              <tr className="border-b border-ink/15 text-left text-xs text-ink/60">
+                <th className="px-3 py-2 font-semibold">Rank</th>
+                <th className="px-3 py-2 font-semibold">State or UT</th>
+                <th className="px-3 py-2 text-right font-semibold">Population, {POP_YEARS[yi]}</th>
+                <th className="px-3 py-2 text-right font-semibold">Share of India</th>
+                <th className="px-3 py-2 text-right font-semibold">Change since 2011</th>
+                <th className="hidden px-3 py-2 sm:table-cell" />
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r, k) => (
+                <tr key={r.state} className="border-b border-ink/10 last:border-0">
+                  <td className="num px-3 py-2">{k + 1}</td>
+                  <td className="px-3 py-2 font-semibold">{r.state}</td>
+                  <td className="num px-3 py-2 text-right">{popFmtShort(r.v)}</td>
+                  <td className="num px-3 py-2 text-right">{((r.v / POP_INDIA[yi]) * 100).toFixed(1)}%</td>
+                  <td className="num px-3 py-2 text-right">{yi === 0 ? '—' : pct((r.v / r.base - 1) * 100)}</td>
+                  <td className="hidden w-1/5 px-3 py-2 sm:table-cell"><Bar value={r.v} max={max} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 max-w-3xl text-sm leading-body text-ink/70">
+          India total for {POP_YEARS[yi]}: {popFmt(POP_INDIA[yi])}. The five largest states hold {fiveShare.toFixed(0)}% of the population in 2026. 1 crore is 10 million.
+        </p>
+
+        <H>Which states are growing fastest</H>
+        <p className="max-w-3xl leading-body text-ink/80">
+          Among the {large.length} states and UTs that had at least 1 crore people in 2011, between the Census and 2026 {growth.slice(0, 3).map((r) => `${r.s} (${pct(r.g)})`).join(', ')} grew fastest and {growth.slice(-3).reverse().map((r) => `${r.s} (${pct(r.g)})`).join(', ')} grew slowest. For 2026 to 2036, {big.slice(0, 2).map((r) => r.s).join(' and ')} are projected to add the most in 2026 to 2036 ({big.slice(0, 2).map((r) => pct(r.g)).join(' and ')}), while {big.slice(-2).map((r) => r.s).join(' and ')} add the least ({big.slice(-2).map((r) => pct(r.g)).join(' and ')}).
+        </p>
+
+        <Faq items={[
+          ['What is the population of India in 2026?', `The official projection is ${popFmt(POP_INDIA[POP_NOW])} on 1 March 2026. It is a projection built from the 2011 Census, not a count.`],
+          ['Which is the most populous state in India?', `${now[0].state}, with a projected ${popFmt(now[0].v)} in 2026, about ${((now[0].v / POP_INDIA[POP_NOW]) * 100).toFixed(0)}% of India. ${now[1].state} and ${now[2].state} come next.`],
+          ['Where do these numbers come from?', 'From the Report of the Technical Group on Population Projections 2011-2036, published by the National Commission on Population under the Ministry of Health and Family Welfare in July 2020. It projects each state from the 2011 Census using assumptions about births, deaths and migration.'],
+          ['Why do other sites show different figures?', 'Sites use different projections, the UN estimates, or a simple extrapolation of 2011. The projections here are the Indian government’s own and will be replaced once a new census is published.'],
+        ]} />
+        <p className="mt-8 max-w-3xl text-xs leading-body text-ink/60">
+          Source: National Commission on Population, Ministry of Health and Family Welfare, Report of the Technical Group on Population Projections 2011-2036 (July 2020), Table 8, projected total population as on 1 March. State figures add up to the India total within rounding. Dadra and Nagar Haveli and Daman and Diu are combined. The report projects the seven north-eastern states other than Assam together, so several show the same growth, and very small UTs such as Dadra and Nagar Haveli and Daman and Diu show large swings from its migration assumptions. See our <Link to="/methodology" className="text-brand hover:underline">methodology</Link>.
+        </p>
+        <p className="mt-4 text-sm"><Link to="/states" className="text-brand hover:underline">All state rankings</Link></p>
       </section>
     </>
   )
