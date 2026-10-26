@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T07:09:09.476Z",
+ "updatedAt": "2026-10-26T09:36:41.745Z",
  "lastPriceSession": "2026-10-23",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -147,8 +147,8 @@
    "lotSize": 9,
    "lotValue": 14985,
    "sizeCr": 1200,
-   "subscription": 0.05,
-   "subscriptionAsOf": "26-Oct-2026 12:36:00",
+   "subscription": 0.08,
+   "subscriptionAsOf": "26-Oct-2026 15:03:00",
    "listing": null,
    "listingGainPct": null,
    "lastClose": null,
