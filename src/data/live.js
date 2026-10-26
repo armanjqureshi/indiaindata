@@ -104,7 +104,7 @@ export function useGmp() {
     let on = true
     fetch(`https://raw.githubusercontent.com/${REPO}/main/live/gmp.json`, { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : null))
-      .then((j) => on && j && Array.isArray(j.entries) && setD(j))
+      .then((j) => on && j && Array.isArray(j.entries) && setD((cur) => ((j.updatedAt || '') >= (cur.updatedAt || '') ? j : cur)))
       .catch(() => {})
     return () => { on = false }
   }, [])
