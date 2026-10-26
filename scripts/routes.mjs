@@ -157,15 +157,6 @@ export function getRoutes() {
 
   const ipoList = readIpos()
 
-  routes.push({
-    path: '/ipos',
-    title: 'IPO tracker: mainboard and SME IPOs',
-    description:
-      'Every mainboard and SME IPO on NSE: live subscription by category, price bands, lot sizes, timetables, listing gains and returns since listing.',
-    changefreq: 'daily',
-    priority: 0.9,
-  })
-
   for (const ipo of ipoList) {
     const name = (ipo.name || '').replace(/\s+Limited$/i, '')
     routes.push({

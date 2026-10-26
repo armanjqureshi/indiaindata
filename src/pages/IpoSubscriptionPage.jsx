@@ -59,7 +59,7 @@ export default function IpoSubscriptionPage() {
         <H>Closed in the last 14 days</H>
         <IpoTable rows={recent} columns="closed" caption="Recently closed IPOs with final subscription" empty="No IPO closed in the last 14 days." />
         <p className="mt-3 text-xs text-ink/60">
-          Listing dates marked * are expected dates until the exchange confirms them. Open any issue for the subscription split by QIB, NII and retail. The full list is on the <Link to="/ipos" className="text-brand hover:underline">IPO tracker</Link>.
+          Listing dates marked * are expected dates until the exchange confirms them. Open any issue for the subscription split by QIB, NII and retail. The full list is on the <Link to="/ipo-dashboard" className="text-brand hover:underline">IPO dashboard</Link>.
         </p>
 
         <H>How to read subscription</H>

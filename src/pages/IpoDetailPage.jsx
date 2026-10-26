@@ -130,7 +130,7 @@ export default function IpoDetailPage() {
       <header className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-site px-4 py-10 sm:px-6">
           <p className="text-sm text-ink/60">
-            <Link to="/ipos" className="hover:text-brand">IPO tracker</Link>
+            <Link to="/ipo-dashboard" className="hover:text-brand">IPO dashboard</Link>
           </p>
           <div className="mt-3 flex flex-wrap items-center gap-2">
             <span className={`rounded-[2px] px-1.5 py-0.5 text-xs font-semibold ${STATUS_CLASS[status]}`}>{STATUS_LABEL[status]}</span>

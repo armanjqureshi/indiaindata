@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
 import { useIpos, useGmp, gmpFor, useTodayIST, ipoStatus, istDateOf, fmt } from '../data/live.js'
 import { gainClass, priceLabel, BOARD_LABEL } from '../components/ipo/ipoUtil.js'
+import IpoBrowser from '../components/ipo/IpoBrowser.jsx'
 
 const H = ({ children }) => <h2 className="mb-3 mt-10 font-display text-2xl font-semibold">{children}</h2>
 const mean = (a) => a.reduce((s, v) => s + v, 0) / a.length
@@ -114,7 +115,7 @@ export default function IpoDashboardPage() {
         <div className="mx-auto max-w-site px-4 py-10 sm:px-6">
           <h1 className="font-display text-4xl font-semibold leading-tight sm:text-5xl">IPO dashboard</h1>
           <p className="mt-3 max-w-2xl leading-body text-ink/70">
-            Every IPO on NSE in one place: open now, opening next and awaiting listing, with subscription, grey market premium and a 14-day calendar. Below it, how IPOs have actually listed this year.
+            Every IPO on NSE in one place: open now, opening next and awaiting listing, with subscription, grey market premium and a 14-day calendar. Below that, how IPOs have actually listed this year and a searchable list of every IPO tracked.
           </p>
           {updated && <p className="num mt-3 text-xs text-ink/50">IPO list refreshed {updated}. See the <Link to="/methodology" className="text-brand hover:underline">methodology</Link>. GMP is unofficial and not a forecast; read the <Link to="/disclaimer" className="text-brand hover:underline">disclaimer</Link>.</p>}
         </div>
@@ -206,8 +207,14 @@ export default function IpoDashboardPage() {
           </>
         )}
 
+        <H>Recently listed and every NSE IPO</H>
+        <IpoBrowser data={data} today={today} />
+        <p className="mt-4 max-w-3xl text-xs leading-body text-ink/60">
+          Source: NSE public issue data, NSE end-of-day price files and NSE’s holiday calendar. Subscription figures combine bids on NSE and BSE as NSE reports them. Listing price is the opening price on listing day, set in the special pre-open session. {data.coverage}
+        </p>
+
         <p className="mt-10 max-w-3xl text-sm text-ink/70">
-          More: <Link to="/ipo-subscription-status" className="text-brand hover:underline">IPO subscription status</Link>, <Link to="/ipo-gmp" className="text-brand hover:underline">IPO GMP today</Link>, <Link to="/sme-ipo-gmp" className="text-brand hover:underline">SME IPO GMP</Link> and the full <Link to="/ipos" className="text-brand hover:underline">IPO tracker</Link>.
+          More: <Link to="/ipo-subscription-status" className="text-brand hover:underline">IPO subscription status</Link>, <Link to="/ipo-gmp" className="text-brand hover:underline">IPO GMP today</Link> and <Link to="/sme-ipo-gmp" className="text-brand hover:underline">SME IPO GMP</Link>.
         </p>
       </section>
     </>

@@ -60,7 +60,7 @@ async function main() {
 
   // Empty shell for IPO pages that are not prerendered (older issues and ones
   // that appeared after the last deploy): the browser renders them from live data.
-  fs.writeFileSync(path.join(clientDir, 'ipo-shell.html'), injectMeta(template, { path: '/ipos', title: 'IPO', description: 'IPO details from NSE data on India in Data.' }))
+  fs.writeFileSync(path.join(clientDir, 'ipo-shell.html'), injectMeta(template, { path: '/ipo-dashboard', title: 'IPO', description: 'IPO details from NSE data on India in Data.' }))
 
   const routes = [...getRoutes(), getNotFoundRoute()]
   let ok = 0

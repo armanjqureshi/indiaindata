@@ -132,7 +132,7 @@ export default function GmpPage() {
           ))}
         </div>
         <p className="mt-8 max-w-3xl text-sm text-ink/60">
-          See the live <Link to="/ipo-subscription-status" className="text-brand hover:underline">IPO subscription status</Link> and the full <Link to="/ipos" className="text-brand hover:underline">IPO tracker</Link>.
+          See the live <Link to="/ipo-subscription-status" className="text-brand hover:underline">IPO subscription status</Link> and the <Link to="/ipo-dashboard" className="text-brand hover:underline">IPO dashboard</Link>.
         </p>
       </section>
     </>

@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { to: '/market', label: 'Market' },
   { to: '/blogs', label: 'Blogs' },
   { to: '/indicators', label: 'Indicators' },
-  { to: '/ipos', label: 'IPOs' },
+  { to: '/ipo-dashboard', label: 'IPOs' },
   { to: '/infographics', label: 'Infographics' },
   { to: '/about', label: 'About' },
 ]

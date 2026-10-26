@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import TickerTape from './components/TickerTape.jsx'
 import Navbar from './components/Navbar.jsx'
@@ -20,7 +20,6 @@ import IpoSubscriptionPage from './pages/IpoSubscriptionPage.jsx'
 import { StateGdp, StatePerCapita, RichestState, StatesHub, StatePopulation, PoorestState } from './pages/StatePages.jsx'
 import IpoDashboardPage from './pages/IpoDashboardPage.jsx'
 import SmeGmpPage from './pages/SmeGmpPage.jsx'
-import IposPage from './pages/IposPage.jsx'
 import IpoDetailPage from './pages/IpoDetailPage.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
@@ -69,7 +68,7 @@ export default function App() {
           <Route path="/indicators" element={<IndicatorsPage />} />
           <Route path="/indicators/category/:slug" element={<IndicatorCategoryPage />} />
           <Route path="/indicators/:slug" element={<IndicatorDetailPage />} />
-          <Route path="/ipos" element={<IposPage />} />
+          <Route path="/ipos" element={<Navigate to="/ipo-dashboard" replace />} />
           <Route path="/infographics" element={<InfographicsPage />} />
           <Route path="/infographics/:slug" element={<InfographicPage />} />
           <Route path="/ipo-gmp" element={<GmpPage />} />
