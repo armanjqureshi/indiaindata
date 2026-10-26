@@ -18,6 +18,7 @@ import GmpPage from './pages/GmpPage.jsx'
 import IpoGmpPage from './pages/IpoGmpPage.jsx'
 import IpoSubscriptionPage from './pages/IpoSubscriptionPage.jsx'
 import { StateGdp, StatePerCapita, RichestState, StatesHub, StatePopulation, PoorestState } from './pages/StatePages.jsx'
+import IpoDashboardPage from './pages/IpoDashboardPage.jsx'
 import SmeGmpPage from './pages/SmeGmpPage.jsx'
 import IposPage from './pages/IposPage.jsx'
 import IpoDetailPage from './pages/IpoDetailPage.jsx'
@@ -73,6 +74,7 @@ export default function App() {
           <Route path="/infographics/:slug" element={<InfographicPage />} />
           <Route path="/ipo-gmp" element={<GmpPage />} />
           <Route path="/sme-ipo-gmp" element={<SmeGmpPage />} />
+          <Route path="/ipo-dashboard" element={<IpoDashboardPage />} />
           <Route path="/states" element={<StatesHub />} />
           <Route path="/state-wise-gdp-of-india" element={<StateGdp />} />
           <Route path="/per-capita-income-by-state" element={<StatePerCapita />} />

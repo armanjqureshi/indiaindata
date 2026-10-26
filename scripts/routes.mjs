@@ -251,6 +251,14 @@ export function getRoutes() {
   }
 
   routes.push({
+    path: '/ipo-dashboard',
+    title: 'IPO dashboard: open, upcoming and listing IPOs with GMP and subscription',
+    description: 'One page for every IPO on NSE: what is open now, what opens next, what lists soon, with subscription, grey market premium, a 14-day calendar and how IPOs have listed this year.',
+    changefreq: 'daily',
+    priority: 0.9,
+  })
+
+  routes.push({
     path: '/sme-ipo-gmp',
     title: 'SME IPO GMP today: NSE Emerge grey market premium and listing gains',
     description: 'SME IPO GMP for NSE Emerge issues, plus what the listing data shows: how many SME IPOs list below issue price, and how subscription relates to listing gain. Sourced from NSE.',
