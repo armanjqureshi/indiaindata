@@ -1,5 +1,54 @@
 {
- "subscription": null,
+ "subscription": {
+  "total": 0.02,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 1514195,
+    "bid": 0,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 1135647,
+    "bid": 70047,
+    "times": 0.06
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 757098,
+    "bid": 66330,
+    "times": 0.09
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 378549,
+    "bid": 3717,
+    "times": 0.01
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 2649842,
+    "bid": 45297,
+    "times": 0.02
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 5299684,
+    "bid": 115344,
+    "times": 0.02
+   }
+  ],
+  "asOf": "26-Oct-2026 12:03:00",
+  "scope": "NSE and BSE combined"
+ },
  "lotSize": 9,
  "faceValue": null,
  "issueType": "Book Building",
@@ -26,7 +75,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_EDELALTS.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_EDELALTS.zip"
  },
- "fetchedAt": "2026-10-23T17:59:26.247Z",
+ "fetchedAt": "2026-10-26T06:35:44.336Z",
  "slug": "eaaa-india-alternatives",
  "symbol": "EDELALTS",
  "board": "mainboard",
