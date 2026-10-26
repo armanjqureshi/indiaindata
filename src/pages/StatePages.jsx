@@ -396,7 +396,7 @@ export function StatePopulation() {
 
         <H>Which states are growing fastest</H>
         <p className="max-w-3xl leading-body text-ink/80">
-          Among the {large.length} states and UTs that had at least 1 crore people in 2011, between the Census and 2026 {growth.slice(0, 3).map((r) => `${r.s} (${pct(r.g)})`).join(', ')} grew fastest and {growth.slice(-3).reverse().map((r) => `${r.s} (${pct(r.g)})`).join(', ')} grew slowest. For 2026 to 2036, {big.slice(0, 2).map((r) => r.s).join(' and ')} are projected to add the most in 2026 to 2036 ({big.slice(0, 2).map((r) => pct(r.g)).join(' and ')}), while {big.slice(-2).map((r) => r.s).join(' and ')} add the least ({big.slice(-2).map((r) => pct(r.g)).join(' and ')}).
+          Among the {large.length} states and UTs that had at least 1 crore people in 2011, between the Census and 2026 {growth.slice(0, 3).map((r) => `${r.s} (${pct(r.g)})`).join(', ')} grew fastest and {growth.slice(-3).reverse().map((r) => `${r.s} (${pct(r.g)})`).join(', ')} grew slowest. For 2026 to 2036, {big.slice(0, 2).map((r) => r.s).join(' and ')} are projected to add the most ({big.slice(0, 2).map((r) => pct(r.g)).join(' and ')}), while {big.slice(-2).map((r) => r.s).join(' and ')} add the least ({big.slice(-2).map((r) => pct(r.g)).join(' and ')}).
         </p>
 
         <Faq items={[
