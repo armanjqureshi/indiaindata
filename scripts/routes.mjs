@@ -239,6 +239,15 @@ export function getRoutes() {
     priority: 0.8,
   })
 
+  for (const [path, title, description] of [
+    ['/states', 'Indian states ranked: GDP, per capita income and richest state', 'Rankings of Indian states by GSDP, per capita income and wealth, from the RBI Handbook of Statistics on Indian States.'],
+    ['/state-wise-gdp-of-india', 'State-wise GDP of India: GSDP of all states (2024-25)', 'GSDP of every Indian state and UT from the RBI Handbook, in rupees lakh crore, with real growth. Maharashtra is largest. Choose any year from 2011-12 to 2024-25.'],
+    ['/per-capita-income-by-state', 'Per capita income by state in India (2024-25)', 'Per capita net state domestic product for every Indian state and UT, 2011-12 to 2024-25, from the RBI Handbook. See which states are richest and poorest per person.'],
+    ['/richest-state-in-india', 'Richest state in India: by GDP and by income per person', 'Which is the richest state in India? Maharashtra is largest by GDP; Goa, Sikkim and Delhi lead on per capita income. Ranked tables from the RBI Handbook.'],
+  ]) {
+    routes.push({ path, title, description, changefreq: 'monthly', priority: path === '/states' ? 0.6 : 0.8 })
+  }
+
   routes.push({
     path: '/sme-ipo-gmp',
     title: 'SME IPO GMP today: NSE Emerge grey market premium and listing gains',
