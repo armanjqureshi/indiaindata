@@ -27,6 +27,16 @@ function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => {
     window.scrollTo(0, 0)
+    // Page view for Google Analytics (single-page app, so sent on each route change).
+    // Skipped on the editor and on local development.
+    const h = window.location.hostname
+    if (typeof window.gtag === 'function' && !pathname.startsWith('/admin') && h !== 'localhost' && h !== '127.0.0.1') {
+      window.gtag('event', 'page_view', {
+        page_path: pathname,
+        page_location: window.location.href,
+        page_title: document.title,
+      })
+    }
   }, [pathname])
   return null
 }

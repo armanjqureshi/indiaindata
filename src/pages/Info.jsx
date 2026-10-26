@@ -128,7 +128,7 @@ export function Privacy() {
     <Shell title="Privacy policy" intro="We collect very little. This page says exactly what, and which other companies see your visit." updated={POLICY_UPDATED}>
       <H>What we collect</H>
       <UL items={[
-        'No accounts, no advertising and no analytics or tracking cookies. We do not run Google Analytics or similar tools.',
+        'No accounts and no advertising. We use Google Analytics (measurement only) to count visits and see which pages people read. It sets cookies in your browser and receives your IP address, device and browser details and the pages you view. We have switched off Google’s advertising features and ad personalisation. You can block it with a browser extension such as Google’s Analytics opt-out add-on, or by turning off cookies.',
         'Your device remembers two preferences, your light or dark theme and any indicators you star, in your browser’s local storage. This stays on your device and is never sent to us.',
         'If you email us, we receive your email address and your message. We use them only to reply and to follow up on what you wrote, and we keep them as long as needed for that.',
         'The newsletter and contact buttons open your email app with a prepared message. We receive your address only if you send that email.',
@@ -137,6 +137,7 @@ export function Privacy() {
       <P>When you load our pages, your browser connects to the services below. They receive your IP address and basic browser details under their own privacy policies. We do not control that.</P>
       <UL items={[
         'Netlify hosts the site and keeps standard server logs.',
+        'Google Analytics (googletagmanager.com and google-analytics.com) measures visits.',
         'Google Fonts supplies the typefaces.',
         'jsDelivr and GitHub supply the latest market and IPO data files.',
         'Netlify Identity (identity.netlify.com) loads a login script that our editors use.',
@@ -150,7 +151,7 @@ export function Privacy() {
       <H>Your choices</H>
       <P>You can ask what we hold about you, or ask us to delete it, by emailing <Mail />. You can clear the preferences stored in your browser at any time from your browser settings. We handle personal data in line with the laws that apply to us in India, including the Digital Personal Data Protection Act, 2023.</P>
       <H>Changes</H>
-      <P>If we add analytics, a newsletter service or anything else that collects information, we will update this page first and show the date above.</P>
+      <P>If we add a newsletter service, advertising or anything else that collects information, we will update this page first and show the date above.</P>
       <H>Contact</H>
       <P>Questions about privacy: <Mail />. India in Data is operated from Mumbai, India.</P>
     </Shell>
