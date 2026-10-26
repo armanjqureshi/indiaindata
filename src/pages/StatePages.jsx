@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
+import { MPI, MPI_INDIA } from '../data/poverty.js'
 import { POP_YEARS, POP_INDIA, POP_STATES, POP } from '../data/population.js'
 import { YEARS, STATES, PC_CURRENT, PC_CONSTANT, GSDP_CURRENT, GSDP_CONSTANT } from '../data/states.js'
 
@@ -292,9 +293,9 @@ export function RichestState() {
           ['Which is the richest state in India?', `By total economic output, Maharashtra, followed by Tamil Nadu and Uttar Pradesh. By income per person, Sikkim and Goa led in ${YEARS[LAST - 1]}, with Delhi, Chandigarh and Telangana next.`],
           ['Why do the two measures differ?', 'GSDP adds up everything a state produces, so big states score high. Per capita income divides by population, so small, high-income places such as Goa and Sikkim score high. Neither says how wealth is spread within a state.'],
           ['Is Gujarat not in the top?', `The RBI Handbook has no Gujarat figures after 2022-23. Its ${YEARS[latestIdx(GSDP_CURRENT, 'Gujarat')]} GSDP was ${lakhCrore(GSDP_CURRENT.Gujarat[latestIdx(GSDP_CURRENT, 'Gujarat')])}. We do not estimate missing years.`],
-          ['Which is the poorest state?', `Bihar has the lowest per capita income in the ${YEARS[LAST]} data (${rupees(PC_CURRENT.Bihar[LAST])}), followed by Uttar Pradesh and Jharkhand.`],
+          ['Which is the poorest state?', `Bihar has the lowest per capita income in the ${YEARS[LAST]} data (${rupees(PC_CURRENT.Bihar[LAST])}), followed by Uttar Pradesh and Jharkhand. See the poorest state in India page for a second measure.`],
         ]} />
-        <Footer />
+        <Footer extra={<p className="mt-2 text-sm">Related: <Link to="/poorest-state-in-india" className="text-brand hover:underline">poorest state in India</Link>.</p>} />
       </section>
     </>
   )
@@ -311,12 +312,13 @@ export function StatesHub() {
     ['/per-capita-income-by-state', 'Per capita income by state', 'Income per person for every state and UT, richest to poorest.'],
     ['/richest-state-in-india', 'Richest state in India', 'The answer by size of economy and by income per person.'],
     ['/population-by-state', 'India population by state', 'Projected population of every state and UT, 2011 to 2036.'],
+    ['/poorest-state-in-india', 'Poorest state in India', 'Lowest incomes and highest multidimensional poverty, by state.'],
   ]
   return (
     <>
       <Hero title="Indian states, ranked" intro="State-level income and output from the RBI Handbook of Statistics on Indian States 2024-25, with the source and year on every page." />
       <section className="mx-auto max-w-site px-4 pb-14 sm:px-6">
-        <div className="mt-8 grid gap-px border border-ink/10 bg-ink/10 md:grid-cols-4">
+        <div className="mt-8 grid gap-px border border-ink/10 bg-ink/10 md:grid-cols-3">
           {cards.map(([to, t, d]) => (
             <Link key={to} to={to} className="bg-paper p-5 hover:bg-ink/[0.03]">
               <h2 className="font-display text-xl font-semibold">{t}</h2>
@@ -409,6 +411,101 @@ export function StatePopulation() {
           Source: National Commission on Population, Ministry of Health and Family Welfare, Report of the Technical Group on Population Projections 2011-2036 (July 2020), Table 8, projected total population as on 1 March. State figures add up to the India total within rounding. Dadra and Nagar Haveli and Daman and Diu are combined. The report projects the seven north-eastern states other than Assam together, so several show the same growth, and very small UTs such as Dadra and Nagar Haveli and Daman and Diu show large swings from its migration assumptions. See our <Link to="/methodology" className="text-brand hover:underline">methodology</Link>.
         </p>
         <p className="mt-4 text-sm"><Link to="/states" className="text-brand hover:underline">All state rankings</Link></p>
+      </section>
+    </>
+  )
+}
+
+/* ---------- poorest state ---------- */
+export function PoorestState() {
+  useSeo({
+    title: 'Poorest state in India: by income and by multidimensional poverty',
+    description: 'Which is the poorest state in India? Bihar is lowest on income per person and on NITI Aayog’s multidimensional poverty index. Ranked tables with sources.',
+  })
+  const pc = ranked(PC_CURRENT, LAST)
+  const lowest = [...pc].reverse().slice(0, 10)
+  const mpi = Object.entries(MPI).map(([state, v]) => ({ state, a: v[0], b: v[3] })).sort((x, y) => y.b - x.b)
+  const maxB = mpi[0].b
+  const falls = [...mpi].sort((x, y) => (y.a - y.b) - (x.a - x.b))
+  return (
+    <>
+      <Hero
+        title="Poorest state in India"
+        intro={`Bihar is the poorest state on both common measures. Its income per person was ${rupees(PC_CURRENT.Bihar[LAST])} in ${YEARS[LAST]}, the lowest of any state with data, and ${MPI.Bihar[3].toFixed(2)}% of its people were multidimensionally poor in 2019-21, the highest share in the country. Uttar Pradesh and Jharkhand follow on income; Jharkhand and Meghalaya follow Bihar on the poverty index.`}
+      />
+      <section className="mx-auto max-w-site px-4 pb-14 sm:px-6">
+        <H>Lowest income per person, {YEARS[LAST]}</H>
+        <div className="overflow-x-auto border-y border-ink/10">
+          <table className="w-full border-collapse text-sm">
+            <caption className="sr-only">Ten states with the lowest per capita income</caption>
+            <thead>
+              <tr className="border-b border-ink/15 text-left text-xs text-ink/60">
+                <th className="px-3 py-2 font-semibold">State</th>
+                <th className="px-3 py-2 text-right font-semibold">₹ per person a year</th>
+                <th className="px-3 py-2 text-right font-semibold">Share of the highest ({pc[0].state})</th>
+              </tr>
+            </thead>
+            <tbody>
+              {lowest.map((r) => (
+                <tr key={r.state} className="border-b border-ink/10 last:border-0">
+                  <td className="px-3 py-2 font-semibold">{r.state}</td>
+                  <td className="num px-3 py-2 text-right">{rupees(r.v)}</td>
+                  <td className="num px-3 py-2 text-right">{((r.v / pc[0].v) * 100).toFixed(0)}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 max-w-3xl text-sm leading-body text-ink/70">
+          Per capita net state domestic product at current prices, from the RBI Handbook. Eight states and UTs, including Gujarat, have no {YEARS[LAST]} figure. See the <Link to="/per-capita-income-by-state" className="text-brand hover:underline">full ranking</Link>.
+        </p>
+
+        <H>Share of people who are multidimensionally poor</H>
+        <p className="max-w-3xl leading-body text-ink/80">
+          NITI Aayog’s index counts a person as poor if they are deprived on a third or more of 12 measures covering health, education and living standards, such as nutrition, schooling, sanitation, cooking fuel and housing. It is not an income measure and not the poverty line. India’s headcount fell from {MPI_INDIA[0].toFixed(2)}% in 2015-16 to {MPI_INDIA[3].toFixed(2)}% in 2019-21.
+        </p>
+        <div className="mt-4 overflow-x-auto border-y border-ink/10">
+          <table className="w-full border-collapse text-sm">
+            <caption className="sr-only">Multidimensional poverty headcount by state, 2015-16 and 2019-21</caption>
+            <thead>
+              <tr className="border-b border-ink/15 text-left text-xs text-ink/60">
+                <th className="px-3 py-2 font-semibold">Rank</th>
+                <th className="px-3 py-2 font-semibold">State or UT</th>
+                <th className="px-3 py-2 text-right font-semibold">2019-21</th>
+                <th className="px-3 py-2 text-right font-semibold">2015-16</th>
+                <th className="px-3 py-2 text-right font-semibold">Change</th>
+                <th className="hidden px-3 py-2 sm:table-cell" />
+              </tr>
+            </thead>
+            <tbody>
+              {mpi.map((r, k) => (
+                <tr key={r.state} className="border-b border-ink/10 last:border-0">
+                  <td className="num px-3 py-2">{k + 1}</td>
+                  <td className="px-3 py-2 font-semibold">{r.state}</td>
+                  <td className="num px-3 py-2 text-right">{r.b.toFixed(2)}%</td>
+                  <td className="num px-3 py-2 text-right">{r.a.toFixed(2)}%</td>
+                  <td className="num px-3 py-2 text-right">{(r.b - r.a).toFixed(1)} pts</td>
+                  <td className="hidden w-1/5 px-3 py-2 sm:table-cell"><Bar value={r.b} max={maxB} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 max-w-3xl text-sm leading-body text-ink/70">
+          Headcount ratio, per cent of the population. Surveys: NFHS-4 (2015-16) and NFHS-5 (2019-21). The most recent figures here are from before 2022.
+        </p>
+
+        <Faq items={[
+          ['Which is the poorest state in India?', `Bihar, on both measures: the lowest income per person (${rupees(PC_CURRENT.Bihar[LAST])} in ${YEARS[LAST]}) and the highest multidimensional poverty headcount (${MPI.Bihar[3].toFixed(2)}% in 2019-21).`],
+          ['Which state has improved the most?', `${falls[0].state} cut its headcount by ${(falls[0].a - falls[0].b).toFixed(1)} percentage points between 2015-16 and 2019-21, the most of any state, followed by ${falls[1].state} (${(falls[1].a - falls[1].b).toFixed(1)}) and ${falls[2].state} (${(falls[2].a - falls[2].b).toFixed(1)}).`],
+          ['Which state has the lowest poverty?', `Kerala has the lowest multidimensional poverty headcount at ${MPI.Kerala[3].toFixed(2)}%, followed by Goa, Puducherry and Lakshadweep, all below 1.2%.`],
+          ['Why do the two lists differ?', `Income per person measures money earned. The multidimensional index measures deprivation in health, schooling and living conditions. Jammu & Kashmir, for example, is fifth lowest on income but has a poverty headcount of only ${MPI['Jammu & Kashmir'][3].toFixed(2)}%.`],
+          ['Is this the same as the poverty line?', 'No. The poverty line is a consumption cut-off. The multidimensional index counts deprivations from household surveys, so the two give different numbers.'],
+        ]} />
+        <p className="mt-8 max-w-3xl text-xs leading-body text-ink/60">
+          Sources: RBI, Handbook of Statistics on Indian States 2024-25: Table 19 (per capita NSDP, from the National Statistical Office, MoSPI) and Table 10 (multidimensional poverty, from NITI Aayog, National Multidimensional Poverty Index: A Progress Review 2023). See our <Link to="/methodology" className="text-brand hover:underline">methodology</Link>.
+        </p>
+        <p className="mt-4 text-sm">Related: <Link to="/richest-state-in-india" className="text-brand hover:underline">richest state in India</Link>. <Link to="/states" className="text-brand hover:underline">All state rankings</Link></p>
       </section>
     </>
   )
