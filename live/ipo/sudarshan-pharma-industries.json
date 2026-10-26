@@ -1,0 +1,20 @@
+{
+ "subscription": null,
+ "lotSize": null,
+ "faceValue": null,
+ "issueType": null,
+ "issueSizeText": null,
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [],
+ "registrar": null,
+ "registrarContact": null,
+ "marketTimings": null,
+ "documents": {},
+ "fetchedAt": "2026-10-26T18:36:35.652Z",
+ "slug": "sudarshan-pharma-industries",
+ "symbol": "SUDARSHAN",
+ "board": "sme",
+ "name": "Sudarshan Pharma Industries Limited"
+}
