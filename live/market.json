@@ -2,172 +2,172 @@
  "items": {
   "nifty-50": {
    "label": "Nifty 50",
-   "value": 22600,
-   "prev": 22687.65,
-   "change": -87.65,
-   "changePct": -0.39,
-   "asOf": "2026-10-23",
+   "value": 22753.2,
+   "prev": 22600,
+   "change": 153.2,
+   "changePct": 0.68,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "NSE end-of-day index file",
-   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_23102026.csv",
+   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_26102026.csv",
    "note": null,
-   "updatedAt": "2026-10-23T17:57:11.788Z"
+   "updatedAt": "2026-10-26T13:40:29.285Z"
   },
   "nifty-bank": {
    "label": "Nifty Bank",
-   "value": 54287.35,
-   "prev": 54925.7,
-   "change": -638.35,
-   "changePct": -1.16,
-   "asOf": "2026-10-23",
+   "value": 54366.7,
+   "prev": 54287.35,
+   "change": 79.35,
+   "changePct": 0.15,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "NSE end-of-day index file",
-   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_23102026.csv",
+   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_26102026.csv",
    "note": null,
-   "updatedAt": "2026-10-23T17:57:11.796Z"
+   "updatedAt": "2026-10-26T13:40:29.290Z"
   },
   "nifty-it": {
    "label": "Nifty IT",
-   "value": 31995.5,
-   "prev": 32081.25,
-   "change": -85.75,
-   "changePct": -0.27,
-   "asOf": "2026-10-23",
+   "value": 32273.05,
+   "prev": 31995.5,
+   "change": 277.55,
+   "changePct": 0.87,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "NSE end-of-day index file",
-   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_23102026.csv",
+   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_26102026.csv",
    "note": null,
-   "updatedAt": "2026-10-23T17:57:11.796Z"
+   "updatedAt": "2026-10-26T13:40:29.290Z"
   },
   "nifty-midcap-150": {
    "label": "Nifty Midcap 150",
-   "value": 20592.75,
-   "prev": 21028.65,
-   "change": -435.9,
-   "changePct": -2.07,
-   "asOf": "2026-10-23",
+   "value": 20812.25,
+   "prev": 20592.75,
+   "change": 219.5,
+   "changePct": 1.07,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "NSE end-of-day index file",
-   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_23102026.csv",
+   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_26102026.csv",
    "note": null,
-   "updatedAt": "2026-10-23T17:57:11.796Z"
+   "updatedAt": "2026-10-26T13:40:29.290Z"
   },
   "nifty-smallcap-250": {
    "label": "Nifty Smallcap 250",
-   "value": 16385.15,
-   "prev": 16856.2,
-   "change": -471.05,
-   "changePct": -2.79,
-   "asOf": "2026-10-23",
+   "value": 16570.5,
+   "prev": 16385.15,
+   "change": 185.35,
+   "changePct": 1.13,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "NSE end-of-day index file",
-   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_23102026.csv",
+   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_26102026.csv",
    "note": null,
-   "updatedAt": "2026-10-23T17:57:11.796Z"
+   "updatedAt": "2026-10-26T13:40:29.290Z"
   },
   "india-vix": {
    "label": "India VIX",
-   "value": 16.86,
-   "prev": 15.76,
-   "change": 1.1,
-   "changePct": 6.98,
-   "asOf": "2026-10-23",
+   "value": 17.16,
+   "prev": 16.86,
+   "change": 0.3,
+   "changePct": 1.78,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "NSE end-of-day index file",
-   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_23102026.csv",
+   "sourceUrl": "https://nsearchives.nseindia.com/content/indices/ind_close_all_26102026.csv",
    "note": null,
-   "updatedAt": "2026-10-23T17:57:11.796Z"
+   "updatedAt": "2026-10-26T13:40:29.290Z"
   },
   "sensex": {
    "label": "BSE Sensex",
-   "value": 73123.83,
-   "prev": 73249.39,
-   "change": -125.56,
-   "changePct": -0.17,
-   "asOf": "2026-10-23",
+   "value": 73606.75,
+   "prev": 73123.83,
+   "change": 482.92,
+   "changePct": 0.66,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "BSE Sensex close (via Moneycontrol price feed; cross-checked against the Nifty 50)",
    "sourceUrl": null,
    "note": null,
-   "updatedAt": "2026-10-23T17:57:11.875Z"
+   "updatedAt": "2026-10-26T13:40:30.010Z"
   },
   "usd-inr": {
    "label": "USD / INR",
-   "value": 94.9432,
-   "prev": 94.6986,
-   "change": 0.2446,
-   "changePct": 0.26,
-   "asOf": "2026-10-23",
+   "value": 95.1549,
+   "prev": 94.9432,
+   "change": 0.2117,
+   "changePct": 0.22,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "FBIL reference rate (published by NSE)",
    "sourceUrl": "https://www.fbil.org.in/",
    "note": "Fixed at 13:00 IST",
-   "updatedAt": "2026-10-23T17:57:12.529Z"
+   "updatedAt": "2026-10-26T13:40:30.382Z"
   },
   "jpy-inr": {
    "label": "JPY / INR (per 100 yen)",
-   "value": 60.49,
-   "prev": 60.25,
-   "change": 0.24,
-   "changePct": 0.4,
-   "asOf": "2026-10-23",
+   "value": 60.57,
+   "prev": 60.49,
+   "change": 0.08,
+   "changePct": 0.13,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "FBIL reference rate (published by NSE)",
    "sourceUrl": "https://www.fbil.org.in/",
    "note": "Fixed at 13:00 IST",
-   "updatedAt": "2026-10-23T17:57:12.529Z"
+   "updatedAt": "2026-10-26T13:40:30.382Z"
   },
   "gbp-inr": {
    "label": "GBP / INR",
-   "value": 127.1286,
-   "prev": 126.9252,
-   "change": 0.2034,
-   "changePct": 0.16,
-   "asOf": "2026-10-23",
+   "value": 127.2269,
+   "prev": 127.1286,
+   "change": 0.0983,
+   "changePct": 0.08,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "FBIL reference rate (published by NSE)",
    "sourceUrl": "https://www.fbil.org.in/",
    "note": "Fixed at 13:00 IST",
-   "updatedAt": "2026-10-23T17:57:12.529Z"
+   "updatedAt": "2026-10-26T13:40:30.382Z"
   },
   "eur-inr": {
    "label": "EUR / INR",
-   "value": 106.4547,
-   "prev": 106.5012,
-   "change": -0.0465,
-   "changePct": -0.04,
-   "asOf": "2026-10-23",
+   "value": 106.7241,
+   "prev": 106.4547,
+   "change": 0.2694,
+   "changePct": 0.25,
+   "asOf": "2026-10-26",
    "unit": "",
    "source": "FBIL reference rate (published by NSE)",
    "sourceUrl": "https://www.fbil.org.in/",
    "note": "Fixed at 13:00 IST",
-   "updatedAt": "2026-10-23T17:57:12.529Z"
+   "updatedAt": "2026-10-26T13:40:30.382Z"
   },
   "dii-net": {
    "label": "DII net (cash market)",
-   "value": 3235.36,
-   "prev": 2891.32,
-   "change": 344.04,
-   "changePct": 11.9,
-   "asOf": "2026-10-23",
+   "value": 2609.57,
+   "prev": 3235.36,
+   "change": -625.79,
+   "changePct": -19.34,
+   "asOf": "2026-10-26",
    "unit": "₹ cr",
    "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined)",
    "sourceUrl": "https://www.nseindia.com/reports/fii-dii",
-   "note": "Buy ₹19232.31 cr, sell ₹15996.95 cr",
-   "updatedAt": "2026-10-23T17:57:12.817Z"
+   "note": "Buy ₹17389.57 cr, sell ₹14780 cr",
+   "updatedAt": "2026-10-26T13:40:30.692Z"
   },
   "fii-net": {
    "label": "FII/FPI net (cash market)",
-   "value": 887.65,
-   "prev": -3458.7,
-   "change": 4346.35,
-   "changePct": -125.66,
-   "asOf": "2026-10-23",
+   "value": -1462.49,
+   "prev": 887.65,
+   "change": -2350.14,
+   "changePct": -264.76,
+   "asOf": "2026-10-26",
    "unit": "₹ cr",
    "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined)",
    "sourceUrl": "https://www.nseindia.com/reports/fii-dii",
-   "note": "Buy ₹14445.54 cr, sell ₹13557.89 cr",
-   "updatedAt": "2026-10-23T17:57:12.817Z"
+   "note": "Buy ₹9324.9 cr, sell ₹10787.39 cr",
+   "updatedAt": "2026-10-26T13:40:30.693Z"
   },
   "brent-spot": {
    "label": "Brent crude spot (FOB)",
@@ -184,16 +184,16 @@
   },
   "fpi-equity-mtd": {
    "label": "FPI net equity investment, month to date",
-   "value": -48056.33,
+   "value": -45784.83,
    "prev": null,
    "change": null,
    "changePct": null,
-   "asOf": "2026-10-23",
+   "asOf": "2026-10-26",
    "unit": "₹ cr",
    "source": "NSDL, daily trends in FPI investment (equity, all routes)",
    "sourceUrl": "https://www.fpi.nsdl.co.in/web/Reports/Monthly.aspx",
-   "note": "Sum of 15 reporting days in 2026-10",
-   "updatedAt": "2026-10-23T17:57:21.672Z"
+   "note": "Sum of 16 reporting days in 2026-10",
+   "updatedAt": "2026-10-26T13:40:37.306Z"
   },
   "gold-ibja": {
    "label": "Gold 999 (IBJA, per 10 g)",
@@ -1275,6 +1275,10 @@
    [
     "2026-10-23",
     22600
+   ],
+   [
+    "2026-10-26",
+    22753.2
    ]
   ],
   "nifty-bank": [
@@ -2329,6 +2333,10 @@
    [
     "2026-10-23",
     54287.35
+   ],
+   [
+    "2026-10-26",
+    54366.7
    ]
   ],
   "nifty-it": [
@@ -3383,6 +3391,10 @@
    [
     "2026-10-23",
     31995.5
+   ],
+   [
+    "2026-10-26",
+    32273.05
    ]
   ],
   "nifty-midcap-150": [
@@ -4437,6 +4449,10 @@
    [
     "2026-10-23",
     20592.75
+   ],
+   [
+    "2026-10-26",
+    20812.25
    ]
   ],
   "nifty-smallcap-250": [
@@ -5491,6 +5507,10 @@
    [
     "2026-10-23",
     16385.15
+   ],
+   [
+    "2026-10-26",
+    16570.5
    ]
   ],
   "india-vix": [
@@ -6541,6 +6561,10 @@
    [
     "2026-10-23",
     16.86
+   ],
+   [
+    "2026-10-26",
+    17.16
    ]
   ],
   "sensex": [
@@ -6559,6 +6583,10 @@
    [
     "2026-10-23",
     73123.83
+   ],
+   [
+    "2026-10-26",
+    73606.75
    ]
   ],
   "usd-inr": [
@@ -6577,6 +6605,10 @@
    [
     "2026-10-23",
     94.9432
+   ],
+   [
+    "2026-10-26",
+    95.1549
    ]
   ],
   "jpy-inr": [
@@ -6595,6 +6627,10 @@
    [
     "2026-10-23",
     60.49
+   ],
+   [
+    "2026-10-26",
+    60.57
    ]
   ],
   "gbp-inr": [
@@ -6613,6 +6649,10 @@
    [
     "2026-10-23",
     127.1286
+   ],
+   [
+    "2026-10-26",
+    127.2269
    ]
   ],
   "eur-inr": [
@@ -6631,6 +6671,10 @@
    [
     "2026-10-23",
     106.4547
+   ],
+   [
+    "2026-10-26",
+    106.7241
    ]
   ],
   "dii-net": [
@@ -6649,6 +6693,10 @@
    [
     "2026-10-23",
     3235.36
+   ],
+   [
+    "2026-10-26",
+    2609.57
    ]
   ],
   "fii-net": [
@@ -6667,6 +6715,10 @@
    [
     "2026-10-23",
     887.65
+   ],
+   [
+    "2026-10-26",
+    -1462.49
    ]
   ],
   "brent-spot": [
@@ -7183,6 +7235,10 @@
    [
     "2026-10-23",
     -48056.33
+   ],
+   [
+    "2026-10-26",
+    -45784.83
    ]
   ],
   "gold-ibja": [
@@ -7246,6 +7302,6 @@
    ]
   ]
  },
- "updatedAt": "2026-10-24T08:59:29.245Z",
- "session": "2026-10-23"
+ "updatedAt": "2026-10-26T13:40:37.306Z",
+ "session": "2026-10-26"
 }
