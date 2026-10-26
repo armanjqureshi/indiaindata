@@ -137,7 +137,7 @@ export default function SectionPage({ slug }) {
                 onClick={() => setSort(o.id)}
                 aria-pressed={sort === o.id}
                 className={`rounded px-3 py-1.5 text-sm font-medium transition-colors ${
-                  sort === o.id ? 'bg-brand text-paper' : 'text-ink/60 hover:bg-ink/5'
+                  sort === o.id ? 'bg-action text-white' : 'text-ink/60 hover:bg-ink/5'
                 }`}
               >
                 {o.label}
@@ -219,7 +219,7 @@ export default function SectionPage({ slug }) {
             )}
 
             {shown.length === 0 && (
-              <div className="rounded-sm border border-ink/10 bg-panel p-10 text-center">
+              <div className="rounded-xl border border-ink/10 bg-panel p-10 text-center">
                 <p className="font-display text-lg font-semibold">No articles under this topic yet</p>
                 <p className="mt-1 text-sm text-ink/60">Clear the filter to see everything in {section.name}.</p>
               </div>
@@ -241,7 +241,7 @@ export default function SectionPage({ slug }) {
           {/* Right rail */}
           <aside className="hidden lg:block" aria-label="Sidebar">
             <div className="sticky top-24 flex flex-col gap-6">
-              <div className="rounded-sm border border-ink/10 bg-panel p-5">
+              <div className="rounded-xl border border-ink/10 bg-panel p-5">
                 <h2 className="font-display text-lg font-semibold">Trending in {section.name}</h2>
                 <ol className="mt-4 space-y-4">
                   {trending.map((a, i) => (
@@ -262,7 +262,7 @@ export default function SectionPage({ slug }) {
                   ))}
                 </ol>
               </div>
-              <div className="rounded-sm border border-ink/10 bg-panel p-5">
+              <div className="rounded-xl border border-ink/10 bg-panel p-5">
                 <h2 className="font-display text-lg font-semibold">The weekly brief</h2>
                 <div className="mt-3">
                   <NewsletterSignup compact />

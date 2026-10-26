@@ -67,7 +67,7 @@ export default function IpoGmpPage() {
       </header>
 
       <div className="mx-auto max-w-site px-4 pb-14 sm:px-6">
-        <section className="mt-8 rounded-sm border border-ink/10 bg-panel p-5">
+        <section className="mt-8 rounded-xl border border-ink/10 bg-panel p-5">
           {latest ? (
             <>
               <p className="text-sm text-ink/60">Reported GMP</p>
@@ -98,7 +98,7 @@ export default function IpoGmpPage() {
           </p>
         </section>
 
-        <div className="mt-6 grid grid-cols-2 gap-px border border-ink/10 bg-ink/10 md:grid-cols-4">
+        <div className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 md:grid-cols-4">
           {[
             [row.issuePrice ? 'Issue price' : 'Price band', priceLabel(row)],
             ['Lot size', row.lotSize ? `${fmt.inr(row.lotSize, 0)} shares${row.lotValue ? `, ${fmt.rupees(row.lotValue)}` : ''}` : '—'],
@@ -118,7 +118,7 @@ export default function IpoGmpPage() {
 
         <H>{name} GMP chart</H>
         {series.length > 1 ? (
-          <div className="h-64 w-full rounded-sm border border-ink/10 bg-panel p-3" role="img" aria-label={`${name} reported GMP over time`}>
+          <div className="h-64 w-full rounded-xl border border-ink/10 bg-panel p-3" role="img" aria-label={`${name} reported GMP over time`}>
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={series} margin={{ top: 8, right: 16, left: 0, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="currentColor" strokeOpacity={0.12} />
@@ -131,7 +131,7 @@ export default function IpoGmpPage() {
           </div>
         ) : implied && row.priceLow ? (
           <>
-            <div className="h-64 w-full rounded-sm border border-ink/10 bg-panel p-3" role="img" aria-label={`${name} price band against the implied grey market price`}>
+            <div className="h-64 w-full rounded-xl border border-ink/10 bg-panel p-3" role="img" aria-label={`${name} price band against the implied grey market price`}>
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={[
                   { label: 'Lower band', v: row.priceLow, c: '#6b8aa6' },

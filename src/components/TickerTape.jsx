@@ -34,7 +34,7 @@ export default function TickerTape() {
           <span className="font-sans text-ink/60">{label}</span>
           <span className={`font-medium ${kind === 'flow' ? (up ? 'text-up' : 'text-down') : 'text-ink'}`}>{v}</span>
           {c && (
-            <span className={up ? 'text-up' : down ? 'text-down' : 'text-ink/60'}>
+            <span className={`rounded-full px-1.5 ${up ? 'bg-up/15 text-up' : down ? 'bg-down/15 text-down' : 'text-ink/60'}`}>
               {up ? '\u25b2' : down ? '\u25bc' : ''} {c}
             </span>
           )}

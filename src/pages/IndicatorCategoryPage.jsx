@@ -38,7 +38,7 @@ export default function IndicatorCategoryPage() {
             ))}
           </div>
         ) : (
-          <div className="rounded-sm border border-ink/10 bg-panel p-10 text-center">
+          <div className="rounded-xl border border-ink/10 bg-panel p-10 text-center">
             <p className="font-display text-lg font-semibold">Nothing tracked here yet</p>
           </div>
         )}

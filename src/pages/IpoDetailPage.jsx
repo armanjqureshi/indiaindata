@@ -29,7 +29,7 @@ function Timeline({ t, today }) {
   ].filter(([k]) => t?.[k])
   if (!steps.length) return null
   return (
-    <ol className="grid gap-px border border-ink/10 bg-ink/10 sm:grid-cols-5">
+    <ol className="grid gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 sm:grid-cols-5">
       {steps.map(([k, label]) => {
         const d = t[k]
         const done = today && d <= today
@@ -138,7 +138,7 @@ export default function IpoDetailPage() {
             <span className="num text-xs text-ink/60">NSE: {row.symbol}</span>
             {ed?.sector && <span className="text-xs text-ink/60">{ed.sector}</span>}
           </div>
-          <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-5xl">{name} IPO</h1>
+          <h1 className="mt-2 text-3xl font-semibold leading-tight sm:text-5xl">{name} IPO</h1>
           {status === 'listed' && row.lastClose && (
             <p className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
               <span className="num text-3xl font-semibold">{fmt.rupees(row.lastClose, 2)}</span>
@@ -163,7 +163,7 @@ export default function IpoDetailPage() {
           ].filter(([, v]) => v && v !== '—')
           const fill = (4 - (facts.length % 4)) % 4
           return (
-            <div className="grid grid-cols-2 gap-px border border-ink/10 bg-ink/10 md:grid-cols-4">
+            <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 md:grid-cols-4">
               {facts.map(([l, v, sub2]) => <Fact key={l} label={l} value={v} sub={sub2} />)}
               {Array.from({ length: fill }, (_, i) => <div key={i} aria-hidden="true" className="hidden bg-panel md:block" />)}
               {facts.length % 2 === 1 && <div aria-hidden="true" className="bg-panel md:hidden" />}
@@ -172,7 +172,7 @@ export default function IpoDetailPage() {
         })()}
 
         {status !== 'listed' && status !== 'unlisted' && row.board === 'mainboard' && (
-          <section className="mt-8 rounded-sm border border-ink/10 bg-panel p-4">
+          <section className="mt-8 rounded-xl border border-ink/10 bg-panel p-4">
             <h2 className="text-lg font-bold">{name} IPO GMP</h2>
             {gmpEntry && price ? (
               <p className="mt-2 text-sm leading-body">

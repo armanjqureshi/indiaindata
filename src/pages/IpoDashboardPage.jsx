@@ -122,7 +122,7 @@ export default function IpoDashboardPage() {
       </section>
 
       <section className="mx-auto max-w-site px-4 pb-14 sm:px-6">
-        <div className="mt-8 grid grid-cols-2 gap-px border border-ink/10 bg-ink/10 sm:grid-cols-4">
+        <div className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 sm:grid-cols-4">
           <Stat label="Open for bidding" value={open.length} sub={closingToday ? `${closingToday} closing today` : 'none closing today'} />
           <Stat label="Opening next" value={upcoming.length} sub={upcoming[0] ? `first: ${fmt.shortDate(upcoming[0].open)}` : 'none announced'} />
           <Stat label="Awaiting listing" value={awaiting.length} sub={awaiting[0] ? `next: ${fmt.shortDate(awaiting[0].timetable?.listing)}` : 'none'} />
@@ -158,7 +158,7 @@ export default function IpoDashboardPage() {
         )}
 
         <H>How IPOs have listed in {year}</H>
-        <div className="grid gap-px border border-ink/10 bg-ink/10 sm:grid-cols-2">
+        <div className="grid gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 sm:grid-cols-2">
           {[['Mainboard', main, null], ['SME (NSE Emerge)', sme, '/sme-ipo-gmp']].map(([name, s, link]) => (
             <div key={name} className="bg-paper p-4">
               <div className="flex items-baseline justify-between">

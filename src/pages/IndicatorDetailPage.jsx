@@ -75,11 +75,11 @@ export default function IndicatorDetailPage() {
         <ChartCard chart={indicator.chart} sectionSlug={category?.color || 'economy'} />
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
-          <div className="rounded-sm border border-ink/10 bg-panel p-6">
+          <div className="rounded-xl border border-ink/10 bg-panel p-6">
             <h2 className="font-display text-lg font-semibold">What this measures</h2>
             <p className="mt-2 text-sm leading-normal text-ink/70">{indicator.description}</p>
           </div>
-          <div className="rounded-sm border border-ink/10 bg-panel p-6">
+          <div className="rounded-xl border border-ink/10 bg-panel p-6">
             <h2 className="font-display text-lg font-semibold">Source & release schedule</h2>
             <p className="mt-2 text-sm leading-normal text-ink/70">
               <span className="font-semibold text-ink">{indicator.source}</span>

@@ -106,7 +106,7 @@ export default function SearchPage() {
         )}
         {results.length > 0 && (indicatorHits.length > 0 || ipoHits.length > 0) && <h2 className="mb-3 text-sm font-bold">Articles</h2>}
         {query.trim() && results.length + indicatorHits.length + ipoHits.length === 0 && (
-          <div className="rounded-sm border border-ink/10 bg-panel p-10 text-center">
+          <div className="rounded-xl border border-ink/10 bg-panel p-10 text-center">
             <p className="font-display text-lg font-semibold">No matches found</p>
             <p className="mt-1 text-sm text-ink/60">
               Try a broader term — for example &ldquo;inflation&rdquo;, &ldquo;Nifty&rdquo; or &ldquo;manufacturing&rdquo;.

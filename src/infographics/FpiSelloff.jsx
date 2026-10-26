@@ -8,7 +8,7 @@ const C = {
   sell: '#d6473b', sellPale: '#f1b9ae', buy: '#2a9d8f', gold: '#e9c22a', goldDeep: '#c9a20f', cream: '#ebe1cf',
 }
 const SERIF = 'Fraunces, Georgia, "Times New Roman", serif'
-const SANS = 'Archivo, "Helvetica Neue", Arial, sans-serif'
+const SANS = '"Geist Variable", "Helvetica Neue", Arial, sans-serif'
 const fmt = (n) => Math.round(Math.abs(n)).toLocaleString('en-IN')
 const dayLabel = (iso) => `${Number(iso.slice(8))} Oct`
 

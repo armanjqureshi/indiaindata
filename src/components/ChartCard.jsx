@@ -146,7 +146,7 @@ export default function ChartCard({ chart, sectionSlug = 'blogs', caption }) {
   const accent = (sectionColorMap[sectionSlug] || sectionColorMap.blogs).hex
 
   return (
-    <figure className="overflow-hidden rounded-sm border border-ink/10 bg-panel">
+    <figure className="overflow-hidden rounded-xl border border-ink/10 bg-panel">
       <div className="border-b border-ink/10 px-5 py-4 sm:px-6">
         <h3 className="font-display text-lg font-semibold leading-snug">{chart.title}</h3>
         {chart.subtitle && <p className="mt-0.5 text-sm text-ink/60">{chart.subtitle}</p>}

@@ -22,7 +22,7 @@ export default function InfographicsPage() {
       <section className="mx-auto max-w-site px-4 pb-14 pt-8 sm:px-6">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((i) => (
-            <Link key={i.slug} to={`/infographics/${i.slug}`} className="group block overflow-hidden rounded-sm border border-ink/10 bg-panel hover:border-brand">
+            <Link key={i.slug} to={`/infographics/${i.slug}`} className="group block overflow-hidden rounded-xl border border-ink/10 bg-panel hover:border-brand">
               <div className="aspect-[1200/630] w-full overflow-hidden bg-ink/5">
                 <img src={i.ogImage} alt="" width="1200" height="630" loading="lazy" className="h-full w-full object-cover" />
               </div>

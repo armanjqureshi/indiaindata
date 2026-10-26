@@ -25,7 +25,7 @@ export default function Contact() {
       </section>
 
       <section className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
-        <div className="rounded-sm border border-ink/10 bg-panel p-6 sm:p-8">
+        <div className="rounded-xl border border-ink/10 bg-panel p-6 sm:p-8">
           <p className="text-sm text-ink/60">Email</p>
           <a
             href={`mailto:${CONTACT_EMAIL}`}
@@ -47,7 +47,7 @@ export default function Contact() {
               </div>
               <a
                 href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(prefix)}`}
-                className="shrink-0 rounded-sm border border-brand px-3 py-1.5 text-sm font-semibold text-brand hover:bg-brand hover:text-paper"
+                className="shrink-0 rounded-sm border border-brand px-3 py-1.5 text-sm font-semibold text-brand hover:bg-action hover:text-white"
               >
                 Write
               </a>

@@ -119,7 +119,7 @@ export default function IpoBrowser({ data, today }) {
                 </label>
               </div>
 
-              <div className="mt-4 grid gap-px border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-4 grid gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
                 <Kpi label="Issues in this view" value={fmt.inr(stats.count, 0)} sub={`${stats.main} mainboard, ${stats.sme} SME`} />
                 <Kpi label="Median listing gain" value={fmt.pct(stats.medianGain)} sub={stats.n ? `across ${stats.n} listings with price data` : 'no listing prices yet'} />
                 <Kpi label="Listed above issue price" value={stats.positiveShare === null ? '—' : `${fmt.inr(stats.positiveShare, 0)}%`} />

@@ -40,8 +40,8 @@ export default function InfographicPage() {
         </div>
 
         <div className="mt-4 flex flex-wrap gap-3">
-          <a href={g.image} download={`${g.slug}.png`} className="rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-paper hover:bg-brand-dark">Download image (PNG)</a>
-          {g.related && <Link to={g.related.to} className="rounded-sm border border-brand px-4 py-2 text-sm font-semibold text-brand hover:bg-brand hover:text-paper">{g.related.label}</Link>}
+          <a href={g.image} download={`${g.slug}.png`} className="rounded-sm bg-action px-4 py-2 text-sm font-semibold text-white hover:bg-action-dark">Download image (PNG)</a>
+          {g.related && <Link to={g.related.to} className="rounded-sm border border-brand px-4 py-2 text-sm font-semibold text-brand hover:bg-action hover:text-white">{g.related.label}</Link>}
         </div>
 
         <p className="sr-only">{g.summary}</p>
@@ -69,7 +69,7 @@ export default function InfographicPage() {
         <h2 className="mb-3 mt-10 font-display text-2xl font-semibold">Share or embed</h2>
         <p className="mb-2 text-sm text-ink/70">Free to use with credit and a link back. This code does both.</p>
         <textarea readOnly value={embed} rows={4} onFocus={(e) => e.target.select()} className="num w-full rounded-sm border border-ink/20 bg-panel p-3 text-xs" aria-label="Embed code" />
-        <button type="button" onClick={copy} className="mt-2 rounded-sm border border-brand px-3 py-1.5 text-sm font-semibold text-brand hover:bg-brand hover:text-paper">{copied ? 'Copied' : 'Copy embed code'}</button>
+        <button type="button" onClick={copy} className="mt-2 rounded-sm border border-brand px-3 py-1.5 text-sm font-semibold text-brand hover:bg-action hover:text-white">{copied ? 'Copied' : 'Copy embed code'}</button>
       </div>
     </>
   )

@@ -182,7 +182,7 @@ export default function ArticlePage() {
           })}
 
           {/* Author bio */}
-          <div className="mt-12 flex gap-4 rounded-sm border border-ink/10 bg-panel p-6">
+          <div className="mt-12 flex gap-4 rounded-xl border border-ink/10 bg-panel p-6">
             {article.author.avatar ? (
               <img src={article.author.avatar} alt="" className="h-14 w-14 shrink-0 rounded-full object-cover" />
             ) : (

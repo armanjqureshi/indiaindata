@@ -318,7 +318,7 @@ export function StatesHub() {
     <>
       <Hero title="Indian states, ranked" intro="State-level income and output from the RBI Handbook of Statistics on Indian States 2024-25, with the source and year on every page." />
       <section className="mx-auto max-w-site px-4 pb-14 sm:px-6">
-        <div className="mt-8 grid gap-px border border-ink/10 bg-ink/10 md:grid-cols-3">
+        <div className="mt-8 grid gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 md:grid-cols-3">
           {cards.map(([to, t, d]) => (
             <Link key={to} to={to} className="bg-paper p-5 hover:bg-ink/[0.03]">
               <h2 className="font-display text-xl font-semibold">{t}</h2>

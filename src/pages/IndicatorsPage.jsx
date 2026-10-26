@@ -84,7 +84,7 @@ export default function IndicatorsPage() {
       aria-pressed={cat === id}
       className={`shrink-0 rounded-sm border px-3 py-1.5 text-sm transition-colors ${
         cat === id
-          ? 'border-brand bg-brand font-semibold text-paper'
+          ? 'border-brand bg-action font-semibold text-white'
           : 'border-ink/15 text-ink/70 hover:border-ink/40 hover:text-ink'
       }`}
     >
@@ -96,7 +96,7 @@ export default function IndicatorsPage() {
     <>
       <section className="border-b border-ink/10 bg-panel">
         <div className="mx-auto max-w-site px-4 py-10 sm:px-6">
-          <h1 className="text-4xl font-extrabold sm:text-5xl">Indicator marketplace</h1>
+          <h1 className="text-4xl font-semibold sm:text-5xl">Indicator marketplace</h1>
           <p className="mt-3 max-w-2xl text-base leading-body text-ink/70">
             Browse {indicators.length} indicators across inflation, growth, rates, flows, currencies,
             commodities and markets. {verifiedCount} are checked against a published source and

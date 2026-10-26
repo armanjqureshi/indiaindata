@@ -37,11 +37,11 @@ export default function IndicatorCard({ indicator, watched = false, onToggleWatc
     <div className="relative">
     <Link
       to={`/indicators/${indicator.slug}`}
-      className={`group flex h-full flex-col gap-3 rounded-sm border border-ink/10 bg-panel p-5 transition-all duration-200 hover:${colors.border}`}
+      className={`group flex h-full flex-col gap-3 rounded-xl border border-ink/10 bg-panel p-5 transition-all duration-200 hover:border-ink/25`}
     >
       <div className="flex items-start justify-between gap-2">
         <h3 className="flex items-center gap-2 pr-7 font-display text-base font-semibold leading-snug text-ink group-hover:text-brand-dark">
-          <span aria-hidden="true" className={`h-2 w-2 shrink-0 ${colors.bg}`} />
+          <span aria-hidden="true" className={`h-2 w-2 shrink-0 rounded-full ${colors.bg}`} />
           {indicator.name}
         </h3>
       </div>

@@ -29,13 +29,14 @@ function BoardTile({ ind }) {
   const min = Math.min(...vals), max = Math.max(...vals), r = max - min || 1
   const pts = vals.map((v, i) => `${(i / (vals.length - 1)) * 100},${28 - ((v - min) / r) * 24}`).join(' ')
   return (
-    <Link to={`/indicators/${ind.slug}`} className="group flex flex-col gap-1 bg-panel p-3 transition-colors hover:bg-raise">
+    <Link to={`/indicators/${ind.slug}`} className="group flex flex-col gap-1 bg-panel p-3.5 transition-colors hover:bg-raise">
       <span className="truncate text-xs text-ink/60 group-hover:text-ink">{ind.name}</span>
       <span className={`num font-semibold leading-tight ${ind.currentValue.length > 8 ? "text-base" : "text-xl"}`}>{ind.currentValue}</span>
-      <span className={`num text-xs ${dir}`}>
+      <span className={`num w-fit rounded-full px-1.5 py-0.5 text-xs ${ind.direction === 'up' ? 'bg-up/15' : ind.direction === 'down' ? 'bg-down/15' : 'bg-ink/5'} ${dir}`}>
         {ind.direction === 'up' ? '▲' : ind.direction === 'down' ? '▼' : ''} {ind.change}
       </span>
       <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="mt-1 h-6 w-full" aria-hidden="true">
+        <polygon points={`0,30 ${pts} 100,30`} fill={colors.hex} fillOpacity="0.12" />
         <polyline points={pts} fill="none" stroke={colors.hex} strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
       </svg>
     </Link>
@@ -53,7 +54,7 @@ function Hero() {
     <section className="border-b border-ink/10">
       <div className="mx-auto grid max-w-site gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[5fr_6fr] lg:items-center lg:py-16">
         <div>
-          <h1 className="text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-[3.5rem]">
+          <h1 className="text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-[3.5rem] tracking-tight">
             India&rsquo;s numbers, read plainly.
           </h1>
           <p className="mt-4 max-w-md text-base leading-body text-ink/70">
@@ -76,7 +77,7 @@ function Hero() {
             <button
               type="button"
               onClick={go}
-              className="shrink-0 rounded-sm bg-brand px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-brand-dark"
+              className="shrink-0 rounded-sm bg-action px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-action-dark"
             >
               Search
             </button>
@@ -89,7 +90,7 @@ function Hero() {
               All {indicators.length} indicators
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-px border border-ink/10 bg-ink/10 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 sm:grid-cols-3">
             {board.map((ind) => (
               <BoardTile key={ind.slug} ind={ind} />
             ))}
@@ -197,13 +198,13 @@ export default function Home() {
 
       {/* Newsletter band */}
       <section id="newsletter" className="mx-auto max-w-site scroll-mt-24 px-4 py-10 sm:px-6">
-        <div className="rounded-sm bg-brand px-6 py-10 text-paper sm:px-10">
+        <div className="rounded-2xl bg-action px-6 py-10 text-white sm:px-10">
           <div className="grid items-center gap-8 lg:grid-cols-2">
             <div>
               <h2 className="font-display text-2xl font-semibold sm:text-3xl">
                 Get the charts that explain India
               </h2>
-              <p className="mt-2 text-sm leading-body text-paper/80 sm:text-base">
+              <p className="mt-2 text-sm leading-body text-white/80 sm:text-base">
                 We are preparing a short, free brief on the data behind India&rsquo;s biggest stories. Email us
                 to join the list.
               </p>
@@ -227,7 +228,7 @@ export default function Home() {
               <Link
                 key={s.slug}
                 to={`/${s.slug}`}
-                className={`group rounded-sm border border-ink/10 bg-panel p-6`}
+                className={`group rounded-xl border border-ink/10 bg-panel p-6`}
               >
                 <p className={`text-xs font-semibold ${colors.text}`}>
                   {count} {count === 1 ? 'article' : 'articles'}

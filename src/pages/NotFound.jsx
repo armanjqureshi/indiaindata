@@ -10,7 +10,7 @@ export default function NotFound() {
       <p className="mt-2 text-ink/60">The link may be outdated, or the page may have moved.</p>
       <Link
         to="/"
-        className="mt-6 inline-block rounded-md bg-brand px-6 py-2.5 text-sm font-semibold text-paper hover:bg-brand-dark"
+        className="mt-6 inline-block rounded-md bg-action px-6 py-2.5 text-sm font-semibold text-white hover:bg-action-dark"
       >
         Back to the homepage
       </Link>

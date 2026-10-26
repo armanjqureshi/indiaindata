@@ -36,7 +36,7 @@ export default function TopicPage() {
             ))}
           </div>
         ) : (
-          <div className="rounded-sm border border-ink/10 bg-panel p-10 text-center">
+          <div className="rounded-xl border border-ink/10 bg-panel p-10 text-center">
             <p className="font-display text-lg font-semibold">Nothing tagged here yet</p>
             <p className="mt-1 text-sm text-ink/60">New stories under {topic.name} are on the way.</p>
           </div>

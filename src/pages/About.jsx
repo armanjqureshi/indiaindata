@@ -47,7 +47,7 @@ export default function About() {
         <h2 className="font-display text-2xl font-semibold sm:text-3xl">How we source the data</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {SOURCING.map((s) => (
-            <div key={s.title} className="rounded-sm border border-ink/10 bg-panel p-6">
+            <div key={s.title} className="rounded-xl border border-ink/10 bg-panel p-6">
               <h3 className="font-display text-lg font-semibold">{s.title}</h3>
               <p className="mt-2 text-sm leading-body text-ink/70">{s.text}</p>
             </div>
@@ -62,7 +62,7 @@ export default function About() {
         </p>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {team.map((m) => (
-            <div key={m.name} className="flex gap-4 rounded-sm border border-ink/10 bg-panel p-6">
+            <div key={m.name} className="flex gap-4 rounded-xl border border-ink/10 bg-panel p-6">
               {m.photo ? (
                 <img src={m.photo} alt="" className="h-12 w-12 shrink-0 rounded-full object-cover" />
               ) : (
@@ -97,7 +97,7 @@ export default function About() {
       </section>
 
       <section className="mx-auto max-w-site px-4 py-12 sm:px-6">
-        <div className="grid gap-8 rounded-sm border border-ink/10 bg-panel p-8 sm:grid-cols-3">
+        <div className="grid gap-8 rounded-xl border border-ink/10 bg-panel p-8 sm:grid-cols-3">
           {getSiteStats().map((s) => (
             <StatBlock key={s.label} value={s.value} label={s.label} />
           ))}

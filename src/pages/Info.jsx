@@ -110,7 +110,7 @@ export function Corrections() {
       ) : (
         <ol className="space-y-4">
           {rows.map((r, i) => (
-            <li key={i} className="rounded-sm border border-ink/10 bg-panel p-4">
+            <li key={i} className="rounded-xl border border-ink/10 bg-panel p-4">
               <p className="num text-xs text-ink/50">{r.date}</p>
               <p className="mt-1 font-semibold">{r.page}</p>
               <p className="mt-1 text-sm leading-body text-ink/80">{r.what}</p>
@@ -138,7 +138,6 @@ export function Privacy() {
       <UL items={[
         'Netlify hosts the site and keeps standard server logs.',
         'Google Analytics (googletagmanager.com and google-analytics.com) measures visits.',
-        'Google Fonts supplies the typefaces.',
         'jsDelivr and GitHub supply the latest market and IPO data files.',
         'Netlify Identity (identity.netlify.com) loads a login script that our editors use.',
       ]} />

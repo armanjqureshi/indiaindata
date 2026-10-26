@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 border-b border-ink/10 bg-paper/95 backdrop-blur transition-all duration-200 ${
+      className={`sticky top-0 z-50 border-b border-ink/10 bg-paper/90 backdrop-blur-md transition-all duration-200 ${
         condensed ? '' : ''
       }`}
     >
@@ -62,8 +62,8 @@ export default function Navbar() {
               to={l.to}
               end={l.end}
               className={({ isActive }) =>
-                `rounded-sm px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive ? 'bg-brand-light text-brand' : 'text-ink/70 hover:bg-ink/5 hover:text-ink'
+                `rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors ${
+                  isActive ? 'bg-raise text-ink' : 'text-ink/65 hover:bg-raise/60 hover:text-ink'
                 }`
               }
             >
@@ -79,7 +79,7 @@ export default function Navbar() {
             onClick={() => setSearchOpen((v) => !v)}
             aria-label={searchOpen ? 'Close search' : 'Open search'}
             aria-expanded={searchOpen}
-            className="rounded-sm p-2 text-ink/70 transition-colors hover:bg-ink/5 hover:text-ink"
+            className="rounded-full p-2 text-ink/70 transition-colors hover:bg-ink/5 hover:text-ink"
           >
             <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="7" />
@@ -88,7 +88,7 @@ export default function Navbar() {
           </button>
           <a
             href="#newsletter"
-            className="hidden rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-paper transition-colors hover:bg-brand-dark sm:inline-block"
+            className="hidden rounded-full bg-action px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-action-dark sm:inline-block"
           >
             Subscribe
           </a>
@@ -126,7 +126,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={goSearch}
-              className="shrink-0 rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-paper hover:bg-brand-dark"
+              className="shrink-0 rounded-sm bg-action px-4 py-2 text-sm font-semibold text-white hover:bg-action-dark"
             >
               Search
             </button>
@@ -156,7 +156,7 @@ export default function Navbar() {
             <a
               href="#newsletter"
               onClick={() => setMenuOpen(false)}
-              className="mx-3 my-2 rounded-sm bg-brand px-4 py-2.5 text-center text-sm font-semibold text-paper"
+              className="mx-3 my-2 rounded-sm bg-action px-4 py-2.5 text-center text-sm font-semibold text-white"
             >
               Subscribe
             </a>

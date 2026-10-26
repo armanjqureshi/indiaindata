@@ -110,7 +110,7 @@ export default function SmeGmpPage() {
             <p className="max-w-3xl leading-body text-ink/80">
               NSE Emerge SME IPOs that listed from {fmt.date(from)} to {fmt.date(recent[0].listingDate)}, {n} issues. Listing gain is the listing price against the issue price, from NSE.
             </p>
-            <div className="mt-4 grid grid-cols-2 gap-px border border-ink/10 bg-ink/10 sm:grid-cols-4">
+            <div className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-ink/10 bg-ink/10 sm:grid-cols-4">
               {[
                 ['Listed below issue price', `${below} of ${n}`, `${((below / n) * 100).toFixed(0)}% of issues`],
                 ['Average listing gain', fmt.pct(mean(gains)), `median ${fmt.pct(median(gains))}`],

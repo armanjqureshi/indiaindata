@@ -13,7 +13,7 @@ export default function ArticleCard({ article, variant = 'default' }) {
   if (variant === 'wide') {
     return (
       <article
-        className={`group grid gap-0 overflow-hidden rounded-sm border border-ink/10 bg-panel transition-colors duration-150 hover:${colors.border} sm:grid-cols-[2fr_3fr]`}
+        className={`group grid gap-0 overflow-hidden rounded-xl border border-ink/10 bg-panel transition-colors duration-150 hover:${colors.border} sm:grid-cols-[2fr_3fr]`}
       >
         <Link to={`/article/${article.slug}`} aria-hidden="true" tabIndex={-1} className="block">
           <CardCover article={article} tall />
@@ -43,7 +43,7 @@ export default function ArticleCard({ article, variant = 'default' }) {
   const isLarge = variant === 'large'
   return (
     <article
-      className={`group flex h-full flex-col overflow-hidden rounded-sm border border-ink/10 bg-panel transition-colors duration-150 hover:${colors.border}`}
+      className={`group flex h-full flex-col overflow-hidden rounded-xl border border-ink/10 bg-panel transition-colors duration-150 hover:${colors.border}`}
     >
       <Link to={`/article/${article.slug}`} aria-hidden="true" tabIndex={-1} className="block">
         <CardCover article={article} tall={isLarge} />

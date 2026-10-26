@@ -6,19 +6,19 @@ html { scroll-behavior: smooth; }
 
 :root, :root[data-theme='dark'] {
   color-scheme: dark;
-  --paper: 11 21 30; --panel: 17 34 48; --raise: 23 48 63; --ink: 230 237 241;
-  --brand: 255 154 61; --brand-dark: 255 184 114;
-  --news: 127 169 234; --business: 163 155 255; --market: 63 208 141;
-  --economy: 233 203 79; --society: 208 140 240; --blogs: 63 200 207;
-  --up: 63 208 141; --down: 255 107 91;
+  --paper: 13 16 23; --panel: 20 25 34; --raise: 29 36 50; --ink: 231 234 241;
+  --brand: 91 140 255; --brand-dark: 133 168 255; --action: 59 112 238; --action-dark: 84 132 247;
+  --news: 110 168 255; --business: 168 150 255; --market: 45 190 134;
+  --economy: 236 196 84; --society: 214 140 236; --blogs: 70 200 214;
+  --up: 45 190 134; --down: 242 97 111;
 }
 :root[data-theme='light'] {
   color-scheme: light;
-  --paper: 242 245 247; --panel: 255 255 255; --raise: 232 238 242; --ink: 18 30 41;
-  --brand: 196 90 0; --brand-dark: 150 64 0;
-  --news: 40 95 180; --business: 79 66 200; --market: 12 125 78;
-  --economy: 150 100 0; --society: 135 55 175; --blogs: 10 125 135;
-  --up: 12 125 78; --down: 196 45 35;
+  --paper: 242 244 248; --panel: 255 255 255; --raise: 232 236 243; --ink: 13 18 32;
+  --brand: 30 91 224; --brand-dark: 23 71 179; --action: 30 91 224; --action-dark: 23 71 179;
+  --news: 30 95 200; --business: 90 70 210; --market: 10 138 92;
+  --economy: 150 100 0; --society: 135 55 175; --blogs: 10 125 140;
+  --up: 10 138 92; --down: 201 44 61;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -31,11 +31,18 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3 { font-stretch: 88%; letter-spacing: -0.01em; }
-.num { font-family: 'JetBrains Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+h1, h2, h3 { letter-spacing: -0.022em; font-weight: 600; text-wrap: balance; }
+h1 { letter-spacing: -0.03em; }
+.num { font-family: 'Geist Mono Variable', ui-monospace, monospace; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
 
 :focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
-::selection { background: rgb(var(--brand)); color: rgb(var(--paper)); }
+::selection { background: rgb(var(--brand) / 0.35); color: inherit; }
+
+/* Tables: quiet header, soft row hover, as in market screeners. */
+table thead th { font-weight: 500; color: rgb(var(--ink) / 0.55); }
+table tbody tr { transition: background-color 120ms; }
+table tbody tr:hover { background-color: rgb(var(--ink) / 0.035); }
+
 
 /* Scrolling market tape: two identical halves, shifted by exactly one half. */
 .ticker-track { animation: ticker 45s linear infinite; }
