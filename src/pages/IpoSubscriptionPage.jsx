@@ -34,6 +34,8 @@ export default function IpoSubscriptionPage() {
     .filter((i) => (i.status === 'closed' || i.status === 'listed') && today && i.close >= addDays(today, -14))
     .sort((a, b) => b.close.localeCompare(a.close) || board(a, b))
   const updated = data.updatedAt ? fmt.date(istDateOf(data.updatedAt)) : null
+  // Latest subscription timestamp among open issues, as reported by NSE (e.g. "26-Oct-2026 15:03:00").
+  const latestSub = open.map((i) => i.subscriptionAsOf).filter(Boolean).sort().slice(-1)[0] || null
 
   return (
     <>
@@ -43,7 +45,7 @@ export default function IpoSubscriptionPage() {
           <p className="mt-3 max-w-2xl leading-body text-ink/70">
             How many times each IPO on NSE has been subscribed. Open issues, upcoming issues and the last two weeks of closed issues, from the consolidated NSE and BSE figures.
           </p>
-          {updated && <p className="num mt-3 text-xs text-ink/50">Data as of {updated}. See the <Link to="/methodology" className="text-brand hover:underline">methodology</Link>.</p>}
+          {(updated || latestSub) && <p className="num mt-3 text-xs text-ink/50">{latestSub ? `Latest subscription figure: ${latestSub.replace(/:\d{2}$/, '')} IST. ` : ''}{updated ? `List refreshed ${updated}. ` : ''}See the <Link to="/methodology" className="text-brand hover:underline">methodology</Link>.</p>}
         </div>
       </section>
 
