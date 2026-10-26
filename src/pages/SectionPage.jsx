@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useMarket, fmt } from '../data/live.js'
+import { useMarket, useIntraday, withIntraday, fmt } from '../data/live.js'
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts'
 import useSeo from '../components/Seo.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
 import ChartCard from '../components/ChartCard.jsx'
@@ -31,6 +32,8 @@ export default function SectionPage({ slug }) {
   const isBlogs = slug === 'blogs'
   const isMarket = slug === 'market'
   const market = useMarket()
+  const intraday = useIntraday()
+  const { items: mItems, live } = withIntraday(market, intraday)
   const isBusiness = slug === 'business'
 
   const items = useMemo(() => {
@@ -64,7 +67,7 @@ export default function SectionPage({ slug }) {
         <section aria-label="Market snapshot" className="border-b border-ink/10 bg-panel">
           <div className="mx-auto grid max-w-site grid-cols-2 gap-6 px-4 py-6 sm:px-6 lg:grid-cols-4">
             {[['nifty-50', 'Nifty 50', 2], ['sensex', 'Sensex', 2], ['usd-inr', 'USD / INR (FBIL)', 4], ['india-vix', 'India VIX', 2]].map(([k, label, dp]) => {
-              const it = market.items?.[k]
+              const it = mItems?.[k]
               if (!it) return null
               return (
                 <StatBlock key={k} value={fmt.inr(it.value, dp)} label={label}
@@ -74,7 +77,30 @@ export default function SectionPage({ slug }) {
             })}
           </div>
           <div className="mx-auto max-w-site px-4 pb-2 sm:px-6">
-            <p className="pb-3 text-xs text-ink/50">Closing levels on {fmt.date(market.session)}. Updated automatically after each trading session. <Link to="/indicators" className="text-brand hover:underline">More market indicators</Link></p>
+            {live ? (
+              <p className="pb-3 text-xs text-ink/50">
+                {live.open ? 'Live: ' : ''}Nifty 50, Sensex and India VIX as of {live.time} IST, {fmt.date(live.session)}, from the NSE and Moneycontrol website feeds. Updated about every 5 minutes during market hours and replaced by the official close each evening. USD/INR is the FBIL reference rate for {fmt.date(market.items?.['usd-inr']?.asOf)}. <Link to="/methodology" className="text-brand hover:underline">How we source this</Link>
+              </p>
+            ) : (
+              <p className="pb-3 text-xs text-ink/50">Closing levels on {fmt.date(market.session)}. Updated automatically after each trading session. <Link to="/indicators" className="text-brand hover:underline">More market indicators</Link></p>
+            )}
+            {live && (live.points?.['nifty-50'] || []).length >= 2 && (
+              <div className="mb-4 rounded-sm border border-ink/10 bg-paper p-3">
+                <p className="text-sm font-semibold">Nifty 50 today</p>
+                <p className="text-xs text-ink/50">Level every few minutes, IST. Previous close {fmt.inr(mItems['nifty-50']?.prevClose, 2)}.</p>
+                <div className="mt-2 h-40 w-full">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <LineChart data={live.points['nifty-50'].map(([t, v]) => ({ t, v }))} margin={{ top: 4, right: 8, left: 0, bottom: 0 }}>
+                      <CartesianGrid stroke="rgb(var(--ink) / 0.08)" vertical={false} />
+                      <XAxis dataKey="t" tick={{ fontSize: 11, fill: 'rgb(var(--ink))' }} tickLine={false} minTickGap={24} />
+                      <YAxis domain={['auto', 'auto']} tick={{ fontSize: 11, fill: 'rgb(var(--ink))' }} tickLine={false} axisLine={false} width={56} tickFormatter={(v) => Number(v).toLocaleString('en-IN')} />
+                      <Tooltip formatter={(v) => [Number(v).toLocaleString('en-IN', { minimumFractionDigits: 2 }), 'Nifty 50']} />
+                      <Line type="monotone" dataKey="v" stroke={(mItems['nifty-50']?.change ?? 0) >= 0 ? 'rgb(var(--up))' : 'rgb(var(--down))'} strokeWidth={2} dot={false} isAnimationActive={false} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </div>
+              </div>
+            )}
           </div>
         </section>
       )}

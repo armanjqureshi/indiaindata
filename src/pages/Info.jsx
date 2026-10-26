@@ -27,6 +27,7 @@ const UL = ({ items }) => (
 const Mail = () => <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold text-brand hover:underline">{CONTACT_EMAIL}</a>
 
 const SOURCES = [
+  ['Intraday levels: Nifty 50, Bank, IT, Midcap 150, Smallcap 250, India VIX, Sensex', 'NSE website index feed and the Moneycontrol price feed, both unofficial. Checked against our stored close and against each other', 'About every 5 minutes, 9:15 am to 3:30 pm IST, replaced by the official close each evening'],
   ['Nifty 50, Nifty Bank, Nifty IT, Nifty Midcap 150, Nifty Smallcap 250, India VIX', 'NSE end-of-day index files', 'After each trading session'],
   ['BSE Sensex', 'A published price feed (Moneycontrol), cross-checked against the Nifty move before we publish it', 'After each trading session'],
   ['USD/INR, EUR/INR, GBP/INR, JPY/INR', 'FBIL reference rates, as published by NSE', 'After each trading session'],
@@ -79,7 +80,7 @@ export function Methodology() {
       ]} />
       <H>Known limits</H>
       <UL items={[
-        'The site shows end-of-day figures, not live prices.',
+        'Intraday index levels are a few minutes behind the market and come from unofficial website feeds. The official close replaces them each evening. Other market figures are end-of-day.',
         'Brent is the weekly spot price from the EIA, which differs from the futures price quoted on trading screens.',
         'FII and DII flows are provisional exchange figures and can be revised.',
         'Monthly economic indicators are entered by hand when each official release comes out, so they can lag the release.',
@@ -193,7 +194,7 @@ export function Disclaimer() {
       <P>Investments carry risk, including loss of capital, and past performance does not predict future results. Before you invest, read the official offer documents and talk to a qualified, registered adviser who knows your circumstances.</P>
       <H>Data can be late, provisional or wrong</H>
       <UL items={[
-        'Market figures are end-of-day, not live, and can appear hours after the source publishes them.',
+        'Intraday index levels are several minutes behind the market and come from unofficial website feeds. Other market figures are end-of-day and can appear hours after the source publishes them.',
         'Some figures, such as FII and DII flows, are provisional and can be revised.',
         'IPO dates after bidding closes are expected dates until the exchange confirms them.',
         'We cover NSE-listed issues only.',

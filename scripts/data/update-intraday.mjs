@@ -109,6 +109,7 @@ const hhmm = asOf.slice(11, 16)
 const points = prev.session === today ? prev.points || {} : {}
 for (const k of ['nifty-50', 'sensex', 'nifty-bank', 'india-vix']) {
   if (!items[k]) continue
+  const hhmm = items[k].asOf.slice(11, 16)
   const arr = (points[k] || []).filter((p) => p[0] !== hhmm)
   arr.push([hhmm, items[k].value])
   arr.sort((a, b) => a[0].localeCompare(b[0]))

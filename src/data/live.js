@@ -116,6 +116,40 @@ export function gmpFor(entries, slug) {
   all.sort((a, b) => (a.e.asOf || '').localeCompare(b.e.asOf || '') || a.i - b.i)
   return { latest: all.length ? all[all.length - 1].e : null, history: all.map(({ e }) => e).reverse() }
 }
+// --- Intraday index levels (written every few minutes to the "intraday" branch) ---
+export const INTRADAY_URL = `https://raw.githubusercontent.com/${REPO}/intraday/live/intraday.json`
+export function marketOpenIST(d = new Date()) {
+  const t = new Date(+d + 5.5 * 3600e3)
+  const day = t.getUTCDay(), m = t.getUTCHours() * 60 + t.getUTCMinutes()
+  return day > 0 && day < 6 && m >= 9 * 60 + 15 && m <= 15 * 60 + 30
+}
+let intraCache = { key: null, p: null }
+function loadIntraday() {
+  const key = Math.floor(Date.now() / 60000)
+  if (intraCache.key !== key) {
+    intraCache = { key, p: fetch(`${INTRADAY_URL}?t=${key}`, { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).catch(() => null) }
+  }
+  return intraCache.p
+}
+export function useIntraday() {
+  const [d, setD] = useState(null)
+  useEffect(() => {
+    let on = true
+    const load = () => loadIntraday().then((j) => on && j?.items && setD(j))
+    load()
+    const timer = setInterval(() => { if (document.visibilityState === 'visible' && marketOpenIST()) load() }, 60000)
+    return () => { on = false; clearInterval(timer) }
+  }, [])
+  return d
+}
+// Intraday values replace end-of-day ones only for a session newer than the last official close.
+export function withIntraday(market, intra) {
+  if (!intra?.session || !intra.items || (market.session && intra.session <= market.session)) return { items: market.items || {}, live: null }
+  const items = { ...(market.items || {}) }
+  for (const [k, v] of Object.entries(intra.items)) items[k] = { ...(items[k] || {}), ...v, intraday: true }
+  const ageMin = (Date.now() - Date.parse(intra.asOf)) / 60000
+  return { items, live: { ...intra, open: marketOpenIST() && ageMin < 20, time: intra.asOf.slice(11, 16) } }
+}
 export const useIpos = () => useLive('live/ipos.json', getIposSnapshot())
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------
