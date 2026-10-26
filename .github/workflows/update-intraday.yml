@@ -1,0 +1,49 @@
+name: Update intraday index levels
+# Triggered every 5 minutes in market hours by an external timer (cron-job.org).
+# Writes live/intraday.json to the "intraday" branch as a single force-pushed commit,
+# so main's history stays clean and Netlify does not rebuild. The script exits
+# without writing outside 09:10-15:40 IST, at weekends and on market holidays.
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Run outside market hours (testing)'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: intraday
+  cancel-in-progress: true
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Read the previous file
+        run: |
+          git fetch -q --depth=1 origin intraday 2>/dev/null && git show origin/intraday:live/intraday.json > /tmp/prev.json || echo '{}' > /tmp/prev.json
+      - name: Fetch and validate intraday levels
+        run: node scripts/data/update-intraday.mjs
+        env:
+          PREV: /tmp/prev.json
+          OUT: /tmp/out/live/intraday.json
+          FORCE: ${{ inputs.force }}
+      - name: Publish to the intraday branch
+        run: |
+          [ -f /tmp/out/live/intraday.json ] || { echo "Nothing to publish."; exit 0; }
+          git config user.name "india-in-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q --orphan intraday-new
+          git rm -rq --cached . && git clean -fdxq -e node_modules
+          mkdir -p live && cp /tmp/out/live/intraday.json live/intraday.json
+          printf '[build]\n  ignore = "exit 0"\n' > netlify.toml
+          git add live/intraday.json netlify.toml
+          git commit -qm "Intraday levels $(TZ=Asia/Kolkata date +%H:%M) IST [skip netlify]"
+          git push -qf origin HEAD:intraday
