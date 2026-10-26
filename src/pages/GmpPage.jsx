@@ -86,7 +86,7 @@ export default function GmpPage() {
           </table>
         </div>
         <p className="mt-3 text-xs text-ink/60">
-          Implied listing price is the upper price band plus the reported GMP. It is an illustration, not a prediction. SME IPOs are not covered. “Not reported” means we have no figure from a source we can name.
+          Implied listing price is the upper price band plus the reported GMP. It is an illustration, not a prediction. SME IPOs are on the <Link to="/sme-ipo-gmp" className="text-brand hover:underline">SME IPO GMP page</Link>. “Not reported” means we have no figure from a source we can name.
         </p>
 
         <H>GMP against actual listing gain</H>

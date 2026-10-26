@@ -13,6 +13,7 @@ const BROWSE = [
   { label: 'Infographics', to: '/infographics' },
   { label: 'IPO subscription status', to: '/ipo-subscription-status' },
   { label: 'IPO GMP today', to: '/ipo-gmp' },
+  { label: 'SME IPO GMP', to: '/sme-ipo-gmp' },
   { label: 'Economy', to: '/topic/economy' },
   { label: 'Society', to: '/topic/society' },
 ]

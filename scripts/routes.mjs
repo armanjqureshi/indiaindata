@@ -240,6 +240,14 @@ export function getRoutes() {
   })
 
   routes.push({
+    path: '/sme-ipo-gmp',
+    title: 'SME IPO GMP today: NSE Emerge grey market premium and listing gains',
+    description: 'SME IPO GMP for NSE Emerge issues, plus what the listing data shows: how many SME IPOs list below issue price, and how subscription relates to listing gain. Sourced from NSE.',
+    changefreq: 'daily',
+    priority: 0.8,
+  })
+
+  routes.push({
     path: '/ipo-subscription-status',
     title: 'IPO subscription status today',
     description: 'Subscription status of IPOs open now on NSE, upcoming issues and recently closed IPOs, with the consolidated NSE and BSE subscription multiple. Updated through the bidding day.',

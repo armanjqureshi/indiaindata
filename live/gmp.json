@@ -1,263 +1,359 @@
 {
-  "updatedAt": "2026-10-26T06:20:00.000Z",
-  "entries": [
-    {
-      "slug": "jio-platforms",
-      "gmp": 245,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
-      "asOf": "2026-10-19"
-    },
-    {
-      "slug": "jio-platforms",
-      "gmp": 273,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
-      "asOf": "2026-10-20"
-    },
-    {
-      "slug": "jio-platforms",
-      "gmp": 246,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
-      "asOf": "2026-10-21"
-    },
-    {
-      "slug": "jio-platforms",
-      "gmp": 240,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
-      "asOf": "2026-10-22"
-    },
-    {
-      "slug": "jio-platforms",
-      "gmp": 250,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
-      "asOf": "2026-10-23"
-    },
-    {
-      "slug": "jio-platforms",
-      "gmp": 247,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
-      "asOf": "2026-10-24"
-    },
-    {
-      "slug": "jio-platforms",
-      "gmp": 246,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
-      "asOf": "2026-10-25",
-      "time": "19:02"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 96,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-17"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 92,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-18"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 78,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-19"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 50,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-20"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 25,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-21"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 13,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-22"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 11,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-23"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 12,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-24"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 9,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-25"
-    },
-    {
-      "slug": "paras-healthcare",
-      "gmp": 9,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
-      "asOf": "2026-10-26",
-      "time": "07:37"
-    },
-    {
-      "slug": "eaaa-india-alternatives",
-      "gmp": 121,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
-      "asOf": "2026-10-23"
-    },
-    {
-      "slug": "eaaa-india-alternatives",
-      "gmp": 45,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
-      "asOf": "2026-10-24"
-    },
-    {
-      "slug": "eaaa-india-alternatives",
-      "gmp": 33,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
-      "asOf": "2026-10-25"
-    },
-    {
-      "slug": "eaaa-india-alternatives",
-      "gmp": 36,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
-      "asOf": "2026-10-26",
-      "time": "09:02"
-    },
-    {
-      "slug": "bls-polymers",
-      "gmp": 18,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
-      "asOf": "2026-10-19"
-    },
-    {
-      "slug": "bls-polymers",
-      "gmp": 30,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
-      "asOf": "2026-10-20"
-    },
-    {
-      "slug": "bls-polymers",
-      "gmp": 30,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
-      "asOf": "2026-10-21"
-    },
-    {
-      "slug": "bls-polymers",
-      "gmp": 38,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
-      "asOf": "2026-10-22"
-    },
-    {
-      "slug": "bls-polymers",
-      "gmp": 38,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
-      "asOf": "2026-10-23"
-    },
-    {
-      "slug": "bls-polymers",
-      "gmp": 38,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
-      "asOf": "2026-10-24"
-    },
-    {
-      "slug": "bls-polymers",
-      "gmp": 38,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
-      "asOf": "2026-10-25"
-    },
-    {
-      "slug": "bls-polymers",
-      "gmp": 38,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
-      "asOf": "2026-10-26",
-      "time": "09:02"
-    },
-    {
-      "slug": "sfc-environmental-technologies",
-      "gmp": 31,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
-      "asOf": "2026-10-21"
-    },
-    {
-      "slug": "sfc-environmental-technologies",
-      "gmp": 21,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
-      "asOf": "2026-10-22"
-    },
-    {
-      "slug": "sfc-environmental-technologies",
-      "gmp": 21,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
-      "asOf": "2026-10-23"
-    },
-    {
-      "slug": "sfc-environmental-technologies",
-      "gmp": 32,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
-      "asOf": "2026-10-24"
-    },
-    {
-      "slug": "sfc-environmental-technologies",
-      "gmp": 32,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
-      "asOf": "2026-10-25"
-    },
-    {
-      "slug": "sfc-environmental-technologies",
-      "gmp": 32,
-      "source": "Investorgain",
-      "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
-      "asOf": "2026-10-26",
-      "time": "10:37"
-    },
-    {
-      "slug": "m-k-sons-fine-jewels",
-      "gmp": 7,
-      "source": "IPO Premium",
-      "sourceUrl": "https://www.ipopremium.in/view/ipo/1422/mksons-fine-jewels-ltd",
-      "asOf": "2026-10-26",
-      "note": "Figure shown on that page on 26 Oct 2026; earlier the same day it showed ₹0."
-    }
-  ]
+ "updatedAt": "2026-10-26T14:00:00.000Z",
+ "entries": [
+  {
+   "slug": "jio-platforms",
+   "gmp": 245,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
+   "asOf": "2026-10-19"
+  },
+  {
+   "slug": "jio-platforms",
+   "gmp": 273,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
+   "asOf": "2026-10-20"
+  },
+  {
+   "slug": "jio-platforms",
+   "gmp": 246,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
+   "asOf": "2026-10-21"
+  },
+  {
+   "slug": "jio-platforms",
+   "gmp": 240,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
+   "asOf": "2026-10-22"
+  },
+  {
+   "slug": "jio-platforms",
+   "gmp": 250,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
+   "asOf": "2026-10-23"
+  },
+  {
+   "slug": "jio-platforms",
+   "gmp": 247,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
+   "asOf": "2026-10-24"
+  },
+  {
+   "slug": "jio-platforms",
+   "gmp": 246,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/",
+   "asOf": "2026-10-25",
+   "time": "19:02"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 96,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-17"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 92,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-18"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 78,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-19"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 50,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-20"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 25,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-21"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 13,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-22"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 11,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-23"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 12,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-24"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 9,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-25"
+  },
+  {
+   "slug": "paras-healthcare",
+   "gmp": 9,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/",
+   "asOf": "2026-10-26",
+   "time": "07:37"
+  },
+  {
+   "slug": "eaaa-india-alternatives",
+   "gmp": 121,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
+   "asOf": "2026-10-23"
+  },
+  {
+   "slug": "eaaa-india-alternatives",
+   "gmp": 45,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
+   "asOf": "2026-10-24"
+  },
+  {
+   "slug": "eaaa-india-alternatives",
+   "gmp": 33,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
+   "asOf": "2026-10-25"
+  },
+  {
+   "slug": "eaaa-india-alternatives",
+   "gmp": 36,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/",
+   "asOf": "2026-10-26",
+   "time": "09:02"
+  },
+  {
+   "slug": "bls-polymers",
+   "gmp": 18,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
+   "asOf": "2026-10-19"
+  },
+  {
+   "slug": "bls-polymers",
+   "gmp": 30,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
+   "asOf": "2026-10-20"
+  },
+  {
+   "slug": "bls-polymers",
+   "gmp": 30,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
+   "asOf": "2026-10-21"
+  },
+  {
+   "slug": "bls-polymers",
+   "gmp": 38,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
+   "asOf": "2026-10-22"
+  },
+  {
+   "slug": "bls-polymers",
+   "gmp": 38,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
+   "asOf": "2026-10-23"
+  },
+  {
+   "slug": "bls-polymers",
+   "gmp": 38,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
+   "asOf": "2026-10-24"
+  },
+  {
+   "slug": "bls-polymers",
+   "gmp": 38,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
+   "asOf": "2026-10-25"
+  },
+  {
+   "slug": "bls-polymers",
+   "gmp": 38,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/",
+   "asOf": "2026-10-26",
+   "time": "09:02"
+  },
+  {
+   "slug": "sfc-environmental-technologies",
+   "gmp": 31,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
+   "asOf": "2026-10-21"
+  },
+  {
+   "slug": "sfc-environmental-technologies",
+   "gmp": 21,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
+   "asOf": "2026-10-22"
+  },
+  {
+   "slug": "sfc-environmental-technologies",
+   "gmp": 21,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
+   "asOf": "2026-10-23"
+  },
+  {
+   "slug": "sfc-environmental-technologies",
+   "gmp": 32,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
+   "asOf": "2026-10-24"
+  },
+  {
+   "slug": "sfc-environmental-technologies",
+   "gmp": 32,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
+   "asOf": "2026-10-25"
+  },
+  {
+   "slug": "sfc-environmental-technologies",
+   "gmp": 32,
+   "source": "Investorgain",
+   "sourceUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/",
+   "asOf": "2026-10-26",
+   "time": "10:37"
+  },
+  {
+   "slug": "m-k-sons-fine-jewels",
+   "gmp": 7,
+   "source": "IPO Premium",
+   "sourceUrl": "https://www.ipopremium.in/view/ipo/1422/mksons-fine-jewels-ltd",
+   "asOf": "2026-10-26",
+   "note": "Figure shown on that page on 26 Oct 2026; earlier the same day it showed ₹0."
+  },
+  {
+   "slug": "ravita-engineering-services",
+   "gmp": 1,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-10-22",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "vaibhav-vyapaar",
+   "gmp": 3,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-10-21",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "r-k-fashion-accessories",
+   "gmp": 1.5,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-10-12",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "eventions",
+   "gmp": 0,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-10-08",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "papadmalji-agro-foods",
+   "gmp": 0,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-10-07",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "green-asia-impex",
+   "gmp": 0,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-10-07",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "bench-mark-infotech-services",
+   "gmp": 15,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-10-05",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "himalayan-solar",
+   "gmp": 0,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-10-05",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "pooja-logistics",
+   "gmp": 0,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-09-30",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "axiom-gas-engineering",
+   "gmp": 0,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-09-25",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "spectraa-technology-solutions",
+   "gmp": 81,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-09-24",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  },
+  {
+   "slug": "kheria-autocomp",
+   "gmp": 3,
+   "source": "Investorgain GMP performance tracker (SME)",
+   "sourceUrl": "https://www.investorgain.com/report/ipo-gmp-performance-tracker/377/sme/?year=2026",
+   "asOf": "2026-09-24",
+   "note": "Last GMP recorded before listing; dated to the listing day."
+  }
+ ]
 }
