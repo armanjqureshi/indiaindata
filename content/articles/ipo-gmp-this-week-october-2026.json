@@ -1,0 +1,138 @@
+{
+  "id": 136,
+  "slug": "ipo-gmp-this-week-october-2026",
+  "title": "IPO GMP this week: Jio holds near 22%, BLS Polymers at 25%, and EAAA’s premium collapses",
+  "dek": "Six mainboard IPOs list or bid this week. The grey market is pricing Jio Platforms about ₹246 above its issue price, but Paras Healthcare’s premium has fallen from ₹96 to ₹9.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-26",
+  "readingTime": 5,
+  "featured": true,
+  "chartOfWeek": false,
+  "draft": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "The grey market’s latest read",
+      "subtitle": "Latest reported GMP as a share of the upper price band, %",
+      "source": "Investorgain (Jio, Paras, EAAA, BLS, SFC) and IPO Premium (M K Sons), as shown on 25–26 October 2026",
+      "xKey": "ipo",
+      "dataKeys": [
+        "GMP %"
+      ],
+      "unit": "%",
+      "data": "[{\"ipo\":\"BLS Polymers\",\"GMP %\":25.3},{\"ipo\":\"Jio Platforms\",\"GMP %\":22.0},{\"ipo\":\"SFC Environmental\",\"GMP %\":9.7},{\"ipo\":\"M K Sons\",\"GMP %\":4.3},{\"ipo\":\"EAAA\",\"GMP %\":2.2},{\"ipo\":\"Paras Healthcare\",\"GMP %\":1.3}]"
+    },
+    {
+      "type": "line",
+      "title": "Paras faded, Jio held, EAAA fell before it opened",
+      "subtitle": "Reported GMP as a share of the upper price band, %, by day",
+      "source": "Investorgain daily GMP, compiled by India in Data",
+      "xKey": "date",
+      "dataKeys": [
+        "Jio Platforms",
+        "BLS Polymers",
+        "SFC Environmental",
+        "Paras Healthcare",
+        "EAAA India Alternatives"
+      ],
+      "unit": "%",
+      "data": "[{\"date\":\"19 Oct\",\"Jio Platforms\":21.9,\"Paras Healthcare\":11.3,\"BLS Polymers\":12.0},{\"date\":\"20 Oct\",\"Jio Platforms\":24.4,\"Paras Healthcare\":7.2,\"BLS Polymers\":20.0},{\"date\":\"21 Oct\",\"Jio Platforms\":22.0,\"Paras Healthcare\":3.6,\"BLS Polymers\":20.0,\"SFC Environmental\":9.4},{\"date\":\"22 Oct\",\"Jio Platforms\":21.4,\"Paras Healthcare\":1.9,\"BLS Polymers\":25.3,\"SFC Environmental\":6.4},{\"date\":\"23 Oct\",\"Jio Platforms\":22.3,\"Paras Healthcare\":1.6,\"EAAA India Alternatives\":7.3,\"BLS Polymers\":25.3,\"SFC Environmental\":6.4},{\"date\":\"24 Oct\",\"Jio Platforms\":22.1,\"Paras Healthcare\":1.7,\"EAAA India Alternatives\":2.7,\"BLS Polymers\":25.3,\"SFC Environmental\":9.7},{\"date\":\"25 Oct\",\"Jio Platforms\":22.0,\"Paras Healthcare\":1.3,\"EAAA India Alternatives\":2.0,\"BLS Polymers\":25.3,\"SFC Environmental\":9.7},{\"date\":\"26 Oct\",\"Paras Healthcare\":1.3,\"EAAA India Alternatives\":2.2,\"BLS Polymers\":25.3,\"SFC Environmental\":9.7}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Six mainboard IPOs are on the calendar this week. Jio Platforms and Paras Healthcare finished bidding on 23 October and are due to list on Wednesday, 28 October. EAAA India Alternatives opened today, BLS Polymers and SFC Environmental Technologies open tomorrow, and M K Sons Fine Jewels opens on Wednesday."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is what the grey market premium, or GMP, says about each, and why you should not lean on it. GMP is an unofficial price quoted by dealers for shares that are not yet listed. No exchange or regulator publishes it, and sources often disagree."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "IPO",
+        "Bidding",
+        "Upper price",
+        "Reported GMP",
+        "GMP %",
+        "Implied price"
+      ],
+      "rows": "Jio Platforms | 21–23 Oct | ₹1,119 | ₹246 | 22.0% | ₹1,365\nParas Healthcare | 21–23 Oct | ₹693 | ₹9 | 1.3% | ₹702\nEAAA India Alternatives | 26–28 Oct | ₹1,665 | ₹36 | 2.2% | ₹1,701\nBLS Polymers | 27–29 Oct | ₹150 | ₹38 | 25.3% | ₹188\nSFC Environmental Technologies | 27–29 Oct | ₹330 | ₹32 | 9.7% | ₹362\nM K Sons Fine Jewels | 28–30 Oct | ₹162 | ₹7 | 4.3% | ₹169",
+      "caption": "Implied price is the upper price band plus the reported GMP, an illustration, not a forecast. GMP: Investorgain, latest entries on 25–26 October; M K Sons from IPO Premium on 26 October."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Listing on Wednesday: Jio and Paras"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jio Platforms’ GMP has barely moved during bidding. It was ₹245 on 19 October, peaked at ₹273 on the 20th and stood at ₹246 on the evening of 25 October, about 22% over the ₹1,119 upper band. The issue was subscribed 22.19 times by the close of bidding on 23 October, with institutions at 70.55 times and retail investors at 2.72 times. Allotment is due today."
+    },
+    {
+      "type": "paragraph",
+      "text": "Paras Healthcare went the other way. Its GMP was ₹96, about 14% of its ₹693 upper band, on 17 October, before bidding opened. By the close it had fallen to ₹11, and it was ₹9 this morning, 1.3%. The issue was subscribed only 2.23 times."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "That pattern matches what we found across 59 IPOs this year: issues subscribed under 5 times had a median listing gain of zero, while those above 100 times all opened higher. Jio sits between the two groups."
+    },
+    {
+      "type": "heading",
+      "text": "Bidding this week"
+    },
+    {
+      "type": "paragraph",
+      "text": "EAAA India Alternatives, the Edelweiss group’s alternative-assets manager, is selling ₹1,200 crore of shares, all of it an offer for sale by its promoter, so the company receives nothing. Its GMP was ₹121 on 23 October and fell to ₹45 the next day and ₹33 on 25 October, before bidding opened. It was ₹36 this morning. At the top of the band the issue values the company at about 40.6 times its FY26 earnings, and brokerage views collected by Business Today range from subscribe to avoid, with most neutral."
+    },
+    {
+      "type": "paragraph",
+      "text": "BLS Polymers, a Goa-based maker of polymer compounds for cable sheathing and pipeline coating, has the highest premium of the week at ₹38, or 25.3% of its ₹150 upper band, where it has held since 22 October. At ₹255 crore it is also the smallest issue, and all fresh shares."
+    },
+    {
+      "type": "paragraph",
+      "text": "SFC Environmental Technologies treats sewage, industrial effluent and solid waste. Of its ₹667.53 crore issue, ₹517.53 crore is an offer for sale by existing shareholders and ₹150 crore is new money. Its GMP has swung between ₹21 and ₹32 and was ₹32 this morning, 9.7%."
+    },
+    {
+      "type": "paragraph",
+      "text": "M K Sons Fine Jewels, a Mumbai jeweller with three showrooms in Mumbai and two in Ahmedabad, opens on Wednesday. It raises ₹275.4 crore, mostly new shares to fund showrooms and repay debt, after its profit more than doubled to ₹51.8 crore in FY26. IPO Premium showed a GMP of ₹0 earlier today and ₹7 later, 4.3%. We found no Investorgain figure for it."
+    },
+    {
+      "type": "heading",
+      "text": "Why these numbers can mislead"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources do not agree. On the same morning, EAAA’s GMP was ₹36 on Investorgain, ₹33 on IPO Premium and ₹45–50 in a Business Today report. One news site this morning described Jio’s ₹247 premium as 36.98%; against the ₹1,119 upper band it is about 22%."
+    },
+    {
+      "type": "paragraph",
+      "text": "GMP also moves fast and can reverse after bidding closes. And the listing pop has been shrinking this year: the median mainboard IPO in 2026 opened 7.9% above its issue price, against 17.3% in 2024."
+    },
+    {
+      "type": "quote",
+      "text": "GMP tells you what dealers say today. It does not tell you what the stock will be worth."
+    },
+    {
+      "type": "paragraph",
+      "text": "We will compare each issue’s last reported GMP with its actual listing price on our IPO GMP page after it lists, starting with Jio Platforms and Paras Healthcare on Wednesday."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: GMP from Investorgain (daily GMP pages for each issue, entries to 26 October 2026, 10:37 am) and IPO Premium (M K Sons, 26 October); Business Today (EAAA issue details and brokerage views, 26 October; M K Sons issue details, 23 October); IPO Premium (BLS Polymers and SFC issue details); NSE issue and subscription data. GMP is unofficial and unverified. Not investment advice."
+    }
+  ]
+}
