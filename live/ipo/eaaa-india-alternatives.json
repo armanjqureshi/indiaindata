@@ -1,52 +1,52 @@
 {
  "subscription": {
-  "total": 0.26,
+  "total": 0.33,
   "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
     "label": "QIB",
     "offered": 1514195,
-    "bid": 687483,
+    "bid": 687609,
     "times": 0.45
    },
    {
     "key": "nii",
     "label": "NII",
     "offered": 1135647,
-    "bid": 453420,
-    "times": 0.4
+    "bid": 779652,
+    "times": 0.69
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 757098,
-    "bid": 421245,
-    "times": 0.56
+    "bid": 733455,
+    "times": 0.97
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 378549,
-    "bid": 32175,
-    "times": 0.08
+    "bid": 46197,
+    "times": 0.12
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 2649842,
-    "bid": 249462,
-    "times": 0.09
+    "bid": 280287,
+    "times": 0.11
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 5299684,
-    "bid": 1390365,
-    "times": 0.26
+    "bid": 1747548,
+    "times": 0.33
    }
   ],
-  "asOf": "27-Oct-2026 15:03:00",
+  "asOf": "27-Oct-2026 17:00:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 9,
@@ -75,7 +75,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_EDELALTS.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_EDELALTS.zip"
  },
- "fetchedAt": "2026-10-27T09:35:30.678Z",
+ "fetchedAt": "2026-10-27T12:35:52.262Z",
  "slug": "eaaa-india-alternatives",
  "symbol": "EDELALTS",
  "board": "mainboard",
