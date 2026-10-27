@@ -74,8 +74,14 @@ function Missing({ list, fmtVal, yearLabel }) {
 }
 
 function Faq({ items }) {
+  const ld = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+  }
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <H>Questions</H>
       <div className="max-w-3xl space-y-4">
         {items.map(([q, a]) => (
@@ -243,7 +249,7 @@ export function StatePerCapita() {
 /* ---------- richest state ---------- */
 export function RichestState() {
   useSeo({
-    title: 'Richest state in India: by GDP and by income per person',
+    title: 'Richest state in India: top 10 by GDP and income per person (2024-25)',
     description: 'Which is the richest state in India? Maharashtra is largest by GDP; Goa, Sikkim and Delhi lead on per capita income. Ranked tables from the RBI Handbook.',
   })
   const gdp = ranked(GSDP_CURRENT, LAST).slice(0, 10)
@@ -268,7 +274,7 @@ export function RichestState() {
   return (
     <>
       <Hero
-        title="Richest state in India"
+        title="Richest state in India: top 10 by GDP and income"
         intro={`It depends on what “richest” means. By the size of its economy, Maharashtra is the richest state (GSDP ${lakhCrore(gdp[0].v)} in ${YEARS[LAST]}). By income per person, small states lead: Sikkim and Goa topped ${YEARS[LAST - 1]}, and Delhi tops the ${YEARS[LAST]} list because Sikkim and Goa have no ${YEARS[LAST]} figure yet.`}
       />
       <section className="mx-auto max-w-site px-4 pb-14 sm:px-6">
@@ -291,6 +297,7 @@ export function RichestState() {
         </div>
         <Faq items={[
           ['Which is the richest state in India?', `By total economic output, Maharashtra, followed by Tamil Nadu and Uttar Pradesh. By income per person, Sikkim and Goa led in ${YEARS[LAST - 1]}, with Delhi, Chandigarh and Telangana next.`],
+          ['Which are the top 10 richest states in India?', `By GSDP in ${YEARS[LAST]}: ${gdp.map((r) => r.state).join(', ')}. By income per person in ${YEARS[LAST - 1]}: ${pcPrev.map((r) => r.state).join(', ')}.`],
           ['Why do the two measures differ?', 'GSDP adds up everything a state produces, so big states score high. Per capita income divides by population, so small, high-income places such as Goa and Sikkim score high. Neither says how wealth is spread within a state.'],
           ['Is Gujarat not in the top?', `The RBI Handbook has no Gujarat figures after 2022-23. Its ${YEARS[latestIdx(GSDP_CURRENT, 'Gujarat')]} GSDP was ${lakhCrore(GSDP_CURRENT.Gujarat[latestIdx(GSDP_CURRENT, 'Gujarat')])}. We do not estimate missing years.`],
           ['Which is the poorest state?', `Bihar has the lowest per capita income in the ${YEARS[LAST]} data (${rupees(PC_CURRENT.Bihar[LAST])}), followed by Uttar Pradesh and Jharkhand. See the poorest state in India page for a second measure.`],

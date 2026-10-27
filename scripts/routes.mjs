@@ -236,7 +236,7 @@ export function getRoutes() {
     ['/per-capita-income-by-state', 'Per capita income by state in India (2024-25)', 'Per capita net state domestic product for every Indian state and UT, 2011-12 to 2024-25, from the RBI Handbook. See which states are richest and poorest per person.'],
     ['/poorest-state-in-india', 'Poorest state in India: by income and by multidimensional poverty', 'Which is the poorest state in India? Bihar is lowest on income per person and on NITI Aayog’s multidimensional poverty index. Ranked tables with sources.'],
     ['/population-by-state', 'India population by state (2026 projection)', 'Projected population of every Indian state and UT from 2011 to 2036, from the National Commission on Population. Uttar Pradesh is largest. Ranked, with share of India.'],
-    ['/richest-state-in-india', 'Richest state in India: by GDP and by income per person', 'Which is the richest state in India? Maharashtra is largest by GDP; Goa, Sikkim and Delhi lead on per capita income. Ranked tables from the RBI Handbook.'],
+    ['/richest-state-in-india', 'Richest state in India: top 10 by GDP and income per person (2024-25)', 'Which is the richest state in India? Maharashtra is largest by GDP; Goa, Sikkim and Delhi lead on per capita income. Ranked tables from the RBI Handbook.'],
   ]) {
     routes.push({ path, title, description, changefreq: 'monthly', priority: path === '/states' ? 0.6 : 0.8 })
   }
