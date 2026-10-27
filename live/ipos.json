@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T18:36:41.382Z",
+ "updatedAt": "2026-10-27T23:17:59.327Z",
  "lastPriceSession": "2026-10-27",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -199,10 +199,10 @@
    "symbol": "JPL",
    "board": "mainboard",
    "name": "Jio Platforms Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-21",
    "close": "2026-10-23",
-   "listingDate": null,
+   "listingDate": "2026-10-28",
    "timetable": {
     "open": "2026-10-21",
     "close": "2026-10-23",
@@ -211,7 +211,6 @@
     "demat": "2026-10-27",
     "listing": "2026-10-28",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -219,7 +218,7 @@
    },
    "priceLow": 1065,
    "priceHigh": 1119,
-   "issuePrice": null,
+   "issuePrice": 1119,
    "lotSize": 12,
    "lotValue": 13428,
    "sizeCr": 30213,
@@ -237,10 +236,10 @@
    "symbol": "PARASHLTH",
    "board": "mainboard",
    "name": "Paras Healthcare Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-21",
    "close": "2026-10-23",
-   "listingDate": null,
+   "listingDate": "2026-10-28",
    "timetable": {
     "open": "2026-10-21",
     "close": "2026-10-23",
@@ -249,7 +248,6 @@
     "demat": "2026-10-27",
     "listing": "2026-10-28",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -257,7 +255,7 @@
    },
    "priceLow": 660,
    "priceHigh": 693,
-   "issuePrice": null,
+   "issuePrice": 693,
    "lotSize": 21,
    "lotValue": 14553,
    "sizeCr": 1450,
