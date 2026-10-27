@@ -1,5 +1,54 @@
 {
- "subscription": null,
+ "subscription": {
+  "total": 0.05,
+  "totalMethod": "NSE",
+  "categories": [
+   {
+    "key": "qib",
+    "label": "QIB",
+    "offered": 4045641,
+    "bid": 3060,
+    "times": 0
+   },
+   {
+    "key": "nii",
+    "label": "NII",
+    "offered": 3034231,
+    "bid": 86580,
+    "times": 0.03
+   },
+   {
+    "key": "bnii",
+    "label": "NII above ₹10 lakh",
+    "offered": 2022821,
+    "bid": 24750,
+    "times": 0.01
+   },
+   {
+    "key": "snii",
+    "label": "NII ₹2–10 lakh",
+    "offered": 1011410,
+    "bid": 61830,
+    "times": 0.06
+   },
+   {
+    "key": "retail",
+    "label": "Retail",
+    "offered": 7079872,
+    "bid": 606060,
+    "times": 0.09
+   },
+   {
+    "key": "total",
+    "label": "Total",
+    "offered": 14159744,
+    "bid": 695700,
+    "times": 0.05
+   }
+  ],
+  "asOf": "27-Oct-2026 12:00:00",
+  "scope": "NSE and BSE combined"
+ },
  "lotSize": 45,
  "faceValue": null,
  "issueType": "100% Book Building",
@@ -25,7 +74,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_SFCTECH.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SFCTECH.zip"
  },
- "fetchedAt": "2026-10-26T15:35:33.244Z",
+ "fetchedAt": "2026-10-27T06:35:28.010Z",
  "slug": "sfc-environmental-technologies",
  "symbol": "SFCTECH",
  "board": "mainboard",
