@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T12:36:46.019Z",
+ "updatedAt": "2026-10-27T18:36:41.382Z",
  "lastPriceSession": "2026-10-27",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -47,7 +47,7 @@
    "symbol": "MKSONS",
    "board": "mainboard",
    "name": "M. K. Sons Fine Jewels Limited",
-   "status": "upcoming",
+   "status": "open",
    "open": "2026-10-28",
    "close": "2026-10-30",
    "listingDate": null,
@@ -8819,44 +8819,6 @@
    "lastClose": 524.7,
    "lastCloseDate": "2026-10-27",
    "gainPct": -28.1,
-   "hasDetail": false
-  },
-  {
-   "slug": "jayesh-logistics",
-   "symbol": "JAYESH",
-   "board": "sme",
-   "name": "Jayesh Logistics Limited",
-   "status": "listed",
-   "open": "2025-10-27",
-   "close": "2025-10-29",
-   "listingDate": "2025-11-03",
-   "timetable": {
-    "open": "2025-10-27",
-    "close": "2025-10-29",
-    "allotment": null,
-    "refunds": null,
-    "demat": null,
-    "listing": "2025-11-03",
-    "expected": {}
-   },
-   "priceLow": 116,
-   "priceHigh": 122,
-   "issuePrice": 122,
-   "lotSize": null,
-   "lotValue": null,
-   "sizeCr": null,
-   "subscription": null,
-   "subscriptionAsOf": null,
-   "listing": {
-    "date": "2025-11-03",
-    "open": 120,
-    "close": 117.8,
-    "source": "NSE end-of-day file for the listing date"
-   },
-   "listingGainPct": -1.6,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
    "hasDetail": false
   }
  ]
