@@ -145,42 +145,42 @@
   },
   "dii-net": {
    "label": "DII net (cash market)",
-   "value": -1250.03,
-   "prev": 2609.57,
-   "change": -3859.6,
-   "changePct": -147.9,
-   "asOf": "2026-10-27",
+   "value": 643.35,
+   "prev": -1250.03,
+   "change": 1893.38,
+   "changePct": -151.47,
+   "asOf": "2026-10-28",
    "unit": "₹ cr",
    "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined)",
    "sourceUrl": "https://www.nseindia.com/reports/fii-dii",
-   "note": "Buy ₹15702.74 cr, sell ₹16952.77 cr",
-   "updatedAt": "2026-10-27T18:52:37.743Z"
+   "note": "Buy ₹17240.9 cr, sell ₹16597.55 cr",
+   "updatedAt": "2026-10-28T19:02:38.205Z"
   },
   "fii-net": {
    "label": "FII/FPI net (cash market)",
-   "value": 4240.39,
-   "prev": -1462.49,
-   "change": 5702.88,
-   "changePct": -389.94,
-   "asOf": "2026-10-27",
+   "value": 871.83,
+   "prev": 4240.39,
+   "change": -3368.56,
+   "changePct": -79.44,
+   "asOf": "2026-10-28",
    "unit": "₹ cr",
    "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined)",
    "sourceUrl": "https://www.nseindia.com/reports/fii-dii",
-   "note": "Buy ₹24517.65 cr, sell ₹20277.26 cr",
-   "updatedAt": "2026-10-27T18:52:37.750Z"
+   "note": "Buy ₹16834.53 cr, sell ₹15962.7 cr",
+   "updatedAt": "2026-10-28T19:02:38.210Z"
   },
   "brent-spot": {
    "label": "Brent crude spot (FOB)",
-   "value": 115.22,
-   "prev": 118.82,
-   "change": -3.6,
-   "changePct": -3.03,
-   "asOf": "2026-10-20",
+   "value": 123.1,
+   "prev": 128.12,
+   "change": -5.02,
+   "changePct": -3.92,
+   "asOf": "2026-10-27",
    "unit": "US$/bbl",
    "source": "US Energy Information Administration, Europe Brent spot price FOB",
    "sourceUrl": "https://www.eia.gov/dnav/pet/hist/rbrteD.htm",
    "note": "Physical spot price; EIA publishes it with a lag of several days. Futures prices quoted in the news can differ.",
-   "updatedAt": "2026-10-21T18:13:09.093Z"
+   "updatedAt": "2026-10-28T19:02:39.571Z"
   },
   "fpi-equity-mtd": {
    "label": "FPI net equity investment, month to date",
@@ -6769,6 +6769,10 @@
    [
     "2026-10-27",
     -1250.03
+   ],
+   [
+    "2026-10-28",
+    643.35
    ]
   ],
   "fii-net": [
@@ -6795,6 +6799,10 @@
    [
     "2026-10-27",
     4240.39
+   ],
+   [
+    "2026-10-28",
+    871.83
    ]
   ],
   "brent-spot": [
@@ -7293,6 +7301,26 @@
    [
     "2026-10-20",
     115.22
+   ],
+   [
+    "2026-10-21",
+    117.37
+   ],
+   [
+    "2026-10-22",
+    125.39
+   ],
+   [
+    "2026-10-23",
+    128.3
+   ],
+   [
+    "2026-10-26",
+    128.12
+   ],
+   [
+    "2026-10-27",
+    123.1
    ]
   ],
   "fpi-equity-mtd": [
@@ -7402,6 +7430,6 @@
    ]
   ]
  },
- "updatedAt": "2026-10-28T13:40:35.568Z",
+ "updatedAt": "2026-10-28T19:02:43.219Z",
  "session": "2026-10-28"
 }
