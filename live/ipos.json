@@ -1,9 +1,47 @@
 {
- "updatedAt": "2026-10-28T12:36:41.298Z",
+ "updatedAt": "2026-10-28T15:36:48.728Z",
  "lastPriceSession": "2026-10-28",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
+  {
+   "slug": "maxwell-engineering-solutions",
+   "symbol": "MAXENGS",
+   "board": "sme",
+   "name": "Maxwell Engineering Solutions Limited",
+   "status": "upcoming",
+   "open": "2026-10-30",
+   "close": "2026-11-03",
+   "listingDate": null,
+   "timetable": {
+    "open": "2026-10-30",
+    "close": "2026-11-03",
+    "allotment": "2026-11-04",
+    "refunds": "2026-11-05",
+    "demat": "2026-11-05",
+    "listing": "2026-11-06",
+    "expected": {
+     "listing": true,
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 150,
+   "priceHigh": 158,
+   "issuePrice": null,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": null,
+   "listingGainPct": null,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
+   "hasDetail": true
+  },
   {
    "slug": "bombay-coated-and-special-steels",
    "symbol": "BCSSL",
@@ -186,7 +224,7 @@
    "lotValue": 14985,
    "sizeCr": 1200,
    "subscription": 5.25,
-   "subscriptionAsOf": "28-Oct-2026 18:00:00",
+   "subscriptionAsOf": "28-Oct-2026 19:00:00",
    "listing": null,
    "listingGainPct": null,
    "lastClose": null,

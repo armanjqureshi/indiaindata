@@ -3,7 +3,7 @@
  "lotSize": 182,
  "faceValue": null,
  "issueType": "Book Building",
- "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 1,830.57 million",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue aggregating upto Rs. 1,830.57 million (including Anchor reservation portion of 65,97,500 Equity Shares)",
  "issueSize": {
   "freshCr": 183.06,
   "ofsCr": 0,
@@ -20,9 +20,10 @@
  "marketTimings": "10.00 a.m. to 5.00 p.m.",
  "documents": {
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_BCSSL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_BCSSL.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BCSSL.zip"
  },
- "fetchedAt": "2026-10-26T12:35:27.508Z",
+ "fetchedAt": "2026-10-28T15:35:37.049Z",
  "slug": "bombay-coated-and-special-steels",
  "symbol": "BCSSL",
  "board": "mainboard",
