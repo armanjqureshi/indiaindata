@@ -1,0 +1,30 @@
+{
+ "subscription": null,
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 23,26,000 equity shares and Offer for Sale of up to 5,54,000 Equity Shares (including Market Maker portion of 1,45,200 Equity Shares)",
+ "issueSize": {
+  "freshCr": 27.91,
+  "ofsCr": 6.65,
+  "totalCr": 34.56,
+  "method": "Calculated at ₹120 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Hem Securities Limited"
+ ],
+ "registrar": "Kfin Technologies Limited",
+ "registrarContact": "Williams R, +9140-67162222 , hgs.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_HGSINDIALT.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HGSINDIALT.zip"
+ },
+ "fetchedAt": "2026-10-28T18:35:29.063Z",
+ "slug": "hgs-india",
+ "symbol": "HGSINDIALT",
+ "board": "sme",
+ "name": "HGS (India) Limited"
+}
