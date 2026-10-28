@@ -76,7 +76,7 @@ export default function GmpPage() {
                     <td className={`num px-3 py-2.5 text-right ${e ? gainClass(p) : ''}`}>{p === null ? '—' : fmt.pct(p)}</td>
                     <td className="num px-3 py-2.5 text-right">{e && price(i) ? fmt.rupees(price(i) + e.gmp) : '—'}</td>
                     <td className="px-3 py-2.5 text-xs text-ink/70">
-                      {e ? (<>{e.sourceUrl ? <a href={e.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">{e.source}</a> : e.source}<span className="num block text-ink/50">{fmt.date(e.asOf)}</span></>) : '—'}
+                      {e ? (<>{e.source}<span className="num block text-ink/50">{fmt.date(e.asOf)}</span></>) : '—'}
                     </td>
                   </tr>
                 )

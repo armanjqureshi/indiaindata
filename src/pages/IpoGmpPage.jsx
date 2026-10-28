@@ -83,7 +83,7 @@ export default function IpoGmpPage() {
                 </p>
               )}
               <p className="mt-2 text-sm text-ink/70">
-                Per {latest.sourceUrl ? <a href={latest.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">{latest.source}</a> : latest.source}, {fmt.date(latest.asOf)}{latest.time ? `, ${latest.time} IST` : ''}.
+                Per {latest.sourceUrl ? <a href={latest.sourceUrl} target="_blank" rel="nofollow noopener noreferrer" className="text-brand hover:underline">{latest.source}</a> : latest.source}, {fmt.date(latest.asOf)}{latest.time ? `, ${latest.time} IST` : ''}.
                 {latest.note ? ` ${latest.note}` : ''}
               </p>
             </>
@@ -173,7 +173,7 @@ export default function IpoGmpPage() {
                       <td className="num px-3 py-2">{fmt.date(e.asOf)}{e.time ? ` ${e.time}` : ''}</td>
                       <td className="num px-3 py-2 text-right">{e.gmp > 0 ? '+' : ''}{fmt.rupees(e.gmp)}</td>
                       <td className="num px-3 py-2 text-right">{price ? fmt.pct((e.gmp / price) * 100) : '—'}</td>
-                      <td className="px-3 py-2 text-xs">{e.sourceUrl ? <a href={e.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">{e.source}</a> : e.source}</td>
+                      <td className="px-3 py-2 text-xs">{e.source}</td>
                     </tr>
                   ))}
                 </tbody>

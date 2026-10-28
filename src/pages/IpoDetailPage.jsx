@@ -178,7 +178,7 @@ export default function IpoDetailPage() {
               <p className="mt-2 text-sm leading-body">
                 Reported grey market premium: <span className="num font-semibold">{gmpEntry.gmp > 0 ? '+' : ''}{fmt.rupees(gmpEntry.gmp)}</span> per share
                 (<span className="num">{fmt.pct((gmpEntry.gmp / price) * 100)}</span> of the {fmt.rupees(price)} {row.issuePrice ? 'issue price' : 'upper price band'}), per{' '}
-                {gmpEntry.sourceUrl ? <a href={gmpEntry.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">{gmpEntry.source}</a> : gmpEntry.source}, {fmt.date(gmpEntry.asOf)}.
+                {gmpEntry.source}, {fmt.date(gmpEntry.asOf)}.
               </p>
             ) : (
               <p className="mt-2 text-sm text-ink/70">No grey market premium reported yet from a source we can name.</p>
