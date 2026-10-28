@@ -1,9 +1,18 @@
 {
- "runAt": "2026-10-27T18:52:31.187Z",
+ "runAt": "2026-10-28T13:40:29.211Z",
  "accepted": [
-  "dii-net = -1250.03 (2026-10-27)",
-  "fii-net = 4240.39 (2026-10-27)"
+  "nifty-50 = 22698.85 (2026-10-28)",
+  "nifty-bank = 54267.4 (2026-10-28)",
+  "nifty-it = 31553.4 (2026-10-28)",
+  "nifty-midcap-150 = 21064.8 (2026-10-28)",
+  "nifty-smallcap-250 = 16989.4 (2026-10-28)",
+  "sensex = 73246.03 (2026-10-28)",
+  "gold-ibja = 141431 (2026-10-27)",
+  "silver-ibja = 192499 (2026-10-27)",
+  "fpi-equity-mtd = -36164.49 (2026-10-28)"
  ],
  "skipped": [],
- "errors": []
+ "errors": [
+  "india-vix: continuity check failed (source prev 16.41, stored 16.4 on 2026-10-27)"
+ ]
 }
