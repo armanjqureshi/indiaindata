@@ -1,0 +1,98 @@
+{
+  "id": 137,
+  "slug": "jio-platforms-listing-day",
+  "title": "Jio Platforms lists at ₹1,358, 21.4% above its IPO price",
+  "dek": "The country's largest IPO opened at a market value of about ₹12.5 lakh crore. The grey market had priced in ₹247 a share; the listing gain was ₹239.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-10-28",
+  "readingTime": 3,
+  "featured": true,
+  "chartOfWeek": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Issue price, grey market price and listing price",
+      "subtitle": "Jio Platforms, ₹ per share",
+      "source": "Issue price and listing price: Free Press Journal, 28 October 2026. Grey market price: issue price plus the last GMP in our tracker (₹247, Investorgain, 25 October). GMP is unofficial",
+      "xKey": "stage",
+      "dataKeys": [
+        "price"
+      ],
+      "unit": "",
+      "data": "[{\"stage\": \"Issue price\", \"price\": 1119}, {\"stage\": \"Last GMP-implied price\", \"price\": 1366}, {\"stage\": \"Listing price\", \"price\": 1358}]"
+    },
+    {
+      "type": "bar",
+      "title": "Final subscription by investor category",
+      "subtitle": "Times the shares reserved, NSE and BSE combined, 23 October 2026",
+      "source": "NSE consolidated subscription data; overall 22.19 times",
+      "xKey": "category",
+      "dataKeys": [
+        "times"
+      ],
+      "unit": "x",
+      "data": "[{\"category\": \"QIB\", \"times\": 70.55}, {\"category\": \"NII\", \"times\": 14.09}, {\"category\": \"Shareholders\", \"times\": 7.6}, {\"category\": \"Employees\", \"times\": 2.93}, {\"category\": \"Retail\", \"times\": 2.72}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Jio Platforms listed on 28 October at ₹1,358 on both NSE and BSE, 21.36% above the ₹1,119 issue price, according to the Free Press Journal. That is a gain of ₹239 a share. At that price the company is worth about ₹12.5 lakh crore, which makes it the second most valuable listed company in India behind Reliance Industries (₹16.15 lakh crore) and ahead of Bharti Airtel (₹12.18 lakh crore), per BSE data cited in the same report."
+    },
+    {
+      "type": "heading",
+      "text": "What a listing gain means in rupees"
+    },
+    {
+      "type": "paragraph",
+      "text": "One lot is 12 shares, so the ₹239 gain is ₹2,868 on a lot bought at the issue price. A retail investor who bid the maximum of 14 lots (168 shares, ₹1,87,992) and received the full allotment would be ahead by ₹40,152 on paper at the listing price. Retail demand was 2.72 times the shares reserved, so most bidders received fewer lots than they applied for, and many received none."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "The grey market got the level about right. Our tracker's last recorded GMP, on 25 October, was ₹247, which implied ₹1,366. The share listed ₹8 lower. The grey market premium is an unofficial quote and not a forecast, and it moved between ₹240 and ₹273 over the week, but this time it pointed close to where the stock opened."
+    },
+    {
+      "type": "heading",
+      "text": "How it compares with this year's other listings"
+    },
+    {
+      "type": "paragraph",
+      "text": "Among the 99 mainboard IPOs listed in 2026 before Jio, the average listing gain is 14.4% and the median is 7.9%, and 23 of them listed below their issue price. Jio's 21.4% is above both. Bigger issues do not always list well; an offer of ₹30,213 crore needed a lot of buyers, and it found them."
+    },
+    {
+      "type": "heading",
+      "text": "Who drove the demand"
+    },
+    {
+      "type": "paragraph",
+      "text": "Overall the issue was subscribed 22.19 times. Qualified institutional buyers bid 70.55 times their quota, against 14.09 times for non-institutional investors and 2.72 times for retail. Reliance shareholders bid 7.6 times their portion, and employees 2.93 times. The anchor round had raised ₹8,109.85 crore from 212 investors before the issue opened."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "What happens next"
+    },
+    {
+      "type": "paragraph",
+      "text": "The listing gain is a one-day number. Whether the shares hold the premium depends on how institutions that were allotted a small share of their large bids decide to trade, and on whether the tariff increases the brokerages expect arrive. We covered the pricing, about 32 times FY26 earnings, in our IPO review. Live figures for every IPO, including this year's listing statistics, are on the IPO dashboard."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: Free Press Journal (listing price, market capitalisation and subscription, 28 October 2026); The Week (pre-listing GMP report, 27 October 2026); NSE subscription data; Investorgain GMP records in our tracker. The gain per share, per lot and per maximum retail bid, and the comparison with 2026 listings, are our calculations. This is not investment advice."
+    }
+  ],
+  "draft": false
+}
