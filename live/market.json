@@ -145,29 +145,29 @@
   },
   "dii-net": {
    "label": "DII net (cash market)",
-   "value": 643.35,
-   "prev": -1250.03,
-   "change": 1893.38,
-   "changePct": -151.47,
-   "asOf": "2026-10-28",
+   "value": 1924.41,
+   "prev": 643.35,
+   "change": 1281.06,
+   "changePct": 199.12,
+   "asOf": "2026-10-29",
    "unit": "₹ cr",
    "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined)",
    "sourceUrl": "https://www.nseindia.com/reports/fii-dii",
-   "note": "Buy ₹17240.9 cr, sell ₹16597.55 cr",
-   "updatedAt": "2026-10-28T19:02:38.205Z"
+   "note": "Buy ₹18458.64 cr, sell ₹16534.23 cr",
+   "updatedAt": "2026-10-29T19:09:42.617Z"
   },
   "fii-net": {
    "label": "FII/FPI net (cash market)",
-   "value": 871.83,
-   "prev": 4240.39,
-   "change": -3368.56,
-   "changePct": -79.44,
-   "asOf": "2026-10-28",
+   "value": -943.6,
+   "prev": 871.83,
+   "change": -1815.43,
+   "changePct": -208.23,
+   "asOf": "2026-10-29",
    "unit": "₹ cr",
    "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined)",
    "sourceUrl": "https://www.nseindia.com/reports/fii-dii",
-   "note": "Buy ₹16834.53 cr, sell ₹15962.7 cr",
-   "updatedAt": "2026-10-28T19:02:38.210Z"
+   "note": "Buy ₹13400.29 cr, sell ₹14343.89 cr",
+   "updatedAt": "2026-10-29T19:09:42.624Z"
   },
   "brent-spot": {
    "label": "Brent crude spot (FOB)",
@@ -6817,6 +6817,10 @@
    [
     "2026-10-28",
     643.35
+   ],
+   [
+    "2026-10-29",
+    1924.41
    ]
   ],
   "fii-net": [
@@ -6847,6 +6851,10 @@
    [
     "2026-10-28",
     871.83
+   ],
+   [
+    "2026-10-29",
+    -943.6
    ]
   ],
   "brent-spot": [
@@ -7486,6 +7494,6 @@
    ]
   ]
  },
- "updatedAt": "2026-10-29T13:40:34.356Z",
+ "updatedAt": "2026-10-29T19:09:48.655Z",
  "session": "2026-10-29"
 }
