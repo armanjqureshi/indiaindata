@@ -3,7 +3,7 @@
  "lotSize": 800,
  "faceValue": 0.1,
  "issueType": "Book Building",
- "issueSizeText": "Initial Public Offer comprising of Fresh issue of up to 36,48,000 equity shares (including Market Maker portion of 2,22,400 Equity Shares)",
+ "issueSizeText": "Initial Public Offer comprising of Fresh issue of up to 36,48,000 equity shares (including Market Maker portion of 2,22,400 Equity Shares and Anchor Allocation 10,24,000 Equity Shares)",
  "issueSize": {
   "freshCr": 57.64,
   "ofsCr": 0,
@@ -20,9 +20,10 @@
  "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
  "documents": {
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MAXENGS.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MAXENGS.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MAXENGS.zip"
  },
- "fetchedAt": "2026-10-29T06:35:38.551Z",
+ "fetchedAt": "2026-10-29T14:54:54.273Z",
  "slug": "maxwell-engineering-solutions",
  "symbol": "MAXENGS",
  "board": "sme",
