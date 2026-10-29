@@ -4,12 +4,7 @@
  "faceValue": 0.1,
  "issueType": "Book Building",
  "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 23,26,000 equity shares and Offer for Sale of up to 5,54,000 Equity Shares (including Market Maker portion of 1,45,200 Equity Shares and Anchor Allocation of 8,13,600 Equity shares)",
- "issueSize": {
-  "freshCr": 27.91,
-  "ofsCr": 6.65,
-  "totalCr": 34.56,
-  "method": "Calculated at ₹120 per share from the issue size NSE publishes"
- },
+ "issueSize": null,
  "employeeDiscount": null,
  "retailMax": null,
  "leadManagers": [
@@ -23,7 +18,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_HGSINDIALT.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HGSINDIALT.zip"
  },
- "fetchedAt": "2026-10-29T12:35:32.467Z",
+ "fetchedAt": "2026-10-29T18:35:33.118Z",
  "slug": "hgs-india",
  "symbol": "HGSINDIALT",
  "board": "sme",
