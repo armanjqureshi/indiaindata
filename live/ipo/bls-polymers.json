@@ -1,52 +1,52 @@
 {
  "subscription": {
-  "total": 122.28,
+  "total": 191.21,
   "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
     "label": "QIB",
     "offered": 3400000,
-    "bid": 79929000,
-    "times": 23.51
+    "bid": 381283000,
+    "times": 112.14
    },
    {
     "key": "nii",
     "label": "NII",
     "offered": 2550000,
-    "bid": 888633500,
-    "times": 348.48
+    "bid": 1266839900,
+    "times": 496.8
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 1700000,
-    "bid": 616950900,
-    "times": 362.91
+    "bid": 901986800,
+    "times": 530.58
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 850000,
-    "bid": 271682600,
-    "times": 319.63
+    "bid": 364853100,
+    "times": 429.24
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 5950000,
-    "bid": 486579800,
-    "times": 81.78
+    "bid": 627300300,
+    "times": 105.43
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 11900000,
-    "bid": 1455142300,
-    "times": 122.28
+    "bid": 2275423200,
+    "times": 191.21
    }
   ],
-  "asOf": "29-Oct-2026 13:27:00",
+  "asOf": "29-Oct-2026 15:00:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 100,
@@ -72,7 +72,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_BLSPOLY.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BLSPOLY.zip"
  },
- "fetchedAt": "2026-10-29T07:58:44.075Z",
+ "fetchedAt": "2026-10-29T09:35:56.548Z",
  "slug": "bls-polymers",
  "symbol": "BLSPOLY",
  "board": "mainboard",
