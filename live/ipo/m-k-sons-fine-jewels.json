@@ -1,6 +1,6 @@
 {
  "subscription": {
-  "total": 0.86,
+  "total": 0.94,
   "totalMethod": "NSE",
   "categories": [
    {
@@ -14,39 +14,39 @@
     "key": "nii",
     "label": "NII",
     "offered": 2550000,
-    "bid": 3961139,
-    "times": 1.55
+    "bid": 4369274,
+    "times": 1.71
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 1700000,
-    "bid": 3434522,
-    "times": 2.02
+    "bid": 3713437,
+    "times": 2.18
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 850000,
-    "bid": 526617,
-    "times": 0.62
+    "bid": 655837,
+    "times": 0.77
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 5950000,
-    "bid": 2957045,
-    "times": 0.5
+    "bid": 3486210,
+    "times": 0.59
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 11900000,
-    "bid": 10190544,
-    "times": 0.86
+    "bid": 11127844,
+    "times": 0.94
    }
   ],
-  "asOf": "29-Oct-2026 12:03:00",
+  "asOf": "29-Oct-2026 13:24:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 91,
@@ -72,7 +72,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MKSONS.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MKSONS.zip"
  },
- "fetchedAt": "2026-10-29T06:35:44.139Z",
+ "fetchedAt": "2026-10-29T07:58:38.259Z",
  "slug": "m-k-sons-fine-jewels",
  "symbol": "MKSONS",
  "board": "mainboard",
