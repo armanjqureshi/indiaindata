@@ -1,0 +1,30 @@
+{
+ "subscription": null,
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 54,26,400 Equity Shares and Offer for sale of up to 6,03,600 Equity Shares (including market maker portion of 3,04,800 equity shares)",
+ "issueSize": {
+  "freshCr": 51.01,
+  "ofsCr": 5.67,
+  "totalCr": 56.68,
+  "method": "Calculated at ₹94 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Affinity Global Capital Market Private Limited"
+ ],
+ "registrar": "Cameo Corporate Services Limited",
+ "registrarContact": "K. Sreepriya, +91 40 6716 2222, priya@cameoindia.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_VPFL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_VPFL.zip"
+ },
+ "fetchedAt": "2026-10-29T12:35:27.416Z",
+ "slug": "vedant-poly-fabs",
+ "symbol": "VPFL",
+ "board": "sme",
+ "name": "Vedant Poly Fabs Limited"
+}
