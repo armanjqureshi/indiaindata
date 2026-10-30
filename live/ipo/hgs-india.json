@@ -1,5 +1,11 @@
 {
- "subscription": null,
+ "subscription": {
+  "total": 0.06,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "30-Oct-2026 12:03:00",
+  "scope": "NSE and BSE combined"
+ },
  "lotSize": 1200,
  "faceValue": 0.1,
  "issueType": "Book Building",
@@ -18,7 +24,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_HGSINDIALT.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HGSINDIALT.zip"
  },
- "fetchedAt": "2026-10-29T18:35:33.118Z",
+ "fetchedAt": "2026-10-30T06:35:41.726Z",
  "slug": "hgs-india",
  "symbol": "HGSINDIALT",
  "board": "sme",
