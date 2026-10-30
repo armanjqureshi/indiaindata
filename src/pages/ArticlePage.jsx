@@ -40,8 +40,8 @@ export default function ArticlePage() {
   const article = getArticle(slug)
 
   useSeo({
-    title: article ? article.title : 'Article not found',
-    description: article ? article.dek : undefined,
+    title: article ? article.seoTitle || article.title : 'Article not found',
+    description: article ? article.seoDescription || article.dek : undefined,
   })
 
   if (!article) return <NotFound />
@@ -167,6 +167,40 @@ export default function ArticlePage() {
                   </div>
                   {block.caption && <figcaption className="mt-2 text-xs text-ink/60">{block.caption}</figcaption>}
                 </figure>
+              )
+            }
+            if (block.type === 'keypoints') {
+              return (
+                <aside key={i} className="mb-8 rounded-xl border border-ink/10 bg-raise p-5">
+                  <h2 className="mb-2 font-display text-base font-semibold">{block.title || 'Key numbers'}</h2>
+                  <ul className="list-disc space-y-1.5 pl-5 text-base leading-snug text-ink/85">
+                    {(block.items || []).map((it, j) => (
+                      <li key={j}>{it}</li>
+                    ))}
+                  </ul>
+                </aside>
+              )
+            }
+            if (block.type === 'faq') {
+              const qa = (block.items || []).filter((x) => x && x.q && x.a)
+              const ld = {
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: qa.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })),
+              }
+              return (
+                <section key={i} className="mb-6">
+                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
+                  <h2 className="mb-4 mt-10 font-display text-2xl font-semibold sm:text-3xl">{block.title || 'Questions'}</h2>
+                  <div className="space-y-5">
+                    {qa.map((x, j) => (
+                      <div key={j}>
+                        <h3 className="font-display text-lg font-semibold">{x.q}</h3>
+                        <p className="mt-1 text-base leading-[1.75] text-ink/85">{x.a}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
               )
             }
             if (block.type === 'chart') {

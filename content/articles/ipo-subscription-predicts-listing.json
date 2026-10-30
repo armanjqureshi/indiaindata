@@ -42,6 +42,17 @@
   ],
   "body": [
     {
+      "type": "keypoints",
+      "title": "Key numbers",
+      "items": [
+        "59 IPOs that opened on NSE between 18 June and 15 October 2026 have both a final subscription and a listing price",
+        "All 16 subscribed 100 times or more listed above issue price; median gain 44.5%",
+        "Of 28 subscribed under 5 times, 11 listed higher; median gain zero",
+        "Between 5 and 100 times, gains do not rise neatly with demand",
+        "Correlation between log subscription and listing gain: 0.68"
+      ]
+    },
+    {
       "type": "paragraph",
       "text": "Investors read subscription figures as a forecast of listing day. For the 59 IPOs that opened on NSE between 18 June and 15 October 2026 and have both a final subscription figure and a listing price in our data, the extremes behave as expected. The middle is noisy."
     },
@@ -86,8 +97,28 @@
       "text": "Subscription measures demand during bidding, and part of that demand is from investors who plan to sell on listing day. It says nothing about the business. Jio Platforms, subscribed 22.19 times at the close of bidding, lists on 28 October and is not in this sample."
     },
     {
+      "type": "faq",
+      "title": "Questions",
+      "items": [
+        {
+          "q": "Does a high IPO subscription mean a listing gain?",
+          "a": "At the extremes in 2026, yes. All 16 issues subscribed 100 times or more opened above their issue price, with a median gain of 44.5%. In the middle the pattern is noisy."
+        },
+        {
+          "q": "What does a low IPO subscription mean?",
+          "a": "Of 28 issues subscribed under 5 times, only 11 opened higher and the median gain was zero. The five weakest listings were all subscribed under 2 times and opened 11% to 20% below their price."
+        },
+        {
+          "q": "Can subscription predict listing day?",
+          "a": "Only roughly. The correlation of 0.68 describes the past few months, not a rule. Part of the demand comes from investors planning to sell on listing day, and subscription says nothing about the business."
+        }
+      ]
+    },
+    {
       "type": "paragraph",
       "text": "Sources: NSE consolidated subscription figures (NSE and BSE combined) at the close of bidding, and listing-day opening prices from NSE end-of-day files, compiled by India in Data. Not investment advice."
     }
-  ]
+  ],
+  "seoTitle": "IPO subscription vs listing gain: 2026 data",
+  "seoDescription": "All 16 IPOs subscribed 100x or more since June listed above issue price (median gain 44.5%). Under 5x, the median gain was zero."
 }

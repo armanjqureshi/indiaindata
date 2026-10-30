@@ -110,8 +110,8 @@ function Footer({ extra }) {
 /* ---------- state-wise GSDP ---------- */
 export function StateGdp() {
   useSeo({
-    title: 'State-wise GDP of India: GSDP of all states (2024-25)',
-    description: 'GSDP of every Indian state and UT from the RBI Handbook, in rupees lakh crore, with real growth. Maharashtra is largest. Choose any year from 2011-12 to 2024-25.',
+    title: 'State-wise GDP of India (2024-25), ranked',
+    description: 'Maharashtra leads at ₹45.3 lakh crore, then Tamil Nadu and Uttar Pradesh. GSDP of every state and UT, 2011-12 to 2024-25, from the RBI Handbook.',
   })
   const [yi, setYi] = useState(LAST)
   const rows = ranked(GSDP_CURRENT, yi)
@@ -182,7 +182,7 @@ export function StateGdp() {
 export function StatePerCapita() {
   useSeo({
     title: 'Per capita income by state in India (2024-25)',
-    description: 'Per capita net state domestic product for every Indian state and UT, 2011-12 to 2024-25, from the RBI Handbook. See which states are richest and poorest per person.',
+    description: 'Income per person for every state and UT, 2011-12 to 2024-25. Delhi leads 2024-25 at ₹4.93 lakh; Sikkim and Goa led 2023-24. RBI data.',
   })
   const [yi, setYi] = useState(LAST)
   const rows = ranked(PC_CURRENT, yi)
@@ -249,8 +249,8 @@ export function StatePerCapita() {
 /* ---------- richest state ---------- */
 export function RichestState() {
   useSeo({
-    title: 'Richest state in India: top 10 by GDP and income per person (2024-25)',
-    description: 'Which is the richest state in India? Maharashtra is largest by GDP; Goa, Sikkim and Delhi lead on per capita income. Ranked tables from the RBI Handbook.',
+    title: 'Richest state in India: top 10 (2024-25)',
+    description: 'Maharashtra has the biggest economy; Delhi tops income per person in 2024-25, after Sikkim and Goa in 2023-24. Top 10 lists from RBI data.',
   })
   const gdp = ranked(GSDP_CURRENT, LAST).slice(0, 10)
   const pcLast = ranked(PC_CURRENT, LAST).slice(0, 10)
@@ -348,7 +348,7 @@ const popFmtShort = (thousand) => (thousand >= 10000 ? `${(thousand / 10000).toF
 export function StatePopulation() {
   useSeo({
     title: 'India population by state (2026 projection)',
-    description: 'Projected population of every Indian state and UT from 2011 to 2036, from the National Commission on Population. Uttar Pradesh is largest. Ranked, with share of India.',
+    description: 'Uttar Pradesh has 24.3 crore people in 2026, then Bihar (13.2 crore) and Maharashtra (12.9 crore). All states and UTs ranked, 2011 to 2036.',
   })
   const [yi, setYi] = useState(POP_NOW)
   const rows = POP_STATES.map((s) => ({ state: s, v: POP[s][yi], base: POP[s][0] })).sort((a, b) => b.v - a.v)

@@ -41,6 +41,16 @@
   ],
   "body": [
     {
+      "type": "keypoints",
+      "title": "Key numbers",
+      "items": [
+        "About 12.6% a year over 10 years: 7,946 at the end of 2015 to 26,130 at the end of 2025, price index only",
+        "About 13.0% a year over 3 years and 13.3% a year over 5 years",
+        "Best year 2017 (+28.65%); weakest 2016 (+3.01%); all ten years from 2016 to 2025 ended higher",
+        "2026 so far: down 13.5% to 23 October"
+      ]
+    },
+    {
       "type": "paragraph",
       "text": "The Nifty 50 returned about 12.6% a year over the last 10 years, from 7,946 at the end of 2015 to 26,130 at the end of 2025. That is the price index alone, before dividends. Every one of those ten calendar years finished higher than it started."
     },
@@ -107,9 +117,33 @@
       "text": "The average return is a destination. No single year is obliged to take you there directly."
     },
     {
+      "type": "faq",
+      "title": "Questions",
+      "items": [
+        {
+          "q": "What is the Nifty 50 return in the last 10 years?",
+          "a": "About 12.6% a year on the price index, from 7,946 at the end of 2015 to 26,130 at the end of 2025. That excludes dividends."
+        },
+        {
+          "q": "What were the Nifty 50 yearly returns from 2016 to 2025?",
+          "a": "+3.01% (2016), +28.65% (2017), +3.15% (2018), +12.02% (2019), +14.90% (2020), +24.12% (2021), +4.33% (2022), +20.03% (2023), +8.80% (2024) and +10.51% (2025)."
+        },
+        {
+          "q": "How is the 10-year annual return calculated?",
+          "a": "It is the compound annual growth rate: the year-end 2025 level divided by the year-end 2015 level, raised to the power of one tenth, minus one."
+        },
+        {
+          "q": "Does the 12.6% include dividends?",
+          "a": "No. These are price returns. The Nifty 50 total return index adds dividends, so it runs higher."
+        }
+      ]
+    },
+    {
       "type": "paragraph",
       "text": "Sources: year-end closing levels for 2015 to 2023 from Forbes India’s Nifty 50 history table, the 2025 close and annual gain from Samco’s calendar-year review, 2024 and 2026 levels from NSE data. Annual returns and the 12.6% compound rate are our calculations from those closing levels."
     }
   ],
-  "draft": false
+  "draft": false,
+  "seoTitle": "Nifty 50 returns, last 10 years: yearly table",
+  "seoDescription": "The Nifty 50 returned about 12.6% a year over 10 years to 2025. Year-by-year returns, plus 3, 5 and 10-year annual returns on the price index."
 }

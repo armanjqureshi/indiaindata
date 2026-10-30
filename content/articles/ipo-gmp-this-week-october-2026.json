@@ -46,6 +46,21 @@
   ],
   "body": [
     {
+      "type": "keypoints",
+      "title": "Key numbers",
+      "items": [
+        "Six mainboard IPOs list or bid this week: Jio, Paras Healthcare, EAAA, BLS Polymers, SFC Environmental, M K Sons",
+        "Jio Platforms GMP ₹246, about 22% over the ₹1,119 band; subscribed 22.19 times",
+        "Paras Healthcare GMP fell from ₹96 before bidding to ₹9; subscribed 2.23 times",
+        "EAAA India Alternatives GMP fell from ₹121 on 23 October to ₹36 on 26 October",
+        "BLS Polymers has the highest premium: ₹38, or 25.3% of its band"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Update, 28 October: Jio Platforms listed at ₹1,358, 21.4% above its issue price and about ₹7 below the ₹1,365 implied in the table below. See our Jio listing-day article."
+    },
+    {
       "type": "paragraph",
       "text": "Six mainboard IPOs are on the calendar this week. Jio Platforms and Paras Healthcare finished bidding on 23 October and are due to list on Wednesday, 28 October. EAAA India Alternatives opened today, BLS Polymers and SFC Environmental Technologies open tomorrow, and M K Sons Fine Jewels opens on Wednesday."
     },
@@ -131,8 +146,28 @@
       "text": "We will compare each issue’s last reported GMP with its actual listing price on our IPO GMP page after it lists, starting with Jio Platforms and Paras Healthcare on Wednesday."
     },
     {
+      "type": "faq",
+      "title": "Questions",
+      "items": [
+        {
+          "q": "What is GMP in an IPO?",
+          "a": "Grey market premium: an unofficial price quoted by dealers for shares that are not yet listed. No exchange or regulator publishes it, and sources often disagree."
+        },
+        {
+          "q": "Is GMP a reliable guide to the listing gain?",
+          "a": "No. It moves fast and can reverse after bidding closes. Paras Healthcare's fell from ₹96 to ₹9 during its bidding, and sources quoted different figures for the same issue on the same morning."
+        },
+        {
+          "q": "Which IPO had the highest GMP this week?",
+          "a": "BLS Polymers, at ₹38 or 25.3% of its ₹150 upper band. Jio Platforms had the highest in rupees, ₹246, about 22%."
+        }
+      ]
+    },
+    {
       "type": "paragraph",
       "text": "Sources: GMP from Investorgain (daily GMP pages for each issue, entries to 26 October 2026, 10:37 am) and IPO Premium (M K Sons, 26 October); Business Today (EAAA issue details and brokerage views, 26 October; M K Sons issue details, 23 October); IPO Premium (BLS Polymers and SFC issue details); NSE issue and subscription data. GMP is unofficial and unverified. Not investment advice."
     }
-  ]
+  ],
+  "seoTitle": "IPO GMP this week (Oct 2026): Jio, BLS, EAAA",
+  "seoDescription": "Grey market premium for six IPOs: Jio Platforms about 22%, BLS Polymers 25%, EAAA down to 2%. Why GMP can mislead."
 }

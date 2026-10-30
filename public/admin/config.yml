@@ -66,6 +66,8 @@ collections:
         display_fields: ["name"]
         value_field: "slug"
         hint: "Pick from the Team collection. Not listed? Add them under Team first, then come back here."
+      - { label: "Search title (optional)", name: "seoTitle", widget: "string", required: false, hint: "Shown in Google instead of the headline. Keep under 50 characters." }
+      - { label: "Search description (optional)", name: "seoDescription", widget: "text", required: false, hint: "Shown in Google instead of the summary. Keep under 155 characters." }
       - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
       - { label: "Reading time (minutes)", name: "readingTime", widget: "number", value_type: "int", min: 1, max: 60 }
       - { label: "Feature on homepage", name: "featured", widget: "boolean", default: false }
@@ -106,6 +108,27 @@ collections:
               - { label: "Caption", name: "caption", widget: "string", required: false }
               - { label: "Column headings", name: "columns", widget: "list", field: { label: "Heading", name: "heading", widget: "string" } }
               - { label: "Rows", name: "rows", widget: "text", hint: "One row per line, cells separated by | (for example: 2024 | 23,644.80 | +8.80%)" }
+          - label: "Key numbers box"
+            name: "keypoints"
+            widget: "object"
+            summary: "Key numbers"
+            fields:
+              - { label: "Type", name: "type", widget: "hidden", default: "keypoints" }
+              - { label: "Title", name: "title", widget: "string", required: false, default: "Key numbers" }
+              - { label: "Bullets", name: "items", widget: "list", field: { label: "Bullet", name: "item", widget: "string" }, hint: "3 to 5 short bullets with the main numbers. Place this block first." }
+          - label: "Questions and answers"
+            name: "faq"
+            widget: "object"
+            summary: "Questions ({{fields.items.length}})"
+            fields:
+              - { label: "Type", name: "type", widget: "hidden", default: "faq" }
+              - { label: "Title", name: "title", widget: "string", required: false, default: "Questions" }
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "q", widget: "string" }
+                  - { label: "Answer", name: "a", widget: "text" }
           - label: "Chart"
             name: "chart"
             widget: "object"
