@@ -1,9 +1,37 @@
 {
- "updatedAt": "2026-10-30T11:04:54.616Z",
+ "updatedAt": "2026-10-30T18:36:15.211Z",
  "lastPriceSession": "2026-10-30",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
+  {
+   "slug": "studds-accessories",
+   "symbol": "STUDDS",
+   "board": "mainboard",
+   "name": "Studds Accessories Limited",
+   "status": "listed",
+   "open": "2025-10-30",
+   "close": "2025-11-03",
+   "listingDate": "2025-11-07",
+   "priceLow": 557,
+   "priceHigh": 585,
+   "issuePrice": 585,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-07",
+    "open": 565,
+    "close": 560.3,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -3.4,
+   "lastClose": 394,
+   "lastCloseDate": "2026-10-30",
+   "gainPct": -32.6
+  },
   {
    "slug": "orkla-india",
    "symbol": "ORKLAINDIA",
