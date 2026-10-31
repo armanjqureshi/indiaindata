@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T18:36:15.207Z",
+ "updatedAt": "2026-10-31T18:36:23.436Z",
  "lastPriceSession": "2026-10-30",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -8827,44 +8827,6 @@
    "lastClose": 183.95,
    "lastCloseDate": "2026-10-30",
    "gainPct": 47.2,
-   "hasDetail": false
-  },
-  {
-   "slug": "lenskart-solutions",
-   "symbol": "LENSKART",
-   "board": "mainboard",
-   "name": "Lenskart Solutions Limited",
-   "status": "listed",
-   "open": "2025-10-31",
-   "close": "2025-11-04",
-   "listingDate": "2025-11-10",
-   "timetable": {
-    "open": "2025-10-31",
-    "close": "2025-11-04",
-    "allotment": null,
-    "refunds": null,
-    "demat": null,
-    "listing": "2025-11-10",
-    "expected": {}
-   },
-   "priceLow": 382,
-   "priceHigh": 402,
-   "issuePrice": 402,
-   "lotSize": null,
-   "lotValue": null,
-   "sizeCr": null,
-   "subscription": null,
-   "subscriptionAsOf": null,
-   "listing": {
-    "date": "2025-11-10",
-    "open": 395,
-    "close": 403.1,
-    "source": "NSE end-of-day file for the listing date"
-   },
-   "listingGainPct": -1.7,
-   "lastClose": 678.2,
-   "lastCloseDate": "2026-10-30",
-   "gainPct": 68.7,
    "hasDetail": false
   }
  ]
