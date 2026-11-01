@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T18:36:23.436Z",
+ "updatedAt": "2026-11-01T18:36:01.844Z",
  "lastPriceSession": "2026-10-30",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -9,7 +9,7 @@
    "symbol": "VPFL",
    "board": "sme",
    "name": "Vedant Poly Fabs Limited",
-   "status": "upcoming",
+   "status": "open",
    "open": "2026-11-02",
    "close": "2026-11-04",
    "listingDate": null,
@@ -27,12 +27,12 @@
      "allotment": true
     }
    },
-   "priceLow": 88,
-   "priceHigh": 94,
+   "priceLow": null,
+   "priceHigh": null,
    "issuePrice": null,
    "lotSize": 1200,
-   "lotValue": 112800,
-   "sizeCr": 56.68,
+   "lotValue": null,
+   "sizeCr": null,
    "subscription": null,
    "subscriptionAsOf": null,
    "listing": null,
