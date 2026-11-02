@@ -18,7 +18,7 @@ export const INFOGRAPHICS = [
     related: { to: '/article/upi-record-october-2026', label: 'Read the story: UPI’s record October' },
     table: { head: ['Month', 'Payments (billion)', 'Value (₹ lakh crore)'], rows: UPI_MONTHS.map((m) => [m.month, m.vol.toFixed(2), m.val.toFixed(2)]) },
     summary:
-      'UPI processed 25.47 billion payments worth ₹31.53 lakh crore in October 2026, the first month above 25 billion payments and above ₹30 lakh crore. Against October 2025, payments rose 23% and value 16%, so the average payment fell from about ₹1,318 to about ₹1,238. The previous volume record was 24.51 billion in August 2026. That is 9,509 payments in an average second, about 18 for every person in India in the month. If an average October day’s ₹1.02 lakh crore flowed evenly from midnight, UPI would have moved as much as the Jio Platforms IPO raised (₹30,213 crore) by 7:08 am, and as much as foreign investors pulled out of Indian shares in October (₹48,056 crore) by 11:20 am.',
+      'UPI processed 25.47 billion payments worth ₹31.53 lakh crore in October 2026, the first month above 25 billion payments and above ₹30 lakh crore. The previous volume record was 24.51 billion in August 2026. In one month, UPI moved slightly more money than Tamil Nadu’s economy produced in all of 2024-25 (₹31.19 lakh crore of GSDP); among states with 2024-25 figures, only Maharashtra’s output (₹45.32 lakh crore) was larger. Against October 2025, payments rose 23% and value 16%, so the average payment fell from about ₹1,318 to about ₹1,238.',
   },
   {
     slug: 'fpi-selloff-october-2026',
