@@ -1,0 +1,20 @@
+{
+ "doca commodity list": {
+  "status": 200,
+  "bytes": 55208,
+  "excerpt": " List of Commodities | Ministry | Department | FCAInfoweb Header \"JzavaScript is a standard programming language that is included to provide interactive features, Kindly enable Javascript in your browser. For details visit help page\" भारत सरकार Government of india Skip main Select Language हिन्दी उपभोक्ता मामले विभाग DEPARTMENT OF CONSUMER AFFAIRS Price Monitoring System (Version 4.0) About Us Commodities Centers Stock Declaration(Pulses) Portal Related Websites WPI CPI Price of Major Vegetables Production of Major Crops & MSP Imports & Exports Spot and Future Prices Contact Us Telephone Directory Email List Screen Reader Access List of Commodities Total Commodities - 41 List of Commodities Sr No. Commodity Commodity Group 1 Rice GRAINS AND PULSES 2 Wheat GRAINS AND PULSES 3 Atta (Wheat) GRAINS AND PULSES 4 Gram Dal GRAINS AND PULSES 5 Tur/Arhar Dal GRAINS AND PULSES 6 Urad Dal GRAINS AND PULSES 7 Moong Dal GRAINS AND PULSES 8 Masoor Dal GRAINS AND PULSES 9 Broken Rice GRAINS AND PULSES 10 Groundnut Oil (Packed) OILS 11 Mustard Oil (Packed) OILS 12 Vanaspati (Packed) OILS 13 Soya Oil (Packed) OILS 14 Sunflower Oil (Packed) OILS 15 Palm Oil (Packed) OILS 16 Potato VEGETABLES 17 Onion VEGETABLES 18 Tomato VEGETABLES 19 Sugar OTHERS 20 Gur OTHERS 21 Milk @ OTHERS 22 Tea Loose OTHERS 23 Salt Pack (Iodised) OTHERS 24 Bajra (whole) Additional Commodities 25 Jowar (whole) Additional Commodities 26 Maida (wheat) Additional Commodities 27 Ragi (whole) Additional Commodities 28 Suji (whole) Additional Commodities 29 Besan Additional Commodities 30 Desi Ghee Additional Commodities 31 Butter (Pasteurised) Additional Commodities 32 Eggs Additional Commodities 33 Brinjal Additional Commodities 34 Black Pepper (whole) Additional Commodities 35 Coriander (whole) Additional Commodities 36 Cummin Seed (whole) Additional Commodities 37 Red Chillies (whole) Additional Commodities 38 Turmeric (powder) Additional Commodities 39 Banana Additional Commodities 40 Ginger Additional Commodities 41 Garlic Additional Commodities Website Content Managed by Department of Consumer Affairs, Ministry of Consumer Affairs, Food & Public Distribution, Government of India Designed, Developed and Hosted by , National Informatics Centre( NIC ) Visitor Count: 22088975 CPI WPI Imports & Exports Price of Major Vegetables Production of Major Crops & MSP Spot & Future Prices Disclaimer & Privacy Policy Website Content Managed by Ministry of Skill Development And Entrepreneurship Designed, Developed "
+ },
+ "ceda http://dca.ceda.ashoka.edu.in": {
+  "ok": false,
+  "error": "ENOTFOUND"
+ },
+ "ceda https://dca.ceda.ashoka.edu.in": {
+  "ok": false,
+  "error": "ENOTFOUND"
+ },
+ "ceda http://dca-dev.ceda.ashoka.edu.in": {
+  "ok": false,
+  "error": "ENOTFOUND"
+ },
+ "runAt": "2026-11-02T14:38:33.416Z"
+}
