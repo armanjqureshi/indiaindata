@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-02T15:36:27.077Z",
+ "updatedAt": "2026-11-02T18:36:26.196Z",
  "lastPriceSession": "2026-11-02",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -123,7 +123,7 @@
    "symbol": "BCSSL",
    "board": "mainboard",
    "name": "Bombay Coated and Special Steels Limited",
-   "status": "open",
+   "status": "closed",
    "open": "2026-10-29",
    "close": "2026-11-02",
    "listingDate": null,
