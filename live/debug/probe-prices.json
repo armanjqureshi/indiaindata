@@ -1,0 +1,285 @@
+{
+ "fca-report-menu": {
+  "status": 200,
+  "finalUrl": "https://fcainfoweb.nic.in/reports/report_menu_web.aspx",
+  "bytes": 13109,
+  "cookies": [
+   "BNI_persistence",
+   "ASP.NET_SessionId"
+  ],
+  "title": "",
+  "fields": [
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "ctl00_MainContent_ToolkitScriptManager1_HiddenField",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__EVENTTARGET",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__EVENTARGUMENT",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__LASTFOCUS",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__VIEWSTATE",
+    "value": "R2tBG+1zXT1D7Ii2q7sbMHphcTFf7Gvmdp40oWRYGqeSnYUtn12aduXAwzfEdkuM8NXXbBZzPr52RVq/",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__VIEWSTATEGENERATOR",
+    "value": "37FEC614",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__VIEWSTATEENCRYPTED",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__EVENTVALIDATION",
+    "value": "+RAUwYq7PiokR9G8MCKHo0jsA4fwH6GvP5+37dsKv+BChZOkmvdVQnG4QT/01EIphl1qFYQ3R3pb/g0g",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "radio",
+    "name": "ctl00$MainContent$Rbl_Rpt_type",
+    "value": "Price report",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "radio",
+    "name": "ctl00$MainContent$Rbl_Rpt_type",
+    "value": "Average/Month End Report",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "radio",
+    "name": "ctl00$MainContent$Rbl_Rpt_type",
+    "value": "Variation Report for Selected Time Span",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "ctl00$MainContent$Captcha",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "select",
+    "name": "ctl00$MainContent$Ddl_Rpt_type",
+    "autopostback": false,
+    "options": [
+     {
+      "value": "Retail",
+      "text": "Retail",
+      "selected": false
+     },
+     {
+      "value": "Wholesale",
+      "text": "Wholesale",
+      "selected": false
+     }
+    ]
+   },
+   {
+    "tag": "select",
+    "name": "ctl00$MainContent$ddl_Language",
+    "autopostback": false,
+    "options": [
+     {
+      "value": "English",
+      "text": "English",
+      "selected": false
+     },
+     {
+      "value": "Hindi",
+      "text": "Hindi",
+      "selected": false
+     }
+    ]
+   }
+  ],
+  "links": []
+ },
+ "fca-home": {
+  "status": 200,
+  "finalUrl": "https://fcainfoweb.nic.in/",
+  "bytes": 99157,
+  "cookies": [
+   "BNI_persistence",
+   "ASP.NET_SessionId"
+  ],
+  "title": "Home |  Ministry | Department | Price Monitoring System",
+  "fields": [
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__VIEWSTATE",
+    "value": "3oBctIRAhWZSEhdLa8x8iRtns7wdvMVGfqTD3Icv8zIgnNuEASHbeidO8Lk8q3AAzPxKWietHnuN+eNO",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__VIEWSTATEGENERATOR",
+    "value": "CA0B0334",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__VIEWSTATEENCRYPTED",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "__EVENTVALIDATION",
+    "value": "1ZH965kDwoojxC7WYoVA6bPEJaJWHKHsaZsXo+ciB9cvUr7UFtKjg1eq+K5P9uWx6d+TeJQwUFM0GNal",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "hf1",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "hidden",
+    "name": "HF2",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "UserName",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "password",
+    "name": "Password",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "image",
+    "name": "imgbtnRefresh",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "Captcha",
+    "value": "",
+    "checked": false
+   },
+   {
+    "tag": "input",
+    "type": "submit",
+    "name": "LoginButton",
+    "value": "Log In",
+    "checked": false
+   }
+  ],
+  "links": [
+   "http://nhb.gov.in/statistics/price-arrival-statistics.html",
+   "https://consumeraffairs.gov.in/pages/price-monitoring-division",
+   "http://nhb.gov.in/statistics/price-arrival-statistics.html"
+  ]
+ },
+ "idp https://ckandev.indiadataportal.com": {
+  "status": 200,
+  "total": 1901416,
+  "fields": [
+   "_id",
+   "id",
+   "date",
+   "state_name",
+   "state_code",
+   "commodity",
+   "price"
+  ],
+  "records": [
+   {
+    "_id": 184867,
+    "id": 184866,
+    "date": "2023-11-03",
+    "state_name": "Andaman and Nicobar",
+    "state_code": "35",
+    "commodity": "Rice",
+    "price": 47
+   },
+   {
+    "_id": 184868,
+    "id": 184867,
+    "date": "2023-11-03",
+    "state_name": "Andhra Pradesh",
+    "state_code": "28",
+    "commodity": "Rice",
+    "price": 53
+   },
+   {
+    "_id": 184869,
+    "id": 184868,
+    "date": "2023-11-03",
+    "state_name": "Arunachal pradesh",
+    "state_code": "12",
+    "commodity": "Rice",
+    "price": 36
+   }
+  ]
+ },
+ "idp https://indiadataportal.com": {
+  "status": 200,
+  "raw": "<!DOCTYPE html><html class=\"scroll-smooth hover:scroll-auto md:scroll-auto\" lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta name=\"next-head-count\" content=\"2\"/><script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-LXVCGVC0M8\"></script><s"
+ },
+ "idp https://ckan.indiadataportal.com": {
+  "status": 404
+ },
+ "ceda https://dca.ceda.ashoka.edu.in/": {
+  "ok": false,
+  "error": "fetch failed"
+ },
+ "ceda https://dca.ceda.ashoka.edu.in/README.html": {
+  "ok": false,
+  "error": "fetch failed"
+ },
+ "runAt": "2026-11-02T14:37:03.528Z"
+}
