@@ -14,7 +14,7 @@
     "key": "nii",
     "label": "NII",
     "offered": 3520327,
-    "bid": 557333868,
+    "bid": 557336598,
     "times": 158.32
    },
    {
@@ -28,25 +28,25 @@
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 1173442,
-    "bid": 126623952,
+    "bid": 126626682,
     "times": 107.91
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 8214097,
-    "bid": 277080804,
+    "bid": 277083898,
     "times": 33.73
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 16533012,
-    "bid": 1004745196,
+    "bid": 1004751020,
     "times": 60.77
    }
   ],
-  "asOf": "02-Nov-2026 18:03:00",
+  "asOf": "02-Nov-2026 19:00:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 182,
@@ -72,7 +72,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_BCSSL.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BCSSL.zip"
  },
- "fetchedAt": "2026-11-02T12:35:40.649Z",
+ "fetchedAt": "2026-11-02T15:35:55.582Z",
  "slug": "bombay-coated-and-special-steels",
  "symbol": "BCSSL",
  "board": "mainboard",
