@@ -1,0 +1,473 @@
+{
+ "history": {
+  "retail": {
+   "Rice": [
+    [
+     "2026-11-02",
+     48.64
+    ]
+   ],
+   "Wheat": [
+    [
+     "2026-11-02",
+     32.45
+    ]
+   ],
+   "Atta (Wheat)": [
+    [
+     "2026-11-02",
+     37.95
+    ]
+   ],
+   "Gram Dal": [
+    [
+     "2026-11-02",
+     94.08
+    ]
+   ],
+   "Tur/Arhar Dal": [
+    [
+     "2026-11-02",
+     133.91
+    ]
+   ],
+   "Urad Dal": [
+    [
+     "2026-11-02",
+     126.11
+    ]
+   ],
+   "Moong Dal": [
+    [
+     "2026-11-02",
+     114.74
+    ]
+   ],
+   "Masoor Dal": [
+    [
+     "2026-11-02",
+     90.93
+    ]
+   ],
+   "Broken Rice": [
+    [
+     "2026-11-02",
+     34.61
+    ]
+   ],
+   "Groundnut Oil (Packed)": [
+    [
+     "2026-11-02",
+     211.69
+    ]
+   ],
+   "Mustard Oil (Packed)": [
+    [
+     "2026-11-02",
+     209.08
+    ]
+   ],
+   "Vanaspati (Packed)": [
+    [
+     "2026-11-02",
+     170.51
+    ]
+   ],
+   "Soya Oil (Packed)": [
+    [
+     "2026-11-02",
+     169
+    ]
+   ],
+   "Sunflower Oil (Packed)": [
+    [
+     "2026-11-02",
+     191.53
+    ]
+   ],
+   "Palm Oil (Packed)": [
+    [
+     "2026-11-02",
+     154.08
+    ]
+   ],
+   "Potato": [
+    [
+     "2026-11-02",
+     22.78
+    ]
+   ],
+   "Onion": [
+    [
+     "2026-11-02",
+     53.63
+    ]
+   ],
+   "Tomato": [
+    [
+     "2026-11-02",
+     39.01
+    ]
+   ],
+   "Sugar": [
+    [
+     "2026-11-02",
+     59.33
+    ]
+   ],
+   "Gur": [
+    [
+     "2026-11-02",
+     66.89
+    ]
+   ],
+   "Milk @": [
+    [
+     "2026-11-02",
+     61.89
+    ]
+   ],
+   "Tea Loose": [
+    [
+     "2026-11-02",
+     275.49
+    ]
+   ],
+   "Salt Pack (Iodised)": [
+    [
+     "2026-11-02",
+     22.43
+    ]
+   ],
+   "Bajra (whole)": [
+    [
+     "2026-11-02",
+     38.59
+    ]
+   ],
+   "Jowar (whole)": [
+    [
+     "2026-11-02",
+     46.15
+    ]
+   ],
+   "Maida (wheat)": [
+    [
+     "2026-11-02",
+     42.99
+    ]
+   ],
+   "Ragi (whole)": [
+    [
+     "2026-11-02",
+     55.73
+    ]
+   ],
+   "Suji (whole)": [
+    [
+     "2026-11-02",
+     47.56
+    ]
+   ],
+   "Besan": [
+    [
+     "2026-11-02",
+     98.85
+    ]
+   ],
+   "Desi Ghee": [
+    [
+     "2026-11-02",
+     708.58
+    ]
+   ],
+   "Butter (Pasteurised)": [
+    [
+     "2026-11-02",
+     61.07
+    ]
+   ],
+   "Eggs": [
+    [
+     "2026-11-02",
+     84.57
+    ]
+   ],
+   "Brinjal": [
+    [
+     "2026-11-02",
+     42.49
+    ]
+   ],
+   "Black Pepper (whole)": [
+    [
+     "2026-11-02",
+     88.8
+    ]
+   ],
+   "Coriander (whole)": [
+    [
+     "2026-11-02",
+     44.62
+    ]
+   ],
+   "Cummin Seed (whole)": [
+    [
+     "2026-11-02",
+     40.57
+    ]
+   ],
+   "Red Chillies (whole)": [
+    [
+     "2026-11-02",
+     30.76
+    ]
+   ],
+   "Turmeric (powder)": [
+    [
+     "2026-11-02",
+     16.74
+    ]
+   ],
+   "Banana": [
+    [
+     "2026-11-02",
+     48.98
+    ]
+   ],
+   "Ginger": [
+    [
+     "2026-11-02",
+     33.19
+    ]
+   ],
+   "Garlic": [
+    [
+     "2026-11-02",
+     45.2
+    ]
+   ]
+  },
+  "wholesale": {
+   "Rice": [
+    [
+     "2026-11-02",
+     4380.49
+    ]
+   ],
+   "Wheat": [
+    [
+     "2026-11-02",
+     2930.85
+    ]
+   ],
+   "Atta (Wheat)": [
+    [
+     "2026-11-02",
+     3378.83
+    ]
+   ],
+   "Gram Dal": [
+    [
+     "2026-11-02",
+     8647.52
+    ]
+   ],
+   "Tur/Arhar Dal": [
+    [
+     "2026-11-02",
+     12493.56
+    ]
+   ],
+   "Urad Dal": [
+    [
+     "2026-11-02",
+     11708.39
+    ]
+   ],
+   "Moong Dal": [
+    [
+     "2026-11-02",
+     10549.23
+    ]
+   ],
+   "Masoor Dal": [
+    [
+     "2026-11-02",
+     8273.12
+    ]
+   ],
+   "Broken Rice": [
+    [
+     "2026-11-02",
+     3036.28
+    ]
+   ],
+   "Groundnut Oil (Packed)": [
+    [
+     "2026-11-02",
+     20057.88
+    ]
+   ],
+   "Mustard Oil (Packed)": [
+    [
+     "2026-11-02",
+     19876.38
+    ]
+   ],
+   "Vanaspati (Packed)": [
+    [
+     "2026-11-02",
+     15986.79
+    ]
+   ],
+   "Soya Oil (Packed)": [
+    [
+     "2026-11-02",
+     15882.81
+    ]
+   ],
+   "Sunflower Oil (Packed)": [
+    [
+     "2026-11-02",
+     18274.88
+    ]
+   ],
+   "Palm Oil (Packed)": [
+    [
+     "2026-11-02",
+     14504.97
+    ]
+   ],
+   "Potato": [
+    [
+     "2026-11-02",
+     1708.73
+    ]
+   ],
+   "Onion": [
+    [
+     "2026-11-02",
+     4637.38
+    ]
+   ],
+   "Tomato": [
+    [
+     "2026-11-02",
+     3111.68
+    ]
+   ],
+   "Sugar": [
+    [
+     "2026-11-02",
+     5515.55
+    ]
+   ],
+   "Gur": [
+    [
+     "2026-11-02",
+     5979.85
+    ]
+   ],
+   "Milk @": [
+    [
+     "2026-11-02",
+     5823.83
+    ]
+   ],
+   "Tea Loose": [
+    [
+     "2026-11-02",
+     24569.84
+    ]
+   ],
+   "Salt Pack (Iodised)": [
+    [
+     "2026-11-02",
+     1884.68
+    ]
+   ]
+  }
+ },
+ "retail": {
+  "asOf": "2026-11-02",
+  "prices": {
+   "Rice": 48.64,
+   "Wheat": 32.45,
+   "Atta (Wheat)": 37.95,
+   "Gram Dal": 94.08,
+   "Tur/Arhar Dal": 133.91,
+   "Urad Dal": 126.11,
+   "Moong Dal": 114.74,
+   "Masoor Dal": 90.93,
+   "Broken Rice": 34.61,
+   "Groundnut Oil (Packed)": 211.69,
+   "Mustard Oil (Packed)": 209.08,
+   "Vanaspati (Packed)": 170.51,
+   "Soya Oil (Packed)": 169,
+   "Sunflower Oil (Packed)": 191.53,
+   "Palm Oil (Packed)": 154.08,
+   "Potato": 22.78,
+   "Onion": 53.63,
+   "Tomato": 39.01,
+   "Sugar": 59.33,
+   "Gur": 66.89,
+   "Milk @": 61.89,
+   "Tea Loose": 275.49,
+   "Salt Pack (Iodised)": 22.43,
+   "Bajra (whole)": 38.59,
+   "Jowar (whole)": 46.15,
+   "Maida (wheat)": 42.99,
+   "Ragi (whole)": 55.73,
+   "Suji (whole)": 47.56,
+   "Besan": 98.85,
+   "Desi Ghee": 708.58,
+   "Butter (Pasteurised)": 61.07,
+   "Eggs": 84.57,
+   "Brinjal": 42.49,
+   "Black Pepper (whole)": 88.8,
+   "Coriander (whole)": 44.62,
+   "Cummin Seed (whole)": 40.57,
+   "Red Chillies (whole)": 30.76,
+   "Turmeric (powder)": 16.74,
+   "Banana": 48.98,
+   "Ginger": 33.19,
+   "Garlic": 45.2
+  }
+ },
+ "wholesale": {
+  "asOf": "2026-11-02",
+  "prices": {
+   "Rice": 4380.49,
+   "Wheat": 2930.85,
+   "Atta (Wheat)": 3378.83,
+   "Gram Dal": 8647.52,
+   "Tur/Arhar Dal": 12493.56,
+   "Urad Dal": 11708.39,
+   "Moong Dal": 10549.23,
+   "Masoor Dal": 8273.12,
+   "Broken Rice": 3036.28,
+   "Groundnut Oil (Packed)": 20057.88,
+   "Mustard Oil (Packed)": 19876.38,
+   "Vanaspati (Packed)": 15986.79,
+   "Soya Oil (Packed)": 15882.81,
+   "Sunflower Oil (Packed)": 18274.88,
+   "Palm Oil (Packed)": 14504.97,
+   "Potato": 1708.73,
+   "Onion": 4637.38,
+   "Tomato": 3111.68,
+   "Sugar": 5515.55,
+   "Gur": 5979.85,
+   "Milk @": 5823.83,
+   "Tea Loose": 24569.84,
+   "Salt Pack (Iodised)": 1884.68
+  }
+ },
+ "updatedAt": "2026-11-02T14:40:00.206Z",
+ "source": {
+  "name": "Department of Consumer Affairs, Price Monitoring Division",
+  "url": "https://fcainfoweb.nic.in/",
+  "retailUnit": "₹ per kg (milk ₹ per litre)",
+  "wholesaleUnit": "₹ per quintal"
+ }
+}

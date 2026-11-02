@@ -238,6 +238,22 @@ export function getRoutes() {
     priority: 0.8,
   })
 
+  // Kitchen-staple price pages (keep in sync with src/data/prices.js)
+  for (const [path, title, item] of [
+    ['/tomato-price-today', 'Tomato price today in India', 'tomato'],
+    ['/onion-price-today', 'Onion price today in India', 'onion'],
+    ['/potato-price-today', 'Potato price today in India', 'potato'],
+    ['/tur-dal-price', 'Tur dal price today in India', 'tur dal'],
+    ['/atta-price', 'Atta price today in India', 'atta'],
+    ['/rice-price-today', 'Rice price today in India', 'rice'],
+    ['/sugar-price-today', 'Sugar price today in India', 'sugar'],
+    ['/milk-price-today', 'Milk price today in India', 'milk'],
+  ]) {
+    routes.push({ path, title, description: `All-India average retail and wholesale price of ${item} today, updated daily from the Department of Consumer Affairs, with the change over time and other staples.`, changefreq: 'daily', priority: 0.8 })
+  }
+  routes.push({ path: '/edible-oil-price-today', title: 'Edible oil price today in India', description: 'All-India average retail and wholesale prices of mustard, groundnut, sunflower, soya and palm oil and vanaspati today, updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
+  routes.push({ path: '/food-prices-today', title: 'Food prices today in India: vegetables, dal, atta, oil and milk', description: 'All-India average retail and wholesale prices of 23 kitchen staples today: tomato, onion, potato, rice, atta, dals, edible oils, sugar and milk. Updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
+
   for (const [path, title, description] of [
     ['/states', 'Indian states ranked: GDP, per capita income and richest state', 'Rankings of Indian states by GSDP, per capita income and wealth, from the RBI Handbook of Statistics on Indian States.'],
     ['/state-wise-gdp-of-india', 'State-wise GDP of India (2024-25), ranked', 'Maharashtra leads at ₹45.3 lakh crore, then Tamil Nadu and Uttar Pradesh. GSDP of every state and UT, 2011-12 to 2024-25, from the RBI Handbook.'],

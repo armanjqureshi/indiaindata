@@ -1,0 +1,38 @@
+name: Update kitchen-staple prices
+# Reads the all-India average retail and wholesale prices that the Department of
+# Consumer Affairs publishes each day, and writes live/prices.json only. Commits are
+# marked [skip netlify] and live/ is excluded from Netlify builds; the site loads
+# live/ at runtime.
+on:
+  schedule:
+    - cron: '30 13 * * *'   # 19:00 IST
+    - cron: '30 17 * * *'   # 23:00 IST, catches late updates
+    - cron: '30 3 * * *'    # 09:00 IST, picks up revisions and missed days
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: live-data
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch and validate prices
+        run: node scripts/data/update-prices.mjs
+      - name: Commit if anything changed
+        run: |
+          git config user.name "india-in-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live/prices.json
+          if git diff --cached --quiet; then echo "No new data."; exit 0; fi
+          git add live/prices-log.json
+          git commit -m "Prices $(TZ=Asia/Kolkata date +%F' '%H:%M) IST [skip netlify]"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
+      - name: Refresh CDN copy
+        run: curl -fsS "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/live/prices.json" > /dev/null || true

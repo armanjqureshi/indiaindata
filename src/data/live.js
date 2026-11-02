@@ -40,6 +40,7 @@ function snap(key) {
       : kind === 'ipos' ? serverSource.ipos
       : kind === 'gmp' ? serverSource.gmp
       : kind === 'meta' ? serverSource.meta
+      : kind === 'prices' ? serverSource.prices
       : kind === 'ipo' ? serverSource.details[arg] ?? null
       : kind === 'row' ? serverSource.rowsBySlug[arg] ?? null
       : null
@@ -54,6 +55,7 @@ export const getMeta = () => snap('meta') || {}
 export const getGmpSnapshot = () => snap('gmp') || { entries: [] }
 export const getDetailSnapshot = (slug) => snap('ipo:' + slug)
 export const getRowSnapshot = (slug) => snap('row:' + slug)
+export const getPricesSnapshot = () => snap('prices') || { history: {} }
 
 const sources = (p) => [
   `https://cdn.jsdelivr.net/gh/${REPO}@main/${p}`,
@@ -151,6 +153,7 @@ export function withIntraday(market, intra) {
   return { items, live: { ...intra, open: marketOpenIST() && ageMin < 20, time: intra.asOf.slice(11, 16) } }
 }
 export const useIpos = () => useLive('live/ipos.json', getIposSnapshot())
+export const usePrices = () => useLive('live/prices.json', getPricesSnapshot())
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------
 export function todayIST() {

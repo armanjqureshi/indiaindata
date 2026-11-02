@@ -15,6 +15,7 @@ const BROWSE = [
   { label: 'IPO GMP today', to: '/ipo-gmp' },
   { label: 'SME IPO GMP', to: '/sme-ipo-gmp' },
   { label: 'Indian states ranked', to: '/states' },
+  { label: 'Food prices today', to: '/food-prices-today' },
   { label: 'Economy', to: '/topic/economy' },
   { label: 'Society', to: '/topic/society' },
 ]
