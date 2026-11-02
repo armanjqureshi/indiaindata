@@ -197,29 +197,29 @@
   },
   "gold-ibja": {
    "label": "Gold 999 (IBJA, per 10 g)",
-   "value": 140054,
-   "prev": 142255,
-   "change": -2201,
-   "changePct": -1.55,
-   "asOf": "2026-10-30",
+   "value": 137524,
+   "prev": 140054,
+   "change": -2530,
+   "changePct": -1.81,
+   "asOf": "2026-11-02",
    "unit": "₹",
    "source": "IBJA PM (closing) rate (excl. GST and making charges)",
    "sourceUrl": "https://ibjarates.com/",
    "note": null,
-   "updatedAt": "2026-10-31T04:30:39.893Z"
+   "updatedAt": "2026-11-02T23:30:27.809Z"
   },
   "silver-ibja": {
    "label": "Silver 999 (IBJA, per kg)",
-   "value": 181344,
-   "prev": 190478,
-   "change": -9134,
-   "changePct": -4.8,
-   "asOf": "2026-10-30",
+   "value": 179972,
+   "prev": 181344,
+   "change": -1372,
+   "changePct": -0.76,
+   "asOf": "2026-11-02",
    "unit": "₹",
    "source": "IBJA PM (closing) rate (excl. GST and making charges)",
    "sourceUrl": "https://ibjarates.com/",
    "note": null,
-   "updatedAt": "2026-10-31T04:30:39.893Z"
+   "updatedAt": "2026-11-02T23:30:27.809Z"
   }
  },
  "history": {
@@ -7565,6 +7565,10 @@
    [
     "2026-10-30",
     140054
+   ],
+   [
+    "2026-11-02",
+    137524
    ]
   ],
   "silver-ibja": [
@@ -7615,6 +7619,10 @@
    [
     "2026-10-30",
     181344
+   ],
+   [
+    "2026-11-02",
+    179972
    ]
   ],
   "fpi-equity-monthly": [
@@ -7624,6 +7632,6 @@
    ]
   ]
  },
- "updatedAt": "2026-11-02T13:40:51.414Z",
+ "updatedAt": "2026-11-02T23:30:29.828Z",
  "session": "2026-11-02"
 }
