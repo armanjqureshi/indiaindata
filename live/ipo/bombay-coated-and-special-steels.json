@@ -1,52 +1,52 @@
 {
  "subscription": {
-  "total": 3.78,
+  "total": 13.24,
   "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
     "label": "QIB",
     "offered": 4798588,
-    "bid": 31455424,
-    "times": 6.56
+    "bid": 47350576,
+    "times": 9.87
    },
    {
     "key": "nii",
     "label": "NII",
     "offered": 3520327,
-    "bid": 6346340,
-    "times": 1.8
+    "bid": 82146064,
+    "times": 23.33
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 2346885,
-    "bid": 2895984,
-    "times": 1.23
+    "bid": 56241458,
+    "times": 23.96
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 1173442,
-    "bid": 3450356,
-    "times": 2.94
+    "bid": 25904606,
+    "times": 22.08
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 8214097,
-    "bid": 24772748,
-    "times": 3.02
+    "bid": 89438440,
+    "times": 10.89
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 16533012,
-    "bid": 62574512,
-    "times": 3.78
+    "bid": 218935080,
+    "times": 13.24
    }
   ],
-  "asOf": "30-Oct-2026 17:03:00",
+  "asOf": "02-Nov-2026 12:03:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 182,
@@ -72,7 +72,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_BCSSL.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_BCSSL.zip"
  },
- "fetchedAt": "2026-10-30T12:35:44.523Z",
+ "fetchedAt": "2026-11-02T06:35:51.093Z",
  "slug": "bombay-coated-and-special-steels",
  "symbol": "BCSSL",
  "board": "mainboard",
