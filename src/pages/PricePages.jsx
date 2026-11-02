@@ -86,7 +86,7 @@ function Stat({ label, value, sub }) {
 
 function Changes({ hist }) {
   const rows = [['Since the previous report', prevReport(hist)], ['Over 7 days', changeOver(hist, 7)], ['Over 30 days', changeOver(hist, 30)], ['Over a year', changeOver(hist, 365)]].filter(([, c]) => c)
-  if (!rows.length) return <p className="mt-3 max-w-3xl text-sm text-ink/60">Changes over time will appear here as we record the price each day.</p>
+  if (!rows.length) return <p className="mt-3 max-w-3xl text-sm text-ink/60">Today’s figure is the first we have recorded, so there is no change to show yet. Daily, weekly and monthly changes start appearing from the next report, which the department publishes each evening.</p>
   return (
     <div className="mt-4 flex flex-wrap gap-x-8 gap-y-2">
       {rows.map(([l, c]) => (
@@ -112,6 +112,7 @@ function HistoryChart({ name, hist, unit }) {
 }
 
 function GroupTable({ p, items, highlight }) {
+  const showChange = items.some((s) => prevReport(p.history?.retail?.[s.doca]))
   return (
     <div className="overflow-x-auto border-y border-ink/10">
       <table className="w-full border-collapse text-sm">
@@ -121,7 +122,7 @@ function GroupTable({ p, items, highlight }) {
             <th className="px-3 py-2 text-right">Retail</th>
             <th className="px-3 py-2 text-right">Wholesale a kg</th>
             <th className="hidden px-3 py-2 text-right sm:table-cell">Wholesale a quintal</th>
-            <th className="px-3 py-2 text-right">Change</th>
+            {showChange && <th className="px-3 py-2 text-right">Change</th>}
           </tr>
         </thead>
         <tbody>
@@ -134,7 +135,7 @@ function GroupTable({ p, items, highlight }) {
                 <td className="num px-3 py-2 text-right">{v == null ? '—' : `${r2(v)}/${unitOf(s)}`}</td>
                 <td className="num px-3 py-2 text-right">{w == null ? '—' : r2(w / 100)}</td>
                 <td className="num hidden px-3 py-2 text-right sm:table-cell">{w == null ? '—' : r2(w)}</td>
-                <td className={`num px-3 py-2 text-right ${c?.pct > 0 ? 'text-down' : c?.pct < 0 ? 'text-up' : 'text-ink/50'}`}>{c ? pct(c.pct) : '—'}</td>
+                {showChange && <td className={`num px-3 py-2 text-right ${c?.pct > 0 ? 'text-down' : c?.pct < 0 ? 'text-up' : 'text-ink/50'}`}>{c ? pct(c.pct) : '—'}</td>}
               </tr>
             )
           })}
