@@ -1,9 +1,9 @@
 {
  "subscription": {
-  "total": 11.35,
+  "total": 13.65,
   "totalMethod": "NSE",
   "categories": [],
-  "asOf": "02-Nov-2026 13:57:00",
+  "asOf": "02-Nov-2026 15:03:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 1200,
@@ -24,7 +24,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_HGSINDIALT.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_HGSINDIALT.zip"
  },
- "fetchedAt": "2026-11-02T08:31:04.582Z",
+ "fetchedAt": "2026-11-02T09:35:37.189Z",
  "slug": "hgs-india",
  "symbol": "HGSINDIALT",
  "board": "sme",
