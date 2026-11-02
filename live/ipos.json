@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01T18:36:01.844Z",
+ "updatedAt": "2026-11-02T00:36:04.344Z",
  "lastPriceSession": "2026-10-30",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -275,10 +275,10 @@
    "symbol": "EDELALTS",
    "board": "mainboard",
    "name": "EAAA India Alternatives Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-26",
    "close": "2026-10-28",
-   "listingDate": null,
+   "listingDate": "2026-11-02",
    "timetable": {
     "open": "2026-10-26",
     "close": "2026-10-28",
@@ -287,7 +287,6 @@
     "demat": "2026-10-30",
     "listing": "2026-11-02",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -295,7 +294,7 @@
    },
    "priceLow": 1585,
    "priceHigh": 1665,
-   "issuePrice": null,
+   "issuePrice": 1665,
    "lotSize": 9,
    "lotValue": 14985,
    "sizeCr": 1200,
