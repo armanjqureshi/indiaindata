@@ -1,164 +1,238 @@
 import { forwardRef } from 'react'
 import { UPI_MONTHS } from './upiRecordData.js'
+import { RUPEE_DOTS } from './upiRupeeDots.js'
+import { POP_INDIA, POP_YEARS } from '../data/population.js'
 
-// Same editorial style as the other infographics: warm paper, serif display type, fixed palette.
+// House infographic style (warm paper, serif display), drawn with objects from UPI's own world:
+// a ₹ made of payments, a wall clock, and receipt strips feeding out of a payment printer.
 const C = {
-  paper: '#f4ede0', ink: '#1f1c18', mute: '#6f665b', rule: '#d9ccb6',
-  teal: '#2a9d8f', tealPale: '#bfe3dd', gold: '#e9c22a', goldDeep: '#c9a20f', red: '#d6473b', cream: '#ebe1cf',
+  paper: '#f4ede0', ink: '#1f1c18', mute: '#6f665b', rule: '#d9ccb6', slip: '#fffdf7', slipEdge: '#cdbfa6',
+  teal: '#2a9d8f', tealDeep: '#1f7a6f', tealPale: '#bfe3dd', gold: '#e9c22a', goldDeep: '#b8920b', red: '#d6473b', face: '#fbf6ec',
 }
-const SERIF = 'Fraunces, Georgia, "Times New Roman", serif'
+const SERIF = '"Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif'
 const SANS = '"Geist Variable", "Helvetica Neue", Arial, sans-serif'
+const MONO = '"Geist Mono Variable", ui-monospace, Menlo, monospace'
 const n0 = (n) => Math.round(n).toLocaleString('en-IN')
 
 const last = UPI_MONTHS[UPI_MONTHS.length - 1]
 const yearAgo = UPI_MONTHS[0]
-const prev = UPI_MONTHS[UPI_MONTHS.length - 2]
-const prevRecord = Math.max(...UPI_MONTHS.slice(0, -1).map((m) => m.vol))
-const secs = 31 * 86400
-const perSec = Math.round((last.vol * 1e9) / secs) // payments every second, October average
-const croreSec = (last.val * 1e5) / secs // ₹ crore every second
-const dayCrore = 101707 // October average daily value, ₹ crore (NPCI via Inc42)
+const prevRecord = UPI_MONTHS.slice(0, -1).reduce((a, b) => (b.vol > a.vol ? b : a))
+const SECS = 31 * 86400
+const perSec = Math.round((last.vol * 1e9) / SECS) // 9,509
+const croreSec = (last.val * 1e5) / SECS // ₹ crore a second
+const DAY_CRORE = 101707 // October average daily value, ₹ crore (NPCI via Inc42)
+const pop2026 = POP_INDIA[POP_YEARS.indexOf(2026)] * 1000 // NCP projection, 1 March 2026
+const perPerson = Math.round((last.vol * 1e9) / pop2026)
 const growthVol = Math.round((last.vol / yearAgo.vol - 1) * 100)
 const growthVal = Math.round((last.val / yearAgo.val - 1) * 100)
 const avgNow = Math.round((last.val * 1e12) / (last.vol * 1e9))
 const avgThen = Math.round((yearAgo.val * 1e12) / (yearAgo.vol * 1e9))
 const avgDrop = Math.round((1 - avgNow / avgThen) * 100)
 
-// Scale comparisons, ₹ crore (both from our other pages)
-const JIO = 30213 // Jio Platforms IPO, NSE issue data
-const FPI = 48056 // October 2026 net FPI selling to 23 Oct, NSDL
-const hm = (frac) => {
-  const m = Math.round(frac * 24 * 60)
-  return `${Math.floor(m / 60)} h ${String(m % 60).padStart(2, '0')} min`
+// The clock: an average October day's value, flowing evenly from midnight
+const JIO = 30213 // Jio Platforms IPO, ₹ crore (NSE issue data)
+const FPI = 48056 // net FPI selling of Indian shares, 1-23 October 2026, ₹ crore (NSDL)
+const clockTime = (crore) => {
+  const mins = Math.round((crore / DAY_CRORE) * 24 * 60)
+  return { mins, label: `${Math.floor(mins / 60)}:${String(mins % 60).padStart(2, '0')} am` }
+}
+const tJio = clockTime(JIO)
+const tFpi = clockTime(FPI)
+
+if (RUPEE_DOTS.count !== perSec) {
+  // The ₹ is built for this exact number; regenerate upiRupeeDots.js if the data change.
+  console.warn(`UPI infographic: ₹ has ${RUPEE_DOTS.count} dots but the per-second figure is ${perSec}`)
 }
 
 const UpiRecord = forwardRef(function UpiRecord(_, ref) {
-  // ---- dot field: one dot per payment in one average second ----
-  const dx = 80, dy = 530, pitch = 8, cols = 130
-  const fullRows = Math.floor(perSec / cols)
-  const rem = perSec % cols
-  const fieldH = fullRows * pitch + (rem ? pitch : 0)
-
-  // ---- dial: one average UPI day as a 24-hour clock ----
-  const cx = 600, cy = 1780, R1 = 250, R2 = 200, sw = 34
-  const pt = (r, f) => {
-    const a = -Math.PI / 2 + f * 2 * Math.PI
-    return [cx + r * Math.cos(a), cy + r * Math.sin(a)]
+  // ---- the ₹ of dots ----
+  const gx = 80, gy = 488, P = RUPEE_DOTS.pitch
+  const rupeePath = RUPEE_DOTS.runs.map(([x, y, n]) => `M${(gx + x).toFixed(2)},${(gy + y).toFixed(2)}h${((n - 1) * P + P / 2).toFixed(2)}`).join('')
+  const lens = { x: gx + 566, y: gy + 202, r: 62, zoom: 4 }
+  const lensDots = []
+  for (let i = -4; i <= 4; i++) for (let j = -4; j <= 4; j++) {
+    const x = lens.x + i * P * lens.zoom, y = lens.y + j * P * lens.zoom
+    if (Math.hypot(x - lens.x, y - lens.y) < lens.r - 6) lensDots.push([x, y])
   }
-  const arc = (r, f) => {
-    const [x0, y0] = pt(r, 0), [x1, y1] = pt(r, f)
-    return `M${x0},${y0} A${r},${r} 0 ${f > 0.5 ? 1 : 0} 1 ${x1},${y1}`
+
+  // ---- the clock ----
+  const cx = 850, cy = 1800, R = 280
+  const at = (r, mins) => { // position on a 12-hour face, minutes after midnight
+    const a = (mins / 720) * 2 * Math.PI
+    return [cx + r * Math.sin(a), cy - r * Math.cos(a)]
   }
-  const fJio = JIO / dayCrore, fFpi = FPI / dayCrore
+  const wedge = (r, mins) => { const [x, y] = at(r, mins); return `M${cx},${cy} L${cx},${cy - r} A${r},${r} 0 ${mins > 360 ? 1 : 0} 1 ${x},${y} Z` }
+  const band = (r0, r1, mins) => {
+    const [ax, ay] = at(r1, mins), [bx, by] = at(r0, mins), big = mins > 360 ? 1 : 0
+    return `M${cx},${cy - r1} A${r1},${r1} 0 ${big} 1 ${ax},${ay} L${bx},${by} A${r0},${r0} 0 ${big} 0 ${cx},${cy - r0} Z`
+  }
 
-  // ---- stepped line ----
-  const px0 = 130, px1 = 1090, pyB = 2570, pyT = 2290, vMin = 18, vMax = 27
-  const stepW = (px1 - px0) / (UPI_MONTHS.length - 1)
-  const X = (i) => px0 + i * stepW
-  const Y = (v) => pyB - ((v - vMin) / (vMax - vMin)) * (pyB - pyT)
-  const linePts = UPI_MONTHS.map((m, i) => `${X(i)},${Y(m.vol)}`).join(' ')
-  const areaPts = `${X(0)},${pyB} ${linePts} ${X(UPI_MONTHS.length - 1)},${pyB}`
+  // ---- the receipt strips ----
+  const base = 2800, k = 19, sx0 = 100, slot = 1000 / UPI_MONTHS.length, sw = 58
+  const tooth = sw / 6
+  const strip = (x, top) => {
+    let d = `M${x},${base} L${x},${top + 6}`
+    for (let t = 0; t < 6; t++) d += ` L${x + t * tooth + tooth / 2},${top} L${x + (t + 1) * tooth},${top + 6}`
+    return `${d} L${x + sw},${base} Z`
+  }
 
+  const H = 3370
   return (
-    <svg ref={ref} viewBox="0 0 1200 3170" xmlns="http://www.w3.org/2000/svg" role="img"
-      aria-label={`UPI handled ${last.vol} billion payments worth ₹${last.val} lakh crore in October 2026, a record. That is about ${n0(perSec)} payments every second. Payments grew ${growthVol}% on a year earlier and value ${growthVal}%.`}
+    <svg ref={ref} viewBox={`0 0 1200 ${H}`} xmlns="http://www.w3.org/2000/svg" role="img"
+      aria-label={`India made ${last.vol} billion UPI payments worth ₹${last.val} lakh crore in October 2026, a record. That is ${n0(perSec)} payments in an average second. At October's pace UPI moves as much money as the Jio Platforms IPO by ${tJio.label} and as much as October's foreign selling of Indian shares by ${tFpi.label}.`}
       style={{ width: '100%', height: 'auto', display: 'block' }}>
       <defs>
-        <pattern id="upiDot" width={pitch} height={pitch} patternUnits="userSpaceOnUse">
-          <circle cx={pitch / 2} cy={pitch / 2} r="2.4" fill={C.teal} />
-        </pattern>
+        <clipPath id="upiLens"><circle cx={lens.x} cy={lens.y} r={lens.r - 4} /></clipPath>
       </defs>
-      <rect width="1200" height="3170" fill={C.paper} />
+      <rect width="1200" height={H} fill={C.paper} />
 
       {/* title */}
       <text x="80" y="92" fontFamily={SANS} fontSize="20" fontWeight="700" letterSpacing="3" fill={C.teal}>THE UPI RECORD</text>
       <text x="1120" y="92" textAnchor="end" fontFamily={SERIF} fontSize="22" fontWeight="700" fill={C.ink}>India in Data</text>
       <text x="1120" y="116" textAnchor="end" fontFamily={SANS} fontSize="16" fill={C.mute}>indiaindata.online</text>
-      <text x="80" y="176" fontFamily={SERIF} fontSize="64" fontWeight="700" fill={C.ink}>UPI handled</text>
-      <text x="80" y="262" fontFamily={SERIF} fontSize="84" fontWeight="800" fill={C.teal}>{last.vol} billion payments</text>
-      <text x="80" y="322" fontFamily={SERIF} fontSize="44" fontWeight="600" fill={C.ink}>in October 2026, a record month</text>
-      <text x="80" y="366" fontFamily={SANS} fontSize="21" fill={C.mute}>Worth ₹{last.val} lakh crore. The first month above 25 billion payments and above ₹30 lakh crore.</text>
+      <text x="80" y="176" fontFamily={SERIF} fontSize="54" fontWeight="600" fill={C.ink}>In October, India made</text>
+      <text x="76" y="294" fontFamily={SERIF} fontSize="124" fontWeight="800" letterSpacing="-2" fill={C.teal}>{last.vol} billion</text>
+      <text x="80" y="360" fontFamily={SERIF} fontSize="54" fontWeight="600" fill={C.ink}>UPI payments. A record.</text>
+      <text x="80" y="408" fontFamily={SANS} fontSize="21" fill={C.mute}>Worth ₹{last.val} lakh crore: the first month above 25 billion payments and above ₹30 lakh crore.</text>
 
-      {/* dot field */}
-      <line x1="80" x2="1120" y1="410" y2="410" stroke={C.rule} strokeWidth="2" />
-      <text x="80" y="470" fontFamily={SERIF} fontSize="40" fontWeight="700" fill={C.ink}>This is one second of UPI</text>
-      <text x="80" y="504" fontFamily={SANS} fontSize="20" fill={C.mute}>Every dot is one payment. The October average was {n0(perSec)} payments a second, all month.</text>
-      <rect x={dx} y={dy} width={cols * pitch} height={fullRows * pitch} fill="url(#upiDot)" />
-      {rem > 0 && <rect x={dx} y={dy + fullRows * pitch} width={rem * pitch} height={pitch} fill="url(#upiDot)" />}
-      <text x="80" y={dy + fieldH + 90} fontFamily={SERIF} fontSize="110" fontWeight="800" fill={C.teal}>{n0(perSec)}</text>
-      <text x="82" y={dy + fieldH + 130} fontFamily={SANS} fontSize="22" fill={C.ink}>payments every second, and ₹{croreSec.toFixed(2)} crore moved</text>
-      <text x="82" y={dy + fieldH + 162} fontFamily={SANS} fontSize="20" fill={C.mute}>A day is 86,400 of these panels: 822 million payments and ₹1.02 lakh crore.</text>
+      {/* ₹ made of one second of payments */}
+      <line x1="80" x2="1120" y1="446" y2="446" stroke={C.rule} strokeWidth="2" />
+      <path d={rupeePath} fill="none" stroke={C.teal} strokeWidth="3.4" strokeLinecap="round" strokeDasharray={`0 ${P}`} />
+      <circle cx={lens.x} cy={lens.y} r={lens.r} fill={C.paper} />
+      <g clipPath="url(#upiLens)">
+        {lensDots.map(([x, y], i) => <circle key={i} cx={x} cy={y} r={6.8} fill={C.teal} />)}
+      </g>
+      <circle cx={lens.x} cy={lens.y} r={lens.r} fill="none" stroke={C.ink} strokeWidth="6" />
+      <line x1={lens.x + (lens.r + 3) * 0.707} y1={lens.y + (lens.r + 3) * 0.707} x2={lens.x + (lens.r + 50) * 0.707} y2={lens.y + (lens.r + 50) * 0.707} stroke={C.ink} strokeWidth="13" strokeLinecap="round" />
 
-      {/* dial */}
-      <line x1="80" x2="1120" y1="1300" y2="1300" stroke={C.rule} strokeWidth="2" />
-      <text x="80" y="1362" fontFamily={SERIF} fontSize="40" fontWeight="700" fill={C.ink}>If one UPI day were a clock</text>
-      <text x="80" y="1396" fontFamily={SANS} fontSize="20" fill={C.mute}>The full circle is the ₹1.02 lakh crore UPI moved on an average October day, spread evenly over 24 hours.</text>
-      <circle cx={cx} cy={cy} r={R1} fill="none" stroke={C.cream} strokeWidth={sw} />
-      <circle cx={cx} cy={cy} r={R2} fill="none" stroke={C.cream} strokeWidth={sw} />
-      <path d={arc(R1, fFpi)} fill="none" stroke={C.red} strokeWidth={sw} />
-      <path d={arc(R2, fJio)} fill="none" stroke={C.gold} strokeWidth={sw} />
-      {[0, 6, 12, 18].map((h) => {
-        const [x, y] = pt(R1 + 46, h / 24)
-        return <text key={h} x={x} y={y + 6} textAnchor="middle" fontFamily={SANS} fontSize="18" fontWeight="700" fill={C.mute}>{h === 0 ? '0 h' : `${h} h`}</text>
-      })}
-      <text x={cx} y={cy - 24} textAnchor="middle" fontFamily={SERIF} fontSize="52" fontWeight="800" fill={C.teal}>₹1.02</text>
-      <text x={cx} y={cy + 14} textAnchor="middle" fontFamily={SERIF} fontSize="30" fontWeight="700" fill={C.ink}>lakh crore</text>
-      <text x={cx} y={cy + 44} textAnchor="middle" fontFamily={SANS} fontSize="18" fill={C.mute}>one UPI day</text>
+      <text x="740" y="528" fontFamily={SERIF} fontSize="38" fontWeight="700" fill={C.ink}>Every dot is one</text>
+      <text x="740" y="572" fontFamily={SERIF} fontSize="38" fontWeight="700" fill={C.ink}>UPI payment.</text>
+      <g fontFamily={SANS} fontSize="20" fill={C.mute}>
+        <text x="740" y="616">This ₹ is made of {n0(perSec)} dots, the</text>
+        <text x="740" y="642">number of UPI payments in an</text>
+        <text x="740" y="668">average second of October.</text>
+      </g>
       <g>
-        <rect x="80" y="2080" width="20" height="20" rx="10" fill={C.red} />
-        <text x="112" y="2097" fontFamily={SANS} fontSize="22" fontWeight="700" fill={C.ink}>October’s net FPI selling: ₹{n0(FPI)} crore</text>
-        <text x="112" y="2127" fontFamily={SANS} fontSize="22" fill={C.red}>UPI moves that in {hm(fFpi)}</text>
-        <rect x="660" y="2080" width="20" height="20" rx="10" fill={C.gold} />
-        <text x="692" y="2097" fontFamily={SANS} fontSize="22" fontWeight="700" fill={C.ink}>Jio Platforms IPO: ₹{n0(JIO)} crore</text>
-        <text x="692" y="2127" fontFamily={SANS} fontSize="22" fill={C.goldDeep}>UPI moves that in {hm(fJio)}</text>
+        <text x="740" y="790" fontFamily={SERIF} fontSize="58" fontWeight="800" fill={C.teal}>₹{croreSec.toFixed(2)} crore</text>
+        <text x="742" y="822" fontFamily={SANS} fontSize="19" fill={C.ink}>moved every second</text>
+        <text x="740" y="940" fontFamily={SERIF} fontSize="58" fontWeight="800" fill={C.teal}>822 million</text>
+        <text x="742" y="972" fontFamily={SANS} fontSize="19" fill={C.ink}>payments a day, worth ₹1.02 lakh crore,</text>
+        <text x="742" y="996" fontFamily={SANS} fontSize="19" fill={C.ink}>the first time a day passed ₹1 lakh crore</text>
+        <text x="740" y="1114" fontFamily={SERIF} fontSize="58" fontWeight="800" fill={C.teal}>{perPerson} payments</text>
+        <text x="742" y="1146" fontFamily={SANS} fontSize="19" fill={C.ink}>for every person in India, in one month</text>
       </g>
 
-      {/* stepped line */}
-      <line x1="80" x2="1120" y1="2190" y2="2190" stroke={C.rule} strokeWidth="2" />
-      <text x="80" y="2250" fontFamily={SERIF} fontSize="40" fontWeight="700" fill={C.ink}>Thirteen months, one new high</text>
-      {[20, 22, 24, 26].map((v) => (
-        <g key={v}>
-          <line x1={px0 - 20} x2={px1 + 20} y1={Y(v)} y2={Y(v)} stroke={C.rule} strokeWidth="1.5" strokeDasharray="2 6" />
-          <text x={px0 - 30} y={Y(v) + 6} textAnchor="end" fontFamily={SANS} fontSize="16" fill={C.mute}>{v}</text>
-        </g>
-      ))}
-      <text x="80" y="2282" fontFamily={SANS} fontSize="16" fill={C.mute}>Billion payments a month. The scale starts at 18.</text>
-      <polygon points={areaPts} fill={C.tealPale} opacity="0.7" />
-      <polyline points={linePts} fill="none" stroke={C.teal} strokeWidth="5" strokeLinejoin="round" strokeLinecap="round" />
-      <line x1={px0 - 20} x2={px1 + 20} y1={Y(prevRecord)} y2={Y(prevRecord)} stroke={C.goldDeep} strokeWidth="2.5" strokeDasharray="3 6" strokeLinecap="round" />
+      {/* the clock */}
+      <line x1="80" x2="1120" y1="1330" y2="1330" stroke={C.rule} strokeWidth="2" />
+      <text x="80" y="1396" fontFamily={SERIF} fontSize="44" fontWeight="700" fill={C.ink}>Start the clock at midnight</text>
+      <text x="80" y="1432" fontFamily={SANS} fontSize="20" fill={C.mute}>Let an average October day’s ₹1.02 lakh crore of UPI payments flow at an even pace from 12 am.</text>
+
+      <circle cx={cx} cy={cy} r={R} fill={C.face} stroke={C.ink} strokeWidth="9" />
+      <path d={band(150, 196, tFpi.mins)} fill={C.red} />
+      <path d={wedge(134, tJio.mins)} fill={C.gold} />
+      {Array.from({ length: 60 }, (_, m) => {
+        const hour = m % 5 === 0
+        const [x1, y1] = at(R - 14, m * 12), [x2, y2] = at(hour ? R - 38 : R - 24, m * 12)
+        return <line key={m} x1={x1} y1={y1} x2={x2} y2={y2} stroke={C.ink} strokeWidth={hour ? 5 : 2} strokeLinecap="round" />
+      })}
+      {Array.from({ length: 12 }, (_, h) => {
+        const [x, y] = at(R - 66, h * 60)
+        return <text key={h} x={x} y={y + 12} textAnchor="middle" fontFamily={SERIF} fontSize="34" fontWeight="700" fill={C.ink}>{h === 0 ? 12 : h}</text>
+      })}
+      {(() => {
+        const [jx, jy] = at(122, tJio.mins), [fx, fy] = at(206, tFpi.mins)
+        return (
+          <g strokeLinecap="round">
+            <line x1={cx} y1={cy} x2={fx} y2={fy} stroke={C.ink} strokeWidth="14" />
+            <line x1={cx} y1={cy} x2={fx} y2={fy} stroke={C.red} strokeWidth="7" />
+            <line x1={cx} y1={cy} x2={jx} y2={jy} stroke={C.ink} strokeWidth="20" />
+            <line x1={cx} y1={cy} x2={jx} y2={jy} stroke={C.gold} strokeWidth="12" />
+            <circle cx={cx} cy={cy} r="16" fill={C.ink} />
+            <circle cx={cx} cy={cy} r="5" fill={C.face} />
+          </g>
+        )
+      })()}
+
+      <text x="80" y="1560" fontFamily={SERIF} fontSize="72" fontWeight="800" fill={C.goldDeep}>{tJio.label}</text>
+      <g fontFamily={SANS} fontSize="21" fill={C.ink}>
+        <text x="82" y="1600"><tspan fontWeight="700">₹{n0(JIO)} crore</tspan> has moved: as much</text>
+        <text x="82" y="1628">as Jio Platforms raised in</text>
+        <text x="82" y="1656">India’s largest IPO</text>
+      </g>
+      <text x="80" y="1820" fontFamily={SERIF} fontSize="72" fontWeight="800" fill={C.red}>{tFpi.label}</text>
+      <g fontFamily={SANS} fontSize="21" fill={C.ink}>
+        <text x="82" y="1860"><tspan fontWeight="700">₹{n0(FPI)} crore</tspan>: as much as</text>
+        <text x="82" y="1888">foreign investors pulled out of</text>
+        <text x="82" y="1916">Indian shares in all of October</text>
+      </g>
+      <g fontFamily={SANS} fontSize="17" fill={C.mute}>
+        <text x="82" y="2040">Fewer people pay at night, so the real times</text>
+        <text x="82" y="2062">come later. The clock compares sizes, not timing.</text>
+      </g>
+
+      {/* receipt strips */}
+      <line x1="80" x2="1120" y1="2150" y2="2150" stroke={C.rule} strokeWidth="2" />
+      <text x="80" y="2216" fontFamily={SERIF} fontSize="44" fontWeight="700" fill={C.ink}>The receipts kept getting longer</text>
+      <text x="80" y="2252" fontFamily={SANS} fontSize="20" fill={C.mute}>One strip per month. Length is billions of UPI payments, drawn to scale from zero.</text>
+      <line x1="90" x2="1110" y1={base - prevRecord.vol * k} y2={base - prevRecord.vol * k} stroke={C.goldDeep} strokeWidth="2.5" strokeDasharray="3 7" strokeLinecap="round" />
+      <text x="100" y={base - prevRecord.vol * k - 12} fontFamily={SANS} fontSize="17" fontWeight="700" fill={C.goldDeep}>Previous record: {prevRecord.vol} billion, August 2026</text>
       {UPI_MONTHS.map((m, i) => {
-        const [mo, yr] = m.month.split(' ')
+        const x = sx0 + i * slot + (slot - sw) / 2
+        const top = base - m.vol * k
         const hero = i === UPI_MONTHS.length - 1
+        const lines = []
+        for (let y = top + 52, j = 0; y < base - 10; y += 17, j++) lines.push([y, 18 + ((i * 7 + j * 13) % 24)])
         return (
           <g key={m.month}>
-            <circle cx={X(i)} cy={Y(m.vol)} r={hero ? 12 : 6} fill={hero ? C.teal : C.paper} stroke={C.teal} strokeWidth="4" />
-            <text x={X(i)} y={pyB + 30} textAnchor="middle" fontFamily={SANS} fontSize="16" fill={C.ink}>{mo}</text>
-            {(i === 0 || mo === 'Jan') && <text x={X(i)} y={pyB + 52} textAnchor="middle" fontFamily={SANS} fontSize="15" fill={C.mute}>{yr}</text>}
+            <path d={strip(x, top)} fill={C.slip} stroke={hero ? C.teal : C.slipEdge} strokeWidth={hero ? 2.5 : 1.5} strokeLinejoin="round" />
+            {lines.map(([y, w]) => <line key={y} x1={x + 9} x2={x + 9 + w} y1={y} y2={y} stroke={hero ? C.tealPale : C.rule} strokeWidth="3" strokeLinecap="round" />)}
+            <text x={x + sw / 2} y={top + 32} textAnchor="middle" fontFamily={MONO} fontSize="15" fontWeight={hero ? 800 : 600} fill={hero ? C.tealDeep : C.ink}>{m.vol.toFixed(2)}</text>
+            {m.month.startsWith('Feb') && <text x={x + sw / 2} y={top - 12} textAnchor="middle" fontFamily={SERIF} fontStyle="italic" fontSize="15" fill={C.mute}>28 days</text>}
           </g>
         )
       })}
-      <text x={X(UPI_MONTHS.length - 1)} y={Y(last.vol) - 26} textAnchor="end" fontFamily={SERIF} fontSize="36" fontWeight="800" fill={C.teal}>{last.vol}</text>
-      <text x={px0 - 20} y={Y(prevRecord) - 12} fontFamily={SANS} fontSize="17" fontWeight="700" fill={C.goldDeep}>Previous record: {prevRecord}, August 2026</text>
-      <text x={X(4)} y={Y(UPI_MONTHS[4].vol) + 34} textAnchor="middle" fontFamily={SERIF} fontStyle="italic" fontSize="16" fill={C.mute}>28-day February</text>
+      <g transform={`rotate(-14 ${sx0 + 11.6 * slot} ${base - last.vol * k + 120})`}>
+        <circle cx={sx0 + 11.6 * slot} cy={base - last.vol * k + 120} r="52" fill={C.paper} fillOpacity="0.55" stroke={C.red} strokeWidth="4" />
+        <circle cx={sx0 + 11.6 * slot} cy={base - last.vol * k + 120} r="44" fill="none" stroke={C.red} strokeWidth="1.5" />
+        <text x={sx0 + 11.6 * slot} y={base - last.vol * k + 116} textAnchor="middle" fontFamily={SANS} fontSize="19" fontWeight="800" letterSpacing="1.5" fill={C.red}>RECORD</text>
+        <text x={sx0 + 11.6 * slot} y={base - last.vol * k + 140} textAnchor="middle" fontFamily={MONO} fontSize="13" fontWeight="700" fill={C.red}>OCT 2026</text>
+      </g>
+      <rect x="80" y={base - 6} width="1040" height="70" rx="18" fill={C.ink} />
+      <rect x="96" y={base - 4} width="1008" height="8" rx="4" fill="#3d362e" />
+      {UPI_MONTHS.map((m, i) => {
+        const [mo, yr] = m.month.split(' ')
+        const x = sx0 + i * slot + slot / 2
+        return (
+          <g key={m.month}>
+            <text x={x} y={base + 32} textAnchor="middle" fontFamily={SANS} fontSize="16" fontWeight="700" fill={C.paper}>{mo}</text>
+            {(i === 0 || mo === 'Jan') && <text x={x} y={base + 52} textAnchor="middle" fontFamily={SANS} fontSize="13" fill="#b9ad9a">{yr}</text>}
+          </g>
+        )
+      })}
 
-      {/* growth + average payment */}
-      <line x1="80" x2="1120" y1="2680" y2="2680" stroke={C.rule} strokeWidth="2" />
-      <text x="80" y="2740" fontFamily={SERIF} fontSize="40" fontWeight="700" fill={C.ink}>More payments, but smaller ones</text>
-      <rect x="80" y="2770" width={growthVol * 20} height="40" rx="4" fill={C.teal} />
-      <text x={80 + growthVol * 20 + 16} y="2799" fontFamily={SANS} fontSize="22" fill={C.ink}><tspan fontWeight="700">Payments +{growthVol}%</tspan> on October 2025</text>
-      <rect x="80" y="2824" width={growthVal * 20} height="40" rx="4" fill={C.tealPale} />
-      <text x={80 + growthVal * 20 + 16} y="2853" fontFamily={SANS} fontSize="22" fill={C.ink}><tspan fontWeight="700">Value moved +{growthVal}%</tspan></text>
-      <text x="80" y="2990" fontFamily={SERIF} fontSize="84" fontWeight="800" fill={C.mute}>₹{n0(avgThen)}</text>
-      <text x="420" y="2986" fontFamily={SANS} fontSize="56" fill={C.rule}>→</text>
-      <text x="520" y="2990" fontFamily={SERIF} fontSize="84" fontWeight="800" fill={C.teal}>₹{n0(avgNow)}</text>
-      <text x="860" y="2954" fontFamily={SANS} fontSize="18" fill={C.mute}>the average UPI payment fell {avgDrop}%,</text>
-      <text x="860" y="2978" fontFamily={SANS} fontSize="18" fill={C.mute}>October 2025 to October 2026</text>
+      {/* smaller payments */}
+      <line x1="80" x2="1120" y1="2920" y2="2920" stroke={C.rule} strokeWidth="2" />
+      <text x="80" y="2986" fontFamily={SERIF} fontSize="44" fontWeight="700" fill={C.ink}>More payments, smaller ones</text>
+      <text x="80" y="3022" fontFamily={SANS} fontSize="20" fill={C.mute}>On a year earlier, payments rose {growthVol}% but the money they moved rose {growthVal}%. The average payment shrank.</text>
+      {[[80, 'OCT 2025', avgThen, C.mute], [680, 'OCT 2026', avgNow, C.teal]].map(([x, lab, v, col]) => (
+        <g key={lab}>
+          <path d={`M${x},3060 h440 v50 a18,18 0 0 0 0,36 v54 h-440 v-54 a18,18 0 0 0 0,-36 Z`} fill={C.slip} stroke={C.slipEdge} strokeWidth="1.5" />
+          <line x1={x + 120} x2={x + 120} y1="3072" y2="3188" stroke={C.slipEdge} strokeWidth="1.5" strokeDasharray="4 5" />
+          <text x={x + 60} y="3118" textAnchor="middle" fontFamily={MONO} fontSize="15" fontWeight="700" fill={C.mute}>AVG</text>
+          <text x={x + 60} y="3140" textAnchor="middle" fontFamily={MONO} fontSize="15" fontWeight="700" fill={C.mute}>UPI</text>
+          <text x={x + 60} y="3162" textAnchor="middle" fontFamily={MONO} fontSize="15" fontWeight="700" fill={C.mute}>PMT</text>
+          <text x={x + 150} y="3100" fontFamily={MONO} fontSize="16" fontWeight="700" fill={C.mute}>{lab}</text>
+          <text x={x + 146} y="3172" fontFamily={SERIF} fontSize="74" fontWeight="800" fill={col}>₹{n0(v)}</text>
+        </g>
+      ))}
+      <text x="600" y="3146" textAnchor="middle" fontFamily={SANS} fontSize="48" fill={C.mute}>→</text>
+      <text x="1104" y="3100" textAnchor="end" fontFamily={MONO} fontSize="16" fontWeight="800" fill={C.red}>−{avgDrop}%</text>
 
       <g fontFamily={SANS} fontSize="14" fill={C.mute}>
-        <text x="80" y="3060">Sources: NPCI UPI monthly statistics. October 2026 as reported by Inc42; October 2025 to September 2026 compiled by India Dispatch Research.</text>
-        <text x="80" y="3080">Jio IPO size: NSE issue data. October FPI selling: NSDL, net equity flow to 23 October. These are net flows and UPI is gross value moved,</text>
-        <text x="80" y="3100">so the clock compares scale only. Per-second, hours and average-payment figures are our calculations, with the day spread evenly over 24 hours.</text>
-        <text x="80" y="3120">UPI value is not consumer spending. FPI data are revised.</text>
+        <text x="80" y="3260">Sources: NPCI UPI monthly statistics: October 2026 as reported by Inc42; October 2025 to September 2026 compiled by India Dispatch Research.</text>
+        <text x="80" y="3280">Population: National Commission on Population projection for 1 March 2026. Jio IPO size: NSE issue data. Foreign selling: NSDL net FPI equity</text>
+        <text x="80" y="3300">flows, 1 to 23 October 2026. FPI selling is a net flow and UPI is gross value moved, so the clock compares sizes only. Per-second, per-person,</text>
+        <text x="80" y="3320">clock and average-payment figures are our calculations. UPI value is money moved, not consumer spending.</text>
       </g>
     </svg>
   )
