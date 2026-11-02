@@ -1,0 +1,129 @@
+{
+  "id": 138,
+  "slug": "upi-record-october-2026",
+  "title": "UPI hits a record 25.47 billion payments in October, and daily value passes ₹1 lakh crore",
+  "dek": "The first month above 25 billion payments and ₹30 lakh crore. Payments grew faster than the money they carried, so the average payment shrank.",
+  "seoTitle": "UPI hits record 25.47 billion transactions in October",
+  "seoDescription": "UPI handled 25.47 billion payments worth ₹31.53 lakh crore in October 2026, up 23% on a year earlier. Daily value passed ₹1 lakh crore.",
+  "heroImage": null,
+  "section": "business",
+  "topics": [
+    "economy",
+    "society"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-11-02",
+  "readingTime": 3,
+  "featured": false,
+  "chartOfWeek": false,
+  "charts": [
+    {
+      "type": "bar",
+      "title": "UPI payments by month, October 2025 to October 2026",
+      "subtitle": "Billion payments a month",
+      "source": "NPCI. October 2026 as reported by Inc42; earlier months compiled by India Dispatch Research",
+      "xKey": "month",
+      "dataKeys": [
+        "value"
+      ],
+      "unit": "bn",
+      "data": "[{\"month\": \"Oct 25\", \"value\": 20.7}, {\"month\": \"Nov 25\", \"value\": 20.47}, {\"month\": \"Dec 25\", \"value\": 21.63}, {\"month\": \"Jan 26\", \"value\": 21.7}, {\"month\": \"Feb 26\", \"value\": 20.39}, {\"month\": \"Mar 26\", \"value\": 22.64}, {\"month\": \"Apr 26\", \"value\": 22.35}, {\"month\": \"May 26\", \"value\": 23.2}, {\"month\": \"Jun 26\", \"value\": 22.72}, {\"month\": \"Jul 26\", \"value\": 23.66}, {\"month\": \"Aug 26\", \"value\": 24.51}, {\"month\": \"Sep 26\", \"value\": 24.07}, {\"month\": \"Oct 26\", \"value\": 25.47}]"
+    },
+    {
+      "type": "bar",
+      "title": "Payments grew faster than the money they moved",
+      "subtitle": "Growth, October 2026 against October 2025, per cent",
+      "source": "NPCI via Inc42 (growth rates as reported)",
+      "xKey": "measure",
+      "dataKeys": [
+        "growth"
+      ],
+      "unit": "%",
+      "data": "[{\"measure\": \"Payments\", \"growth\": 23}, {\"measure\": \"Value moved\", \"growth\": 16}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "keypoints",
+      "title": "Key numbers",
+      "items": [
+        "25.47 billion payments in October 2026, up 5.8% on September's 24.07 billion",
+        "₹31.53 lakh crore moved, up 7.4% on September's ₹29.37 lakh crore",
+        "The first month above 25 billion payments and above ₹30 lakh crore",
+        "Daily average: 822 million payments and ₹1,01,707 crore, the first time daily value passed ₹1 lakh crore",
+        "Against October 2025: payments up 23%, value up 16%"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "UPI processed 25.47 billion payments worth ₹31.53 lakh crore in October 2026, according to National Payments Corporation of India (NPCI) data reported by Inc42. It is the first month above 25 billion payments and the first above ₹30 lakh crore. The previous volume high was 24.51 billion in August; September had dipped 1.8% from that."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "A longer month helped"
+    },
+    {
+      "type": "paragraph",
+      "text": "October has 31 days and September has 30, so the monthly totals flatter the growth. Per day, the picture is steadier: 822 million payments a day against 802 million in September, up 2.5%, and ₹1,01,707 crore a day against ₹97,913 crore, up 3.9%. The daily value crossing ₹1 lakh crore is the first time it has done so."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spread over every second of October, that is about 9,500 payments and ₹1.18 crore moving each second. Those two figures are our calculations from the monthly totals."
+    },
+    {
+      "type": "heading",
+      "text": "Payments grew faster than value"
+    },
+    {
+      "type": "paragraph",
+      "text": "Against October 2025, the number of payments rose 23% and the value moved rose 16%. Dividing value by volume, the average UPI payment was about ₹1,238 in October 2026, against about ₹1,318 a year earlier, a fall of about 6%. That is our calculation using the October 2025 figures of 20.70 billion payments and ₹27.28 lakh crore."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "The arithmetic says the typical payment is smaller. It does not say why, and the NPCI figures do not break payments down by size or by who is paying, so we will not guess at the cause."
+    },
+    {
+      "type": "heading",
+      "text": "What the record does not mean"
+    },
+    {
+      "type": "paragraph",
+      "text": "UPI value is money moved, not consumer spending, and the same money can move more than once. A record means more payments went through UPI, not that people spent that much more. NPCI publishes the November figures in early December; if volume stays above 25 billion, October will look like a step up and not a one-month peak."
+    },
+    {
+      "type": "faq",
+      "title": "Questions",
+      "items": [
+        {
+          "q": "How many UPI transactions were there in October 2026?",
+          "a": "25.47 billion, worth ₹31.53 lakh crore, according to NPCI data reported by Inc42."
+        },
+        {
+          "q": "Is that a UPI record?",
+          "a": "Yes. It is the first month above 25 billion payments and above ₹30 lakh crore. The previous volume high in our series was 24.51 billion in August 2026."
+        },
+        {
+          "q": "What is the daily average for UPI?",
+          "a": "About 822 million payments and ₹1,01,707 crore a day in October 2026. It was the first time the daily value passed ₹1 lakh crore."
+        },
+        {
+          "q": "How fast is UPI growing?",
+          "a": "In October 2026, payments were up 23% and value up 16% on October 2025, so the average payment fell from about ₹1,318 to about ₹1,238."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: NPCI UPI monthly statistics, with the October 2026 figures, growth rates and daily averages as reported by Inc42; October 2025 to September 2026 monthly volumes and values compiled by India Dispatch Research, with May to September 2026 volumes cross-checked against NPCI figures reported by Swarajya and StartupTalky. Per-second figures and average payment size are our calculations."
+    }
+  ],
+  "draft": false
+}

@@ -69,6 +69,14 @@ function readIpos() {
 // Infographics (keep in sync with src/infographics/registry.js)
 const INFOGRAPHICS_META = [
   {
+    slug: 'upi-record-october-2026',
+    title: 'UPI handled 25.47 billion payments in October, a record',
+    dek: 'It was the first month above 25 billion payments and ₹30 lakh crore. Payments grew 23% on a year earlier, value 16%, so the average payment shrank.',
+    source: 'NPCI UPI monthly statistics, as reported by Inc42 (October 2026) and compiled by India Dispatch Research (October 2025 to September 2026)',
+    ogImage: '/infographics/upi-record-october-2026-og.png',
+    date: '2026-11-02',
+  },
+  {
     slug: 'fpi-selloff-october-2026',
     title: 'Foreign investors pulled ₹48,056 crore out of Indian shares in 15 days',
     dek: '92% of the selling came in the first six sessions of the month. Since 12 October the net flow has been small.',

@@ -3,13 +3,13 @@
   "name": "UPI Transactions",
   "category": "real-time",
   "unit": "bn/month",
-  "currentValue": "24.07bn",
-  "previousValue": "24.51bn",
-  "change": "-1.8%",
-  "direction": "down",
-  "asOf": "2026-09-30",
+  "currentValue": "25.47bn",
+  "previousValue": "24.07bn",
+  "change": "+5.8%",
+  "direction": "up",
+  "asOf": "2026-10-31",
   "frequency": "Monthly",
-  "description": "The number of payments processed on the Unified Payments Interface each month. In September 2026 UPI handled 24.07 billion transactions worth ₹29.37 lakh crore, up 23% in volume from a year earlier.",
+  "description": "The number of payments processed on the Unified Payments Interface each month. In October 2026 UPI handled a record 25.47 billion transactions worth ₹31.53 lakh crore, up 23% in volume from a year earlier.",
   "source": "National Payments Corporation of India (NPCI)",
   "releaseSchedule": "Released at the start of the following month.",
   "topics": [
@@ -18,15 +18,15 @@
   ],
   "chart": {
     "type": "area",
-    "title": "Volumes dipped from August but rose 23% on the year",
+    "title": "UPI hit a record 25.47 billion payments in October",
     "subtitle": "UPI transactions, billion, monthly",
-    "source": "NPCI data via Outlook Money, 2 Oct 2026",
+    "source": "NPCI data via Inc42 (October 2026) and India Dispatch Research (earlier months)",
     "xKey": "month",
     "dataKeys": [
       "value"
     ],
     "unit": "bn",
-    "data": "[{\"month\": \"Aug 26\", \"value\": 24.51}, {\"month\": \"Sep 26\", \"value\": 24.07}]"
+    "data": "[{\"month\": \"Oct 25\", \"value\": 20.7}, {\"month\": \"Nov 25\", \"value\": 20.47}, {\"month\": \"Dec 25\", \"value\": 21.63}, {\"month\": \"Jan 26\", \"value\": 21.7}, {\"month\": \"Feb 26\", \"value\": 20.39}, {\"month\": \"Mar 26\", \"value\": 22.64}, {\"month\": \"Apr 26\", \"value\": 22.35}, {\"month\": \"May 26\", \"value\": 23.2}, {\"month\": \"Jun 26\", \"value\": 22.72}, {\"month\": \"Jul 26\", \"value\": 23.66}, {\"month\": \"Aug 26\", \"value\": 24.51}, {\"month\": \"Sep 26\", \"value\": 24.07}, {\"month\": \"Oct 26\", \"value\": 25.47}]"
   },
   "verified": true
 }

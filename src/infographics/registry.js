@@ -1,7 +1,25 @@
 import FpiSelloff from './FpiSelloff.jsx'
 import { FPI_DAYS } from './fpiSelloffData.js'
+import UpiRecord from './UpiRecord.jsx'
+import { UPI_MONTHS } from './upiRecordData.js'
 
 export const INFOGRAPHICS = [
+  {
+    slug: 'upi-record-october-2026',
+    title: 'UPI handled 25.47 billion payments in October, a record',
+    short: 'UPI’s record month, October 2026',
+    dek: 'It was the first month above 25 billion payments and ₹30 lakh crore. Payments grew 23% on a year earlier, value 16%, so the average payment shrank.',
+    topic: 'Economy',
+    date: '2026-11-02',
+    Component: UpiRecord,
+    image: '/infographics/upi-record-october-2026.png',
+    ogImage: '/infographics/upi-record-october-2026-og.png',
+    source: 'NPCI UPI monthly statistics, as reported by Inc42 (October 2026) and compiled by India Dispatch Research (October 2025 to September 2026)',
+    related: { to: '/article/upi-record-october-2026', label: 'Read the story: UPI’s record October' },
+    table: { head: ['Month', 'Payments (billion)', 'Value (₹ lakh crore)'], rows: UPI_MONTHS.map((m) => [m.month, m.vol.toFixed(2), m.val.toFixed(2)]) },
+    summary:
+      'UPI processed 25.47 billion payments worth ₹31.53 lakh crore in October 2026, the first month above 25 billion payments and above ₹30 lakh crore. Against October 2025, payments rose 23% and value 16%, so the average payment fell from about ₹1,318 to about ₹1,238. The previous volume record was 24.51 billion in August 2026.',
+  },
   {
     slug: 'fpi-selloff-october-2026',
     title: 'Foreign investors pulled ₹48,056 crore out of Indian shares in 15 days',
