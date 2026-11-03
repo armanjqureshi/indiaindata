@@ -1,5 +1,23 @@
 {
- "runAt": "2026-11-03T14:55:36.319Z",
+ "runAt": "2026-11-03T14:57:47.038Z",
  "hasKey": true,
- "error": "ECONNREFUSED"
+ "dns": {
+  "api.data.gov.in": [
+   "164.100.61.198"
+  ],
+  "www.data.gov.in": [
+   "23.213.53.142",
+   "23.213.53.153"
+  ],
+  "agmarknet.gov.in": [
+   "35.207.196.8"
+  ]
+ },
+ "reach": {
+  "https://api.data.gov.in/": "ECONNREFUSED",
+  "https://www.data.gov.in/": 503,
+  "https://agmarknet.gov.in/": 403
+ },
+ "error": "ECONNREFUSED",
+ "cause": "connect ECONNREFUSED 164.100.61.198:443"
 }
