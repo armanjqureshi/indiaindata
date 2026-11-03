@@ -10,7 +10,12 @@
  "faceValue": 0.1,
  "issueType": "Book Building",
  "issueSizeText": "Initial Public Offer comprising of Fresh issue of up to 36,48,000 equity shares (including Market Maker portion of 2,22,400 Equity Shares and Anchor Allocation 10,24,000 Equity Shares)",
- "issueSize": null,
+ "issueSize": {
+  "freshCr": 57.64,
+  "ofsCr": 0,
+  "totalCr": 57.64,
+  "method": "Calculated at ₹158 per share from the issue size NSE publishes"
+ },
  "employeeDiscount": null,
  "retailMax": null,
  "leadManagers": [
@@ -24,7 +29,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MAXENGS.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MAXENGS.zip"
  },
- "fetchedAt": "2026-11-03T15:35:26.629Z",
+ "fetchedAt": "2026-11-03T18:35:57.544Z",
  "slug": "maxwell-engineering-solutions",
  "symbol": "MAXENGS",
  "board": "sme",
