@@ -1,0 +1,122 @@
+{
+  "id": 139,
+  "slug": "nifty-fourth-straight-gain-3-november-2026",
+  "title": "Nifty gains for a fourth session, closing at 23,810.85",
+  "dek": "The index rose 1.58% on 3 November and is up 4.9% in four sessions. Foreign investors bought ₹6,837 crore; domestic funds sold ₹3,679 crore.",
+  "heroImage": null,
+  "section": "market",
+  "topics": [
+    "markets",
+    "economy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-11-03",
+  "readingTime": 3,
+  "featured": false,
+  "chartOfWeek": false,
+  "draft": false,
+  "seoTitle": "Nifty closes at 23,810.85, up 1.58% on 3 Nov",
+  "seoDescription": "Nifty 50 rose 370 points to 23,810.85 on 3 November 2026, a fourth straight gain. Bank Nifty, midcaps, India VIX and FII and DII flows, from NSE data.",
+  "charts": [
+    {
+      "type": "bar",
+      "title": "One-day change by index, 3 November 2026",
+      "subtitle": "Per cent",
+      "source": "NSE end-of-day index file, 3 November 2026",
+      "xKey": "index",
+      "dataKeys": [
+        "change"
+      ],
+      "unit": "%",
+      "data": "[{\"index\": \"Nifty 50\", \"change\": 1.58}, {\"index\": \"Nifty Bank\", \"change\": 0.98}, {\"index\": \"Nifty IT\", \"change\": 0.34}, {\"index\": \"Nifty Midcap 150\", \"change\": 1.0}, {\"index\": \"Nifty Smallcap 250\", \"change\": 0.42}]"
+    },
+    {
+      "type": "bar",
+      "title": "Net buying by foreign and domestic institutions",
+      "subtitle": "₹ crore, last three sessions",
+      "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined). Positive is net buying",
+      "xKey": "day",
+      "dataKeys": [
+        "FII",
+        "DII"
+      ],
+      "unit": "",
+      "data": "[{\"day\": \"30 Oct\", \"FII\": 3598.54, \"DII\": -817.51}, {\"day\": \"2 Nov\", \"FII\": 3114.68, \"DII\": -392.2}, {\"day\": \"3 Nov\", \"FII\": 6836.81, \"DII\": -3678.85}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "keypoints",
+      "title": "Key numbers",
+      "items": [
+        "Nifty 50 closed at 23,810.85, up 370.05 points or 1.58%",
+        "Fourth straight gain: up 1,112 points, or 4.9%, from the 28 October close of 22,698.85",
+        "Nifty Bank closed at 55,540.05 (+0.98%); Nifty Midcap 150 at 21,523.35 (+1.00%)",
+        "India VIX rose 1.42% to 15.72 even as the index climbed",
+        "Foreign institutions bought a net ₹6,836.81 crore; domestic institutions sold a net ₹3,678.85 crore"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Nifty 50 closed at 23,810.85 on 3 November, up 370.05 points or 1.58% from 23,440.80 the day before, according to NSE's end-of-day index file. It is the fourth session in a row that the index has risen. Since the close of 22,698.85 on 28 October, the Nifty has added 1,112 points, or 4.9%."
+    },
+    {
+      "type": "heading",
+      "text": "Banks and midcaps also rose, smallcaps and IT less so"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nifty Bank rose 0.98% to 55,540.05. The Nifty Midcap 150 gained 1.00% to 21,523.35, while the Nifty Smallcap 250 added 0.42% to 17,061.65 and Nifty IT rose 0.34% to 32,551.60. The Nifty 50's 1.58% was ahead of all four."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "heading",
+      "text": "Foreign buying, domestic selling"
+    },
+    {
+      "type": "paragraph",
+      "text": "NSE's provisional data shows foreign institutional investors (FIIs) bought a net ₹6,836.81 crore of shares on 3 November, the most in the 11 sessions we have recorded since 19 October, and more than the previous day's ₹3,114.68 crore. Domestic institutional investors (DIIs) were net sellers of ₹3,678.85 crore. Over the last three sessions FIIs have bought a net ₹13,550 crore, while DIIs have sold a net ₹4,889 crore."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "heading",
+      "text": "Volatility did not fall with the rally"
+    },
+    {
+      "type": "paragraph",
+      "text": "India VIX, which measures the volatility the options market expects over the next 30 days, closed at 15.72, up from 15.50. It has fallen from 17.16 on 26 October, but it edged up on a day the Nifty rose 1.6%."
+    },
+    {
+      "type": "faq",
+      "title": "Questions",
+      "items": [
+        {
+          "q": "Where did the Nifty 50 close on 3 November 2026?",
+          "a": "At 23,810.85, up 370.05 points or 1.58%, according to NSE."
+        },
+        {
+          "q": "How many days in a row has the Nifty risen?",
+          "a": "Four sessions, from 29 October to 3 November. Over that run the index is up 4.9% from the 28 October close."
+        },
+        {
+          "q": "Were foreign investors buying or selling on 3 November?",
+          "a": "Buying. FIIs were net buyers of ₹6,836.81 crore, while DIIs were net sellers of ₹3,678.85 crore, per NSE's provisional data."
+        },
+        {
+          "q": "What is India VIX?",
+          "a": "A measure of the market volatility implied by Nifty options prices over the next 30 days. A higher figure means traders expect larger swings. It closed at 15.72 on 3 November."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: NSE end-of-day index file (index closing levels and India VIX, 3 November 2026); NSE provisional FII/DII trading data. Changes over four and three sessions, and the sums of institutional flows, are our calculations. FII/DII figures are provisional and can be revised. This is not investment advice."
+    }
+  ]
+}
