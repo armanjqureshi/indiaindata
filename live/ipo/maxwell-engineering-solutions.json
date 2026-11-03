@@ -1,9 +1,9 @@
 {
  "subscription": {
-  "total": 72.97,
+  "total": 175.79,
   "totalMethod": "NSE",
   "categories": [],
-  "asOf": "02-Nov-2026 17:00:00",
+  "asOf": "03-Nov-2026 12:00:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 800,
@@ -24,7 +24,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MAXENGS.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MAXENGS.zip"
  },
- "fetchedAt": "2026-11-02T12:35:35.834Z",
+ "fetchedAt": "2026-11-03T06:35:39.693Z",
  "slug": "maxwell-engineering-solutions",
  "symbol": "MAXENGS",
  "board": "sme",
