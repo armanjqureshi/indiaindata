@@ -232,7 +232,7 @@
    "Banana": [
     [
      "2026-11-02",
-     48.98
+     48.95
     ]
    ],
    "Ginger": [
@@ -430,7 +430,7 @@
    "Cummin Seed (whole)": 40.57,
    "Red Chillies (whole)": 30.76,
    "Turmeric (powder)": 16.74,
-   "Banana": 48.98,
+   "Banana": 48.95,
    "Ginger": 33.19,
    "Garlic": 45.2
   }
@@ -463,7 +463,7 @@
    "Salt Pack (Iodised)": 1884.68
   }
  },
- "updatedAt": "2026-11-02T14:40:00.206Z",
+ "updatedAt": "2026-11-03T11:14:53.199Z",
  "source": {
   "name": "Department of Consumer Affairs, Price Monitoring Division",
   "url": "https://fcainfoweb.nic.in/",
