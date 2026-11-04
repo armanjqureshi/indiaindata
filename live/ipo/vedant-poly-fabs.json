@@ -1,9 +1,9 @@
 {
  "subscription": {
-  "total": 1.68,
+  "total": 1.85,
   "totalMethod": "NSE",
   "categories": [],
-  "asOf": "04-Nov-2026 15:00:00",
+  "asOf": "04-Nov-2026 18:03:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 1200,
@@ -23,7 +23,7 @@
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_VPFL.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_VPFL.zip"
  },
- "fetchedAt": "2026-11-04T09:35:26.258Z",
+ "fetchedAt": "2026-11-04T12:35:30.212Z",
  "slug": "vedant-poly-fabs",
  "symbol": "VPFL",
  "board": "sme",

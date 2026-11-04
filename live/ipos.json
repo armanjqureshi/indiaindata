@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-04T09:36:27.275Z",
- "lastPriceSession": "2026-11-03",
+ "updatedAt": "2026-11-04T12:36:21.658Z",
+ "lastPriceSession": "2026-11-04",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
@@ -33,8 +33,8 @@
    "lotSize": 1200,
    "lotValue": null,
    "sizeCr": null,
-   "subscription": 1.68,
-   "subscriptionAsOf": "04-Nov-2026 15:00:00",
+   "subscription": 1.85,
+   "subscriptionAsOf": "04-Nov-2026 18:03:00",
    "listing": null,
    "listingGainPct": null,
    "lastClose": null,
@@ -186,11 +186,16 @@
    "sizeCr": null,
    "subscription": 5.09,
    "subscriptionAsOf": "30-Oct-2026 19:00:00",
-   "listing": null,
-   "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "listing": {
+    "date": "2026-11-04",
+    "open": 171,
+    "close": 162.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 5.6,
+   "lastClose": 162.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 0.1,
    "hasDetail": true
   },
   {
@@ -268,9 +273,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 65.3,
-   "lastClose": 268.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 79.2,
+   "lastClose": 255.94,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 70.6,
    "hasDetail": true
   },
   {
@@ -310,9 +315,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.6,
-   "lastClose": 426.1,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 29.1,
+   "lastClose": 406.75,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 23.3,
    "hasDetail": true
   },
   {
@@ -352,9 +357,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.6,
-   "lastClose": 1722.3,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 3.4,
+   "lastClose": 1689.9,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 1.5,
    "hasDetail": true
   },
   {
@@ -394,9 +399,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 21.4,
-   "lastClose": 1437.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 28.5,
+   "lastClose": 1421.7,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 27.1,
    "hasDetail": true
   },
   {
@@ -436,9 +441,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.9,
-   "lastClose": 730.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 5.5,
+   "lastClose": 749.8,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 8.2,
    "hasDetail": true
   },
   {
@@ -478,9 +483,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 657,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 12.1,
+   "lastClose": 660.65,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 12.7,
    "hasDetail": true
   },
   {
@@ -520,9 +525,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.9,
-   "lastClose": 458.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 33.3,
+   "lastClose": 485.9,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 41.2,
    "hasDetail": true
   },
   {
@@ -562,9 +567,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 65.7,
-   "lastClose": 1230.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 75.8,
+   "lastClose": 1275.3,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 82.2,
    "hasDetail": true
   },
   {
@@ -604,9 +609,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5.5,
-   "lastClose": 156.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 3.6,
+   "lastClose": 164.85,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 9.2,
    "hasDetail": true
   },
   {
@@ -646,9 +651,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5.5,
-   "lastClose": 272.1,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -5.8,
+   "lastClose": 285.95,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -1.1,
    "hasDetail": true
   },
   {
@@ -688,9 +693,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 107,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -4.5,
+   "lastClose": 105.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -6,
    "hasDetail": true
   },
   {
@@ -730,9 +735,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 23.6,
-   "lastClose": 265.9,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -1.9,
+   "lastClose": 265.45,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -2,
    "hasDetail": true
   },
   {
@@ -772,9 +777,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2,
-   "lastClose": 61.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 14.4,
+   "lastClose": 62.85,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 16.4,
    "hasDetail": true
   },
   {
@@ -814,9 +819,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.4,
-   "lastClose": 28.15,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -65.7,
+   "lastClose": 29.55,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -64,
    "hasDetail": true
   },
   {
@@ -856,9 +861,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -5.9,
-   "lastClose": 53.95,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -54.3,
+   "lastClose": 57,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -51.7,
    "hasDetail": true
   },
   {
@@ -898,9 +903,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.7,
-   "lastClose": 66.9,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -10.8,
+   "lastClose": 66.52,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -11.3,
    "hasDetail": true
   },
   {
@@ -940,9 +945,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.3,
-   "lastClose": 99.66,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -54.7,
+   "lastClose": 104.64,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -52.4,
    "hasDetail": true
   },
   {
@@ -982,9 +987,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.4,
-   "lastClose": 37.15,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -48.4,
+   "lastClose": 40.85,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -43.3,
    "hasDetail": true
   },
   {
@@ -1024,8 +1029,8 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.4,
-   "lastClose": 139.69,
-   "lastCloseDate": "2026-11-03",
+   "lastClose": 139.54,
+   "lastCloseDate": "2026-11-04",
    "gainPct": -16.4,
    "hasDetail": true
   },
@@ -1066,9 +1071,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 13.8,
-   "lastClose": 116.04,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -10.7,
+   "lastClose": 118.97,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -8.5,
    "hasDetail": true
   },
   {
@@ -1108,9 +1113,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -11.5,
-   "lastClose": 19.06,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -40.4,
+   "lastClose": 19.47,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -39.2,
    "hasDetail": true
   },
   {
@@ -1150,9 +1155,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 189,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 71.8,
+   "lastClose": 198.45,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 80.4,
    "hasDetail": true
   },
   {
@@ -1192,9 +1197,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.2,
-   "lastClose": 102.08,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -26.6,
+   "lastClose": 115.39,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -17,
    "hasDetail": true
   },
   {
@@ -1234,9 +1239,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -17.5,
-   "lastClose": 83.25,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -19.2,
+   "lastClose": 84.3,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -18.2,
    "hasDetail": true
   },
   {
@@ -1276,9 +1281,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 65.4,
-   "lastClose": 337.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 24.1,
+   "lastClose": 351.15,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 29.1,
    "hasDetail": true
   },
   {
@@ -1318,9 +1323,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 205.09,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -32.8,
+   "lastClose": 212.18,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -30.4,
    "hasDetail": true
   },
   {
@@ -1360,9 +1365,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 12.3,
-   "lastClose": 369.5,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -8.8,
+   "lastClose": 400.4,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -1.1,
    "hasDetail": true
   },
   {
@@ -1402,9 +1407,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 73.85,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -17,
+   "lastClose": 73,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -18,
    "hasDetail": true
   },
   {
@@ -1444,9 +1449,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 61.8,
-   "lastClose": 53.89,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 58.5,
+   "lastClose": 55.08,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 62,
    "hasDetail": true
   },
   {
@@ -1486,9 +1491,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 75.4,
-   "lastClose": 171.52,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 28,
+   "lastClose": 176.32,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 31.6,
    "hasDetail": true
   },
   {
@@ -1528,9 +1533,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 286.2,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -23.7,
+   "lastClose": 285.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -23.9,
    "hasDetail": true
   },
   {
@@ -1570,9 +1575,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.1,
-   "lastClose": 110,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 41,
+   "lastClose": 104.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 34,
    "hasDetail": true
   },
   {
@@ -1612,9 +1617,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -1.9,
-   "lastClose": 275.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -23.9,
+   "lastClose": 280.95,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -22.4,
    "hasDetail": true
   },
   {
@@ -1654,9 +1659,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.6,
-   "lastClose": 94.15,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -18.1,
+   "lastClose": 103,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -10.4,
    "hasDetail": true
   },
   {
@@ -1696,9 +1701,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 8.1,
-   "lastClose": 196.09,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 6,
+   "lastClose": 198.65,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 7.4,
    "hasDetail": true
   },
   {
@@ -1738,9 +1743,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.7,
-   "lastClose": 123.27,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -16.7,
+   "lastClose": 134.08,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -9.4,
    "hasDetail": true
   },
   {
@@ -1780,9 +1785,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.4,
-   "lastClose": 39.5,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -26.9,
+   "lastClose": 38.75,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -28.2,
    "hasDetail": true
   },
   {
@@ -1822,9 +1827,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.9,
-   "lastClose": 97.55,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -3.4,
+   "lastClose": 101.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 0.2,
    "hasDetail": true
   },
   {
@@ -1902,9 +1907,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.3,
-   "lastClose": 102.64,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 3.7,
+   "lastClose": 104.38,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 5.4,
    "hasDetail": true
   },
   {
@@ -1944,9 +1949,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 240,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 103.4,
+   "lastClose": 237.9,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 101.6,
    "hasDetail": true
   },
   {
@@ -1986,9 +1991,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.4,
-   "lastClose": 118.22,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 40.7,
+   "lastClose": 119.55,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 42.3,
    "hasDetail": true
   },
   {
@@ -2028,9 +2033,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 29,
-   "lastClose": 159.01,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 71,
+   "lastClose": 165.37,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 77.8,
    "hasDetail": true
   },
   {
@@ -2070,9 +2075,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 47.2,
-   "lastClose": 636,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 50,
+   "lastClose": 646.35,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 52.4,
    "hasDetail": true
   },
   {
@@ -2112,9 +2117,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 50.32,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 17,
+   "lastClose": 49.03,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 14,
    "hasDetail": true
   },
   {
@@ -2154,9 +2159,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10,
-   "lastClose": 131.97,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -5.7,
+   "lastClose": 132.61,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -5.3,
    "hasDetail": true
   },
   {
@@ -2196,9 +2201,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 121.62,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -12.5,
+   "lastClose": 124.11,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -10.7,
    "hasDetail": true
   },
   {
@@ -2238,9 +2243,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 26,
-   "lastClose": 369.65,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 45.5,
+   "lastClose": 383,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 50.8,
    "hasDetail": true
   },
   {
@@ -2280,9 +2285,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 29.5,
-   "lastClose": 136.5,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -6.5,
+   "lastClose": 135.28,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -7.3,
    "hasDetail": true
   },
   {
@@ -2322,9 +2327,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.7,
-   "lastClose": 330.25,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -2.6,
+   "lastClose": 331.35,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -2.3,
    "hasDetail": true
   },
   {
@@ -2364,9 +2369,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 19.4,
-   "lastClose": 548.5,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 35.8,
+   "lastClose": 589.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 45.9,
    "hasDetail": true
   },
   {
@@ -2406,9 +2411,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 16.7,
-   "lastClose": 126.33,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 56,
+   "lastClose": 133.89,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 65.3,
    "hasDetail": true
   },
   {
@@ -2448,9 +2453,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 24.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -74.1,
+   "lastClose": 24.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -73.9,
    "hasDetail": true
   },
   {
@@ -2490,9 +2495,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.6,
-   "lastClose": 230.72,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 26.8,
+   "lastClose": 244.63,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 34.4,
    "hasDetail": true
   },
   {
@@ -2532,9 +2537,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 8.5,
-   "lastClose": 1025.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 62.3,
+   "lastClose": 1070.6,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 69.4,
    "hasDetail": true
   },
   {
@@ -2574,9 +2579,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -9.8,
-   "lastClose": 754.65,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 11.6,
+   "lastClose": 772.45,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 14.3,
    "hasDetail": true
   },
   {
@@ -2616,9 +2621,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 33.1,
-   "lastClose": 89.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -27.7,
+   "lastClose": 88.07,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -29,
    "hasDetail": true
   },
   {
@@ -2658,9 +2663,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 77.1,
-   "lastClose": 127.65,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 0.5,
+   "lastClose": 139.3,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 9.7,
    "hasDetail": true
   },
   {
@@ -2700,9 +2705,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 24.9,
-   "lastClose": 202.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 14.4,
+   "lastClose": 214.11,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 21,
    "hasDetail": true
   },
   {
@@ -2780,9 +2785,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 52.2,
-   "lastClose": 129.65,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 40.9,
+   "lastClose": 130.3,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 41.6,
    "hasDetail": true
   },
   {
@@ -2822,9 +2827,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -7,
-   "lastClose": 498.75,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -13.3,
+   "lastClose": 500.05,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -13,
    "hasDetail": true
   },
   {
@@ -2864,9 +2869,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 177,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 113.3,
+   "lastClose": 187,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 125.3,
    "hasDetail": true
   },
   {
@@ -2906,9 +2911,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 76.5,
-   "lastClose": 1187.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 176.8,
+   "lastClose": 1193.6,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 178.2,
    "hasDetail": true
   },
   {
@@ -2948,9 +2953,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 15,
-   "lastClose": 270.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 35.4,
+   "lastClose": 274.6,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 37.3,
    "hasDetail": true
   },
   {
@@ -2990,9 +2995,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 34.1,
-   "lastClose": 94.28,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 15,
+   "lastClose": 99.84,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 21.8,
    "hasDetail": true
   },
   {
@@ -3032,9 +3037,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -27.3,
-   "lastClose": 37.94,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -61.7,
+   "lastClose": 39.52,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -60.1,
    "hasDetail": true
   },
   {
@@ -3075,7 +3080,7 @@
    },
    "listingGainPct": 9.9,
    "lastClose": 95.5,
-   "lastCloseDate": "2026-11-03",
+   "lastCloseDate": "2026-11-04",
    "gainPct": -5.4,
    "hasDetail": true
   },
@@ -3116,9 +3121,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.9,
-   "lastClose": 40.25,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -60.5,
+   "lastClose": 40.75,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -60,
    "hasDetail": true
   },
   {
@@ -3158,9 +3163,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 41.5,
-   "lastClose": 80.03,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 51,
+   "lastClose": 80.8,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 52.5,
    "hasDetail": true
   },
   {
@@ -3200,9 +3205,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 65.2,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -34.8,
+   "lastClose": 68.7,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -31.3,
    "hasDetail": true
   },
   {
@@ -3242,9 +3247,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -10.1,
-   "lastClose": 97.52,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -29.3,
+   "lastClose": 105.04,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -23.9,
    "hasDetail": true
   },
   {
@@ -3284,9 +3289,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 1263,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 27.8,
+   "lastClose": 1233.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 24.8,
    "hasDetail": true
   },
   {
@@ -3326,9 +3331,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 22,
-   "lastClose": 972.5,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 23.4,
+   "lastClose": 1021.05,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 29.6,
    "hasDetail": true
   },
   {
@@ -3368,9 +3373,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 111.3,
-   "lastClose": 552.25,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 84.1,
+   "lastClose": 542.85,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 81,
    "hasDetail": true
   },
   {
@@ -3410,9 +3415,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 15.6,
-   "lastClose": 127.53,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -20.3,
+   "lastClose": 142.83,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -10.7,
    "hasDetail": true
   },
   {
@@ -3452,9 +3457,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 11.1,
-   "lastClose": 90.56,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -2.6,
+   "lastClose": 93.58,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 0.6,
    "hasDetail": true
   },
   {
@@ -3494,9 +3499,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10,
-   "lastClose": 390.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 8.5,
+   "lastClose": 392.4,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 9,
    "hasDetail": true
   },
   {
@@ -3536,9 +3541,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.4,
-   "lastClose": 43.14,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -28.1,
+   "lastClose": 44.35,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -26.1,
    "hasDetail": true
   },
   {
@@ -3578,9 +3583,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 31.8,
-   "lastClose": 363,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 80.6,
+   "lastClose": 366.05,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 82.1,
    "hasDetail": true
   },
   {
@@ -3620,9 +3625,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -3.9,
-   "lastClose": 31.05,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -59.7,
+   "lastClose": 31.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -59.5,
    "hasDetail": true
   },
   {
@@ -3662,9 +3667,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 396.1,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 109.6,
+   "lastClose": 387.8,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 105.2,
    "hasDetail": true
   },
   {
@@ -3704,9 +3709,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 63.2,
-   "lastClose": 442.95,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 55.4,
+   "lastClose": 453.95,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 59.3,
    "hasDetail": true
   },
   {
@@ -3746,9 +3751,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.7,
-   "lastClose": 108,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -8.5,
+   "lastClose": 110,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -6.8,
    "hasDetail": true
   },
   {
@@ -3788,9 +3793,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 35.1,
-   "lastClose": 130.87,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 34.9,
+   "lastClose": 131.89,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 36,
    "hasDetail": true
   },
   {
@@ -3830,9 +3835,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 109.15,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -27.7,
+   "lastClose": 107.95,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -28.5,
    "hasDetail": true
   },
   {
@@ -3872,9 +3877,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 17.9,
-   "lastClose": 298.75,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 113.4,
+   "lastClose": 302.55,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 116.1,
    "hasDetail": true
   },
   {
@@ -3914,9 +3919,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 37.8,
-   "lastClose": 1488.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 70.9,
+   "lastClose": 1637.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 88,
    "hasDetail": true
   },
   {
@@ -3956,9 +3961,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 21.4,
-   "lastClose": 1350.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 67.4,
+   "lastClose": 1381.8,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 71.2,
    "hasDetail": true
   },
   {
@@ -4035,9 +4040,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.9,
-   "lastClose": 132.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -24.4,
+   "lastClose": 131.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -25,
    "hasDetail": true
   },
   {
@@ -4077,9 +4082,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 34,
-   "lastClose": 506.85,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 139.1,
+   "lastClose": 540.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 154.8,
    "hasDetail": true
   },
   {
@@ -4119,9 +4124,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 35.8,
-   "lastClose": 45.1,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -14.9,
+   "lastClose": 47.19,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -11,
    "hasDetail": true
   },
   {
@@ -4161,9 +4166,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 22.1,
-   "lastClose": 387.05,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 43.4,
+   "lastClose": 401,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 48.5,
    "hasDetail": true
   },
   {
@@ -4203,9 +4208,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 8.9,
-   "lastClose": 250,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 11.1,
+   "lastClose": 255.42,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 13.5,
    "hasDetail": true
   },
   {
@@ -4245,9 +4250,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 22.4,
-   "lastClose": 734.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 72.9,
+   "lastClose": 775.7,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 82.5,
    "hasDetail": true
   },
   {
@@ -4287,9 +4292,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10.5,
-   "lastClose": 642,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 8.8,
+   "lastClose": 667.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 13.1,
    "hasDetail": true
   },
   {
@@ -4329,9 +4334,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 72,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 4.3,
+   "lastClose": 69,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 0,
    "hasDetail": true
   },
   {
@@ -4371,9 +4376,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 44.3,
-   "lastClose": 1203.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 148.2,
+   "lastClose": 1240.1,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 155.7,
    "hasDetail": true
   },
   {
@@ -4413,9 +4418,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 8.5,
-   "lastClose": 515.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 21.3,
+   "lastClose": 540.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 27.1,
    "hasDetail": true
   },
   {
@@ -4455,9 +4460,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.1,
-   "lastClose": 278.2,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 119.1,
+   "lastClose": 280.65,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 121,
    "hasDetail": true
   },
   {
@@ -4497,9 +4502,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 13,
-   "lastClose": 150.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 95.4,
+   "lastClose": 147.65,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 91.8,
    "hasDetail": true
   },
   {
@@ -4539,9 +4544,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 18,
-   "lastClose": 529.05,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 24.8,
+   "lastClose": 526.45,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 24.2,
    "hasDetail": true
   },
   {
@@ -4581,9 +4586,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 40.37,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -61.6,
+   "lastClose": 41.1,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -60.9,
    "hasDetail": true
   },
   {
@@ -4623,9 +4628,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.8,
-   "lastClose": 482.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -16,
+   "lastClose": 498.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -13.2,
    "hasDetail": true
   },
   {
@@ -4665,9 +4670,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3,
-   "lastClose": 66.1,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 0.2,
+   "lastClose": 67.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 1.8,
    "hasDetail": true
   },
   {
@@ -4707,9 +4712,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 16.8,
-   "lastClose": 218.2,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 2,
+   "lastClose": 222.08,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 3.8,
    "hasDetail": true
   },
   {
@@ -4749,9 +4754,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 35.8,
-   "lastClose": 563.05,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 34.4,
+   "lastClose": 584.95,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 39.6,
    "hasDetail": true
   },
   {
@@ -4791,9 +4796,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 67.7,
-   "lastClose": 111.7,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 12.8,
+   "lastClose": 115.6,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 16.8,
    "hasDetail": true
   },
   {
@@ -4833,9 +4838,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10.6,
-   "lastClose": 186.58,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 9.8,
+   "lastClose": 187.59,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 10.3,
    "hasDetail": true
   },
   {
@@ -4875,9 +4880,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 216.95,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -1.4,
+   "lastClose": 219.15,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -0.4,
    "hasDetail": true
   },
   {
@@ -4917,9 +4922,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -1.9,
-   "lastClose": 45.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -71.3,
+   "lastClose": 47.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -69.9,
    "hasDetail": true
   },
   {
@@ -4959,9 +4964,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -4.4,
-   "lastClose": 22.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -83.2,
+   "lastClose": 23.94,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -82.4,
    "hasDetail": true
   },
   {
@@ -5039,9 +5044,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 79.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -29.8,
+   "lastClose": 78.9,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -30.2,
    "hasDetail": true
   },
   {
@@ -5119,9 +5124,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 36.9,
-   "lastClose": 314.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 127.8,
+   "lastClose": 298.7,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 116.4,
    "hasDetail": true
   },
   {
@@ -5161,9 +5166,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.6,
-   "lastClose": 166,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 213.2,
+   "lastClose": 164.95,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 211.2,
    "hasDetail": true
   },
   {
@@ -5203,9 +5208,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -15.7,
-   "lastClose": 87.02,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -89.2,
+   "lastClose": 89.04,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -89,
    "hasDetail": true
   },
   {
@@ -5245,9 +5250,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -11.2,
-   "lastClose": 54.17,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -64.4,
+   "lastClose": 56.87,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -62.6,
    "hasDetail": true
   },
   {
@@ -5287,9 +5292,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 250,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 20.2,
+   "lastClose": 242.9,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 16.8,
    "hasDetail": true
   },
   {
@@ -5329,9 +5334,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.9,
-   "lastClose": 167,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -17.7,
+   "lastClose": 168,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -17.2,
    "hasDetail": false
   },
   {
@@ -5371,9 +5376,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 47.75,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -27.7,
+   "lastClose": 45.4,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -31.2,
    "hasDetail": false
   },
   {
@@ -5413,9 +5418,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 80.2,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -30.9,
+   "lastClose": 84.6,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -27.1,
    "hasDetail": false
   },
   {
@@ -5455,9 +5460,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.2,
-   "lastClose": 57.42,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 27.6,
+   "lastClose": 59.67,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 32.6,
    "hasDetail": false
   },
   {
@@ -5497,9 +5502,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 39.6,
-   "lastClose": 204.36,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 6.4,
+   "lastClose": 213.08,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 11,
    "hasDetail": false
   },
   {
@@ -5539,9 +5544,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 144.85,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 4.2,
+   "lastClose": 147,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 5.8,
    "hasDetail": false
   },
   {
@@ -5581,9 +5586,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 31.8,
-   "lastClose": 521.85,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 52.1,
+   "lastClose": 527.15,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 53.7,
    "hasDetail": false
   },
   {
@@ -5623,9 +5628,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 19,
-   "lastClose": 164.25,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 160.7,
+   "lastClose": 160.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 154.3,
    "hasDetail": false
   },
   {
@@ -5665,9 +5670,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.9,
-   "lastClose": 19.85,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -63.9,
+   "lastClose": 19.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -65,
    "hasDetail": false
   },
   {
@@ -5707,9 +5712,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5,
-   "lastClose": 94,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 88,
+   "lastClose": 93,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 86,
    "hasDetail": false
   },
   {
@@ -5749,9 +5754,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -14.8,
-   "lastClose": 489.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 167.5,
+   "lastClose": 490.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 168,
    "hasDetail": false
   },
   {
@@ -5791,9 +5796,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 77.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -20.8,
+   "lastClose": 80.1,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -18.3,
    "hasDetail": false
   },
   {
@@ -5833,9 +5838,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 11.1,
-   "lastClose": 321.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 88.2,
+   "lastClose": 315.05,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 84.2,
    "hasDetail": false
   },
   {
@@ -5875,9 +5880,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.4,
-   "lastClose": 98,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -27.4,
+   "lastClose": 99.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -26.5,
    "hasDetail": false
   },
   {
@@ -5917,9 +5922,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 19.2,
-   "lastClose": 245.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 42.8,
+   "lastClose": 257.85,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 49.9,
    "hasDetail": false
   },
   {
@@ -5959,9 +5964,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.3,
-   "lastClose": 130.36,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -25.5,
+   "lastClose": 131.46,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -24.9,
    "hasDetail": false
   },
   {
@@ -6001,9 +6006,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.8,
-   "lastClose": 1040.95,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 87.6,
+   "lastClose": 1072.75,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 93.3,
    "hasDetail": false
   },
   {
@@ -6085,9 +6090,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -7.3,
-   "lastClose": 482.95,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 22.3,
+   "lastClose": 499.75,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 26.5,
    "hasDetail": false
   },
   {
@@ -6127,9 +6132,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2,
-   "lastClose": 469.25,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 19.7,
+   "lastClose": 478.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 22.1,
    "hasDetail": false
   },
   {
@@ -6169,9 +6174,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -7,
-   "lastClose": 179.29,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 4.2,
+   "lastClose": 183.95,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 6.9,
    "hasDetail": false
   },
   {
@@ -6211,9 +6216,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.5,
-   "lastClose": 434.3,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 35.7,
+   "lastClose": 438.4,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 37,
    "hasDetail": false
   },
   {
@@ -6253,9 +6258,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 39.1,
-   "lastClose": 485.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 341.3,
+   "lastClose": 475.75,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 332.5,
    "hasDetail": false
   },
   {
@@ -6295,9 +6300,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -9.9,
-   "lastClose": 250.43,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -51.7,
+   "lastClose": 263.22,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -49.3,
    "hasDetail": false
   },
   {
@@ -6337,9 +6342,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 169.7,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 39.1,
+   "lastClose": 169.27,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 38.7,
    "hasDetail": false
   },
   {
@@ -6379,9 +6384,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.1,
-   "lastClose": 215,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 119.4,
+   "lastClose": 222,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 126.5,
    "hasDetail": false
   },
   {
@@ -6421,9 +6426,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 13.5,
-   "lastClose": 3207.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 137.2,
+   "lastClose": 3101.6,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 129.4,
    "hasDetail": false
   },
   {
@@ -6463,9 +6468,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 138,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 23.2,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": false
   },
   {
@@ -6547,9 +6552,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -11,
-   "lastClose": 656.7,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 189.3,
+   "lastClose": 669.4,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 194.9,
    "hasDetail": false
   },
   {
@@ -6589,9 +6594,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -12.4,
-   "lastClose": 118,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -18.6,
+   "lastClose": 111.35,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -23.2,
    "hasDetail": false
   },
   {
@@ -6631,9 +6636,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.8,
-   "lastClose": 606.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 57.1,
+   "lastClose": 634.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 64.4,
    "hasDetail": false
   },
   {
@@ -6673,9 +6678,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -8.8,
-   "lastClose": 1225.9,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 16.4,
+   "lastClose": 1249.1,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 18.6,
    "hasDetail": false
   },
   {
@@ -6715,9 +6720,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -19.9,
-   "lastClose": 105.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 31.7,
+   "lastClose": 110,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 37.5,
    "hasDetail": false
   },
   {
@@ -6757,9 +6762,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -34.6,
-   "lastClose": 35.42,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -65.9,
+   "lastClose": 35.52,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -65.8,
    "hasDetail": false
   },
   {
@@ -6799,9 +6804,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5.1,
-   "lastClose": 107.93,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 36.6,
+   "lastClose": 107.22,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 35.7,
    "hasDetail": false
   },
   {
@@ -6841,9 +6846,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "lastClose": 33.1,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -52,
    "hasDetail": false
   },
   {
@@ -6883,8 +6888,8 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.6,
-   "lastClose": 120.1,
-   "lastCloseDate": "2026-11-03",
+   "lastClose": 120,
+   "lastCloseDate": "2026-11-04",
    "gainPct": 2.6,
    "hasDetail": false
   },
@@ -6925,9 +6930,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 132.81,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 3,
+   "lastClose": 134.77,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 4.5,
    "hasDetail": false
   },
   {
@@ -6967,9 +6972,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.7,
-   "lastClose": 732.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -18.6,
+   "lastClose": 835.65,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -7.2,
    "hasDetail": false
   },
   {
@@ -7009,9 +7014,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.8,
-   "lastClose": 44.9,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -58.4,
+   "lastClose": 43.75,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -59.5,
    "hasDetail": false
   },
   {
@@ -7051,9 +7056,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4,
-   "lastClose": 142,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -19.3,
+   "lastClose": 140.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -20.2,
    "hasDetail": false
   },
   {
@@ -7093,9 +7098,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.1,
-   "lastClose": 410.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 366.3,
+   "lastClose": 430.85,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 389.6,
    "hasDetail": false
   },
   {
@@ -7173,9 +7178,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 280.95,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 72.4,
+   "lastClose": 294.95,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 81,
    "hasDetail": false
   },
   {
@@ -7215,9 +7220,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 27.5,
-   "lastClose": 228.5,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 69.3,
+   "lastClose": 231.1,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 71.2,
    "hasDetail": false
   },
   {
@@ -7257,9 +7262,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -9.2,
-   "lastClose": 283.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 128.9,
+   "lastClose": 279.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 125.4,
    "hasDetail": false
   },
   {
@@ -7299,9 +7304,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 27.05,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -52.5,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": false
   },
   {
@@ -7341,9 +7346,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -11.9,
-   "lastClose": 564.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 56.3,
+   "lastClose": 574.6,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 59.2,
    "hasDetail": false
   },
   {
@@ -7383,9 +7388,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 31.4,
-   "lastClose": 147.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 149.9,
+   "lastClose": 140.1,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 137.5,
    "hasDetail": false
   },
   {
@@ -7425,9 +7430,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 95.7,
-   "lastClose": 30.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 32,
+   "lastClose": 31.15,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 35.4,
    "hasDetail": false
   },
   {
@@ -7467,9 +7472,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -16,
-   "lastClose": 12.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -69.3,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": false
   },
   {
@@ -7505,9 +7510,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 258.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 48.5,
+   "lastClose": 258.15,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 48.4,
    "hasDetail": false
   },
   {
@@ -7543,9 +7548,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 19,
-   "lastClose": 122,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -3.2,
+   "lastClose": 128,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 1.6,
    "hasDetail": false
   },
   {
@@ -7581,9 +7586,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 14.4,
-   "lastClose": 240,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 147.4,
+   "lastClose": 255,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 162.9,
    "hasDetail": false
   },
   {
@@ -7619,9 +7624,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5.3,
-   "lastClose": 161.05,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 41.3,
+   "lastClose": 159.71,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 40.1,
    "hasDetail": false
   },
   {
@@ -7657,9 +7662,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 51.2,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -26.9,
+   "lastClose": 51.45,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -26.5,
    "hasDetail": false
   },
   {
@@ -7695,9 +7700,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 28.9,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -66.4,
+   "lastClose": 28.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -67.2,
    "hasDetail": false
   },
   {
@@ -7771,9 +7776,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -3.6,
-   "lastClose": 950.7,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 147.6,
+   "lastClose": 985.45,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 156.6,
    "hasDetail": false
   },
   {
@@ -7809,9 +7814,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.5,
-   "lastClose": 152,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 7,
+   "lastClose": 151.5,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 6.7,
    "hasDetail": false
   },
   {
@@ -7847,9 +7852,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 25,
-   "lastClose": 82,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -6.8,
+   "lastClose": 80.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -8.9,
    "hasDetail": false
   },
   {
@@ -7885,9 +7890,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 20.1,
-   "lastClose": 2871.5,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 32.6,
+   "lastClose": 2880.2,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 33,
    "hasDetail": false
   },
   {
@@ -7923,9 +7928,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.5,
-   "lastClose": 624.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 35.8,
+   "lastClose": 622.35,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 35.3,
    "hasDetail": false
   },
   {
@@ -7961,9 +7966,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2,
-   "lastClose": 223.64,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 38,
+   "lastClose": 230.45,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 42.3,
    "hasDetail": false
   },
   {
@@ -7999,9 +8004,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 38.4,
-   "lastClose": 2271.6,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 113.9,
+   "lastClose": 2405.8,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 126.5,
    "hasDetail": false
   },
   {
@@ -8037,9 +8042,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 134.97,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -30.8,
+   "lastClose": 137.47,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -29.5,
    "hasDetail": false
   },
   {
@@ -8075,9 +8080,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 237.45,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 121.9,
+   "lastClose": 221.3,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 106.8,
    "hasDetail": false
   },
   {
@@ -8113,9 +8118,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.1,
-   "lastClose": 280.8,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 47,
+   "lastClose": 276.05,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 44.5,
    "hasDetail": false
   },
   {
@@ -8151,9 +8156,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 12.9,
-   "lastClose": 209.39,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 68.9,
+   "lastClose": 219.59,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 77.1,
    "hasDetail": false
   },
   {
@@ -8189,9 +8194,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 46.4,
-   "lastClose": 222.9,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 100.8,
+   "lastClose": 224.55,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 102.3,
    "hasDetail": false
   },
   {
@@ -8227,9 +8232,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.2,
-   "lastClose": 21.3,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -76.3,
+   "lastClose": 20.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -77.5,
    "hasDetail": false
   },
   {
@@ -8265,9 +8270,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 79.63,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 53.1,
+   "lastClose": 81.77,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 57.2,
    "hasDetail": false
   },
   {
@@ -8303,9 +8308,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10.2,
-   "lastClose": 104.7,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 6.8,
+   "lastClose": 105,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 7.1,
    "hasDetail": false
   },
   {
@@ -8341,9 +8346,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -9.8,
-   "lastClose": 68.85,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -47.8,
+   "lastClose": 68.45,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -48.1,
    "hasDetail": false
   },
   {
@@ -8379,9 +8384,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 17.6,
-   "lastClose": 67,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -21.2,
+   "lastClose": 68,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -20,
    "hasDetail": false
   },
   {
@@ -8417,9 +8422,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.1,
-   "lastClose": 71.7,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 28,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": false
   },
   {
@@ -8455,9 +8460,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 23.1,
-   "lastClose": 1099.4,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 85.4,
+   "lastClose": 1116.7,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 88.3,
    "hasDetail": false
   },
   {
@@ -8493,9 +8498,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 12.5,
-   "lastClose": 79.85,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -33.5,
+   "lastClose": 80.93,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -32.6,
    "hasDetail": false
   },
   {
@@ -8531,9 +8536,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.9,
-   "lastClose": 507.65,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -12,
+   "lastClose": 510.1,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -11.6,
    "hasDetail": false
   },
   {
@@ -8569,9 +8574,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -3.5,
-   "lastClose": 365.95,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 60.5,
+   "lastClose": 393.65,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 72.7,
    "hasDetail": false
   },
   {
@@ -8607,9 +8612,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 27.2,
-   "lastClose": 458.5,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 15.5,
+   "lastClose": 464.25,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 16.9,
    "hasDetail": false
   },
   {
@@ -8645,9 +8650,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 231.26,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 6.6,
+   "lastClose": 246.41,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 13.6,
    "hasDetail": false
   },
   {
@@ -8683,9 +8688,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 33,
-   "lastClose": 128.64,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 18,
+   "lastClose": 127.41,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 16.9,
    "hasDetail": false
   },
   {
@@ -8721,9 +8726,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 14.1,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "lastClose": 177,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 38.3,
    "hasDetail": false
   },
   {
@@ -8759,9 +8764,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.5,
-   "lastClose": 155.88,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": -29.5,
+   "lastClose": 157.77,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -28.6,
    "hasDetail": false
   },
   {
@@ -8797,9 +8802,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10.6,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "lastClose": 117,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": -17.6,
    "hasDetail": false
   },
   {
@@ -8835,9 +8840,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 12,
-   "lastClose": 205.98,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 106,
+   "lastClose": 207.23,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 107.2,
    "hasDetail": false
   },
   {
@@ -8873,9 +8878,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 183.35,
-   "lastCloseDate": "2026-11-03",
-   "gainPct": 46.7,
+   "lastClose": 193.65,
+   "lastCloseDate": "2026-11-04",
+   "gainPct": 54.9,
    "hasDetail": false
   }
  ]
