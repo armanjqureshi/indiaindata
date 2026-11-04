@@ -10,7 +10,12 @@
  "faceValue": 0.1,
  "issueType": "Book Building",
  "issueSizeText": "Initial Public Offer comprising of Fresh Issue of up to 54,26,400 Equity Shares and Offer for sale of up to 6,03,600 Equity Shares (including market maker portion of 3,04,800 equity shares)",
- "issueSize": null,
+ "issueSize": {
+  "freshCr": 51.01,
+  "ofsCr": 5.67,
+  "totalCr": 56.68,
+  "method": "Calculated at ₹94 per share from the issue size NSE publishes"
+ },
  "employeeDiscount": null,
  "retailMax": null,
  "leadManagers": [
@@ -23,7 +28,7 @@
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_VPFL.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_VPFL.zip"
  },
- "fetchedAt": "2026-11-04T15:35:33.708Z",
+ "fetchedAt": "2026-11-04T18:35:34.381Z",
  "slug": "vedant-poly-fabs",
  "symbol": "VPFL",
  "board": "sme",
