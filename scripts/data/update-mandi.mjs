@@ -67,9 +67,17 @@ async function rowsFor(apiName, iso) {
 function summarise(rows) {
   const markets = new Map()
   let dropped = 0
-  for (const r of rows) {
+  const valid = rows.filter((r) => {
     const min = Number(r.Min_Price), max = Number(r.Max_Price), modal = Number(r.Modal_Price)
-    if (!(min > 0 && max >= min && modal >= min && modal <= max) || !r.State || !r.Market) { dropped++; continue }
+    return min > 0 && max >= min && modal >= min && modal <= max && r.State && r.Market
+  })
+  // drop entries far from the day's median for this commodity (unit slips, typos)
+  const mid = median(valid.map((r) => Number(r.Modal_Price)))
+  const ok = valid.filter((r) => mid && Number(r.Modal_Price) >= mid * 0.2 && Number(r.Modal_Price) <= mid * 5 && Number(r.Min_Price) >= mid * 0.1 && Number(r.Max_Price) <= mid * 8)
+  dropped = rows.length - ok.length
+  for (const r0 of ok) {
+    const r = { ...r0, State: String(r0.State).trim(), District: String(r0.District).trim(), Market: String(r0.Market).trim() }
+    const min = Number(r.Min_Price), max = Number(r.Max_Price), modal = Number(r.Modal_Price)
     const k = `${r.State}|${r.District}|${r.Market}`
     const m = markets.get(k) || { state: r.State, district: r.District, market: r.Market, modals: [], min: Infinity, max: 0 }
     m.modals.push(modal); m.min = Math.min(m.min, min); m.max = Math.max(m.max, max)
