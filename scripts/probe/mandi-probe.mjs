@@ -6,16 +6,23 @@ const key = process.env.DATAGOVIN_API_KEY
 fs.mkdirSync('live/debug', { recursive: true })
 const out = { runAt: new Date().toISOString(), hasKey: !!key }
 const base = `https://api.data.gov.in/resource/${RES}?api-key=${encodeURIComponent(key || '')}&format=json`
-const get = async (qs) => (await fetch(`${base}&${qs}`, { signal: AbortSignal.timeout(90000) })).json()
+const get = async (qs) => {
+  let last
+  for (let a = 1; a <= 4; a++) {
+    try { return await (await fetch(`${base}&${qs}`, { signal: AbortSignal.timeout(120000) })).json() }
+    catch (e) { last = e; out.retries = (out.retries || 0) + 1; await new Promise((r) => setTimeout(r, 4000 * a)) }
+  }
+  throw last
+}
 if (key) {
   try {
     const t0 = Date.now()
     const date = '03/11/2026'
-    const first = await get(`limit=1000&offset=0&filters[Arrival_Date]=${date}`)
+    const first = await get(`limit=500&offset=0&filters[Arrival_Date]=${date}`)
     out.total = first.total; out.firstCount = first.count
     let rows = first.records || []
-    for (let off = rows.length; off < first.total && off < 40000; off += 1000) {
-      const j = await get(`limit=1000&offset=${off}&filters[Arrival_Date]=${date}`)
+    for (let off = rows.length; off < first.total && off < 40000; off += 500) {
+      const j = await get(`limit=500&offset=${off}&filters[Arrival_Date]=${date}`)
       if (!j.records?.length) break
       rows = rows.concat(j.records)
     }
