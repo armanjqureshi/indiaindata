@@ -23,6 +23,8 @@ if (key) {
     try {
       const j = JSON.parse(t)
       out.keys = Object.keys(j)
+      if (j.error) out.errorBody = JSON.stringify(j.error).replace(key, '***').slice(0, 400)
+      out.keyLength = key.length
       out.total = j.total; out.count = j.count; out.updated = j.updated_date ?? j.updated
       out.fields = j.field ?? j.fields
       out.sample = (j.records || []).slice(0, 8)
