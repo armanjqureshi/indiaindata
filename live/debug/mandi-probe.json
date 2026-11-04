@@ -1,213 +1,244 @@
 {
- "runAt": "2026-11-04T14:05:25.670Z",
+ "runAt": "2026-11-04T14:06:30.082Z",
  "hasKey": true,
- "dns": {
-  "api.data.gov.in": "ECONNREFUSED",
-  "www.data.gov.in": "ECONNREFUSED",
-  "agmarknet.gov.in": "ECONNREFUSED"
- },
- "reach": {
-  "https://api.data.gov.in/": 404,
-  "https://www.data.gov.in/": 200,
-  "https://agmarknet.gov.in/": 200
- },
- "status": 200,
- "keys": [
-  "index_name",
-  "title",
-  "desc",
-  "org_type",
-  "org",
-  "sector",
-  "source",
-  "catalog_uuid",
-  "visualizable",
-  "active",
-  "created",
-  "updated",
-  "created_date",
-  "updated_date",
-  "external_ws",
-  "external_ws_url",
-  "target_bucket",
-  "field",
-  "field_dependent",
-  "order",
-  "field_exposed",
-  "message",
-  "version",
-  "status",
-  "total",
-  "count",
-  "limit",
-  "offset",
-  "records"
- ],
- "keyLength": 56,
- "total": 82893202,
- "count": 20,
- "updated": "2026-11-03T23:35:10Z",
- "fields": [
-  {
-   "name": "Arrival_Date",
-   "id": "Arrival_Date",
-   "type": "date"
+ "tests": {
+  "latest_sorted": {
+   "status": 200,
+   "total": 82893202,
+   "count": 5,
+   "dates": [
+    "03/11/2026"
+   ],
+   "first": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Pomegranate",
+    "Commodity_Code": 190,
+    "District": "Udhamsinghnagar",
+    "Grade": "Medium",
+    "Market": "Rudrapur APMC",
+    "Max_Price": 12000,
+    "Min_Price": 8000,
+    "Modal_Price": 9000,
+    "State": "Uttarakhand",
+    "Variety": "Other"
+   },
+   "last": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Pomegranate",
+    "Commodity_Code": 190,
+    "District": "Sangrur",
+    "Grade": "Medium",
+    "Market": "Bhawanigarh APMC",
+    "Max_Price": 10000,
+    "Min_Price": 9000,
+    "Modal_Price": 9500,
+    "State": "Punjab",
+    "Variety": "Other"
+   }
   },
-  {
-   "name": "Commodity",
-   "id": "Commodity",
-   "type": "keyword"
+  "onion_sorted": {
+   "status": 200,
+   "total": 3410697,
+   "count": 5,
+   "dates": [
+    "03/11/2026"
+   ],
+   "first": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Onion",
+    "Commodity_Code": 23,
+    "District": "Sivagangai",
+    "Grade": "Local",
+    "Market": "Singampunari(Uzhavar Sandhai )",
+    "Max_Price": 6600,
+    "Min_Price": 5200,
+    "Modal_Price": 5900,
+    "State": "Tamil Nadu",
+    "Variety": "Bellary"
+   },
+   "last": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Onion",
+    "Commodity_Code": 23,
+    "District": "Chengalpet",
+    "Grade": "Local",
+    "Market": "Chengalpet(Uzhavar Sandhai )",
+    "Max_Price": 6000,
+    "Min_Price": 5000,
+    "Modal_Price": 5500,
+    "State": "Tamil Nadu",
+    "Variety": "Bellary"
+   }
   },
-  {
-   "name": "Commodity_Code",
-   "id": "Commodity_Code",
-   "type": "keyword"
+  "onion_date_ddmmyyyy": {
+   "status": 200,
+   "total": 580,
+   "count": 5,
+   "dates": [
+    "03/11/2026"
+   ],
+   "first": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Onion",
+    "Commodity_Code": 23,
+    "District": "Banka",
+    "Grade": "Local",
+    "Market": "Barahat APMC",
+    "Max_Price": 6000,
+    "Min_Price": 5000,
+    "Modal_Price": 5500,
+    "State": "Bihar",
+    "Variety": "Medium"
+   },
+   "last": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Onion",
+    "Commodity_Code": 23,
+    "District": "Unokoti",
+    "Grade": "Grade A",
+    "Market": "Pabiacherra APMC",
+    "Max_Price": 5300,
+    "Min_Price": 5300,
+    "Modal_Price": 5300,
+    "State": "Tripura",
+    "Variety": "Nasik"
+   }
   },
-  {
-   "name": "District",
-   "id": "District",
-   "type": "keyword"
+  "onion_date_iso": {
+   "status": 200,
+   "total": 580,
+   "count": 5,
+   "dates": [
+    "03/11/2026"
+   ],
+   "first": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Onion",
+    "Commodity_Code": 23,
+    "District": "Alappuzha",
+    "Grade": "FAQ",
+    "Market": "Cherthala Market",
+    "Max_Price": 4300,
+    "Min_Price": 4000,
+    "Modal_Price": 4200,
+    "State": "Keralam",
+    "Variety": "Onion"
+   },
+   "last": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Onion",
+    "Commodity_Code": 23,
+    "District": "Betul",
+    "Grade": "FAQ",
+    "Market": "Betul(F&V) APMC",
+    "Max_Price": 4200,
+    "Min_Price": 3500,
+    "Modal_Price": 3800,
+    "State": "Madhya Pradesh",
+    "Variety": "Onion"
+   }
   },
-  {
-   "name": "Grade",
-   "id": "Grade",
-   "type": "keyword"
+  "date_only_dmy": {
+   "status": 200,
+   "total": 16937,
+   "count": 5,
+   "dates": [
+    "03/11/2026"
+   ],
+   "first": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Pomegranate",
+    "Commodity_Code": 190,
+    "District": "Udhamsinghnagar",
+    "Grade": "Medium",
+    "Market": "Rudrapur APMC",
+    "Max_Price": 12000,
+    "Min_Price": 8000,
+    "Modal_Price": 9000,
+    "State": "Uttarakhand",
+    "Variety": "Other"
+   },
+   "last": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Pomegranate",
+    "Commodity_Code": 190,
+    "District": "Sangrur",
+    "Grade": "Medium",
+    "Market": "Bhawanigarh APMC",
+    "Max_Price": 10000,
+    "Min_Price": 9000,
+    "Modal_Price": 9500,
+    "State": "Punjab",
+    "Variety": "Other"
+   }
   },
-  {
-   "name": "Market",
-   "id": "Market",
-   "type": "keyword"
+  "date_only_dmy_2nov": {
+   "status": 200,
+   "total": 20501,
+   "count": 5,
+   "dates": [
+    "02/11/2026"
+   ],
+   "first": {
+    "Arrival_Date": "02/11/2026",
+    "Commodity": "Groundnut",
+    "Commodity_Code": 10,
+    "District": "Chhatarpur",
+    "Grade": "Non-FAQ",
+    "Market": "Chhatarpur APMC",
+    "Max_Price": 6900,
+    "Min_Price": 5810,
+    "Modal_Price": 6545,
+    "State": "Madhya Pradesh",
+    "Variety": "Big (With Shell)"
+   },
+   "last": {
+    "Arrival_Date": "02/11/2026",
+    "Commodity": "Coriander(Leaves)",
+    "Commodity_Code": 43,
+    "District": "Guna",
+    "Grade": "FAQ",
+    "Market": "Guna APMC",
+    "Max_Price": 15500,
+    "Min_Price": 7300,
+    "Modal_Price": 15025,
+    "State": "Madhya Pradesh",
+    "Variety": "Coriander"
+   }
   },
-  {
-   "name": "Max_Price",
-   "id": "Max_Price",
-   "type": "keyword"
-  },
-  {
-   "name": "Min_Price",
-   "id": "Min_Price",
-   "type": "keyword"
-  },
-  {
-   "name": "Modal_Price",
-   "id": "Modal_Price",
-   "type": "keyword"
-  },
-  {
-   "name": "State",
-   "id": "State",
-   "type": "keyword"
-  },
-  {
-   "name": "Variety",
-   "id": "Variety",
-   "type": "keyword"
+  "onion_maharashtra_dmy": {
+   "status": 200,
+   "total": 47,
+   "count": 47,
+   "dates": [
+    "03/11/2026"
+   ],
+   "first": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Onion",
+    "Commodity_Code": 23,
+    "District": "Nashik",
+    "Grade": "Local",
+    "Market": "Shivsiddha Govind Producer Company Ltd Sanchalit Khajgi Krushi Utpann Bajar Samati-Abhona-Kalwan",
+    "Max_Price": 5905,
+    "Min_Price": 1600,
+    "Modal_Price": 3950,
+    "State": "Maharashtra",
+    "Variety": "Other"
+   },
+   "last": {
+    "Arrival_Date": "03/11/2026",
+    "Commodity": "Onion",
+    "Commodity_Code": 23,
+    "District": "Nashik",
+    "Grade": "Local",
+    "Market": "Pimpalgaon Baswant(Saykheda) ",
+    "Max_Price": 4199,
+    "Min_Price": 3060,
+    "Modal_Price": 3750,
+    "State": "Maharashtra",
+    "Variety": "Unhali"
+   }
   }
- ],
- "sample": [
-  {
-   "Arrival_Date": "11/11/2009",
-   "Commodity": "Potato",
-   "Commodity_Code": "24",
-   "District": "Hooghly",
-   "Grade": "FAQ",
-   "Market": "Sheoraphuly",
-   "Max_Price": "1600",
-   "Min_Price": "1580",
-   "Modal_Price": "1580",
-   "State": "West Bengal",
-   "Variety": "Jyoti"
-  },
-  {
-   "Arrival_Date": "15/11/2009",
-   "Commodity": "Potato",
-   "Commodity_Code": "24",
-   "District": "Hooghly",
-   "Grade": "FAQ",
-   "Market": "Sheoraphuly",
-   "Max_Price": "1620",
-   "Min_Price": "1610",
-   "Modal_Price": "1610",
-   "State": "West Bengal",
-   "Variety": "Jyoti"
-  },
-  {
-   "Arrival_Date": "02/12/2009",
-   "Commodity": "Potato",
-   "Commodity_Code": "24",
-   "District": "Hooghly",
-   "Grade": "FAQ",
-   "Market": "Sheoraphuly",
-   "Max_Price": "1660",
-   "Min_Price": "1650",
-   "Modal_Price": "1650",
-   "State": "West Bengal",
-   "Variety": "Jyoti"
-  },
-  {
-   "Arrival_Date": "03/12/2009",
-   "Commodity": "Potato",
-   "Commodity_Code": "24",
-   "District": "Hooghly",
-   "Grade": "FAQ",
-   "Market": "Sheoraphuly",
-   "Max_Price": "1600",
-   "Min_Price": "1580",
-   "Modal_Price": "1580",
-   "State": "West Bengal",
-   "Variety": "Jyoti"
-  },
-  {
-   "Arrival_Date": "04/12/2009",
-   "Commodity": "Potato",
-   "Commodity_Code": "24",
-   "District": "Hooghly",
-   "Grade": "FAQ",
-   "Market": "Sheoraphuly",
-   "Max_Price": "1600",
-   "Min_Price": "1580",
-   "Modal_Price": "1580",
-   "State": "West Bengal",
-   "Variety": "Jyoti"
-  },
-  {
-   "Arrival_Date": "05/12/2009",
-   "Commodity": "Potato",
-   "Commodity_Code": "24",
-   "District": "Hooghly",
-   "Grade": "FAQ",
-   "Market": "Sheoraphuly",
-   "Max_Price": "1630",
-   "Min_Price": "1620",
-   "Modal_Price": "1620",
-   "State": "West Bengal",
-   "Variety": "Jyoti"
-  },
-  {
-   "Arrival_Date": "09/12/2009",
-   "Commodity": "Potato",
-   "Commodity_Code": "24",
-   "District": "Hooghly",
-   "Grade": "FAQ",
-   "Market": "Sheoraphuly",
-   "Max_Price": "1630",
-   "Min_Price": "1620",
-   "Modal_Price": "1620",
-   "State": "West Bengal",
-   "Variety": "Jyoti"
-  },
-  {
-   "Arrival_Date": "19/12/2009",
-   "Commodity": "Potato",
-   "Commodity_Code": "24",
-   "District": "Hooghly",
-   "Grade": "FAQ",
-   "Market": "Sheoraphuly",
-   "Max_Price": "1420",
-   "Min_Price": "1400",
-   "Modal_Price": "1400",
-   "State": "West Bengal",
-   "Variety": "Jyoti"
-  }
- ]
+ }
 }
