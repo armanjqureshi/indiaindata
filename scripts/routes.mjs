@@ -10,6 +10,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { MANDI_COMMODITIES, MANDI_HUB, mandiPath, stateLabel } from '../src/data/mandi.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const contentDir = path.resolve(__dirname, '../content')
@@ -253,6 +254,19 @@ export function getRoutes() {
   }
   routes.push({ path: '/edible-oil-price-today', title: 'Edible oil price today in India', description: 'All-India average retail and wholesale prices of mustard, groundnut, sunflower, soya and palm oil and vanaspati today, updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
   routes.push({ path: '/food-prices-today', title: 'Food prices today in India: vegetables, dal, atta, oil and milk', description: 'All-India average retail and wholesale prices of 23 kitchen staples today: tomato, onion, potato, rice, atta, dals, edible oils, sugar and milk. Updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
+
+  // Mandi (wholesale market) price pages, from the commodity files written by the India-runner job
+  routes.push({ path: MANDI_HUB.path, title: 'Mandi prices today in India: onion, tomato, potato, wheat and more', description: 'Wholesale mandi prices today for onion, tomato, potato, garlic, ginger, vegetables, wheat and pulses, by state, in rupees a quintal. Daily data from Agmarknet.', changefreq: 'daily', priority: 0.8 })
+  for (const c of MANDI_COMMODITIES) {
+    const f = path.join(contentDir, '..', 'live', 'mandi', `${c.slug}.json`)
+    if (!fs.existsSync(f)) continue
+    routes.push({ path: mandiPath(c), title: `${c.name} mandi price today in India`, description: `Wholesale ${c.lower} price today at mandis across India: the all-India median and the state-wise prices in rupees a quintal, with the change over time. Source: Agmarknet.`, changefreq: 'daily', priority: 0.7 })
+    const states = JSON.parse(fs.readFileSync(f, 'utf-8')).latest?.states || {}
+    for (const [st, v] of Object.entries(states)) {
+      if (v.markets < 3) continue
+      routes.push({ path: mandiPath(c, st), title: `${c.name} price in ${stateLabel(st)} today: mandi rates`, description: `Wholesale ${c.lower} price in ${stateLabel(st)} today: the state median, rates at individual mandis in rupees a quintal, and how it compares with the all-India price. Source: Agmarknet.`, changefreq: 'daily', priority: 0.6 })
+    }
+  }
 
   for (const [path, title, description] of [
     ['/states', 'Indian states ranked: GDP, per capita income and richest state', 'Rankings of Indian states by GSDP, per capita income and wealth, from the RBI Handbook of Statistics on Indian States.'],

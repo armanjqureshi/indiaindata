@@ -15,6 +15,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { MANDI_COMMODITIES } from '../../src/data/mandi.js'
+import { buildIndex } from './mandi-index.mjs'
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '../..')
 const DIR = path.join(ROOT, 'live', 'mandi')
@@ -145,6 +146,7 @@ async function main() {
   await Promise.all(Array.from({ length: CONCURRENCY }, async () => {
     while (next < list.length) { const c = list[next++]; await doCommodity(c, dates); console.log(`done ${c.slug}`) }
   }))
+  try { buildIndex() } catch (e) { log.errors.push(`index: ${e.message}`) }
   fs.writeFileSync(LOG, JSON.stringify(log, null, 1))
   console.log(JSON.stringify({ accepted: log.accepted.length, notes: log.notes.length, errors: log.errors.slice(0, 10) }, null, 1))
 }

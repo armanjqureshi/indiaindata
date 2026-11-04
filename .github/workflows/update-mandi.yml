@@ -35,6 +35,6 @@ jobs:
           BACKFILL_DAYS: ${{ inputs.backfill_days || '0' }}
           MANDI_ONLY: ${{ inputs.only || '' }}
       - name: Publish results
-        run: node scripts/data/push-via-api.mjs "Mandi prices [skip netlify]" live/mandi live/mandi-log.json
+        run: node scripts/data/push-via-api.mjs "Mandi prices [skip netlify]" live/mandi live/mandi-index.json live/mandi-log.json
         env:
           GITHUB_TOKEN: ${{ github.token }}

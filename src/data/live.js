@@ -34,13 +34,15 @@ function readInjected() {
 function snap(key) {
   if (isServer) {
     if (!serverSource) return null
-    const [kind, arg] = key.split(':')
+    const [kind, arg, arg2] = key.split(':')
     const v =
       kind === 'market' ? serverSource.market
       : kind === 'ipos' ? serverSource.ipos
       : kind === 'gmp' ? serverSource.gmp
       : kind === 'meta' ? serverSource.meta
       : kind === 'prices' ? serverSource.prices
+      : kind === 'mandi' ? serverSource.mandi(arg, arg2)
+      : kind === 'mandiindex' ? serverSource.mandiIndex
       : kind === 'ipo' ? serverSource.details[arg] ?? null
       : kind === 'row' ? serverSource.rowsBySlug[arg] ?? null
       : null
@@ -56,6 +58,10 @@ export const getGmpSnapshot = () => snap('gmp') || { entries: [] }
 export const getDetailSnapshot = (slug) => snap('ipo:' + slug)
 export const getRowSnapshot = (slug) => snap('row:' + slug)
 export const getPricesSnapshot = () => snap('prices') || { history: {} }
+// Mandi prices: one file per commodity (live/mandi/<slug>.json). Pages embed a trimmed copy
+// (state pages: that state only) and swap in the full file once it loads.
+export const getMandiSnapshot = (slug, state) => snap(state ? `mandi:${slug}:${state}` : `mandi:${slug}`)
+export const getMandiIndexSnapshot = () => snap('mandiindex') || { items: {} }
 
 const sources = (p) => [
   `https://cdn.jsdelivr.net/gh/${REPO}@main/${p}`,
@@ -154,6 +160,8 @@ export function withIntraday(market, intra) {
 }
 export const useIpos = () => useLive('live/ipos.json', getIposSnapshot())
 export const usePrices = () => useLive('live/prices.json', getPricesSnapshot())
+export const useMandi = (slug, state) => useLive(`live/mandi/${slug}.json`, getMandiSnapshot(slug, state))
+export const useMandiIndex = () => useLive('live/mandi-index.json', getMandiIndexSnapshot())
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------
 export function todayIST() {

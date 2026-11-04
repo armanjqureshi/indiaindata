@@ -20,6 +20,8 @@ import IpoSubscriptionPage from './pages/IpoSubscriptionPage.jsx'
 import { StateGdp, StatePerCapita, RichestState, StatesHub, StatePopulation, PoorestState } from './pages/StatePages.jsx'
 import { StaplePricePage, EdibleOilPricePage, FoodPricesHub } from './pages/PricePages.jsx'
 import { PRICE_PAGES, OIL_PAGE, PRICES_HUB } from './data/prices.js'
+import { MandiHub, MandiCommodityPage, MandiStatePage } from './pages/MandiPages.jsx'
+import { MANDI_HUB } from './data/mandi.js'
 import IpoDashboardPage from './pages/IpoDashboardPage.jsx'
 import SmeGmpPage from './pages/SmeGmpPage.jsx'
 import IpoDetailPage from './pages/IpoDetailPage.jsx'
@@ -85,6 +87,9 @@ export default function App() {
           <Route path={PRICES_HUB.path} element={<FoodPricesHub />} />
           <Route path={OIL_PAGE.path} element={<EdibleOilPricePage />} />
           {PRICE_PAGES.map((p) => <Route key={p.path} path={p.path} element={<StaplePricePage path={p.path} />} />)}
+          <Route path={MANDI_HUB.path} element={<MandiHub />} />
+          <Route path="/mandi-price/:slug" element={<MandiCommodityPage />} />
+          <Route path="/mandi-price/:slug/:state" element={<MandiStatePage />} />
           <Route path="/ipo-gmp/:slug" element={<IpoGmpPage />} />
           <Route path="/ipo-subscription-status" element={<IpoSubscriptionPage />} />
           <Route path="/ipos/:slug" element={<IpoDetailPage />} />

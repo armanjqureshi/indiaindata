@@ -1,12 +1,26 @@
 // Build-time only: loads /live into the snapshot store used while
 // prerendering. Imported by entry-server.jsx, never by the browser bundle.
 import { __setServerSource } from './live.js'
+import { stateSlug } from './mandi.js'
 
 const first = (g, d) => Object.values(g)[0]?.default || d
 const market = first(import.meta.glob('/live/market.json', { eager: true }), { items: {}, history: {} })
 const ipos = first(import.meta.glob('/live/ipos.json', { eager: true }), { ipos: [] })
 const gmp = first(import.meta.glob('/live/gmp.json', { eager: true }), { entries: [] })
 const prices = first(import.meta.glob('/live/prices.json', { eager: true }), { history: {} })
+const mandiFiles = Object.fromEntries(
+  Object.entries(import.meta.glob('/live/mandi/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
+)
+const mandiIndex = first(import.meta.glob('/live/mandi-index.json', { eager: true }), { items: {} })
+// Trimmed copy for one page: recent history only, market lists only for the page's own state.
+function mandiFor(slug, st) {
+  const d = mandiFiles[slug]
+  if (!d?.latest) return null
+  const keep = st ? Object.keys(d.latest.states).filter((s) => stateSlug(s) === st) : []
+  const states = Object.fromEntries(Object.entries(d.latest.states).map(([s, v]) => [s, keep.includes(s) ? v : { median: v.median, min: v.min, max: v.max, markets: v.markets }]))
+  const hs = Object.fromEntries(Object.entries(d.history.states || {}).filter(([s]) => keep.includes(s)).map(([s, h]) => [s, h.slice(-120)]))
+  return { ...d, latest: { ...d.latest, states }, history: { india: d.history.india.slice(-400), states: hs } }
+}
 const archive = first(import.meta.glob('/live/ipos-archive.json', { eager: true }), { ipos: [] })
 const details = Object.fromEntries(
   Object.entries(import.meta.glob('/live/ipo/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
@@ -19,6 +33,8 @@ __setServerSource({
   gmp,
   prices: { ...prices, history: Object.fromEntries(Object.entries(prices.history || {}).map(([k, v]) => [k, Object.fromEntries(Object.entries(v).map(([n, h]) => [n, h.slice(-400)]))])) },
   details,
+  mandi: mandiFor,
+  mandiIndex,
   rowsBySlug: Object.fromEntries([...archive.ipos, ...ipos.ipos].map((r) => [r.slug, r])),
   meta: { iposTotal: ipos.ipos.length + archive.ipos.length, iposUpdatedAt: ipos.updatedAt || null },
 })
