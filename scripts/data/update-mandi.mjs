@@ -16,6 +16,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { MANDI_COMMODITIES } from '../../src/data/mandi.js'
 import { buildIndex } from './mandi-index.mjs'
+import { pushFiles } from './gh-push.mjs'
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '../..')
 const DIR = path.join(ROOT, 'live', 'mandi')
@@ -130,7 +131,15 @@ async function doCommodity(c, dates) {
     store.source = { name: 'Agmarknet, Directorate of Marketing and Inspection, via data.gov.in', url: 'https://agmarknet.gov.in/' }
     store.updatedAt = new Date().toISOString()
     fs.mkdirSync(DIR, { recursive: true })
-    fs.writeFileSync(path.join(DIR, `${c.slug}.json`), JSON.stringify(store))
+    const file = path.join(DIR, `${c.slug}.json`)
+    fs.writeFileSync(file, JSON.stringify(store))
+    // publish each commodity as soon as it is done, so a long run never loses its work
+    if (process.env.GITHUB_TOKEN && process.env.GITHUB_REPOSITORY) {
+      try {
+        const r = await pushFiles('Mandi prices [skip netlify]', [path.join('live', 'mandi', `${c.slug}.json`)])
+        if (r.some(([, st]) => st !== 'pushed' && st !== 'unchanged')) log.errors.push(`${c.slug}: publish ${r[0][1]}`)
+      } catch (e) { log.errors.push(`${c.slug}: publish ${e.message}`) }
+    }
   }
 }
 

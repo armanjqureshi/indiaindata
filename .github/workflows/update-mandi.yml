@@ -34,6 +34,7 @@ jobs:
           DATAGOVIN_API_KEY: ${{ secrets.DATAGOVIN_API_KEY }}
           BACKFILL_DAYS: ${{ inputs.backfill_days || '0' }}
           MANDI_ONLY: ${{ inputs.only || '' }}
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Publish results
         run: node scripts/data/push-via-api.mjs "Mandi prices [skip netlify]" live/mandi live/mandi-index.json live/mandi-log.json
         env:
