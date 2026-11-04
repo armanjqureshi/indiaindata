@@ -1,5 +1,5 @@
 {
- "runAt": "2026-11-04T13:35:12.157Z",
+ "runAt": "2026-11-04T14:05:25.670Z",
  "hasKey": true,
  "dns": {
   "api.data.gov.in": "ECONNREFUSED",
@@ -11,11 +11,203 @@
   "https://www.data.gov.in/": 200,
   "https://agmarknet.gov.in/": 200
  },
- "status": 403,
+ "status": 200,
  "keys": [
-  "error"
+  "index_name",
+  "title",
+  "desc",
+  "org_type",
+  "org",
+  "sector",
+  "source",
+  "catalog_uuid",
+  "visualizable",
+  "active",
+  "created",
+  "updated",
+  "created_date",
+  "updated_date",
+  "external_ws",
+  "external_ws_url",
+  "target_bucket",
+  "field",
+  "field_dependent",
+  "order",
+  "field_exposed",
+  "message",
+  "version",
+  "status",
+  "total",
+  "count",
+  "limit",
+  "offset",
+  "records"
  ],
- "errorBody": "\"Key not authorised\"",
- "keyLength": 48,
- "sample": []
+ "keyLength": 56,
+ "total": 82893202,
+ "count": 20,
+ "updated": "2026-11-03T23:35:10Z",
+ "fields": [
+  {
+   "name": "Arrival_Date",
+   "id": "Arrival_Date",
+   "type": "date"
+  },
+  {
+   "name": "Commodity",
+   "id": "Commodity",
+   "type": "keyword"
+  },
+  {
+   "name": "Commodity_Code",
+   "id": "Commodity_Code",
+   "type": "keyword"
+  },
+  {
+   "name": "District",
+   "id": "District",
+   "type": "keyword"
+  },
+  {
+   "name": "Grade",
+   "id": "Grade",
+   "type": "keyword"
+  },
+  {
+   "name": "Market",
+   "id": "Market",
+   "type": "keyword"
+  },
+  {
+   "name": "Max_Price",
+   "id": "Max_Price",
+   "type": "keyword"
+  },
+  {
+   "name": "Min_Price",
+   "id": "Min_Price",
+   "type": "keyword"
+  },
+  {
+   "name": "Modal_Price",
+   "id": "Modal_Price",
+   "type": "keyword"
+  },
+  {
+   "name": "State",
+   "id": "State",
+   "type": "keyword"
+  },
+  {
+   "name": "Variety",
+   "id": "Variety",
+   "type": "keyword"
+  }
+ ],
+ "sample": [
+  {
+   "Arrival_Date": "11/11/2009",
+   "Commodity": "Potato",
+   "Commodity_Code": "24",
+   "District": "Hooghly",
+   "Grade": "FAQ",
+   "Market": "Sheoraphuly",
+   "Max_Price": "1600",
+   "Min_Price": "1580",
+   "Modal_Price": "1580",
+   "State": "West Bengal",
+   "Variety": "Jyoti"
+  },
+  {
+   "Arrival_Date": "15/11/2009",
+   "Commodity": "Potato",
+   "Commodity_Code": "24",
+   "District": "Hooghly",
+   "Grade": "FAQ",
+   "Market": "Sheoraphuly",
+   "Max_Price": "1620",
+   "Min_Price": "1610",
+   "Modal_Price": "1610",
+   "State": "West Bengal",
+   "Variety": "Jyoti"
+  },
+  {
+   "Arrival_Date": "02/12/2009",
+   "Commodity": "Potato",
+   "Commodity_Code": "24",
+   "District": "Hooghly",
+   "Grade": "FAQ",
+   "Market": "Sheoraphuly",
+   "Max_Price": "1660",
+   "Min_Price": "1650",
+   "Modal_Price": "1650",
+   "State": "West Bengal",
+   "Variety": "Jyoti"
+  },
+  {
+   "Arrival_Date": "03/12/2009",
+   "Commodity": "Potato",
+   "Commodity_Code": "24",
+   "District": "Hooghly",
+   "Grade": "FAQ",
+   "Market": "Sheoraphuly",
+   "Max_Price": "1600",
+   "Min_Price": "1580",
+   "Modal_Price": "1580",
+   "State": "West Bengal",
+   "Variety": "Jyoti"
+  },
+  {
+   "Arrival_Date": "04/12/2009",
+   "Commodity": "Potato",
+   "Commodity_Code": "24",
+   "District": "Hooghly",
+   "Grade": "FAQ",
+   "Market": "Sheoraphuly",
+   "Max_Price": "1600",
+   "Min_Price": "1580",
+   "Modal_Price": "1580",
+   "State": "West Bengal",
+   "Variety": "Jyoti"
+  },
+  {
+   "Arrival_Date": "05/12/2009",
+   "Commodity": "Potato",
+   "Commodity_Code": "24",
+   "District": "Hooghly",
+   "Grade": "FAQ",
+   "Market": "Sheoraphuly",
+   "Max_Price": "1630",
+   "Min_Price": "1620",
+   "Modal_Price": "1620",
+   "State": "West Bengal",
+   "Variety": "Jyoti"
+  },
+  {
+   "Arrival_Date": "09/12/2009",
+   "Commodity": "Potato",
+   "Commodity_Code": "24",
+   "District": "Hooghly",
+   "Grade": "FAQ",
+   "Market": "Sheoraphuly",
+   "Max_Price": "1630",
+   "Min_Price": "1620",
+   "Modal_Price": "1620",
+   "State": "West Bengal",
+   "Variety": "Jyoti"
+  },
+  {
+   "Arrival_Date": "19/12/2009",
+   "Commodity": "Potato",
+   "Commodity_Code": "24",
+   "District": "Hooghly",
+   "Grade": "FAQ",
+   "Market": "Sheoraphuly",
+   "Max_Price": "1420",
+   "Min_Price": "1400",
+   "Modal_Price": "1400",
+   "State": "West Bengal",
+   "Variety": "Jyoti"
+  }
+ ]
 }
