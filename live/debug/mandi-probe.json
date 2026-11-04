@@ -1,5 +1,5 @@
 {
- "runAt": "2026-11-04T13:33:54.635Z",
+ "runAt": "2026-11-04T13:35:12.157Z",
  "hasKey": true,
  "dns": {
   "api.data.gov.in": "ECONNREFUSED",
@@ -15,5 +15,7 @@
  "keys": [
   "error"
  ],
+ "errorBody": "\"Key not authorised\"",
+ "keyLength": 48,
  "sample": []
 }
