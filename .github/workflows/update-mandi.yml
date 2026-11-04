@@ -1,0 +1,40 @@
+name: Update mandi prices
+# data.gov.in only answers requests from inside India, so this job runs on the
+# self-hosted runner (the PC in India). If that PC is off, the run waits in the queue.
+# It writes live/mandi/<commodity>.json (and a log); the site reads them at runtime.
+on:
+  schedule:
+    - cron: '30 0 * * *'    # 06:00 IST, data.gov.in refreshes about 05:00 IST
+    - cron: '30 14 * * *'   # 20:00 IST, late reports
+  workflow_dispatch:
+    inputs:
+      backfill_days:
+        description: 'Days of history to fetch before the latest day (0 for the normal daily run)'
+        default: '0'
+      only:
+        description: 'Comma-separated commodity slugs to limit the run (blank for all)'
+        default: ''
+permissions:
+  contents: write
+concurrency:
+  group: mandi-data
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: self-hosted
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch and summarise mandi prices
+        run: node scripts/data/update-mandi.mjs
+        env:
+          DATAGOVIN_API_KEY: ${{ secrets.DATAGOVIN_API_KEY }}
+          BACKFILL_DAYS: ${{ inputs.backfill_days || '0' }}
+          MANDI_ONLY: ${{ inputs.only || '' }}
+      - name: Publish results
+        run: node scripts/data/push-via-api.mjs "Mandi prices [skip netlify]" live/mandi live/mandi-log.json
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
