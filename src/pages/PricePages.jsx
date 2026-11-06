@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
+import DataPanel from '../components/DataTools.jsx'
 import ChartCard from '../components/ChartCard.jsx'
 import { usePrices, fmt } from '../data/live.js'
 import { STAPLES, PRICE_GROUPS, PRICE_PAGES, OIL_PAGE, PRICES_HUB, unitOf } from '../data/prices.js'
@@ -145,6 +146,23 @@ function GroupTable({ p, items, highlight }) {
   )
 }
 
+/* ---------- downloads ---------- */
+const DOCA_URL = 'https://fcainfoweb.nic.in/'
+const TODAY_COLS = [
+  { key: 'item', label: 'Item' }, { key: 'unit', label: 'Retail unit' }, { key: 'retail', label: 'Retail price (Rs)' }, { key: 'retailDate', label: 'Retail date' },
+  { key: 'wholesale', label: 'Wholesale price (Rs a quintal)' }, { key: 'wholesaleDate', label: 'Wholesale date' },
+]
+const todayRows = (p, items) => items.map((s) => ({ item: s.name, unit: unitOf(s), retail: p.retail?.prices?.[s.doca] ?? null, retailDate: p.retail?.asOf, wholesale: p.wholesale?.prices?.[s.doca] ?? null, wholesaleDate: p.wholesale?.asOf }))
+function historyRows(p, doca) {
+  const r = Object.fromEntries(p.history?.retail?.[doca] || []), w = Object.fromEntries(p.history?.wholesale?.[doca] || [])
+  return [...new Set([...Object.keys(r), ...Object.keys(w)])].sort().map((d) => ({ date: d, retail: r[d] ?? null, wholesale: w[d] ?? null }))
+}
+const pricesDataset = (name, description, path, asOf, keywords) => ({
+  name, description, path, asOf, keywords,
+  source: 'Department of Consumer Affairs, Price Monitoring Division', sourceUrl: DOCA_URL, liveFile: 'live/prices.json',
+  variables: ['All-India average retail price', 'All-India average wholesale price'],
+})
+
 /* ---------- one item ---------- */
 export function StaplePricePage({ path }) {
   const page = PRICE_PAGES.find((x) => x.path === path)
@@ -189,6 +207,13 @@ export function StaplePricePage({ path }) {
           [`Why is ${lower} cheaper or dearer in my city?`, `The figure is an average of prices reported by 555 market centres across India. Prices differ by city, market and quality, so the price in your area can be above or below it.`],
           ['How often is this price updated?', 'Every day. The department publishes new figures each evening, and prices reported on Saturdays, Sundays and holidays are provisional until verified on the next working day.'],
         ]} />
+        <DataPanel
+          dataset={pricesDataset(`${label} price in India today: daily all-India average`, `Daily all-India average retail price (Rs a ${unit}) and wholesale price (Rs a quintal) of ${lower}, from the Department of Consumer Affairs Price Monitoring System, recorded by India in Data every day.`, path, asOf, [`${lower} price today`, `${lower} price in India`])}
+          csv={[
+            { filename: `india-in-data-${path.slice(1)}-history`, label: `${label} price history (CSV)`, columns: [{ key: 'date', label: 'Date' }, { key: 'retail', label: `Retail (Rs a ${unit})` }, { key: 'wholesale', label: 'Wholesale (Rs a quintal)' }], rows: historyRows(p, page.doca) },
+            { filename: 'india-in-data-food-prices-today', label: `All ${STAPLES.length} staples today (CSV)`, columns: TODAY_COLS, rows: todayRows(p, STAPLES) },
+          ]}
+        />
         <About firstDay={hist[0]?.[0]} />
       </section>
     </>
@@ -218,6 +243,10 @@ export function EdibleOilPricePage() {
           ['Which cooking oil is cheapest?', lo ? `Among the oils the department tracks, packed ${lo.s.name.split(',')[0].toLowerCase()} had the lowest all-India average retail price, ${r2(lo.v)} a kg, on ${longDate(asOf)}.` : 'See the table for the latest figures.'],
           ['Are these prices for a litre or a kilo?', 'The department reports packed oil prices in rupees a kilo. A litre of oil weighs a little less than a kilo, about 0.91 kg, so the price a litre is lower.'],
         ]} />
+        <DataPanel
+          dataset={pricesDataset('Edible oil prices in India today: daily all-India average', 'Daily all-India average retail and wholesale prices of packed mustard, groundnut, sunflower, soya and palm oil and vanaspati, from the Department of Consumer Affairs Price Monitoring System, recorded by India in Data every day.', OIL_PAGE.path, asOf, ['edible oil price today', 'mustard oil price today'])}
+          csv={{ filename: 'india-in-data-edible-oil-prices-today', label: 'Edible oil prices today (CSV)', columns: TODAY_COLS, rows: todayRows(p, oils) }}
+        />
         <About firstDay={p.history?.retail?.['Mustard Oil (Packed)']?.[0]?.[0]} />
       </section>
     </>
@@ -258,6 +287,10 @@ export function FoodPricesHub() {
           </div>
         ))}
         <p className="mt-3 text-xs text-ink/60">Retail in ₹ a kg (milk ₹ a litre). Wholesale is published in ₹ a quintal (100 kg); “wholesale a kg” is that figure divided by 100. Change is against the previous report.</p>
+        <DataPanel
+          dataset={pricesDataset('Food prices today in India: daily all-India average prices of kitchen staples', `Daily all-India average retail and wholesale prices of ${STAPLES.length} kitchen staples, including tomato, onion, potato, rice, atta, dals, edible oils, sugar and milk, from the Department of Consumer Affairs Price Monitoring System, recorded by India in Data every day.`, PRICES_HUB.path, asOf, ['food prices today', 'vegetable prices today', 'kitchen staples prices India'])}
+          csv={{ filename: 'india-in-data-food-prices-today', label: `All ${STAPLES.length} staples today (CSV)`, columns: TODAY_COLS, rows: todayRows(p, STAPLES) }}
+        />
         <About firstDay={p.history?.retail?.Tomato?.[0]?.[0]} />
       </section>
     </>

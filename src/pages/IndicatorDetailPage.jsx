@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
 import ChartCard from '../components/ChartCard.jsx'
+import DataPanel from '../components/DataTools.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
 import NotFound from './NotFound.jsx'
 import {
@@ -88,6 +89,22 @@ export default function IndicatorDetailPage() {
             </p>
           </div>
         </div>
+        <DataPanel
+          dataset={{
+            name: `${indicator.name}, India`,
+            description: `${indicator.description} Latest value ${indicator.currentValue} as of ${asOfLabel}. Series compiled by India in Data from ${indicator.source}.`,
+            path: `/indicators/${indicator.slug}`,
+            asOf: indicator.asOf,
+            source: indicator.source,
+            variables: [indicator.name],
+            keywords: [indicator.name, category?.name, 'India'].filter(Boolean),
+          }}
+          csv={Array.isArray(indicator.chart?.data) && indicator.chart.data.length ? {
+            filename: `india-in-data-${indicator.slug}`,
+            columns: [indicator.chart.xKey, ...(indicator.chart.dataKeys || [])],
+            rows: indicator.chart.data,
+          } : undefined}
+        />
       </div>
 
       {related.length > 0 && (

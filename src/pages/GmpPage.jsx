@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
+import DataPanel from '../components/DataTools.jsx'
+import { GMP_COLS, gmpRow } from '../components/ipo/ipoData.js'
 import { useIpos, useGmp, gmpFor, useTodayIST, ipoStatus, istDateOf, fmt } from '../data/live.js'
 import { gainClass } from '../components/ipo/ipoUtil.js'
 
@@ -134,6 +136,18 @@ export default function GmpPage() {
         <p className="mt-8 max-w-3xl text-sm text-ink/60">
           See the live <Link to="/ipo-subscription-status" className="text-brand hover:underline">IPO subscription status</Link> and the <Link to="/ipo-dashboard" className="text-brand hover:underline">IPO dashboard</Link>.
         </p>
+        <DataPanel
+          dataset={{
+            name: 'IPO GMP today: reported grey market premium for mainboard IPOs in India',
+            description: 'Reported grey market premium (GMP) for open, upcoming and awaiting-listing mainboard IPOs in India, with the named source and date of each figure, and a record of the last reported GMP against the actual listing gain. GMP is unofficial and unverified. Compiled by India in Data.',
+            path: '/ipo-gmp', asOf: istDateOf(data.updatedAt), source: 'Named published GMP sources (listed per figure); listing prices from NSE', liveFile: 'live/gmp.json',
+            variables: ['Reported GMP', 'GMP as a share of issue price', 'Listing gain'], keywords: ['IPO GMP today', 'grey market premium'],
+          }}
+          csv={[
+            { filename: `india-in-data-ipo-gmp-${istDateOf(data.updatedAt) || 'latest'}`, label: 'Reported GMP, open and upcoming IPOs (CSV)', columns: GMP_COLS, rows: rows.map((i) => gmpRow(i, bySlug[i.slug])) },
+            { filename: 'india-in-data-gmp-vs-listing-gain', label: 'GMP against listing gain record (CSV)', columns: GMP_COLS, rows: tracked.map((i) => gmpRow(i, bySlug[i.slug])) },
+          ]}
+        />
       </section>
     </>
   )

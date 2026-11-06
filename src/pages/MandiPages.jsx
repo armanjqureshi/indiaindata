@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
 import ChartCard from '../components/ChartCard.jsx'
+import DataPanel from '../components/DataTools.jsx'
 import NotFound from './NotFound.jsx'
 import { useMandi, useMandiIndex, fmt } from '../data/live.js'
 import { MANDI_COMMODITIES, MANDI_HUB, bySlug, mandiPath, stateLabel, stateSlug } from '../data/mandi.js'
@@ -112,6 +113,15 @@ function About() {
 
 const NotTracked = () => <NotFound />
 
+const AGM = 'https://agmarknet.gov.in/'
+const mandiDataset = (name, description, path, asOf, liveFile, keywords) => ({
+  name, description, path, asOf, liveFile, keywords,
+  source: SRC_NAME, sourceUrl: AGM,
+  variables: ['Median of market modal prices (Rs a quintal)', 'Minimum price', 'Maximum price', 'Number of reporting mandis'],
+})
+const HIST_COLS = [{ key: 'date', label: 'Date' }, { key: 'median', label: 'Median modal price (Rs a quintal)' }, { key: 'markets', label: 'Reporting mandis' }]
+const histRows = (h) => (h || []).map(([date, median, markets]) => ({ date, median, markets }))
+
 function stateKey(d, stSlug) {
   return Object.keys(d?.latest?.states || {}).find((s) => stateSlug(s) === stSlug)
 }
@@ -191,6 +201,15 @@ export function MandiCommodityPage() {
           ['Is the mandi price what I pay at the shop?', `No. The mandi price is what traders pay at the wholesale market. Retail prices add transport, handling, market fees and the seller's margin, so they are usually higher.`],
           ['How often is this updated?', 'Daily. Markets report through the day and the data refreshes overnight, so a day can be revised until the next morning.'],
         ]} />
+        {latest && (
+          <DataPanel
+            dataset={mandiDataset(`${c.name} mandi prices in India, by state`, `Daily wholesale ${lower} prices at agricultural markets (mandis) across India: the all-India and state-wise median of market modal prices in rupees a quintal, with the number of reporting mandis. From Agmarknet via data.gov.in, compiled by India in Data.`, mandiPath(c), latest.date, `live/mandi/${slug}.json`, [`${lower} mandi price`, `${lower} price today`])}
+            csv={[
+              { filename: `india-in-data-${slug}-mandi-price-by-state-${latest.date}`, label: 'State-wise prices today (CSV)', columns: [{ key: 'state', label: 'State' }, { key: 'median', label: 'Median modal price (Rs a quintal)' }, { key: 'min', label: 'Lowest minimum price' }, { key: 'max', label: 'Highest maximum price' }, { key: 'markets', label: 'Reporting mandis' }, { key: 'date', label: 'Date' }], rows: states.map((x) => ({ state: stateLabel(x.s), median: x.median, min: x.min, max: x.max, markets: x.markets, date: latest.date })) },
+              { filename: `india-in-data-${slug}-mandi-price-history`, label: 'All-India daily history (CSV)', columns: HIST_COLS, rows: histRows(hist) },
+            ]}
+          />
+        )}
         <About />
       </section>
     </>
@@ -279,6 +298,15 @@ export function MandiStatePage() {
           [`Is ${label} dearer than the rest of India?`, v && india ? `${label}'s median of ${inr0(v.median)} a quintal is ${pct(gap)} against the all-India median of ${inr0(india.median)}.` : 'See the figures above.'],
           ['Is the mandi price what I pay at the shop?', 'No. The mandi price is what traders pay at the wholesale market. Retail prices add transport, market fees and the seller’s margin, so they are higher.'],
         ]} />
+        {v && (
+          <DataPanel
+            dataset={mandiDataset(`${c.name} mandi prices in ${label}`, `Daily wholesale ${lower} prices at mandis in ${label}: minimum, maximum and modal price at each reporting market, and the state median, in rupees a quintal. From Agmarknet via data.gov.in, compiled by India in Data.`, mandiPath(c, st), d.latest.date, `live/mandi/${slug}.json`, [`${lower} price in ${label}`, `${lower} mandi rate ${label}`])}
+            csv={[
+              { filename: `india-in-data-${slug}-${stSlug}-mandi-prices-${d.latest.date}`, label: `Mandi-wise prices in ${label} (CSV)`, columns: [{ key: 'market', label: 'Mandi' }, { key: 'district', label: 'District' }, { key: 'min', label: 'Min (Rs a quintal)' }, { key: 'max', label: 'Max (Rs a quintal)' }, { key: 'modal', label: 'Modal (Rs a quintal)' }, { key: 'date', label: 'Date' }], rows: list.map((m) => ({ ...m, date: d.latest.date })) },
+              { filename: `india-in-data-${slug}-${stSlug}-mandi-price-history`, label: `${label} daily history (CSV)`, columns: HIST_COLS, rows: histRows(hist) },
+            ]}
+          />
+        )}
         <About />
       </section>
     </>
@@ -317,6 +345,10 @@ export function MandiHub() {
         </div>
         <p className="mt-3 text-xs text-ink/60">Median of market modal prices across all reporting mandis, rupees a quintal (100 kg). Change is against the previous day.</p>
         <p className="mt-4 text-sm"><Link to={PRICES_HUB.path} className="text-brand hover:underline">Retail food prices today</Link></p>
+        <DataPanel
+          dataset={mandiDataset('Mandi prices today in India', 'Daily all-India median wholesale prices at agricultural markets (mandis) for onion, tomato, potato, garlic, ginger and other vegetables, wheat and pulses, in rupees a quintal. From Agmarknet via data.gov.in, compiled by India in Data.', MANDI_HUB.path, idx?.asOf, 'live/mandi-index.json', ['mandi prices today', 'mandi bhav'])}
+          csv={{ filename: `india-in-data-mandi-prices-${idx?.asOf || 'latest'}`, label: 'All commodities today (CSV)', columns: [{ key: 'name', label: 'Commodity' }, { key: 'median', label: 'All-India median modal price (Rs a quintal)' }, { key: 'markets', label: 'Reporting mandis' }, { key: 'states', label: 'States' }, { key: 'date', label: 'Date' }], rows: MANDI_COMMODITIES.filter((c) => items[c.slug]).map((c) => ({ ...items[c.slug], name: c.name })) }}
+        />
         <About />
       </section>
     </>

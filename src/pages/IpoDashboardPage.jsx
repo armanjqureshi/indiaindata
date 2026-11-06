@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
+import DataPanel from '../components/DataTools.jsx'
+import { IPO_COLS, ipoRow, IPO_SOURCE, IPO_SOURCE_URL } from '../components/ipo/ipoData.js'
 import { useIpos, useGmp, gmpFor, useTodayIST, ipoStatus, istDateOf, fmt } from '../data/live.js'
 import { gainClass, priceLabel, BOARD_LABEL } from '../components/ipo/ipoUtil.js'
 import IpoBrowser from '../components/ipo/IpoBrowser.jsx'
@@ -216,6 +218,15 @@ export default function IpoDashboardPage() {
         <p className="mt-10 max-w-3xl text-sm text-ink/70">
           More: <Link to="/ipo-subscription-status" className="text-brand hover:underline">IPO subscription status</Link>, <Link to="/ipo-gmp" className="text-brand hover:underline">IPO GMP today</Link> and <Link to="/sme-ipo-gmp" className="text-brand hover:underline">SME IPO GMP</Link>.
         </p>
+        <DataPanel
+          dataset={{
+            name: 'Indian IPOs: open, upcoming and listed, with subscription and listing gains',
+            description: 'Every mainboard and SME IPO tracked on NSE: dates, price band, issue price, lot size, issue size, subscription multiple, listing-day prices and listing gain. Compiled by India in Data from NSE and BSE data.',
+            path: '/ipo-dashboard', asOf: istDateOf(data.updatedAt), source: IPO_SOURCE, sourceUrl: IPO_SOURCE_URL, liveFile: 'live/ipos.json',
+            variables: ['Subscription (times)', 'Issue price', 'Listing gain'], keywords: ['IPO dashboard', 'upcoming IPO', 'IPO listing gain'],
+          }}
+          csv={{ filename: `india-in-data-ipos-${istDateOf(data.updatedAt) || 'latest'}`, label: 'All IPOs (CSV)', columns: IPO_COLS, rows: ipos.map(ipoRow) }}
+        />
       </section>
     </>
   )

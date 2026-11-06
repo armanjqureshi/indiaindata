@@ -16,6 +16,9 @@ import {
   Legend,
 } from 'recharts'
 import { sectionColorMap } from '../data/content.js'
+import { CsvButton } from './DataTools.jsx'
+
+const slugify = (t) => String(t || 'chart').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80) || 'chart'
 
 const STACK_PALETTE = ['rgb(var(--blogs))', 'rgb(var(--news))', 'rgb(var(--economy))', 'rgb(var(--society))', 'rgb(var(--ink) / 0.5)']
 const PIE_PALETTE = ['rgb(var(--blogs))', 'rgb(var(--news))', 'rgb(var(--economy))', 'rgb(var(--society))', 'rgb(var(--market))']
@@ -159,12 +162,12 @@ export default function ChartCard({ chart, sectionSlug = 'blogs', caption }) {
       )}
       <div className="flex flex-wrap items-center justify-between gap-2 border-t border-ink/10 bg-paper px-5 py-2.5 text-xs text-ink/50 sm:px-6">
         <span>Source: {chart.source}</span>
-        <span className="inline-flex items-center gap-1 font-medium text-brand">
-          <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13" />
-          </svg>
-          Share or embed this chart
-        </span>
+        <CsvButton
+          filename={`india-in-data-${slugify(chart.title)}`}
+          columns={[chart.type === 'pie' ? chart.nameKey || 'name' : chart.xKey, ...(chart.dataKeys || [])]}
+          rows={Array.isArray(chart.data) ? chart.data : []}
+          label="Download data (CSV)"
+        />
       </div>
     </figure>
   )

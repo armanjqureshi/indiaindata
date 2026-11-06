@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
+import DataPanel from '../components/DataTools.jsx'
+import { GMP_COLS, gmpRow, IPO_COLS, ipoRow } from '../components/ipo/ipoData.js'
 import { useIpos, useGmp, gmpFor, useTodayIST, ipoStatus, istDateOf, fmt } from '../data/live.js'
 import { gainClass } from '../components/ipo/ipoUtil.js'
 
@@ -205,6 +207,18 @@ export default function SmeGmpPage() {
         <p className="mt-8 max-w-3xl text-sm text-ink/60">
           Mainboard issues are on the <Link to="/ipo-gmp" className="text-brand hover:underline">IPO GMP page</Link>. See also <Link to="/ipo-subscription-status" className="text-brand hover:underline">IPO subscription status</Link> and the <Link to="/ipo-dashboard" className="text-brand hover:underline">IPO dashboard</Link>.
         </p>
+        <DataPanel
+          dataset={{
+            name: 'SME IPO GMP and listing gains on NSE Emerge',
+            description: 'Reported grey market premium for SME IPOs on NSE Emerge with the source and date of each figure, and the listing record of SME IPOs: subscription, issue price and listing gain. GMP is unofficial and unverified. Compiled by India in Data from NSE data and named GMP sources.',
+            path: '/sme-ipo-gmp', asOf: istDateOf(data.updatedAt), source: 'NSE Emerge issue and listing data; named published GMP sources', liveFile: 'live/ipos.json',
+            variables: ['Reported GMP', 'Subscription', 'Listing gain'], keywords: ['SME IPO GMP', 'NSE Emerge IPO'],
+          }}
+          csv={[
+            { filename: `india-in-data-sme-ipo-gmp-${istDateOf(data.updatedAt) || 'latest'}`, label: 'Reported GMP, open and upcoming SME IPOs (CSV)', columns: GMP_COLS, rows: live.map((i) => gmpRow(i, latest(i.slug))) },
+            { filename: 'india-in-data-sme-ipo-listings', label: 'SME IPO listing record (CSV)', columns: IPO_COLS, rows: listed.map(ipoRow) },
+          ]}
+        />
       </section>
     </>
   )

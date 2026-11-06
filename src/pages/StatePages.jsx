@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
+import DataPanel from '../components/DataTools.jsx'
 import { MPI, MPI_INDIA } from '../data/poverty.js'
 import { POP_YEARS, POP_INDIA, POP_STATES, POP } from '../data/population.js'
 import { YEARS, STATES, PC_CURRENT, PC_CONSTANT, GSDP_CURRENT, GSDP_CONSTANT } from '../data/states.js'
@@ -11,6 +12,32 @@ const rupees = (v) => `₹${Number(v).toLocaleString('en-IN')}`
 const lakhCrore = (lakh) => `₹${(lakh / 1e7).toFixed(2)} lakh crore`
 const pct = (v) => `${v > 0 ? '+' : ''}${v.toFixed(1)}%`
 const SOURCE = 'RBI, Handbook of Statistics on Indian States 2024-25 (Tables 19 to 22), using data from the National Statistical Office, MoSPI. Base year 2011-12.'
+
+/* ---------- downloadable tables (wide: one row per state, one column per year) ---------- */
+const wideRows = (series, years, states) => states.map((st) => ({ state: st, ...Object.fromEntries(years.map((y, i) => [String(y), series[st]?.[i] ?? null])) }))
+const wideCols = (years) => [{ key: 'state', label: 'State or UT' }, ...years.map((y) => ({ key: String(y), label: String(y) }))]
+const RBI_URL = 'https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=Handbook+of+Statistics+on+Indian+States'
+const CSV = {
+  gsdpCur: { filename: 'india-in-data-gsdp-by-state-current-prices-rs-lakh', label: 'GSDP, current prices (CSV)', columns: wideCols(YEARS), rows: wideRows(GSDP_CURRENT, YEARS, STATES) },
+  gsdpCon: { filename: 'india-in-data-gsdp-by-state-constant-2011-12-prices-rs-lakh', label: 'GSDP, constant prices (CSV)', columns: wideCols(YEARS), rows: wideRows(GSDP_CONSTANT, YEARS, STATES) },
+  pcCur: { filename: 'india-in-data-per-capita-nsdp-by-state-current-prices-rs', label: 'Per capita income, current prices (CSV)', columns: wideCols(YEARS), rows: wideRows(PC_CURRENT, YEARS, STATES) },
+  pcCon: { filename: 'india-in-data-per-capita-nsdp-by-state-constant-2011-12-prices-rs', label: 'Per capita income, constant prices (CSV)', columns: wideCols(YEARS), rows: wideRows(PC_CONSTANT, YEARS, STATES) },
+  pop: { filename: 'india-in-data-projected-population-by-state-thousands', label: 'Population by state, 2011 to 2036 (CSV)', columns: wideCols(POP_YEARS), rows: [...wideRows(POP, POP_YEARS, POP_STATES), { state: 'India', ...Object.fromEntries(POP_YEARS.map((y, i) => [String(y), POP_INDIA[i]])) }] },
+  mpi: {
+    filename: 'india-in-data-multidimensional-poverty-by-state', label: 'Multidimensional poverty by state (CSV)',
+    columns: ['state', 'headcount_pct_2015_16', 'intensity_pct_2015_16', 'mpi_2015_16', 'headcount_pct_2019_21', 'intensity_pct_2019_21', 'mpi_2019_21'].map((k) => ({ key: k, label: k })),
+    rows: [...Object.entries(MPI), ['India', MPI_INDIA]].map(([state, v]) => ({ state, headcount_pct_2015_16: v[0], intensity_pct_2015_16: v[1], mpi_2015_16: v[2], headcount_pct_2019_21: v[3], intensity_pct_2019_21: v[4], mpi_2019_21: v[5] })),
+  },
+}
+const DS = {
+  gdp: { name: 'State-wise GDP (GSDP) of India, 2011-12 to 2024-25', description: 'Gross state domestic product of every Indian state and union territory, at current and constant 2011-12 prices, in rupees lakh, for 2011-12 to 2024-25. Compiled by India in Data from the RBI Handbook of Statistics on Indian States 2024-25.', path: '/state-wise-gdp-of-india', variables: ['GSDP at current prices', 'GSDP at constant 2011-12 prices'], keywords: ['state GDP', 'GSDP', 'Indian states economy'] },
+  pc: { name: 'Per capita income by state in India, 2011-12 to 2024-25', description: 'Per capita net state domestic product of every Indian state and union territory, at current and constant 2011-12 prices, in rupees, for 2011-12 to 2024-25. Compiled by India in Data from the RBI Handbook of Statistics on Indian States 2024-25.', path: '/per-capita-income-by-state', variables: ['Per capita NSDP at current prices', 'Per capita NSDP at constant 2011-12 prices'], keywords: ['per capita income', 'state income', 'NSDP'] },
+  rich: { name: 'Richest states in India by income per person and by GDP', description: 'Per capita income and GSDP of Indian states and union territories, 2011-12 to 2024-25, used to rank the richest states. Compiled by India in Data from the RBI Handbook of Statistics on Indian States 2024-25.', path: '/richest-state-in-india', variables: ['Per capita NSDP at current prices', 'GSDP at current prices'], keywords: ['richest state in India'] },
+  hub: { name: 'Indian states in data: GDP, income per person and population', description: 'State-wise GSDP and per capita income from the RBI Handbook of Statistics on Indian States 2024-25, and projected population from the National Commission on Population, compiled by India in Data.', path: '/states', variables: ['GSDP', 'Per capita NSDP', 'Projected population'], keywords: ['Indian states', 'state rankings'] },
+  pop: { name: 'Projected population of Indian states, 2011 to 2036', description: 'Projected total population of every Indian state and union territory as on 1 March of each year from 2011 to 2036, in thousands, from the Report of the Technical Group on Population Projections 2011-2036 (National Commission on Population, July 2020). Compiled by India in Data.', path: '/population-by-state', source: 'National Commission on Population, Ministry of Health and Family Welfare, Report of the Technical Group on Population Projections 2011-2036, Table 8', variables: ['Projected population (thousands)'], keywords: ['population by state', 'India population 2026'], temporalCoverage: '2011/2036' },
+  poor: { name: 'Poorest states in India: income per person and multidimensional poverty', description: 'Per capita income of Indian states (2011-12 to 2024-25) and the NITI Aayog multidimensional poverty headcount, intensity and index for 2015-16 and 2019-21, as printed in the RBI Handbook of Statistics on Indian States 2024-25. Compiled by India in Data.', path: '/poorest-state-in-india', source: 'RBI, Handbook of Statistics on Indian States 2024-25, Tables 19 and 10 (NSO, MoSPI; NITI Aayog)', variables: ['Per capita NSDP', 'Multidimensional poverty headcount ratio', 'MPI'], keywords: ['poorest state in India', 'multidimensional poverty'] },
+}
+const withRbi = (d) => ({ source: SOURCE, sourceUrl: RBI_URL, temporalCoverage: '2011/2025', ...d })
 
 const at = (series, state, yi) => series[state]?.[yi] ?? null
 const latestIdx = (series, state) => {
@@ -95,9 +122,10 @@ function Faq({ items }) {
   )
 }
 
-function Footer({ extra }) {
+function Footer({ extra, data }) {
   return (
     <>
+      {data && <DataPanel {...data} />}
       <p className="mt-8 max-w-3xl text-xs leading-body text-ink/60">
         Source: {SOURCE} Figures are at current prices unless stated. Latest published year is {YEARS[LAST]}; the Handbook does not give every state for that year. Ladakh is left out because the Handbook has only two years for it. See our <Link to="/methodology" className="text-brand hover:underline">methodology</Link>.
       </p>
@@ -172,7 +200,7 @@ export function StateGdp() {
           ['Why is Gujarat missing for the latest year?', 'The RBI Handbook has no 2023-24 or 2024-25 figure for Gujarat, and none for seven other states and UTs. We show them with their latest published year instead of estimating.'],
           ['Why do other websites show different numbers?', 'Many sites use state budget estimates or a newer base year. These are the national statistics office’s estimates as compiled by the RBI, on the 2011-12 base, and may be revised.'],
         ]} />
-        <Footer extra={<p className="mt-2 text-sm">Related: <Link to="/richest-state-in-india" className="text-brand hover:underline">richest state in India</Link>, <Link to="/per-capita-income-by-state" className="text-brand hover:underline">per capita income by state</Link>.</p>} />
+        <Footer data={{ dataset: withRbi(DS.gdp), csv: [CSV.gsdpCur, CSV.gsdpCon] }} extra={<p className="mt-2 text-sm">Related: <Link to="/richest-state-in-india" className="text-brand hover:underline">richest state in India</Link>, <Link to="/per-capita-income-by-state" className="text-brand hover:underline">per capita income by state</Link>.</p>} />
       </section>
     </>
   )
@@ -240,7 +268,7 @@ export function StatePerCapita() {
           ['What is per capita NSDP?', 'Per capita net state domestic product is a state’s net income (output minus depreciation) divided by its population. It is the standard state-level proxy for income per person.'],
           ['Is this the same as the national per capita income?', 'No. This is for states and UTs. The national figure comes from a separate national accounts estimate and is not in this table.'],
         ]} />
-        <Footer extra={<p className="mt-2 text-sm">Related: <Link to="/richest-state-in-india" className="text-brand hover:underline">richest state in India</Link>, <Link to="/state-wise-gdp-of-india" className="text-brand hover:underline">state-wise GDP</Link>.</p>} />
+        <Footer data={{ dataset: withRbi(DS.pc), csv: [CSV.pcCur, CSV.pcCon] }} extra={<p className="mt-2 text-sm">Related: <Link to="/richest-state-in-india" className="text-brand hover:underline">richest state in India</Link>, <Link to="/state-wise-gdp-of-india" className="text-brand hover:underline">state-wise GDP</Link>.</p>} />
       </section>
     </>
   )
@@ -302,7 +330,7 @@ export function RichestState() {
           ['Is Gujarat not in the top?', `The RBI Handbook has no Gujarat figures after 2022-23. Its ${YEARS[latestIdx(GSDP_CURRENT, 'Gujarat')]} GSDP was ${lakhCrore(GSDP_CURRENT.Gujarat[latestIdx(GSDP_CURRENT, 'Gujarat')])}. We do not estimate missing years.`],
           ['Which is the poorest state?', `Bihar has the lowest per capita income in the ${YEARS[LAST]} data (${rupees(PC_CURRENT.Bihar[LAST])}), followed by Uttar Pradesh and Jharkhand. See the poorest state in India page for a second measure.`],
         ]} />
-        <Footer extra={<p className="mt-2 text-sm">Related: <Link to="/poorest-state-in-india" className="text-brand hover:underline">poorest state in India</Link>.</p>} />
+        <Footer data={{ dataset: withRbi(DS.rich), csv: [CSV.pcCur, CSV.gsdpCur] }} extra={<p className="mt-2 text-sm">Related: <Link to="/poorest-state-in-india" className="text-brand hover:underline">poorest state in India</Link>.</p>} />
       </section>
     </>
   )
@@ -333,7 +361,7 @@ export function StatesHub() {
             </Link>
           ))}
         </div>
-        <Footer />
+        <Footer data={{ dataset: withRbi(DS.hub), csv: [CSV.gsdpCur, CSV.pcCur, CSV.pop] }} />
       </section>
     </>
   )
@@ -414,6 +442,7 @@ export function StatePopulation() {
           ['Where do these numbers come from?', 'From the Report of the Technical Group on Population Projections 2011-2036, published by the National Commission on Population under the Ministry of Health and Family Welfare in July 2020. It projects each state from the 2011 Census using assumptions about births, deaths and migration.'],
           ['Why do other sites show different figures?', 'Sites use different projections, the UN estimates, or a simple extrapolation of 2011. The projections here are the Indian government’s own and will be replaced once a new census is published.'],
         ]} />
+        <DataPanel dataset={DS.pop} csv={CSV.pop} />
         <p className="mt-8 max-w-3xl text-xs leading-body text-ink/60">
           Source: National Commission on Population, Ministry of Health and Family Welfare, Report of the Technical Group on Population Projections 2011-2036 (July 2020), Table 8, projected total population as on 1 March. State figures add up to the India total within rounding. Dadra and Nagar Haveli and Daman and Diu are combined. The report projects the seven north-eastern states other than Assam together, so several show the same growth, and very small UTs such as Dadra and Nagar Haveli and Daman and Diu show large swings from its migration assumptions. See our <Link to="/methodology" className="text-brand hover:underline">methodology</Link>.
         </p>
@@ -509,6 +538,7 @@ export function PoorestState() {
           ['Why do the two lists differ?', `Income per person measures money earned. The multidimensional index measures deprivation in health, schooling and living conditions. Jammu & Kashmir, for example, is fifth lowest on income but has a poverty headcount of only ${MPI['Jammu & Kashmir'][3].toFixed(2)}%.`],
           ['Is this the same as the poverty line?', 'No. The poverty line is a consumption cut-off. The multidimensional index counts deprivations from household surveys, so the two give different numbers.'],
         ]} />
+        <DataPanel dataset={withRbi(DS.poor)} csv={[CSV.pcCur, CSV.mpi]} />
         <p className="mt-8 max-w-3xl text-xs leading-body text-ink/60">
           Sources: RBI, Handbook of Statistics on Indian States 2024-25: Table 19 (per capita NSDP, from the National Statistical Office, MoSPI) and Table 10 (multidimensional poverty, from NITI Aayog, National Multidimensional Poverty Index: A Progress Review 2023). See our <Link to="/methodology" className="text-brand hover:underline">methodology</Link>.
         </p>

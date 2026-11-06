@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import useSeo from '../components/Seo.jsx'
+import DataPanel from '../components/DataTools.jsx'
+import { IPO_COLS, ipoRow, IPO_SOURCE, IPO_SOURCE_URL } from '../components/ipo/ipoData.js'
 import IpoTable from '../components/ipo/IpoTable.jsx'
 import { useIpos, useTodayIST, ipoStatus, istDateOf, fmt } from '../data/live.js'
 
@@ -74,6 +76,15 @@ export default function IpoSubscriptionPage() {
         <p className="mt-8 max-w-3xl text-sm text-ink/60">
           Not investment advice. Read the <Link to="/disclaimer" className="text-brand hover:underline">disclaimer</Link> before using this data.
         </p>
+        <DataPanel
+          dataset={{
+            name: 'IPO subscription status today, India',
+            description: 'Subscription multiple of IPOs open on NSE, upcoming issues and IPOs closed in the last 14 days, with price band, lot size, issue size and listing date, from consolidated NSE and BSE figures. Compiled by India in Data.',
+            path: '/ipo-subscription-status', asOf: istDateOf(data.updatedAt), source: IPO_SOURCE, sourceUrl: IPO_SOURCE_URL, liveFile: 'live/ipos.json',
+            variables: ['Subscription (times)', 'Price band', 'Issue size'], keywords: ['IPO subscription status', 'IPO subscription today'],
+          }}
+          csv={{ filename: `india-in-data-ipo-subscription-${istDateOf(data.updatedAt) || 'latest'}`, label: 'IPO subscription table (CSV)', columns: IPO_COLS, rows: [...open, ...upcoming, ...recent].map(ipoRow) }}
+        />
       </section>
     </>
   )
