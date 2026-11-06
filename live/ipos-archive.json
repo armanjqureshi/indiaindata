@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T18:36:31.203Z",
+ "updatedAt": "2026-11-06T00:36:30.499Z",
  "lastPriceSession": "2026-11-05",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -8348,31 +8348,26 @@
   },
   {
    "slug": "ola-electric-mobility",
-   "symbol": "OLAELEC",
+   "symbol": "OLAPP",
    "board": "mainboard",
    "name": "Ola Electric Mobility Limited",
    "status": "listed",
    "open": "2024-08-02",
    "close": "2024-08-06",
-   "listingDate": "2024-08-09",
+   "listingDate": "2026-11-06",
    "priceLow": 72,
    "priceHigh": 76,
-   "issuePrice": 76,
+   "issuePrice": 11,
    "lotSize": null,
    "lotValue": null,
    "sizeCr": null,
    "subscription": null,
    "subscriptionAsOf": null,
-   "listing": {
-    "date": "2024-08-09",
-    "open": 76,
-    "close": 91.2,
-    "source": "NSE end-of-day file for the listing date"
-   },
-   "listingGainPct": 0,
-   "lastClose": 35.09,
-   "lastCloseDate": "2026-11-05",
-   "gainPct": -53.8
+   "listing": null,
+   "listingGainPct": null,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "picturepost-studios",

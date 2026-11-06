@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T12:36:17.115Z",
+ "updatedAt": "2026-11-06T00:36:30.494Z",
  "lastPriceSession": "2026-11-05",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -47,10 +47,10 @@
    "symbol": "HGSINDIALT",
    "board": "sme",
    "name": "HGS (India) Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-30",
    "close": "2026-11-03",
-   "listingDate": null,
+   "listingDate": "2026-11-06",
    "timetable": {
     "open": "2026-10-30",
     "close": "2026-11-03",
@@ -59,7 +59,6 @@
     "demat": "2026-11-05",
     "listing": "2026-11-06",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -67,7 +66,7 @@
    },
    "priceLow": 114,
    "priceHigh": 120,
-   "issuePrice": null,
+   "issuePrice": 120,
    "lotSize": 1200,
    "lotValue": 144000,
    "sizeCr": 34.56,
@@ -85,10 +84,10 @@
    "symbol": "MAXENGS",
    "board": "sme",
    "name": "Maxwell Engineering Solutions Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-10-30",
    "close": "2026-11-03",
-   "listingDate": null,
+   "listingDate": "2026-11-06",
    "timetable": {
     "open": "2026-10-30",
     "close": "2026-11-03",
@@ -97,7 +96,6 @@
     "demat": "2026-11-05",
     "listing": "2026-11-06",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -105,7 +103,7 @@
    },
    "priceLow": 150,
    "priceHigh": 158,
-   "issuePrice": null,
+   "issuePrice": 158,
    "lotSize": 800,
    "lotValue": 126400,
    "sizeCr": 57.64,

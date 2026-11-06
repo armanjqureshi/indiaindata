@@ -1,0 +1,20 @@
+{
+ "subscription": null,
+ "lotSize": null,
+ "faceValue": null,
+ "issueType": null,
+ "issueSizeText": null,
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [],
+ "registrar": null,
+ "registrarContact": null,
+ "marketTimings": null,
+ "documents": {},
+ "fetchedAt": "2026-11-06T00:36:17.863Z",
+ "slug": "ola-electric-mobility",
+ "symbol": "OLAPP",
+ "board": "mainboard",
+ "name": "Ola Electric Mobility Limited"
+}
