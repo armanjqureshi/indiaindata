@@ -16,7 +16,7 @@
     ],
     [
      "2026-11-05",
-     48.44
+     48.42
     ]
    ],
    "Wheat": [
@@ -756,7 +756,7 @@
     ],
     [
      "2026-11-05",
-     4373.35
+     4370.17
     ]
    ],
    "Wheat": [
@@ -1160,7 +1160,7 @@
  "retail": {
   "asOf": "2026-11-05",
   "prices": {
-   "Rice": 48.44,
+   "Rice": 48.42,
    "Wheat": 32.61,
    "Atta (Wheat)": 38.04,
    "Gram Dal": 94.63,
@@ -1206,7 +1206,7 @@
  "wholesale": {
   "asOf": "2026-11-05",
   "prices": {
-   "Rice": 4373.35,
+   "Rice": 4370.17,
    "Wheat": 2937.84,
    "Atta (Wheat)": 3384.44,
    "Gram Dal": 8682.36,
@@ -1231,7 +1231,7 @@
    "Salt Pack (Iodised)": 1888.09
   }
  },
- "updatedAt": "2026-11-05T20:44:08.162Z",
+ "updatedAt": "2026-11-06T11:24:21.305Z",
  "source": {
   "name": "Department of Consumer Affairs, Price Monitoring Division",
   "url": "https://fcainfoweb.nic.in/",
