@@ -21,6 +21,18 @@ function mandiFor(slug, st) {
   const hs = Object.fromEntries(Object.entries(d.history.states || {}).filter(([s]) => keep.includes(s)).map(([s, h]) => [s, h.slice(-120)]))
   return { ...d, latest: { ...d.latest, states }, history: { india: d.history.india.slice(-400), states: hs } }
 }
+const districtFiles = Object.fromEntries(
+  Object.entries(import.meta.glob('/live/districts/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
+)
+const districtIndex = first(import.meta.glob('/live/districts-index.json', { eager: true }), null)
+// Trimmed copy for one page: the page's own district in full, the others as table rows.
+const DISTRICT_ROW = ['name', 'slug', 'censusName', 'pop', 'literacy', 'sexRatio', 'childSexRatio', 'urbanPct', 'scPct', 'stPct', 'workPct']
+function districtsFor(state, district) {
+  const d = districtFiles[state]
+  if (!d) return null
+  const slim = (x) => Object.fromEntries(DISTRICT_ROW.filter((k) => k in x).map((k) => [k, x[k]]))
+  return { ...d, districts: d.districts.map((x) => (district && x.slug === district ? x : slim(x))) }
+}
 const archive = first(import.meta.glob('/live/ipos-archive.json', { eager: true }), { ipos: [] })
 const details = Object.fromEntries(
   Object.entries(import.meta.glob('/live/ipo/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
@@ -34,6 +46,8 @@ __setServerSource({
   prices: { ...prices, history: Object.fromEntries(Object.entries(prices.history || {}).map(([k, v]) => [k, Object.fromEntries(Object.entries(v).map(([n, h]) => [n, h.slice(-400)]))])) },
   details,
   mandi: mandiFor,
+  districts: districtsFor,
+  districtIndex,
   mandiIndex,
   rowsBySlug: Object.fromEntries([...archive.ipos, ...ipos.ipos].map((r) => [r.slug, r])),
   meta: { iposTotal: ipos.ipos.length + archive.ipos.length, iposUpdatedAt: ipos.updatedAt || null },

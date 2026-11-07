@@ -17,6 +17,7 @@ const BROWSE = [
   { label: 'Indian states ranked', to: '/states' },
   { label: 'Food prices today', to: '/food-prices-today' },
   { label: 'Mandi prices today', to: '/mandi-prices-today' },
+  { label: 'Districts of India', to: '/districts' },
   { label: 'Economy', to: '/topic/economy' },
   { label: 'Society', to: '/topic/society' },
 ]

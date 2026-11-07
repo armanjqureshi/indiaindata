@@ -43,6 +43,8 @@ function snap(key) {
       : kind === 'prices' ? serverSource.prices
       : kind === 'mandi' ? serverSource.mandi(arg, arg2)
       : kind === 'mandiindex' ? serverSource.mandiIndex
+      : kind === 'districts' ? serverSource.districts(arg, arg2)
+      : kind === 'districtindex' ? serverSource.districtIndex
       : kind === 'ipo' ? serverSource.details[arg] ?? null
       : kind === 'row' ? serverSource.rowsBySlug[arg] ?? null
       : null
@@ -62,6 +64,9 @@ export const getPricesSnapshot = () => snap('prices') || { history: {} }
 // (state pages: that state only) and swap in the full file once it loads.
 export const getMandiSnapshot = (slug, state) => snap(state ? `mandi:${slug}:${state}` : `mandi:${slug}`)
 export const getMandiIndexSnapshot = () => snap('mandiindex') || { items: {} }
+// District data (Census 2011): one file per state (live/districts/<state>.json) and an index.
+export const getDistrictsSnapshot = (state, district) => snap(district ? `districts:${state}:${district}` : `districts:${state}`)
+export const getDistrictIndexSnapshot = () => snap('districtindex')
 
 const sources = (p) => [
   `https://cdn.jsdelivr.net/gh/${REPO}@main/${p}`,
@@ -162,6 +167,8 @@ export const useIpos = () => useLive('live/ipos.json', getIposSnapshot())
 export const usePrices = () => useLive('live/prices.json', getPricesSnapshot())
 export const useMandi = (slug, state) => useLive(`live/mandi/${slug}.json`, getMandiSnapshot(slug, state))
 export const useMandiIndex = () => useLive('live/mandi-index.json', getMandiIndexSnapshot())
+export const useDistricts = (state, district) => useLive(`live/districts/${state}.json`, getDistrictsSnapshot(state, district))
+export const useDistrictIndex = () => useLive('live/districts-index.json', getDistrictIndexSnapshot())
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------
 export function todayIST() {

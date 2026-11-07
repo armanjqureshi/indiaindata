@@ -255,6 +255,24 @@ export function getRoutes() {
   routes.push({ path: '/edible-oil-price-today', title: 'Edible oil price today in India', description: 'All-India average retail and wholesale prices of mustard, groundnut, sunflower, soya and palm oil and vanaspati today, updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
   routes.push({ path: '/food-prices-today', title: 'Food prices today in India: vegetables, dal, atta, oil and milk', description: 'All-India average retail and wholesale prices of 23 kitchen staples today: tomato, onion, potato, rice, atta, dals, edible oils, sugar and milk. Updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
 
+  // District pages (Census 2011), from the files written by scripts/data/build-districts.py
+  {
+    const dir = path.join(contentDir, '..', 'live', 'districts')
+    const idxFile = path.join(contentDir, '..', 'live', 'districts-index.json')
+    if (fs.existsSync(idxFile)) {
+      const idx = JSON.parse(fs.readFileSync(idxFile, 'utf-8'))
+      routes.push({ path: '/districts', title: `Districts of India: population, literacy and sex ratio of all ${idx.districts.length} districts (Census 2011)`, description: 'Every district of India in the 2011 Census, with population, literacy rate, sex ratio and urban share, rankings, and a page for each district and state.', changefreq: 'monthly', priority: 0.8 })
+      for (const st of idx.states) {
+        routes.push({ path: `/districts/${st.slug}`, title: st.districts === 1 ? `Districts of ${st.name}: population, literacy and sex ratio (Census 2011)` : `Districts of ${st.name}: population, literacy and sex ratio of all ${st.districts} districts (Census 2011)`, description: `${st.districts === 1 ? 'The district' : `All ${st.districts} districts`} of ${st.name} in the 2011 Census, ranked by population, literacy rate, sex ratio and urban share, with a page for each district.`, changefreq: 'monthly', priority: 0.7 })
+        const f = JSON.parse(fs.readFileSync(path.join(dir, `${st.slug}.json`), 'utf-8'))
+        for (const d of f.districts) {
+          const label = d.censusName ? `${d.name} (${d.censusName})` : d.name
+          routes.push({ path: `/districts/${st.slug}/${d.slug}`, title: `${label} district population, literacy rate and sex ratio (Census 2011)`, description: `${d.name} district, ${st.name}: population ${d.pop.toLocaleString('en-IN')}, literacy ${d.literacy.toFixed(1)}%, sex ratio ${d.sexRatio}, urban share ${d.urbanPct.toFixed(1)}% in the 2011 Census, with its rank among India's ${idx.districts.length} districts.`, changefreq: 'yearly', priority: 0.6 })
+        }
+      }
+    }
+  }
+
   // Mandi (wholesale market) price pages, from the commodity files written by the India-runner job
   routes.push({ path: MANDI_HUB.path, title: 'Mandi prices today in India: onion, tomato, potato, wheat and more', description: 'Wholesale mandi prices today for onion, tomato, potato, garlic, ginger, vegetables, wheat and pulses, by state, in rupees a quintal. Daily data from Agmarknet.', changefreq: 'daily', priority: 0.8 })
   for (const c of MANDI_COMMODITIES) {

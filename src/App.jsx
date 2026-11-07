@@ -22,6 +22,7 @@ import { StaplePricePage, EdibleOilPricePage, FoodPricesHub } from './pages/Pric
 import { PRICE_PAGES, OIL_PAGE, PRICES_HUB } from './data/prices.js'
 import { MandiHub, MandiCommodityPage, MandiStatePage } from './pages/MandiPages.jsx'
 import { MANDI_HUB } from './data/mandi.js'
+import { DistrictsHub, DistrictStatePage, DistrictPage } from './pages/DistrictPages.jsx'
 import IpoDashboardPage from './pages/IpoDashboardPage.jsx'
 import SmeGmpPage from './pages/SmeGmpPage.jsx'
 import IpoDetailPage from './pages/IpoDetailPage.jsx'
@@ -88,6 +89,9 @@ export default function App() {
           <Route path={OIL_PAGE.path} element={<EdibleOilPricePage />} />
           {PRICE_PAGES.map((p) => <Route key={p.path} path={p.path} element={<StaplePricePage path={p.path} />} />)}
           <Route path={MANDI_HUB.path} element={<MandiHub />} />
+          <Route path="/districts" element={<DistrictsHub />} />
+          <Route path="/districts/:state" element={<DistrictStatePage />} />
+          <Route path="/districts/:state/:district" element={<DistrictPage />} />
           <Route path="/mandi-price/:slug" element={<MandiCommodityPage />} />
           <Route path="/mandi-price/:slug/:state" element={<MandiStatePage />} />
           <Route path="/ipo-gmp/:slug" element={<IpoGmpPage />} />

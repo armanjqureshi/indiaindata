@@ -361,7 +361,7 @@ export function StatesHub() {
             </Link>
           ))}
         </div>
-        <Footer data={{ dataset: withRbi(DS.hub), csv: [CSV.gsdpCur, CSV.pcCur, CSV.pop] }} />
+        <Footer data={{ dataset: withRbi(DS.hub), csv: [CSV.gsdpCur, CSV.pcCur, CSV.pop] }} extra={<p className="mt-2 text-sm">Going a level down: <Link to="/districts" className="text-brand hover:underline">population, literacy and sex ratio of every district</Link>.</p>} />
       </section>
     </>
   )
