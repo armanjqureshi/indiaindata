@@ -1,9 +1,37 @@
 {
- "updatedAt": "2026-11-06T18:35:55.866Z",
+ "updatedAt": "2026-11-07T18:35:51.757Z",
  "lastPriceSession": "2026-11-06",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
+  {
+   "slug": "curis-lifesciences",
+   "symbol": "CURIS",
+   "board": "sme",
+   "name": "Curis Lifesciences Limited",
+   "status": "listed",
+   "open": "2025-11-07",
+   "close": "2025-11-11",
+   "listingDate": "2025-11-14",
+   "priceLow": 120,
+   "priceHigh": 128,
+   "issuePrice": 128,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-14",
+    "open": 146.1,
+    "close": 141,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 14.1,
+   "lastClose": 177.1,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 38.4
+  },
   {
    "slug": "finbud-financial-services",
    "symbol": "FINBUD",
