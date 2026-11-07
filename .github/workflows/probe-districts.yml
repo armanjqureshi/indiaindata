@@ -1,0 +1,25 @@
+name: Probe district sources
+# One-off: downloads official Census 2011 and RBI district sources into data/raw/ ([skip netlify]).
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: probe-districts
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/probe/district-sources.mjs
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live/debug/ data/raw/
+          git diff --cached --quiet || (git commit -m "District sources probe [skip netlify]" && git pull --rebase -q && git push -q)
