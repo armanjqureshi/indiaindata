@@ -1,0 +1,102 @@
+{
+ "runAt": "2026-11-07T21:55:39.291Z",
+ "files": {
+  "census_pca_india_state_district": {
+   "status": 200,
+   "type": "application/octet-stream",
+   "bytes": 1376414,
+   "finalUrl": "https://censusindia.gov.in/nada/index.php/catalog/6191/download/9268/DDW_PCA0000_2011_Indiastatedist.xlsx"
+  },
+  "census_pca_old_url": {
+   "error": "UND_ERR_CONNECT_TIMEOUT"
+  }
+ },
+ "pages": {
+  "rbi_qsdc": {
+   "status": 200,
+   "bytes": 84434,
+   "finalUrl": "https://www.rbi.org.in/Scripts/QuarterlyPublications.aspx?head=Quarterly%20Statistics%20on%20Deposits%20and%20Credit%20of%20Scheduled%20Commercial%20Banks",
+   "links": [
+    "/scripts/OccasionalPublications.aspx?head=RBI%27s%20Functions%20and%20Working",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#AP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#HP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#QP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#MP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#WP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#OP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#PS",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#GI",
+    "/scripts/Publications.aspx?publication=Biennial",
+    "/scripts/Publications.aspx?publication=Annual",
+    "/scripts/Publications.aspx?publication=HalfYearly",
+    "/scripts/Publications.aspx?publication=Quarterly",
+    "/scripts/Publications.aspx?publication=Bimonthly",
+    "/scripts/Publications.aspx?publication=Monthly",
+    "/scripts/Publications.aspx?publication=Weekly",
+    "/scripts/Publications.aspx?publication=Occasional",
+    "/scripts/Publications.aspx?publication=Reports",
+    "/scripts/OccasionalPublications.aspx?head=Working Papers",
+    "/Scripts/OccasionalPublications.aspx?head=Working%20Papers",
+    "Publications.aspx",
+    "Publications.aspx?Publication=Quarterly"
+   ]
+  },
+  "rbi_quarterly_index": {
+   "status": 200,
+   "bytes": 65135,
+   "finalUrl": "https://www.rbi.org.in/Scripts/QuarterlyPublications.aspx",
+   "links": [
+    "/scripts/OccasionalPublications.aspx?head=RBI%27s%20Functions%20and%20Working",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#AP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#HP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#QP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#MP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#WP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#OP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#PS",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#GI",
+    "/scripts/Publications.aspx?publication=Biennial",
+    "/scripts/Publications.aspx?publication=Annual",
+    "/scripts/Publications.aspx?publication=HalfYearly",
+    "/scripts/Publications.aspx?publication=Quarterly",
+    "/scripts/Publications.aspx?publication=Bimonthly",
+    "/scripts/Publications.aspx?publication=Monthly",
+    "/scripts/Publications.aspx?publication=Weekly",
+    "/scripts/Publications.aspx?publication=Occasional",
+    "/scripts/Publications.aspx?publication=Reports",
+    "/scripts/OccasionalPublications.aspx?head=Working Papers",
+    "/Scripts/OccasionalPublications.aspx?head=Working%20Papers",
+    "Publications.aspx",
+    "Publications.aspx?Publication=Quarterly"
+   ]
+  },
+  "rbi_bsr": {
+   "status": 200,
+   "bytes": 69488,
+   "finalUrl": "https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=Basic%20Statistical%20Returns%20of%20Scheduled%20Commercial%20Banks%20in%20India",
+   "links": [
+    "/scripts/OccasionalPublications.aspx?head=RBI%27s%20Functions%20and%20Working",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#AP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#HP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#QP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#MP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#WP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#OP",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#PS",
+    "/scripts/AboutUsDisplay.aspx?pg=AllPublications.htm#GI",
+    "/scripts/Publications.aspx?publication=Biennial",
+    "/scripts/Publications.aspx?publication=Annual",
+    "/scripts/Publications.aspx?publication=HalfYearly",
+    "/scripts/Publications.aspx?publication=Quarterly",
+    "/scripts/Publications.aspx?publication=Bimonthly",
+    "/scripts/Publications.aspx?publication=Monthly",
+    "/scripts/Publications.aspx?publication=Weekly",
+    "/scripts/Publications.aspx?publication=Occasional",
+    "/scripts/Publications.aspx?publication=Reports",
+    "/scripts/OccasionalPublications.aspx?head=Working Papers",
+    "/Scripts/OccasionalPublications.aspx?head=Working%20Papers",
+    "publications.aspx"
+   ]
+  }
+ }
+}
