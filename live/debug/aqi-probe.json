@@ -1,0 +1,68 @@
+{
+ "runAt": "2026-11-09T17:30:36.356Z",
+ "files": {
+  "bulletin_20261109": {
+   "url": "https://cpcb.nic.in/upload/Downloads/AQI_Bulletin_20261109.pdf",
+   "status": 200,
+   "type": "application/pdf",
+   "bytes": 330794,
+   "finalUrl": "https://cpcb.gov.in/upload/Downloads/AQI_Bulletin_20261109.pdf"
+  },
+  "bulletin_20261108": {
+   "url": "https://cpcb.nic.in/upload/Downloads/AQI_Bulletin_20261108.pdf",
+   "status": 200,
+   "type": "application/pdf",
+   "bytes": 331486,
+   "finalUrl": "https://cpcb.gov.in/upload/Downloads/AQI_Bulletin_20261108.pdf"
+  },
+  "bulletin_20261107": {
+   "url": "https://cpcb.nic.in/upload/Downloads/AQI_Bulletin_20261107.pdf",
+   "status": 200,
+   "type": "application/pdf",
+   "bytes": 331555,
+   "finalUrl": "https://cpcb.gov.in/upload/Downloads/AQI_Bulletin_20261107.pdf"
+  },
+  "bulletin_20261106": {
+   "url": "https://cpcb.nic.in/upload/Downloads/AQI_Bulletin_20261106.pdf",
+   "status": 200,
+   "type": "application/pdf",
+   "bytes": 312336,
+   "finalUrl": "https://cpcb.gov.in/upload/Downloads/AQI_Bulletin_20261106.pdf"
+  },
+  "bulletin_20251108": {
+   "url": "https://cpcb.nic.in/upload/Downloads/AQI_Bulletin_20251108.pdf",
+   "status": 200,
+   "type": "application/pdf",
+   "bytes": 55112,
+   "finalUrl": "https://cpcb.gov.in/upload/Downloads/AQI_Bulletin_20251108.pdf"
+  }
+ },
+ "pages": {
+  "cpcb_aqi_page": {
+   "url": "https://cpcb.nic.in/AQI_Bulletin.php",
+   "status": 200,
+   "type": "text/html; charset=UTF-8",
+   "bytes": 312882,
+   "head": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" name=\"Referrer-Policy\" value=\"no-referrer | same-origin\"> <!--meta charset=\"utf-8\"--> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <!--meta char",
+   "pdfs": []
+  },
+  "cpcb_home": {
+   "url": "https://cpcb.nic.in/",
+   "status": 200,
+   "type": "text/html; charset=UTF-8",
+   "bytes": 363185,
+   "head": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" name=\"Referrer-Policy\" value=\"no-referrer | same-origin\"> <!--meta charset=\"utf-8\"--> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <!--meta char",
+   "pdfs": [
+    "../uploads/notice_AQI_15112023.pdf"
+   ]
+  },
+  "airquality_cpcb": {
+   "url": "https://airquality.cpcb.gov.in/AQI_India/",
+   "error": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  "app_cpcb": {
+   "url": "https://app.cpcb.gov.in/ccr/",
+   "error": "ENOTFOUND"
+  }
+ }
+}
