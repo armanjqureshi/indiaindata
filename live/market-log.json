@@ -1,9 +1,22 @@
 {
- "runAt": "2026-11-07T04:30:35.364Z",
+ "runAt": "2026-11-09T13:40:30.034Z",
  "accepted": [
-  "gold-ibja = 141452 (2026-11-06)",
-  "silver-ibja = 182868 (2026-11-06)"
+  "sensex = 81106.65 (2026-11-09)",
+  "usd-inr = 93.8579 (2026-11-09)",
+  "jpy-inr = 59.31 (2026-11-09)",
+  "gbp-inr = 125.6125 (2026-11-09)",
+  "eur-inr = 104.7683 (2026-11-09)",
+  "dii-net = -7172.53 (2026-11-09)",
+  "fii-net = 7212.22 (2026-11-09)",
+  "fpi-equity-mtd = 53738.78 (2026-11-09)"
  ],
  "skipped": [],
- "errors": []
+ "errors": [
+  "nifty-50: continuity check failed (source prev 24986.4, stored 25030.35 on 2026-11-06)",
+  "nifty-bank: continuity check failed (source prev 58850.65, stored 59086 on 2026-11-06)",
+  "nifty-it: continuity check failed (source prev 32869.65, stored 32977.9 on 2026-11-06)",
+  "nifty-midcap-150: continuity check failed (source prev 22327.85, stored 22271.15 on 2026-11-06)",
+  "nifty-smallcap-250: continuity check failed (source prev 17594.1, stored 17386.15 on 2026-11-06)",
+  "india-vix: continuity check failed (source prev 18.430000000000003, stored 17.47 on 2026-11-06)"
+ ]
 }
