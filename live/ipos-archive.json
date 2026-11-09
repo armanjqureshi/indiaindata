@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-08T18:35:56.612Z",
- "lastPriceSession": "2026-11-06",
+ "updatedAt": "2026-11-09T12:35:58.984Z",
+ "lastPriceSession": "2026-11-09",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
@@ -28,9 +28,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 14.1,
-   "lastClose": 177.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 38.4
+   "lastClose": 179.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 40.4
   },
   {
    "slug": "finbud-financial-services",
@@ -57,7 +57,7 @@
    },
    "listingGainPct": 10.6,
    "lastClose": 127.9,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -9.9
   },
   {
@@ -84,9 +84,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 216.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 73.1
+   "lastClose": 236.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 89.2
   },
   {
    "slug": "jayesh-logistics",
@@ -112,9 +112,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -1.6,
-   "lastClose": 125,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 2.5
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "b-a-g-convergence",
@@ -140,9 +140,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 16.1,
-   "lastClose": 111.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 28.4
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "greenleaf-envirotech",
@@ -169,7 +169,7 @@
    },
    "listingGainPct": -0.8,
    "lastClose": 99.8,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -26.6
   },
   {
@@ -196,9 +196,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.4,
-   "lastClose": 87,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -9.4
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "sheel-biotech",
@@ -224,9 +224,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 44.4,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 61,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -3.2
   },
   {
    "slug": "suba-hotels",
@@ -252,9 +252,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 38.9,
-   "lastClose": 86.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -21.8
+   "lastClose": 88.6,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -20.2
   },
   {
    "slug": "vijaypd-ceutical",
@@ -280,9 +280,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 77.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 121.4
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "manas-polymers-and-energies",
@@ -308,9 +308,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 23.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -71.2
+   "lastClose": 23.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -70.8
   },
   {
    "slug": "gurunanak-agriculture-india",
@@ -336,9 +336,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 33.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -55.7
+   "lastClose": 31.6,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -57.9
   },
   {
    "slug": "ecoline-exim",
@@ -364,9 +364,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.1,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 175,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 24.1
   },
   {
    "slug": "matrix-geo-solutions",
@@ -392,9 +392,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.1,
-   "lastClose": 48.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -53.4
+   "lastClose": 49.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -52.6
   },
   {
    "slug": "prime-cable-industries",
@@ -420,9 +420,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.4,
-   "lastClose": 170.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 105.8
+   "lastClose": 172.35,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 107.7
   },
   {
    "slug": "siddhi-cotspin",
@@ -448,9 +448,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 27,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -75
+   "lastClose": 26,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -75.9
   },
   {
    "slug": "techd-cybersecurity",
@@ -476,9 +476,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 552.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 186.3
+   "lastClose": 529.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 174.4
   },
   {
    "slug": "galaxy-medicare",
@@ -504,9 +504,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 16.85,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -68.8
   },
   {
    "slug": "taurian-mps",
@@ -532,9 +532,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 22.8,
-   "lastClose": 651.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 281.2
+   "lastClose": 682.6,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 299.2
   },
   {
    "slug": "vigor-plast-india",
@@ -560,9 +560,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.9,
-   "lastClose": 60.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -24.8
+   "lastClose": 60,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -25.9
   },
   {
    "slug": "optivalue-tek-consulting",
@@ -588,9 +588,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 23.3,
-   "lastClose": 204.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 143.5
+   "lastClose": 201,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 139.3
   },
   {
    "slug": "snehaa-organics",
@@ -616,9 +616,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 40.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -66.5
+   "lastClose": 41,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -66.4
   },
   {
    "slug": "current-infraprojects",
@@ -644,9 +644,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 101,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 26.3
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "sattva-engineering-construction",
@@ -672,9 +672,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 26.8,
-   "lastClose": 50.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -32.3
+   "lastClose": 48,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -36
   },
   {
    "slug": "anondita-medicare",
@@ -700,9 +700,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 971.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 570.3
+   "lastClose": 1002.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 591.5
   },
   {
    "slug": "classic-electrodes-india",
@@ -728,9 +728,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 14.9,
-   "lastClose": 47.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -45.5
+   "lastClose": 48.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -44.3
   },
   {
    "slug": "shivashrit-foods",
@@ -756,9 +756,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.6,
-   "lastClose": 117.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -17.2
+   "lastClose": 118.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -16.6
   },
   {
    "slug": "arc-insulation-and-insulators",
@@ -784,9 +784,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 16,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 29,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -76.8
   },
   {
    "slug": "studio-lsd",
@@ -812,9 +812,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 8.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -83.9
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "mahendra-realtors-and-infrastructure",
@@ -868,9 +868,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5.1,
-   "lastClose": 395.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 153.5
+   "lastClose": 388.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 148.8
   },
   {
    "slug": "medistep-healthcare",
@@ -896,9 +896,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 23.3,
-   "lastClose": 18,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -58.1
+   "lastClose": 18.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -56
   },
   {
    "slug": "connplex-cinemas",
@@ -924,9 +924,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10.2,
-   "lastClose": 231.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 30.8
+   "lastClose": 242.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 36.9
   },
   {
    "slug": "sawaliya-food-products",
@@ -952,9 +952,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 178.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 48.4
+   "lastClose": 181,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 50.8
   },
   {
    "slug": "aaradhya-disposal-industries",
@@ -1008,9 +1008,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -1.9,
-   "lastClose": 117,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 13.6
+   "lastClose": 122.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 19.1
   },
   {
    "slug": "jyoti-global-plast",
@@ -1036,9 +1036,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.2,
-   "lastClose": 41.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -36.7
+   "lastClose": 41,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -37.9
   },
   {
    "slug": "parth-electricals-and-engineering",
@@ -1064,9 +1064,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.4,
-   "lastClose": 509.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 199.9
+   "lastClose": 519.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 205.9
   },
   {
    "slug": "flysbs-aviation",
@@ -1092,9 +1092,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 555.55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 146.9
+   "lastClose": 560,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 148.9
   },
   {
    "slug": "cash-ur-drive-marketing",
@@ -1120,9 +1120,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 19.2,
-   "lastClose": 94.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -27.5
+   "lastClose": 99.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -23.2
   },
   {
    "slug": "renol-polychem",
@@ -1148,9 +1148,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 59,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -43.8
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "kaytex-fabrics",
@@ -1176,8 +1176,8 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 61.6,
-   "lastCloseDate": "2026-11-06",
+   "lastClose": 61.55,
+   "lastCloseDate": "2026-11-09",
    "gainPct": -65.8
   },
   {
@@ -1204,9 +1204,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 8.4,
-   "lastClose": 57.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -31.1
+   "lastClose": 57,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -31.3
   },
   {
    "slug": "tsc-india",
@@ -1232,9 +1232,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.9,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 37,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -47.1
   },
   {
    "slug": "savy-infra-and-logistics",
@@ -1260,9 +1260,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 13.8,
-   "lastClose": 145.55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 21.3
+   "lastClose": 153.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 28.3
   },
   {
    "slug": "spunweb-nonwoven",
@@ -1288,9 +1288,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 57.3,
-   "lastClose": 104,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 8.3
+   "lastClose": 106.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 10.9
   },
   {
    "slug": "smarten-power-systems",
@@ -1316,9 +1316,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 44,
-   "lastClose": 79.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -21
+   "lastClose": 77.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -22.1
   },
   {
    "slug": "happy-square-outsourcing-services",
@@ -1344,9 +1344,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.3,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 33.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -55.5
   },
   {
    "slug": "cedaar-textile",
@@ -1372,9 +1372,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -15,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 17.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -87.8
   },
   {
    "slug": "pushpa-jewellers",
@@ -1400,9 +1400,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -23.8,
-   "lastClose": 115.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -21.3
+   "lastClose": 118.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -19.5
   },
   {
    "slug": "silky-overseas",
@@ -1428,9 +1428,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.2,
-   "lastClose": 66.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -58.5
+   "lastClose": 68.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -57.5
   },
   {
    "slug": "moving-media-entertainment",
@@ -1456,9 +1456,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.4,
-   "lastClose": 36.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -47.4
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "pro-fx-tech",
@@ -1484,9 +1484,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.2,
-   "lastClose": 70,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -19.5
+   "lastClose": 66.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -23.3
   },
   {
    "slug": "rama-telecom",
@@ -1512,9 +1512,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5.9,
-   "lastClose": 104.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 53.9
+   "lastClose": 116.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 71.9
   },
   {
    "slug": "suntech-infra-solutions",
@@ -1540,9 +1540,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 26.9,
-   "lastClose": 37.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -55.9
+   "lastClose": 40.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -53.3
   },
   {
    "slug": "shri-hare-krishna-sponge-iron",
@@ -1568,9 +1568,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.8,
-   "lastClose": 29.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -50.4
+   "lastClose": 29.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -50
   },
   {
    "slug": "aakaar-medical-technologies",
@@ -1596,9 +1596,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.2,
-   "lastClose": 72.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 0.7
+   "lastClose": 70.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -1.7
   },
   {
    "slug": "mayasheel-ventures",
@@ -1624,9 +1624,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 23.4,
-   "lastClose": 26.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -43.6
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "safe-enterprises-retail-fixtures",
@@ -1652,9 +1652,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.4,
-   "lastClose": 228.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 65.5
+   "lastClose": 218.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 58.6
   },
   {
    "slug": "influx-healthtech",
@@ -1680,9 +1680,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 38,
-   "lastClose": 251,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 161.5
+   "lastClose": 253,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 163.5
   },
   {
    "slug": "eppeltone-engineers",
@@ -1708,9 +1708,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 125.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -2.2
+   "lastClose": 127.85,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -0.1
   },
   {
    "slug": "patil-automation",
@@ -1736,9 +1736,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 29.2,
-   "lastClose": 328.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 173.5
+   "lastClose": 321.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 168
   },
   {
    "slug": "samay-project-services",
@@ -1764,9 +1764,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6,
-   "lastClose": 45.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 33.1
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "monolithisch-india",
@@ -1792,9 +1792,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 61.9,
-   "lastClose": 1336.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 834.4
+   "lastClose": 1365.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 854.7
   },
   {
    "slug": "jainik-power-cables",
@@ -1820,9 +1820,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -25.5,
-   "lastClose": 170,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 54.5
+   "lastClose": 161.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 46.9
   },
   {
    "slug": "sacheerome",
@@ -1848,9 +1848,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 50,
-   "lastClose": 390,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 282.4
+   "lastClose": 385.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 278.3
   },
   {
    "slug": "ganga-bath-fittings",
@@ -1876,9 +1876,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 20.4,
-   "lastClose": 23.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -52.8
+   "lastClose": 24.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -50.4
   },
   {
    "slug": "n-r-vandana-tex-industries",
@@ -1904,9 +1904,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 70.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 56.2
+   "lastClose": 72.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 62
   },
   {
    "slug": "neptune-petrochemicals",
@@ -1932,9 +1932,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 8.8,
-   "lastClose": 182,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 49.2
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "blue-water-logistics",
@@ -1960,9 +1960,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.4,
-   "lastClose": 512.55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 279.7
+   "lastClose": 565.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 318.6
   },
   {
    "slug": "nikita-papers",
@@ -1988,9 +1988,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -13.5,
-   "lastClose": 66.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -35.7
+   "lastClose": 66.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -36.1
   },
   {
    "slug": "dar-credit-and-capital",
@@ -2039,9 +2039,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -21.8,
-   "lastClose": 202.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 100.5
+   "lastClose": 203.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 101.1
   },
   {
    "slug": "integrity-infrabuild-developers",
@@ -2067,9 +2067,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.8,
-   "lastClose": 193,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 93
+   "lastClose": 200.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 100.3
   },
   {
    "slug": "virtual-galaxy-infotech",
@@ -2095,9 +2095,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 26.8,
-   "lastClose": 127.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -10.1
+   "lastClose": 129,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -9.2
   },
   {
    "slug": "arunaya-organics",
@@ -2124,7 +2124,7 @@
    },
    "listingGainPct": -48.1,
    "lastClose": 13.75,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -76.3
   },
   {
@@ -2151,9 +2151,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -10.5,
-   "lastClose": 396.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 317.2
+   "lastClose": 411.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 333.2
   },
   {
    "slug": "tankup-engineers",
@@ -2179,9 +2179,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 25,
-   "lastClose": 1795.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 1182.3
+   "lastClose": 1770,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 1164.3
   },
   {
    "slug": "atc-energies-system",
@@ -2207,9 +2207,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -9.3,
-   "lastClose": 20.55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -82.6
+   "lastClose": 20,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -83.1
   },
   {
    "slug": "shri-ahimsa-naturals",
@@ -2235,9 +2235,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 17.6,
-   "lastClose": 396.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 233.6
+   "lastClose": 389,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 226.9
   },
   {
    "slug": "active-infrastructures",
@@ -2291,9 +2291,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.6,
-   "lastClose": 205,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 6.8
+   "lastClose": 207.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 8
   },
   {
    "slug": "grand-continent-hotels",
@@ -2319,9 +2319,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.1,
-   "lastClose": 99.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -11.9
+   "lastClose": 104,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -8
   },
   {
    "slug": "divine-hira-jewellers",
@@ -2347,9 +2347,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 96.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 6.8
+   "lastClose": 93.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 3.8
   },
   {
    "slug": "balaji-phosphates",
@@ -2375,9 +2375,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.1,
-   "lastClose": 126.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 80.3
+   "lastClose": 129.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 85.2
   },
   {
    "slug": "hp-telecom-india",
@@ -2403,9 +2403,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.5,
-   "lastClose": 502.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 365.7
+   "lastClose": 509.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 371.5
   },
   {
    "slug": "royal-arc-electrodes",
@@ -2431,9 +2431,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 152,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 26.7
   },
   {
    "slug": "tejas-cargo-india",
@@ -2487,9 +2487,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 407.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 126.5
+   "lastClose": 398.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 121.6
   },
   {
    "slug": "p-s-raj-steels",
@@ -2515,9 +2515,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.6,
-   "lastClose": 89.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -35.8
+   "lastClose": 87.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -37.4
   },
   {
    "slug": "voler-car",
@@ -2543,9 +2543,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 304,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 237.8
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "chandan-healthcare",
@@ -2571,9 +2571,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.8,
-   "lastClose": 234.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 47.5
+   "lastClose": 240,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 50.9
   },
   {
    "slug": "eleganz-interiors",
@@ -2599,9 +2599,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -6.2,
-   "lastClose": 76.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -41.3
+   "lastClose": 77.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -40.6
   },
   {
    "slug": "readymix-construction-machinery",
@@ -2627,9 +2627,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 50.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -59.1
+   "lastClose": 48.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -60.3
   },
   {
    "slug": "ken-enterprises",
@@ -2655,9 +2655,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -9.6,
-   "lastClose": 40.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -56.9
+   "lastClose": 41.85,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -55.5
   },
   {
    "slug": "chamunda-electrical",
@@ -2683,9 +2683,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 40,
-   "lastClose": 41.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -17.2
+   "lastClose": 40,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -20
   },
   {
    "slug": "rexpro-enterprises",
@@ -2711,9 +2711,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -19.3,
-   "lastClose": 28.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -80.5
+   "lastClose": 30.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -79.1
   },
   {
    "slug": "ema-partners-india",
@@ -2767,9 +2767,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 136,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 6.3
+   "lastClose": 159.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 24.9
   },
   {
    "slug": "barflex-polyfilms",
@@ -2795,9 +2795,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 60.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 0.8
+   "lastClose": 55.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -7.5
   },
   {
    "slug": "sat-kartar-shopping",
@@ -2823,9 +2823,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 141.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 74.3
+   "lastClose": 155.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 91.4
   },
   {
    "slug": "delta-autocorp",
@@ -2851,9 +2851,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 34.6,
-   "lastClose": 37,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -71.5
+   "lastClose": 39,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -70
   },
   {
    "slug": "anya-polytech-and-fertilizers",
@@ -2879,9 +2879,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 22.1,
-   "lastClose": 17.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 26.1
+   "lastClose": 16.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 16.1
   },
   {
    "slug": "newmalayalam-steel",
@@ -2935,9 +2935,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 75.9,
-   "lastClose": 16,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -70.4
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "purple-united-sales",
@@ -2963,9 +2963,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 57.9,
-   "lastClose": 459.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 264.8
+   "lastClose": 423.4,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 236
   },
   {
    "slug": "supreme-facility-management",
@@ -2991,9 +2991,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -1.3,
-   "lastClose": 21.55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -71.6
+   "lastClose": 19.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -74.7
   },
   {
    "slug": "dhanlaxmi-crop-science",
@@ -3047,9 +3047,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 66.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -29.9
+   "lastClose": 69.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -27.1
   },
   {
    "slug": "ganesh-infraworld",
@@ -3075,9 +3075,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 81.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -2.2
+   "lastClose": 80.85,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -2.6
   },
   {
    "slug": "agarwal-toughened-glass-india",
@@ -3103,9 +3103,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 25,
-   "lastClose": 171.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 59.1
+   "lastClose": 180.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 66.9
   },
   {
    "slug": "abha-power-and-steel",
@@ -3131,9 +3131,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.2,
-   "lastClose": 22.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -70.5
+   "lastClose": 22,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -70.7
   },
   {
    "slug": "apex-ecotech",
@@ -3159,9 +3159,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 263.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 260.9
+   "lastClose": 257.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 252.4
   },
   {
    "slug": "c2c-advanced-systems-withdrawal-window",
@@ -3210,9 +3210,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 201.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 55.2
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "c2c-advanced-systems",
@@ -3238,9 +3238,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 150.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -33.2
+   "lastClose": 153.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -32.2
   },
   {
    "slug": "lamosaic-india",
@@ -3266,9 +3266,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -18,
-   "lastClose": 48.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -75.8
+   "lastClose": 49.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -75.1
   },
   {
    "slug": "onyx-biotec",
@@ -3294,9 +3294,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -11.4,
-   "lastClose": 34.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -43.3
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "neelam-linens-and-garments-india",
@@ -3322,9 +3322,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 66.9,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 6.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -73.7
   },
   {
    "slug": "usha-financial-services",
@@ -3350,9 +3350,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.4,
-   "lastClose": 58.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -65.3
+   "lastClose": 56.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -66.4
   },
   {
    "slug": "danish-power",
@@ -3378,9 +3378,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 50,
-   "lastClose": 942.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 148.1
+   "lastClose": 982.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 158.4
   },
   {
    "slug": "obsc-perfection",
@@ -3406,9 +3406,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10,
-   "lastClose": 826.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 726.6
+   "lastClose": 844.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 744.8
   },
   {
    "slug": "united-heat-transfer",
@@ -3434,9 +3434,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.3,
-   "lastClose": 165.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 181.2
+   "lastClose": 160.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 171.4
   },
   {
    "slug": "premium-plast",
@@ -3462,9 +3462,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5,
-   "lastClose": 42,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -14.3
+   "lastClose": 41.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -14.5
   },
   {
    "slug": "freshara-agro-exports",
@@ -3490,9 +3490,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 16.4,
-   "lastClose": 406.55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 250.5
+   "lastClose": 395.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 241
   },
   {
    "slug": "lakshya-powertech",
@@ -3518,9 +3518,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 102,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -43.3
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "pranik-logistics",
@@ -3546,9 +3546,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.6,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 39.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -48.6
   },
   {
    "slug": "paramount-dye-tec",
@@ -3574,9 +3574,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -6.1,
-   "lastClose": 42.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -63.6
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "hvax-technologies",
@@ -3602,9 +3602,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.1,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 679.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 48.5
   },
   {
    "slug": "saj-hotels",
@@ -3630,9 +3630,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -15.4,
-   "lastClose": 25.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -61
+   "lastClose": 25.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -61.3
   },
   {
    "slug": "divyadhan-recycling-industries",
@@ -3658,9 +3658,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 31.3,
-   "lastClose": 39.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -38.9
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "forge-auto-international",
@@ -3686,9 +3686,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.6,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 92,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -14.8
   },
   {
    "slug": "sahasra-electronic-solutions",
@@ -3714,9 +3714,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 414.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 46.3
+   "lastClose": 403.85,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 42.7
   },
   {
    "slug": "techera-engineering-india",
@@ -3742,9 +3742,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 52.4,
-   "lastClose": 122.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 49
+   "lastClose": 131.85,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 60.8
   },
   {
    "slug": "thinking-hats-entertainment-solutions",
@@ -3770,9 +3770,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 36.4,
-   "lastClose": 12.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -71.4
+   "lastClose": 12.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -71.5
   },
   {
    "slug": "unilex-colours-and-chemicals",
@@ -3798,9 +3798,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.3,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 38.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -55.7
   },
   {
    "slug": "rappid-valves-india",
@@ -3826,9 +3826,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 40.5,
-   "lastClose": 368.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 65.8
+   "lastClose": 374.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 68.8
   },
   {
    "slug": "wol-3d-india",
@@ -3854,9 +3854,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 20,
-   "lastClose": 139.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -6.8
+   "lastClose": 137.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -8.6
   },
   {
    "slug": "avi-ansh-textile",
@@ -3882,9 +3882,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.7,
-   "lastClose": 99,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 59.7
+   "lastClose": 98.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 58.9
   },
   {
    "slug": "bikewo-green-tech",
@@ -3910,9 +3910,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -27.4,
-   "lastClose": 128.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 106.6
+   "lastClose": 125,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 101.6
   },
   {
    "slug": "phoenix-overseas",
@@ -3938,9 +3938,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 14.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -77.7
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "s-d-retail",
@@ -3966,9 +3966,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10.7,
-   "lastClose": 78.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -39.7
+   "lastClose": 76.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -41.6
   },
   {
    "slug": "kalana-ispat",
@@ -3994,9 +3994,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -31.6,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 18.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -72.6
   },
   {
    "slug": "paramount-speciality-forgings",
@@ -4022,9 +4022,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 40.7,
-   "lastClose": 29.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -50.8
+   "lastClose": 28,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -52.5
   },
   {
    "slug": "osel-devices",
@@ -4050,9 +4050,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 23.8,
-   "lastClose": 370,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 131.3
+   "lastClose": 378.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 136.7
   },
   {
    "slug": "pelatro",
@@ -4078,9 +4078,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 37.5,
-   "lastClose": 370.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 85.4
+   "lastClose": 382,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 91
   },
   {
    "slug": "deccan-transcon-leasing",
@@ -4106,9 +4106,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.4,
-   "lastClose": 17.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -84
+   "lastClose": 17,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -84.3
   },
   {
    "slug": "envirotech-systems",
@@ -4134,9 +4134,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 55.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -0.1
+   "lastClose": 57.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 2.2
   },
   {
    "slug": "excellent-wires-and-packaging",
@@ -4162,9 +4162,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -5.6,
-   "lastClose": 185.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 105.8
+   "lastClose": 184.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 105.2
   },
   {
    "slug": "innomet-advanced-materials",
@@ -4190,9 +4190,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 325.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 225.4
+   "lastClose": 358.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 258.1
   },
   {
    "slug": "spp-polymer",
@@ -4218,9 +4218,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.8,
-   "lastClose": 12.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -79.6
+   "lastClose": 11.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -80.5
   },
   {
    "slug": "aditya-ultra-steel",
@@ -4246,9 +4246,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 12.7,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 22,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -64.5
   },
   {
    "slug": "gajanand-international",
@@ -4274,9 +4274,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 16.7,
-   "lastClose": 7.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -79.7
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "shubhshree-biofuels-energy",
@@ -4302,9 +4302,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 58.8,
-   "lastClose": 311,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 161.3
+   "lastClose": 335.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 182.3
   },
   {
    "slug": "vision-infra-equipment-solutions",
@@ -4353,9 +4353,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 18.2,
-   "lastClose": 81.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -25.8
+   "lastClose": 85.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -22
   },
   {
    "slug": "namo-ewaste-management",
@@ -4381,9 +4381,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 339.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 299.2
+   "lastClose": 335.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 294.7
   },
   {
    "slug": "jeyyam-global-foods",
@@ -4409,9 +4409,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 22.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -63.1
+   "lastClose": 21.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -64.3
   },
   {
    "slug": "boss-packaging-solutions",
@@ -4437,9 +4437,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 25,
-   "lastClose": 57.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -13.5
+   "lastClose": 54.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -17.8
   },
   {
    "slug": "aeron-composite",
@@ -4465,9 +4465,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 20,
-   "lastClose": 77.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -38.1
+   "lastClose": 78,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -37.6
   },
   {
    "slug": "jay-bee-laminations",
@@ -4493,9 +4493,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 79.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -45.3
+   "lastClose": 79.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -45.9
   },
   {
    "slug": "paramatrix-technologies",
@@ -4521,9 +4521,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.6,
-   "lastClose": 55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -50
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "vdeal-system",
@@ -4549,9 +4549,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 51.8,
-   "lastClose": 111,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -0.9
+   "lastClose": 115,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 2.7
   },
   {
    "slug": "indian-phosphate",
@@ -4577,9 +4577,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 78,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -21.2
+   "lastClose": 78.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -20.4
   },
   {
    "slug": "ideal-technoplast-industries",
@@ -4633,9 +4633,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 87.2,
-   "lastClose": 24.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -71.9
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "brace-port-logistics",
@@ -4661,9 +4661,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 71,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -11.2
+   "lastClose": 78.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -1.5
   },
   {
    "slug": "forcas-studio",
@@ -4689,9 +4689,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 188.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 135.2
+   "lastClose": 199.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 149.9
   },
   {
    "slug": "solve-plastic-products",
@@ -4745,9 +4745,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 243.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -2.7
+   "lastClose": 273.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 9.3
   },
   {
    "slug": "sunlite-recycling-industries",
@@ -4773,9 +4773,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 598.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 470.2
+   "lastClose": 594.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 466.2
   },
   {
    "slug": "aesthetik-engineers",
@@ -4801,9 +4801,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 70,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 20.7
   },
   {
    "slug": "picturepost-studios",
@@ -4830,7 +4830,7 @@
    },
    "listingGainPct": 25,
    "lastClose": 2.85,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -88.1
   },
   {
@@ -4857,9 +4857,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 41.5,
-   "lastClose": 23.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -78.2
+   "lastClose": 22.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -78.5
   },
   {
    "slug": "utssav-cz-gold-jewels",
@@ -4885,9 +4885,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 809.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 635.9
+   "lastClose": 751.85,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 583.5
   },
   {
    "slug": "ashapura-logistics",
@@ -4914,7 +4914,7 @@
    },
    "listingGainPct": 28.5,
    "lastClose": 60,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -58.3
   },
   {
@@ -4941,9 +4941,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 23.8,
-   "lastClose": 79.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -24.3
+   "lastClose": 75.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -28.1
   },
   {
    "slug": "rajputana-industries",
@@ -4969,9 +4969,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 59,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 55.3
+   "lastClose": 63,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 65.8
   },
   {
    "slug": "sathlokhar-synergys-e-and-c-global",
@@ -4997,9 +4997,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 85.7,
-   "lastClose": 356.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 154.4
+   "lastClose": 364.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 160.1
   },
   {
    "slug": "esprit-stones",
@@ -5025,9 +5025,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.1,
-   "lastClose": 66.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -23.2
+   "lastClose": 66,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -24.1
   },
   {
    "slug": "s-a-tech-software-india",
@@ -5053,9 +5053,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 38.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -35
+   "lastClose": 39.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -33.1
   },
   {
    "slug": "aprameya-engineering",
@@ -5081,9 +5081,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 24.1,
-   "lastClose": 130,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 124.1
+   "lastClose": 131.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 127.4
   },
   {
    "slug": "trom-industries",
@@ -5109,9 +5109,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 56.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -50.6
+   "lastClose": 56.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -50.9
   },
   {
    "slug": "chetana-education",
@@ -5137,9 +5137,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 16.4,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 34,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -60
   },
   {
    "slug": "manglam-infra-and-engineering",
@@ -5165,9 +5165,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 12,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -78.6
   },
   {
    "slug": "v-l-infraprojects",
@@ -5193,9 +5193,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 23.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -44.3
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "rnfi-services",
@@ -5221,9 +5221,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 311.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 196.5
+   "lastClose": 306,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 191.4
   },
   {
    "slug": "sar-televenture-fpo",
@@ -5272,9 +5272,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 135,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 40.6
+   "lastClose": 140.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 46.8
   },
   {
    "slug": "macobs-technologies",
@@ -5300,9 +5300,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 28,
-   "lastClose": 195.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 160.1
+   "lastClose": 188.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 151.7
   },
   {
    "slug": "tunwal-e-motors",
@@ -5328,9 +5328,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 8.5,
-   "lastClose": 22.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -61.1
+   "lastClose": 23.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -60.8
   },
   {
    "slug": "prizor-viztech",
@@ -5356,9 +5356,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 1485.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 1607.5
+   "lastClose": 1614.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 1755.2
   },
   {
    "slug": "sati-poly-plast",
@@ -5384,9 +5384,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 36,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -72.3
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "sahaj-solar",
@@ -5412,9 +5412,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 82.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -54.2
+   "lastClose": 79,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -56.1
   },
   {
    "slug": "effwa-infra-and-research",
@@ -5440,9 +5440,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 318.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 288
+   "lastClose": 322,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 292.7
   },
   {
    "slug": "ganesh-green-bharat",
@@ -5468,9 +5468,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 177.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -6.4
+   "lastClose": 171,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -10
   },
   {
    "slug": "ambey-laboratories",
@@ -5524,9 +5524,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 76.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -15.3
+   "lastClose": 79.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -11.2
   },
   {
    "slug": "diensten-tech",
@@ -5580,9 +5580,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 27.3,
-   "lastClose": 446.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 479.6
+   "lastClose": 450.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 485.5
   },
   {
    "slug": "divine-power-energy",
@@ -5608,9 +5608,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 287.5,
-   "lastClose": 680.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 1602.3
+   "lastClose": 684.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 1610.4
   },
   {
    "slug": "petro-carbon-and-chemicals",
@@ -5637,7 +5637,7 @@
    },
    "listingGainPct": 75.4,
    "lastClose": 404,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": 136.3
   },
   {
@@ -5665,7 +5665,7 @@
    },
    "listingGainPct": 37.5,
    "lastClose": 83,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": 29.7
   },
   {
@@ -5692,9 +5692,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 211,
-   "lastClose": 53.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -46.2
+   "lastClose": 54.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -45.3
   },
   {
    "slug": "sylvan-plyboard-india",
@@ -5720,9 +5720,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 20,
-   "lastClose": 53.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -3.2
+   "lastClose": 55.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 1.6
   },
   {
    "slug": "visaman-global-sales",
@@ -5748,9 +5748,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.9,
-   "lastClose": 20.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -51.3
+   "lastClose": 20.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -51.6
   },
   {
    "slug": "medicamen-organics",
@@ -5804,9 +5804,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 71.4,
-   "lastClose": 29.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -79
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "durlax-top-surface",
@@ -5832,9 +5832,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 60.3,
-   "lastClose": 69.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 2.4
+   "lastClose": 70.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 4.1
   },
   {
    "slug": "falcon-technoprojects-india",
@@ -5860,9 +5860,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -8.7,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 11.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -87.8
   },
   {
    "slug": "gp-eco-solutions-india",
@@ -5888,9 +5888,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 298.9,
-   "lastClose": 368.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 291.6
+   "lastClose": 360.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 283.1
   },
   {
    "slug": "tbi-corn",
@@ -5916,9 +5916,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 110.6,
-   "lastClose": 70.55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -24.9
+   "lastClose": 70.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -25.3
   },
   {
    "slug": "aimtron-electronics",
@@ -5944,9 +5944,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 49.7,
-   "lastClose": 1859,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 1054.7
+   "lastClose": 1971.6,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 1124.6
   },
   {
    "slug": "z-tech-india",
@@ -5972,9 +5972,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -9.1,
-   "lastClose": 378.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 244.1
+   "lastClose": 411.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 274
   },
   {
    "slug": "beacon-trusteeship",
@@ -6000,9 +6000,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 50,
-   "lastClose": 85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 41.7
+   "lastClose": 87.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 45.9
   },
   {
    "slug": "vilas-transcore",
@@ -6028,9 +6028,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 46.3,
-   "lastClose": 338.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 130.4
+   "lastClose": 330.4,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 124.8
   },
   {
    "slug": "gsm-foils",
@@ -6056,9 +6056,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 58.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 83.1
+   "lastClose": 56.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 76.4
   },
   {
    "slug": "hoac-foods-india",
@@ -6084,9 +6084,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 206.3,
-   "lastClose": 950.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 1879.5
+   "lastClose": 989.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 1962.3
   },
   {
    "slug": "rulka-electricals",
@@ -6112,9 +6112,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 123.4,
-   "lastClose": 100,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -57.4
+   "lastClose": 104.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -55.7
   },
   {
    "slug": "quest-laboratories",
@@ -6140,9 +6140,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 59.9,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 86.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -11
   },
   {
    "slug": "indian-emulsifiers",
@@ -6168,9 +6168,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 225.8,
-   "lastClose": 34.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -73.6
+   "lastClose": 34.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -73.7
   },
   {
    "slug": "mandeep-auto-industries",
@@ -6196,9 +6196,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -7.1,
-   "lastClose": 17,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -74.6
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "veritaas-advertising",
@@ -6252,9 +6252,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 100,
-   "lastClose": 290.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 97.8
+   "lastClose": 286.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 95.2
   },
   {
    "slug": "premier-roadlines",
@@ -6280,9 +6280,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 29.9,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 41,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -38.8
   },
   {
    "slug": "energy-mission-machineries-india",
@@ -6308,9 +6308,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 510,
-   "lastClose": 108,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 80
+   "lastClose": 107.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 78.8
   },
   {
    "slug": "silkflex-polymers-india",
@@ -6336,9 +6336,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 15.4,
-   "lastClose": 291,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 459.6
+   "lastClose": 319.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 513.7
   },
   {
    "slug": "refractory-shapes",
@@ -6364,9 +6364,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 141.9,
-   "lastClose": 40.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 29.8
+   "lastClose": 37.6,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 21.3
   },
   {
    "slug": "winsol-engineers",
@@ -6392,9 +6392,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 386.7,
-   "lastClose": 112.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 49.4
+   "lastClose": 111,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 48
   },
   {
    "slug": "slone-infosystems",
@@ -6420,9 +6420,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 50,
-   "lastClose": 120,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 51.9
+   "lastClose": 120.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 52.5
   },
   {
    "slug": "grill-splendour-services",
@@ -6448,9 +6448,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.1,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 65.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -45.1
   },
   {
    "slug": "ramdevbaba-solvent",
@@ -6477,7 +6477,7 @@
    },
    "listingGainPct": 31.8,
    "lastClose": 82.8,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -2.6
   },
   {
@@ -6504,9 +6504,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -10,
-   "lastClose": 70,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -30
+   "lastClose": 66.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -33.2
   },
   {
    "slug": "teerth-gopicon",
@@ -6532,9 +6532,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 12.6,
-   "lastClose": 10.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -90.8
+   "lastClose": 11.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -89.9
   },
   {
    "slug": "aluwind-architectural",
@@ -6560,9 +6560,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 43.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -2.6
+   "lastClose": 43,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -4.4
   },
   {
    "slug": "creative-graphics-solutions-india",
@@ -6588,9 +6588,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 105.9,
-   "lastClose": 158.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 86
+   "lastClose": 159.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 88.2
   },
   {
    "slug": "k2-infragen",
@@ -6616,9 +6616,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 40.3,
-   "lastClose": 38.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -67.5
+   "lastClose": 41.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -65.1
   },
   {
    "slug": "radiowalla-network",
@@ -6644,9 +6644,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 58.1,
-   "lastClose": 21.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -71.7
+   "lastClose": 22,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -71.1
   },
   {
    "slug": "tac-infosec",
@@ -6672,9 +6672,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 173.6,
-   "lastClose": 388.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 266.3
+   "lastClose": 393,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 270.8
   },
   {
    "slug": "yash-optics-and-lens",
@@ -6728,9 +6728,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4.6,
-   "lastClose": 16.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -69.8
+   "lastClose": 15.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -71.8
   },
   {
    "slug": "blue-pebble",
@@ -6756,9 +6756,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 18.5,
-   "lastClose": 72.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -56.8
+   "lastClose": 76.4,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -54.5
   },
   {
    "slug": "trust-fintech",
@@ -6784,9 +6784,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 41.8,
-   "lastClose": 24.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -75.5
+   "lastClose": 25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -75.2
   },
   {
    "slug": "naman-in-store-india",
@@ -6812,9 +6812,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 40.4,
-   "lastClose": 42.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -52.3
+   "lastClose": 40.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -54.2
   },
   {
    "slug": "vishwas-agri-seeds",
@@ -6919,9 +6919,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.9,
-   "lastClose": 12,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -82.9
+   "lastClose": 13,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -81.4
   },
   {
    "slug": "avp-infracon",
@@ -6970,9 +6970,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 101.5,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 124.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 91.2
   },
   {
    "slug": "pratham-epc-projects",
@@ -6998,9 +6998,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 51.1,
-   "lastClose": 110,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 46.7
+   "lastClose": 114.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 52.3
   },
   {
    "slug": "shree-karni-fabcom",
@@ -7026,9 +7026,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 14.5,
-   "lastClose": 466.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 105.6
+   "lastClose": 472,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 107.9
   },
   {
    "slug": "sona-machinery",
@@ -7054,9 +7054,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -12.6,
-   "lastClose": 30.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -78.7
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "v-r-infraspace",
@@ -7082,9 +7082,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 5.9,
-   "lastClose": 88,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 3.5
+   "lastClose": 89.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 5.3
   },
   {
    "slug": "m-v-k-agro-food-product",
@@ -7110,9 +7110,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -34.2,
-   "lastClose": 205.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 71.6
+   "lastClose": 212.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 77.1
   },
   {
    "slug": "purv-flexipack",
@@ -7138,9 +7138,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 266.2,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 46.4,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -34.6
   },
   {
    "slug": "owais-metal-and-mineral-processing",
@@ -7166,9 +7166,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 187.4,
-   "lastClose": 69.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -20.5
+   "lastClose": 67.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -22.8
   },
   {
    "slug": "sadhav-shipping",
@@ -7194,9 +7194,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 42.1,
-   "lastClose": 115.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 21.6
+   "lastClose": 118,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 24.2
   },
   {
    "slug": "deem-roll-tech",
@@ -7222,9 +7222,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 55,
-   "lastClose": 50.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -60.5
+   "lastClose": 46.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -64.2
   },
   {
    "slug": "zenith-drugs",
@@ -7250,9 +7250,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 39.2,
-   "lastClose": 38.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -51
+   "lastClose": 39.6,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -49.9
   },
   {
    "slug": "esconet-technologies",
@@ -7278,9 +7278,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 245.2,
-   "lastClose": 359.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 328
+   "lastClose": 370.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 341.2
   },
   {
    "slug": "atmastco",
@@ -7306,9 +7306,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 18.2,
-   "lastClose": 109.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 42.7
+   "lastClose": 109,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 41.6
   },
   {
    "slug": "interiors-and-more",
@@ -7334,9 +7334,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 18.9,
-   "lastClose": 132,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -41.9
+   "lastClose": 138,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -39.2
   },
   {
    "slug": "kalahridhaan-trendz",
@@ -7390,9 +7390,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 141.4,
-   "lastClose": 126.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 63.7
+   "lastClose": 129.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 67.7
   },
   {
    "slug": "wise-travel-india",
@@ -7418,9 +7418,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 32.7,
-   "lastClose": 99.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -32.6
+   "lastClose": 99.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -32.3
   },
   {
    "slug": "alpex-solar",
@@ -7446,9 +7446,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 186.1,
-   "lastClose": 710.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 517.5
+   "lastClose": 713.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 520.8
   },
   {
    "slug": "polysil-irrigation-systems",
@@ -7474,9 +7474,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.7,
-   "lastClose": 40,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -25.9
+   "lastClose": 41.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -22.3
   },
   {
    "slug": "italian-edibles",
@@ -7503,7 +7503,7 @@
    },
    "listingGainPct": -19.1,
    "lastClose": 28.5,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -58.1
   },
   {
@@ -7530,9 +7530,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.7,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 25.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -85.8
   },
   {
    "slug": "megatherm-induction",
@@ -7558,9 +7558,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 83.3,
-   "lastClose": 232.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 115.7
+   "lastClose": 232,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 114.8
   },
   {
    "slug": "delaplex",
@@ -7586,9 +7586,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 60.9,
-   "lastClose": 128.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -32.8
+   "lastClose": 126.4,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -34.2
   },
   {
    "slug": "docmode-health-technologies",
@@ -7642,9 +7642,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 185.7,
-   "lastClose": 143.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 104.7
+   "lastClose": 157.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 125.6
   },
   {
    "slug": "addictive-learning-technology",
@@ -7698,9 +7698,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 200,
-   "lastClose": 39.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -44
+   "lastClose": 40,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -42.9
   },
   {
    "slug": "maxposure",
@@ -7726,9 +7726,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 339.4,
-   "lastClose": 31.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -3.5
+   "lastClose": 29.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -9.7
   },
   {
    "slug": "australian-premium-solar-india",
@@ -7754,9 +7754,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 159.3,
-   "lastClose": 224.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 315.7
+   "lastClose": 213.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 295.7
   },
   {
    "slug": "ibl-finance",
@@ -7782,9 +7782,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.8,
-   "lastClose": 62.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 22.4
+   "lastClose": 65.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 27.6
   },
   {
    "slug": "kaushalya-logistics",
@@ -7810,9 +7810,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 33.3,
-   "lastClose": 38.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -48.7
+   "lastClose": 40.85,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -45.5
   },
   {
    "slug": "kay-cee-energy-and-infra",
@@ -7838,9 +7838,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 366.7,
-   "lastClose": 81.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 50.1
+   "lastClose": 80,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 48.1
   },
   {
    "slug": "akanksha-power-and-infrastructure",
@@ -7866,9 +7866,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 12.7,
-   "lastClose": 140,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 154.5
+   "lastClose": 154.35,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 180.6
   },
   {
    "slug": "hrh-next-services",
@@ -7951,7 +7951,7 @@
    },
    "listingGainPct": 0,
    "lastClose": 4.1,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -97.7
   },
   {
@@ -7978,9 +7978,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 50.8,
-   "lastClose": 273.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 321.1
+   "lastClose": 270.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 315.7
   },
   {
    "slug": "trident-techlabs",
@@ -8006,9 +8006,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 180.4,
-   "lastClose": 101.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 190.4
+   "lastClose": 104.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 197.4
   },
   {
    "slug": "electro-force-india",
@@ -8034,9 +8034,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.5,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 17,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -81.7
   },
   {
    "slug": "shree-osfm-e-mobility",
@@ -8062,9 +8062,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 49,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -24.6
+   "lastClose": 48.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -24.7
   },
   {
    "slug": "s-j-logistics-india",
@@ -8090,9 +8090,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 40,
-   "lastClose": 371.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 197.4
+   "lastClose": 375.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 200
   },
   {
    "slug": "presstonic-engineering",
@@ -8118,9 +8118,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 94.4,
-   "lastClose": 41.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -42.2
+   "lastClose": 40.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -43.5
   },
   {
    "slug": "accent-microcell",
@@ -8146,9 +8146,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 114.3,
-   "lastClose": 611.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 336.5
+   "lastClose": 602.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 330.5
   },
   {
    "slug": "sheetal-universal",
@@ -8174,9 +8174,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.1,
-   "lastClose": 397.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 467.4
+   "lastClose": 400.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 472.7
   },
   {
    "slug": "graphisads",
@@ -8202,9 +8202,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.5,
-   "lastClose": 25.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -76.9
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "marinetrans-india",
@@ -8230,9 +8230,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 15.4,
-   "lastClose": 11.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -57.5
+   "lastClose": 12.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -53.3
   },
   {
    "slug": "net-avenue-technologies",
@@ -8309,9 +8309,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 62.7,
-   "lastClose": 61,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -26.5
+   "lastClose": 60.35,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -27.3
   },
   {
    "slug": "sunrest-lifescience",
@@ -8365,9 +8365,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 23,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -69.7
   },
   {
    "slug": "micropro-software-solutions",
@@ -8393,9 +8393,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -1.2,
-   "lastClose": 16.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -79.8
+   "lastClose": 17.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -78.8
   },
   {
    "slug": "sar-televenture",
@@ -8421,9 +8421,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90.9,
-   "lastClose": 74.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 35.7
+   "lastClose": 74.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 35.1
   },
   {
    "slug": "transteel-seating-technologies",
@@ -8449,9 +8449,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 27,
-   "lastClose": 86.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 23.2
+   "lastClose": 85.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 21.9
   },
   {
    "slug": "maitreya-medicare",
@@ -8477,9 +8477,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 98.2,
-   "lastClose": 121.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 48.5
+   "lastClose": 117.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 43.4
   },
   {
    "slug": "shanthala-fmcg-products",
@@ -8505,9 +8505,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 18.7,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 11.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -87.7
   },
   {
    "slug": "paragon-fine-and-speciality-chemical",
@@ -8533,9 +8533,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 125,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 46.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -53.8
   },
   {
    "slug": "on-door-concepts",
@@ -8561,9 +8561,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.9,
-   "lastClose": 251.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 20.9
+   "lastClose": 269.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 29.7
   },
   {
    "slug": "rajgor-castor-derivatives",
@@ -8589,9 +8589,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 18,
-   "lastClose": 20.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -59.4
+   "lastClose": 21.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -56.4
   },
   {
    "slug": "womancart",
@@ -8617,9 +8617,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 36,
-   "lastClose": 73.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -14.4
+   "lastClose": 73.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -14.2
   },
   {
    "slug": "arvind-and-company-shipping-agencies",
@@ -8673,9 +8673,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.5,
-   "lastClose": 322.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 318.8
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "karnika-industries",
@@ -8701,9 +8701,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.6,
-   "lastClose": 134,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 76.3
+   "lastClose": 132.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 74.3
   },
   {
    "slug": "plada-infotech-services",
@@ -8757,9 +8757,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 13.8,
-   "lastClose": 85.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 46.8
+   "lastClose": 84.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 45.2
   },
   {
    "slug": "vishnusurya-projects-and-infra",
@@ -8785,9 +8785,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.4,
-   "lastClose": 151.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 123.1
+   "lastClose": 138.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 103.1
   },
   {
    "slug": "canarys-automations",
@@ -8813,9 +8813,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 40.2,
-   "lastClose": 24.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -20
+   "lastClose": 24.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -20.3
   },
   {
    "slug": "e-factor-experiences",
@@ -8841,9 +8841,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 53.3,
-   "lastClose": 185,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 146.7
+   "lastClose": 180,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 140
   },
   {
    "slug": "kontor-space",
@@ -8869,9 +8869,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 31.2,
-   "lastClose": 46,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -50.5
+   "lastClose": 50,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -46.2
   },
   {
    "slug": "oneclick-logistics-india",
@@ -8897,9 +8897,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 41.4,
-   "lastClose": 324.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 227.4
+   "lastClose": 333,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 236.4
   },
   {
    "slug": "vinyas-innovative-technologies",
@@ -8925,9 +8925,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 100,
-   "lastClose": 1514.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 818.2
+   "lastClose": 1515.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 818.3
   },
   {
    "slug": "goyal-salt",
@@ -8953,9 +8953,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 242.1,
-   "lastClose": 92.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 144.3
+   "lastClose": 94,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 147.4
   },
   {
    "slug": "arabian-petroleum",
@@ -8981,9 +8981,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10.6,
-   "lastClose": 108.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 55.6
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "digikore-studios",
@@ -9009,9 +9009,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 57.9,
-   "lastClose": 32,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -81.3
+   "lastClose": 34.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -79.8
   },
   {
    "slug": "inspire-films",
@@ -9037,9 +9037,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 13.6,
-   "lastClose": 13.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -76.7
+   "lastClose": 12.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -78.9
   },
   {
    "slug": "newjaisa-technologies",
@@ -9065,9 +9065,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 51.1,
-   "lastClose": 17,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -63.8
+   "lastClose": 18.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -61.2
   },
   {
    "slug": "saakshi-medtech-and-panels",
@@ -9093,9 +9093,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 50.5,
-   "lastClose": 372,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 283.5
+   "lastClose": 374.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 286.5
   },
   {
    "slug": "hi-green-carbon",
@@ -9121,9 +9121,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.7,
-   "lastClose": 130.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 73.8
+   "lastClose": 129.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 72.3
   },
   {
    "slug": "mangalam-alloys",
@@ -9149,9 +9149,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 34.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -56.9
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "marco-cables-and-conductors",
@@ -9177,8 +9177,8 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": null,
-   "lastClose": 36.5,
-   "lastCloseDate": "2026-11-06",
+   "lastClose": 37.1,
+   "lastCloseDate": "2026-11-09",
    "gainPct": null
   },
   {
@@ -9205,9 +9205,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 71.4,
-   "lastClose": 263,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 275.7
+   "lastClose": 269.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 285.4
   },
   {
    "slug": "master-components",
@@ -9233,9 +9233,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.3,
-   "lastClose": 451,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 222.1
+   "lastClose": 489.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 249.8
   },
   {
    "slug": "cellecor-gadgets",
@@ -9261,9 +9261,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 27.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -70.2
+   "lastClose": 27.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -70.4
   },
   {
    "slug": "holmarc-opto-mechatronics",
@@ -9289,9 +9289,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 63.1,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 133,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 232.5
   },
   {
    "slug": "kody-technolab",
@@ -9317,9 +9317,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 6.3,
-   "lastClose": 1474.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 821.3
+   "lastClose": 1529.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 855.7
   },
   {
    "slug": "chavda-infra",
@@ -9345,9 +9345,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 40,
-   "lastClose": 46.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -28.3
+   "lastClose": 45.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -30.7
   },
   {
    "slug": "kundan-edifice",
@@ -9401,9 +9401,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 30.4,
-   "lastClose": 3.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -84.3
+   "lastClose": 3.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -83.5
   },
   {
    "slug": "unihealth-consultancy",
@@ -9429,9 +9429,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.3,
-   "lastClose": 549.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 316.1
+   "lastClose": 544.35,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 312.4
   },
   {
    "slug": "basilic-fly-studio",
@@ -9457,9 +9457,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 179.4,
-   "lastClose": 159.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 64.3
+   "lastClose": 157.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 62.4
   },
   {
    "slug": "pramara-promotions",
@@ -9485,9 +9485,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 76.2,
-   "lastClose": 85.55,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 35.8
+   "lastClose": 85.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 36.4
   },
   {
    "slug": "saroja-pharma-industries-india",
@@ -9541,9 +9541,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 143.2,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 990,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 435.1
   },
   {
    "slug": "mono-pharmacare",
@@ -9569,9 +9569,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.6,
-   "lastClose": 10,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -64.3
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "sahaj-fashions",
@@ -9625,9 +9625,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 201.2,
-   "lastClose": 238,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 186.7
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "crop-life-science",
@@ -9653,9 +9653,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.6,
-   "lastClose": 99.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 91.3
+   "lastClose": 99.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 90.9
   },
   {
    "slug": "srivari-spices-and-foods",
@@ -9681,9 +9681,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 141.7,
-   "lastClose": 283,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 573.8
+   "lastClose": 285.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 580.1
   },
   {
    "slug": "sangani-hospitals",
@@ -9709,9 +9709,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10,
-   "lastClose": 58.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 46.9
+   "lastClose": 58,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 45
   },
   {
    "slug": "yudiz-solutions",
@@ -9737,9 +9737,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 12.1,
-   "lastClose": 25.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -84.5
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "oriana-power",
@@ -9765,9 +9765,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 155.9,
-   "lastClose": 237.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 101.6
+   "lastClose": 242.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 105.1
   },
   {
    "slug": "vinsys-it-services-india",
@@ -9793,9 +9793,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 61.9,
-   "lastClose": 619,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 383.6
+   "lastClose": 606.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 373.8
   },
   {
    "slug": "zeal-global-services",
@@ -9821,9 +9821,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 42.7,
-   "lastClose": 69.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -32.6
+   "lastClose": 72,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -30.1
   },
   {
    "slug": "shri-techtex",
@@ -9849,9 +9849,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 33,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 68.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 12.3
   },
   {
    "slug": "yasons-chemex-care",
@@ -9877,9 +9877,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 12.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -69.5
   },
   {
    "slug": "service-care",
@@ -9933,9 +9933,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 65.3,
-   "lastClose": 32.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -49.5
+   "lastClose": 32.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -50.5
   },
   {
    "slug": "synoptics-technologies",
@@ -9961,9 +9961,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.4,
-   "lastClose": 67.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -71.5
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "tridhya-tech",
@@ -9989,9 +9989,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -85.7
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "global-pet-industries",
@@ -10040,9 +10040,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 73.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 4.8
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "essen-speciality-films",
@@ -10063,9 +10063,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 105.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -1.5
+   "lastClose": 115.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 7.6
   },
   {
    "slug": "greenchef-appliances",
@@ -10086,9 +10086,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 66,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -24.1
+   "lastClose": 63.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -26.5
   },
   {
    "slug": "magson-retail-and-distribution",
@@ -10109,9 +10109,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 172,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 164.6
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "aatmaj-healthcare",
@@ -10132,9 +10132,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 23.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -61.3
+   "lastClose": 25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -58.3
   },
   {
    "slug": "vilin-bio-med",
@@ -10178,9 +10178,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 14.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -85.3
+   "lastClose": 15.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -84.1
   },
   {
    "slug": "urban-enviro-waste-management",
@@ -10201,9 +10201,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 90.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -9.2
+   "lastClose": 92.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -7.5
   },
   {
    "slug": "spectrum-talent-management",
@@ -10224,9 +10224,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 60,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -65.3
   },
   {
    "slug": "kore-digital",
@@ -10247,9 +10247,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 29.05,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -83.9
+   "lastClose": 26.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -85.4
   },
   {
    "slug": "sahana-system",
@@ -10270,9 +10270,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 983.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 628.3
+   "lastClose": 1080.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 700.1
   },
   {
    "slug": "infollion-research-services",
@@ -10293,9 +10293,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 126,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 53.7
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "proventus-agrocom",
@@ -10316,9 +10316,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 1998.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 159.2
   },
   {
    "slug": "vasa-denticity",
@@ -10339,9 +10339,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 447,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 249.2
+   "lastClose": 446,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 248.4
   },
   {
    "slug": "crayons-advertising",
@@ -10362,9 +10362,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 29.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -55.1
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "remus-pharmaceuticals",
@@ -10385,9 +10385,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 800.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -34.9
+   "lastClose": 820.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -33.2
   },
   {
    "slug": "krishca-strapping-solutions",
@@ -10408,9 +10408,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 191.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 254.6
+   "lastClose": 203,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 275.9
   },
   {
    "slug": "auro-impex-and-chemicals",
@@ -10431,9 +10431,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 33.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -56.5
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "de-neers-tools",
@@ -10454,9 +10454,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 165.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 64.3
+   "lastClose": 169.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 68.2
   },
   {
    "slug": "quicktouch-technologies",
@@ -10477,8 +10477,8 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 13.45,
-   "lastCloseDate": "2026-11-06",
+   "lastClose": 13.4,
+   "lastCloseDate": "2026-11-09",
    "gainPct": -78
   },
   {
@@ -10500,9 +10500,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 64.75,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 7.9
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "pattech-fitwell-tube-components",
@@ -10546,9 +10546,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 279.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 106.8
+   "lastClose": 269.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 100
   },
   {
    "slug": "mos-utility",
@@ -10569,9 +10569,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 7.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -89.6
+   "lastClose": 8.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -89.2
   },
   {
    "slug": "sotac-pharmaceuticals",
@@ -10592,9 +10592,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 130,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 17.1
   },
   {
    "slug": "nirman-agri-genetics",
@@ -10615,9 +10615,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 24.3,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -75.5
+   "lastClose": 26.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -73.5
   },
   {
    "slug": "quality-foils-india",
@@ -10638,9 +10638,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 47,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -21.7
   },
   {
    "slug": "vels-film-international",
@@ -10685,7 +10685,7 @@
    "listing": null,
    "listingGainPct": null,
    "lastClose": 38.45,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -3.9
   },
   {
@@ -10707,9 +10707,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 220.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 145.4
+   "lastClose": 229.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 154.8
   },
   {
    "slug": "vertexplus-technologies",
@@ -10753,9 +10753,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 96.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 135.4
+   "lastClose": 91.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 123.2
   },
   {
    "slug": "viaz-tyres",
@@ -10776,9 +10776,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 92.65,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 49.4
+   "lastClose": 91.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 48
   },
   {
    "slug": "agarwal-float-glass-india",
@@ -10822,9 +10822,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 105,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 320
+   "lastClose": 100,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 300
   },
   {
    "slug": "shera-energy",
@@ -10845,9 +10845,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 172.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 201.9
+   "lastClose": 168.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 195.6
   },
   {
    "slug": "gayatri-rubbers-and-chemicals",
@@ -10868,9 +10868,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 630,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 2000
   },
   {
    "slug": "aristo-bio-tech-and-lifescience",
@@ -10891,9 +10891,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 99.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 37.6
+   "lastClose": 108,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 50
   },
   {
    "slug": "ducol-organics-and-colours",
@@ -10914,9 +10914,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 120,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 53.8
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "chaman-metallics",
@@ -10960,9 +10960,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 515,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 415
+   "lastClose": 537,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 437
   },
   {
    "slug": "rbm-infracon",
@@ -10983,9 +10983,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 201.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 459.4
+   "lastClose": 207,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 475
   },
   {
    "slug": "homesfy-realty",
@@ -11098,9 +11098,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 17,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -48.5
+   "lastClose": 18,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -45.5
   },
   {
    "slug": "all-e-technologies",
@@ -11121,9 +11121,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 116.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 29.1
+   "lastClose": 118.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 31.6
   },
   {
    "slug": "arham-technologies",
@@ -11190,9 +11190,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 71.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 147.2
+   "lastClose": 77.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 168.3
   },
   {
    "slug": "amiable-logistics-india",
@@ -11236,9 +11236,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 201.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 242.1
+   "lastClose": 198,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 235.6
   },
   {
    "slug": "rite-zone-chemcon-india",
@@ -11259,9 +11259,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 17.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -76.1
+   "lastClose": 18.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -75.6
   },
   {
    "slug": "vital-chemtech",
@@ -11305,9 +11305,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 72.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -23.5
+   "lastClose": 69.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -26.6
   },
   {
    "slug": "frog-cellsat",
@@ -11328,9 +11328,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 267.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 162
+   "lastClose": 262.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 157.4
   },
   {
    "slug": "swastik-pipe",
@@ -11351,9 +11351,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 14.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -85.1
+   "lastClose": 15.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -84.5
   },
   {
    "slug": "lloyds-luxuries",
@@ -11374,9 +11374,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 64.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 61.4
   },
   {
    "slug": "cyber-media-research-and-services",
@@ -11397,9 +11397,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 72.25,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -59.9
   },
   {
    "slug": "qms-medical-allied-services",
@@ -11443,9 +11443,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 63.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 112.8
+   "lastClose": 67.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 124
   },
   {
    "slug": "maks-energy-solutions-india",
@@ -11558,9 +11558,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 0.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -99.4
   },
   {
    "slug": "sabar-flex-india",
@@ -11604,9 +11604,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 154,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 285
+   "lastClose": 159.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 298.3
   },
   {
    "slug": "viviana-power-tech",
@@ -11650,9 +11650,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 304.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 746.7
+   "lastClose": 304.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 746.9
   },
   {
    "slug": "ameya-precision-engineers",
@@ -11673,9 +11673,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 155.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 358.2
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "jfl-life-sciences",
@@ -11696,9 +11696,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 11.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -80.7
+   "lastClose": 12.9,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -78.9
   },
   {
    "slug": "veekayem-fashion-and-apparels",
@@ -11719,9 +11719,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 164,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 485.7
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "upsurge-seeds-of-agriculture",
@@ -11742,9 +11742,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 89,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -25.8
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "agni-green-power",
@@ -11765,9 +11765,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 14.2,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 42
+   "lastClose": 14.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 47.5
   },
   {
    "slug": "mangalam-worldwide",
@@ -11812,7 +11812,7 @@
    "listing": null,
    "listingGainPct": null,
    "lastClose": 162.65,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": 132.4
   },
   {
@@ -11834,9 +11834,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 10.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -65
+   "lastClose": 11.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -61.8
   },
   {
    "slug": "fidel-softech",
@@ -11858,7 +11858,7 @@
    "listing": null,
    "listingGainPct": null,
    "lastClose": 180,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": 386.5
   },
   {
@@ -11880,9 +11880,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 9.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -65.7
+   "lastClose": 10.4,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -64.1
   },
   {
    "slug": "rachana-infrastructure",
@@ -11903,9 +11903,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 33.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -75
+   "lastClose": 39.05,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -71.1
   },
   {
    "slug": "sonu-infratech",
@@ -11926,9 +11926,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 35.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -1.4
+   "lastClose": 37.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 4.7
   },
   {
    "slug": "le-merite-exports",
@@ -12110,9 +12110,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 20.25,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -46.7
+   "lastClose": 22.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -40.3
   },
   {
    "slug": "sp-refractories",
@@ -12156,9 +12156,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 64,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 28
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "vaidya-sane-ayurved-laboratories",
@@ -12179,9 +12179,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 135.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 86.2
+   "lastClose": 141,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 93.2
   },
   {
    "slug": "richa-info-systems",
@@ -12202,9 +12202,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 79.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -36.2
   },
   {
    "slug": "precision-metaliks",
@@ -12225,9 +12225,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 6.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -86.9
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "timescan-logistics-india-private",
@@ -12294,9 +12294,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 169,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 106.1
+   "lastClose": 152.55,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 86
   },
   {
    "slug": "euro-panel-products",
@@ -12386,9 +12386,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 12.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -90
+   "lastClose": 13.35,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -89.3
   },
   {
    "slug": "kotyark-industries",
@@ -12455,9 +12455,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 46.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -49.5
+   "lastClose": 55.7,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -40.1
   },
   {
    "slug": "destiny-logistics-and-infra",
@@ -12570,9 +12570,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 43.15,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -25.6
+   "lastClose": 41.3,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -28.8
   },
   {
    "slug": "du-digital-technologies",
@@ -12685,9 +12685,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 13.75,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -72.5
   },
   {
    "slug": "v-marc-india",
@@ -12731,9 +12731,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 201.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 252.9
   },
   {
    "slug": "pavna-industries",
@@ -13329,9 +13329,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 149,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 186.5
+   "lastClose": 150,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 188.5
   },
   {
    "slug": "drs-dilip-roadlines",
@@ -13375,9 +13375,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 19.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -25
+   "lastClose": 18.8,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -27.7
   },
   {
    "slug": "icl-multitrading-india",
@@ -13927,9 +13927,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 176.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 194.8
+   "lastClose": 193.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 223.3
   },
   {
    "slug": "avon-moldplast",
@@ -14433,8 +14433,8 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
+   "lastClose": 304,
+   "lastCloseDate": "2026-11-09",
    "gainPct": null
   },
   {
@@ -14709,9 +14709,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 54.95,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -45
+   "lastClose": 57,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -43
   },
   {
    "slug": "mittal-life-style",
@@ -14824,9 +14824,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 60.45,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 6.1
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "sarveshwar-foods",
@@ -15008,9 +15008,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 26.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -36
+   "lastClose": 28.2,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -32.9
   },
   {
    "slug": "sintercom-india",
@@ -15284,9 +15284,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 13.8,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -74.9
+   "lastClose": 12.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -77.3
   },
   {
    "slug": "touchwood-entertainment",
@@ -15399,9 +15399,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 181.9,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 419.7
+   "lastClose": 179.95,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 414.1
   },
   {
    "slug": "zodiac-energy",
@@ -15468,9 +15468,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 25.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -52.6
+   "lastClose": 28.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -47.9
   },
   {
    "slug": "vertoz-advertising",
@@ -15514,9 +15514,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 39.35,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -60.6
+   "lastClose": 43.1,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -56.9
   },
   {
    "slug": "secur-credentials",
@@ -15629,9 +15629,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 57.6,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 69.4
+   "lastClose": 60.45,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 77.8
   },
   {
    "slug": "omfurn-india",
@@ -15652,9 +15652,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 47.4,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 106.1
+   "lastClose": 45.15,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 96.3
   },
   {
    "slug": "tirupati-forge",
@@ -15721,9 +15721,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 10.7,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -57.2
+   "lastClose": 11.5,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -54
   },
   {
    "slug": "reliable-data-services",
@@ -15859,9 +15859,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 26.1,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": -62.7
+   "lastClose": 27,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -61.4
   },
   {
    "slug": "d-p-wires",
@@ -15905,9 +15905,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 299.5,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 648.8
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "madhya-pradesh-today-media",
@@ -16439,9 +16439,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 138.65,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": 131.1
   },
   {
    "slug": "globe-textiles-india",
@@ -16509,7 +16509,7 @@
    "listing": null,
    "listingGainPct": null,
    "lastClose": 24.55,
-   "lastCloseDate": "2026-11-06",
+   "lastCloseDate": "2026-11-09",
    "gainPct": -41.5
   },
   {
@@ -16531,9 +16531,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null
+   "lastClose": 1.4,
+   "lastCloseDate": "2026-11-09",
+   "gainPct": -97
   },
   {
    "slug": "zota-health-care",
@@ -17244,9 +17244,9 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 211.85,
-   "lastCloseDate": "2026-11-06",
-   "gainPct": 959.2
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null
   },
   {
    "slug": "pansari-developers",
@@ -17681,8 +17681,8 @@
    "subscriptionAsOf": null,
    "listing": null,
    "listingGainPct": null,
-   "lastClose": 93.15,
-   "lastCloseDate": "2026-11-06",
+   "lastClose": 92.5,
+   "lastCloseDate": "2026-11-09",
    "gainPct": null
   },
   {
