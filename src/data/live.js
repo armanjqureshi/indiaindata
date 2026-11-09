@@ -45,6 +45,9 @@ function snap(key) {
       : kind === 'mandiindex' ? serverSource.mandiIndex
       : kind === 'districts' ? serverSource.districts(arg, arg2)
       : kind === 'districtindex' ? serverSource.districtIndex
+      : kind === 'aqi' ? serverSource.aqi
+      : kind === 'aqicity' ? serverSource.aqiCity(arg)
+      : kind === 'aqisummary' ? serverSource.aqiSummary(arg)
       : kind === 'ipo' ? serverSource.details[arg] ?? null
       : kind === 'row' ? serverSource.rowsBySlug[arg] ?? null
       : null
@@ -67,6 +70,10 @@ export const getMandiIndexSnapshot = () => snap('mandiindex') || { items: {} }
 // District data (Census 2011): one file per state (live/districts/<state>.json) and an index.
 export const getDistrictsSnapshot = (state, district) => snap(district ? `districts:${state}:${district}` : `districts:${state}`)
 export const getDistrictIndexSnapshot = () => snap('districtindex')
+// City AQI (CPCB daily bulletin): latest day for every city, and one history file per city.
+export const getAqiSnapshot = () => snap('aqi')
+export const getAqiCitySnapshot = (slug) => snap(`aqicity:${slug}`)
+// a city page embeds only its own row, its state's cities and the metros; the full file loads after
 
 const sources = (p) => [
   `https://cdn.jsdelivr.net/gh/${REPO}@main/${p}`,
@@ -169,6 +176,9 @@ export const useMandi = (slug, state) => useLive(`live/mandi/${slug}.json`, getM
 export const useMandiIndex = () => useLive('live/mandi-index.json', getMandiIndexSnapshot())
 export const useDistricts = (state, district) => useLive(`live/districts/${state}.json`, getDistrictsSnapshot(state, district))
 export const useDistrictIndex = () => useLive('live/districts-index.json', getDistrictIndexSnapshot())
+export const useAqi = () => useLive('live/aqi.json', getAqiSnapshot())
+export const useAqiCity = (slug) => useLive(`live/aqi/${slug}.json`, getAqiCitySnapshot(slug))
+export const useAqiFor = (slug) => useLive('live/aqi.json', snap(`aqisummary:${slug}`))
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------
 export function todayIST() {

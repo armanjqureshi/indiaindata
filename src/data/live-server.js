@@ -33,6 +33,10 @@ function districtsFor(state, district) {
   const slim = (x) => Object.fromEntries(DISTRICT_ROW.filter((k) => k in x).map((k) => [k, x[k]]))
   return { ...d, districts: d.districts.map((x) => (district && x.slug === district ? x : slim(x))) }
 }
+const aqiLatest = first(import.meta.glob('/live/aqi.json', { eager: true }), null)
+const aqiFiles = Object.fromEntries(
+  Object.entries(import.meta.glob('/live/aqi/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
+)
 const archive = first(import.meta.glob('/live/ipos-archive.json', { eager: true }), { ipos: [] })
 const details = Object.fromEntries(
   Object.entries(import.meta.glob('/live/ipo/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
@@ -48,6 +52,15 @@ __setServerSource({
   mandi: mandiFor,
   districts: districtsFor,
   districtIndex,
+  aqi: aqiLatest,
+  aqiCity: (slug) => aqiFiles[slug] || null,
+  aqiSummary: (slug) => {
+    if (!aqiLatest) return null
+    const me = aqiLatest.cities.find((c) => c.slug === slug)
+    const state = me?.state || aqiFiles[slug]?.state
+    const keep = aqiLatest.cities.filter((c) => c.slug === slug || c.tier === 1 || (state && c.state === state))
+    return { ...aqiLatest, total: aqiLatest.cities.length, cities: keep, absent: [] }
+  },
   mandiIndex,
   rowsBySlug: Object.fromEntries([...archive.ipos, ...ipos.ipos].map((r) => [r.slug, r])),
   meta: { iposTotal: ipos.ipos.length + archive.ipos.length, iposUpdatedAt: ipos.updatedAt || null },

@@ -255,6 +255,22 @@ export function getRoutes() {
   routes.push({ path: '/edible-oil-price-today', title: 'Edible oil price today in India', description: 'All-India average retail and wholesale prices of mustard, groundnut, sunflower, soya and palm oil and vanaspati today, updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
   routes.push({ path: '/food-prices-today', title: 'Food prices today in India: vegetables, dal, atta, oil and milk', description: 'All-India average retail and wholesale prices of 23 kitchen staples today: tomato, onion, potato, rice, atta, dals, edible oils, sugar and milk. Updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
 
+  // City air quality pages, from the files written by scripts/data/update-aqi.mjs
+  {
+    const latest = path.join(contentDir, '..', 'live', 'aqi.json')
+    const dir = path.join(contentDir, '..', 'live', 'aqi')
+    if (fs.existsSync(latest) && fs.existsSync(dir)) {
+      routes.push({ path: '/aqi', title: 'AQI today: air quality index of every Indian city (CPCB)', description: "Today's air quality index for about 280 Indian cities from CPCB's daily bulletin: the metros, million-plus cities and smaller towns, with the main pollutant, the change since yesterday and a year ago.", changefreq: 'daily', priority: 0.9 })
+      for (const f of fs.readdirSync(dir).filter((n) => n.endsWith('.json'))) {
+        const c = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'))
+        // only cities with a reading in the last 120 days get a page
+        const last = c.history?.[c.history.length - 1]?.[0]
+        if (!last || Date.now() - Date.parse(last) > 120 * 864e5) continue
+        routes.push({ path: `/aqi/${c.slug}`, title: `${c.name} AQI today: air quality index and pollution level`, description: `${c.name}'s air quality index (AQI) today from CPCB's daily bulletin, with the main pollutant, the change since yesterday and a year ago, and every day's AQI over the past year.`, changefreq: 'daily', priority: c.tier === 1 ? 0.8 : c.tier === 2 ? 0.7 : 0.6 })
+      }
+    }
+  }
+
   // District pages (Census 2011), from the files written by scripts/data/build-districts.py
   {
     const dir = path.join(contentDir, '..', 'live', 'districts')
