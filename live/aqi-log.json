@@ -1,11 +1,11 @@
 {
- "runAt": "2026-11-11T09:43:37.818Z",
+ "runAt": "2026-11-11T19:20:57.909Z",
  "accepted": [
-  "2026-11-10: 286 cities"
+  "2026-11-11: 283 cities"
  ],
  "notes": [
-  "2026-11-11: bulletin not published",
-  "2026-11-10: Kalyan listed twice (AQI 159 on 2 stations, 137 on 1); kept the one with more stations",
+  "2026-11-12: bulletin not published",
+  "2026-11-11: Kalyan listed twice (AQI 125 on 2 stations, 121 on 1); kept the one with more stations",
   "no state on file for: bilaspur, pratapgarh"
  ],
  "errors": []
