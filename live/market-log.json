@@ -1,22 +1,21 @@
 {
- "runAt": "2026-11-09T13:40:30.034Z",
+ "runAt": "2026-11-11T13:40:29.740Z",
  "accepted": [
-  "sensex = 81106.65 (2026-11-09)",
-  "usd-inr = 93.8579 (2026-11-09)",
-  "jpy-inr = 59.31 (2026-11-09)",
-  "gbp-inr = 125.6125 (2026-11-09)",
-  "eur-inr = 104.7683 (2026-11-09)",
-  "dii-net = -7172.53 (2026-11-09)",
-  "fii-net = 7212.22 (2026-11-09)",
-  "fpi-equity-mtd = 53738.78 (2026-11-09)"
+  "nifty-50 = 25255.05 (2026-11-11)",
+  "nifty-bank = 60792.4 (2026-11-11)",
+  "nifty-it = 32295.6 (2026-11-11)",
+  "nifty-midcap-150 = 22597.95 (2026-11-11)",
+  "nifty-smallcap-250 = 17798.15 (2026-11-11)",
+  "india-vix = 17.56 (2026-11-11)",
+  "sensex = 81879.4 (2026-11-11)",
+  "usd-inr = 93.8075 (2026-11-11)",
+  "jpy-inr = 59.06 (2026-11-11)",
+  "gbp-inr = 125.1383 (2026-11-11)",
+  "eur-inr = 104.666 (2026-11-11)",
+  "dii-net = -8434.53 (2026-11-11)",
+  "fii-net = 12563.33 (2026-11-11)",
+  "fpi-equity-mtd = 60698.13 (2026-11-11)"
  ],
  "skipped": [],
- "errors": [
-  "nifty-50: continuity check failed (source prev 24986.4, stored 25030.35 on 2026-11-06)",
-  "nifty-bank: continuity check failed (source prev 58850.65, stored 59086 on 2026-11-06)",
-  "nifty-it: continuity check failed (source prev 32869.65, stored 32977.9 on 2026-11-06)",
-  "nifty-midcap-150: continuity check failed (source prev 22327.85, stored 22271.15 on 2026-11-06)",
-  "nifty-smallcap-250: continuity check failed (source prev 17594.1, stored 17386.15 on 2026-11-06)",
-  "india-vix: continuity check failed (source prev 18.430000000000003, stored 17.47 on 2026-11-06)"
- ]
+ "errors": []
 }
