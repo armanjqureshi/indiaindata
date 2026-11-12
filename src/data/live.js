@@ -48,6 +48,7 @@ function snap(key) {
       : kind === 'aqi' ? serverSource.aqi
       : kind === 'aqicity' ? serverSource.aqiCity(arg)
       : kind === 'aqisummary' ? serverSource.aqiSummary(arg)
+      : kind === 'property' ? serverSource.property(arg)
       : kind === 'ipo' ? serverSource.details[arg] ?? null
       : kind === 'row' ? serverSource.rowsBySlug[arg] ?? null
       : null
@@ -179,6 +180,8 @@ export const useDistrictIndex = () => useLive('live/districts-index.json', getDi
 export const useAqi = () => useLive('live/aqi.json', getAqiSnapshot())
 export const useAqiCity = (slug) => useLive(`live/aqi/${slug}.json`, getAqiCitySnapshot(slug))
 export const useAqiFor = (slug) => useLive('live/aqi.json', snap(`aqisummary:${slug}`))
+// City home prices (NHB RESIDEX): one file; pages embed a trimmed copy
+export const useProperty = (slug) => useLive('live/property-cities.json', snap(slug ? `property:${slug}` : 'property'))
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------
 export function todayIST() {

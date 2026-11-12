@@ -37,6 +37,12 @@ const aqiLatest = first(import.meta.glob('/live/aqi.json', { eager: true }), nul
 const aqiFiles = Object.fromEntries(
   Object.entries(import.meta.glob('/live/aqi/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
 )
+const propertyAll = first(import.meta.glob('/live/property-cities.json', { eager: true }), null)
+// hub: no long under-construction series; city page: its own city in full, the rest trimmed
+const propertyFor = (slug) => propertyAll && {
+  ...propertyAll,
+  cities: propertyAll.cities.map((c) => (c.slug === slug ? c : { ...c, underConstruction: [] })),
+}
 const archive = first(import.meta.glob('/live/ipos-archive.json', { eager: true }), { ipos: [] })
 const details = Object.fromEntries(
   Object.entries(import.meta.glob('/live/ipo/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
@@ -54,6 +60,7 @@ __setServerSource({
   districtIndex,
   aqi: aqiLatest,
   aqiCity: (slug) => aqiFiles[slug] || null,
+  property: propertyFor,
   aqiSummary: (slug) => {
     if (!aqiLatest) return null
     const me = aqiLatest.cities.find((c) => c.slug === slug)

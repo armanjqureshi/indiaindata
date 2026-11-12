@@ -255,6 +255,18 @@ export function getRoutes() {
   routes.push({ path: '/edible-oil-price-today', title: 'Edible oil price today in India', description: 'All-India average retail and wholesale prices of mustard, groundnut, sunflower, soya and palm oil and vanaspati today, updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
   routes.push({ path: '/food-prices-today', title: 'Food prices today in India: vegetables, dal, atta, oil and milk', description: 'All-India average retail and wholesale prices of 23 kitchen staples today: tomato, onion, potato, rice, atta, dals, edible oils, sugar and milk. Updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
 
+  // City home prices (NHB RESIDEX), from live/property-cities.json
+  {
+    const f = path.join(contentDir, '..', 'live', 'property-cities.json')
+    if (fs.existsSync(f)) {
+      const d = JSON.parse(fs.readFileSync(f, 'utf-8'))
+      routes.push({ path: '/property-prices', title: 'Property prices in India: price per sq ft in 50 cities (NHB RESIDEX)', description: 'Average home price per square foot of carpet area in 50 Indian cities, from metros to tier 2 and tier 3 cities, with the change over the quarter and the year. Official figures from the National Housing Bank.', changefreq: 'weekly', priority: 0.8 })
+      for (const c of d.cities) {
+        routes.push({ path: `/property-prices/${c.slug}`, title: `${c.name} property prices: price per sq ft and trend (NHB)`, description: `Average home price per square foot of carpet area in ${c.name}, by home size, with the change over the quarter and the year, and the long-run trend. Official figures from the National Housing Bank's RESIDEX.`, changefreq: 'weekly', priority: c.tier === 1 ? 0.7 : 0.6 })
+      }
+    }
+  }
+
   // City air quality pages, from the files written by scripts/data/update-aqi.mjs
   {
     const latest = path.join(contentDir, '..', 'live', 'aqi.json')
