@@ -90,6 +90,12 @@ function upsert(e) {
     nseStatus: e.status || cur.nseStatus || null,
   })
 }
+// what NSE sent, so a change in its format shows up in the log
+{
+  const series = {}
+  for (const e of past) { const k = String(e.series ?? e.securityType ?? '(none)'); series[k] = (series[k] || 0) + 1 }
+  log.notes.push(`NSE past issues: ${past.length}; series ${JSON.stringify(series)}; keys ${Object.keys(past[0] || {}).join(',')}`)
+}
 for (const e of past) upsert(e)
 for (const e of upcoming) upsert(e)
 for (const e of current) upsert(e)
@@ -358,6 +364,32 @@ for (const ipo of ordered) {
     // fetchedAt alone changing is not news; keep the file stable unless content changed
     if (!before || JSON.stringify({ ...before, fetchedAt: 0 }) !== JSON.stringify({ ...next, fetchedAt: 0 })) write(detailFile, next)
   }
+}
+// A listed issue never stops being listed. If NSE's list drops issues we already have
+// (as on 7 Nov 2026, when every mainboard issue went missing), keep our stored record and
+// refresh only its latest price, instead of deleting history.
+{
+  const have = new Set(list.map((i) => i.symbol + '|' + i.board))
+  let kept = 0
+  for (const p of [...prevArchiveAll.ipos, ...prevIndex.ipos]) {
+    const key = p.symbol + '|' + p.board
+    if (have.has(key) || !['listed', 'unlisted'].includes(p.status)) continue
+    have.add(key)
+    const last = lastPrices.get(key)
+    const r1 = (v) => (Number.isFinite(v) ? Math.round(v * 10) / 10 : null)
+    const row = { ...p }
+    if (p.status === 'listed' && last) {
+      row.lastClose = last.close
+      row.lastCloseDate = lastSession
+      row.gainPct = p.issuePrice ? r1(((last.close - p.issuePrice) / p.issuePrice) * 100) : p.gainPct ?? null
+    }
+    list.push(row)
+    kept++
+  }
+  if (kept) log.notes.push(`kept ${kept} stored issues that are missing from NSE's lists`)
+  const before = [...prevArchiveAll.ipos, ...prevIndex.ipos].filter((i) => i.board === 'mainboard').length
+  const now = list.filter((i) => i.board === 'mainboard').length
+  if (before && now < before) log.errors.push(`mainboard issues fell from ${before} to ${now}`)
 }
 list.sort((a, b) => (b.open || '').localeCompare(a.open || '') || a.name.localeCompare(b.name))
 

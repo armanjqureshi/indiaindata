@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-11T12:36:01.063Z",
- "lastPriceSession": "2026-11-11",
+ "updatedAt": "2026-11-06T12:34:12.987Z",
+ "lastPriceSession": "2026-11-06",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
@@ -9,10 +9,10 @@
    "symbol": "VPFL",
    "board": "sme",
    "name": "Vedant Poly Fabs Limited",
-   "status": "listed",
+   "status": "closed",
    "open": "2026-11-02",
    "close": "2026-11-04",
-   "listingDate": "2026-11-09",
+   "listingDate": null,
    "timetable": {
     "open": "2026-11-02",
     "close": "2026-11-04",
@@ -21,6 +21,7 @@
     "demat": "2026-11-06",
     "listing": "2026-11-09",
     "expected": {
+     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -28,22 +29,17 @@
    },
    "priceLow": 88,
    "priceHigh": 94,
-   "issuePrice": 94,
+   "issuePrice": null,
    "lotSize": 1200,
    "lotValue": 112800,
    "sizeCr": 56.68,
    "subscription": 1.85,
    "subscriptionAsOf": "04-Nov-2026 19:00:00",
-   "listing": {
-    "date": "2026-11-09",
-    "open": 94,
-    "close": 89.3,
-    "source": "NSE end-of-day file for the listing date"
-   },
-   "listingGainPct": 0,
-   "lastClose": 84.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -9.7,
+   "listing": null,
+   "listingGainPct": null,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": true
   },
   {
@@ -83,9 +79,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 33.3,
-   "lastClose": 194.45,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 62,
+   "lastClose": 168,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 40,
    "hasDetail": true
   },
   {
@@ -125,9 +121,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 304.35,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 92.6,
+   "lastClose": 315.2,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 99.5,
+   "hasDetail": true
+  },
+  {
+   "slug": "bombay-coated-and-special-steels",
+   "symbol": "BCSSL",
+   "board": "mainboard",
+   "name": "Bombay Coated and Special Steels Limited",
+   "status": "listed",
+   "open": "2026-10-29",
+   "close": "2026-11-02",
+   "listingDate": "2026-11-05",
+   "timetable": {
+    "open": "2026-10-29",
+    "close": "2026-11-02",
+    "allotment": "2026-11-03",
+    "refunds": "2026-11-04",
+    "demat": "2026-11-04",
+    "listing": "2026-11-05",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 78,
+   "priceHigh": 82,
+   "issuePrice": 82,
+   "lotSize": 182,
+   "lotValue": 14924,
+   "sizeCr": 183.06,
+   "subscription": 60.77,
+   "subscriptionAsOf": "02-Nov-2026 19:00:00",
+   "listing": {
+    "date": "2026-11-05",
+    "open": 91,
+    "close": 94.81,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 11,
+   "lastClose": 90.07,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 9.8,
+   "hasDetail": true
+  },
+  {
+   "slug": "m-k-sons-fine-jewels",
+   "symbol": "MKJEWELS",
+   "board": "mainboard",
+   "name": "M. K. Sons Fine Jewels Limited",
+   "status": "listed",
+   "open": "2026-10-28",
+   "close": "2026-10-30",
+   "listingDate": "2026-11-04",
+   "timetable": {
+    "open": "2026-10-28",
+    "close": "2026-10-30",
+    "allotment": "2026-11-02",
+    "refunds": "2026-11-03",
+    "demat": "2026-11-03",
+    "listing": "2026-11-04",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 153,
+   "priceHigh": 162,
+   "issuePrice": 162,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": 5.09,
+   "subscriptionAsOf": "30-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-11-04",
+    "open": 171,
+    "close": 162.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 5.6,
+   "lastClose": 158.08,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -2.4,
    "hasDetail": true
   },
   {
@@ -169,6 +249,426 @@
    "hasDetail": true
   },
   {
+   "slug": "bls-polymers",
+   "symbol": "BLSPOLY",
+   "board": "mainboard",
+   "name": "BLS Polymers Limited",
+   "status": "listed",
+   "open": "2026-10-27",
+   "close": "2026-10-29",
+   "listingDate": "2026-11-03",
+   "timetable": {
+    "open": "2026-10-27",
+    "close": "2026-10-29",
+    "allotment": "2026-10-30",
+    "refunds": "2026-11-02",
+    "demat": "2026-11-02",
+    "listing": "2026-11-03",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 142,
+   "priceHigh": 150,
+   "issuePrice": 150,
+   "lotSize": 100,
+   "lotValue": 15000,
+   "sizeCr": 255,
+   "subscription": 241.22,
+   "subscriptionAsOf": "29-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-11-03",
+    "open": 248,
+    "close": 268.8,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 65.3,
+   "lastClose": 235.79,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 57.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "sfc-environmental-technologies",
+   "symbol": "SFCTECH",
+   "board": "mainboard",
+   "name": "SFC Environmental Technologies Limited",
+   "status": "listed",
+   "open": "2026-10-27",
+   "close": "2026-10-29",
+   "listingDate": "2026-11-03",
+   "timetable": {
+    "open": "2026-10-27",
+    "close": "2026-10-29",
+    "allotment": "2026-10-30",
+    "refunds": "2026-11-02",
+    "demat": "2026-11-02",
+    "listing": "2026-11-03",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 313,
+   "priceHigh": 330,
+   "issuePrice": 330,
+   "lotSize": 45,
+   "lotValue": 14850,
+   "sizeCr": 667.53,
+   "subscription": 9.47,
+   "subscriptionAsOf": "29-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-11-03",
+    "open": 355.1,
+    "close": 426.1,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 7.6,
+   "lastClose": 413.15,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 25.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "eaaa-india-alternatives",
+   "symbol": "EDELALTS",
+   "board": "mainboard",
+   "name": "EAAA India Alternatives Limited",
+   "status": "listed",
+   "open": "2026-10-26",
+   "close": "2026-10-28",
+   "listingDate": "2026-11-02",
+   "timetable": {
+    "open": "2026-10-26",
+    "close": "2026-10-28",
+    "allotment": "2026-10-29",
+    "refunds": "2026-10-30",
+    "demat": "2026-10-30",
+    "listing": "2026-11-02",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 1585,
+   "priceHigh": 1665,
+   "issuePrice": 1665,
+   "lotSize": 9,
+   "lotValue": 14985,
+   "sizeCr": 1200,
+   "subscription": 5.25,
+   "subscriptionAsOf": "28-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-11-02",
+    "open": 1675.5,
+    "close": 1727.8,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0.6,
+   "lastClose": 1682.2,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 1,
+   "hasDetail": true
+  },
+  {
+   "slug": "jio-platforms",
+   "symbol": "JPL",
+   "board": "mainboard",
+   "name": "Jio Platforms Limited",
+   "status": "listed",
+   "open": "2026-10-21",
+   "close": "2026-10-23",
+   "listingDate": "2026-10-28",
+   "timetable": {
+    "open": "2026-10-21",
+    "close": "2026-10-23",
+    "allotment": "2026-10-26",
+    "refunds": "2026-10-27",
+    "demat": "2026-10-27",
+    "listing": "2026-10-28",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 1065,
+   "priceHigh": 1119,
+   "issuePrice": 1119,
+   "lotSize": 12,
+   "lotValue": 13428,
+   "sizeCr": 30213,
+   "subscription": 22.19,
+   "subscriptionAsOf": "23-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-28",
+    "open": 1358,
+    "close": 1417.5,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 21.4,
+   "lastClose": 1406.4,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 25.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "paras-healthcare",
+   "symbol": "PARASHLTH",
+   "board": "mainboard",
+   "name": "Paras Healthcare Limited",
+   "status": "listed",
+   "open": "2026-10-21",
+   "close": "2026-10-23",
+   "listingDate": "2026-10-28",
+   "timetable": {
+    "open": "2026-10-21",
+    "close": "2026-10-23",
+    "allotment": "2026-10-26",
+    "refunds": "2026-10-27",
+    "demat": "2026-10-27",
+    "listing": "2026-10-28",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 660,
+   "priceHigh": 693,
+   "issuePrice": 693,
+   "lotSize": 21,
+   "lotValue": 14553,
+   "sizeCr": 1450,
+   "subscription": 2.23,
+   "subscriptionAsOf": "23-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-28",
+    "open": 720,
+    "close": 735.6,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 3.9,
+   "lastClose": 734.55,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 6,
+   "hasDetail": true
+  },
+  {
+   "slug": "bonfiglioli-transmissions",
+   "symbol": "BONFIG",
+   "board": "mainboard",
+   "name": "Bonfiglioli Transmissions Limited",
+   "status": "listed",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listingDate": "2026-10-23",
+   "timetable": {
+    "open": "2026-10-15",
+    "close": "2026-10-19",
+    "allotment": "2026-10-21",
+    "refunds": "2026-10-22",
+    "demat": "2026-10-22",
+    "listing": "2026-10-23",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 558,
+   "priceHigh": 586,
+   "issuePrice": 586,
+   "lotSize": 25,
+   "lotValue": 14650,
+   "sizeCr": 2533.81,
+   "subscription": 46.06,
+   "subscriptionAsOf": "19-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-23",
+    "open": 586,
+    "close": 574.5,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 670.05,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 14.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "sahajanand-medical-technologies",
+   "symbol": "SMT",
+   "board": "mainboard",
+   "name": "Sahajanand Medical Technologies Limited",
+   "status": "listed",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listingDate": "2026-10-23",
+   "timetable": {
+    "open": "2026-10-15",
+    "close": "2026-10-19",
+    "allotment": "2026-10-21",
+    "refunds": "2026-10-22",
+    "demat": "2026-10-22",
+    "listing": "2026-10-23",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 327,
+   "priceHigh": 344,
+   "issuePrice": 344,
+   "lotSize": 43,
+   "lotValue": 14792,
+   "sizeCr": 475.48,
+   "subscription": 14.2,
+   "subscriptionAsOf": "19-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-23",
+    "open": 371.15,
+    "close": 377.65,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 7.9,
+   "lastClose": 525.95,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 52.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "tonbo-imaging-india",
+   "symbol": "TONBO",
+   "board": "mainboard",
+   "name": "Tonbo Imaging India Limited",
+   "status": "listed",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listingDate": "2026-10-23",
+   "timetable": {
+    "open": "2026-10-15",
+    "close": "2026-10-19",
+    "allotment": "2026-10-21",
+    "refunds": "2026-10-22",
+    "demat": "2026-10-22",
+    "listing": "2026-10-23",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 665,
+   "priceHigh": 700,
+   "issuePrice": 700,
+   "lotSize": 21,
+   "lotValue": 14700,
+   "sizeCr": 852.18,
+   "subscription": 135.9,
+   "subscriptionAsOf": "19-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-23",
+    "open": 1160,
+    "close": 1133.8,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 65.7,
+   "lastClose": 1472.4,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 110.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "zetwerk-manufacturing-businesses",
+   "symbol": "ZETWERK",
+   "board": "mainboard",
+   "name": "Zetwerk Manufacturing Businesses Limited",
+   "status": "listed",
+   "open": "2026-10-15",
+   "close": "2026-10-19",
+   "listingDate": "2026-10-23",
+   "timetable": {
+    "open": "2026-10-15",
+    "close": "2026-10-19",
+    "allotment": "2026-10-21",
+    "refunds": "2026-10-22",
+    "demat": "2026-10-22",
+    "listing": "2026-10-23",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 143,
+   "priceHigh": 151,
+   "issuePrice": 151,
+   "lotSize": 99,
+   "lotValue": 14949,
+   "sizeCr": 5012.33,
+   "subscription": 3.06,
+   "subscriptionAsOf": "19-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-23",
+    "open": 159.25,
+    "close": 138.25,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 5.5,
+   "lastClose": 164.89,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 9.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "fusion-cx",
+   "symbol": "FUSIONCX",
+   "board": "mainboard",
+   "name": "Fusion CX Limited",
+   "status": "listed",
+   "open": "2026-10-14",
+   "close": "2026-10-16",
+   "listingDate": "2026-10-22",
+   "timetable": {
+    "open": "2026-10-14",
+    "close": "2026-10-16",
+    "allotment": "2026-10-19",
+    "refunds": "2026-10-21",
+    "demat": "2026-10-21",
+    "listing": "2026-10-22",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 275,
+   "priceHigh": 289,
+   "issuePrice": 289,
+   "lotSize": 51,
+   "lotValue": 14739,
+   "sizeCr": 702,
+   "subscription": 4.45,
+   "subscriptionAsOf": "16-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-22",
+    "open": 305,
+    "close": 289.65,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 5.5,
+   "lastClose": 270.7,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -6.3,
+   "hasDetail": true
+  },
+  {
    "slug": "ravita-engineering-services",
    "symbol": "RAVITA",
    "board": "sme",
@@ -205,9 +705,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 110.7,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -1.2,
+   "lastClose": 103.05,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -8,
+   "hasDetail": true
+  },
+  {
+   "slug": "hd-fire-protect",
+   "symbol": "HDFIRE",
+   "board": "mainboard",
+   "name": "HD Fire Protect Limited",
+   "status": "listed",
+   "open": "2026-10-13",
+   "close": "2026-10-15",
+   "listingDate": "2026-10-21",
+   "timetable": {
+    "open": "2026-10-13",
+    "close": "2026-10-15",
+    "allotment": "2026-10-16",
+    "refunds": "2026-10-19",
+    "demat": "2026-10-19",
+    "listing": "2026-10-21",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 258,
+   "priceHigh": 271,
+   "issuePrice": 271,
+   "lotSize": 55,
+   "lotValue": 14905,
+   "sizeCr": 712.31,
+   "subscription": 131.7,
+   "subscriptionAsOf": "15-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-21",
+    "open": 335,
+    "close": 306.75,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 23.6,
+   "lastClose": 261,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -3.7,
    "hasDetail": true
   },
   {
@@ -247,9 +789,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2,
-   "lastClose": 66.9,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 23.9,
+   "lastClose": 69.9,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 29.4,
    "hasDetail": true
   },
   {
@@ -289,9 +831,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.4,
-   "lastClose": 37.6,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -54.1,
+   "lastClose": 32.55,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -60.3,
    "hasDetail": true
   },
   {
@@ -331,9 +873,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -5.9,
-   "lastClose": 56.05,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -52.5,
+   "lastClose": 55.05,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -53.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "nityas-gems-and-jewellery",
+   "symbol": "NITYAS",
+   "board": "mainboard",
+   "name": "Nityas Gems and Jewellery Limited",
+   "status": "listed",
+   "open": "2026-09-30",
+   "close": "2026-10-05",
+   "listingDate": "2026-10-08",
+   "timetable": {
+    "open": "2026-09-30",
+    "close": "2026-10-05",
+    "allotment": "2026-10-06",
+    "refunds": "2026-10-07",
+    "demat": "2026-10-07",
+    "listing": "2026-10-08",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 70,
+   "priceHigh": 75,
+   "issuePrice": 75,
+   "lotSize": 200,
+   "lotValue": 15000,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "05-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-08",
+    "open": 80,
+    "close": 83.99,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 6.7,
+   "lastClose": 66.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -11.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "vishal-nirmiti",
+   "symbol": "VNL",
+   "board": "mainboard",
+   "name": "Vishal Nirmiti Limited",
+   "status": "listed",
+   "open": "2026-09-30",
+   "close": "2026-10-05",
+   "listingDate": "2026-10-08",
+   "timetable": {
+    "open": "2026-09-30",
+    "close": "2026-10-05",
+    "allotment": "2026-10-06",
+    "refunds": "2026-10-07",
+    "demat": "2026-10-07",
+    "listing": "2026-10-08",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 208,
+   "priceHigh": 220,
+   "issuePrice": 220,
+   "lotSize": 68,
+   "lotValue": 14960,
+   "sizeCr": 178,
+   "subscription": null,
+   "subscriptionAsOf": "05-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-08",
+    "open": 215,
+    "close": 204.25,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -2.3,
+   "lastClose": 115.36,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -47.6,
    "hasDetail": true
   },
   {
@@ -373,9 +999,135 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.4,
-   "lastClose": 43,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -40.3,
+   "lastClose": 40.4,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -43.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "shah-investor-s-home",
+   "symbol": "SHAHINVEST",
+   "board": "mainboard",
+   "name": "Shah Investor's Home Limited",
+   "status": "listed",
+   "open": "2026-09-28",
+   "close": "2026-09-30",
+   "listingDate": "2026-10-06",
+   "timetable": {
+    "open": "2026-09-28",
+    "close": "2026-09-30",
+    "allotment": "2026-10-01",
+    "refunds": "2026-10-05",
+    "demat": "2026-10-05",
+    "listing": "2026-10-06",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 159,
+   "priceHigh": 167,
+   "issuePrice": 167,
+   "lotSize": 85,
+   "lotValue": 14195,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "30-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-06",
+    "open": 171,
+    "close": 173.79,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 2.4,
+   "lastClose": 137.11,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -17.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "srit-india",
+   "symbol": "SRIT",
+   "board": "mainboard",
+   "name": "Srit India Limited",
+   "status": "listed",
+   "open": "2026-09-28",
+   "close": "2026-09-30",
+   "listingDate": "2026-10-06",
+   "timetable": {
+    "open": "2026-09-28",
+    "close": "2026-09-30",
+    "allotment": "2026-10-01",
+    "refunds": "2026-10-05",
+    "demat": "2026-10-05",
+    "listing": "2026-10-06",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 123,
+   "priceHigh": 130,
+   "issuePrice": 130,
+   "lotSize": 115,
+   "lotValue": 14950,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "30-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-06",
+    "open": 148,
+    "close": 155.09,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 13.8,
+   "lastClose": 123.27,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -5.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "acevector",
+   "symbol": "ACEVECTOR",
+   "board": "mainboard",
+   "name": "AceVector Limited",
+   "status": "listed",
+   "open": "2026-09-25",
+   "close": "2026-09-29",
+   "listingDate": "2026-10-05",
+   "timetable": {
+    "open": "2026-09-25",
+    "close": "2026-09-29",
+    "allotment": "2026-09-30",
+    "refunds": "2026-10-01",
+    "demat": "2026-10-01",
+    "listing": "2026-10-05",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 30,
+   "priceHigh": 32,
+   "issuePrice": 32,
+   "lotSize": 468,
+   "lotValue": 14976,
+   "sizeCr": 420,
+   "subscription": null,
+   "subscriptionAsOf": "29-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-05",
+    "open": 28.32,
+    "close": 26.08,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -11.5,
+   "lastClose": 18.81,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -41.2,
    "hasDetail": true
   },
   {
@@ -415,9 +1167,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 199,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 80.9,
+   "lastClose": 218.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 98.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "german-green-steel-and-power",
+   "symbol": "GERMAN",
+   "board": "mainboard",
+   "name": "German Green Steel and Power Limited",
+   "status": "listed",
+   "open": "2026-09-25",
+   "close": "2026-09-29",
+   "listingDate": "2026-10-05",
+   "timetable": {
+    "open": "2026-09-25",
+    "close": "2026-09-29",
+    "allotment": "2026-09-30",
+    "refunds": "2026-10-01",
+    "demat": "2026-10-01",
+    "listing": "2026-10-05",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 132,
+   "priceHigh": 139,
+   "issuePrice": 139,
+   "lotSize": 107,
+   "lotValue": 14873,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "29-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-05",
+    "open": 142,
+    "close": 128.33,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 2.2,
+   "lastClose": 107.34,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -22.8,
    "hasDetail": true
   },
   {
@@ -457,9 +1251,135 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -17.5,
-   "lastClose": 80,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -22.3,
+   "lastClose": 84,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -18.4,
+   "hasDetail": true
+  },
+  {
+   "slug": "orient-cables-india",
+   "symbol": "ORIENTCABL",
+   "board": "mainboard",
+   "name": "Orient Cables (India) Limited",
+   "status": "listed",
+   "open": "2026-09-25",
+   "close": "2026-09-29",
+   "listingDate": "2026-10-05",
+   "timetable": {
+    "open": "2026-09-25",
+    "close": "2026-09-29",
+    "allotment": "2026-09-30",
+    "refunds": "2026-10-01",
+    "demat": "2026-10-01",
+    "listing": "2026-10-05",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 258,
+   "priceHigh": 272,
+   "issuePrice": 272,
+   "lotSize": 55,
+   "lotValue": 14960,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "29-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-05",
+    "open": 450,
+    "close": 405,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 65.4,
+   "lastClose": 338.05,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 24.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "runwal-enterprises",
+   "symbol": "RUNWALENTR",
+   "board": "mainboard",
+   "name": "Runwal Enterprises Limited",
+   "status": "listed",
+   "open": "2026-09-25",
+   "close": "2026-09-29",
+   "listingDate": "2026-10-05",
+   "timetable": {
+    "open": "2026-09-25",
+    "close": "2026-09-29",
+    "allotment": "2026-09-30",
+    "refunds": "2026-10-01",
+    "demat": "2026-10-01",
+    "listing": "2026-10-05",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 290,
+   "priceHigh": 302,
+   "issuePrice": 305,
+   "lotSize": 49,
+   "lotValue": 14945,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "29-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-05",
+    "open": 305,
+    "close": 301.45,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 210.63,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -30.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "a-one-steels-india",
+   "symbol": "AONESTEELS",
+   "board": "mainboard",
+   "name": "A-One Steels India Limited",
+   "status": "listed",
+   "open": "2026-09-24",
+   "close": "2026-09-28",
+   "listingDate": "2026-10-01",
+   "timetable": {
+    "open": "2026-09-24",
+    "close": "2026-09-28",
+    "allotment": "2026-09-29",
+    "refunds": "2026-09-30",
+    "demat": "2026-09-30",
+    "listing": "2026-10-01",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 385,
+   "priceHigh": 405,
+   "issuePrice": 405,
+   "lotSize": 37,
+   "lotValue": 14985,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "28-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-01",
+    "open": 455,
+    "close": 416.55,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 12.3,
+   "lastClose": 395.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -2.3,
    "hasDetail": true
   },
   {
@@ -499,9 +1419,135 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 75,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -15.7,
+   "lastClose": 72,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -19.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "moneyview",
+   "symbol": "MONEYVIEW",
+   "board": "mainboard",
+   "name": "Moneyview Limited",
+   "status": "listed",
+   "open": "2026-09-24",
+   "close": "2026-09-28",
+   "listingDate": "2026-10-01",
+   "timetable": {
+    "open": "2026-09-24",
+    "close": "2026-09-28",
+    "allotment": "2026-09-29",
+    "refunds": "2026-09-30",
+    "demat": "2026-09-30",
+    "listing": "2026-10-01",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 32,
+   "priceHigh": 34,
+   "issuePrice": 34,
+   "lotSize": 441,
+   "lotValue": 14994,
+   "sizeCr": 341.68,
+   "subscription": null,
+   "subscriptionAsOf": "28-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-10-01",
+    "open": 55,
+    "close": 53.88,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 61.8,
+   "lastClose": 54.95,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 61.6,
+   "hasDetail": true
+  },
+  {
+   "slug": "adroit-industries-india",
+   "symbol": "ADROITIND",
+   "board": "mainboard",
+   "name": "Adroit Industries (India) Limited",
+   "status": "listed",
+   "open": "2026-09-23",
+   "close": "2026-09-25",
+   "listingDate": "2026-09-30",
+   "timetable": {
+    "open": "2026-09-23",
+    "close": "2026-09-25",
+    "allotment": "2026-09-28",
+    "refunds": "2026-09-29",
+    "demat": "2026-09-29",
+    "listing": "2026-09-30",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 126,
+   "priceHigh": 134,
+   "issuePrice": 134,
+   "lotSize": 111,
+   "lotValue": 14874,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "25-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-30",
+    "open": 235,
+    "close": 248.39,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 75.4,
+   "lastClose": 164.93,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 23.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "armee-infotech",
+   "symbol": "ARMEE",
+   "board": "mainboard",
+   "name": "ArMee Infotech Limited",
+   "status": "listed",
+   "open": "2026-09-23",
+   "close": "2026-09-25",
+   "listingDate": "2026-09-30",
+   "timetable": {
+    "open": "2026-09-23",
+    "close": "2026-09-25",
+    "allotment": "2026-09-28",
+    "refunds": "2026-09-29",
+    "demat": "2026-09-29",
+    "listing": "2026-09-30",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 350,
+   "priceHigh": 375,
+   "issuePrice": 375,
+   "lotSize": 40,
+   "lotValue": 15000,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "25-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-30",
+    "open": 375,
+    "close": 300,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 281.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -24.9,
    "hasDetail": true
   },
   {
@@ -541,9 +1587,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0.1,
-   "lastClose": 113.3,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 45.3,
+   "lastClose": 106.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 36.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "elevate-campuses",
+   "symbol": "ELEVATE",
+   "board": "mainboard",
+   "name": "Elevate Campuses Limited",
+   "status": "listed",
+   "open": "2026-09-23",
+   "close": "2026-09-25",
+   "listingDate": "2026-09-30",
+   "timetable": {
+    "open": "2026-09-23",
+    "close": "2026-09-25",
+    "allotment": "2026-09-28",
+    "refunds": "2026-09-29",
+    "demat": "2026-09-29",
+    "listing": "2026-09-30",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 343,
+   "priceHigh": 362,
+   "issuePrice": 362,
+   "lotSize": 41,
+   "lotValue": 14842,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "25-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-30",
+    "open": 355.1,
+    "close": 322.95,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -1.9,
+   "lastClose": 279.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -22.9,
    "hasDetail": true
   },
   {
@@ -583,9 +1671,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.6,
-   "lastClose": 115.8,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 0.7,
+   "lastClose": 123.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 7.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "swastika-infra",
+   "symbol": "SWASTIKAIN",
+   "board": "mainboard",
+   "name": "Swastika Infra Limited",
+   "status": "listed",
+   "open": "2026-09-23",
+   "close": "2026-09-25",
+   "listingDate": "2026-09-30",
+   "timetable": {
+    "open": "2026-09-23",
+    "close": "2026-09-25",
+    "allotment": "2026-09-28",
+    "refunds": "2026-09-29",
+    "demat": "2026-09-29",
+    "listing": "2026-09-30",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 175,
+   "priceHigh": 185,
+   "issuePrice": 185,
+   "lotSize": 81,
+   "lotValue": 14985,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "25-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-30",
+    "open": 200,
+    "close": 210,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 8.1,
+   "lastClose": 195.05,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 5.4,
+   "hasDetail": true
+  },
+  {
+   "slug": "varmora-granito",
+   "symbol": "VARMORA",
+   "board": "mainboard",
+   "name": "Varmora Granito Limited",
+   "status": "listed",
+   "open": "2026-09-22",
+   "close": "2026-09-24",
+   "listingDate": "2026-09-29",
+   "timetable": {
+    "open": "2026-09-22",
+    "close": "2026-09-24",
+    "allotment": "2026-09-25",
+    "refunds": "2026-09-28",
+    "demat": "2026-09-28",
+    "listing": "2026-09-29",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 140,
+   "priceHigh": 148,
+   "issuePrice": 148,
+   "lotSize": 101,
+   "lotValue": 14948,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "24-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-29",
+    "open": 155,
+    "close": 152.19,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 4.7,
+   "lastClose": 137.65,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -7,
    "hasDetail": true
   },
   {
@@ -625,9 +1797,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.4,
-   "lastClose": 37.5,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -30.6,
+   "lastClose": 39.95,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -26,
    "hasDetail": true
   },
   {
@@ -667,9 +1839,89 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.9,
-   "lastClose": 96.9,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -4.1,
+   "lastClose": 95.9,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -5,
+   "hasDetail": true
+  },
+  {
+   "slug": "national-stock-exchange-of-india",
+   "symbol": "NSE",
+   "board": "mainboard",
+   "name": "National Stock Exchange of India Limited",
+   "status": "unlisted",
+   "open": "2026-09-17",
+   "close": "2026-09-21",
+   "listingDate": null,
+   "timetable": {
+    "open": "2026-09-17",
+    "close": "2026-09-21",
+    "allotment": "2026-09-22",
+    "refunds": "2026-09-23",
+    "demat": "2026-09-23",
+    "listing": "2026-09-24",
+    "expected": {
+     "listing": true,
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 1700,
+   "priceHigh": 1785,
+   "issuePrice": null,
+   "lotSize": 8,
+   "lotValue": 14280,
+   "sizeCr": 70,
+   "subscription": null,
+   "subscriptionAsOf": "21-Sep-2026 19:00:00",
+   "listing": null,
+   "listingGainPct": null,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
+   "hasDetail": true
+  },
+  {
+   "slug": "sonaselection-india",
+   "symbol": "SONA",
+   "board": "mainboard",
+   "name": "Sonaselection India Limited",
+   "status": "listed",
+   "open": "2026-09-17",
+   "close": "2026-09-21",
+   "listingDate": "2026-09-24",
+   "timetable": {
+    "open": "2026-09-17",
+    "close": "2026-09-21",
+    "allotment": "2026-09-22",
+    "refunds": "2026-09-23",
+    "demat": "2026-09-23",
+    "listing": "2026-09-24",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 94,
+   "priceHigh": 99,
+   "issuePrice": 99,
+   "lotSize": 150,
+   "lotValue": 14850,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "21-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-24",
+    "open": 102.31,
+    "close": 107.42,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 3.3,
+   "lastClose": 105.13,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 6.2,
    "hasDetail": true
   },
   {
@@ -709,9 +1961,471 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 251.15,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 112.8,
+   "lastClose": 233.3,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 97.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "hero-motors",
+   "symbol": "HEROMOTORS",
+   "board": "mainboard",
+   "name": "Hero Motors Limited",
+   "status": "listed",
+   "open": "2026-09-16",
+   "close": "2026-09-18",
+   "listingDate": "2026-09-23",
+   "timetable": {
+    "open": "2026-09-16",
+    "close": "2026-09-18",
+    "allotment": "2026-09-21",
+    "refunds": "2026-09-22",
+    "demat": "2026-09-22",
+    "listing": "2026-09-23",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 79,
+   "priceHigh": 84,
+   "issuePrice": 84,
+   "lotSize": 178,
+   "lotValue": 14952,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "18-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-23",
+    "open": 82,
+    "close": 98.4,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -2.4,
+   "lastClose": 120.23,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 43.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "jindal-supreme-india",
+   "symbol": "JSIPL",
+   "board": "mainboard",
+   "name": "Jindal Supreme (India) Limited",
+   "status": "listed",
+   "open": "2026-09-16",
+   "close": "2026-09-18",
+   "listingDate": "2026-09-23",
+   "timetable": {
+    "open": "2026-09-16",
+    "close": "2026-09-18",
+    "allotment": "2026-09-21",
+    "refunds": "2026-09-22",
+    "demat": "2026-09-22",
+    "listing": "2026-09-23",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 88,
+   "priceHigh": 93,
+   "issuePrice": 93,
+   "lotSize": 161,
+   "lotValue": 14973,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "18-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-23",
+    "open": 120,
+    "close": 126,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 29,
+   "lastClose": 159.04,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 71,
+   "hasDetail": true
+  },
+  {
+   "slug": "ss-retail",
+   "symbol": "SSRETAIL",
+   "board": "mainboard",
+   "name": "SS Retail Limited",
+   "status": "listed",
+   "open": "2026-09-16",
+   "close": "2026-09-18",
+   "listingDate": "2026-09-23",
+   "timetable": {
+    "open": "2026-09-16",
+    "close": "2026-09-18",
+    "allotment": "2026-09-21",
+    "refunds": "2026-09-22",
+    "demat": "2026-09-22",
+    "listing": "2026-09-23",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 403,
+   "priceHigh": 424,
+   "issuePrice": 424,
+   "lotSize": 35,
+   "lotValue": 14840,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "18-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-23",
+    "open": 624,
+    "close": 748.8,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 47.2,
+   "lastClose": 634.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 49.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "manika-plastech",
+   "symbol": "MANIKA",
+   "board": "mainboard",
+   "name": "Manika Plastech Limited",
+   "status": "listed",
+   "open": "2026-09-11",
+   "close": "2026-09-16",
+   "listingDate": "2026-09-21",
+   "timetable": {
+    "open": "2026-09-11",
+    "close": "2026-09-16",
+    "allotment": "2026-09-17",
+    "refunds": "2026-09-18",
+    "demat": "2026-09-18",
+    "listing": "2026-09-21",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 40,
+   "priceHigh": 43,
+   "issuePrice": 43,
+   "lotSize": 348,
+   "lotValue": 14964,
+   "sizeCr": 125.5,
+   "subscription": null,
+   "subscriptionAsOf": "16-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-21",
+    "open": 43,
+    "close": 43.14,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 48.38,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 12.5,
+   "hasDetail": true
+  },
+  {
+   "slug": "veegaland-developers",
+   "symbol": "VEEGALAND",
+   "board": "mainboard",
+   "name": "Veegaland Developers Limited",
+   "status": "listed",
+   "open": "2026-09-10",
+   "close": "2026-09-15",
+   "listingDate": "2026-09-18",
+   "timetable": {
+    "open": "2026-09-10",
+    "close": "2026-09-15",
+    "allotment": "2026-09-16",
+    "refunds": "2026-09-17",
+    "demat": "2026-09-17",
+    "listing": "2026-09-18",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 130,
+   "priceHigh": 140,
+   "issuePrice": 140,
+   "lotSize": 107,
+   "lotValue": 14980,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "15-Sep-2026 17:42:00",
+   "listing": {
+    "date": "2026-09-18",
+    "open": 154,
+    "close": 146.3,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 10,
+   "lastClose": 137.58,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -1.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "asset-reconstruction-company-india",
+   "symbol": "ARCIL",
+   "board": "mainboard",
+   "name": "Asset Reconstruction Company (India) Limited",
+   "status": "listed",
+   "open": "2026-09-09",
+   "close": "2026-09-11",
+   "listingDate": "2026-09-17",
+   "timetable": {
+    "open": "2026-09-09",
+    "close": "2026-09-11",
+    "allotment": "2026-09-15",
+    "refunds": "2026-09-16",
+    "demat": "2026-09-16",
+    "listing": "2026-09-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 132,
+   "priceHigh": 139,
+   "issuePrice": 139,
+   "lotSize": 107,
+   "lotValue": 14873,
+   "sizeCr": 732.97,
+   "subscription": null,
+   "subscriptionAsOf": "11-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-17",
+    "open": 139,
+    "close": 137.02,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 122.23,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -12.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "karamtara-engineering",
+   "symbol": "KARAMTARA",
+   "board": "mainboard",
+   "name": "Karamtara Engineering Limited",
+   "status": "listed",
+   "open": "2026-09-09",
+   "close": "2026-09-11",
+   "listingDate": "2026-09-17",
+   "timetable": {
+    "open": "2026-09-09",
+    "close": "2026-09-11",
+    "allotment": "2026-09-15",
+    "refunds": "2026-09-16",
+    "demat": "2026-09-16",
+    "listing": "2026-09-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 241,
+   "priceHigh": 254,
+   "issuePrice": 254,
+   "lotSize": 59,
+   "lotValue": 14986,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "11-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-17",
+    "open": 320,
+    "close": 352,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 26,
+   "lastClose": 375.7,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 47.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "lcc-projects",
+   "symbol": "LCCPROJECT",
+   "board": "mainboard",
+   "name": "LCC Projects Limited",
+   "status": "listed",
+   "open": "2026-09-09",
+   "close": "2026-09-11",
+   "listingDate": "2026-09-17",
+   "timetable": {
+    "open": "2026-09-09",
+    "close": "2026-09-11",
+    "allotment": "2026-09-15",
+    "refunds": "2026-09-16",
+    "demat": "2026-09-16",
+    "listing": "2026-09-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 139,
+   "priceHigh": 146,
+   "issuePrice": 146,
+   "lotSize": 102,
+   "lotValue": 14892,
+   "sizeCr": 427.14,
+   "subscription": null,
+   "subscriptionAsOf": "11-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-17",
+    "open": 189,
+    "close": 170.1,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 29.5,
+   "lastClose": 134.78,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -7.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "manipal-payment-and-identity-solutions",
+   "symbol": "MPIMANIPAL",
+   "board": "mainboard",
+   "name": "Manipal Payment and Identity Solutions Limited",
+   "status": "listed",
+   "open": "2026-09-09",
+   "close": "2026-09-11",
+   "listingDate": "2026-09-17",
+   "timetable": {
+    "open": "2026-09-09",
+    "close": "2026-09-11",
+    "allotment": "2026-09-15",
+    "refunds": "2026-09-16",
+    "demat": "2026-09-16",
+    "listing": "2026-09-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 322,
+   "priceHigh": 339,
+   "issuePrice": 339,
+   "lotSize": 44,
+   "lotValue": 14916,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "11-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-17",
+    "open": 330,
+    "close": 345.15,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -2.7,
+   "lastClose": 312.8,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -7.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "rentomojo",
+   "symbol": "RENTOMOJO",
+   "board": "mainboard",
+   "name": "Rentomojo Limited",
+   "status": "listed",
+   "open": "2026-09-09",
+   "close": "2026-09-11",
+   "listingDate": "2026-09-17",
+   "timetable": {
+    "open": "2026-09-09",
+    "close": "2026-09-11",
+    "allotment": "2026-09-15",
+    "refunds": "2026-09-16",
+    "demat": "2026-09-16",
+    "listing": "2026-09-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 384,
+   "priceHigh": 404,
+   "issuePrice": 404,
+   "lotSize": 37,
+   "lotValue": 14948,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "11-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-17",
+    "open": 482.45,
+    "close": 534.25,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 19.4,
+   "lastClose": 579.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 43.4,
+   "hasDetail": true
+  },
+  {
+   "slug": "steamhouse-india",
+   "symbol": "STEAMHOUSE",
+   "board": "mainboard",
+   "name": "Steamhouse India Limited",
+   "status": "listed",
+   "open": "2026-09-09",
+   "close": "2026-09-11",
+   "listingDate": "2026-09-17",
+   "timetable": {
+    "open": "2026-09-09",
+    "close": "2026-09-11",
+    "allotment": "2026-09-15",
+    "refunds": "2026-09-16",
+    "demat": "2026-09-16",
+    "listing": "2026-09-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 77,
+   "priceHigh": 81,
+   "issuePrice": 81,
+   "lotSize": 185,
+   "lotValue": 14985,
+   "sizeCr": 414,
+   "subscription": null,
+   "subscriptionAsOf": "11-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-17",
+    "open": 94.5,
+    "close": 102.55,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 16.7,
+   "lastClose": 131.87,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 62.8,
    "hasDetail": true
   },
   {
@@ -751,9 +2465,177 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 24.15,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -74.3,
+   "lastClose": 23.9,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -74.6,
+   "hasDetail": true
+  },
+  {
+   "slug": "glass-wall-systems-india",
+   "symbol": "GLASSWALL",
+   "board": "mainboard",
+   "name": "Glass Wall Systems (India) Limited",
+   "status": "listed",
+   "open": "2026-09-08",
+   "close": "2026-09-10",
+   "listingDate": "2026-09-16",
+   "timetable": {
+    "open": "2026-09-08",
+    "close": "2026-09-10",
+    "allotment": "2026-09-11",
+    "refunds": "2026-09-15",
+    "demat": "2026-09-15",
+    "listing": "2026-09-16",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 172,
+   "priceHigh": 182,
+   "issuePrice": 182,
+   "lotSize": 82,
+   "lotValue": 14924,
+   "sizeCr": 427.89,
+   "subscription": null,
+   "subscriptionAsOf": "10-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-16",
+    "open": 194,
+    "close": 214.85,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 6.6,
+   "lastClose": 245.6,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 34.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "kanohar-electricals",
+   "symbol": "KANOHAR",
+   "board": "mainboard",
+   "name": "Kanohar Electricals Limited",
+   "status": "listed",
+   "open": "2026-09-08",
+   "close": "2026-09-10",
+   "listingDate": "2026-09-16",
+   "timetable": {
+    "open": "2026-09-08",
+    "close": "2026-09-10",
+    "allotment": "2026-09-11",
+    "refunds": "2026-09-15",
+    "demat": "2026-09-15",
+    "listing": "2026-09-16",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 601,
+   "priceHigh": 632,
+   "issuePrice": 632,
+   "lotSize": 23,
+   "lotValue": 14536,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "10-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-16",
+    "open": 685.5,
+    "close": 751.5,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 8.5,
+   "lastClose": 992.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 57,
+   "hasDetail": true
+  },
+  {
+   "slug": "prasol-chemicals",
+   "symbol": "PRASOLCHEM",
+   "board": "mainboard",
+   "name": "Prasol Chemicals Limited",
+   "status": "listed",
+   "open": "2026-09-08",
+   "close": "2026-09-10",
+   "listingDate": "2026-09-16",
+   "timetable": {
+    "open": "2026-09-08",
+    "close": "2026-09-10",
+    "allotment": "2026-09-11",
+    "refunds": "2026-09-15",
+    "demat": "2026-09-15",
+    "listing": "2026-09-16",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 643,
+   "priceHigh": 676,
+   "issuePrice": 676,
+   "lotSize": 22,
+   "lotValue": 14872,
+   "sizeCr": 500,
+   "subscription": null,
+   "subscriptionAsOf": "10-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-16",
+    "open": 610,
+    "close": 671,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -9.8,
+   "lastClose": 769.45,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 13.8,
+   "hasDetail": true
+  },
+  {
+   "slug": "pranav-constructions",
+   "symbol": "PRANAV",
+   "board": "mainboard",
+   "name": "Pranav Constructions Limited",
+   "status": "listed",
+   "open": "2026-09-07",
+   "close": "2026-09-09",
+   "listingDate": "2026-09-15",
+   "timetable": {
+    "open": "2026-09-07",
+    "close": "2026-09-09",
+    "allotment": "2026-09-10",
+    "refunds": "2026-09-11",
+    "demat": "2026-09-11",
+    "listing": "2026-09-15",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 118,
+   "priceHigh": 124,
+   "issuePrice": 124,
+   "lotSize": 120,
+   "lotValue": 14880,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "09-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-15",
+    "open": 165,
+    "close": 132,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 33.1,
+   "lastClose": 84.97,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -31.5,
    "hasDetail": true
   },
   {
@@ -793,9 +2675,89 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 77.1,
-   "lastClose": 131.35,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 3.4,
+   "lastClose": 136.45,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 7.4,
+   "hasDetail": true
+  },
+  {
+   "slug": "deepa-jewellers",
+   "symbol": "DEEPA",
+   "board": "mainboard",
+   "name": "Deepa Jewellers Limited",
+   "status": "listed",
+   "open": "2026-09-01",
+   "close": "2026-09-03",
+   "listingDate": "2026-09-08",
+   "timetable": {
+    "open": "2026-09-01",
+    "close": "2026-09-03",
+    "allotment": "2026-09-04",
+    "refunds": "2026-09-07",
+    "demat": "2026-09-07",
+    "listing": "2026-09-08",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 168,
+   "priceHigh": 177,
+   "issuePrice": 177,
+   "lotSize": 84,
+   "lotValue": 14868,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "03-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-08",
+    "open": 221,
+    "close": 194.37,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 24.9,
+   "lastClose": 214.62,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 21.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "rays-of-belief-for-profit-social-enterprise-fpse",
+   "symbol": "MOMSBELIEF",
+   "board": "mainboard",
+   "name": "Rays of Belief Limited- For Profit Social Enterprise (FPSE)",
+   "status": "unlisted",
+   "open": "2026-09-01",
+   "close": "2026-09-03",
+   "listingDate": null,
+   "timetable": {
+    "open": "2026-09-01",
+    "close": "2026-09-03",
+    "allotment": "2026-09-04",
+    "refunds": "2026-09-07",
+    "demat": "2026-09-07",
+    "listing": "2026-09-08",
+    "expected": {
+     "listing": true,
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 227,
+   "priceHigh": 239,
+   "issuePrice": null,
+   "lotSize": 62,
+   "lotValue": 14818,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "03-Sep-2026 19:00:00",
+   "listing": null,
+   "listingGainPct": null,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": true
   },
   {
@@ -835,9 +2797,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 52.2,
-   "lastClose": 128.45,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 39.6,
+   "lastClose": 122.65,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 33.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "purple-style-labs",
+   "symbol": "PERNIASPOP",
+   "board": "mainboard",
+   "name": "Purple Style Labs Limited",
+   "status": "listed",
+   "open": "2026-08-31",
+   "close": "2026-09-02",
+   "listingDate": "2026-09-07",
+   "timetable": {
+    "open": "2026-08-31",
+    "close": "2026-09-02",
+    "allotment": "2026-09-03",
+    "refunds": "2026-09-04",
+    "demat": "2026-09-04",
+    "listing": "2026-09-07",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 546,
+   "priceHigh": 575,
+   "issuePrice": 575,
+   "lotSize": 26,
+   "lotValue": 14950,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "02-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-07",
+    "open": 535,
+    "close": 568.55,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -7,
+   "lastClose": 491.05,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -14.6,
    "hasDetail": true
   },
   {
@@ -877,9 +2881,177 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 197.6,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 138.1,
+   "lastClose": 182.6,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 120,
+   "hasDetail": true
+  },
+  {
+   "slug": "esds-software-solution",
+   "symbol": "ESDS",
+   "board": "mainboard",
+   "name": "ESDS Software Solution Limited",
+   "status": "listed",
+   "open": "2026-08-28",
+   "close": "2026-09-01",
+   "listingDate": "2026-09-04",
+   "timetable": {
+    "open": "2026-08-28",
+    "close": "2026-09-01",
+    "allotment": "2026-09-02",
+    "refunds": "2026-09-03",
+    "demat": "2026-09-03",
+    "listing": "2026-09-04",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 408,
+   "priceHigh": 429,
+   "issuePrice": 429,
+   "lotSize": 34,
+   "lotValue": 14586,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "01-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-04",
+    "open": 757,
+    "close": 908.4,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 76.5,
+   "lastClose": 1115.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 160,
+   "hasDetail": true
+  },
+  {
+   "slug": "priority-jewels",
+   "symbol": "PRIORITY",
+   "board": "mainboard",
+   "name": "Priority Jewels Limited",
+   "status": "listed",
+   "open": "2026-08-28",
+   "close": "2026-09-01",
+   "listingDate": "2026-09-04",
+   "timetable": {
+    "open": "2026-08-28",
+    "close": "2026-09-01",
+    "allotment": "2026-09-02",
+    "refunds": "2026-09-03",
+    "demat": "2026-09-03",
+    "listing": "2026-09-04",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 190,
+   "priceHigh": 200,
+   "issuePrice": 200,
+   "lotSize": 75,
+   "lotValue": 15000,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "01-Sep-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-04",
+    "open": 230,
+    "close": 241.5,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 15,
+   "lastClose": 264.3,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 32.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "lumino-industries",
+   "symbol": "LUMINO",
+   "board": "mainboard",
+   "name": "Lumino Industries Limited",
+   "status": "listed",
+   "open": "2026-08-27",
+   "close": "2026-08-31",
+   "listingDate": "2026-09-03",
+   "timetable": {
+    "open": "2026-08-27",
+    "close": "2026-08-31",
+    "allotment": "2026-09-01",
+    "refunds": "2026-09-02",
+    "demat": "2026-09-02",
+    "listing": "2026-09-03",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 78,
+   "priceHigh": 82,
+   "issuePrice": 82,
+   "lotSize": 182,
+   "lotValue": 14924,
+   "sizeCr": 700,
+   "subscription": null,
+   "subscriptionAsOf": "31-Aug-2026 18:57:00",
+   "listing": {
+    "date": "2026-09-03",
+    "open": 110,
+    "close": 110.32,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 34.1,
+   "lastClose": 93.41,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 13.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "annu-projects",
+   "symbol": "ANNU",
+   "board": "mainboard",
+   "name": "Annu Projects Limited",
+   "status": "listed",
+   "open": "2026-08-25",
+   "close": "2026-08-28",
+   "listingDate": "2026-09-02",
+   "timetable": {
+    "open": "2026-08-25",
+    "close": "2026-08-28",
+    "allotment": "2026-08-31",
+    "refunds": "2026-09-01",
+    "demat": "2026-09-01",
+    "listing": "2026-09-02",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 94,
+   "priceHigh": 99,
+   "issuePrice": 99,
+   "lotSize": 151,
+   "lotValue": 14949,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "28-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-02",
+    "open": 72,
+    "close": 75.6,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -27.3,
+   "lastClose": 38.2,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -61.4,
    "hasDetail": true
   },
   {
@@ -919,9 +3091,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.9,
-   "lastClose": 96.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -4.1,
+   "lastClose": 93.4,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -7.5,
    "hasDetail": true
   },
   {
@@ -961,9 +3133,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.9,
-   "lastClose": 39.7,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -61.1,
+   "lastClose": 41.3,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -59.5,
+   "hasDetail": true
+  },
+  {
+   "slug": "hy-tech-engineers",
+   "symbol": "HTEL",
+   "board": "mainboard",
+   "name": "Hy-Tech Engineers Limited",
+   "status": "listed",
+   "open": "2026-08-24",
+   "close": "2026-08-27",
+   "listingDate": "2026-09-01",
+   "timetable": {
+    "open": "2026-08-24",
+    "close": "2026-08-27",
+    "allotment": "2026-08-28",
+    "refunds": "2026-08-31",
+    "demat": "2026-08-31",
+    "listing": "2026-09-01",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 50,
+   "priceHigh": 53,
+   "issuePrice": 53,
+   "lotSize": 283,
+   "lotValue": 14999,
+   "sizeCr": 135.73,
+   "subscription": null,
+   "subscriptionAsOf": "27-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-01",
+    "open": 75,
+    "close": 78.75,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 41.5,
+   "lastClose": 75.79,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 43,
    "hasDetail": true
   },
   {
@@ -1003,9 +3217,387 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 76.35,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -23.7,
+   "lastClose": 72.15,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -27.8,
+   "hasDetail": true
+  },
+  {
+   "slug": "skyways-air-services",
+   "symbol": "SKYWAYS",
+   "board": "mainboard",
+   "name": "Skyways Air Services Limited",
+   "status": "listed",
+   "open": "2026-08-24",
+   "close": "2026-08-27",
+   "listingDate": "2026-09-01",
+   "timetable": {
+    "open": "2026-08-24",
+    "close": "2026-08-27",
+    "allotment": "2026-08-28",
+    "refunds": "2026-08-31",
+    "demat": "2026-08-31",
+    "listing": "2026-09-01",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 131,
+   "priceHigh": 138,
+   "issuePrice": 138,
+   "lotSize": 100,
+   "lotValue": 13800,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "27-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-01",
+    "open": 124,
+    "close": 125.56,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -10.1,
+   "lastClose": 106.01,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -23.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "symbiotec-pharmalab",
+   "symbol": "SYMBIOTEC",
+   "board": "mainboard",
+   "name": "Symbiotec Pharmalab Limited",
+   "status": "listed",
+   "open": "2026-08-24",
+   "close": "2026-08-27",
+   "listingDate": "2026-09-01",
+   "timetable": {
+    "open": "2026-08-24",
+    "close": "2026-08-27",
+    "allotment": "2026-08-28",
+    "refunds": "2026-08-31",
+    "demat": "2026-08-31",
+    "listing": "2026-09-01",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 938,
+   "priceHigh": 988,
+   "issuePrice": 988,
+   "lotSize": 15,
+   "lotValue": 14820,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "27-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-09-01",
+    "open": 988,
+    "close": 1097.7,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 1513.6,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 53.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "augmont-enterprises",
+   "symbol": "AUGMONT",
+   "board": "mainboard",
+   "name": "Augmont Enterprises Limited",
+   "status": "listed",
+   "open": "2026-08-21",
+   "close": "2026-08-25",
+   "listingDate": "2026-08-31",
+   "timetable": {
+    "open": "2026-08-21",
+    "close": "2026-08-25",
+    "allotment": "2026-08-26",
+    "refunds": "2026-08-27",
+    "demat": "2026-08-27",
+    "listing": "2026-08-31",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 750,
+   "priceHigh": 788,
+   "issuePrice": 788,
+   "lotSize": 19,
+   "lotValue": 14972,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "25-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-31",
+    "open": 961,
+    "close": 908.15,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 22,
+   "lastClose": 921.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 16.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "tempsens-instruments-india",
+   "symbol": "TEMPSENS",
+   "board": "mainboard",
+   "name": "Tempsens Instruments (India) Limited",
+   "status": "listed",
+   "open": "2026-08-20",
+   "close": "2026-08-24",
+   "listingDate": "2026-08-28",
+   "timetable": {
+    "open": "2026-08-20",
+    "close": "2026-08-24",
+    "allotment": "2026-08-25",
+    "refunds": "2026-08-26",
+    "demat": "2026-08-26",
+    "listing": "2026-08-28",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 285,
+   "priceHigh": 300,
+   "issuePrice": 300,
+   "lotSize": 50,
+   "lotValue": 15000,
+   "sizeCr": 96.5,
+   "subscription": null,
+   "subscriptionAsOf": "24-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-28",
+    "open": 634,
+    "close": 586.65,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 111.3,
+   "lastClose": 523.2,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 74.4,
+   "hasDetail": true
+  },
+  {
+   "slug": "gaja-alternative-asset-management",
+   "symbol": "GAJA",
+   "board": "mainboard",
+   "name": "Gaja Alternative Asset Management Limited",
+   "status": "listed",
+   "open": "2026-08-19",
+   "close": "2026-08-21",
+   "listingDate": "2026-08-26",
+   "timetable": {
+    "open": "2026-08-19",
+    "close": "2026-08-21",
+    "allotment": "2026-08-24",
+    "refunds": "2026-08-25",
+    "demat": "2026-08-25",
+    "listing": "2026-08-26",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 152,
+   "priceHigh": 160,
+   "issuePrice": 160,
+   "lotSize": 93,
+   "lotValue": 14880,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "21-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-26",
+    "open": 185,
+    "close": 168.67,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 15.6,
+   "lastClose": 134.31,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -16.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "shankesh-jewellers",
+   "symbol": "SHANKESH",
+   "board": "mainboard",
+   "name": "Shankesh Jewellers Limited",
+   "status": "listed",
+   "open": "2026-08-18",
+   "close": "2026-08-20",
+   "listingDate": "2026-08-25",
+   "timetable": {
+    "open": "2026-08-18",
+    "close": "2026-08-20",
+    "allotment": "2026-08-21",
+    "refunds": "2026-08-24",
+    "demat": "2026-08-24",
+    "listing": "2026-08-25",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 88,
+   "priceHigh": 93,
+   "issuePrice": 93,
+   "lotSize": 160,
+   "lotValue": 14880,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "20-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-25",
+    "open": 103.3,
+    "close": 94.82,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 11.1,
+   "lastClose": 91.56,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -1.5,
+   "hasDetail": true
+  },
+  {
+   "slug": "sunshine-pictures",
+   "symbol": "SUNSHINE",
+   "board": "mainboard",
+   "name": "Sunshine Pictures Limited",
+   "status": "listed",
+   "open": "2026-08-18",
+   "close": "2026-08-20",
+   "listingDate": "2026-08-25",
+   "timetable": {
+    "open": "2026-08-18",
+    "close": "2026-08-20",
+    "allotment": "2026-08-21",
+    "refunds": "2026-08-24",
+    "demat": "2026-08-24",
+    "listing": "2026-08-25",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 342,
+   "priceHigh": 360,
+   "issuePrice": 360,
+   "lotSize": 41,
+   "lotValue": 14760,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "20-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-25",
+    "open": 395.9,
+    "close": 369.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 10,
+   "lastClose": 401.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 11.5,
+   "hasDetail": true
+  },
+  {
+   "slug": "horizon-industrial-parks",
+   "symbol": "HORIZONIND",
+   "board": "mainboard",
+   "name": "Horizon Industrial Parks Limited",
+   "status": "listed",
+   "open": "2026-08-17",
+   "close": "2026-08-19",
+   "listingDate": "2026-08-24",
+   "timetable": {
+    "open": "2026-08-17",
+    "close": "2026-08-19",
+    "allotment": "2026-08-20",
+    "refunds": "2026-08-21",
+    "demat": "2026-08-21",
+    "listing": "2026-08-24",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 57,
+   "priceHigh": 60,
+   "issuePrice": 60,
+   "lotSize": 250,
+   "lotValue": 15000,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "19-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-24",
+    "open": 60.25,
+    "close": 58.16,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0.4,
+   "lastClose": 43.43,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -27.6,
+   "hasDetail": true
+  },
+  {
+   "slug": "lalithaa-jewellery-mart",
+   "symbol": "LALITHAA",
+   "board": "mainboard",
+   "name": "Lalithaa Jewellery Mart Limited",
+   "status": "listed",
+   "open": "2026-08-17",
+   "close": "2026-08-19",
+   "listingDate": "2026-08-24",
+   "timetable": {
+    "open": "2026-08-17",
+    "close": "2026-08-19",
+    "allotment": "2026-08-20",
+    "refunds": "2026-08-21",
+    "demat": "2026-08-21",
+    "listing": "2026-08-24",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 190,
+   "priceHigh": 201,
+   "issuePrice": 201,
+   "lotSize": 74,
+   "lotValue": 14874,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "19-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-24",
+    "open": 265,
+    "close": 248.44,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 31.8,
+   "lastClose": 373.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 85.8,
    "hasDetail": true
   },
   {
@@ -1045,9 +3637,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -3.9,
-   "lastClose": 31.5,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -59.1,
+   "lastClose": 30.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -60.7,
    "hasDetail": true
   },
   {
@@ -1087,9 +3679,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 434.65,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 130,
+   "lastClose": 389.8,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 106.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "behari-lal-engineering",
+   "symbol": "BLEL",
+   "board": "mainboard",
+   "name": "Behari Lal Engineering Limited",
+   "status": "listed",
+   "open": "2026-08-12",
+   "close": "2026-08-14",
+   "listingDate": "2026-08-19",
+   "timetable": {
+    "open": "2026-08-12",
+    "close": "2026-08-14",
+    "allotment": "2026-08-17",
+    "refunds": "2026-08-18",
+    "demat": "2026-08-18",
+    "listing": "2026-08-19",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 271,
+   "priceHigh": 285,
+   "issuePrice": 285,
+   "lotSize": 52,
+   "lotValue": 14820,
+   "sizeCr": 301.62,
+   "subscription": null,
+   "subscriptionAsOf": "14-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-19",
+    "open": 465,
+    "close": 502.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 63.2,
+   "lastClose": 453.55,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 59.1,
    "hasDetail": true
   },
   {
@@ -1129,9 +3763,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.7,
-   "lastClose": 107.65,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -8.8,
+   "lastClose": 107.45,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -8.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "shiprocket",
+   "symbol": "SHIPROCKET",
+   "board": "mainboard",
+   "name": "Shiprocket Limited",
+   "status": "listed",
+   "open": "2026-08-12",
+   "close": "2026-08-14",
+   "listingDate": "2026-08-19",
+   "timetable": {
+    "open": "2026-08-12",
+    "close": "2026-08-14",
+    "allotment": "2026-08-17",
+    "refunds": "2026-08-18",
+    "demat": "2026-08-18",
+    "listing": "2026-08-19",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 92,
+   "priceHigh": 97,
+   "issuePrice": 97,
+   "lotSize": 154,
+   "lotValue": 14938,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "14-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-19",
+    "open": 131,
+    "close": 143.45,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 35.1,
+   "lastClose": 125.04,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 28.9,
    "hasDetail": true
   },
   {
@@ -1171,9 +3847,172 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 135.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -10,
+   "lastClose": 117.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -22,
+   "hasDetail": true
+  },
+  {
+   "slug": "milky-mist-dairy-food",
+   "symbol": "MILKYMIST",
+   "board": "mainboard",
+   "name": "Milky Mist Dairy Food Limited",
+   "status": "listed",
+   "open": "2026-08-11",
+   "close": "2026-08-13",
+   "listingDate": "2026-08-18",
+   "timetable": {
+    "open": "2026-08-11",
+    "close": "2026-08-13",
+    "allotment": "2026-08-14",
+    "refunds": "2026-08-17",
+    "demat": "2026-08-17",
+    "listing": "2026-08-18",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 133,
+   "priceHigh": 140,
+   "issuePrice": 140,
+   "lotSize": 107,
+   "lotValue": 14980,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "13-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-18",
+    "open": 165,
+    "close": 181.5,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 17.9,
+   "lastClose": 297.2,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 112.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "dhoot-transmission",
+   "symbol": "DHOOTTRANS",
+   "board": "mainboard",
+   "name": "Dhoot Transmission Limited",
+   "status": "listed",
+   "open": "2026-08-10",
+   "close": "2026-08-12",
+   "listingDate": "2026-08-17",
+   "timetable": {
+    "open": "2026-08-10",
+    "close": "2026-08-12",
+    "allotment": "2026-08-13",
+    "refunds": "2026-08-14",
+    "demat": "2026-08-14",
+    "listing": "2026-08-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 829,
+   "priceHigh": 871,
+   "issuePrice": 871,
+   "lotSize": 17,
+   "lotValue": 14807,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "12-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-17",
+    "open": 1200,
+    "close": 1187.05,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 37.8,
+   "lastClose": 1601.6,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 83.9,
+   "hasDetail": true
+  },
+  {
+   "slug": "molbio-diagnostics",
+   "symbol": "MOLBIO",
+   "board": "mainboard",
+   "name": "Molbio Diagnostics Limited",
+   "status": "listed",
+   "open": "2026-08-10",
+   "close": "2026-08-12",
+   "listingDate": "2026-08-17",
+   "timetable": {
+    "open": "2026-08-10",
+    "close": "2026-08-12",
+    "allotment": "2026-08-13",
+    "refunds": "2026-08-14",
+    "demat": "2026-08-14",
+    "listing": "2026-08-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 768,
+   "priceHigh": 807,
+   "issuePrice": 807,
+   "lotSize": 18,
+   "lotValue": 14526,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": "12-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-17",
+    "open": 980,
+    "close": 1041.7,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 21.4,
+   "lastClose": 1339.3,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 66,
+   "hasDetail": true
+  },
+  {
+   "slug": "leap-india",
+   "symbol": "LEAP",
+   "board": "mainboard",
+   "name": "Leap India Limited",
+   "status": "listed",
+   "open": "2026-08-07",
+   "close": "2026-08-11",
+   "listingDate": "2026-08-14",
+   "timetable": {
+    "open": "2026-08-07",
+    "close": "2026-08-11",
+    "allotment": "2026-08-12",
+    "refunds": "2026-08-13",
+    "demat": "2026-08-13",
+    "listing": "2026-08-14",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 151,
+   "priceHigh": 159,
+   "issuePrice": 159,
+   "lotSize": 94,
+   "lotValue": 14946,
+   "sizeCr": 2480,
+   "subscription": 8.38,
+   "subscriptionAsOf": "11-Aug-2026 19:00:00",
+   "listing": null,
+   "listingGainPct": null,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": true
   },
   {
@@ -1213,9 +4052,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.9,
-   "lastClose": 130.35,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -25.5,
+   "lastClose": 130.8,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -25.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "technocraft-ventures",
+   "symbol": "TECHNOCRAF",
+   "board": "mainboard",
+   "name": "Technocraft Ventures Limited",
+   "status": "listed",
+   "open": "2026-08-07",
+   "close": "2026-08-11",
+   "listingDate": "2026-08-14",
+   "timetable": {
+    "open": "2026-08-07",
+    "close": "2026-08-11",
+    "allotment": "2026-08-12",
+    "refunds": "2026-08-13",
+    "demat": "2026-08-13",
+    "listing": "2026-08-14",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 200,
+   "priceHigh": 212,
+   "issuePrice": 212,
+   "lotSize": 70,
+   "lotValue": 14840,
+   "sizeCr": 251.88,
+   "subscription": 38.69,
+   "subscriptionAsOf": "11-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-14",
+    "open": 284,
+    "close": 311.15,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 34,
+   "lastClose": 510.3,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 140.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "ardee-industries",
+   "symbol": "ARDEE",
+   "board": "mainboard",
+   "name": "Ardee Industries Limited",
+   "status": "listed",
+   "open": "2026-08-05",
+   "close": "2026-08-07",
+   "listingDate": "2026-08-12",
+   "timetable": {
+    "open": "2026-08-05",
+    "close": "2026-08-07",
+    "allotment": "2026-08-10",
+    "refunds": "2026-08-11",
+    "demat": "2026-08-11",
+    "listing": "2026-08-12",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 50,
+   "priceHigh": 53,
+   "issuePrice": 53,
+   "lotSize": 281,
+   "lotValue": 14893,
+   "sizeCr": 425.87,
+   "subscription": 133.66,
+   "subscriptionAsOf": "07-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-12",
+    "open": 72,
+    "close": 67.12,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 35.8,
+   "lastClose": 45.86,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -13.5,
    "hasDetail": true
   },
   {
@@ -1255,9 +4178,135 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 22.1,
-   "lastClose": 400.5,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 48.3,
+   "lastClose": 367.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 36.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "juniper-green-energy",
+   "symbol": "JNPR",
+   "board": "mainboard",
+   "name": "Juniper Green Energy Limited",
+   "status": "listed",
+   "open": "2026-07-30",
+   "close": "2026-08-03",
+   "listingDate": "2026-08-06",
+   "timetable": {
+    "open": "2026-07-30",
+    "close": "2026-08-03",
+    "allotment": "2026-08-04",
+    "refunds": "2026-08-05",
+    "demat": "2026-08-05",
+    "listing": "2026-08-06",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 214,
+   "priceHigh": 225,
+   "issuePrice": 225,
+   "lotSize": 66,
+   "lotValue": 14850,
+   "sizeCr": 1800,
+   "subscription": 7.97,
+   "subscriptionAsOf": "03-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-06",
+    "open": 245,
+    "close": 259.71,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 8.9,
+   "lastClose": 255.81,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 13.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "mv-electrosystems",
+   "symbol": "MVELECTRO",
+   "board": "mainboard",
+   "name": "MV Electrosystems Limited",
+   "status": "listed",
+   "open": "2026-07-30",
+   "close": "2026-08-03",
+   "listingDate": "2026-08-06",
+   "timetable": {
+    "open": "2026-07-30",
+    "close": "2026-08-03",
+    "allotment": "2026-08-04",
+    "refunds": "2026-08-05",
+    "demat": "2026-08-05",
+    "listing": "2026-08-06",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 400,
+   "priceHigh": 425,
+   "issuePrice": 425,
+   "lotSize": 34,
+   "lotValue": 14450,
+   "sizeCr": 290,
+   "subscription": 188.85,
+   "subscriptionAsOf": "03-Aug-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-06",
+    "open": 520,
+    "close": 624,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 22.4,
+   "lastClose": 733.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 72.6,
+   "hasDetail": true
+  },
+  {
+   "slug": "manipal-health-enterprises",
+   "symbol": "MANIPALHOS",
+   "board": "mainboard",
+   "name": "Manipal Health Enterprises Limited",
+   "status": "listed",
+   "open": "2026-07-29",
+   "close": "2026-07-31",
+   "listingDate": "2026-08-05",
+   "timetable": {
+    "open": "2026-07-29",
+    "close": "2026-07-31",
+    "allotment": "2026-08-03",
+    "refunds": "2026-08-04",
+    "demat": "2026-08-04",
+    "listing": "2026-08-05",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 560,
+   "priceHigh": 590,
+   "issuePrice": 590,
+   "lotSize": 25,
+   "lotValue": 14750,
+   "sizeCr": 9275.22,
+   "subscription": 4.92,
+   "subscriptionAsOf": "31-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-08-05",
+    "open": 652,
+    "close": 666.95,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 10.5,
+   "lastClose": 646.7,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 9.6,
    "hasDetail": true
   },
   {
@@ -1297,9 +4346,135 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "lastClose": 68.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -0.4,
+   "hasDetail": true
+  },
+  {
+   "slug": "indo-mim",
+   "symbol": "INDOMIM",
+   "board": "mainboard",
+   "name": "INDO-MIM Limited",
+   "status": "listed",
+   "open": "2026-07-23",
+   "close": "2026-07-27",
+   "listingDate": "2026-07-30",
+   "timetable": {
+    "open": "2026-07-23",
+    "close": "2026-07-27",
+    "allotment": "2026-07-28",
+    "refunds": "2026-07-29",
+    "demat": "2026-07-29",
+    "listing": "2026-07-30",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 461,
+   "priceHigh": 485,
+   "issuePrice": 485,
+   "lotSize": 30,
+   "lotValue": 14550,
+   "sizeCr": 3812.11,
+   "subscription": 72.34,
+   "subscriptionAsOf": "27-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-30",
+    "open": 700,
+    "close": 741.75,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 44.3,
+   "lastClose": 1219.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 151.4,
+   "hasDetail": true
+  },
+  {
+   "slug": "lohia-corp",
+   "symbol": "LCL",
+   "board": "mainboard",
+   "name": "Lohia Corp Limited",
+   "status": "listed",
+   "open": "2026-07-23",
+   "close": "2026-07-27",
+   "listingDate": "2026-07-30",
+   "timetable": {
+    "open": "2026-07-23",
+    "close": "2026-07-27",
+    "allotment": "2026-07-28",
+    "refunds": "2026-07-29",
+    "demat": "2026-07-29",
+    "listing": "2026-07-30",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 404,
+   "priceHigh": 425,
+   "issuePrice": 425,
+   "lotSize": 35,
+   "lotValue": 14875,
+   "sizeCr": 1102.08,
+   "subscription": 7.25,
+   "subscriptionAsOf": "27-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-30",
+    "open": 461,
+    "close": 494.6,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 8.5,
+   "lastClose": 495.7,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 16.6,
+   "hasDetail": true
+  },
+  {
+   "slug": "xtranet-technologies",
+   "symbol": "XTRANET",
+   "board": "mainboard",
+   "name": "Xtranet Technologies Limited",
+   "status": "listed",
+   "open": "2026-07-23",
+   "close": "2026-07-27",
+   "listingDate": "2026-07-30",
+   "timetable": {
+    "open": "2026-07-23",
+    "close": "2026-07-27",
+    "allotment": "2026-07-28",
+    "refunds": "2026-07-29",
+    "demat": "2026-07-29",
+    "listing": "2026-07-30",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 120,
+   "priceHigh": 127,
+   "issuePrice": 127,
+   "lotSize": 110,
+   "lotValue": 13970,
+   "sizeCr": 170,
+   "subscription": 12.24,
+   "subscriptionAsOf": "27-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-30",
+    "open": 136,
+    "close": 129.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 7.1,
+   "lastClose": 264.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 108.5,
    "hasDetail": true
   },
   {
@@ -1339,9 +4514,135 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 13,
-   "lastClose": 135.1,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 75.5,
+   "lastClose": 134.9,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 75.2,
+   "hasDetail": true
+  },
+  {
+   "slug": "caliber-mining-and-logistics",
+   "symbol": "CMLL",
+   "board": "mainboard",
+   "name": "Caliber Mining and Logistics Limited",
+   "status": "listed",
+   "open": "2026-07-17",
+   "close": "2026-07-21",
+   "listingDate": "2026-07-24",
+   "timetable": {
+    "open": "2026-07-17",
+    "close": "2026-07-21",
+    "allotment": "2026-07-22",
+    "refunds": "2026-07-23",
+    "demat": "2026-07-23",
+    "listing": "2026-07-24",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 402,
+   "priceHigh": 424,
+   "issuePrice": 424,
+   "lotSize": 35,
+   "lotValue": 14840,
+   "sizeCr": 450,
+   "subscription": 146.64,
+   "subscriptionAsOf": "21-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-24",
+    "open": 500.25,
+    "close": 528.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 18,
+   "lastClose": 520.15,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 22.7,
+   "hasDetail": true
+  },
+  {
+   "slug": "alpine-texworld",
+   "symbol": "ALPINETEX",
+   "board": "mainboard",
+   "name": "Alpine Texworld Limited",
+   "status": "listed",
+   "open": "2026-07-14",
+   "close": "2026-07-16",
+   "listingDate": "2026-07-21",
+   "timetable": {
+    "open": "2026-07-14",
+    "close": "2026-07-16",
+    "allotment": "2026-07-17",
+    "refunds": "2026-07-20",
+    "demat": "2026-07-20",
+    "listing": "2026-07-21",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 100,
+   "priceHigh": 105,
+   "issuePrice": 105,
+   "lotSize": 142,
+   "lotValue": 14910,
+   "sizeCr": 126.25,
+   "subscription": 1.4,
+   "subscriptionAsOf": "16-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-21",
+    "open": 105,
+    "close": 99.75,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 41.89,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -60.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "sbi-funds-management",
+   "symbol": "SBIFUNDS",
+   "board": "mainboard",
+   "name": "SBI Funds Management Limited",
+   "status": "listed",
+   "open": "2026-07-14",
+   "close": "2026-07-16",
+   "listingDate": "2026-07-21",
+   "timetable": {
+    "open": "2026-07-14",
+    "close": "2026-07-16",
+    "allotment": "2026-07-17",
+    "refunds": "2026-07-20",
+    "demat": "2026-07-20",
+    "listing": "2026-07-21",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 545,
+   "priceHigh": 574,
+   "issuePrice": 574,
+   "lotSize": 26,
+   "lotValue": 14924,
+   "sizeCr": 9812.91,
+   "subscription": 41.66,
+   "subscriptionAsOf": "16-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-21",
+    "open": 613.3,
+    "close": 609.75,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 6.8,
+   "lastClose": 499.55,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -13,
    "hasDetail": true
   },
   {
@@ -1381,9 +4682,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3,
-   "lastClose": 65,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -1.5,
+   "lastClose": 66,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 0,
+   "hasDetail": true
+  },
+  {
+   "slug": "laser-power-and-infra",
+   "symbol": "LASERPOWER",
+   "board": "mainboard",
+   "name": "Laser Power & Infra Limited",
+   "status": "listed",
+   "open": "2026-07-09",
+   "close": "2026-07-13",
+   "listingDate": "2026-07-16",
+   "timetable": {
+    "open": "2026-07-09",
+    "close": "2026-07-13",
+    "allotment": "2026-07-14",
+    "refunds": "2026-07-15",
+    "demat": "2026-07-15",
+    "listing": "2026-07-16",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 203,
+   "priceHigh": 214,
+   "issuePrice": 214,
+   "lotSize": 70,
+   "lotValue": 14980,
+   "sizeCr": 742,
+   "subscription": 38.94,
+   "subscriptionAsOf": "13-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-16",
+    "open": 250,
+    "close": 262.42,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 16.8,
+   "lastClose": 204.68,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -4.4,
+   "hasDetail": true
+  },
+  {
+   "slug": "kusumgar",
+   "symbol": "KUSUMGAR",
+   "board": "mainboard",
+   "name": "Kusumgar Limited",
+   "status": "listed",
+   "open": "2026-07-08",
+   "close": "2026-07-10",
+   "listingDate": "2026-07-15",
+   "timetable": {
+    "open": "2026-07-08",
+    "close": "2026-07-10",
+    "allotment": "2026-07-13",
+    "refunds": "2026-07-14",
+    "demat": "2026-07-14",
+    "listing": "2026-07-15",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 398,
+   "priceHigh": 419,
+   "issuePrice": 419,
+   "lotSize": 35,
+   "lotValue": 14665,
+   "sizeCr": 650,
+   "subscription": 128.85,
+   "subscriptionAsOf": "10-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-15",
+    "open": 569,
+    "close": 602.8,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 35.8,
+   "lastClose": 552.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 31.8,
    "hasDetail": true
   },
   {
@@ -1423,9 +4808,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 67.7,
-   "lastClose": 127.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 29.1,
+   "lastClose": 116.9,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 18.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "knack-packaging",
+   "symbol": "KNACK",
+   "board": "mainboard",
+   "name": "Knack Packaging Limited",
+   "status": "listed",
+   "open": "2026-07-01",
+   "close": "2026-07-03",
+   "listingDate": "2026-07-08",
+   "timetable": {
+    "open": "2026-07-01",
+    "close": "2026-07-03",
+    "allotment": "2026-07-06",
+    "refunds": "2026-07-07",
+    "demat": "2026-07-07",
+    "listing": "2026-07-08",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 161,
+   "priceHigh": 170,
+   "issuePrice": 170,
+   "lotSize": 88,
+   "lotValue": 14960,
+   "sizeCr": 439.5,
+   "subscription": 83.33,
+   "subscriptionAsOf": "03-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-08",
+    "open": 188,
+    "close": 182.98,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 10.6,
+   "lastClose": 199.71,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 17.5,
    "hasDetail": true
   },
   {
@@ -1465,9 +4892,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 213.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -2.8,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": true
   },
   {
@@ -1507,9 +4934,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -1.9,
-   "lastClose": 48.5,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -69.3,
+   "lastClose": 46.6,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -70.5,
+   "hasDetail": true
+  },
+  {
+   "slug": "aastha-spintex",
+   "symbol": "AASTHA",
+   "board": "mainboard",
+   "name": "Aastha Spintex Limited",
+   "status": "listed",
+   "open": "2026-06-29",
+   "close": "2026-07-01",
+   "listingDate": "2026-07-06",
+   "timetable": {
+    "open": "2026-06-29",
+    "close": "2026-07-01",
+    "allotment": "2026-07-02",
+    "refunds": "2026-07-03",
+    "demat": "2026-07-03",
+    "listing": "2026-07-06",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 125,
+   "priceHigh": 136,
+   "issuePrice": 136,
+   "lotSize": 110,
+   "lotValue": 14960,
+   "sizeCr": 170,
+   "subscription": 4.64,
+   "subscriptionAsOf": "01-Jul-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-06",
+    "open": 130,
+    "close": 136.49,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -4.4,
+   "lastClose": 24.91,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -81.7,
    "hasDetail": true
   },
   {
@@ -1551,6 +5020,48 @@
    "hasDetail": false
   },
   {
+   "slug": "csm-technologies",
+   "symbol": "CSM",
+   "board": "mainboard",
+   "name": "CSM Technologies Limited",
+   "status": "listed",
+   "open": "2026-06-24",
+   "close": "2026-06-29",
+   "listingDate": "2026-07-02",
+   "timetable": {
+    "open": "2026-06-24",
+    "close": "2026-06-29",
+    "allotment": "2026-06-30",
+    "refunds": "2026-07-01",
+    "demat": "2026-07-01",
+    "listing": "2026-07-02",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 107,
+   "priceHigh": 113,
+   "issuePrice": 113,
+   "lotSize": 132,
+   "lotValue": 14916,
+   "sizeCr": 145.78,
+   "subscription": 1.36,
+   "subscriptionAsOf": "29-Jun-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-02",
+    "open": 113,
+    "close": 107.35,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 78.43,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -30.6,
+   "hasDetail": true
+  },
+  {
    "slug": "sri-priyanka-geo-commex-issue-withdrawn",
    "symbol": "SPGCL",
    "board": "sme",
@@ -1589,6 +5100,48 @@
    "hasDetail": false
   },
   {
+   "slug": "advit-jewels",
+   "symbol": "RAMBHAJO",
+   "board": "mainboard",
+   "name": "Advit Jewels Limited",
+   "status": "listed",
+   "open": "2026-06-23",
+   "close": "2026-06-25",
+   "listingDate": "2026-07-01",
+   "timetable": {
+    "open": "2026-06-23",
+    "close": "2026-06-25",
+    "allotment": "2026-06-29",
+    "refunds": "2026-06-30",
+    "demat": "2026-06-30",
+    "listing": "2026-07-01",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 130,
+   "priceHigh": 138,
+   "issuePrice": 138,
+   "lotSize": 100,
+   "lotValue": 13800,
+   "sizeCr": 165.16,
+   "subscription": 212.63,
+   "subscriptionAsOf": "25-Jun-2026 19:00:00",
+   "listing": {
+    "date": "2026-07-01",
+    "open": 188.9,
+    "close": 179.46,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 36.9,
+   "lastClose": 323.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 134.4,
+   "hasDetail": true
+  },
+  {
    "slug": "shreedhar-spinners",
    "symbol": "SHREEDHAR",
    "board": "sme",
@@ -1625,9 +5178,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.6,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "lastClose": 156,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 194.3,
+   "hasDetail": true
+  },
+  {
+   "slug": "waterways-leisure-tourism",
+   "symbol": "CORDELIA",
+   "board": "mainboard",
+   "name": "Waterways Leisure Tourism Limited",
+   "status": "listed",
+   "open": "2026-06-23",
+   "close": "2026-06-25",
+   "listingDate": "2026-07-01",
+   "timetable": {
+    "open": "2026-06-23",
+    "close": "2026-06-25",
+    "allotment": "2026-06-29",
+    "refunds": "2026-06-30",
+    "demat": "2026-06-30",
+    "listing": "2026-07-01",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 769,
+   "priceHigh": 808,
+   "issuePrice": 808,
+   "lotSize": 18,
+   "lotValue": 14544,
+   "sizeCr": 585,
+   "subscription": 1.67,
+   "subscriptionAsOf": "25-Jun-2026 20:00:00",
+   "listing": {
+    "date": "2026-07-01",
+    "open": 681,
+    "close": 668.1,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -15.7,
+   "lastClose": 88.29,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -89.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "turtlemint-fintech-solutions",
+   "symbol": "TURTLEMINT",
+   "board": "mainboard",
+   "name": "Turtlemint Fintech Solutions Limited",
+   "status": "listed",
+   "open": "2026-06-19",
+   "close": "2026-06-23",
+   "listingDate": "2026-06-29",
+   "timetable": {
+    "open": "2026-06-19",
+    "close": "2026-06-23",
+    "allotment": "2026-06-24",
+    "refunds": "2026-06-25",
+    "demat": "2026-06-25",
+    "listing": "2026-06-29",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 144,
+   "priceHigh": 152,
+   "issuePrice": 152,
+   "lotSize": 98,
+   "lotValue": 14896,
+   "sizeCr": 882.67,
+   "subscription": 1.2,
+   "subscriptionAsOf": "23-Jun-2026 19:00:00",
+   "listing": {
+    "date": "2026-06-29",
+    "open": 134.9,
+    "close": 135.37,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -11.2,
+   "lastClose": 56.3,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -63,
    "hasDetail": true
   },
   {
@@ -1667,9 +5304,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 262.4,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 26.2,
+   "lastClose": 250,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 20.2,
    "hasDetail": true
   },
   {
@@ -1709,9 +5346,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.9,
-   "lastClose": 172.95,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -14.8,
+   "lastClose": 157.1,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -22.6,
    "hasDetail": false
   },
   {
@@ -1751,9 +5388,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 42.8,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -35.2,
+   "lastClose": 47.7,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -27.7,
    "hasDetail": false
   },
   {
@@ -1793,9 +5430,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 89,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -23.3,
+   "lastClose": 84.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -27.2,
+   "hasDetail": false
+  },
+  {
+   "slug": "hexagon-nutrition",
+   "symbol": "HEXAGON",
+   "board": "mainboard",
+   "name": "Hexagon Nutrition Limited",
+   "status": "listed",
+   "open": "2026-06-05",
+   "close": "2026-06-09",
+   "listingDate": "2026-06-12",
+   "timetable": {
+    "open": "2026-06-05",
+    "close": "2026-06-09",
+    "allotment": "2026-06-10",
+    "refunds": "2026-06-11",
+    "demat": "2026-06-11",
+    "listing": "2026-06-12",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 42,
+   "priceHigh": 45,
+   "issuePrice": 45,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-06-12",
+    "open": 48.25,
+    "close": 50.66,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 7.2,
+   "lastClose": 58.98,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 31.1,
+   "hasDetail": false
+  },
+  {
+   "slug": "cmr-green-technologies",
+   "symbol": "CMRGREEN",
+   "board": "mainboard",
+   "name": "CMR Green Technologies Limited",
+   "status": "listed",
+   "open": "2026-06-03",
+   "close": "2026-06-05",
+   "listingDate": "2026-06-10",
+   "timetable": {
+    "open": "2026-06-03",
+    "close": "2026-06-05",
+    "allotment": "2026-06-08",
+    "refunds": "2026-06-09",
+    "demat": "2026-06-09",
+    "listing": "2026-06-10",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 182,
+   "priceHigh": 192,
+   "issuePrice": 192,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-06-10",
+    "open": 268,
+    "close": 241.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 39.6,
+   "lastClose": 218.29,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 13.7,
    "hasDetail": false
   },
   {
@@ -1835,9 +5556,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 149.9,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 7.8,
+   "lastClose": 145.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 4.6,
    "hasDetail": false
   },
   {
@@ -1877,9 +5598,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 31.8,
-   "lastClose": 548.55,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 59.9,
+   "lastClose": 511.7,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 49.2,
    "hasDetail": false
   },
   {
@@ -1919,9 +5640,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 19,
-   "lastClose": 166,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 163.5,
+   "lastClose": 169.45,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 169,
    "hasDetail": false
   },
   {
@@ -1961,9 +5682,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.9,
-   "lastClose": 20.7,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -62.4,
+   "lastClose": 18.95,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -65.5,
    "hasDetail": false
   },
   {
@@ -2045,9 +5766,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -14.8,
-   "lastClose": 480.65,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 162.7,
+   "lastClose": 488.65,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 167,
    "hasDetail": false
   },
   {
@@ -2087,9 +5808,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 83,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -15.3,
+   "lastClose": 80,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -18.4,
+   "hasDetail": false
+  },
+  {
+   "slug": "onemi-technology-solutions",
+   "symbol": "KISSHT",
+   "board": "mainboard",
+   "name": "Onemi Technology Solutions Limited",
+   "status": "listed",
+   "open": "2026-04-30",
+   "close": "2026-05-05",
+   "listingDate": "2026-05-08",
+   "timetable": {
+    "open": "2026-04-30",
+    "close": "2026-05-05",
+    "allotment": "2026-05-06",
+    "refunds": "2026-05-07",
+    "demat": "2026-05-07",
+    "listing": "2026-05-08",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 162,
+   "priceHigh": 171,
+   "issuePrice": 171,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-05-08",
+    "open": 190,
+    "close": 208.63,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 11.1,
+   "lastClose": 345.4,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 102,
    "hasDetail": false
   },
   {
@@ -2129,9 +5892,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -0.4,
-   "lastClose": 101.5,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -24.8,
+   "lastClose": 97.55,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -27.7,
    "hasDetail": false
   },
   {
@@ -2171,9 +5934,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 19.2,
-   "lastClose": 288.35,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 67.6,
+   "lastClose": 278.55,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 61.9,
+   "hasDetail": false
+  },
+  {
+   "slug": "om-power-transmission",
+   "symbol": "OMPOWER",
+   "board": "mainboard",
+   "name": "Om Power Transmission Limited",
+   "status": "listed",
+   "open": "2026-04-09",
+   "close": "2026-04-13",
+   "listingDate": "2026-04-17",
+   "timetable": {
+    "open": "2026-04-09",
+    "close": "2026-04-13",
+    "allotment": "2026-04-15",
+    "refunds": "2026-04-16",
+    "demat": "2026-04-16",
+    "listing": "2026-04-17",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 166,
+   "priceHigh": 175,
+   "issuePrice": 175,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-04-17",
+    "open": 186,
+    "close": 193.38,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 6.3,
+   "lastClose": 125.83,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -28.1,
    "hasDetail": false
   },
   {
@@ -2213,9 +6018,219 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 1.8,
-   "lastClose": 1142.7,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 105.9,
+   "lastClose": 1067.6,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 92.4,
+   "hasDetail": false
+  },
+  {
+   "slug": "amir-chand-jagdish-kumar-exports",
+   "symbol": "AMIRCHAND",
+   "board": "mainboard",
+   "name": "Amir Chand Jagdish Kumar (Exports) Limited",
+   "status": "listed",
+   "open": "2026-03-24",
+   "close": "2026-03-27",
+   "listingDate": "2026-04-02",
+   "timetable": {
+    "open": "2026-03-24",
+    "close": "2026-03-27",
+    "allotment": "2026-03-30",
+    "refunds": "2026-04-01",
+    "demat": "2026-04-01",
+    "listing": "2026-04-02",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 201,
+   "priceHigh": 212,
+   "issuePrice": 212,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-04-02",
+    "open": 200,
+    "close": 180,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -5.7,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
+   "hasDetail": false
+  },
+  {
+   "slug": "powerica",
+   "symbol": "POWERICA",
+   "board": "mainboard",
+   "name": "Powerica Limited",
+   "status": "listed",
+   "open": "2026-03-24",
+   "close": "2026-03-27",
+   "listingDate": "2026-04-02",
+   "timetable": {
+    "open": "2026-03-24",
+    "close": "2026-03-27",
+    "allotment": "2026-03-30",
+    "refunds": "2026-04-01",
+    "demat": "2026-04-01",
+    "listing": "2026-04-02",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 375,
+   "priceHigh": 395,
+   "issuePrice": 395,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-04-02",
+    "open": 366,
+    "close": 390,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -7.3,
+   "lastClose": 469.6,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 18.9,
+   "hasDetail": false
+  },
+  {
+   "slug": "sai-parenteral-s",
+   "symbol": "SAIPARENT",
+   "board": "mainboard",
+   "name": "Sai Parenteral's Limited",
+   "status": "listed",
+   "open": "2026-03-24",
+   "close": "2026-03-27",
+   "listingDate": "2026-04-02",
+   "timetable": {
+    "open": "2026-03-24",
+    "close": "2026-03-27",
+    "allotment": "2026-03-30",
+    "refunds": "2026-04-01",
+    "demat": "2026-04-01",
+    "listing": "2026-04-02",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 372,
+   "priceHigh": 392,
+   "issuePrice": 392,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-04-02",
+    "open": 400,
+    "close": 405.7,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 2,
+   "lastClose": 466.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 19,
+   "hasDetail": false
+  },
+  {
+   "slug": "central-mine-planning-and-design-institute",
+   "symbol": "CMPDI",
+   "board": "mainboard",
+   "name": "Central Mine Planning & Design Institute Limited",
+   "status": "listed",
+   "open": "2026-03-20",
+   "close": "2026-03-24",
+   "listingDate": "2026-03-30",
+   "timetable": {
+    "open": "2026-03-20",
+    "close": "2026-03-24",
+    "allotment": "2026-03-25",
+    "refunds": "2026-03-27",
+    "demat": "2026-03-27",
+    "listing": "2026-03-30",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 163,
+   "priceHigh": 172,
+   "issuePrice": 172,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-30",
+    "open": 160,
+    "close": 154.06,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -7,
+   "lastClose": 177.28,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 3.1,
+   "hasDetail": false
+  },
+  {
+   "slug": "gsp-crop-science",
+   "symbol": "GSPCROP",
+   "board": "mainboard",
+   "name": "GSP Crop Science Limited",
+   "status": "listed",
+   "open": "2026-03-16",
+   "close": "2026-03-18",
+   "listingDate": "2026-03-24",
+   "timetable": {
+    "open": "2026-03-16",
+    "close": "2026-03-18",
+    "allotment": "2026-03-19",
+    "refunds": "2026-03-20",
+    "demat": "2026-03-20",
+    "listing": "2026-03-24",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 304,
+   "priceHigh": 320,
+   "issuePrice": 320,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-24",
+    "open": 328,
+    "close": 356.25,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 2.5,
+   "lastClose": 428.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 33.9,
    "hasDetail": false
   },
   {
@@ -2255,9 +6270,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 39.1,
-   "lastClose": 477.15,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 333.8,
+   "lastClose": 468,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 325.5,
+   "hasDetail": false
+  },
+  {
+   "slug": "innovision",
+   "symbol": "INNOVISION",
+   "board": "mainboard",
+   "name": "Innovision Limited",
+   "status": "listed",
+   "open": "2026-03-10",
+   "close": "2026-03-17",
+   "listingDate": "2026-03-23",
+   "timetable": {
+    "open": "2026-03-10",
+    "close": "2026-03-17",
+    "allotment": "2026-03-18",
+    "refunds": "2026-03-19",
+    "demat": "2026-03-19",
+    "listing": "2026-03-23",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 494,
+   "priceHigh": 519,
+   "issuePrice": 519,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-23",
+    "open": 467.7,
+    "close": 374.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -9.9,
+   "lastClose": 267.69,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -48.4,
+   "hasDetail": false
+  },
+  {
+   "slug": "rajputana-stainless",
+   "symbol": "RSL",
+   "board": "mainboard",
+   "name": "Rajputana Stainless Limited",
+   "status": "listed",
+   "open": "2026-03-09",
+   "close": "2026-03-11",
+   "listingDate": "2026-03-19",
+   "timetable": {
+    "open": "2026-03-09",
+    "close": "2026-03-11",
+    "allotment": "2026-03-12",
+    "refunds": "2026-03-13",
+    "demat": "2026-03-13",
+    "listing": "2026-03-19",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 116,
+   "priceHigh": 122,
+   "issuePrice": 122,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-19",
+    "open": 122,
+    "close": 113.03,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 166.85,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 36.8,
    "hasDetail": false
   },
   {
@@ -2297,9 +6396,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.1,
-   "lastClose": 203.3,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 107.4,
+   "lastClose": 213.8,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 118.2,
+   "hasDetail": false
+  },
+  {
+   "slug": "sedemac-mechatronics",
+   "symbol": "SEDEMAC",
+   "board": "mainboard",
+   "name": "Sedemac Mechatronics Limited",
+   "status": "listed",
+   "open": "2026-03-04",
+   "close": "2026-03-06",
+   "listingDate": "2026-03-11",
+   "timetable": {
+    "open": "2026-03-04",
+    "close": "2026-03-06",
+    "allotment": "2026-03-09",
+    "refunds": "2026-03-10",
+    "demat": "2026-03-10",
+    "listing": "2026-03-11",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 1287,
+   "priceHigh": 1352,
+   "issuePrice": 1352,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-11",
+    "open": 1535,
+    "close": 1451.1,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 13.5,
+   "lastClose": 3023.9,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 123.7,
    "hasDetail": false
   },
   {
@@ -2339,9 +6480,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 147.9,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 32.1,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
    "hasDetail": false
   },
   {
@@ -2381,9 +6522,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.8,
-   "lastClose": 50.5,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -29.9,
+   "lastClose": 48.9,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -32.1,
+   "hasDetail": false
+  },
+  {
+   "slug": "omnitech-engineering",
+   "symbol": "OMNI",
+   "board": "mainboard",
+   "name": "Omnitech Engineering Limited",
+   "status": "listed",
+   "open": "2026-02-25",
+   "close": "2026-02-27",
+   "listingDate": "2026-03-05",
+   "timetable": {
+    "open": "2026-02-25",
+    "close": "2026-02-27",
+    "allotment": "2026-03-02",
+    "refunds": "2026-03-04",
+    "demat": "2026-03-04",
+    "listing": "2026-03-05",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 216,
+   "priceHigh": 227,
+   "issuePrice": 227,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-05",
+    "open": 202,
+    "close": 204.93,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -11,
+   "lastClose": 604.2,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 166.2,
    "hasDetail": false
   },
   {
@@ -2423,9 +6606,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -12.4,
-   "lastClose": 105.1,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -27.5,
+   "lastClose": 108,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -25.5,
+   "hasDetail": false
+  },
+  {
+   "slug": "pngs-reva-diamond-jewellery",
+   "symbol": "PNGSREVA",
+   "board": "mainboard",
+   "name": "PNGS Reva Diamond Jewellery Limited",
+   "status": "listed",
+   "open": "2026-02-24",
+   "close": "2026-02-26",
+   "listingDate": "2026-03-04",
+   "timetable": {
+    "open": "2026-02-24",
+    "close": "2026-02-26",
+    "allotment": "2026-02-27",
+    "refunds": "2026-03-02",
+    "demat": "2026-03-02",
+    "listing": "2026-03-04",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 367,
+   "priceHigh": 386,
+   "issuePrice": 386,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-04",
+    "open": 375,
+    "close": 411.7,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -2.8,
+   "lastClose": 603.15,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 56.3,
+   "hasDetail": false
+  },
+  {
+   "slug": "clean-max-enviro-energy-solutions",
+   "symbol": "CLEANMAX",
+   "board": "mainboard",
+   "name": "Clean Max Enviro Energy Solutions Limited",
+   "status": "listed",
+   "open": "2026-02-23",
+   "close": "2026-02-25",
+   "listingDate": "2026-03-02",
+   "timetable": {
+    "open": "2026-02-23",
+    "close": "2026-02-25",
+    "allotment": "2026-02-26",
+    "refunds": "2026-02-27",
+    "demat": "2026-02-27",
+    "listing": "2026-03-02",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 1000,
+   "priceHigh": 1053,
+   "issuePrice": 1053,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-02",
+    "open": 960,
+    "close": 867.5,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -8.8,
+   "lastClose": 1259.7,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 19.6,
    "hasDetail": false
   },
   {
@@ -2465,9 +6732,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -19.9,
-   "lastClose": 116,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 45,
+   "lastClose": 115.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 44.1,
+   "hasDetail": false
+  },
+  {
+   "slug": "shree-ram-twistex",
+   "symbol": "SRTL",
+   "board": "mainboard",
+   "name": "Shree Ram Twistex Limited",
+   "status": "listed",
+   "open": "2026-02-23",
+   "close": "2026-02-25",
+   "listingDate": "2026-03-02",
+   "timetable": {
+    "open": "2026-02-23",
+    "close": "2026-02-25",
+    "allotment": "2026-02-26",
+    "refunds": "2026-02-27",
+    "demat": "2026-02-27",
+    "listing": "2026-03-02",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 95,
+   "priceHigh": 104,
+   "issuePrice": 104,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-03-02",
+    "open": 68,
+    "close": 71.4,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -34.6,
+   "lastClose": 36.63,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -64.8,
+   "hasDetail": false
+  },
+  {
+   "slug": "gaudium-ivf-and-women-health",
+   "symbol": "GAUDIUMIVF",
+   "board": "mainboard",
+   "name": "Gaudium IVF and Women Health Limited",
+   "status": "listed",
+   "open": "2026-02-20",
+   "close": "2026-02-24",
+   "listingDate": "2026-02-27",
+   "timetable": {
+    "open": "2026-02-20",
+    "close": "2026-02-24",
+    "allotment": "2026-02-25",
+    "refunds": "2026-02-26",
+    "demat": "2026-02-26",
+    "listing": "2026-02-27",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 75,
+   "priceHigh": 79,
+   "issuePrice": 79,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-02-27",
+    "open": 83,
+    "close": 80.26,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 5.1,
+   "lastClose": 104.18,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 31.9,
    "hasDetail": false
   },
   {
@@ -2507,9 +6858,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "lastClose": 31.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -54.3,
    "hasDetail": false
   },
   {
@@ -2549,9 +6900,93 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.6,
-   "lastClose": 127,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 8.5,
+   "lastClose": 123.1,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 5.2,
+   "hasDetail": false
+  },
+  {
+   "slug": "aye-finance",
+   "symbol": "AYE",
+   "board": "mainboard",
+   "name": "Aye Finance Limited",
+   "status": "listed",
+   "open": "2026-02-09",
+   "close": "2026-02-11",
+   "listingDate": "2026-02-16",
+   "timetable": {
+    "open": "2026-02-09",
+    "close": "2026-02-11",
+    "allotment": "2026-02-12",
+    "refunds": "2026-02-13",
+    "demat": "2026-02-13",
+    "listing": "2026-02-16",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 122,
+   "priceHigh": 129,
+   "issuePrice": 129,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-02-16",
+    "open": 129,
+    "close": 128.91,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 147.13,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 14.1,
+   "hasDetail": false
+  },
+  {
+   "slug": "fractal-analytics",
+   "symbol": "FRACTAL",
+   "board": "mainboard",
+   "name": "Fractal Analytics Limited",
+   "status": "listed",
+   "open": "2026-02-09",
+   "close": "2026-02-11",
+   "listingDate": "2026-02-16",
+   "timetable": {
+    "open": "2026-02-09",
+    "close": "2026-02-11",
+    "allotment": "2026-02-12",
+    "refunds": "2026-02-13",
+    "demat": "2026-02-13",
+    "listing": "2026-02-16",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 857,
+   "priceHigh": 900,
+   "issuePrice": 900,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-02-16",
+    "open": 876,
+    "close": 847.15,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -2.7,
+   "lastClose": 808.85,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -10.1,
    "hasDetail": false
   },
   {
@@ -2591,9 +7026,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.8,
-   "lastClose": 46.6,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -56.9,
+   "lastClose": 47,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -56.5,
    "hasDetail": false
   },
   {
@@ -2633,9 +7068,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 4,
-   "lastClose": 143.4,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -18.5,
+   "lastClose": 142.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -19.1,
    "hasDetail": false
   },
   {
@@ -2675,9 +7110,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 9.1,
-   "lastClose": 484.5,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 450.6,
+   "lastClose": 466.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 430.1,
    "hasDetail": false
   },
   {
@@ -2755,9 +7190,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 0,
-   "lastClose": 263.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 61.9,
+   "lastClose": 280.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 71.9,
    "hasDetail": false
   },
   {
@@ -2797,9 +7232,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 27.5,
-   "lastClose": 245,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 81.5,
+   "lastClose": 228,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 68.9,
+   "hasDetail": false
+  },
+  {
+   "slug": "shadowfax-technologies",
+   "symbol": "SHADOWFAX",
+   "board": "mainboard",
+   "name": "Shadowfax Technologies Limited",
+   "status": "listed",
+   "open": "2026-01-20",
+   "close": "2026-01-22",
+   "listingDate": "2026-01-28",
+   "timetable": {
+    "open": "2026-01-20",
+    "close": "2026-01-22",
+    "allotment": "2026-01-23",
+    "refunds": "2026-01-27",
+    "demat": "2026-01-27",
+    "listing": "2026-01-28",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 118,
+   "priceHigh": 124,
+   "issuePrice": 124,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-01-28",
+    "open": 112.6,
+    "close": 109.98,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -9.2,
+   "lastClose": 288.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 132.5,
    "hasDetail": false
   },
   {
@@ -2839,9 +7316,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 28.45,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -50.1,
+   "lastClose": 26,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -54.4,
+   "hasDetail": false
+  },
+  {
+   "slug": "amagi-media-labs",
+   "symbol": "AMAGI",
+   "board": "mainboard",
+   "name": "Amagi Media Labs Limited",
+   "status": "listed",
+   "open": "2026-01-13",
+   "close": "2026-01-16",
+   "listingDate": "2026-01-21",
+   "timetable": {
+    "open": "2026-01-13",
+    "close": "2026-01-16",
+    "allotment": "2026-01-19",
+    "refunds": "2026-01-20",
+    "demat": "2026-01-20",
+    "listing": "2026-01-21",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 343,
+   "priceHigh": 361,
+   "issuePrice": 361,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-01-21",
+    "open": 318,
+    "close": 348.25,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -11.9,
+   "lastClose": 568.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 57.4,
    "hasDetail": false
   },
   {
@@ -2881,9 +7400,51 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 31.4,
-   "lastClose": 134.1,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 127.3,
+   "lastClose": 142.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 141.1,
+   "hasDetail": false
+  },
+  {
+   "slug": "bharat-coking-coal",
+   "symbol": "BHARATCOAL",
+   "board": "mainboard",
+   "name": "Bharat Coking Coal Limited",
+   "status": "listed",
+   "open": "2026-01-09",
+   "close": "2026-01-13",
+   "listingDate": "2026-01-19",
+   "timetable": {
+    "open": "2026-01-09",
+    "close": "2026-01-13",
+    "allotment": "2026-01-14",
+    "refunds": "2026-01-16",
+    "demat": "2026-01-16",
+    "listing": "2026-01-19",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 21,
+   "priceHigh": 23,
+   "issuePrice": 23,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2026-01-19",
+    "open": 45,
+    "close": 40.58,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 95.7,
+   "lastClose": 31.56,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 37.2,
    "hasDetail": false
   },
   {
@@ -2923,9 +7484,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -16,
-   "lastClose": 13.1,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -68,
+   "lastClose": 13,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -68.3,
    "hasDetail": false
   },
   {
@@ -2961,9 +7522,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 268,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 54,
+   "lastClose": 265.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 52.5,
    "hasDetail": false
   },
   {
@@ -2999,9 +7560,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 19,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "lastClose": 133.95,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 6.3,
    "hasDetail": false
   },
   {
@@ -3037,9 +7598,47 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 14.4,
-   "lastClose": 239,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 146.4,
+   "lastClose": 248.35,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 156,
+   "hasDetail": false
+  },
+  {
+   "slug": "gujarat-kidney-and-super-speciality",
+   "symbol": "GKSL",
+   "board": "mainboard",
+   "name": "Gujarat Kidney and Super Speciality Limited",
+   "status": "listed",
+   "open": "2025-12-22",
+   "close": "2025-12-24",
+   "listingDate": "2025-12-30",
+   "timetable": {
+    "open": "2025-12-22",
+    "close": "2025-12-24",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-30",
+    "expected": {}
+   },
+   "priceLow": 108,
+   "priceHigh": 114,
+   "issuePrice": 114,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-30",
+    "open": 120,
+    "close": 104.54,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 5.3,
+   "lastClose": 155.92,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 36.8,
    "hasDetail": false
   },
   {
@@ -3075,9 +7674,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 52.05,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -25.6,
+   "lastClose": 52,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -25.7,
    "hasDetail": false
   },
   {
@@ -3113,9 +7712,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": 31.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -63,
+   "lastClose": 29.55,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -65.6,
    "hasDetail": false
   },
   {
@@ -3151,9 +7750,47 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -20,
-   "lastClose": null,
-   "lastCloseDate": null,
-   "gainPct": null,
+   "lastClose": 143,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 53.8,
+   "hasDetail": false
+  },
+  {
+   "slug": "ksh-international",
+   "symbol": "KSHINTL",
+   "board": "mainboard",
+   "name": "KSH International Limited",
+   "status": "listed",
+   "open": "2025-12-16",
+   "close": "2025-12-18",
+   "listingDate": "2025-12-23",
+   "timetable": {
+    "open": "2025-12-16",
+    "close": "2025-12-18",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-23",
+    "expected": {}
+   },
+   "priceLow": 365,
+   "priceHigh": 384,
+   "issuePrice": 384,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-23",
+    "open": 370,
+    "close": 355,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -3.6,
+   "lastClose": 1004.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 161.7,
    "hasDetail": false
   },
   {
@@ -3189,9 +7826,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 3.5,
-   "lastClose": 150,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 5.6,
+   "lastClose": 152.5,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 7.4,
    "hasDetail": false
   },
   {
@@ -3227,9 +7864,199 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 25,
-   "lastClose": 80,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -9.1,
+   "lastClose": 71.7,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -18.5,
+   "hasDetail": false
+  },
+  {
+   "slug": "icici-prudential-asset-management-company",
+   "symbol": "ICICIAMC",
+   "board": "mainboard",
+   "name": "ICICI Prudential Asset Management Company Limited",
+   "status": "listed",
+   "open": "2025-12-12",
+   "close": "2025-12-16",
+   "listingDate": "2025-12-19",
+   "timetable": {
+    "open": "2025-12-12",
+    "close": "2025-12-16",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-19",
+    "expected": {}
+   },
+   "priceLow": 2061,
+   "priceHigh": 2165,
+   "issuePrice": 2165,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-19",
+    "open": 2600,
+    "close": 2585.9,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 20.1,
+   "lastClose": 2935.8,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 35.6,
+   "hasDetail": false
+  },
+  {
+   "slug": "nephrocare-health-services",
+   "symbol": "NEPHROPLUS",
+   "board": "mainboard",
+   "name": "Nephrocare Health Services Limited",
+   "status": "listed",
+   "open": "2025-12-10",
+   "close": "2025-12-12",
+   "listingDate": "2025-12-17",
+   "timetable": {
+    "open": "2025-12-10",
+    "close": "2025-12-12",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-17",
+    "expected": {}
+   },
+   "priceLow": 438,
+   "priceHigh": 460,
+   "issuePrice": 460,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-17",
+    "open": 490,
+    "close": 471.25,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 6.5,
+   "lastClose": 601.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 30.8,
+   "hasDetail": false
+  },
+  {
+   "slug": "park-medi-world",
+   "symbol": "PARKHOSPS",
+   "board": "mainboard",
+   "name": "Park Medi World Limited",
+   "status": "listed",
+   "open": "2025-12-10",
+   "close": "2025-12-12",
+   "listingDate": "2025-12-17",
+   "timetable": {
+    "open": "2025-12-10",
+    "close": "2025-12-12",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-17",
+    "expected": {}
+   },
+   "priceLow": 154,
+   "priceHigh": 162,
+   "issuePrice": 162,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-17",
+    "open": 158.8,
+    "close": 147.95,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -2,
+   "lastClose": 251.39,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 55.2,
+   "hasDetail": false
+  },
+  {
+   "slug": "corona-remedies",
+   "symbol": "CORONA",
+   "board": "mainboard",
+   "name": "Corona Remedies Limited",
+   "status": "listed",
+   "open": "2025-12-08",
+   "close": "2025-12-10",
+   "listingDate": "2025-12-15",
+   "timetable": {
+    "open": "2025-12-08",
+    "close": "2025-12-10",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-15",
+    "expected": {}
+   },
+   "priceLow": 1008,
+   "priceHigh": 1062,
+   "issuePrice": 1062,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-15",
+    "open": 1470,
+    "close": 1438.4,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 38.4,
+   "lastClose": 2441.1,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 129.9,
+   "hasDetail": false
+  },
+  {
+   "slug": "wakefit-innovations",
+   "symbol": "WAKEFIT",
+   "board": "mainboard",
+   "name": "Wakefit Innovations Limited",
+   "status": "listed",
+   "open": "2025-12-08",
+   "close": "2025-12-10",
+   "listingDate": "2025-12-15",
+   "timetable": {
+    "open": "2025-12-08",
+    "close": "2025-12-10",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-15",
+    "expected": {}
+   },
+   "priceLow": 185,
+   "priceHigh": 195,
+   "issuePrice": 195,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-15",
+    "open": 195,
+    "close": 192.29,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 137.91,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -29.3,
    "hasDetail": false
   },
   {
@@ -3265,9 +8092,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 90,
-   "lastClose": 235.6,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 120.2,
+   "lastClose": 228.65,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 113.7,
    "hasDetail": false
   },
   {
@@ -3303,9 +8130,85 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 2.1,
-   "lastClose": 294.45,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 54.2,
+   "lastClose": 292.45,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 53.1,
+   "hasDetail": false
+  },
+  {
+   "slug": "aequs",
+   "symbol": "AEQUS",
+   "board": "mainboard",
+   "name": "Aequs Limited",
+   "status": "listed",
+   "open": "2025-12-03",
+   "close": "2025-12-05",
+   "listingDate": "2025-12-10",
+   "timetable": {
+    "open": "2025-12-03",
+    "close": "2025-12-05",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-10",
+    "expected": {}
+   },
+   "priceLow": 118,
+   "priceHigh": 124,
+   "issuePrice": 124,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-10",
+    "open": 140,
+    "close": 151.29,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 12.9,
+   "lastClose": 219.54,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 77,
+   "hasDetail": false
+  },
+  {
+   "slug": "meesho",
+   "symbol": "MEESHO",
+   "board": "mainboard",
+   "name": "Meesho Limited",
+   "status": "listed",
+   "open": "2025-12-03",
+   "close": "2025-12-05",
+   "listingDate": "2025-12-10",
+   "timetable": {
+    "open": "2025-12-03",
+    "close": "2025-12-05",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-10",
+    "expected": {}
+   },
+   "priceLow": 105,
+   "priceHigh": 111,
+   "issuePrice": 111,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-10",
+    "open": 162.5,
+    "close": 170.09,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 46.4,
+   "lastClose": 233.48,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 110.3,
    "hasDetail": false
   },
   {
@@ -3341,9 +8244,47 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -2.2,
-   "lastClose": 21.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -75.7,
+   "lastClose": 20,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -77.8,
+   "hasDetail": false
+  },
+  {
+   "slug": "vidya-wires",
+   "symbol": "VIDYAWIRES",
+   "board": "mainboard",
+   "name": "Vidya Wires Limited",
+   "status": "listed",
+   "open": "2025-12-03",
+   "close": "2025-12-05",
+   "listingDate": "2025-12-10",
+   "timetable": {
+    "open": "2025-12-03",
+    "close": "2025-12-05",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-12-10",
+    "expected": {}
+   },
+   "priceLow": 48,
+   "priceHigh": 52,
+   "issuePrice": 52,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-12-10",
+    "open": 52,
+    "close": 53.17,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 67.8,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 30.4,
    "hasDetail": false
   },
   {
@@ -3379,9 +8320,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 10.2,
-   "lastClose": 104.6,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 6.7,
+   "lastClose": 106.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 8.4,
    "hasDetail": false
   },
   {
@@ -3417,9 +8358,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": -9.8,
-   "lastClose": 69.1,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -47.7,
+   "lastClose": 69.75,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -47.2,
    "hasDetail": false
   },
   {
@@ -3455,9 +8396,9 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 17.6,
-   "lastClose": 74.5,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -12.4,
+   "lastClose": 69.2,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -18.6,
    "hasDetail": false
   },
   {
@@ -3493,9 +8434,389 @@
     "source": "NSE end-of-day file for the listing date"
    },
    "listingGainPct": 7.1,
-   "lastClose": 75.85,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": 35.4,
+   "lastClose": 74,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 32.1,
+   "hasDetail": false
+  },
+  {
+   "slug": "sudeep-pharma",
+   "symbol": "SUDEEPPHRM",
+   "board": "mainboard",
+   "name": "Sudeep Pharma Limited",
+   "status": "listed",
+   "open": "2025-11-21",
+   "close": "2025-11-25",
+   "listingDate": "2025-11-28",
+   "timetable": {
+    "open": "2025-11-21",
+    "close": "2025-11-25",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-28",
+    "expected": {}
+   },
+   "priceLow": 563,
+   "priceHigh": 593,
+   "issuePrice": 593,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-28",
+    "open": 730,
+    "close": 774.15,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 23.1,
+   "lastClose": 1178.3,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 98.7,
+   "hasDetail": false
+  },
+  {
+   "slug": "excelsoft-technologies",
+   "symbol": "EXCELSOFT",
+   "board": "mainboard",
+   "name": "Excelsoft Technologies Limited",
+   "status": "listed",
+   "open": "2025-11-19",
+   "close": "2025-11-21",
+   "listingDate": "2025-11-26",
+   "timetable": {
+    "open": "2025-11-19",
+    "close": "2025-11-21",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-26",
+    "expected": {}
+   },
+   "priceLow": 114,
+   "priceHigh": 120,
+   "issuePrice": 120,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-26",
+    "open": 135,
+    "close": 125.97,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 12.5,
+   "lastClose": 74,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -38.3,
+   "hasDetail": false
+  },
+  {
+   "slug": "capillary-technologies-india",
+   "symbol": "CAPILLARY",
+   "board": "mainboard",
+   "name": "Capillary Technologies India Limited",
+   "status": "listed",
+   "open": "2025-11-14",
+   "close": "2025-11-18",
+   "listingDate": "2025-11-21",
+   "timetable": {
+    "open": "2025-11-14",
+    "close": "2025-11-18",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-21",
+    "expected": {}
+   },
+   "priceLow": 549,
+   "priceHigh": 577,
+   "issuePrice": 577,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-21",
+    "open": 571.9,
+    "close": 606.5,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -0.9,
+   "lastClose": 507.8,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -12,
+   "hasDetail": false
+  },
+  {
+   "slug": "fujiyama-power-systems",
+   "symbol": "UTLSOLAR",
+   "board": "mainboard",
+   "name": "Fujiyama Power Systems Limited",
+   "status": "listed",
+   "open": "2025-11-13",
+   "close": "2025-11-17",
+   "listingDate": "2025-11-20",
+   "timetable": {
+    "open": "2025-11-13",
+    "close": "2025-11-17",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-20",
+    "expected": {}
+   },
+   "priceLow": 216,
+   "priceHigh": 228,
+   "issuePrice": 228,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-20",
+    "open": 220,
+    "close": 208.44,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -3.5,
+   "lastClose": 351.8,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 54.3,
+   "hasDetail": false
+  },
+  {
+   "slug": "tenneco-clean-air-india",
+   "symbol": "TENNIND",
+   "board": "mainboard",
+   "name": "Tenneco Clean Air India Limited",
+   "status": "listed",
+   "open": "2025-11-12",
+   "close": "2025-11-14",
+   "listingDate": "2025-11-19",
+   "timetable": {
+    "open": "2025-11-12",
+    "close": "2025-11-14",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-19",
+    "expected": {}
+   },
+   "priceLow": 378,
+   "priceHigh": 397,
+   "issuePrice": 397,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-19",
+    "open": 505,
+    "close": 490.8,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 27.2,
+   "lastClose": 423.25,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 6.6,
+   "hasDetail": false
+  },
+  {
+   "slug": "emmvee-photovoltaic-power",
+   "symbol": "EMMVEE",
+   "board": "mainboard",
+   "name": "Emmvee Photovoltaic Power Limited",
+   "status": "listed",
+   "open": "2025-11-11",
+   "close": "2025-11-13",
+   "listingDate": "2025-11-18",
+   "timetable": {
+    "open": "2025-11-11",
+    "close": "2025-11-13",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-18",
+    "expected": {}
+   },
+   "priceLow": 206,
+   "priceHigh": 217,
+   "issuePrice": 217,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-18",
+    "open": 217,
+    "close": 219.4,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 0,
+   "lastClose": 251.31,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 15.8,
+   "hasDetail": false
+  },
+  {
+   "slug": "physicswallah",
+   "symbol": "PWL",
+   "board": "mainboard",
+   "name": "Physicswallah Limited",
+   "status": "listed",
+   "open": "2025-11-11",
+   "close": "2025-11-13",
+   "listingDate": "2025-11-18",
+   "timetable": {
+    "open": "2025-11-11",
+    "close": "2025-11-13",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-18",
+    "expected": {}
+   },
+   "priceLow": 103,
+   "priceHigh": 109,
+   "issuePrice": 109,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-18",
+    "open": 145,
+    "close": 155.24,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 33,
+   "lastClose": 130,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 19.3,
+   "hasDetail": false
+  },
+  {
+   "slug": "curis-lifesciences",
+   "symbol": "CURIS",
+   "board": "sme",
+   "name": "Curis Lifesciences Limited",
+   "status": "listed",
+   "open": "2025-11-07",
+   "close": "2025-11-11",
+   "listingDate": "2025-11-14",
+   "timetable": {
+    "open": "2025-11-07",
+    "close": "2025-11-11",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-14",
+    "expected": {}
+   },
+   "priceLow": 120,
+   "priceHigh": 128,
+   "issuePrice": 128,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-14",
+    "open": 146.1,
+    "close": 141,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 14.1,
+   "lastClose": 177.1,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": 38.4,
+   "hasDetail": false
+  },
+  {
+   "slug": "pine-labs",
+   "symbol": "PINELABS",
+   "board": "mainboard",
+   "name": "Pine Labs Limited",
+   "status": "listed",
+   "open": "2025-11-07",
+   "close": "2025-11-11",
+   "listingDate": "2025-11-14",
+   "timetable": {
+    "open": "2025-11-07",
+    "close": "2025-11-11",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-14",
+    "expected": {}
+   },
+   "priceLow": 210,
+   "priceHigh": 221,
+   "issuePrice": 221,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-14",
+    "open": 242,
+    "close": 250.89,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 9.5,
+   "lastClose": 162.45,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -26.5,
+   "hasDetail": false
+  },
+  {
+   "slug": "finbud-financial-services",
+   "symbol": "FINBUD",
+   "board": "sme",
+   "name": "Finbud Financial Services Limited",
+   "status": "listed",
+   "open": "2025-11-06",
+   "close": "2025-11-10",
+   "listingDate": "2025-11-13",
+   "timetable": {
+    "open": "2025-11-06",
+    "close": "2025-11-10",
+    "allotment": null,
+    "refunds": null,
+    "demat": null,
+    "listing": "2025-11-13",
+    "expected": {}
+   },
+   "priceLow": 140,
+   "priceHigh": 142,
+   "issuePrice": 142,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-13",
+    "open": 157,
+    "close": 164.85,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 10.6,
+   "lastClose": 127.9,
+   "lastCloseDate": "2026-11-06",
+   "gainPct": -9.9,
    "hasDetail": false
   }
  ]
