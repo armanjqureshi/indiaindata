@@ -1,10 +1,10 @@
 {
- "runAt": "2026-11-12T04:16:43.183Z",
+ "runAt": "2026-11-12T04:18:44.100Z",
  "backfillDays": 0,
  "accepted": [
   "tomato 2026-11-11: 456 markets, median 2750",
-  "onion 2026-11-11: 381 markets, median 5300",
   "potato 2026-11-11: 406 markets, median 1950",
+  "onion 2026-11-11: 381 markets, median 5300",
   "garlic 2026-11-11: 134 markets, median 20000",
   "ginger 2026-11-11: 223 markets, median 9000",
   "green-chilli 2026-11-11: 361 markets, median 5000",
@@ -19,8 +19,8 @@
   "tur 2026-11-11: 31 markets, median 9021"
  ],
  "notes": [
-  "onion 2026-11-12: only 0 markets, skipped",
   "tomato 2026-11-12: only 0 markets, skipped",
+  "onion 2026-11-12: only 0 markets, skipped",
   "potato 2026-11-12: only 0 markets, skipped",
   "garlic 2026-11-12: only 0 markets, skipped",
   "ginger 2026-11-12: only 0 markets, skipped",
@@ -36,7 +36,7 @@
   "tur 2026-11-12: only 0 markets, skipped"
  ],
  "errors": [
-  "potato: publish HTTP 409 {\"message\":\"is at 311baecbeea586f5bf260345ce3646f3b107e7f9 but expected 5294f17dc81ab855c80e93a5fc9c9935124adc52\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file"
+  "tomato: publish HTTP 409 {\"message\":\"is at 66bfa1d74f3740d31a39814746735702f924d9f0 but expected a5cc104eddf290c71376dae8294c9303c72110f7\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file"
  ],
  "latest": "2026-11-12"
 }
