@@ -50,7 +50,14 @@ const priceRange = (s) => {
   const one = num(String(s || '').replace(/Rs\.?/i, ''))
   return one ? [one, one] : [null, null]
 }
-const boardOf = (series) => (series === 'SME' || series === 'SM' || series === 'ST' ? 'sme' : series === 'EQ' || series === 'BE' ? 'mainboard' : null)
+// NSE has used EQ/BE for mainboard and SME/SM/ST for Emerge; since 7 Nov 2026 its past-issues
+// list says "Equity" for mainboard
+const boardOf = (series) => {
+  const v = String(series || '').trim().toUpperCase()
+  if (['SME', 'SM', 'ST'].includes(v)) return 'sme'
+  if (['EQ', 'BE', 'EQUITY'].includes(v)) return 'mainboard'
+  return null
+}
 const read = (f, d) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : d)
 const write = (f, d) => fs.writeFileSync(f, JSON.stringify(d, null, 1) + '\n')
 
