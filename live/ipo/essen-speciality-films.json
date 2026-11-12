@@ -1,0 +1,36 @@
+{
+ "subscription": {
+  "total": 66.08,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "27-Jun-2023 17:42:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Fresh issue of upto 46,99,200 Equity Shares and Offer for Sale of upto 15,00,000 Equity Shares (including Market Maker Portion of 3,10,800 Equity Shares and anchor allocation of 17,65,200 Equity Shares)",
+ "issueSize": {
+  "freshCr": 54.04,
+  "ofsCr": 17.25,
+  "totalCr": 71.29,
+  "method": "Calculated at ₹115 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "GYR Capital Advisors Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Aniket Chindarkar,+91 22 6263 8200 , ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://archives.nseindia.com/content/ipo/RHP_ESFL.zip",
+  "Anchor allocation": "https://archives.nseindia.com/content/ipo/ANCHOR_ESFL.zip"
+ },
+ "fetchedAt": "2026-11-12T18:35:58.138Z",
+ "slug": "essen-speciality-films",
+ "symbol": "ESFL",
+ "board": "sme",
+ "name": "Essen Speciality Films Limited"
+}

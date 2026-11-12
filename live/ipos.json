@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T12:36:03.251Z",
+ "updatedAt": "2026-11-12T18:36:03.697Z",
  "lastPriceSession": "2026-11-12",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -8555,44 +8555,6 @@
    "lastClose": 355,
    "lastCloseDate": "2026-11-12",
    "gainPct": 55.7,
-   "hasDetail": false
-  },
-  {
-   "slug": "tenneco-clean-air-india",
-   "symbol": "TENNIND",
-   "board": "mainboard",
-   "name": "Tenneco Clean Air India Limited",
-   "status": "listed",
-   "open": "2025-11-12",
-   "close": "2025-11-14",
-   "listingDate": "2025-11-19",
-   "timetable": {
-    "open": "2025-11-12",
-    "close": "2025-11-14",
-    "allotment": null,
-    "refunds": null,
-    "demat": null,
-    "listing": "2025-11-19",
-    "expected": {}
-   },
-   "priceLow": 378,
-   "priceHigh": 397,
-   "issuePrice": 397,
-   "lotSize": null,
-   "lotValue": null,
-   "sizeCr": null,
-   "subscription": null,
-   "subscriptionAsOf": null,
-   "listing": {
-    "date": "2025-11-19",
-    "open": 505,
-    "close": 490.8,
-    "source": "NSE end-of-day file for the listing date"
-   },
-   "listingGainPct": 27.2,
-   "lastClose": 457.95,
-   "lastCloseDate": "2026-11-12",
-   "gainPct": 15.4,
    "hasDetail": false
   }
  ]
