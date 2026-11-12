@@ -1,30 +1,43 @@
-// One-off probe: NHB RESIDEX portal scripts and press releases (residex.nhbonline.org.in).
+// One-off probe (round 2): NHB RESIDEX data downloads and a city dashboard (ward level).
 import fs from 'node:fs'
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
 const BASE = 'https://residex.nhbonline.org.in'
 const DIR = 'data/raw/property/residex'
 fs.mkdirSync(DIR, { recursive: true })
 const out = { runAt: new Date().toISOString(), items: {} }
-async function grab(key, p, opts = {}) {
+let cookie = ''
+async function req(key, p, form) {
   try {
-    const r = await fetch(BASE + encodeURI(p), { redirect: 'follow', signal: AbortSignal.timeout(90000), ...opts, headers: { 'User-Agent': UA, Accept: '*/*', 'X-Requested-With': 'XMLHttpRequest', Referer: BASE + '/', ...(opts.headers || {}) } })
-    const buf = Buffer.from(await r.arrayBuffer())
-    const ext = /pdf/.test(r.headers.get('content-type') || '') ? 'pdf' : /json/.test(r.headers.get('content-type') || '') ? 'json' : /sheet|excel|octet/.test(r.headers.get('content-type') || '') ? 'xlsx' : 'txt'
-    if (r.status === 200) fs.writeFileSync(`${DIR}/${key}.${ext}`, buf)
-    out.items[key] = { path: p, status: r.status, type: r.headers.get('content-type'), bytes: buf.length, head: ext === 'pdf' || ext === 'xlsx' ? '' : buf.toString('utf8').slice(0, 300) }
-  } catch (e) { out.items[key] = { path: p, error: String(e.cause?.code || e.message) } }
+    const r = await fetch(BASE + p, {
+      method: form ? 'POST' : 'GET', redirect: 'follow', signal: AbortSignal.timeout(120000),
+      headers: { 'User-Agent': UA, Accept: '*/*', 'X-Requested-With': 'XMLHttpRequest', Referer: BASE + '/', ...(cookie ? { Cookie: cookie } : {}), ...(form ? { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' } : {}) },
+      body: form ? new URLSearchParams(form).toString() : undefined,
+    })
+    const sc = r.headers.get('set-cookie'); if (sc) cookie = sc.split(/,(?=\s*\w+=)/).map((c) => c.split(';')[0]).join('; ')
+    const t = await r.text()
+    fs.writeFileSync(`${DIR}/${key}.txt`, t)
+    out.items[key] = { p, status: r.status, type: r.headers.get('content-type'), bytes: t.length, head: t.slice(0, 400) }
+    return t
+  } catch (e) { out.items[key] = { p, error: String(e.cause?.code || e.message) }; return '' }
 }
-await grab('dashboard_js', '/customappscripts/dashboard/dashboard.js')
-await grab('common_js', '/customappscripts/commonsitescript.js')
-await grab('chartloader_js', '/customappscripts/chartloader.js')
-await grab('pr_2026q1', '/DataUploadFormats/PressRelease_English/Press Release April-June 2026.pdf')
-await grab('pr_2026q0', '/DataUploadFormats/PressRelease_English/Press Release January-March 2026.pdf')
-await grab('pr_2025q2', '/DataUploadFormats/PressRelease_English/Press Release July-September 2025.pdf')
-// endpoints found in the scripts are tried in a second pass
-const js = ['dashboard_js', 'common_js', 'chartloader_js'].map((k) => { try { return fs.readFileSync(`${DIR}/${k}.txt`, 'utf8') } catch { return '' } }).join('\n')
-const eps = [...new Set([...js.matchAll(/["'`](\/[A-Za-z]+\/[A-Za-z0-9_]+)["'`]/g)].map((m) => m[1]))].slice(0, 40)
-out.endpoints = eps
-for (const [i, ep] of eps.entries()) await grab(`ep_${i}_get`, ep)
+await req('home', '/')
+for (const [k, type, ia] of [['dl_hfc_price', 'HFC', 'PRICE'], ['dl_hfc_index', 'HFC', 'INDEX'], ['dl_uc_price', 'UC', 'PRICE'], ['dl_uc_index', 'UC', 'INDEX']]) {
+  await req(k, '/Dashboard/GetFileDataToDownload', { reporttype: `PIVOT_${type}_${ia}`, qtr: '0', cityid: '0', pricemtdid: '2', lang: '0' })
+}
+await req('dl_hfc_price_curq', '/Dashboard/GetFileDataToDownload', { reporttype: 'PIVOT_HFC_PRICE', qtr: '0', cityid: '0', pricemtdid: '1', lang: '0' })
+const scroll = await req('scroll', '/Dashboard/GetResidexPriceScroll', { reporttype: 'CITY_HFC', qtr: '', cityid: '0', pricemtdid: '2' })
+let cities = []
+try { cities = JSON.parse(JSON.parse(scroll).data) } catch {}
+out.cityCount = cities.length
+for (const name of ['Mumbai', 'Delhi', 'Kanpur']) {
+  const c = cities.find((x) => x.CITY === name)
+  if (!c) continue
+  const enc = await req(`enc_${name}`, `/DashboardBY2024/EncryptCityId?cityid=${c.CITY_ID}`)
+  const html = await req(`city_${name}`, `/DashboardBY2024/DashboardBY2024?sfjy=${encodeURIComponent(enc.trim())}`)
+  const scripts = [...new Set([...html.matchAll(/src="(\/customappscripts\/[^"]+)"/g)].map((m) => m[1].split('?')[0]))]
+  out.items[`city_${name}`].scripts = scripts
+  if (name === 'Mumbai') for (const [i, s] of scripts.entries()) await req(`cityjs_${i}`, s)
+}
 fs.mkdirSync('live/debug', { recursive: true })
 fs.writeFileSync('live/debug/residex-probe.json', JSON.stringify(out, null, 1))
-console.log(JSON.stringify(out, null, 1).slice(0, 5000))
+console.log(JSON.stringify(out, null, 1).slice(0, 6000))
