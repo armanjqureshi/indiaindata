@@ -1,0 +1,356 @@
+﻿/// <reference path="blockui.js" />
+
+
+
+var CommonURL = null;
+var getUrl = window.location;
+CommonURL = getUrl.protocol + "//" + getUrl.host + "/";
+
+$(document).ready(function () {
+    $(".globalAlert").hide();
+    $("#btnCloseError").click(function () {
+        $("#globalAlertError").hide();
+    });
+    $("#btnCloseSuccess").click(function () {
+        $("#globalAlertSuccess").hide();
+    });
+
+    $(".globalAlert").click(function () {
+        $(this).hide();
+    })
+});
+
+function BindStateDropDownList(DropDownControlId) {
+    return $.get(CommonURL + "ApplicationUtilities/GetState", AddAntiForgeryToken({}))
+        .then(function (resultData) {
+            const $ddl = $("#" + DropDownControlId);
+            $ddl.empty();
+
+            resultData.forEach(item => {
+                $ddl.append('<option value="' + item.value + '">' + item.text + '</option>');
+            });
+
+            return $ddl;
+        })
+        .fail(function (error) {
+            alert("Error in BindStateDropDownList: " + error.responseText);
+        });
+}
+
+function BindCityDropDownList(DropDownControlId, State) {
+    return $.get(CommonURL + "ApplicationUtilities/GetCity", AddAntiForgeryToken({ State }))
+        .then(function (resultData) {
+            const $ddl = $("#" + DropDownControlId);
+            $ddl.empty();
+
+            resultData.forEach(item => {
+                $ddl.append('<option value="' + item.value + '">' + item.text + '</option>');
+            });
+
+            return $ddl; 
+        })
+        .fail(function (error) {
+            alert("Error in BindCityDropDownList: " + error.responseText);
+        });
+}
+
+function BindStateBasedOnCity(cityId) {
+    return new Promise((resolve, reject) => {
+        try {
+            $.get(CommonURL + "ApplicationUtilities/GetStateBasedOnCityId",
+                AddAntiForgeryToken({ cityId: cityId }),
+                function (resultData) {
+                    $("#selectedStateBasedOnCityid").val(resultData.stateId);
+
+                    // ensure state dropdown is populated
+                    BindStateDropDownList("ddlState").then($stateDdl => {
+                        // Select the returned state
+                        $stateDdl.val(resultData.stateId).trigger('change');
+                        resolve(resultData.stateId);
+                    });
+                }
+            ).fail(function (error) {
+                alert("Error in BindStateBasedOnCity: " + error.responseText);
+                reject(error);
+            });
+        } catch (e) {
+            alert("Error in BindStateBasedOnCity: " + e.message);
+            reject(e);
+        }
+    });
+}
+
+
+function BindStateDropDownList1(DropDownControlId) {
+    try {
+        $.get(CommonURL + "ApplicationUtilities/GetState",
+            AddAntiForgeryToken({
+            }), function (resultData) {
+                $("#" + DropDownControlId).empty();
+                for (i = 0; i < resultData.length; i++) {
+                    $("#" + DropDownControlId).append('<option value="' + resultData[i].value + '">' + resultData[i].text + '</option>');
+                }
+            }).fail(function (error) {
+                alert("Error in BindStateDropDownList: " + error.responseText);
+            });
+    } catch (e) {
+        alert("Error in BindStateDropDownList: " + e.message);
+    }
+}
+function BindStateBasedOnCity1(cityId) {
+    try {
+        $.get(CommonURL + "ApplicationUtilities/GetStateBasedOnCityId",
+            AddAntiForgeryToken({
+                cityId: cityId
+            }), function (resultData) {
+                $("#selectedStateBasedOnCityid").val(resultData.stateId);
+            }).fail(function (error) {
+                alert("Error in BindStateBasedOnCity: " + error.responseText);
+            });
+    } catch (e) {
+        alert("Error in BindStateBasedOnCity: " + e.message);
+    }
+}
+function BindCityDropDownList1(DropDownControlId, State) {
+    try {
+        $.get(CommonURL + "ApplicationUtilities/GetCity",
+            AddAntiForgeryToken({
+                State: State
+            }), function (resultData) {
+                $("#" + DropDownControlId).empty();
+                for (i = 0; i < resultData.length; i++) {
+                    $("#" + DropDownControlId).append('<option value="' + resultData[i].value + '">' + resultData[i].text + '</option>');
+                }
+            }).fail(function (error) {
+                alert("Error in BindCityDropDownList: " + error.responseText);
+        });
+    } catch (e) {
+        alert("Error in BindCityDropDownList: " + e.message);
+    }
+}
+
+
+function BindAllCityDropDownList(DropDownControlId) {
+    try {
+        $.get(CommonURL + "ApplicationUtilities/GetAllCity",
+            AddAntiForgeryToken({
+            }), function (resultData) {
+                $("#" + DropDownControlId).empty();
+                for (i = 0; i < resultData.length; i++) {
+                    $("#" + DropDownControlId).append('<option value="' + resultData[i].value + '">' + resultData[i].text + '</option>');
+                }
+            }).fail(function (error) {
+                alert("Error in BindCityDropDownList: " + error.responseText);
+            });
+    } catch (e) {
+        alert("Error in BindCityDropDownList: " + e.message);
+    }
+}
+
+
+function BindQuarterDropDownList(DropDownControlId) {
+    try {
+        $.get(CommonURL + "ApplicationUtilities/GetQuarter",
+            AddAntiForgeryToken({
+            }), function (resultData) {
+                $("#" + DropDownControlId).empty();
+                for (i = 0; i < resultData.length; i++) {
+                    $("#" + DropDownControlId).append('<option value="' + resultData[i].value + '">' + resultData[i].text + '</option>');
+                }
+            }).fail(function (error) {
+                alert("Error in BindQuarterDropDownList: " + error.responseText);
+            });
+    } catch (e) {
+        alert("Error in BindQuarterDropDownList: " + e.message);
+    }
+}
+
+
+
+function BindCityForDownloadFormatDropDownList(DropDownControlId) {
+    try {
+        $.get(CommonURL + "ApplicationUtilities/GetCityForDownloadFormat",
+            AddAntiForgeryToken({
+            }), function (resultData) {
+                $("#" + DropDownControlId).empty();
+                for (i = 0; i < resultData.length; i++) {
+                    $("#" + DropDownControlId).append('<option value="' + resultData[i].value + '">' + resultData[i].text + '</option>');
+                }
+            }).fail(function (error) {
+                alert("Error in BindCityDropDownList: " + error.responseText);
+            });
+    } catch (e) {
+        alert("Error in BindCityDropDownList: " + e.message);
+    }
+}
+
+
+function BindQuarterForDownloadFormatDropDownList(DropDownControlId) {
+    try {
+        $.get(CommonURL + "ApplicationUtilities/GetQuarterForDownloadFormat",
+            AddAntiForgeryToken({
+            }), function (resultData) {
+                $("#" + DropDownControlId).empty();
+                for (i = 0; i < resultData.length; i++) {
+                    $("#" + DropDownControlId).append('<option value="' + resultData[i].value + '">' + resultData[i].text + '</option>');
+                }
+            }).fail(function (error) {
+                alert("Error in BindQuarterDropDownList: " + error.responseText);
+            });
+    } catch (e) {
+        alert("Error in BindQuarterDropDownList: " + e.message);
+    }
+}
+
+
+
+
+function ValidateExtension(fileControlId) {
+    //      Regular Expression for allowing Word Document and PDF files only
+    //      ([a-zA-Z0-9\s_\\.\-:])+(.doc|.docx|.pdf)$
+
+    //      Regular Expression for allowing Image files only
+    //      ([a-zA-Z0-9\s_\\.\-:])+(.png|.jpg|.gif)$
+
+    //      Regular Expression for allowing Text files only
+    //      ([a-zA-Z0-9\s_\\.\-:])+(.txt)$
+
+    //      Regular Expression for allowing Excel files only
+    //      ([a-zA-Z0-9\s_\\.\-:])+(.xls|.xlsx)$
+
+    var allowedFiles = [".xls", ".xlsx"];
+    var fileUpload = document.getElementById(fileControlId);
+    var lblError = document.getElementById("lblError");
+    var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:\\()])+(" + allowedFiles.join('|') + ")$");
+    if (!regex.test(fileUpload.value.toLowerCase())) {
+        //lblError.innerHTML = "Please upload files having extensions: <b>" + allowedFiles.join(', ') + "</b> only.";
+        return false;
+    }
+    //lblError.innerHTML = "";
+    return true;
+}
+
+function HideMessage() {
+    $(".globalAlert").hide();
+}
+
+function ShowMessage(MessageType, Message) {
+    if (MessageType.toLowerCase() == "error") {
+        $(".globalAlert").removeClass("message-success");
+        $(".globalAlert").addClass("message-error");
+        $(".alertIcon").html("<i class=\"fa fa-times-circle\"></i>");
+    } else if (MessageType.toLowerCase() == "success") {
+        $(".globalAlert").removeClass("message-error");
+        $(".globalAlert").addClass("message-success");
+        $(".alertIcon").html("<i class=\"fa fa-check-circle\"></i>");
+    }
+    $("#myMessageError").html(Message);
+    $(".globalAlert").show();
+    //setTimeout(function () {
+    //    $(".globalAlert").hide();
+    //}, 10000);
+}
+
+function BlockUI() {
+    $(document).ready(function () {
+        $.blockUI({
+            message: '<span style="font-size:1.5rem;font-weight:600;"><i class="fa fa-sync fa-spin"></i>&nbsp;&nbsp;Processing</span>',
+            //    css:{
+            //        top: '50%',
+            //        left:'50%'
+            //}
+        });
+    });
+}
+
+function UnBlockUI() {
+    $(document).ready(function () {
+        setTimeout(function () {
+            $.unblockUI();
+        }, 0);
+    });
+}
+
+AddAntiForgeryToken = function (data) {
+    data.__RequestVerificationToken = $("input[name=__RequestVerificationToken]").val();
+    return data;
+}
+
+function GetCaptcha(imageControlId) {
+    $.ajax({
+        url: CommonURL + "ApplicationUtilities/CreateCaptchaImage",
+        cache: false,
+        success: function (data) {
+            //$("#results").append(html);
+            $("#" + imageControlId).attr("src", "");
+            $("#" + imageControlId).attr("src", data);
+        }
+    });
+}
+
+
+
+
+// For pagination ===== START
+function Pager(a, b) {
+    var c = '<a style = "cursor:pointer" class="page" onclick="BindData({1});" page = "{1}">{0}</a>';
+    var d = "<span>{0}</span>";
+    var e, f, g;
+    var g = 5;
+    var h = Math.ceil(b.RecordCount / b.PageSize);
+    if (b.PageIndex > h) { b.PageIndex = h }
+    var i = "";
+    if (h > 1) {
+        f = h > g ? g : h; e = b.PageIndex > 1 && b.PageIndex + g - 1 < g ? b.PageIndex : 1;
+        if (b.PageIndex > g % 2) {
+            if (b.PageIndex == 2) f = 5;
+            else f = b.PageIndex + 2
+        }
+        else {
+            f = g - b.PageIndex + 1
+        }
+        if (f - (g - 1) > e) {
+            e = f - (g - 1)
+        }
+        if (f > h) {
+            f = h; e = f - g + 1 > 0 ? f - g + 1 : 1
+        }
+        var j = (b.PageIndex - 1) * b.PageSize + 1;
+        var k = j + b.PageSize - 1;
+        if (k > b.RecordCount) {
+            k = b.RecordCount
+        }
+        i = ""; // "<b>Records " + (j == 0 ? 1 : j) + " - " + k + " of " + b.RecordCount + "</b> ";
+        if (b.PageIndex > 1) {
+            i += c.replace("{0}", "<<").replace("{1}", "1");
+            i += c.replace("{0}", "<").replace("{1}", b.PageIndex - 1)
+        }
+        for (var l = e; l <= f; l++) {
+            if (l == b.PageIndex) {
+                i += d.replace("{0}", l)
+            }
+            else {
+                i += c.replace("{0}", l).replace("{1}", l)
+            }
+        }
+        if (b.PageIndex < h) {
+            i += c.replace("{0}", ">").replace("{1}", b.PageIndex + 1);
+            i += c.replace("{0}", ">>").replace("{1}", h)
+        }
+    } a.html(i);
+    try {
+        a[0].disabled = false
+    }
+    catch (m) { }
+}
+
+(function (a) {
+    a.fn.A_Pager = function (b) {
+        var c = {};
+        var b = a.extend(c, b);
+        return this.each(function () {
+            Pager(a(this), b)
+        })
+    }
+})(jQuery);
+// For pagination ===== END

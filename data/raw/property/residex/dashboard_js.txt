@@ -1,0 +1,1256 @@
+﻿$(document).ready(function () {
+    google.charts.load('current', { packages: ['corechart', 'line'] });
+    google.charts.setOnLoadCallback(showChart);
+
+    google.charts.load('current', { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(loadCityChart);
+    //BindQuarterDropDownList("ddlQuarter");
+
+    $("#ddlQuarter").change(function () {
+        var Quarter = $(this).val();
+        $("#selectedQuarter").val(Quarter);
+        google.charts.setOnLoadCallback(showChart);
+    });
+
+    $('input[type=radio][name=HousingPriceIndices]').change(function () {
+        $("#selectedHousingPriceIndices").val(this.value);
+        google.charts.setOnLoadCallback(showChart);
+
+    });
+
+    $('input[type=checkbox][name=chkbefore1718]').click(function () {
+        if ($(this).is(':checked')) {
+            $("#chkbefore1718Checked").val(this.value);
+        }
+        else {
+            $("#chkbefore1718Checked").val('');
+        }
+        google.charts.setOnLoadCallback(showChart);
+    });
+
+    var $radios = $('input:radio[name=HousingPriceIndices]');
+    if ($radios.is(':checked') === false) {
+        $radios.filter('[value=HFC]').prop('checked', true);
+        $("#selectedHousingPriceIndices").val("HFC");
+    }
+
+    $('#ddlQuarter').prop('selectedIndex', 2);
+    $("#selectedQuarter").val(2);
+    $("#div_yoy").hide();
+
+    $('input[type=radio][name=CitywiseHousingPriceIndices]').change(function () {
+        $("#selectedCitywiseHPI").val(this.value);
+
+        if (this.value == 2) {
+            $("#div_Dll_QuarterYoY").show();
+            $("#div_Dll_State").hide();
+            $("#div_echart").hide();
+            $("#div_yoy").show();
+            var dropdown = $("#ddlQuarterYoY");
+            var SelectedOption = dropdown.find('option:eq(1)').val();
+            dropdown.val(SelectedOption);
+            $("#selectedQuarterYoY").val(SelectedOption);
+
+            getcityprices();
+        }
+        else {
+            $("#div_Dll_QuarterYoY").hide();
+            $("#div_Dll_State").show();
+            $("#div_yoy").hide();
+            $("#div_echart").show();
+        }
+    });
+
+    $("#divCbxPC").hide();
+
+    $('input[type=checkbox][name=chkbefore1718Citywise]').click(function () {
+        if ($(this).is(':checked')) {
+            $("#divCbxPC").show();
+            $("#chkbefore1718CitywiseChecked").val(this.value);
+        }
+        else {
+            $("#divCbxPC").hide();
+            $("#chkbefore1718CitywiseChecked").val('');
+        }
+        loadCityChart();
+    });
+
+    BindQuarterDropDownList("ddlQuarterYoY");
+
+    function initQuarter() {
+        var dropdown = $("#ddlQuarterYoY");
+        var SelectedOption = dropdown.find('option:eq(1)').val();
+        if (SelectedOption) {
+            dropdown.val(SelectedOption);
+            $("#selectedQuarterYoY").val(SelectedOption);
+            dropdown.trigger("change");
+        } else {
+            setTimeout(initQuarter, 100); 
+        }
+    }
+
+    $(document).ready(function () {
+        initQuarter();
+    });
+
+
+    //setTimeout(function () {
+    //    var dropdown = $("#ddlQuarterYoY");
+    //    var SelectedOption = dropdown.find('option:eq(1)').val();
+    //    dropdown.val(SelectedOption);
+    //    $("#selectedQuarterYoY").val(SelectedOption);
+    //    dropdown.trigger("change");
+    //}, 200); 
+
+
+    $("#ddlQuarterYoY").change(function () {
+        var Quarter = $(this).val();
+        $("#selectedQuarterYoY").val(Quarter);
+
+        getcityprices();
+
+    });
+
+    var $radios = $('input:radio[name=CitywiseHousingPriceIndices]');
+    if ($radios.is(':checked') === false) {
+        $radios.filter('[value=1]').prop('checked', true);
+        $("#selectedCitywiseHPI").val(1);
+
+        $("#div_Dll_QuarterYoY").hide();
+    }
+
+    BindStateDropDownList("ddlState");
+
+    getcityprices(); // State change handler
+
+    //$("#ddlState").change(function () {
+    //    $("#selectedState").val('');
+    //    var State = $(this).val();
+    //    $("#selectedState").val(State);
+    //    loadCityChart();
+    //    if (State === '0') {
+    //        resetContainers();
+    //        getcityprices();
+    //    } else if (State > 0) {
+    //        loadstatemap(State);
+    //        /*showCitiesByState(State);*/
+    //    }
+    //});
+
+    //$("#btnIndiaMap").click(function () {
+    //    $('#selectedState').val(0);
+    //    //alert("btnIndiaMap clicked !");
+    //    resetContainers();
+    //    getcityprices();
+    //    $('#ddlState').prop('selectedIndex', 0);
+    //});
+
+    $("#ddlState").change(function () {
+        $("#selectedState").val('');
+        var State = $(this).val();
+        $("#selectedState").val(State);
+        loadCityChart();
+        if (State === '0') {
+            resetContainers();
+            getcityprices();
+        } else if (State > 0) {
+            loadstatemap(State);
+            /*showCitiesByState(State);*/
+        }
+    });
+
+    $("#btnIndiaMap").click(function () {
+        $('#selectedState').val(0);
+        //alert("btnIndiaMap clicked !");
+        resetContainers();
+        getcityprices();
+        $('#ddlState').prop('selectedIndex', 0);
+        $("#ddlState").val('0').change(); // Trigger the change event with state value 0
+    });
+
+    $("#AssessmentPrices").click(function () {
+        $("#hdnPrices").val('');
+        $("#hdnPrices").val(1);
+
+        var lookup = $("#hdnPrices").val();
+        if (lookup == "") {
+            $("#hdnPrices").val("HFC");
+        }
+        else if (lookup == 1) {
+            $("#hdnPrices").val("HFC");
+        }
+        else if (lookup == 2) {
+            $("#hdnPrices").val("UC");
+        }
+        loadCityChart();
+
+    });
+
+    $("#MarketPrices").click(function () {
+        $("#hdnPrices").val('');
+        $("#hdnPrices").val(2);
+
+        var lookup = $("#hdnPrices").val();
+        if (lookup == "") {
+            $("#hdnPrices").val("HFC");
+        }
+        else if (lookup == 1) {
+            $("#hdnPrices").val("HFC");
+        }
+        else if (lookup == 2) {
+            $("#hdnPrices").val("UC");
+        }
+
+        loadCityChart();
+    });
+
+    $("#AssessmentPrices_yoy").click(function () {
+        $("#hdnPrices_yoy").val('');
+
+        $("#hdnPrices_yoy").val(1);
+
+        var lookup = $("#hdnPrices_yoy").val();
+        if (lookup == "") {
+            $("#hdnPrices_yoy").val("CITY_HFC");
+        }
+        else if (lookup == 1) {
+            $("#hdnPrices_yoy").val("CITY_HFC");
+        }
+        else if (lookup == 2) {
+            $("#hdnPrices_yoy").val("CITY_UC");
+        }
+        getcityprices();
+
+    });
+
+    $("#MarketPrices_yoy").click(function () {
+
+        $("#hdnPrices_yoy").val('');
+
+        $("#hdnPrices_yoy").val(2);
+
+        var lookup = $("#hdnPrices_yoy").val();
+        if (lookup == "") {
+            $("#hdnPrices_yoy").val("CITY_HFC");
+        }
+        else if (lookup == 1) {
+            $("#hdnPrices_yoy").val("CITY_HFC");
+        }
+        else if (lookup == 2) {
+            $("#hdnPrices_yoy").val("CITY_UC");
+        }
+        getcityprices();
+    });
+
+    $("#btnDownload").click(function () {
+        showTable();
+        setTimeout(() => {
+            tableToExcel("divPriceTrend", "Composite HPI for 50 Cities Data");
+        },200)
+    });
+
+    BindCityForDownloadFormatDropDownList("dwncityname");
+    BindQuarterForDownloadFormatDropDownList("dwnqtrname");
+
+    $('#dwncityname').select2({
+        placeholder: "--- Select City ---",
+        allowClear: true,
+        closeOnSelect: false
+    });
+
+    $('#dwnqtrname').select2({
+        placeholder: "--- Select Quarter ---",
+        allowClear: true,
+        closeOnSelect: false
+    });
+
+    var $radios = $('input:radio[name=rdodwnTYPE]');
+    if ($radios.is(':checked') === false) {
+        $radios.filter('[value=HFC]').prop('checked', true);
+        $("#rdoDWN").val("HFC");
+    } else {
+        $("#rdoDWN").val($('input[name="rdodwnTYPE"]:checked').val());
+    }
+
+    $('input[type=radio][name=rdodwnTYPE]').change(function () {
+        $("#rdoDWN").val(this.value);
+    });
+
+    var $radiosIndex = $('input:radio[name=rdodwnINDEX]');
+    if ($radiosIndex.is(':checked') === false) {
+        $radiosIndex.filter('[value=INDEX]').prop('checked', true);
+        $("#rdodwnIA").val("INDEX");
+    } else {
+        $("#rdodwnIA").val($('input[name="rdodwnINDEX"]:checked').val());
+    }
+
+    $('input[type=radio][name=rdodwnINDEX]').change(function () {
+        $("#rdodwnIA").val(this.value);
+    });
+
+
+});
+
+
+function FileDownload(downloadType) {
+
+    var cityValues = $('#dwncityname').val() || [];
+    var quarterValues = $('#dwnqtrname').val() || [];
+
+    var c = (cityValues.length === $('#dwncityname option').length || cityValues.length === 0)
+        ? '0'
+        : cityValues.join();
+
+    var q = (quarterValues.length === $('#dwnqtrname option').length || quarterValues.length === 0)
+        ? '0'
+        : quarterValues.join();
+
+    var pricemtdid = 2; 
+    var lang = 0;      
+
+    var DWN = $('#rdoDWN').val();
+    var IA = $('#rdodwnIA').val();
+
+    var reporttype = "PIVOT_" + DWN + "_" + IA;
+
+    $.ajax({
+        url: "/Dashboard/GetFileDataToDownload", 
+        type: "POST",
+        data: {
+            reporttype: reporttype,
+            qtr: q,
+            cityid: c,
+            pricemtdid: pricemtdid,
+            lang: lang
+        },
+        success: function (response) {
+            if (response.status === "Success") {
+                var arr = JSON.parse(response.data);
+
+                if (arr.length > 0) {
+                    var headers = Object.keys(arr[0]);
+
+                    var tableHtml = '<table border="1">';
+                    tableHtml += '<tr>';
+                    headers.forEach(function (header) {
+                        tableHtml += '<th>' + header + '</th>';
+                    });
+                    tableHtml += '</tr>';
+
+                    arr.forEach(function (item) {
+                        tableHtml += '<tr>';
+                        headers.forEach(function (header) {
+                            tableHtml += '<td>' + item[header] + '</td>';
+                        });
+                        tableHtml += '</tr>';
+                    });
+
+                    tableHtml += '</table>';
+
+                    $('#exportTable').remove();
+
+                    document.body.insertAdjacentHTML('beforeend', '<div id="exportTable" style="display:none;">' + tableHtml + '</div>');
+
+                    tableToExcel('exportTable', 'Residex_Data');
+                } else {
+                    alert('No data available.');
+                }
+            } else {
+                alert('Error: ' + response.Message);
+            }
+        },
+        error: function () {
+            alert('Error fetching data.');
+        }
+    });
+}
+function FileDownload1(downloadType) {
+    var c = '0';
+    if ($('#dwncityname option').length === $('#dwncityname').val().length || $('#dwncityname').val().length === 0) {
+        c = '0';
+    } else {
+        c = $('#dwncityname').val().join();
+    }
+
+    var q = '0';
+    if ($('#dwnqtrname option').length === $('#dwnqtrname').val().length || $('#dwnqtrname').val().length === 0) {
+        q = '0';
+    } else {
+        q = $('#dwnqtrname').val().join();
+    }
+
+    var pricemtdid = 2; // Example value, set it as needed
+    var lang = 0; // Assuming language is 0
+
+    var DWN = $('#rdoDWN').val();
+    var IA = $('#rdodwnIA').val();
+
+    var reporttype = "PIVOT_" + DWN + "_" + IA;
+
+    $.ajax({
+        url: "/Dashboard/GetFileDataToDownload", // Ensure this URL points to your actual controller endpoint
+        type: "POST",
+        data: {
+            reporttype: reporttype,
+            qtr: q,
+            cityid: c,
+            pricemtdid: pricemtdid,
+            lang: lang
+        },
+        success: function (response) {
+            if (response.status === "Success") {
+                var arr = JSON.parse(response.data);
+
+                if (arr.length > 0) {
+                    var headers = Object.keys(arr[0]);
+
+                    var tableHtml = '<table border="1">';
+                    tableHtml += '<tr>';
+                    headers.forEach(function (header) {
+                        tableHtml += '<th>' + header + '</th>';
+                    });
+                    tableHtml += '</tr>';
+
+                    arr.forEach(function (item) {
+                        tableHtml += '<tr>';
+                        headers.forEach(function (header) {
+                            tableHtml += '<td>' + item[header] + '</td>';
+                        });
+                        tableHtml += '</tr>';
+                    });
+
+                    tableHtml += '</table>';
+                    document.body.insertAdjacentHTML('beforeend', '<div id="exportTable" style="display:none;">' + tableHtml + '</div>');
+
+                    tableToExcel('exportTable', 'Residex_Data');
+                } else {
+                    alert('No data available.');
+                }
+            } else {
+                alert('Error: ' + response.Message);
+            }
+        },
+        error: function () {
+            alert('Error fetching data.');
+        }
+    });
+}
+
+function resetContainers() {
+    document.getElementById('container').style.display = 'block';
+    $('#newContainer').html($('#oldContainer').html());
+    //$('#oldContainer').html('');
+    document.getElementById('stateContainer').style.display = 'none';
+    $('#btnIndiaMap').hide(); $('#dvMapStateName').hide(); $('.qoqperHDLR').hide();
+} 
+
+// Function to render city data based on QOQ values 
+
+function fnCircle1(cityid) {
+  
+    fetch(`/DashboardBY2018/EncryptCityId?cityid=${cityid}`).then(response => response.text()).then(encryptedCityId => {
+        var url = `/DashboardBY2018/DashboardBY2018?sfjy=${encodeURIComponent(encryptedCityId)}`;
+        window.location.href = url;
+    }).catch(error => console.error("Encryption error:", error));
+}
+function fnCircle(cityid) {
+  
+    fetch(`/DashboardBY2024/EncryptCityId?cityid=${cityid}`).then(response => response.text()).then(encryptedCityId => {
+        var url = `/DashboardBY2024/DashboardBY2024?sfjy=${encodeURIComponent(encryptedCityId)}`;
+        window.location.href = url;
+    }).catch(error => console.error("Encryption error:", error));
+}
+
+//yoy pricing table start
+
+function getcityprices() {
+    var reporttype = $("#hdnPrices_yoy").val() || "CITY_HFC";
+    var qtr = $("#selectedQuarterYoY").val();
+    //var qtr = $("#selectedQuarterYoY").val() || "25-26 Q3";
+
+    $.ajax({
+        url: "Dashboard/GetResidexPriceScroll",
+        type: "POST",
+        data: { reporttype: reporttype, qtr: qtr, cityid: "0", pricemtdid: 2 },
+        success: function (response) {
+            arr = [];
+            if (response.status === "Success") {
+                // Parse response and populate city data 
+                var jsondata = JSON.parse(response.data);
+                var cities = '';
+                for (var i = 0; i < jsondata.length; i++) {
+                    arr.push({
+                        stateid: jsondata[i]["STATE_ID"],
+                        cityid: jsondata[i]["CITY_ID"],
+                        city: ($('#LngId').val() == '0' ? jsondata[i]["CITY"] : jsondata[i]["CITY_NAME_HINDI"]),
+                        yoy: jsondata[i]["INDEX_YOY"],
+                        qoq: jsondata[i]["INDEX_QOQ"],
+                        ytd: jsondata[i]["INDEX_YTD"]
+                    });
+
+                    cities += '<option value="' + jsondata[i]["CITY_ID"] + '">' +
+                        ($('#LngId').val() == '0' ? jsondata[i]["CITY"] : jsondata[i]["CITY_NAME_HINDI"]) +
+                        '</option>';
+                }
+                $('#dwncityname1').empty().append(cities);
+                setscrolldata();
+            }
+
+            d3.selectAll("path[class^='state_']").remove();
+            d3.selectAll("circle[class^='state_']").remove();
+
+            arr.forEach(item => {
+                    renderCityData(item);
+            });
+        },
+        error: function () {
+            alert('Error fetching data.');
+        }
+    });
+}
+
+function renderCityData(item) {
+    var c = ccoord[0][item.cityid];
+    var rsizeI = 4; // Small radius
+    var rsize = 7;  // Large radius
+    var csizeI = 3; // Small circle size
+    var csize = 6;  // Large circle size
+
+    var gstate = d3.select("#gstate_" + item.stateid);
+    var gcstate = d3.select("#gcstate_" + item.stateid);
+
+    if (item.qoq > 0.5) { // Up arrow for positive QoQ
+        var pd = "M" + c.x + " " + c.y + " L" + (c.x + rsizeI) + " " + (c.y + rsizeI) + " L" + (c.x - rsizeI) + " " + (c.y + rsizeI) + " Z";
+        var pd2 = "M" + c.sx + " " + c.sy + " L" + (c.sx + rsize) + " " + (c.sy + rsize) + " L" + (c.sx - rsize) + " " + (c.sy + rsize) + " Z";
+
+        gstate.append("path")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsizeI)
+            .attr("class", "state_" + item.stateid)
+            .attr("d", pd)
+            .attr("fill", c.color)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.yoy + '%)');
+
+        gcstate.append("path")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsize)
+            .attr("class", "state_" + item.stateid)
+            .attr("d", pd2)
+            .attr("fill", c.color)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.yoy + '%)');
+    } else if (item.qoq < -0.5) { // Down arrow for negative QoQ
+        var pd = "M" + c.x + " " + c.y + " L" + (c.x + rsizeI) + " " + (c.y - rsizeI) + " L" + (c.x - rsizeI) + " " + (c.y - rsizeI) + " Z";
+        var pd2 = "M" + c.sx + " " + c.sy + " L" + (c.sx + rsize) + " " + (c.sy - rsize) + " L" + (c.sx - rsize) + " " + (c.sy - rsize) + " Z";
+
+        gstate.append("path")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsizeI)
+            .attr("class", "state_" + item.stateid)
+            .attr("d", pd)
+            .attr("fill", c.color)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.yoy + '%)');
+
+        gcstate.append("path")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsize)
+            .attr("class", "state_" + item.stateid)
+            .attr("d", pd2)
+            .attr("fill", c.color)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.yoy + '%)');
+    } else { // Circle for neutral QoQ
+        gstate.append("circle")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsizeI)
+            .attr("id", "cty_" + item.cityid)
+            .attr("class", "state_" + item.cityid)
+            .attr("cx", c.x)
+            .attr("cy", c.y)
+            .attr("r", csizeI)
+            .attr("fill", c.color)
+            .attr("data-name", item.city)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)', '${item.cityid}');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.yoy + '%)');
+
+        gcstate.append("circle")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsize)
+            .attr("class", "state_" + item.cityid)
+            .attr("cx", c.sx)
+            .attr("cy", c.sy)
+            .attr("r", csize)
+            .attr("fill", c.color)
+            .attr("data-name", item.city)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.yoy + '%)');
+    }
+}
+function renderCityDataBasedOnQoQ(item) {
+    var c = ccoord[0][item.cityid];
+    var rsizeI = 4; // Small radius
+    var rsize = 7;  // Large radius
+    var csizeI = 3; // Small circle size
+    var csize = 6;  // Large circle size
+
+    var gstate = d3.select("#gstate_" + item.stateid);
+    var gcstate = d3.select("#gcstate_" + item.stateid);
+
+    if (item.qoq > 0.5) { // Up arrow for positive QoQ
+        var pd = "M" + c.x + " " + c.y + " L" + (c.x + rsizeI) + " " + (c.y + rsizeI) + " L" + (c.x - rsizeI) + " " + (c.y + rsizeI) + " Z";
+        var pd2 = "M" + c.sx + " " + c.sy + " L" + (c.sx + rsize) + " " + (c.sy + rsize) + " L" + (c.sx - rsize) + " " + (c.sy + rsize) + " Z";
+
+        gstate.append("path")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsizeI)
+            .attr("class", "state_" + item.stateid)
+            .attr("d", pd)
+            .attr("fill", c.color)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.qoq + '%)');
+
+        gcstate.append("path")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsize)
+            .attr("class", "state_" + item.stateid)
+            .attr("d", pd2)
+            .attr("fill", c.color)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.qoq + '%)');
+    } else if (item.qoq < -0.5) { // Down arrow for negative QoQ
+        var pd = "M" + c.x + " " + c.y + " L" + (c.x + rsizeI) + " " + (c.y - rsizeI) + " L" + (c.x - rsizeI) + " " + (c.y - rsizeI) + " Z";
+        var pd2 = "M" + c.sx + " " + c.sy + " L" + (c.sx + rsize) + " " + (c.sy - rsize) + " L" + (c.sx - rsize) + " " + (c.sy - rsize) + " Z";
+
+        gstate.append("path")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsizeI)
+            .attr("class", "state_" + item.stateid)
+            .attr("d", pd)
+            .attr("fill", c.color)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.qoq + '%)');
+
+        gcstate.append("path")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsize)
+            .attr("class", "state_" + item.stateid)
+            .attr("d", pd2)
+            .attr("fill", c.color)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.qoq + '%)');
+    } else { // Circle for neutral QoQ
+        gstate.append("circle")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsizeI)
+            .attr("id", "cty_" + item.cityid)
+            .attr("class", "state_" + item.cityid)
+            .attr("cx", c.x)
+            .attr("cy", c.y)
+            .attr("r", csizeI)
+            .attr("fill", c.color)
+            .attr("data-name", item.city)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)', '${item.cityid}');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.qoq + '%)');
+
+        gcstate.append("circle")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", rsize)
+            .attr("class", "state_" + item.cityid)
+            .attr("cx", c.sx)
+            .attr("cy", c.sy)
+            .attr("r", csize)
+            .attr("fill", c.color)
+            .attr("data-name", item.city)
+            .attr("onclick", `fnCircle(${item.cityid});`)
+            //.attr("onmouseover", `fnCircleHover('${item.city} (${item.qoq}%)');`)
+            //.attr("onmouseout", "fnCircleOut();")
+            .append("title").html(item.city + ' (' + item.qoq + '%)');
+    }
+}
+
+function setscrolldata() {
+    var dvtable = document.getElementById("dvTableyoy");
+    var d = "";
+    for (var i = 0; i < arr.length; i++) {
+        d += '<tr>';
+        d += '<td style="font-weight: 700;" title="Click to view housing price indices by city" class="text-primary"  onclick="fnCircle(' + arr[i].cityid + ')">' + arr[i].city + '</td>';
+        if (arr[i].yoy > 0.5) {
+            d += '<td style="font-weight: 700;" class=" text-success ">' + arr[i].yoy + '% <i class="icofont icofont-caret-up text-success "></i></td>';
+        }
+        else if (arr[i].yoy < -0.5) {
+            d += '<td style="font-weight: 700;" class=" text-danger ">' + arr[i].yoy + '% <i class="icofont icofont-caret-down text-danger"></i></td>';
+        }
+        else {
+            d += '<td style="font-weight: 700;" class=" brownColor">' + arr[i].yoy + '% <i class="icofont icofont-ui-press brownColor"></i></td>';
+        }
+        if (arr[i].qoq > 0.5) {
+            d += '<td style="font-weight: 700;"class=" text-success ">' + arr[i].qoq + '% <i class="icofont icofont-caret-up text-success"></i></td>';
+        }
+        else if (arr[i].qoq < -0.5) {
+            d += '<td style="font-weight: 700;" class=" text-danger">' + arr[i].qoq + '% <i class="icofont icofont-caret-down text-danger"></i></td>';
+        }
+        else {
+            d += '<td style="font-weight: 700;" class=" brownColor">' + arr[i].qoq + '% <i class="icofont icofont-ui-press brownColor"></i></td>';
+        }
+        if (arr[i].ytd > 0.5) {
+            d += '<td style="font-weight: 700;" class="text-success">' + arr[i].ytd + '% <i class="icofont icofont-caret-up text-success"></i></td>';
+        }
+        else if (arr[i].ytd < -0.5) {
+            d += '<td style="font-weight: 700;" class=" text-danger">' + arr[i].ytd + '% <i class="icofont icofont-caret-down text-danger"></i></td>';
+        }
+        else {
+            d += '<td style="font-weight: 700;" class=" brownColor">' + arr[i].ytd + '% <i class="icofont icofont-ui-press brownColor"></i></td>';
+        }
+        d += '</tr>';
+    }
+    dvtable.innerHTML = d;
+}
+
+//yoy pricing table end
+
+
+//Events start
+
+$("#svgIndia path").hover(function (e) {
+    var d = ($('#LngId').val() == '0' ? $(this).data('name') : $(this).data('hindi'));
+    if (d) {
+        $('#info-box').css('display', 'block');
+        $('#info-box').html(d);
+    }
+});
+$("path, circle").mouseleave(function (e) {
+    $('#info-box').css('display', 'none');
+});
+$(document).mousemove(function (e) {
+    //console.log('x=' + parseInt(e["x"]) + ',' + e.pageX);
+    var h = $("#aboutInfo").height() + $("#mapTitleBox").height() + 180;
+    if ($("#container").height() < 600)
+        h = h + 100;
+    $('#info-box').css('top', e.pageY - h - $('#info-box').height() - 30);
+    $('#info-box').css('left', e.pageX - ($('#info-box').width()) / 2);
+}).mouseover();
+
+//Events start
+
+// start City final working
+
+/*let allCityData = [];*/ /*let cityList = [];*/
+var allCityData = []; var cityList = [];
+var defaultCities = ["Bengaluru", "Delhi", "Faridabad"];
+var activeCities = [...defaultCities];
+var defColorList = ['#fb5656', '#56a0fb', '#56fb56', '#fbac56', '#ac56fb', '#ffd700', '#ff4500', '#32cd32', '#4682b4', '#8a2be2', '#dc143c', '#00ced1', '#ff6347', '#40e0d0', '#ff69b4', '#ffa500', '#7cfc00', '#00bfff', '#ff1493', '#8b0000'];
+
+function loadCityChart() {
+    var lookup = $("#hdnPrices").val();
+    if (!lookup) {
+        lookup = "HFC";
+        $("#hdnPrices").val(lookup);
+    }
+    var state = $("#selectedState").val() || "0";
+    $.ajax({
+        url: 'Dashboard/Get_NHBResiCersai_PriceTrend_ForCity',
+        type: 'POST',
+        data: { reporttype: "ALLCITY", lookup: lookup, cityid: "0", pincode: "0", wardid: "0", pricemtdid: "2", locid: "0", stateid: state, chkbefore1718Citywise: $("#chkbefore1718CitywiseChecked").val() },
+        success: function (response) {
+            if (response.status === "Success") {
+                allCityData = JSON.parse(response.data);
+                cityList = Object.keys(allCityData[0]).filter(key => key !== 'QTR_YEAR');
+                activeCities = state === "0" ? [...defaultCities] : [...cityList];
+                /* activeCities = cityList.length ? cityList : [...defaultCities];*/
+                renderChart();
+            } else {
+                document.getElementById('chart_allcity').innerHTML = "No data available";
+            }
+        }, error: function () {
+            alert('Error fetching data.');
+        }
+    });
+}
+
+function renderChart1() {
+    let dataTable = new google.visualization.DataTable();
+    dataTable.addColumn('string', 'Quarter'); cityList.forEach(city => { dataTable.addColumn('number', city); });
+    allCityData.forEach(row => {
+        let values = [row.QTR_YEAR];
+        cityList.forEach(city => { values.push(activeCities.includes(city) ? parseFloat(row[city]) || null : null); }); dataTable.addRow(values);
+    });
+    let series = cityList.reduce((obj, city, index) => {
+        obj[index] = {
+            color: defColorList[index % defColorList.length], // Assign colors             
+            lineWidth: activeCities.includes(city) ? 2 : 0.5, // Thicker line for active cities             
+            opacity: activeCities.includes(city) ? 1 : 0.3 // Muted effect for inactive cities         
+        }; return obj;
+    }, {}); let options = {
+        title: 'City Price Trends',
+        curveType: 'function', legend: { position: 'inline', textStyle: { fontSize: 12, } }, hAxis: { title: 'Quarters', textStyle: { fontSize: 12 } }, vAxis: { title: 'Prices', textStyle: { fontSize: 12 } }, colors: defColorList, focusTarget: 'category', // Highlight data points on hover         
+        tooltip: { isHtml: true },
+        series: series // Apply dynamic series configuration    
+    };
+    let chart = new google.visualization.LineChart(document.getElementById('chart_allcity'));     // Add interactivity to toggle visibility     
+    google.visualization.events.addListener(chart, 'select', function () {
+        let selection = chart.getSelection(); if (selection.length) {
+            let columnIndex = selection[0].column; if (columnIndex > 0) { // Avoid toggling the "Quarter" column                 
+                let city = cityList[columnIndex - 1]; // Map column index to city name                 
+                if (activeCities.includes(city)) { activeCities = activeCities.filter(c => c !== city); } else { activeCities.push(city); }
+                renderChart(); // Re-render chart with updated active cities             
+            }
+        }
+    }); chart.draw(dataTable, options);
+
+}
+
+function renderChartInitialWorking() {
+    let dataTable = new google.visualization.DataTable();
+    dataTable.addColumn('string', 'Quarter');
+    cityList.forEach(city => { dataTable.addColumn('number', city); });
+    allCityData.forEach(row => {
+        let values = [row.QTR_YEAR];
+        cityList.forEach(city => { values.push(activeCities.includes(city) ? parseFloat(row[city]) || null : null); });
+        dataTable.addRow(values);
+    });
+    let series = cityList.reduce((obj, city, index) => {
+        obj[index] = {
+            color: defColorList[index % defColorList.length], // Assign colors             
+            lineWidth: activeCities.includes(city) ? 2 : 0.5, // Thicker line for active cities             
+            opacity: activeCities.includes(city) ? 1 : 0.3 // Muted effect for inactive cities         
+        }; return obj;
+    }, {});
+    let options = {
+        width: '100%', // Reduce overall chart size
+        height: 650, // Reduce overall chart height
+        title: 'City Price Trends',
+        titleTextStyle: { fontSize: 13 }, // Adjust the font size as needed
+        curveType: 'function',
+        legend: { position: 'inline', textStyle: { fontSize: 13 } }, // Smaller font size for legend
+        hAxis: { title: 'Quarters', textStyle: { fontSize: 13 } }, // Smaller font size for hAxis
+        vAxis: { title: 'Prices', textStyle: { fontSize: 13 } }, // Smaller font size for vAxis
+        colors: defColorList,
+        focusTarget: 'category', // Highlight data points on hover         
+        tooltip: { textStyle: { fontSize: 15} }, // Smaller font size for tooltip
+        series: series // Apply dynamic series configuration    
+    };
+    let chart = new google.visualization.LineChart(document.getElementById('chart_allcity'));
+
+    // Add interactivity to toggle visibility
+    google.visualization.events.addListener(chart, 'select', function () {
+        let selection = chart.getSelection();
+        if (selection.length) {
+            let columnIndex = selection[0].column;
+            if (columnIndex > 0) { // Avoid toggling the "Quarter" column                 
+                let city = cityList[columnIndex - 1]; // Map column index to city name                 
+                if (activeCities.includes(city)) {
+                    activeCities = activeCities.filter(c => c !== city);
+                } else {
+                    activeCities.push(city);
+                }
+                renderChart(); // Re-render chart with updated active cities             
+            }
+        }
+    });
+    chart.draw(dataTable, options);
+}
+
+function renderChart2() {
+    let dataTable = new google.visualization.DataTable();
+    dataTable.addColumn('string', 'Quarter');
+    cityList.forEach(city => { dataTable.addColumn('number', city); });
+
+    allCityData.forEach(row => {
+        let values = [row.QTR_YEAR];
+        cityList.forEach(city => { values.push(activeCities.includes(city) ? parseFloat(row[city]) || null : null); });
+        dataTable.addRow(values);
+    });
+
+    let series = cityList.reduce((obj, city, index) => {
+        obj[index] = {
+            color: defColorList[index % defColorList.length], // Assign colors             
+            lineWidth: activeCities.includes(city) ? 2 : 0.5, // Thicker line for active cities             
+            opacity: activeCities.includes(city) ? 1 : 0.3 // Muted effect for inactive cities         
+        }; return obj;
+    }, {});
+
+    let options = {
+        width: '100%', // Reduce overall chart size
+        height: 650, // Reduce overall chart height
+        title: 'City Price Trends',
+        titleTextStyle: { fontSize: 13 }, // Adjust the font size as needed
+        curveType: 'function',
+        legend: { position: 'inline', textStyle: { fontSize: 13 } }, // Smaller font size for legend
+        hAxis: { title: 'Quarters', textStyle: { fontSize: 13 }, slantedText: true, slantedTextAngle: 45 }, // Ensure all quarters are shown
+        vAxis: { title: 'Prices', textStyle: { fontSize: 13 } }, // Smaller font size for vAxis
+        colors: defColorList,
+        focusTarget: 'category', // Highlight data points on hover         
+        tooltip: { textStyle: { fontSize: 15 } }, // Smaller font size for tooltip
+        series: series // Apply dynamic series configuration    
+    };
+
+    let chart = new google.visualization.LineChart(document.getElementById('chart_allcity'));
+
+    // Add interactivity to toggle visibility
+    google.visualization.events.addListener(chart, 'select', function () {
+        let selection = chart.getSelection();
+        if (selection.length) {
+            let columnIndex = selection[0].column;
+            if (columnIndex > 0) { // Avoid toggling the "Quarter" column                 
+                let city = cityList[columnIndex - 1]; // Map column index to city name                 
+                if (activeCities.includes(city)) {
+                    activeCities = activeCities.filter(c => c !== city);
+                } else {
+                    activeCities.push(city);
+                }
+                renderChart(); // Re-render chart with updated active cities             
+            }
+        }
+    });
+
+    chart.draw(dataTable, options);
+}
+
+function renderChart() {
+    let dataTable = new google.visualization.DataTable();
+    dataTable.addColumn('string', 'Quarter');
+    cityList.forEach(city => { dataTable.addColumn('number', city); });
+
+    let quarters = [];
+    allCityData.forEach(row => {
+        let values = [row.QTR_YEAR];
+        quarters.push(row.QTR_YEAR);
+        cityList.forEach(city => { values.push(activeCities.includes(city) ? parseFloat(row[city]) || null : null); });
+        dataTable.addRow(values);
+    });
+
+    let series = cityList.reduce((obj, city, index) => {
+        obj[index] = {
+            color: defColorList[index % defColorList.length], // Assign colors             
+            lineWidth: activeCities.includes(city) ? 2 : 0.5, // Thicker line for active cities             
+            opacity: activeCities.includes(city) ? 1 : 0.3 // Muted effect for inactive cities         
+        }; return obj;
+    }, {});
+
+    let options = {
+        width: '100%', // Reduce overall chart size
+        height: 650, // Reduce overall chart height
+        title: 'City Price Trends',
+        titleTextStyle: { fontSize: 13 }, // Adjust the font size as needed
+        curveType: 'function',
+        legend: { position: 'inline', textStyle: { fontSize: 15 } }, // Smaller font size for legend
+        hAxis: {
+            title: 'Quarters',
+            textStyle: { fontSize: 10 },
+            slantedText: true,
+            slantedTextAngle: 45,
+            ticks: quarters.map(q => ({ v: q, f: q })) // Ensure all quarters are shown
+        },
+        vAxis: { title: 'Prices', textStyle: { fontSize: 10 } }, // Smaller font size for vAxis
+        colors: defColorList,
+        focusTarget: 'category', // Highlight data points on hover         
+        tooltip: { textStyle: { fontSize: 15 } }, // Smaller font size for tooltip
+        series: series // Apply dynamic series configuration    
+    };
+
+    let chart = new google.visualization.LineChart(document.getElementById('chart_allcity'));
+
+    // Add interactivity to toggle visibility
+    google.visualization.events.addListener(chart, 'select', function () {
+        let selection = chart.getSelection();
+        if (selection.length) {
+            let columnIndex = selection[0].column;
+            if (columnIndex > 0) { // Avoid toggling the "Quarter" column                 
+                let city = cityList[columnIndex - 1]; // Map column index to city name                 
+                if (activeCities.includes(city)) {
+                    activeCities = activeCities.filter(c => c !== city);
+                } else {
+                    activeCities.push(city);
+                }
+                renderChart(); // Re-render chart with updated active cities             
+            }
+        }
+    });
+
+    chart.draw(dataTable, options);
+}
+
+
+// end City final working
+
+
+//statechange start
+
+function loadstatemap(State) {
+    if (State > 0) {
+        var i = 'state_' + State;
+        dbltest(i);
+    }
+    else {
+        alert("Error ");
+    }
+}
+
+var dbl = 0;
+function dbltest(p) {
+    dbl++;
+    if (dbl > 0) {  //dbl > 1 for dblclick
+        dbl = 0;
+        var i = p;//(this).attr('id');
+        if (i) {//&& varp == false
+            $(".gstate").hide();
+            $("#g_" + i).show();
+            $("#gc" + i).show();
+            $('#btnIndiaMap').show();
+            $('#dvMapStateName').html(($('#LngId').val() == '0' ? $("#" + p).attr('data-name') : $("#" + p).attr('data-hindi')));
+            $('#dvMapStateName').show();
+            $('#qoqhdlr').html();
+            $('#qoqhdlr').show();
+            selStateId = p.substring(6, i.length);
+            $('#selectedState').val(parseInt(selStateId));
+            document.getElementById('stateContainer').style.display = 'block';
+
+            if ($('#newContainer').html() != "") {
+                $('#oldContainer').html($('#newContainer').html());
+                $('#newContainer').html('');
+
+                setTimeout(function () {
+                    $('#ddlState').val(selStateId).trigger('change');
+                }, 100);
+            }
+
+        }
+
+    }
+    setTimeout(function () {
+        dbl = 0;
+    }, 1000);
+    createMarquee();
+}
+
+
+function createMarquee() {
+    var citylist = "<marquee width='100%' behavior='scroll' direction='left' scrollamount='4'><ul class='marquee' style='list-style: none; padding: 0; margin: 0; display: flex;'>";
+    var stateid = selStateId; // This should be state id received after click.         
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].stateid == stateid) {
+            var c = ccoord[0][arr[i].cityid];       
+            citylist += ` <li style="margin-right: 10px; font-size: 12px;">                    
+            <span style="font-weight: bold; color: ${c.color};"> City : ${arr[i].city}</span><span style="color: ${c.color}; font-weight: bold;">| YOY : </span> <span style="color: ${arr[i].yoy > 0.5 ? '#066105' : (arr[i].yoy < -0.5 ? '#ff0000' : '#964B00')};">                         ${arr[i].yoy}%                     </span>                 </li>`;
+        //    <span style="font-weight: bold; color: ${c.color};"> City : ${arr[i].city}</span><span style="color: ${c.color}; font-weight: bold;">| YOY : </span> <span style="color: ${arr[i].qoq > 0.5 ? '#066105' : (arr[i].qoq < -0.5 ? '#ff0000' : '#964B00')};">                         ${arr[i].qoq}%                     </span>                 </li>`;
+        }
+    } citylist += "</ul></marquee>"; $(".qoqperHDLR").html(citylist);
+}
+
+var ccoord = [
+    {
+        //1:{name:"Mumbai",x:72.87206,y:-19.10593,sx:380,sy:409,color:"#00fd75"},18:{name:"Hyderabad",x:78.45443,y:-17.42499,sx:638,sy:445,color:"#bf02c5"},19:{name:"Nagpur",x:79.08969,y:-21.14329,sx:969,sy:216,color:"#8a2d0c"},23:{name:"Bengaluru",x:77.60287,y:-12.97634,sx:815,sy:588,color:"#00364A"},26:{name:"Chennai",x:80.23056,y:-13.06221,sx:848,sy:160,color:"#f18e00"},28:{name:"Ahmedabad",x:72.58374,y:-23.04486,sx:870,sy:335,color:"#1e2ad2"},32:{name:"Nashik",x:73.79428,y:-19.97971,sx:467,sy:326,color:"#f706ee"},36:{name:"Indore",x:75.86736,y:-22.72731,sx:499,sy:523,color:"#4B0082"},37:{name:"Chandigarh (Tricity)",x:76.78024,y:-30.72830,sx:969,sy:455,color:"#b17e00"},38:{name:"Jaipur",x:75.80212,y:-26.89642,sx:897,sy:395,color:"#fc5505"},39:{name:"Surat",x:72.81276,y:-21.17188,sx:901,sy:596,color:"#46ff4b"},40:{name:"Vadodara",x:73.19108,y:-22.30089,sx:954,sy:439,color:"#00FFFF"},41:{name:"Kochi",x:76.30389,y:-9.98520,sx:670,sy:504,color:"#49ffc1"},42:{name:"Kanpur",x:80.33005,y:-26.43697,sx:677,sy:456,color:"#20B2AA"},43:{name:"Lucknow",x:80.92749,y:-26.84480,sx:732,sy:419,color:"#3CB371"},45:{name:"Coimbatore",x:76.99781,y:-10.99295,sx:459,sy:408,color:"#FF8C00"},47:{name:"Raipur",x:81.65531,y:-21.23867,sx:629,sy:393,color:"#FF6347"},49:{name:"Patna",x:85.15888,y:-25.61268,sx:611,sy:417,color:"#F4A460"},50:{name:"Bhopal",x:77.41342,y:-23.22679,sx:645,sy:476,color:"#00FFFF"},51:{name:"Bhubaneswar",x:85.82766,y:-20.29162,sx:883,sy:421,color:"#00008B"},58:{name:"Rajkot",x:70.79314,y:-22.29229,sx:621,sy:440,color:"#EE82EE"},65:{name:"Vizag",x:83.22695,y:-17.70920,sx:917,sy:248,color:"#B8860B"},67:{name:"Dehradun",x:78.03860,y:-30.32058,sx:499,sy:374,color:"#1e9587"},68:{name:"Ludhiana",x:75.86467,y:-30.89676,sx:775,sy:420,color:"#7B68EE"},69:{name:"Guwahati",x:91.75718,y:-26.14801,sx:563,sy:404,color:"#008000"},70:{name:"Vijayawada",x:80.64682,y:-16.52348,sx:695,sy:350,color:"#008B8B"},71:{name:"Meerut",x:77.69418,y:-28.97771,sx:437,sy:224,color:"#C71585"},96:{name:"Gandhinagar",x:72.65562,y:-23.22125,sx:880,sy:311,color:"#388a8a"},113:{name:"Delhi",x:77.11273,y:-28.64227,sx:714,sy:412,color:"#80293D"},139:{name:"Ranchi",x:85.32424,y:-23.35076,sx:648,sy:487,color:"#1b9006"},141:{name:"Thiruvananthapuram",x:76.94446,y:-8.50807,sx:770,sy:734,color:"#DC143C"},143:{name:"Bhiwadi",x:76.84576,y:-28.20905,sx:992,sy:276,color:"#DC143C"},157:{name:"Bidhan Nagar (Excluding Rajarhat)",x:88.41710,y:-22.58670,sx:726,sy:594,color:"#008B8B"},74:{name:"Faridabad",x:77.38452,y:-28.38751,sx:895,sy:582,color:"#2300fb"},2:{name:"Pune",x:74.20726,y:-18.45935,sx:474,sy:464,color:"#826a5e"},27:{name:"Kolkata",x:88.42013,y:-22.39396,sx:720,sy:600,color:"#aa00ff"},82:{name:"Gurugram",x:76.92513,y:-28.45283,sx:837,sy:580,color:"#ffb600"},97:{name:"Ghaziabad",x:77.48355,y:-28.76195,sx:412,sy:253,color:"#FF1493"},98:{name:"Greater Noida",x:77.45329,y:-28.49877,sx:420,sy:270,color:"#228B22"},112:{name:"Noida",x:77.42854,y:-28.59784,sx:425,sy:282,color:"#4169E1"},121:{name:"Panvel",x:73.00482,y:-18.80334,sx:398,sy:430,color:"#6c21f3"},118:{name:"Kalyan Dombivali",x:73.81113,y:-19.45837,sx:405,sy:396,color:"#96e5ff"},119:{name:"Mira Bhayander",x:72.86483,y:-19.63465,sx:376,sy:392,color:"#ff1100"},120:{name:"Navi Mumbai",x:73.33431,y:-19.12950,sx:394,sy:411,color:"#000"},122:{name:"Thane",x:73.29763,y:-19.42378,sx:391,sy:398,color:"#0488b9"},123:{name:"Vasai Virar",x:72.80431,y:-19.82368,sx:377,sy:382,color:"#00008B"},129:{name:"Howrah",x:88.14504,y:-22.63453,sx:715,sy:593,color:"#FF69B4"},130:{name:"New Town Kolkata",x:88.62186,y:-22.58374,sx:734,sy:595,color:"#FFC0CB"},131:{name:"Chakan",x:73.76987,y:-18.93619,sx:472,sy:432,color:"#f9ca00"},132:{name:"Pimpri Chinchwad",x:73.90191,y:-18.64712,sx:469,sy:453,color:"#ff5d1b"}
+        1: { name: 'Mumbai', x: 95, y: 348, sx: 380, sy: 409, color: '#fbac56' },
+        18: { name: 'Hyderabad', x: 187, y: 378, sx: 638, sy: 445, color: '#fb5656' },
+        19: { name: 'Nagpur', x: 198, y: 313, sx: 969, sy: 216, color: '#ac56fb' },
+        23: { name: 'Bengaluru', x: 173, y: 454, sx: 815, sy: 588, color: '#fb5656' },
+        26: { name: 'Chennai', x: 217, y: 452, sx: 848, sy: 160, color: '#fb5656' },
+        28: { name: 'Ahmedabad', x: 90, y: 279, sx: 870, sy: 335, color: '#fb5656' },
+        32: { name: 'Nashik', x: 110, y: 333, sx: 467, sy: 326, color: '#ffd700' },
+        36: { name: 'Indore', x: 145, y: 284, sx: 499, sy: 523, color: '#56a0fb' },
+        37: { name: 'Chandigarh (Tricity)', x: 160, y: 137, sx: 969, sy: 455, color: '#fb5656' },
+        38: { name: 'Jaipur', x: 144, y: 209, sx: 897, sy: 395, color: '#56a0fb' },
+        39: { name: 'Surat', x: 94, y: 312, sx: 901, sy: 596, color: '#fbac56' },
+        40: { name: 'Vadodara', x: 101, y: 292, sx: 954, sy: 439, color: '#ac56fb' },
+        41: { name: 'Kochi', x: 152, y: 504, sx: 670, sy: 504, color: '#fb5656' },
+        42: { name: 'Kanpur', x: 218, y: 217, sx: 677, sy: 456, color: '#56fb56' },
+        43: { name: 'Lucknow', x: 228, y: 210, sx: 732, sy: 419, color: '#fbac56' },
+        45: { name: 'Coimbatore', x: 163, y: 487, sx: 459, sy: 408, color: '#56a0fb' },
+        47: { name: 'Raipur', x: 240, y: 311, sx: 629, sy: 393, color: '#fb5656' },
+        49: { name: 'Patna', x: 298, y: 232, sx: 611, sy: 417, color: '#fb5656' },
+        50: { name: 'Bhopal', x: 170, y: 276, sx: 645, sy: 476, color: '#fb5656' },
+        51: { name: 'Bhubaneswar', x: 309, y: 328, sx: 883, sy: 421, color: '#fb5656' },
+        58: { name: 'Rajkot', x: 61, y: 292, sx: 621, sy: 440, color: '#56fb56' },
+        65: { name: 'Vizag', x: 266, y: 373, sx: 917, sy: 248, color: '#56a0fb' },
+        67: { name: 'Dehradun', x: 180, y: 144, sx: 499, sy: 374, color: '#dc143c' },
+        68: { name: 'Ludhiana', x: 145, y: 133, sx: 775, sy: 420, color: '#56a0fb' },
+        69: { name: 'Guwahati', x: 407, y: 223, sx: 563, sy: 404, color: '#fb5656' },
+        70: { name: 'Vijayawada', x: 224, y: 393, sx: 695, sy: 350, color: '#fb5656' },
+        71: { name: 'Meerut', x: 195, y: 185, sx: 437, sy: 224, color: '#ac56fb' },
+        96: { name: 'Gandhinagar', x: 92, y: 276, sx: 880, sy: 311, color: '#56a0fb' },
+        113: { name: 'Delhi', x: 165, y: 176, sx: 714, sy: 412, color: '#fb5656' },
+        139: { name: 'Ranchi', x: 301, y: 273, sx: 648, sy: 487, color: '#fb5656' },
+        141: { name: 'Thiruvananthapuram', x: 162, y: 529, sx: 770, sy: 734, color: '#56a0fb' },
+        143: { name: 'Bhiwadi', x: 161, y: 184, sx: 992, sy: 276, color: '#fb5656' },
+        157: { name: 'Bidhan Nagar (Excluding Rajarhat)', x: 352, y: 287, sx: 726, sy: 594, color: '#fb5656' },
+        74: { name: 'Faridabad', x: 170, y: 181, sx: 895, sy: 582, color: "#fb5656" },
+        2: { name: 'Pune', x: 117, y: 360, sx: 474, sy: 464, color: '#8a2be2' },
+        27: { name: 'Kolkata', x: 352, y: 290, sx: 720, sy: 600, color: '#56fb56' },
+        82: { name: 'Gurugram', x: 162, y: 180, sx: 837, sy: 580, color: '#56a0fb' },
+        97: { name: 'Ghaziabad', x: 171, y: 174, sx: 412, sy: 253, color: '#fb5656' },
+        98: { name: 'Greater Noida', x: 171, y: 179, sx: 420, sy: 270, color: '#56a0fb' },
+        112: { name: 'Noida', x: 170, y: 177, sx: 425, sy: 282, color: '#ffd700' },
+        121: { name: 'Panvel', x: 97, y: 354, sx: 398, sy: 430, color: '#32cd32' },
+        118: { name: 'Kalyan Dombivali', x: 111, y: 342, sx: 405, sy: 396, color: '#56a0fb' },
+        119: { name: 'Mira Bhayander', x: 95, y: 339, sx: 376, sy: 392, color: '#56fb56' },
+        120: { name: 'Navi Mumbai', x: 103, y: 348, sx: 394, sy: 411, color: '#ff4500' },
+        122: { name: 'Thane', x: 102, y: 343, sx: 391, sy: 398, color: '#dc143c' },
+        123: { name: 'Vasai Virar', x: 94, y: 336, sx: 377, sy: 382, color: '#00ced1' },
+        129: { name: 'Howrah', x: 347, y: 286, sx: 715, sy: 593, color: '#56a0fb' },
+        130: { name: 'New Town Kolkata', x: 355, y: 287, sx: 734, sy: 595, color: '#fbac56' },
+        131: { name: 'Chakan', x: 110, y: 351, sx: 472, sy: 432, color: '#fb5656' },
+        132: { name: 'Pimpri Chinchwad', x: 112, y: 356, sx: 469, sy: 453, color: '#4682b4' }
+
+    }
+];
+
+//statechange end
+
+
+//Price Trend Analysis start
+
+function tblnamechange() {
+    var btn = document.getElementById('tblPriceTrend');
+    var lang = $('#LngId').val();
+    if (btn.value === (lang === '0' ? 'View Table' : 'तालिका')) {
+        btn.value = (lang === '0' ? 'View Chart' : 'चार्ट'); showTable();
+    } else {
+        btn.value = (lang === '0' ? 'View Table' : 'तालिका'); showChart();
+    }
+}
+
+function fetchData(callback) {
+    var selectedquarter = $("#selectedQuarter").val();
+    //var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+    var chkbefore1718 = $("#chkbefore1718Checked").val();
+
+    $.ajax({
+        url: "Dashboard/Get_NHBResiCersai_PriceTrend",
+        type: "POST",
+        data: {
+            reporttype: "COUNTRY",
+            lookup: "BOTH_INDEX",
+            cityid: 0, pincode: 0, wardid: 0,
+            pricemtdid: selectedquarter, locid: 0,
+            chkbefore1718: chkbefore1718
+        },
+        success: function (response) {
+            if (response.status === "Success" && response.data) {
+                const jsonData = JSON.parse(response.data);
+                callback(jsonData);
+            }
+            else {
+
+                ShowErrorMessage(response.Message || "No data available");
+            }
+        }, error: function () {
+            ShowErrorMessage("Error while fetching data.");
+        }
+    });
+}
+
+function showTable() {
+    fetchData(function (jsonData) {
+        let tableHtml = ` <table style="width: 100%; text-align: center; border-collapse: collapse;" class="table table-bordered table-responsive-sm table-striped"> <thead class="table-secondary" style="position: sticky;top: -1px;"  > <tr> <th>Quarter</th> <th>HPI@Assessment Prices</th> <th>HPI@Market Prices</th> </tr> </thead> <tbody>`;
+        jsonData.forEach((row) => {
+            tableHtml += ` <tr> <td>${row['QTR_YEAR']}</td>
+            <td>${row['HFC_COUNTRY_INDEX'] || "N/A"}</td>
+            <td>${row['UC_COUNTRY_INDEX'] || "N/A"}</td> </tr>`;
+        }); tableHtml += `</tbody></table>`;
+        $("#divPriceTrend").html(tableHtml);
+    });
+}
+
+function showChart1() {
+    fetchData(function (jsonData) {
+        const dataTable = new google.visualization.DataTable();
+        dataTable.addColumn('string', 'Quarter');
+        dataTable.addColumn('number', 'HPI@Assessment Prices');
+        dataTable.addColumn('number', 'HPI@Market Prices');
+        jsonData.forEach((row) => {
+            dataTable.addRow([row['QTR_YEAR'],
+            parseFloat(row['HFC_COUNTRY_INDEX']) || null,
+            parseFloat(row['UC_COUNTRY_INDEX']) || null]);
+        });
+        options = {
+            width: '100%', height: 350, pointSize: 5,
+            legend: { position: 'top' },
+            hAxis: { slantedText: true, slantedTextAngle: 45 },
+            vAxis: { viewWindow: { min: 0 } },
+            chartArea: { left: 50, width: '100%', height: '60%' },
+            title: 'Price Trend Analysis', interpolateNulls: true
+        };
+        chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+        chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+        var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+
+        if (rbHousingPriceIndices == "HFC") {
+            chartViewBasedOnRB.hideColumns([2]);
+        }
+        else if (rbHousingPriceIndices == "UC") {
+            var clr = ['#dc3912'];
+            options.colors = clr;
+            chartViewBasedOnRB.hideColumns([1]);
+        }
+        chart.draw(chartViewBasedOnRB, options);
+
+    });
+}
+
+
+function showChart() {
+    fetchData(function (jsonData) {
+        const dataTable = new google.visualization.DataTable();
+        dataTable.addColumn('string', 'Quarter');
+        dataTable.addColumn('number', 'HPI@Assessment Prices');
+        dataTable.addColumn('number', 'HPI@Market Prices');
+        jsonData.forEach((row) => {
+            dataTable.addRow([row['QTR_YEAR'],
+            parseFloat(row['HFC_COUNTRY_INDEX']) || null,
+            parseFloat(row['UC_COUNTRY_INDEX']) || null]);
+        });
+        const options = {
+            width: '100%', height: 300, pointSize: 5,
+            legend: { position: 'top', textStyle: { fontSize: 12 } },
+            hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+            vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+            chartArea: { left: 50, width: '100%', height: '60%' },
+            title: 'Price Trend Analysis',
+            titleTextStyle: { fontSize: 13 }, // Adjust the font size as needed
+            interpolateNulls: true
+        };
+        const chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+        const chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+        var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+
+        if (rbHousingPriceIndices === "HFC") {
+            chartViewBasedOnRB.hideColumns([2]);
+        } else if (rbHousingPriceIndices === "UC") {
+            var clr = ['#dc3912'];
+            options.colors = clr;
+            chartViewBasedOnRB.hideColumns([1]);
+        }
+        chart.draw(chartViewBasedOnRB, options);
+    });
+}
+
+
+function ShowErrorMessage(message) {
+    document.getElementById('divPriceTrend').innerHTML = `<p style="color: red;">${message}</p>`;
+}
+
+//Price Trend Analysis end

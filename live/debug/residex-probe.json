@@ -1,0 +1,57 @@
+{
+ "runAt": "2026-11-12T12:35:15.451Z",
+ "items": {
+  "dashboard_js": {
+   "path": "/customappscripts/dashboard/dashboard.js",
+   "status": 200,
+   "type": "text/javascript",
+   "bytes": 56875,
+   "head": "﻿$(document).ready(function () {\r\n    google.charts.load('current', { packages: ['corechart', 'line'] });\r\n    google.charts.setOnLoadCallback(showChart);\r\n\r\n    google.charts.load('current', { packages: ['corechart'] });\r\n    google.charts.setOnLoadCallback(loadCityChart);\r\n    //BindQuarterDropDow"
+  },
+  "common_js": {
+   "path": "/customappscripts/commonsitescript.js",
+   "status": 200,
+   "type": "text/javascript",
+   "bytes": 12405,
+   "head": "﻿/// <reference path=\"blockui.js\" />\r\n\r\n\r\n\r\nvar CommonURL = null;\r\nvar getUrl = window.location;\r\nCommonURL = getUrl.protocol + \"//\" + getUrl.host + \"/\";\r\n\r\n$(document).ready(function () {\r\n    $(\".globalAlert\").hide();\r\n    $(\"#btnCloseError\").click(function () {\r\n        $(\"#globalAlertError\").hid"
+  },
+  "chartloader_js": {
+   "path": "/customappscripts/chartloader.js",
+   "status": 200,
+   "type": "text/javascript",
+   "bytes": 76445,
+   "head": "﻿(function () {/*\r\n\r\n Copyright The Closure Library Authors.\r\n SPDX-License-Identifier: Apache-2.0\r\n*/\r\n    'use strict'; function aa(a) { var b = 0; return function () { return b < a.length ? { done: !1, value: a[b++] } : { done: !0 } } } var ba = \"function\" == typeof Object.defineProperties ? Obje"
+  },
+  "pr_2026q1": {
+   "path": "/DataUploadFormats/PressRelease_English/Press Release April-June 2026.pdf",
+   "status": 200,
+   "type": "application/pdf",
+   "bytes": 232503,
+   "head": ""
+  },
+  "pr_2026q0": {
+   "path": "/DataUploadFormats/PressRelease_English/Press Release January-March 2026.pdf",
+   "status": 200,
+   "type": "application/pdf",
+   "bytes": 235904,
+   "head": ""
+  },
+  "pr_2025q2": {
+   "path": "/DataUploadFormats/PressRelease_English/Press Release July-September 2025.pdf",
+   "status": 200,
+   "type": "application/pdf",
+   "bytes": 197487,
+   "head": ""
+  },
+  "ep_0_get": {
+   "path": "/Dashboard/GetFileDataToDownload",
+   "status": 405,
+   "type": null,
+   "bytes": 0,
+   "head": ""
+  }
+ },
+ "endpoints": [
+  "/Dashboard/GetFileDataToDownload"
+ ]
+}
