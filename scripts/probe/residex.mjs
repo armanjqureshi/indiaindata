@@ -21,18 +21,12 @@ async function req(key, p, form) {
   } catch (e) { out.items[key] = { p, error: String(e.cause?.code || e.message) }; return '' }
 }
 await req('home', '/')
-for (const [k, type, ia] of [['dl_hfc_price', 'HFC', 'PRICE'], ['dl_hfc_index', 'HFC', 'INDEX'], ['dl_uc_price', 'UC', 'PRICE'], ['dl_uc_index', 'UC', 'INDEX']]) {
+for (const [k, type, ia] of []) {
   await req(k, '/Dashboard/GetFileDataToDownload', { reporttype: `PIVOT_${type}_${ia}`, qtr: '0', cityid: '0', pricemtdid: '2', lang: '0' })
 }
-await req('dl_hfc_price_curq', '/Dashboard/GetFileDataToDownload', { reporttype: 'PIVOT_HFC_PRICE', qtr: '0', cityid: '0', pricemtdid: '1', lang: '0' })
-const scroll = await req('scroll', '/Dashboard/GetResidexPriceScroll', { reporttype: 'CITY_HFC', qtr: '', cityid: '0', pricemtdid: '2' })
-let cities = []
-try { cities = JSON.parse(JSON.parse(scroll).data) } catch {}
-out.cityCount = cities.length
-for (const name of ['Mumbai', 'Delhi', 'Kanpur']) {
-  const c = cities.find((x) => x.CITY === name)
-  if (!c) continue
-  const enc = await req(`enc_${name}`, `/DashboardBY2024/EncryptCityId?cityid=${c.CITY_ID}`)
+// await req('dl_hfc_price_curq', '/Dashboard/GetFileDataToDownload', { reporttype: 'PIVOT_HFC_PRICE', qtr: '0', cityid: '0', pricemtdid: '1', lang: '0' })
+for (const [name, id] of [['Mumbai', 1], ['Delhi', 113]]) {
+  const enc = await req(`enc_${name}`, `/DashboardBY2024/EncryptCityId?cityid=${id}`)
   const html = await req(`city_${name}`, `/DashboardBY2024/DashboardBY2024?sfjy=${encodeURIComponent(enc.trim())}`)
   const scripts = [...new Set([...html.matchAll(/src="(\/customappscripts\/[^"]+)"/g)].map((m) => m[1].split('?')[0]))]
   out.items[`city_${name}`].scripts = scripts
