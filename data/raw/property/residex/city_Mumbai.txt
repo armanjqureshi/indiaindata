@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>NHB - RESIDEX | National Housing Bank</title>
+	<link rel="icon" type="image/x-icon" href="/defaultsiteimages/loading_NHB.gif" />
+	<script src="/lib/jquery/dist/jquery.min.js"></script>
+	<link href="/css/site.css" rel="stylesheet" />
+	<link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/css/all.min.css" rel="stylesheet" />
+</head>
+<style>
+
+	:root {
+	  --btn-bg: #ffc107;
+	  --btn-hover: #ffca2c;
+	  --btn-active: #e0a800;
+	}
+
+
+	.lang-switch {
+	  transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+	  border-radius: 6px;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	}
+
+	.lang-switch:hover {
+	  transform: translateY(-2px);
+	  background-color: var(--btn-hover);
+	  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+	}
+
+	.lang-switch:active {
+	  transform: scale(0.96);
+	  background-color: var(--btn-active);
+	}
+
+	.lang-switch:focus-visible {
+	  outline: 2px solid #fff;
+	  outline-offset: 2px;
+	}
+	#page-loader {
+	  position: fixed;
+	  inset: 0;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  z-index: 9999;
+	  backdrop-filter: blur(6px);
+	  background: rgba(0,0,0,0.35);
+	  opacity: 0;
+	  pointer-events: none;
+	  transition: opacity 0.3s ease;
+	}
+
+	#page-loader.active {
+	  opacity: 1;
+	  pointer-events: auto;
+	}
+
+	.loader-spinner {
+	  display: flex;
+	  align-items: center;
+	  gap: 10px;
+	  color: #fff;
+	  font-size: 15px;
+	  animation: fadeInUp 0.4s ease;
+	}
+
+	@keyframes fadeInUp {
+	  from { opacity: 0; transform: translateY(10px); }
+	  to { opacity: 1; transform: translateY(0); }
+	}
+
+	.modal-body{
+		 max-height: 85vh;   
+		 overflow-y: auto; 
+	}
+/* 	div#stateContainer {
+    height: 100vh;
+} */
+</style>
+<body style=" margin-bottom: 0px; font-family: arial;font-size: small;">
+
+		<!-- Spinner (hidden by default) -->
+	<div id="spinner" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%);">
+	   <div class="spinner-border text-warning" role="status">
+		  <span class="visually-hidden">Loading...</span>
+	   </div>
+	</div>
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
+			<div class="container-fluid">
+				<a class="navbar-brand" title="Click to go to Home" href="/">
+					<img src="/defaultsiteimages/nhb-logo.png" alt="NHB Logo" width="160px" height="50px" style="background-color:white;border:none;border-radius: 5px;padding: 5px;" />
+					<br />
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-flow: row-reverse;">
+
+					<div class="d-flex">
+
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+							<li class="nav-item">
+								<a href="https://www.nhb.org.in/data-graphs/" target="_blank" class="nav-link active">NHB RESIDEX 2007 to 2012 </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="/DashboardBY2013/DashboardBY2013">NHB RESIDEX (with Base Year FY 2012-13)</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="/DashboardBY2018/DashboardBY2018">NHB RESIDEX (with Base Year FY 2017-18)</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="/DashboardBY2024/DashboardBY2024">NHB RESIDEX (with Base Year FY 2024-25)</a>
+							</li>
+
+							<li class="nav-item">
+
+								<div class="pull-right languageTop">
+									<div id="dv_btnlng" style="display:block; padding-right:13px;font-weight: bold;">
+
+
+											<a class="btn btn-warning btn-sm d-flex align-items-center bg-gradient lang-switch" style="font-size:12px;" href="/Dashboard/ChangeLanguage?lang=hi">
+												<i class="fa-solid fa-language fa-lg" style="margin-right: 5px;"></i> हिंदी
+												<span class="spinner-border spinner-border-sm ms-2 d-none" role="status"></span>
+											</a>
+									</div>
+									<input type="hidden" id="LngId" value="0" />
+									<input type="hidden" id="loginuserid" value="0" />
+								</div>
+
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</nav>
+	</header>
+
+	<div class="container-fluid" style="margin: auto;">
+		<main role="main" class="pb-3">
+			<input type="hidden" id="Cityid" value="1" class="form-control" />
+<input type="hidden" id="selectedStateBasedOnCityid" value="" class="form-control" />
+
+<div class="fluid-container mt-3">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-weight: bold;font-size: large;">
+                    Boundaries
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="form-group col-md-6 col-xs-12 mb20" id="div_Dll_State">
+                            <label for="State" class="col-sm-2 col-form-label">Select State&nbsp;</label>
+                            <div class="col-sm-6 ">
+                                <select id="ddlState" class="form-select">
+                                    <option value="0">--- Select State ---</option>
+                                </select>
+                                <input type="hidden" id="selectedState" value="" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 col-xs-12 mb20" id="div_Dll_City">
+                            <label for="City" class="col-sm-2 col-form-label">Select City&nbsp;</label>
+                            <div class="col-sm-6 ">
+                                <select id="ddlCity" class="form-select">
+                                    <option value="0">--- Select City ---</option>
+                                </select>
+                                <input type="hidden" id="selectedCity" value="" class="form-control" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="card mt-1">
+        <div class="card-header text-white bg-primary bg-gradient">
+            <h4>City-wise Housing Price Indices</h4>
+        </div>
+        <div class="card-body">
+
+            <form class="col-md-7" action="/" method="post">
+
+                <fieldset class="form-group ">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="HousingPriceIndices" id="HPIAssessmentPrices" value="HFC" selected="selected">
+                                <label class="form-check-label" for="HPIAssessmentPrices">
+                                    HPI@Assessment Prices
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="HousingPriceIndices" id="HPIMarketPrices" value="UC">
+                                <label class="form-check-label" for="HPIMarketPrices">
+                                    HPI@Market Prices for Under Construction Properties
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="HousingPriceIndices" id="HPIBoth" value="BOTH_INDEX">
+                                <label class="form-check-label" for="HPIBoth">
+                                    Both
+                                </label>
+                            </div>
+                        </div>
+                        <input type="hidden" id="selectedHousingPriceIndices" value="" />
+                    </div>
+                </fieldset>
+                <br />
+                <div id="hideContentWhileTableShow">
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="CitywiseHPI" id="HousingPriceIndex" value="1" selected="selected">
+                                    <label class="form-check-label" for="HousingPriceIndex">
+                                        Housing Price Index (HPI)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="CitywiseHPI" id="CarpetAreaPrices" value="2">
+                                    <label class="form-check-label" for="CarpetAreaPrices">
+                                        Carpet Area Prices (Rs.Per Sq. Ft.)
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="hidden" id="selectedCitywiseHPI" value="" />
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group " id="UnitSizeinCarpetArea" style="display:none; font-size:small;">
+
+                        <h5 class="mt-3 text-info">
+                            Unit Size in Carpet Area
+                        </h5>
+
+                        <div class="row">
+                            <div class="col-sm-2" id="liCompositePrice">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="UnitSizeinCarpetArea" id="CompositePrice" value="3" selected="selected">
+                                    <label class="form-check-label" for="CompositePrice">
+                                        Composite Price
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="UnitSizeinCarpetArea" id="60sqmt" value="5">
+                                    <label class="form-check-label" for="60sqmt">
+                                        <=60 sq.mt.(646 sq.ft.)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="UnitSizeinCarpetArea" id="60and110sqmt" value="7">
+                                    <label class="form-check-label" for="60and110sqmt">
+                                        >60 sq.mt.(646 sq.ft.) and <=110 sq.mt.(1184 sq.ft.)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="UnitSizeinCarpetArea" id="110sqmt" value="9">
+                                    <label class="form-check-label" for="110sqmt">
+                                        >110 sq.mt.(1184 sq.ft.)
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="hidden" id="chkUnitSizeinCarpetArea" value="" />
+
+                        </div>
+                    </fieldset>
+
+                    <br />
+
+                </div>
+
+                <br />
+                <div class="form-group col-md-6 col-xs-12 mb20" id="div_Dll_Unit" style="display:none;">
+                    <label for="Unit" class="col-sm-6 col-form-label">Select Unit for Carpet Area Price&nbsp;</label>
+                    <div class="col-sm-6 ">
+                        <select id="ddlUnit" class="form-select">
+                            <option value="0">Rs.Per Sq.Ft.</option>
+                            <option value="8">Rs.Per Sq.Mt.</option>
+                            <option value="16">Rs.Per Sq.Yard</option>
+                        </select>
+                        <input type="hidden" id="selectedUnit" value="" class="form-control" />
+                    </div>
+                </div>
+            </form>
+            <br />
+            <div class="col">
+                <div style="text-align:right">
+                    <input type="hidden" id="LngId" value="0" />
+                    <input type="button" id="tblPriceTrend" value="View Table" class="btn btn-sm btn-primary btn-padding" onclick="tblnamechange()" />
+                    <input type="button" value="Download" name="downloads" id="btnDownload" class="btn btn-sm btn-secondary btn-padding" />
+                </div>
+                <span style="font-size:large; color:#0d6efd; font-weight:bold;">
+                    Current Quarter
+                </span>
+                <div style="padding-top: 5px; width:100%; margin-left:0px; padding-left:5px; padding-right:5px; display:block; margin-top:30px" id="divPriceTrend1"></div>
+                <br />
+                <span style="font-size:large; color:#0d6efd; font-weight:bold;">
+                    Calculation based on four quarter moving average
+                </span>
+                <div style="padding-top: 5px; width:100%; margin-left:0px; padding-left:5px; padding-right:5px; display:block; margin-top:30px" id="divPriceTrend"></div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+		</main>
+	</div>
+
+	<footer class="bg-dark bg-gradient text-white py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 mb-2">
+					<h5 class="text-uppercase text-primary">NHB RESIDEX</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="/Dashboard/About" class="text-white" style="text-decoration: none; font-weight: 600;">About NHB RESIDEX</a></li>
+						<li class="mb-2"><a href="DashboardBY2018/DashboardBY2018" class="text-white-50" style="text-decoration: none;">Data & Graphs</a></li>
+						<li><a href="/Dashboard/Disclaimer" class="text-white-50" style="text-decoration: none;">Disclaimer</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 mb-2">
+					<h5 class="text-uppercase text-primary">Housing</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="DashboardBY2018/DashboardBY2018" class="text-white" style="text-decoration: none; font-weight: 600;">Housing Price Indices (HPI)</a></li>
+						<li class="mb-2"><a href="DashboardBY2018/DashboardBY2018" class="text-white-50" style="text-decoration: none;">HPI@Assessment Prices</a></li>
+						<li class="mb-2"><a href="DashboardBY2018/DashboardBY2018" class="text-white-50" style="text-decoration: none;">HPI@Market Prices for Under Construction Properties</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 mb-2">
+					<h5 class="text-uppercase text-primary">Publications</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="/Dashboard/Brochure" class="text-white" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#BrochureModal">Brochures</a></li>
+						<li class="mb-2"><a href="/Dashboard/pressrelease" class="text-white-50" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#PressReleaseModal">Press Releases</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 mb-2">
+					<h5 class="text-uppercase text-primary">Member Login</h5>
+					<a href="http://nhb.org.in/" target="_blank" class="text-white" style="font-weight: 600; text-decoration: none;"><i class="fa-solid fa-earth-asia"></i> Login</a>
+				</div>
+				<div class="col-md-2 mb-2">
+					<h5 class="text-uppercase text-primary">FOLLOW US</h5>
+					<div class="d-flex">
+						<a href="https://x.com/nhbindia" target="_blank" class="text-white mx-2" style="text-decoration: none;"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+						<a href="https://www.linkedin.com/company/national-housing-bank" target="_blank" class="text-white mx-2" style="text-decoration: none;"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+					</div>
+				</div>
+				<div class="col-12 text-center">
+					<span class="text-white-50" id="wlink"></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="PressReleaseModal" tabindex="-1" aria-labelledby="PressReleaseModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Press Releases</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body">
+
+						<ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; background: lightgrey;">
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2026.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2026</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2026.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March 2026</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release October-December 2025.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2025</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release July-September 2025.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">July-September, 2025</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2025.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2025</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2025.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2025</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release October-December 2024.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2024</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release July-September 2024.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">July-September, 2024</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2024.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2024</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2024.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2024</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release October-December 2023.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2023</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release July-September 2023.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">July-September, 2023</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2023.DataUploadFormats" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2023</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Quaterly Booklet Jan-Mar 2023.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2023</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release Oct-Dec,2022.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2022</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release July-September 2022.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">July-September, 2022</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2022.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2022</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2022.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2022</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release October-December 2021.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2021</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release July-September 2021.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">July-September, 2021</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2021.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2021</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2021.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2021</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release October-December 2020.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2020</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release July-September 2020.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration:none;">July-September, 2020</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>
+							<a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2020.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2020</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;">
+							<i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2020.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2020</a>
+						</li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release October-December 2019.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2019</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release July-September-2019.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">July-September, 2019</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2019.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2019</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2019.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2019</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release October-December 2018.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2018</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release July-September 2018.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">July-September, 2018</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2018.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2018</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2018.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2018</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release October-December 2017.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">October-December, 2017</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release July-September 2017.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">July-September, 2017</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release April-June 2017.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">April-June, 2017</a></li>
+						<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i><a href="/DataUploadFormats/PressRelease_English/Press Release January-March 2017.pdf" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333;text-decoration:none;">January-March, 2017</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="BrochureModal" tabindex="-1" aria-labelledby="BrochureModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Brochures</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body">
+
+						<ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap;background: lightgrey;">
+
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Jan-Mar 2023.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">January - March, 2023</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Press Release - Oct-Dec,2022.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">October - December, 2022</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/English Quaterly Booklet Jul-Sep 2022.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">July - September, 2022</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Apr-Jun 2022.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">April - June, 2022</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Jan-Mar 2022.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">January - March, 2022</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Oct-Dec 2021.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">October - December, 2021</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Jul-Sep 2021.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">July - September, 2021</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/April-June 2021.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">April - June, 2021</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/January-March 2021.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">January - March, 2021</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Oct-Dec 2020.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">October - December, 2020</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Jul-Sep 2020.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">July - September, 2020</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Apr-June 2020.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">April - June, 2020</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Jan-Mar 2020.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">January - March, 2020</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Oct-Dec 2019.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">October - December, 2019</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quaterly Booklet Jul-Sep 2019.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">July - September, 2019</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/April-June 2019.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">April - June, 2019</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/January-March 2019.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">January - March, 2019</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/October-December 2018.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">October - December, 2018</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/July-September 2018.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">July - September, 2018</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/April-June 2018.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">April - June, 2018</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/January-18-to-March-18.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">January - March, 2018</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/October-17-December-17.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">October - December, 2017</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/July-17-Spetember-17.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">July - September, 2017</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/Quarterly-Update-April-June-2017.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">April 17 - June 17</a></li>
+							<li style="padding: 10px 0; display: flex; align-items: center;width: 50%;   border: 2px solid #bcbcbc;padding: 10px;"><i class="fa-regular fa-file-pdf fa-lg" style="color: #c93140;"></i>&nbsp;<a href="/DataUploadFormats/QuarterlyBooklet_English/April13-June-13-To-January17-March-17.pdf" runat="server" target="_blank" style="margin-left: 10px; font-size: 16px; color: #333; text-decoration: none;">April 13 - June 13 To January 17 - March 17</a></li>
+
+						</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/site.js"></script>
+	<script src="/lib/jquery/dist/jquery.min.js"></script>
+	<script src="/customappscripts/blockui.js"></script>
+	<script src="/customappscripts/commonsitescript.js?v=w6ISYk43GBmeKOUfD_fiQBacbNStwmHYRs0JTZNY19Q"></script>
+	<script>
+
+		$(document).ready(function () {
+			var currentYear = new Date().getFullYear();
+			$('#wlink').html('&copy; ' + currentYear + ' RESIDEX. Developed and maintained by the <a href="https://nhb.org.in" target="_blank" class="text-primary" style="font-weight: 600; text-decoration: none;">National Housing Bank</a>.');
+		});
+		$(function () {
+			$("#lnkTerm").click(function () {
+				window.open("/Home/TermsAndConditions", "_blank", "minimizable=no,toolbar=no,scrollbars=yes,resizable=yes,top=300,left=150,width=800,height=800");
+			});
+		});
+
+		document.querySelectorAll('.lang-switch').forEach(btn => {
+		  btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const loader = document.getElementById('page-loader');
+			loader.classList.add('active');
+			setTimeout(() => {
+			  window.location.href = this.href;
+			}, 600);
+		  });
+		});
+
+
+
+	</script>
+	
+    <script src="/customappscripts/chartloader.js"></script>
+    <script src="/customappscripts/dashboardby2024/dashboardby2024.js?v=R7i0VlFRjNprOcIARP6hRXEa_Q_ZkTpvgF-V2GYrWrc"></script>
+    <script src="/customappscripts/commonsitescript.js?v=w6ISYk43GBmeKOUfD_fiQBacbNStwmHYRs0JTZNY19Q"></script>
+    <script src="/customappscripts/tabletoexcel.js"></script>
+
+
+<div id="page-loader">
+    <div class="loader-backdrop"></div>
+    <div class="loader-spinner">
+        <div class="spinner-border text-warning" role="status"></div>
+        <span class="ms-2 text-light">Switching language...</span>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,1893 @@
+$(document).ready(function () {
+    google.charts.load('current', { packages: ['corechart', 'line'] });
+    $('#div_Dll_Unit').hide();
+    $('#hideContentWhileTableShow').show();
+
+    /* ------------------ Defaults ------------------ */
+    function ensureDefaults() {
+        // HousingPriceIndices
+        let $hpiRadios = $('input:radio[name=HousingPriceIndices]');
+        if (!$hpiRadios.is(':checked')) {
+            $hpiRadios.filter('[value=HFC]').prop('checked', true);
+        }
+        $("#selectedHousingPriceIndices").val($('input[name=HousingPriceIndices]:checked').val());
+
+        // CitywiseHPI
+        let $cityRadios = $('input:radio[name=CitywiseHPI]');
+        if (!$cityRadios.is(':checked')) {
+            $cityRadios.filter('[value=1]').prop('checked', true);
+        }
+        $("#selectedCitywiseHPI").val($('input[name=CitywiseHPI]:checked').val());
+
+        // UnitSize
+        let $unitCheckboxes = $('input:checkbox[name=UnitSizeinCarpetArea]');
+        if (!$unitCheckboxes.is(':checked')) {
+            $unitCheckboxes.filter('[value=5]').prop('checked', true);
+        }
+        $("#chkUnitSizeinCarpetArea").val($('input[name=UnitSizeinCarpetArea]:checked').val());
+
+        // Visibility rules
+        toggleUnitSizeVisibility();
+    }
+
+    function toggleUnitSizeVisibility() {
+        const hpiValue = $("#selectedHousingPriceIndices").val();
+        const citywiseValue = $("#selectedCitywiseHPI").val();
+
+        if (hpiValue === "BOTH_INDEX") {
+            $("#chkbefore1718Div").hide();
+            $("#UnitSizeinCarpetArea").hide();
+            $('input:checkbox[name=UnitSizeinCarpetArea]').prop('checked', false)
+                .filter('[value=5]').prop('checked', true);
+            $("#chkUnitSizeinCarpetArea").val("5");
+        } else {
+            $("#chkbefore1718Div").show();
+            if (citywiseValue === "2") {
+                $("#UnitSizeinCarpetArea").show();
+            } else {
+                $("#UnitSizeinCarpetArea").hide();
+            }
+        }
+    }
+
+    function refreshCharts() {
+        ensureDefaults(); // always set hidden fields first
+        google.charts.setOnLoadCallback(showChart);
+        google.charts.setOnLoadCallback(showChartCurrentQtr);
+    }
+
+    function initializeDashboard() {
+        ensureDefaults();
+
+        const cityId = $("#Cityid").val();
+
+        if (cityId && cityId !== "0") {
+            BindStateBasedOnCity(cityId).then(stateId => {
+                return BindCityDropDownList("ddlCity", stateId);
+            }).then($cityDdl => {
+                $cityDdl.val(cityId);
+                $("#selectedCity").val(cityId);
+                refreshCharts();
+            }).catch(err => {
+                console.error("Initialization failed:", err);
+            });
+        } else {
+            BindStateDropDownList("ddlState").then($stateDdl => {
+                const defaultStateIndex = 11;
+                $stateDdl.prop('selectedIndex', defaultStateIndex).trigger('change');
+                const selectedState = $stateDdl.val();
+                return BindCityDropDownList("ddlCity", selectedState);
+            }).then($cityDdl => {
+                $cityDdl.prop('selectedIndex', 0);
+                $("#selectedCity").val($cityDdl.val());
+                refreshCharts();
+            });
+        }
+    }
+
+    initializeDashboard();
+
+    /* ------------------ Event Bindings ------------------ */
+    $("#ddlState").change(function () {
+        const selectedState = $(this).val();
+        $("#selectedState").val(selectedState);
+
+        if (selectedState > 0) {
+            BindCityDropDownList("ddlCity", selectedState).then($cityDdl => {
+                $cityDdl.prop('selectedIndex', 0);
+                $("#selectedCity").val($cityDdl.val());
+                refreshCharts();
+            });
+        } else {
+            $("#ddlCity").html('<option value="">Please select a valid state to view the data.</option>');
+            $("#selectedCity").val('');
+        }
+    });
+
+    //Fixed
+    // $("#ddlCity").on("change", function () {
+    //     const cityId = $(this).val();
+    //     const stateId = $("#ddlState").val();
+
+    //     if (!stateId) {
+    //         alert("Please select a state first.");
+    //         $(this).val("");
+    //         $("#selectedCity").val("");
+    //         return;
+    //     }
+
+    //     // Update hidden fields
+    //     $("#selectedState").val(stateId);
+    //     $("#selectedCity").val(cityId);
+
+    //     console.log("Selected State:", stateId);
+    //     console.log("Selected City:", cityId);
+
+    //     // Refresh charts using the latest selection
+    //     refreshCharts();
+    // });
+
+
+    $("#ddlCity").change(function () {
+        const selectedState = $("#selectedState").val();
+        if (!selectedState) {
+            alert("Please select a state first.");
+            return;
+        }
+        $("#selectedCity").val($(this).val());
+        refreshCharts();
+    });
+
+    // Radio handlers
+    $('input[type=radio][name=HousingPriceIndices]').change(function () {
+        $("#selectedHousingPriceIndices").val(this.value);
+        toggleUnitSizeVisibility();
+        refreshCharts();
+    });
+
+    $('input[type=radio][name=CitywiseHPI]').change(function () {
+        $("#selectedCitywiseHPI").val(this.value);
+        toggleUnitSizeVisibility();
+        refreshCharts();
+    });
+
+    // UnitSize checkboxes (single select + default enforcement)
+    $('input[type=checkbox][name=UnitSizeinCarpetArea]').change(function () {
+        const checkboxes = $('input[type=checkbox][name=UnitSizeinCarpetArea]');
+        const checkedBoxes = checkboxes.filter(':checked');
+
+        if (this.checked) {
+            checkboxes.not(this).prop('checked', false); // enforce single selection
+            $("#chkUnitSizeinCarpetArea").val(this.value);
+        } else {
+            $("#chkUnitSizeinCarpetArea").val('');
+        }
+
+        if (checkedBoxes.length === 0) {
+            const defaultCheckbox = checkboxes.filter('[value=9]');
+            if (defaultCheckbox.length) {
+                defaultCheckbox.prop('checked', true);
+                $("#chkUnitSizeinCarpetArea").val("9");
+                alert("At least one checkbox must be selected.");
+            }
+        }
+
+        refreshCharts();
+    });
+
+    // chkbefore1718 checkbox
+    $('input[type=checkbox][name=chkbefore1718]').change(function () {
+        $("#chkbefore1718Checked").val(this.checked ? this.value : '');
+
+        const $radios = $('input:checkbox[name=UnitSizeinCarpetArea]');
+        if ($radios.is(':checked') === false) {
+            $radios.filter('[value=5]').prop('checked', true);
+            $("#chkUnitSizeinCarpetArea").val("5");
+        }
+
+        refreshCharts();
+    });
+
+    // Unit dropdown
+    $("#ddlUnit").change(function () {
+        const selectedUnit = $(this).find('option:selected').text().split('.Per ')[1];
+        $("#selectedUnit").val(selectedUnit);
+        showTable(selectedUnit);
+        showTableCurrentQtr(selectedUnit);
+    });
+
+    // Download
+    $("#btnDownload").click(function () {
+        const city = $('#ddlCity option:selected').text();
+        $("#tblPriceTrend").click();
+        setTimeout(() => {
+            tableToExcel("divPriceTrend", `${city}-City HPI Data Previous-Q (Base Year 2024)`);
+            tableToExcel("divPriceTrend1", `${city}-City HPI Data Current-Q (Base Year 2024)`);
+        }, 500);
+    });
+});
+
+
+// $(document).ready(function () {
+//     google.charts.load('current', { packages: ['corechart', 'line'] });
+//     $('#div_Dll_Unit').hide();
+//     $('#hideContentWhileTableShow').show();
+
+//     setTimeout(function () {
+
+//         if ($("#Cityid").val() != "" && $("#Cityid").val() != String.empty && $("#Cityid").val() != 0) {
+//             BindStateBasedOnCity($("#Cityid").val());
+//             setTimeout(function () {
+//                 $('#ddlState').val($("#selectedStateBasedOnCityid").val()).trigger('change');
+//                 setTimeout(function () {
+//                     $("#ddlCity").val($("#Cityid").val());
+//                     $("#selectedCity").val($("#Cityid").val());
+//                     google.charts.setOnLoadCallback(showChart);
+//                     google.charts.setOnLoadCallback(showChartCurrentQtr);
+//                 }, 700);
+//             }, 500);
+//         }
+//     }, 1000);
+
+//     setTimeout(function () {
+//         google.charts.setOnLoadCallback(showChart);
+//         google.charts.setOnLoadCallback(showChartCurrentQtr);
+//     }, 500);
+
+//     $("#UnitSizeinCarpetArea").hide();
+
+//     var $radios = $('input:radio[name=HousingPriceIndices]');
+//     if ($radios.is(':checked') === false) {
+//         $radios.filter('[value=HFC]').prop('checked', true);
+//         $("#selectedHousingPriceIndices").val("HFC");
+//     }
+
+//     $('input[type=radio][name=HousingPriceIndices]').change(function () {
+//         $("#selectedHousingPriceIndices").val(this.value);
+//         if (this.value == "BOTH_INDEX") {
+//             $("#chkbefore1718Div").hide();
+//             $("#UnitSizeinCarpetArea").hide();
+//             var $radios = $('input:checkbox[name=UnitSizeinCarpetArea]');
+//             $radios.prop('checked', false);
+//             $radios.filter('[value=5]').prop('checked', true);
+//             $("#chkUnitSizeinCarpetArea").val("5");
+//         }
+//         else {
+//             $("#chkbefore1718Div").show();
+//             if ($("#selectedCitywiseHPI").val() == 2) {
+//                 $("#UnitSizeinCarpetArea").show();
+//             }
+//         }
+
+//         google.charts.setOnLoadCallback(showChart);
+//         google.charts.setOnLoadCallback(showChartCurrentQtr);
+
+//     });
+
+//     var $radios = $('input:radio[name=CitywiseHPI]');
+//     if ($radios.is(':checked') === false) {
+//         $radios.filter('[value=1]').prop('checked', true);
+//         $("#selectedCitywiseHPI").val("1");
+//     }
+
+//     $('input[type=radio][name=CitywiseHPI]').change(function () {
+//         $("#selectedCitywiseHPI").val(this.value);
+
+//         var HousingPriceIndices = $("#selectedHousingPriceIndices").val();
+
+//         if (HousingPriceIndices == "BOTH_INDEX" && this.value == 2) {
+//             $("#UnitSizeinCarpetArea").hide();
+//             var $radios = $('input:checkbox[name=UnitSizeinCarpetArea]');
+//             $radios.prop('checked', false);
+//             $radios.filter('[value=5]').prop('checked', true);
+//             $("#chkUnitSizeinCarpetArea").val("5");
+//         }
+//         else if (this.value == 2) {
+
+//             $("#UnitSizeinCarpetArea").show();
+
+//             var $radios = $('input:checkbox[name=UnitSizeinCarpetArea]');
+//             if ($radios.is(':checked') === false) {
+//                 $radios.filter('[value=5]').prop('checked', true);
+//                 $("#chkUnitSizeinCarpetArea").val("5");
+//             }
+           
+//         }
+//         else {
+//             $("#UnitSizeinCarpetArea").hide();
+//         }
+//         google.charts.setOnLoadCallback(showChart);
+//         google.charts.setOnLoadCallback(showChartCurrentQtr);
+//     });
+
+
+//     let checkedValues = [];
+
+//     //$('input[type=checkbox][name=UnitSizeinCarpetArea]').click(function () {
+//     //    checkedValues = $('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').map(function () {
+//     //        return this.value;
+//     //    }).get();
+
+//     //    $("#chkUnitSizeinCarpetArea").val(checkedValues.join(','));
+
+//     //    google.charts.setOnLoadCallback(showChart);
+//     //    google.charts.setOnLoadCallback(showChartCurrentQtr);
+//     //});
+
+
+
+//     $('input[type=checkbox][name=UnitSizeinCarpetArea]').click(function () {
+//         if ($(this).is(':checked')) {
+//             $("#chkUnitSizeinCarpetArea").val(this.value);
+//         }
+//         else {
+//             $("#chkUnitSizeinCarpetArea").val('');
+//         }
+//         google.charts.setOnLoadCallback(showChart);
+//         google.charts.setOnLoadCallback(showChartCurrentQtr);
+//     });
+
+//     $('input[type=checkbox][name=chkbefore1718]').click(function () {
+//         if ($(this).is(':checked')) {
+//             $("#chkbefore1718Checked").val(this.value);
+//         }
+//         else {
+//             $("#chkbefore1718Checked").val('');
+//         }
+
+//         var $radios = $('input:checkbox[name=UnitSizeinCarpetArea]');
+//         if ($radios.is(':checked') === false) {
+//             $radios.filter('[value=5]').prop('checked', true);
+//             $("#chkUnitSizeinCarpetArea").val("5");
+//         }
+
+//         google.charts.setOnLoadCallback(showChart);
+//         google.charts.setOnLoadCallback(showChartCurrentQtr);
+//     });
+
+
+//     BindStateDropDownList("ddlState");
+
+//     setTimeout(function () {
+//         const defaultStateIndex = 11;
+//         const defaultCityIndex = 0;
+//         $('#ddlState').prop('selectedIndex', defaultStateIndex).trigger('change'); // Set state and trigger change 
+//         setTimeout(function () {
+//             $('#ddlCity').prop('selectedIndex', defaultCityIndex); // Set city after cities are populated 
+//             const selectedCityValue = $('#ddlCity').val();
+//             $("#selectedCity").val(selectedCityValue); // Update selectedCity hidden input 
+//         }, 200); // Wait to ensure cities are populated 
+//     }, 200); // Handle state change
+
+//     $("#ddlState").change(function () {
+//         $("#selectedState").val('');
+//         const selectedState = $(this).val();
+//         $("#selectedState").val(selectedState);
+//         // Update hidden input 
+//         if (selectedState > 0) {
+//             BindCityDropDownList("ddlCity", selectedState);
+//             setTimeout(function () {
+//                 $("#selectedCity").val('');
+//                 //$('#ddlCity').prop('selectedIndex', 1); 
+//                 setTimeout(function () {
+//                     $('#ddlCity').prop('selectedIndex', 0);
+//                     const selectedCityValue = $('#ddlCity').val();
+//                     $("#selectedCity").val(selectedCityValue); // Update hidden input for selected city
+//                     google.charts.setOnLoadCallback(showChart);
+//                     google.charts.setOnLoadCallback(showChartCurrentQtr);
+//                 }, 200);
+
+//             }, 200);
+
+//         } else {
+//             $("#ddlCity").html('<option value="">Please select a valid state to view the data.</option>'); // Reset city dropdown if no state is selected 
+//             $("#selectedCity").val('');
+
+//         }
+//     });
+
+//     $("#ddlCity").change(function () {
+//         const selectedState = $("#selectedState").val();
+//         if (!selectedState) {
+//             alert("Please select a state first.");
+//             return;
+//         }
+//         $("#selectedCity").val('');
+//         const selectedCity = $(this).val();
+//         $("#selectedCity").val(selectedCity);
+
+//         setTimeout(function () {
+//             google.charts.setOnLoadCallback(showChart);
+//             google.charts.setOnLoadCallback(showChartCurrentQtr);
+//         }, 100);
+//     });
+
+//     $("#selectedUnit").val($("#ddlUnit").val());
+
+//     $("#ddlUnit").change(function () {
+//         const selectedUnit = $(this).find('option:selected').text().split('.Per ')[1];
+//         $("#selectedUnit").val(selectedUnit);
+//         showTable(selectedUnit); showTableCurrentQtr(selectedUnit);
+//     });
+  
+//     //const checkboxes = document.getElementsByName("UnitSizeinCarpetArea");
+//     //checkboxes.forEach((checkbox) => {
+//     //    checkbox.addEventListener("change", () => {
+//     //        const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+//     //        if (checkedCount === 0) {
+//     //            checkbox.checked = true;
+//     //            alert("At least one checkbox must be selected.");
+//     //        }
+//     //    });
+//     //});
+
+//     const checkboxes = document.getElementsByName("UnitSizeinCarpetArea");
+//     checkboxes.forEach((checkbox) => {
+//         checkbox.addEventListener("change", () => {
+//             const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+//             if (checkbox.checked) {
+//                 checkboxes.forEach(cb => {
+//                     if (cb !== checkbox) {
+//                         cb.checked = false;
+//                     }
+//                 });
+//             }
+//             if (checkedCount === 0) {
+//                 const defaultCheckbox = Array.from(checkboxes).find(cb => cb.value === "9");
+//                 if (defaultCheckbox) {
+//                     defaultCheckbox.checked = true; // check the one with value 9
+//                     alert("At least one checkbox must be selected.");
+//                 }
+//             }
+//         });
+//     });
+
+//     //const checkboxes = document.getElementsByName("UnitSizeinCarpetArea");
+//     //checkboxes.forEach((checkbox) => {
+//     //    checkbox.addEventListener("change", () => {
+//     //        const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+//     //        // Ensure only one checkbox is checked at a time
+//     //        if (checkbox.checked) {
+//     //            checkboxes.forEach(cb => {
+//     //                if (cb !== checkbox) {
+//     //                    cb.checked = false;
+//     //                }
+//     //            });
+//     //        }
+//     //        // Ensure at least one checkbox is always checked
+//     //        if (checkedCount === 0) {
+//     //            checkbox.checked = true;
+//     //            alert("At least one checkbox must be selected.");
+//     //        }
+//     //    });
+//     //});
+
+
+
+
+//     //BindCityForDownloadFormatDropDownList("dwncityname");
+//     //BindQuarterForDownloadFormatDropDownList("dwnqtrname");
+
+
+//     $("#btnDownload").click(function () {
+//         var city = $('#ddlCity option:selected').text();
+//         $("#tblPriceTrend").click();
+
+//         setTimeout(() => {
+//             tableToExcel("divPriceTrend", "" + city + "-City HPI Data Previous-Q (Base Year 2024)");
+//             tableToExcel("divPriceTrend1", "" + city + "-City HPI Data Current-Q (Base Year 2024)");
+//         }, 500);
+//     });
+
+//     //$('#dwncityname').select2({
+//     //    placeholder: "--- Select City ---",
+//     //    allowClear: true,
+//     //    closeOnSelect: false
+//     //});
+
+//     //$('#dwnqtrname').select2({
+//     //    placeholder: "--- Select Quarter ---",
+//     //    allowClear: true,
+//     //    closeOnSelect: false
+//     //});
+
+//     //var $radios = $('input:radio[name=rdodwnTYPE]');
+//     //if ($radios.is(':checked') === false) {
+//     //    $radios.filter('[value=HFC]').prop('checked', true);
+//     //    $("#rdoDWN").val("HFC");
+//     //} else {
+//     //    $("#rdoDWN").val($('input[name="rdodwnTYPE"]:checked').val());
+//     //}
+
+//     //$('input[type=radio][name=rdodwnTYPE]').change(function () {
+//     //    $("#rdoDWN").val(this.value);
+//     //});
+
+//     //var $radiosIndex = $('input:radio[name=rdodwnINDEX]');
+//     //if ($radiosIndex.is(':checked') === false) {
+//     //    $radiosIndex.filter('[value=INDEX]').prop('checked', true);
+//     //    $("#rdodwnIA").val("INDEX");
+//     //} else {
+//     //    $("#rdodwnIA").val($('input[name="rdodwnINDEX"]:checked').val());
+//     //}
+
+//     //$('input[type=radio][name=rdodwnINDEX]').change(function () {
+//     //    $("#rdodwnIA").val(this.value);
+//     //});
+
+
+// });
+
+function FileDownload1(downloadType) {
+    var c = '0';
+    if ($('#dwncityname option').length === $('#dwncityname').val().length || $('#dwncityname').val().length === 0) {
+        c = '0';
+    } else {
+        c = $('#dwncityname').val().join();
+    }
+
+    var q = '0';
+    if ($('#dwnqtrname option').length === $('#dwnqtrname').val().length || $('#dwnqtrname').val().length === 0) {
+        q = '0';
+    } else {
+        q = $('#dwnqtrname').val().join();
+    }
+
+    var pricemtdid = 2; // Example value, set it as needed
+    var lang = 0; // Assuming language is 0
+
+    var DWN = $('#rdoDWN').val();
+    var IA = $('#rdodwnIA').val();
+
+    var reporttype = "PIVOT_" + DWN + "_" + IA;
+
+    $.ajax({
+        url: "/DashboardBY2024/GetFileDataToDownload", // Ensure this URL points to your actual controller endpoint
+        type: "POST",
+        data: {
+            reporttype: reporttype,
+            qtr: q,
+            cityid: c,
+            pricemtdid: pricemtdid,
+            lang: lang
+        },
+        success: function (response) {
+            if (response.status === "Success") {
+                var arr = JSON.parse(response.data);
+
+                if (arr.length > 0) {
+                    var headers = Object.keys(arr[0]);
+
+                    var tableHtml = '<table border="1">';
+                    tableHtml += '<tr>';
+                    headers.forEach(function (header) {
+                        tableHtml += '<th>' + header + '</th>';
+                    });
+                    tableHtml += '</tr>';
+
+                    arr.forEach(function (item) {
+                        tableHtml += '<tr>';
+                        headers.forEach(function (header) {
+                            tableHtml += '<td>' + item[header] + '</td>';
+                        });
+                        tableHtml += '</tr>';
+                    });
+
+                    tableHtml += '</table>';
+                    document.body.insertAdjacentHTML('beforeend', '<div id="exportTable" style="display:none;">' + tableHtml + '</div>');
+
+                    tableToExcel('exportTable', 'Residex_Data');
+                } else {
+                    alert('No data available.');
+                }
+            } else {
+                alert('Error: ' + response.Message);
+            }
+        },
+        error: function () {
+            alert('Error fetching data.');
+        }
+    });
+}
+
+
+function tblnamechange() {
+    var btn = document.getElementById('tblPriceTrend');
+    var lang = $('#LngId').val();
+    if (btn.value === (lang === '0' ? 'View Table' : 'तालिका')) {
+        btn.value = (lang === '0' ? 'View Chart' : 'चार्ट');
+        showTable(selectedUnit); showTableCurrentQtr(selectedUnit);
+
+        setTimeout(function () {
+            $("#ddlUnit").val($("#ddlUnit option:first").val()).trigger("change");
+        }, 200);
+
+        $('#hideContentWhileTableShow').hide();
+        $('#div_Dll_Unit').show();
+        
+    } else {
+        btn.value = (lang === '0' ? 'View Table' : 'तालिका');
+        showChart(); showChartCurrentQtr();
+        $('#hideContentWhileTableShow').show();
+        $('#div_Dll_Unit').hide();
+    }
+}
+
+
+function fetchData(callback) {
+    var selectedquarter = 2;
+    var chkbefore1718 = $("#chkbefore1718Checked").val();
+    var selectedCity = $("#selectedCity").val();
+    var lookup = $("#selectedHousingPriceIndices").val();
+
+    $.ajax({
+        url: "/DashboardBY2024/Get_NHBResiCersai_PriceTrend",
+        type: "POST",
+        data: {
+            reporttype: "CITY",
+            lookup: lookup,
+            cityid: selectedCity,
+            pincode: 0,
+            wardid: 0,
+            pricemtdid: selectedquarter,
+            locid: "0",
+            chkbefore1718: chkbefore1718
+        },
+        success: function (response) {
+            if (response.status === "Success" && response.data) {
+                const jsonData = JSON.parse(response.data); // Parse JSON string 
+                callback(jsonData);
+            } else {
+                console.error(response.message || "No data available.");
+
+                ShowErrorMessage(response.message || "No data available.");
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", status, error);
+            ShowErrorMessage("Error while fetching data.");
+        }
+    });
+
+}
+
+function showChart() {
+    var rbCitywiseHPI = $("#selectedCitywiseHPI").val();
+    var rbHPI = $("#selectedHousingPriceIndices").val();
+    var chkUnitSizeinCarpetArea = $("#chkUnitSizeinCarpetArea").val();
+    var selname = '';
+    var cityid;
+
+    var cityid = $("#ddlCity").val();
+
+    ////Fixed
+    // if (!cityid) {
+    //     cityid = $("#ddlCity option").eq(1).val();
+    //     $("#ddlCity").val(cityid);
+    // }
+    
+    if (cityid == null) {
+        $("#ddlCity").val($("#ddlCity option").eq(1).val());
+        cityid = $('#ddlCity').val();
+    }
+
+    var cityname = $("#ddlCity option:selected").text();
+
+    var selname = ''; sqtype = 0;
+
+    if (rbCitywiseHPI == 2) {
+
+        if (chkUnitSizeinCarpetArea == 3) {
+
+            if (rbHPI == "BOTH_INDEX") {
+
+                setTimeout(function () {
+
+                    fetchData(function (jsonData) {
+                        const dataTable = new google.visualization.DataTable();
+                        dataTable.addColumn('string', 'Quarter');
+                        dataTable.addColumn('number', 'Composite @Assessment Prices');
+                        dataTable.addColumn('number', 'Composite @Market Prices for Under Construction Properties');
+                        /* dataTable.addColumn('number', 'Record');*/
+                        jsonData.forEach((row) => {
+                            dataTable.addRow([row['QTR_YEAR'],
+                            parseFloat(row['HFC_WTAVG_COMPOSITE']) || null,
+                            parseFloat(row['UC_WTAVG_COMPOSITE']) || null
+                                //parseFloat(row['REC_COUNT']) || null
+                            ]);
+                        });
+                        options = {
+                            width: '100%', height: 350, pointSize: 5,
+                            legend: { position: 'top', textStyle: { fontSize: 12 } },
+                            hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                            vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                            chartArea: { left: 50, width: '100%', height: '60%' },
+                            title: 'City : ' + cityname + selname,
+                            titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 12 },
+                            interpolateNulls: true
+                        };
+
+                        chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                        chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                        var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                        if (rbHousingPriceIndices == "HFC") {
+                            var clr = ['purple'];
+                            options.colors = clr;
+                            chartViewBasedOnRB.hideColumns([2]);
+                        }
+                        else if (rbHousingPriceIndices == "UC") {
+                            var clr = ['green'];
+                            options.colors = clr;
+                            chartViewBasedOnRB.hideColumns([1]);
+                        }
+
+                        if ($('#chkbefore1718').is(':checked')) {
+                            $('#liCompositePrice').hide();
+                            if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                                $('#60sqmt').prop('checked', true);
+                            }
+                            $('#CompositePrice').prop('checked', false);
+                        } else {
+                            $('#liCompositePrice').show();
+                        }
+
+                        chart.draw(chartViewBasedOnRB, options);
+
+                    });
+
+                }, 300)
+            }
+            else {
+                fetchData(function (jsonData) {
+                    const dataTable = new google.visualization.DataTable();
+                    dataTable.addColumn('string', 'Quarter');
+                    dataTable.addColumn('number', 'Composite @Assessment Prices');
+                    dataTable.addColumn('number', 'Composite @Market Prices for Under Construction Properties');
+                    /* dataTable.addColumn('number', 'Record');*/
+                    jsonData.forEach((row) => {
+                        dataTable.addRow([row['QTR_YEAR'],
+                        parseFloat(row['WTAVG_COMPOSITE']) || null,
+                        parseFloat(row['WTAVG_COMPOSITE']) || null
+                            //parseFloat(row['REC_COUNT']) || null
+                        ]);
+                    });
+                    options = {
+                        width: '100%', height: 350, pointSize: 5,
+                        legend: { position: 'top', textStyle: { fontSize: 12 } },
+                        hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                        vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                        chartArea: { left: 50, width: '100%', height: '60%' },
+                        title: 'City : ' + cityname + selname,
+                        titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 12 },
+                        interpolateNulls: true
+                    };
+
+                    chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                    chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                    var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                    if (rbHousingPriceIndices == "HFC") {
+                        var clr = ['purple'];
+                        options.colors = clr;
+                        chartViewBasedOnRB.hideColumns([2]);
+                    }
+                    else if (rbHousingPriceIndices == "UC") {
+                        var clr = ['green'];
+                        options.colors = clr;
+                        chartViewBasedOnRB.hideColumns([1]);
+                    }
+
+                    if ($('#chkbefore1718').is(':checked')) {
+                        $('#liCompositePrice').hide();
+                        if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                            $('#60sqmt').prop('checked', true);
+                        }
+                        $('#CompositePrice').prop('checked', false);
+                    } else {
+                        $('#liCompositePrice').show();
+                    }
+
+                    chart.draw(chartViewBasedOnRB, options);
+
+                });
+            }
+
+        }
+        else if (chkUnitSizeinCarpetArea == 5) {
+            fetchData(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '<=60 sq.mt.(646 sq.ft.)');
+                dataTable.addColumn('number', '<=60 sq.mt.(646 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_LESSTHAN60']) || null,
+                    parseFloat(row['WTAVG_LESSTHAN60']) || null
+                        /*parseFloat(row['REC_COUNT']) || null*/
+
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top', textStyle: { fontSize: 12 } },
+                    hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                    vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['red'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['blue'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+        }
+        else if (chkUnitSizeinCarpetArea == 7) {
+            fetchData(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '>60 sq.mt.(646 sq.ft.) and <=110 sq.mt.(1184 sq.ft.)');
+                dataTable.addColumn('number', '>60 sq.mt.(646 sq.ft.) and <=110 sq.mt.(1184 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_60TO110']) || null,
+                    parseFloat(row['WTAVG_60TO110']) || null
+                        //parseFloat(row['REC_COUNT']) || null
+
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top', textStyle: { fontSize: 12 } },
+                    hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                    vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['orange'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['olive'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+        }
+        else {
+            fetchData(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '>110 sq.mt.(1184 sq.ft.)');
+                dataTable.addColumn('number', '>110 sq.mt.(1184 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_GREATER110']) || null,
+                    parseFloat(row['WTAVG_GREATER110']) || null
+                        //parseFloat(row['REC_COUNT']) || null
+
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top', textStyle: { fontSize: 12 } },
+                    hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                    vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['brown'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['pink'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+        }
+
+    }
+    else {
+        fetchData(function (jsonData) {
+            const dataTable = new google.visualization.DataTable();
+            dataTable.addColumn('string', 'Quarter');
+            dataTable.addColumn('number', 'HPI@Assessment Prices');
+            dataTable.addColumn('number', 'HPI@Market Prices');
+            jsonData.forEach((row) => {
+                dataTable.addRow([row['QTR_YEAR'],
+                parseFloat(row['HFC_INDEX']) || null,
+                parseFloat(row['UC_INDEX']) || null]);
+            });
+            options = {
+                width: '100%', height: 350, pointSize: 5,
+                legend: { position: 'top', textStyle: { fontSize: 12 } },
+                hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                chartArea: { left: 50, width: '100%', height: '60%' },
+                title: 'City : ' + cityname + selname,
+                titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                interpolateNulls: true
+            };
+
+            chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+            chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+            var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+            if (rbHousingPriceIndices == "HFC") {
+                chartViewBasedOnRB.hideColumns([2]);
+            }
+            else if (rbHousingPriceIndices == "UC") {
+                var clr = ['#dc3912'];
+                options.colors = clr;
+                chartViewBasedOnRB.hideColumns([1]);
+            }
+
+            if ($('#chkbefore1718').is(':checked')) {
+                $('#liCompositePrice').hide();
+                if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                    $('#60sqmt').prop('checked', true);
+                }
+                $('#CompositePrice').prop('checked', false);
+            } else {
+                $('#liCompositePrice').show();
+            }
+
+            chart.draw(chartViewBasedOnRB, options);
+
+        });
+
+    }
+}
+function showChart1() {
+    var rbCitywiseHPI = $("#selectedCitywiseHPI").val();
+    var rbHPI = $("#selectedHousingPriceIndices").val();
+    var chkUnitSizeinCarpetArea = $("#chkUnitSizeinCarpetArea").val();
+    var selname = '';
+    var cityid;
+    cityid = $('#ddlCity').val();
+
+   //Fixed
+   // if (!cityid) {
+   //      cityid = $("#ddlCity option").eq(1).val();
+   //      $("#ddlCity").val(cityid);
+   //  }
+    if (cityid == null) {
+        $("#ddlCity").val($("#ddlCity option").eq(1).val());
+        cityid = $('#ddlCity').val();
+    }
+    var cityname = $('#ddlCity option:selected').text();
+
+    var selname = ''; sqtype = 0;
+
+    if (rbCitywiseHPI == 2) {
+
+        if (chkUnitSizeinCarpetArea == 3) {
+
+            if (rbHPI == "BOTH_INDEX") {
+
+                setTimeout(function () {
+
+                    fetchData(function (jsonData) {
+                        const dataTable = new google.visualization.DataTable();
+                        dataTable.addColumn('string', 'Quarter');
+                        dataTable.addColumn('number', 'Composite @Assessment Prices');
+                        dataTable.addColumn('number', 'Composite @Market Prices for Under Construction Properties');
+                        /* dataTable.addColumn('number', 'Record');*/
+                        jsonData.forEach((row) => {
+                            dataTable.addRow([row['QTR_YEAR'],
+                            parseFloat(row['HFC_WTAVG_COMPOSITE']) || null,
+                            parseFloat(row['UC_WTAVG_COMPOSITE']) || null
+                                //parseFloat(row['REC_COUNT']) || null
+                            ]);
+                        });
+                        options = {
+                            width: '100%', height: 350, pointSize: 5,
+                            legend: { position: 'top' },
+                            hAxis: { slantedText: true, slantedTextAngle: 45 },
+                            vAxis: { viewWindow: { min: 0 } },
+                            chartArea: { left: 50, width: '100%', height: '60%' },
+                            title: 'City : ' + cityname + selname,
+                            titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                            interpolateNulls: true
+                        };
+
+                        chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                        chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                        var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                        if (rbHousingPriceIndices == "HFC") {
+                            var clr = ['purple'];
+                            options.colors = clr;
+                            chartViewBasedOnRB.hideColumns([2]);
+                        }
+                        else if (rbHousingPriceIndices == "UC") {
+                            var clr = ['green'];
+                            options.colors = clr;
+                            chartViewBasedOnRB.hideColumns([1]);
+                        }
+
+                        if ($('#chkbefore1718').is(':checked')) {
+                            $('#liCompositePrice').hide();
+                            if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                                $('#60sqmt').prop('checked', true);
+                            }
+                            $('#CompositePrice').prop('checked', false);
+                        } else {
+                            $('#liCompositePrice').show();
+                        }
+
+                        chart.draw(chartViewBasedOnRB, options);
+
+                    });
+
+                }, 300)
+            }
+            else {
+                fetchData(function (jsonData) {
+                    const dataTable = new google.visualization.DataTable();
+                    dataTable.addColumn('string', 'Quarter');
+                    dataTable.addColumn('number', 'Composite @Assessment Prices');
+                    dataTable.addColumn('number', 'Composite @Market Prices for Under Construction Properties');
+                    /* dataTable.addColumn('number', 'Record');*/
+                    jsonData.forEach((row) => {
+                        dataTable.addRow([row['QTR_YEAR'],
+                        parseFloat(row['WTAVG_COMPOSITE']) || null,
+                        parseFloat(row['WTAVG_COMPOSITE']) || null
+                            //parseFloat(row['REC_COUNT']) || null
+                        ]);
+                    });
+                    options = {
+                        width: '100%', height: 350, pointSize: 5,
+                        legend: { position: 'top' },
+                        hAxis: { slantedText: true, slantedTextAngle: 45 },
+                        vAxis: { viewWindow: { min: 0 } },
+                        chartArea: { left: 50, width: '100%', height: '60%' },
+                        title: 'City : ' + cityname + selname,
+                        titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                        interpolateNulls: true
+                    };
+
+                    chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                    chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                    var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                    if (rbHousingPriceIndices == "HFC") {
+                        var clr = ['purple'];
+                        options.colors = clr;
+                        chartViewBasedOnRB.hideColumns([2]);
+                    }
+                    else if (rbHousingPriceIndices == "UC") {
+                        var clr = ['green'];
+                        options.colors = clr;
+                        chartViewBasedOnRB.hideColumns([1]);
+                    }
+
+                    if ($('#chkbefore1718').is(':checked')) {
+                        $('#liCompositePrice').hide();
+                        if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                            $('#60sqmt').prop('checked', true);
+                        }
+                        $('#CompositePrice').prop('checked', false);
+                    } else {
+                        $('#liCompositePrice').show();
+                    }
+
+                    chart.draw(chartViewBasedOnRB, options);
+
+                });
+            }
+
+        }
+        else if (chkUnitSizeinCarpetArea == 5) {
+            fetchData(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '<=60 sq.mt.(646 sq.ft.)');
+                dataTable.addColumn('number', '<=60 sq.mt.(646 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_LESSTHAN60']) || null,
+                    parseFloat(row['WTAVG_LESSTHAN60']) || null
+                        /*parseFloat(row['REC_COUNT']) || null*/
+
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top' },
+                    hAxis: { slantedText: true, slantedTextAngle: 45 },
+                    vAxis: { viewWindow: { min: 0 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['red'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['blue'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+
+        }
+        else if (chkUnitSizeinCarpetArea == 7) {
+            fetchData(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '>60 sq.mt.(646 sq.ft.) and <=110 sq.mt.(1184 sq.ft.)');
+                dataTable.addColumn('number', '>60 sq.mt.(646 sq.ft.) and <=110 sq.mt.(1184 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_60TO110']) || null,
+                    parseFloat(row['WTAVG_60TO110']) || null
+                        //parseFloat(row['REC_COUNT']) || null
+
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top' },
+                    hAxis: { slantedText: true, slantedTextAngle: 45 },
+                    vAxis: { viewWindow: { min: 0 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['orange'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['olive'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+        }
+        else {
+            fetchData(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '>110 sq.mt.(1184 sq.ft.)');
+                dataTable.addColumn('number', '>110 sq.mt.(1184 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_GREATER110']) || null,
+                    parseFloat(row['WTAVG_GREATER110']) || null
+                        //parseFloat(row['REC_COUNT']) || null
+
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top' },
+                    hAxis: { slantedText: true, slantedTextAngle: 45 },
+                    vAxis: { viewWindow: { min: 0 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['brown'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['pink'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+        }
+
+    }
+    else {
+        fetchData(function (jsonData) {
+            const dataTable = new google.visualization.DataTable();
+            dataTable.addColumn('string', 'Quarter');
+            dataTable.addColumn('number', 'HPI@Assessment Prices');
+            dataTable.addColumn('number', 'HPI@Market Prices');
+            jsonData.forEach((row) => {
+                dataTable.addRow([row['QTR_YEAR'],
+                parseFloat(row['HFC_INDEX']) || null,
+                parseFloat(row['UC_INDEX']) || null]);
+            });
+            options = {
+                width: '100%', height: 350, pointSize: 5,
+                legend: { position: 'top' },
+                hAxis: { slantedText: true, slantedTextAngle: 45 },
+                vAxis: { viewWindow: { min: 0 } },
+                chartArea: { left: 50, width: '100%', height: '60%' },
+                title: 'City : ' + cityname + selname,
+                titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                interpolateNulls: true
+            };
+
+            chart = new google.visualization.LineChart(document.getElementById('divPriceTrend'));
+            chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+            var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+            if (rbHousingPriceIndices == "HFC") {
+                chartViewBasedOnRB.hideColumns([2]);
+            }
+            else if (rbHousingPriceIndices == "UC") {
+                var clr = ['#dc3912'];
+                options.colors = clr;
+                chartViewBasedOnRB.hideColumns([1]);
+            }
+
+            if ($('#chkbefore1718').is(':checked')) {
+                $('#liCompositePrice').hide();
+                if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                    $('#60sqmt').prop('checked', true);
+                }
+                $('#CompositePrice').prop('checked', false);
+            } else {
+                $('#liCompositePrice').show();
+            }
+
+            chart.draw(chartViewBasedOnRB, options);
+
+        });
+
+    }
+}
+
+function showTable(unit) {
+    fetchData((jsonData) => {
+        const selectedHPI = $('input[name="HousingPriceIndices"]:checked').val();
+        let tableHtml = generateTableHeader(selectedHPI, unit);
+        jsonData.forEach((row) => {
+            tableHtml += generateTableRow(selectedHPI, row, unit);
+        });
+
+        tableHtml += `</tbody></table>`;
+        $("#divPriceTrend").html(tableHtml);
+    });
+}
+
+function generateTableHeader(hpiType, unit) {
+    //const unitLabel = unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd';
+    if (hpiType === "HFC") {
+        return ` <table class="table table-bordered table-responsive-sm table-striped"> <thead class="table-secondary" style="position: sticky; top: -1px;">
+        <tr> <th rowspan="2" class="text-center">Quarter</th> <th rowspan="2" class="text-center">Total Received Records</th> <th rowspan="2" class="text-center">Usable Record Count</th> <th rowspan="2" class="text-center">Usable Records %</th> <th rowspan="2" class="text-center">Composite Index</th> <th colspan="4" class="text-center">Carpet Area Prices (Rs.Per ${unit})</th> </tr> <tr>
+        <th class="text-center">Composite Price</th>
+        <th class="text-center">&lt;=60 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (646 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th> 
+        <th class="text-center">&gt;60 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} and &lt;=110 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (1184 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th>
+        <th class="text-center">&gt;110 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (1184 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th> 
+        </tr> </thead><tbody>`;
+    }
+    if (hpiType === "UC") {
+        return ` <table class="table table-bordered table-responsive-sm table-striped"> <thead class="table-secondary" style="position: sticky; top: -1px;"> <tr>
+        <th rowspan="2" class="text-center">Quarter</th> <th rowspan="2" class="text-center">Usable Record Count</th> <th rowspan="2" class="text-center">Composite Index</th>
+        <th colspan="4" class="text-center">Carpet Area Prices (Rs.Per ${unit})</th> </tr>
+        <tr>
+        <th class="text-center">Composite Price</th>
+        <th class="text-center">&lt;=60 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (646 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th> 
+        <th class="text-center">&gt;60 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} and &lt;=110 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (1184 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th>
+        <th class="text-center">&gt;110 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (1184 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th> 
+        </tr> </thead><tbody>`;
+    }
+    if (hpiType === "BOTH_INDEX") {
+        return ` <table class="table table-bordered table-responsive-sm table-striped"> <thead class="table-secondary" style="position: sticky; top: -1px;">
+        <tr>
+        <th rowspan="2" class="text-center">Quarter</th> <th colspan="2" class="text-center">HPI@Assessment Price</th> <th colspan="2" class="text-center">HPI@Market Prices for UC Properties</th>
+        </tr>
+        <tr>
+        <th class="text-center">Housing Price Index</th> <th class="text-center">Carpet Area Prices (Rs.Per ${unit})</th> <th class="text-center">Housing Price Index</th> <th class="text-center">Carpet Area Prices (Rs.Per ${unit})</th>
+        </tr>
+        </thead><tbody>`;
+    } return '';
+}
+
+function generateTableRow(hpiType, row, unit) {
+    const unitSuffix = unit === 'Sq.Ft.' ? '' : unit === 'Sq.Mt.' ? '_sqm' : '_sqyard';
+    if (hpiType === "HFC") {
+        return ` <tr> <td>${row['QTR_YEAR']}</td> <td>${row['TOTAL_RECORD_COUNT'] || "N/A"}</td> <td>${row['USABLE_RECORD_COUNT'] || "N/A"}</td> <td>${row['USABLE_RECORD_PERC'] || "N/A"}</td> <td>${row['HFC_INDEX'] || "N/A"}</td> <td>${row[`WTAVG_COMPOSITE${unitSuffix}`] || "N/A"}</td> <td>${row[`WTAVG_LESSTHAN60${unitSuffix}`] || "N/A"}</td> <td>${row[`WTAVG_60TO110${unitSuffix}`] || "N/A"}</td> <td>${row[`WTAVG_GREATER110${unitSuffix}`] || "N/A"}</td> </tr>`;
+    }
+
+    if (hpiType === "UC") {
+        return ` <tr> <td>${row['QTR_YEAR']}</td> <td>${row['REC_COUNT'] || "N/A"}</td> <td>${row['UC_INDEX'] || "N/A"}</td> <td>${row[`WTAVG_COMPOSITE${unitSuffix}`] || "N/A"}</td> <td>${row[`WTAVG_LESSTHAN60${unitSuffix}`] || "N/A"}</td> <td>${row[`WTAVG_60TO110${unitSuffix}`] || "N/A"}</td> <td>${row[`WTAVG_GREATER110${unitSuffix}`] || "N/A"}</td> </tr>`;
+    }
+
+    if (hpiType === "BOTH_INDEX") {
+        return ` <tr> <td>${row['QTR_YEAR']}</td> <td>${row['HFC_INDEX'] || "N/A"}</td> <td>${row[`HFC_WTAVG_COMPOSITE${unitSuffix}`] || "N/A"}</td> <td>${row['UC_INDEX'] || "N/A"}</td> <td>${row[`UC_WTAVG_COMPOSITE${unitSuffix}`] || "N/A"}</td> </tr>`;
+    }
+    return '';
+}
+
+function ShowErrorMessage(message) {
+    document.getElementById('divPriceTrend').innerHTML = `<p style="color: red;">${message}</p>`;
+    document.getElementById('divPriceTrend1').innerHTML = `<p style="color: red;">${message}</p>`;
+}
+
+function fetchDataCurrentQtr(callback) {
+
+    var selectedquarter = 1;
+    var chkbefore1718 = $("#chkbefore1718Checked").val();
+    var selectedCity = $("#selectedCity").val();
+    var lookup = $("#selectedHousingPriceIndices").val();
+
+    $.ajax({
+        url: "/DashboardBY2024/Get_NHBResiCersai_PriceTrend",
+        type: "POST",
+        data: {
+            reporttype: "CITY",
+            lookup: lookup,
+            cityid: selectedCity,
+            pincode: 0,
+            wardid: 0,
+            pricemtdid: selectedquarter,
+            locid: "0",
+            chkbefore1718: chkbefore1718
+        },
+        success: function (response) {
+            if (response.status === "Success" && response.data) {
+                const jsonData = JSON.parse(response.data); // Parse JSON string 
+                callback(jsonData);
+            } else {
+                console.error(response.message || "No data available.");
+
+                ShowErrorMessage(response.message || "No data available.");
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", status, error);
+            ShowErrorMessage("Error while fetching data.");
+        }
+    });
+}
+
+function showTableCurrentQtr(unit) {
+    //fetchData(function (jsonData) {
+    //    let tableHtml = `
+    //    <table style="width: 100%; text-align: center;" class="table table-bordered table-responsive-sm table-striped">
+    //    <thead class="table-secondary" style="position: sticky; top: -1px;">
+    //        <tr>
+    //            <th rowspan="2" class="text-center">Quarter</th>
+    //            <th rowspan="2" class="text-center">Total Received Records</th>
+    //            <th rowspan="2" class="text-center">Usable Record Count</th>
+    //            <th rowspan="2" class="text-center">Usable Records %</th>
+    //            <th rowspan="2" class="text-center">Composite Index</th>
+    //            <th colspan="4" class="text-center">Carpet Area Prices (Rs.Per ${unit})</th>
+    //        </tr>
+    //        <tr>
+    //            <th class="text-center">Composite Price</th>
+    //            <th class="text-center">&lt;=60 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (646 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th>
+    //            <th class="text-center">&gt;60 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} and &lt;=110 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (1184 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th>
+    //        <th class="text-center">&gt;110 sq.${unit === 'Sq.Ft.' ? 'Ft' : unit === 'Sq.Mt.' ? 'Mt' : 'Yd'} (1184 ${unit === 'Sq.Ft.' ? 'sq.ft' : unit === 'Sq.Mt.' ? 'sq.mt' : 'sq.yd'})</th>
+    //        </tr>
+    //    </thead>
+    //    <tbody>`;
+    //    jsonData.forEach((row) => {
+    //        tableHtml += `
+    //    <tr>
+    //        <td class="text-center">${row['QTR_YEAR']}</td>
+    //        <td class="text-center">${row['TOTAL_RECORD_COUNT'] || "N/A"}</td>
+    //        <td class="text-center">${row['USABLE_RECORD_COUNT'] || "N/A"}</td>
+    //        <td class="text-center">${row['USABLE_RECORD_PERC'] || "N/A"}</td>
+    //        <td class="text-center">${row['HFC_INDEX'] || "N/A"}</td>
+    //        <td class="text-center">${row[`WTAVG_COMPOSITE${unit === 'Sq.Ft.' ? '' : unit === 'Sq.Mt.' ? '_sqm' : '_sqyard'}`] || "N/A"}</td>
+    //        <td class="text-center">${row[`WTAVG_LESSTHAN60${unit === 'Sq.Ft.' ? '' : unit === 'Sq.Mt.' ? '_sqm' : '_sqyard'}`] || "N/A"}</td>
+    //        <td class="text-center">${row[`WTAVG_60TO110${unit === 'Sq.Ft.' ? '' : unit === 'Sq.Mt.' ? '_sqm' : '_sqyard'}`] || "N/A"}</td>
+    //        <td class="text-center">${row[`WTAVG_GREATER110${unit === 'Sq.Ft.' ? '' : unit === 'Sq.Mt.' ? '_sqm' : '_sqyard'}`] || "N/A"}</td>
+    //    </tr>`;
+    //    });
+    //    tableHtml += `</tbody></table>`;
+    //    $("#divPriceTrend1").html(tableHtml);
+    //});
+
+    fetchDataCurrentQtr((jsonData) => {
+        const selectedHPI = $('input[name="HousingPriceIndices"]:checked').val();
+        let tableHtml = generateTableHeader(selectedHPI, unit);
+        jsonData.forEach((row) => {
+            tableHtml += generateTableRow(selectedHPI, row, unit);
+        });
+
+        tableHtml += `</tbody></table>`;
+        $("#divPriceTrend1").html(tableHtml);
+    });
+
+
+}
+
+function showChartCurrentQtr() {
+
+     var rbCitywiseHPI = $("#selectedCitywiseHPI").val();
+    var rbHPI = $("#selectedHousingPriceIndices").val();
+    var chkUnitSizeinCarpetArea = $("#chkUnitSizeinCarpetArea").val();
+    var selname = '';  
+    var cityid;
+    cityid = $('#ddlCity').val();
+    //Fixed
+    // if (!cityid) {
+    //     cityid = $("#ddlCity option").eq(1).val();
+    //     $("#ddlCity").val(cityid);
+    // }
+        if (cityid == null) {
+        $("#ddlCity").val($("#ddlCity option").eq(1).val());
+        cityid = $('#ddlCity').val();
+    }
+    var cityname = $('#ddlCity option:selected').text();
+
+    var selname = ''; sqtype = 0;
+
+    if (rbCitywiseHPI == 2) {
+
+        if (chkUnitSizeinCarpetArea == 3) {
+
+            if (rbHPI == "BOTH_INDEX") {
+      
+                setTimeout(function () {
+                    //var $radios = $('input:checkbox[name=UnitSizeinCarpetArea]');
+                    //$radios.prop('checked', false);
+                    //$radios.filter('[value=3]').prop('checked', true);
+                    //$("#chkUnitSizeinCarpetArea").val("3");
+
+                    fetchDataCurrentQtr(function (jsonData) {
+                        const dataTable = new google.visualization.DataTable();
+                        dataTable.addColumn('string', 'Quarter');
+                        dataTable.addColumn('number', 'Composite @Assessment Prices');
+                        dataTable.addColumn('number', 'Composite @Market Prices for Under Construction Properties');
+                        /* dataTable.addColumn('number', 'Record');*/
+                        jsonData.forEach((row) => {
+                            dataTable.addRow([row['QTR_YEAR'],
+                            parseFloat(row['HFC_WTAVG_COMPOSITE']) || null,
+                            parseFloat(row['UC_WTAVG_COMPOSITE']) || null
+                                //parseFloat(row['REC_COUNT']) || null
+                            ]);
+                        });
+                        options = {
+                            width: '100%', height: 350, pointSize: 5,
+                            legend: { position: 'top', textStyle: { fontSize: 12 } },
+                            hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                            vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                            chartArea: { left: 50, width: '100%', height: '60%' },
+                            title: 'City : ' + cityname + selname,
+                            titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                            interpolateNulls: true
+                        };
+
+                        chart = new google.visualization.LineChart(document.getElementById('divPriceTrend1'));
+                        chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                        var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                        if (rbHousingPriceIndices == "HFC") {
+                            var clr = ['purple'];
+                            options.colors = clr;
+                            chartViewBasedOnRB.hideColumns([2]);
+                        }
+                        else if (rbHousingPriceIndices == "UC") {
+                            var clr = ['green'];
+                            options.colors = clr;
+                            chartViewBasedOnRB.hideColumns([1]);
+                        }
+
+                        if ($('#chkbefore1718').is(':checked')) {
+                            $('#liCompositePrice').hide();
+                            if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                                $('#60sqmt').prop('checked', true);
+                            }
+                            $('#CompositePrice').prop('checked', false);
+                        } else {
+                            $('#liCompositePrice').show();
+                        }
+
+                        chart.draw(chartViewBasedOnRB, options);
+
+                    });
+
+                }, 300)
+            }
+            else {
+                fetchDataCurrentQtr(function (jsonData) {
+                    const dataTable = new google.visualization.DataTable();
+                    dataTable.addColumn('string', 'Quarter');
+                    dataTable.addColumn('number', 'Composite @Assessment Prices');
+                    dataTable.addColumn('number', 'Composite @Market Prices for Under Construction Properties');
+                    /* dataTable.addColumn('number', 'Record');*/
+                    jsonData.forEach((row) => {
+                        dataTable.addRow([row['QTR_YEAR'],
+                        parseFloat(row['WTAVG_COMPOSITE']) || null,
+                        parseFloat(row['WTAVG_COMPOSITE']) || null
+                            //parseFloat(row['REC_COUNT']) || null
+                        ]);
+                    });
+                    options = {
+                        width: '100%', height: 350, pointSize: 5,
+                        legend: { position: 'top', textStyle: { fontSize: 12 } },
+                        hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                        vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                        chartArea: { left: 50, width: '100%', height: '60%' },
+                        title: 'City : ' + cityname + selname,
+                        titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                        interpolateNulls: true
+                    };
+
+                    chart = new google.visualization.LineChart(document.getElementById('divPriceTrend1'));
+                    chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                    var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                    if (rbHousingPriceIndices == "HFC") {
+                        var clr = ['purple'];
+                        options.colors = clr;
+                        chartViewBasedOnRB.hideColumns([2]);
+                    }
+                    else if (rbHousingPriceIndices == "UC") {
+                        var clr = ['green'];
+                        options.colors = clr;
+                        chartViewBasedOnRB.hideColumns([1]);
+                    }
+
+                    if ($('#chkbefore1718').is(':checked')) {
+                        $('#liCompositePrice').hide();
+                        if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                            $('#60sqmt').prop('checked', true);
+                        }
+                        $('#CompositePrice').prop('checked', false);
+                    } else {
+                        $('#liCompositePrice').show();
+                    }
+
+                    chart.draw(chartViewBasedOnRB, options);
+
+                });
+            }
+
+        }
+        else if (chkUnitSizeinCarpetArea == 5) {
+            fetchDataCurrentQtr(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '<=60 sq.mt.(646 sq.ft.)');
+                dataTable.addColumn('number', '<=60 sq.mt.(646 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_LESSTHAN60']) || null,
+                    parseFloat(row['WTAVG_LESSTHAN60']) || null
+                        /*parseFloat(row['REC_COUNT']) || null*/
+
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top', textStyle: { fontSize: 12 } },
+                    hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                    vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend1'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['red'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['blue'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+
+        }
+        else if (chkUnitSizeinCarpetArea == 7) {
+            fetchDataCurrentQtr(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '>60 sq.mt.(646 sq.ft.) and <=110 sq.mt.(1184 sq.ft.)');
+                dataTable.addColumn('number', '>60 sq.mt.(646 sq.ft.) and <=110 sq.mt.(1184 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_60TO110']) || null,
+                    parseFloat(row['WTAVG_60TO110']) || null
+                        //parseFloat(row['REC_COUNT']) || null
+
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top', textStyle: { fontSize: 12 } },
+                    hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                    vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend1'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['orange'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['olive'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+        }
+        else {
+            fetchDataCurrentQtr(function (jsonData) {
+                const dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Quarter');
+                dataTable.addColumn('number', '>110 sq.mt.(1184 sq.ft.)');
+                dataTable.addColumn('number', '>110 sq.mt.(1184 sq.ft.)');
+                //dataTable.addColumn('number', 'Record');
+                jsonData.forEach((row) => {
+                    dataTable.addRow([row['QTR_YEAR'],
+                    parseFloat(row['WTAVG_GREATER110']) || null,
+                    parseFloat(row['WTAVG_GREATER110']) || null
+                        //parseFloat(row['REC_COUNT']) || null
+                    ]);
+                });
+                options = {
+                    width: '100%', height: 350, pointSize: 5,
+                    legend: { position: 'top', textStyle: { fontSize: 12 } },
+                    hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                    vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                    chartArea: { left: 50, width: '100%', height: '60%' },
+                    title: 'City : ' + cityname + selname,
+                    titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                    interpolateNulls: true
+                };
+
+                chart = new google.visualization.LineChart(document.getElementById('divPriceTrend1'));
+                chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+                var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+                if (rbHousingPriceIndices == "HFC") {
+                    var clr = ['brown'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([2]);
+                }
+                else if (rbHousingPriceIndices == "UC") {
+                    var clr = ['pink'];
+                    options.colors = clr;
+                    chartViewBasedOnRB.hideColumns([1]);
+                }
+
+                if ($('#chkbefore1718').is(':checked')) {
+                    $('#liCompositePrice').hide();
+                    if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                        $('#60sqmt').prop('checked', true);
+                    }
+                    $('#CompositePrice').prop('checked', false);
+                } else {
+                    $('#liCompositePrice').show();
+                }
+
+                chart.draw(chartViewBasedOnRB, options);
+
+            });
+        }
+
+    }
+    else {
+        fetchDataCurrentQtr(function (jsonData) {
+            const dataTable = new google.visualization.DataTable();
+            dataTable.addColumn('string', 'Quarter');
+            dataTable.addColumn('number', 'HPI@Assessment Prices');
+            dataTable.addColumn('number', 'HPI@Market Prices');
+            jsonData.forEach((row) => {
+                dataTable.addRow([row['QTR_YEAR'],
+                parseFloat(row['HFC_INDEX']) || null,
+                parseFloat(row['UC_INDEX']) || null]);
+            });
+            options = {
+                width: '100%', height: 350, pointSize: 5,
+                legend: { position: 'top', textStyle: { fontSize: 12 } },
+                hAxis: { slantedText: true, slantedTextAngle: 45, textStyle: { fontSize: 13 } },
+                vAxis: { viewWindow: { min: 0 }, textStyle: { fontSize: 13 } },
+                chartArea: { left: 50, width: '100%', height: '60%' },
+                title: 'City : ' + cityname + selname,
+                titleTextStyle: { color: 'orangered', fontName: 'Arial', fontSize: 14 },
+                interpolateNulls: true
+            };
+
+            chart = new google.visualization.LineChart(document.getElementById('divPriceTrend1'));
+            chartViewBasedOnRB = new google.visualization.DataView(dataTable);
+
+            var rbHousingPriceIndices = $("#selectedHousingPriceIndices").val();
+            if (rbHousingPriceIndices == "HFC") {
+                chartViewBasedOnRB.hideColumns([2]);
+            }
+            else if (rbHousingPriceIndices == "UC") {
+                var clr = ['#dc3912'];
+                options.colors = clr;
+                chartViewBasedOnRB.hideColumns([1]);
+            }
+
+            if ($('#chkbefore1718').is(':checked')) {
+                $('#liCompositePrice').hide();
+                if ($('input[type=checkbox][name=UnitSizeinCarpetArea]:checked').not("#CompositePrice").length === 0) {
+                    $('#60sqmt').prop('checked', true);
+                }
+                $('#CompositePrice').prop('checked', false);
+            } else {
+                $('#liCompositePrice').show();
+            }
+
+            chart.draw(chartViewBasedOnRB, options);
+
+        });
+
+    }
+
+}
+
