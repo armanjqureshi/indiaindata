@@ -1,0 +1,42 @@
+{
+ "runAt": "2026-11-12T04:16:43.183Z",
+ "backfillDays": 0,
+ "accepted": [
+  "tomato 2026-11-11: 456 markets, median 2750",
+  "onion 2026-11-11: 381 markets, median 5300",
+  "potato 2026-11-11: 406 markets, median 1950",
+  "garlic 2026-11-11: 134 markets, median 20000",
+  "ginger 2026-11-11: 223 markets, median 9000",
+  "green-chilli 2026-11-11: 361 markets, median 5000",
+  "cauliflower 2026-11-11: 294 markets, median 2750",
+  "cabbage 2026-11-11: 306 markets, median 2500",
+  "brinjal 2026-11-11: 437 markets, median 4000",
+  "bhindi 2026-11-11: 341 markets, median 3000",
+  "carrot 2026-11-11: 254 markets, median 5500",
+  "capsicum 2026-11-11: 136 markets, median 5950",
+  "wheat 2026-11-11: 148 markets, median 2700",
+  "gram 2026-11-11: 72 markets, median 7058",
+  "tur 2026-11-11: 31 markets, median 9021"
+ ],
+ "notes": [
+  "onion 2026-11-12: only 0 markets, skipped",
+  "tomato 2026-11-12: only 0 markets, skipped",
+  "potato 2026-11-12: only 0 markets, skipped",
+  "garlic 2026-11-12: only 0 markets, skipped",
+  "ginger 2026-11-12: only 0 markets, skipped",
+  "green-chilli 2026-11-12: only 0 markets, skipped",
+  "cauliflower 2026-11-12: only 0 markets, skipped",
+  "cabbage 2026-11-12: only 0 markets, skipped",
+  "brinjal 2026-11-12: only 0 markets, skipped",
+  "bhindi 2026-11-12: only 0 markets, skipped",
+  "carrot 2026-11-12: only 0 markets, skipped",
+  "capsicum 2026-11-12: only 0 markets, skipped",
+  "wheat 2026-11-12: only 0 markets, skipped",
+  "gram 2026-11-12: only 0 markets, skipped",
+  "tur 2026-11-12: only 0 markets, skipped"
+ ],
+ "errors": [
+  "potato: publish HTTP 409 {\"message\":\"is at 311baecbeea586f5bf260345ce3646f3b107e7f9 but expected 5294f17dc81ab855c80e93a5fc9c9935124adc52\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file"
+ ],
+ "latest": "2026-11-12"
+}
