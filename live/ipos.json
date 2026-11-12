@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T06:36:00.783Z",
+ "updatedAt": "2026-11-12T06:38:12.073Z",
  "lastPriceSession": "2026-11-11",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -174,6 +174,48 @@
   },
   {
    "slug": "m-k-sons-fine-jewels",
+   "symbol": "MKJEWELS",
+   "board": "mainboard",
+   "name": "M. K. Sons Fine Jewels Limited",
+   "status": "listed",
+   "open": "2026-10-28",
+   "close": "2026-10-30",
+   "listingDate": "2026-11-04",
+   "timetable": {
+    "open": "2026-10-28",
+    "close": "2026-10-30",
+    "allotment": "2026-11-02",
+    "refunds": "2026-11-03",
+    "demat": "2026-11-03",
+    "listing": "2026-11-04",
+    "expected": {
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 153,
+   "priceHigh": 162,
+   "issuePrice": 162,
+   "lotSize": 91,
+   "lotValue": 14742,
+   "sizeCr": 275.4,
+   "subscription": 5.09,
+   "subscriptionAsOf": "30-Oct-2026 19:00:00",
+   "listing": {
+    "date": "2026-11-04",
+    "open": 171,
+    "close": 162.2,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": 5.6,
+   "lastClose": 161.9,
+   "lastCloseDate": "2026-11-11",
+   "gainPct": -0.1,
+   "hasDetail": true
+  },
+  {
+   "slug": "m-k-sons-fine-jewels",
    "symbol": "MKSONS",
    "board": "mainboard",
    "name": "M. K. Sons Fine Jewels Limited",
@@ -208,48 +250,6 @@
    "lastClose": null,
    "lastCloseDate": null,
    "gainPct": null,
-   "hasDetail": true
-  },
-  {
-   "slug": "m-k-sons-fine-jewels",
-   "symbol": "MKJEWELS",
-   "board": "mainboard",
-   "name": "M. K. Sons Fine Jewels Limited",
-   "status": "listed",
-   "open": "2026-10-28",
-   "close": "2026-10-30",
-   "listingDate": "2026-11-04",
-   "timetable": {
-    "open": "2026-10-28",
-    "close": "2026-10-30",
-    "allotment": "2026-11-02",
-    "refunds": "2026-11-03",
-    "demat": "2026-11-03",
-    "listing": "2026-11-04",
-    "expected": {
-     "demat": true,
-     "refunds": true,
-     "allotment": true
-    }
-   },
-   "priceLow": 153,
-   "priceHigh": 162,
-   "issuePrice": 162,
-   "lotSize": null,
-   "lotValue": null,
-   "sizeCr": null,
-   "subscription": 5.09,
-   "subscriptionAsOf": "30-Oct-2026 19:00:00",
-   "listing": {
-    "date": "2026-11-04",
-    "open": 171,
-    "close": 162.2,
-    "source": "NSE end-of-day file for the listing date"
-   },
-   "listingGainPct": 5.6,
-   "lastClose": 161.9,
-   "lastCloseDate": "2026-11-11",
-   "gainPct": -0.1,
    "hasDetail": true
   },
   {
