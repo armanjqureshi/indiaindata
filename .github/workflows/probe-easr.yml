@@ -1,0 +1,21 @@
+name: Probe Maharashtra ready reckoner (India runner)
+# One-off: igrmaharashtra.gov.in does not answer requests from outside India, so this runs on
+# the self-hosted runner and publishes its results through the contents API (no git needed).
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: self-hosted
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/probe/easr.mjs
+      - name: Publish
+        run: node scripts/data/push-via-api.mjs "eASR probe [skip netlify]" live/debug/easr-probe.json data/raw/property/easr
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
