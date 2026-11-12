@@ -1,57 +1,55 @@
 {
- "runAt": "2026-11-12T12:35:15.451Z",
+ "runAt": "2026-11-12T12:36:24.618Z",
  "items": {
-  "dashboard_js": {
-   "path": "/customappscripts/dashboard/dashboard.js",
+  "home": {
+   "p": "/",
    "status": 200,
-   "type": "text/javascript",
-   "bytes": 56875,
-   "head": "﻿$(document).ready(function () {\r\n    google.charts.load('current', { packages: ['corechart', 'line'] });\r\n    google.charts.setOnLoadCallback(showChart);\r\n\r\n    google.charts.load('current', { packages: ['corechart'] });\r\n    google.charts.setOnLoadCallback(loadCityChart);\r\n    //BindQuarterDropDow"
+   "type": "text/html; charset=utf-8",
+   "bytes": 1371620,
+   "head": "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n\t<meta charset=\"utf-8\" />\r\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t<title>NHB - RESIDEX | National Housing Bank</title>\r\n\t<link rel=\"icon\" type=\"image/x-icon\" href=\"/defaultsiteimages/loading_NHB.gif\" />\r\n\t<script src=\"/lib/jquery/dist/jquery.min.js\"></script>\r\n\t<link href=\"/css/site.css\" rel=\"stylesheet\" />\r\n\t<link h"
   },
-  "common_js": {
-   "path": "/customappscripts/commonsitescript.js",
+  "dl_hfc_price": {
+   "p": "/Dashboard/GetFileDataToDownload",
    "status": 200,
-   "type": "text/javascript",
-   "bytes": 12405,
-   "head": "﻿/// <reference path=\"blockui.js\" />\r\n\r\n\r\n\r\nvar CommonURL = null;\r\nvar getUrl = window.location;\r\nCommonURL = getUrl.protocol + \"//\" + getUrl.host + \"/\";\r\n\r\n$(document).ready(function () {\r\n    $(\".globalAlert\").hide();\r\n    $(\"#btnCloseError\").click(function () {\r\n        $(\"#globalAlertError\").hid"
+   "type": "application/json; charset=utf-8",
+   "bytes": 84233,
+   "head": "{\"status\":\"Success\",\"data\":\"[{\\u0022City\\u0022:\\u0022Mumbai\\u0022,\\u0022Quarter\\u0022:\\u0022Jun 2025\\u0022,\\u0022Composite Price\\u0022:\\u002227,005\\u0022,\\u0022\\u003C=60 sq.mt.(646 sq.ft)\\u0022:\\u002225,364\\u0022,\\u0022\\u003E60 sq.mt.(646 sq.ft) and \\u003C=110 sq.mt.(1184 sq.ft)\\u0022:\\u002229,704\\u0022,\\u0022\\u003E110 sq.mt.(1184 sq.ft)\\u0022:\\u002231,895\\u0022},{\\u0022City\\u0022:\\u0022Mumbai\\u00"
   },
-  "chartloader_js": {
-   "path": "/customappscripts/chartloader.js",
+  "dl_hfc_index": {
+   "p": "/Dashboard/GetFileDataToDownload",
    "status": 200,
-   "type": "text/javascript",
-   "bytes": 76445,
-   "head": "﻿(function () {/*\r\n\r\n Copyright The Closure Library Authors.\r\n SPDX-License-Identifier: Apache-2.0\r\n*/\r\n    'use strict'; function aa(a) { var b = 0; return function () { return b < a.length ? { done: !1, value: a[b++] } : { done: !0 } } } var ba = \"function\" == typeof Object.defineProperties ? Obje"
+   "type": "application/json; charset=utf-8",
+   "bytes": 9280,
+   "head": "{\"status\":\"Success\",\"data\":\"[{\\u0022City\\u0022:\\u0022Ahmedabad\\u0022,\\u0022Jun- 2025\\u0022:101.85,\\u0022Sep- 2025\\u0022:103.22,\\u0022Dec- 2025\\u0022:105.07,\\u0022Mar- 2026\\u0022:107.31,\\u0022Jun- 2026\\u0022:109.90},{\\u0022City\\u0022:\\u0022Bengaluru\\u0022,\\u0022Jun- 2025\\u0022:99.88,\\u0022Sep- 2025\\u0022:104.22,\\u0022Dec- 2025\\u0022:108.47,\\u0022Mar- 2026\\u0022:113.13,\\u0022Jun- 2026\\u0022:121.32},"
   },
-  "pr_2026q1": {
-   "path": "/DataUploadFormats/PressRelease_English/Press Release April-June 2026.pdf",
+  "dl_uc_price": {
+   "p": "/Dashboard/GetFileDataToDownload",
    "status": 200,
-   "type": "application/pdf",
-   "bytes": 232503,
-   "head": ""
+   "type": "application/json; charset=utf-8",
+   "bytes": 770651,
+   "head": "{\"status\":\"Success\",\"data\":\"[{\\u0022City\\u0022:\\u0022Mumbai\\u0022,\\u0022Quarter\\u0022:\\u0022Jun-2013\\u0022,\\u0022Composite Price\\u0022:\\u002220,896\\u0022,\\u0022\\u003C=60 sq.mt.(646 sq.ft)\\u0022:\\u002218,333\\u0022,\\u0022\\u003E60 sq.mt.(646 sq.ft) and \\u003C=110 sq.mt.(1184 sq.ft)\\u0022:\\u002219,192\\u0022,\\u0022\\u003E110 sq.mt.(1184 sq.ft)\\u0022:\\u002233,624\\u0022},{\\u0022City\\u0022:\\u0022Mumbai\\u00"
   },
-  "pr_2026q0": {
-   "path": "/DataUploadFormats/PressRelease_English/Press Release January-March 2026.pdf",
+  "dl_uc_index": {
+   "p": "/Dashboard/GetFileDataToDownload",
    "status": 200,
-   "type": "application/pdf",
-   "bytes": 235904,
-   "head": ""
+   "type": "application/json; charset=utf-8",
+   "bytes": 65768,
+   "head": "{\"status\":\"Success\",\"data\":\"[{\\u0022City\\u0022:\\u0022Ahmedabad\\u0022,\\u0022Jun--2013\\u0022:74.0,\\u0022Sep--2013\\u0022:75.0,\\u0022Dec--2013\\u0022:76.0,\\u0022Mar--2014\\u0022:78.0,\\u0022Jun--2014\\u0022:80.0,\\u0022Sep--2014\\u0022:81.0,\\u0022Dec--2014\\u0022:82.0,\\u0022Mar--2015\\u0022:83.0,\\u0022Jun--2015\\u0022:85.0,\\u0022Sep--2015\\u0022:88.0,\\u0022Dec--2015\\u0022:91.0,\\u0022Mar--2016\\u0022:93.0,\\u0022J"
   },
-  "pr_2025q2": {
-   "path": "/DataUploadFormats/PressRelease_English/Press Release July-September 2025.pdf",
+  "dl_hfc_price_curq": {
+   "p": "/Dashboard/GetFileDataToDownload",
    "status": 200,
-   "type": "application/pdf",
-   "bytes": 197487,
-   "head": ""
+   "type": "application/json; charset=utf-8",
+   "bytes": 84259,
+   "head": "{\"status\":\"Success\",\"data\":\"[{\\u0022City\\u0022:\\u0022Mumbai\\u0022,\\u0022Quarter\\u0022:\\u0022Jun 2025\\u0022,\\u0022Composite Price\\u0022:\\u002227,293\\u0022,\\u0022\\u003C=60 sq.mt.(646 sq.ft)\\u0022:\\u002225,833\\u0022,\\u0022\\u003E60 sq.mt.(646 sq.ft) and \\u003C=110 sq.mt.(1184 sq.ft)\\u0022:\\u002229,750\\u0022,\\u0022\\u003E110 sq.mt.(1184 sq.ft)\\u0022:\\u002231,452\\u0022},{\\u0022City\\u0022:\\u0022Mumbai\\u00"
   },
-  "ep_0_get": {
-   "path": "/Dashboard/GetFileDataToDownload",
-   "status": 405,
-   "type": null,
-   "bytes": 0,
-   "head": ""
+  "scroll": {
+   "p": "/Dashboard/GetResidexPriceScroll",
+   "status": 200,
+   "type": "application/json; charset=utf-8",
+   "bytes": 36,
+   "head": "{\"status\":\"Unknown\",\"jsonResult\":\"\"}"
   }
  },
- "endpoints": [
-  "/Dashboard/GetFileDataToDownload"
- ]
+ "cityCount": 0
 }
