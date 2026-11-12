@@ -110,9 +110,12 @@ for (const e of current) upsert(e)
 // NSE removes an issue from its current list when bidding ends and adds it to past
 // issues only after listing. Keep unlisted issues from the previous run in between,
 // so they do not disappear for the days before listing.
+const namesNow = new Set([...bySym.values()].map((i) => i.board + '|' + slugify(i.name || '')))
 for (const p of prevIndex.ipos) {
   const key = p.symbol + '|' + p.board
   if (bySym.has(key)) continue
+  // the same issue can come back under its listed symbol (MKSONS bid, MKJEWELS listed)
+  if (namesNow.has(p.board + '|' + slugify(p.name || ''))) continue
   if (p.status === 'listed' || p.status === 'unlisted') continue
   if (!p.close || p.close < addDays(today, -30)) continue
   bySym.set(key, {
@@ -377,11 +380,14 @@ for (const ipo of ordered) {
 // refresh only its latest price, instead of deleting history.
 {
   const have = new Set(list.map((i) => i.symbol + '|' + i.board))
+  const haveNames = new Set(list.map((i) => i.board + '|' + slugify(i.name || '')))
   let kept = 0
   for (const p of [...prevArchiveAll.ipos, ...prevIndex.ipos]) {
     const key = p.symbol + '|' + p.board
-    if (have.has(key) || !['listed', 'unlisted'].includes(p.status)) continue
+    const nameKey = p.board + '|' + slugify(p.name || '')
+    if (have.has(key) || haveNames.has(nameKey) || !['listed', 'unlisted'].includes(p.status)) continue
     have.add(key)
+    haveNames.add(nameKey)
     const last = lastPrices.get(key)
     const r1 = (v) => (Number.isFinite(v) ? Math.round(v * 10) / 10 : null)
     const row = { ...p }
