@@ -1,12 +1,9 @@
 {
- "runAt": "2026-11-13T09:51:23.979Z",
- "accepted": [
-  "2026-11-12: 285 cities"
- ],
- "notes": [
-  "2026-11-13: bulletin not published",
-  "2026-11-12: Kalyan listed twice (AQI 110 on 2 stations, 81 on 1); kept the one with more stations",
-  "no state on file for: bilaspur, pratapgarh"
- ],
- "errors": []
+ "runAt": "2026-11-13T19:20:32.787Z",
+ "accepted": [],
+ "notes": [],
+ "errors": [
+  "2026-11-14: fetch failed",
+  "2026-11-13: fetch failed"
+ ]
 }
