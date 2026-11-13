@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T12:36:01.105Z",
+ "updatedAt": "2026-11-13T18:35:44.475Z",
  "lastPriceSession": "2026-11-13",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -8517,44 +8517,6 @@
    "lastClose": 515.4,
    "lastCloseDate": "2026-11-13",
    "gainPct": -10.7,
-   "hasDetail": false
-  },
-  {
-   "slug": "fujiyama-power-systems",
-   "symbol": "UTLSOLAR",
-   "board": "mainboard",
-   "name": "Fujiyama Power Systems Limited",
-   "status": "listed",
-   "open": "2025-11-13",
-   "close": "2025-11-17",
-   "listingDate": "2025-11-20",
-   "timetable": {
-    "open": "2025-11-13",
-    "close": "2025-11-17",
-    "allotment": null,
-    "refunds": null,
-    "demat": null,
-    "listing": "2025-11-20",
-    "expected": {}
-   },
-   "priceLow": 216,
-   "priceHigh": 228,
-   "issuePrice": 228,
-   "lotSize": null,
-   "lotValue": null,
-   "sizeCr": null,
-   "subscription": null,
-   "subscriptionAsOf": null,
-   "listing": {
-    "date": "2025-11-20",
-    "open": 220,
-    "close": 208.44,
-    "source": "NSE end-of-day file for the listing date"
-   },
-   "listingGainPct": -3.5,
-   "lastClose": 347.05,
-   "lastCloseDate": "2026-11-13",
-   "gainPct": 52.2,
    "hasDetail": false
   }
  ]

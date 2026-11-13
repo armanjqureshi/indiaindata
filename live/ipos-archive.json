@@ -1,9 +1,37 @@
 {
- "updatedAt": "2026-11-13T12:36:01.114Z",
+ "updatedAt": "2026-11-13T18:35:44.480Z",
  "lastPriceSession": "2026-11-13",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
+  {
+   "slug": "fujiyama-power-systems",
+   "symbol": "UTLSOLAR",
+   "board": "mainboard",
+   "name": "Fujiyama Power Systems Limited",
+   "status": "listed",
+   "open": "2025-11-13",
+   "close": "2025-11-17",
+   "listingDate": "2025-11-20",
+   "priceLow": 216,
+   "priceHigh": 228,
+   "issuePrice": 228,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-20",
+    "open": 220,
+    "close": 208.44,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -3.5,
+   "lastClose": 347.05,
+   "lastCloseDate": "2026-11-13",
+   "gainPct": 52.2
+  },
   {
    "slug": "tenneco-clean-air-india",
    "symbol": "TENNIND",
