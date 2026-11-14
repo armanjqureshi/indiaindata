@@ -1,9 +1,37 @@
 {
- "updatedAt": "2026-11-13T21:35:45.498Z",
+ "updatedAt": "2026-11-14T18:35:44.012Z",
  "lastPriceSession": "2026-11-13",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
+  {
+   "slug": "capillary-technologies-india",
+   "symbol": "CAPILLARY",
+   "board": "mainboard",
+   "name": "Capillary Technologies India Limited",
+   "status": "listed",
+   "open": "2025-11-14",
+   "close": "2025-11-18",
+   "listingDate": "2025-11-21",
+   "priceLow": 549,
+   "priceHigh": 577,
+   "issuePrice": 577,
+   "lotSize": null,
+   "lotValue": null,
+   "sizeCr": null,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": {
+    "date": "2025-11-21",
+    "open": 571.9,
+    "close": 606.5,
+    "source": "NSE end-of-day file for the listing date"
+   },
+   "listingGainPct": -0.9,
+   "lastClose": 515.4,
+   "lastCloseDate": "2026-11-13",
+   "gainPct": -10.7
+  },
   {
    "slug": "fujiyama-power-systems",
    "symbol": "UTLSOLAR",
