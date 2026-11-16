@@ -1,0 +1,30 @@
+{
+ "subscription": null,
+ "lotSize": 600,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of fresh issue of up to 49,02,000 Equity Shares (including Market Maker portion of 2,52,000 Equity Shares)",
+ "issueSize": {
+  "freshCr": 120.1,
+  "ofsCr": 0,
+  "totalCr": 120.1,
+  "method": "Calculated at ₹245 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Oneview Corporate Advisors Private Limited"
+ ],
+ "registrar": "Maashitla Securities Private Limited",
+ "registrarContact": "Mr. Mukul Agrawal, 01147581432, ipo@maashitla.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_WATRANA.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_WATRANA.zip"
+ },
+ "fetchedAt": "2026-11-16T12:35:32.700Z",
+ "slug": "watrana-rentals",
+ "symbol": "WATRANA",
+ "board": "sme",
+ "name": "Watrana Rentals Limited"
+}
