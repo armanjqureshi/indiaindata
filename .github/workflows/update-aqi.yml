@@ -12,8 +12,12 @@ on:
       backfill_days:
         description: 'Days before today to fetch (1 for the normal run)'
         default: '1'
+      bulletins_run_id:
+        description: 'Run id of a "Fetch CPCB AQI bulletins" run whose PDFs to parse (set by that job)'
+        default: ''
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: live-data
   cancel-in-progress: false
@@ -28,10 +32,19 @@ jobs:
           node-version: 20
       - name: Install pdftotext
         run: which pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
+      - name: Get bulletins downloaded by the India runner
+        if: ${{ inputs.bulletins_run_id != '' && inputs.bulletins_run_id != null }}
+        uses: actions/download-artifact@v4
+        with:
+          name: cpcb-bulletins
+          path: cpcb-pdfs
+          run-id: ${{ inputs.bulletins_run_id }}
+          github-token: ${{ github.token }}
       - name: Fetch and parse bulletins
         run: node scripts/data/update-aqi.mjs
         env:
           BACKFILL_DAYS: ${{ inputs.backfill_days || '1' }}
+          AQI_FALLBACK_DIR: cpcb-pdfs
       - name: Commit if anything changed
         run: |
           git config user.name "india-in-data-bot"

@@ -44,6 +44,11 @@ async function bulletin(iso) {
     if (!fs.existsSync(f)) return { missing: true }
     return { text: execFileSync('pdftotext', ['-layout', f, '-'], { encoding: 'utf8', maxBuffer: 32 << 20 }) }
   }
+  // bulletins downloaded by the India runner (see fetch-cpcb.mjs), used before trying CPCB directly
+  if (process.env.AQI_FALLBACK_DIR) {
+    const f = path.join(process.env.AQI_FALLBACK_DIR, `AQI_Bulletin_${iso.replace(/-/g, '')}.pdf`)
+    if (fs.existsSync(f)) return { text: execFileSync('pdftotext', ['-layout', f, '-'], { encoding: 'utf8', maxBuffer: 32 << 20 }) }
+  }
   let last
   for (let a = 1; a <= 3; a++) {
     try {
