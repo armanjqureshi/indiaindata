@@ -108,7 +108,7 @@ async function doDate(iso) {
     if (p.problems.length) { log.errors.push(`${iso}: ${JSON.stringify(p.problems).slice(0, 300)}`); return }
     if (p.cities.length < MIN_CITIES) { log.errors.push(`${iso}: only ${p.cities.length} cities parsed`); return }
     accept(iso, p)
-  } catch (e) { log.errors.push(`${iso}: ${String(e.message || e).slice(0, 200)}`) }
+  } catch (e) { log.errors.push(`${iso}: ${String(e.message || e).slice(0, 120)}${e.cause ? ` (${e.cause.code || ''} ${String(e.cause.message || '').slice(0, 120)})` : ''}`) }
 }
 
 const near = (hist, iso, tolerance) => {
