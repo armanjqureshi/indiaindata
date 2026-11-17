@@ -1,22 +1,23 @@
 {
- "runAt": "2026-11-17T07:42:25.341Z",
+ "runAt": "2026-11-17T14:01:48.334Z",
  "notes": [
-  "2026-11-04 am g585 = 85521 left out: 0.606 of 999 gold, expected about 0.585"
+  "2026-11-04 am g585 = 85521 left out: 0.606 of 999 gold, expected about 0.585",
+  "2026-11-17 am platinum = 49869, -10.2% from 2026-11-16 close (55547); as published by IBJA"
  ],
  "errors": [],
  "previousRows": 8,
- "chartDays": 82,
- "pdfRows": 19,
+ "chartDays": 83,
+ "pdfRows": 20,
  "today": {
   "status": "parsed",
   "date": "2026-11-17",
   "am": true,
-  "pm": false
+  "pm": true
  },
  "days": 102,
  "latest": {
   "d": "2026-11-17",
-  "session": "am"
+  "session": "pm"
  },
  "changed": true
 }
