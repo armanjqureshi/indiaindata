@@ -259,6 +259,16 @@ async function main() {
   }
 
   const days = build(stored)
+  // flag (but keep) one-day moves above 8% against the previous close: IBJA figures are published as is
+  for (let i = Math.max(1, days.length - 5); i < days.length; i++) {
+    const prev = days[i - 1], cur = days[i]
+    for (const s of ['am', 'pm']) {
+      for (const [f, v] of Object.entries(cur[s] || {})) {
+        const base = prev.pm?.[f] ?? prev.am?.[f]
+        if (base && Math.abs(v / base - 1) > 0.08) log.notes.push(`${cur.d} ${s} ${f} = ${v}, ${((v / base - 1) * 100).toFixed(1)}% from ${prev.d} close (${base}); as published by IBJA`)
+      }
+    }
+  }
   const last = days[days.length - 1]
   if (!last) throw new Error('No rates parsed')
   if (stored?.days?.length && days.length < stored.days.length) throw new Error('Fewer days than stored; not writing')
