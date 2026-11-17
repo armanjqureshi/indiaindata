@@ -1,5 +1,5 @@
 {
- "runAt": "2026-11-17T14:01:48.334Z",
+ "runAt": "2026-11-17T20:49:50.005Z",
  "notes": [
   "2026-11-04 am g585 = 85521 left out: 0.606 of 999 gold, expected about 0.585",
   "2026-11-17 am platinum = 49869, -10.2% from 2026-11-16 close (55547); as published by IBJA"
@@ -10,13 +10,13 @@
  "pdfRows": 20,
  "today": {
   "status": "parsed",
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "am": true,
   "pm": true
  },
- "days": 102,
+ "days": 103,
  "latest": {
-  "d": "2026-11-17",
+  "d": "2026-11-18",
   "session": "pm"
  },
  "changed": true
