@@ -1,11 +1,11 @@
 {
- "runAt": "2026-11-17T04:59:17.982Z",
+ "runAt": "2026-11-17T07:43:05.891Z",
  "items": {
   "home": {
    "url": "https://ibjarates.com/",
    "status": 200,
    "type": "text/html; charset=utf-8",
-   "bytes": 156591,
+   "bytes": 159050,
    "finalUrl": "https://ibjarates.com/",
    "title": "Gold rate daily opening and closing rates for India",
    "scripts": [
@@ -23,7 +23,7 @@
    "links": [
     "https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,700;1,400&amp;display=swap",
     "https://fonts.googleapis.com/css2?family=Aclonica&amp;display=swap",
-    "../UploadedFiles/30DaysPdf/Pdf_9968_20261116124229816_Daily Opening and Closing Market Rate.pdf",
+    "../UploadedFiles/30DaysPdf/Pdf_8223_20261117075759149_Daily Opening and Closing Market Rate.pdf",
     "pdf/List-of-Holidays/List-of-Holidays-2026.pdf",
     "pdf/spot-polling-mechanism/spot-polling-mechanism.pdf",
     "pdf/CERT-in-Security-Policies/Ibj- Gold-and-Silver-Rates-Web-Service-Security-Audit-Certificate-Final.pdf",
@@ -46,18 +46,31 @@
    "ids": [
     "ratesbody",
     "GoldRatesCompare999",
-    "GoldRatesCompare999Green",
+    "GoldRatesCompare999Red",
     "GoldRatesCompare995",
-    "GoldRatesCompare995Green",
+    "GoldRatesCompare995Red",
     "GoldRatesCompare916",
-    "GoldRatesCompare916Green",
+    "GoldRatesCompare916Red",
     "GoldRatesCompare750",
-    "GoldRatesCompare750Green",
+    "GoldRatesCompare750Red",
     "GoldRatesCompare585",
-    "GoldRatesCompare585Green",
+    "GoldRatesCompare585Red",
     "HdnRatesAvaliable",
-    "TodayRatesTableDataNo",
-    "lbl_Message",
+    "TodayRatesTableDataYes",
+    "lblGold999_AM",
+    "lblGold999_PM",
+    "lblGold995_AM",
+    "lblGold995_PM",
+    "lblGold916_AM",
+    "lblGold916_PM",
+    "lblGold750_AM",
+    "lblGold750_PM",
+    "lblGold585_AM",
+    "lblGold585_PM",
+    "lblSilver999_AM",
+    "lblSilver999_PM",
+    "lblPlatinum999_AM",
+    "lblPlatinum999_PM",
     "GoldDiv",
     "goldChart",
     "HdnGold",
@@ -69,9 +82,9 @@
    ]
   },
   "pdf30": {
-   "url": "UploadedFiles/30DaysPdf/Pdf_9968_20261116124229816_Daily Opening and Closing Market Rate.pdf",
+   "url": "UploadedFiles/30DaysPdf/Pdf_8223_20261117075759149_Daily Opening and Closing Market Rate.pdf",
    "status": 200,
-   "bytes": 656998,
+   "bytes": 651794,
    "isPdf": true
   }
  }
