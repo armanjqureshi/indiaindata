@@ -12,6 +12,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import { MANDI_COMMODITIES, MANDI_HUB, mandiPath, stateLabel } from '../src/data/mandi.js'
 import { GOLD_CITIES, UNITS } from '../src/data/gold.js'
+import { ISSUERS, CC_HUB, ccPath } from '../src/data/credit-cards.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const contentDir = path.resolve(__dirname, '../content')
@@ -256,6 +257,12 @@ export function getRoutes() {
   }
   routes.push({ path: '/edible-oil-price-today', title: 'Edible oil price today in India', description: 'All-India average retail and wholesale prices of mustard, groundnut, sunflower, soya and palm oil and vanaspati today, updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
   routes.push({ path: '/food-prices-today', title: 'Food prices today in India: vegetables, dal, atta, oil and milk', description: 'All-India average retail and wholesale prices of 23 kitchen staples today: tomato, onion, potato, rice, atta, dals, edible oils, sugar and milk. Updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
+
+  // Credit card charges by issuer, from src/data/credit-cards.js
+  routes.push({ path: CC_HUB, title: 'Credit card charges in India: interest rate, late fee and cash withdrawal charges of 12 banks (2026)', description: 'Bank-wise credit card charges in India: interest rate a month, late payment charges, cash withdrawal fee, interest-free period and minimum due rules for 12 issuers, from their own published terms.', changefreq: 'monthly', priority: 0.8 })
+  for (const x of ISSUERS) {
+    routes.push({ path: ccPath(x.slug), title: `${x.short} credit card charges: interest rate, late fee and cash withdrawal charges (2026)`, description: `${x.name} credit card interest rate, late payment charges, cash withdrawal fee and minimum due rules, from ${x.name}'s own published terms.`, changefreq: 'monthly', priority: 0.7 })
+  }
 
   // Gold, silver and platinum rates (IBJA), from live/gold.json
   if (fs.existsSync(path.join(contentDir, '..', 'live', 'gold.json'))) {

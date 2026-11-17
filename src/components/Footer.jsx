@@ -20,6 +20,7 @@ const BROWSE = [
   { label: 'Gold rate today', to: '/gold-rate-today' },
   { label: 'Silver rate today', to: '/silver-rate-today' },
   { label: 'Property prices', to: '/property-prices' },
+  { label: 'Credit card charges', to: '/credit-card-charges' },
   { label: 'AQI today', to: '/aqi' },
   { label: 'Districts of India', to: '/districts' },
   { label: 'Economy', to: '/topic/economy' },

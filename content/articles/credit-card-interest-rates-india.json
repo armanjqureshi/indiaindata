@@ -79,6 +79,10 @@
       "rows": "HDFC Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nSBI Card | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nICICI Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nAxis Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nKotak Mahindra Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nBOBCARD | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nAU Small Finance Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nHSBC | 3.75% | 45% | ₹1,200 | 2.5%, min ₹500\nIndusInd Bank | 3.83% to 3.95% | 46% to 47.4% | ₹1,300 | 2.5%, min ₹300\nRBL Bank | 3.35% to 3.99% | 40.2% to 47.88% | ₹1,300 | 2.5%, min ₹500\nIDFC FIRST Bank | 0.71% to 3.85% | 8.5% to 46.2% | ₹1,300 | ₹199\nAmerican Express | 3.5% | 42% | ₹1,250 | 3.5%, abroad only"
     },
     {
+      "type": "paragraph",
+      "text": "Each issuer’s full charges, with late fee slabs, card-by-card rates and its minimum due formula, are on our [credit card charges by bank](/credit-card-charges) pages."
+    },
+    {
       "type": "heading",
       "text": "What 3.75% a month really costs"
     },
@@ -218,7 +222,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Sources: each issuer’s published terms, checked on 17 November 2026. HDFC Bank, key fact statement and MITC version 2.3 (October 2024); SBI Card, MITC on sbicard.com; ICICI Bank, MITC last updated 10 July 2026; Axis Bank, fees and charges for the LIC Axis Bank Platinum card; Kotak Mahindra Bank, Fortune card key fact statement; BOBCARD, generic MITC 1.9 (January 2026); AU Small Finance Bank, schedule of charges updated 2 November 2026; HSBC India, important terms and conditions; American Express, schedule of fees and charges updated 15 November 2026; IndusInd Bank, MITC; IDFC FIRST Bank, MITC and dynamic APR page; RBL Bank, schedule of charges and key fact statement. Rules: Reserve Bank of India, Master Direction on credit and debit cards (2022) and its amendment of 7 March 2024. Repayment figures are India in Data calculations."
+      "text": "Sources: each issuer’s published terms, checked on 17 November 2026. HDFC Bank, key fact statement and MITC version 2.3 (October 2024); SBI Card, MITC on sbicard.com; ICICI Bank, MITC last updated 10 July 2026; Axis Bank, fees and charges for the LIC Axis Bank Platinum card; Kotak Mahindra Bank, Fortune card key fact statement; BOBCARD, generic MITC 1.9 (January 2026); AU Small Finance Bank, schedule of charges updated 2 November 2026; HSBC India, important terms and conditions; American Express, schedule of fees and charges updated 15 November 2026; IndusInd Bank, MITC; IDFC FIRST Bank, MITC and dynamic APR page; RBL Bank, schedule of charges and key fact statement. Rules: Reserve Bank of India, Master Direction on credit and debit cards (2022) and its amendment of 7 March 2024; issuers’ latest terms cite RBI’s 2025 directions on credit and debit cards. Repayment figures are India in Data calculations."
     }
   ],
   "draft": false,

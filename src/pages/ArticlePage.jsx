@@ -7,6 +7,13 @@ import CardCover from '../components/CardCover.jsx'
 import NotFound from './NotFound.jsx'
 import { getArticle, getRelated, formatDate, sectionColorMap, getSection } from '../data/content.js'
 
+// [text](/internal/path) in paragraph text becomes a site link
+function withLinks(text) {
+  const parts = String(text || '').split(/\[([^\]]+)\]\((\/[^)\s]*)\)/)
+  if (parts.length === 1) return text
+  return parts.map((p, i) => (i % 3 === 1 ? <Link key={i} to={parts[i + 1]} className="text-brand hover:underline">{p}</Link> : i % 3 === 2 ? null : p))
+}
+
 const SHARE_ICONS = [
   {
     label: 'Share on X',
@@ -120,7 +127,7 @@ export default function ArticlePage() {
             if (block.type === 'paragraph') {
               return (
                 <p key={i} className="mb-6 text-base leading-[1.75] text-ink/85 sm:text-lg">
-                  {block.text}
+                  {withLinks(block.text)}
                 </p>
               )
             }
