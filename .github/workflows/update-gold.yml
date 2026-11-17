@@ -1,0 +1,42 @@
+name: Update gold and silver rates
+# IBJA rates from ibjarates.com: AM rates come out around noon IST, PM rates around 5 pm, on
+# working days. Writes live/gold.json; commits are marked [skip netlify] and the site loads
+# live/ at runtime.
+on:
+  schedule:
+    - cron: '10 7 * * 1-5'    # 12:40 IST, AM rates
+    - cron: '0 8 * * 1-5'     # 13:30 IST, late AM rates
+    - cron: '15 12 * * 1-5'   # 17:45 IST, PM rates
+    - cron: '30 13 * * 1-5'   # 19:00 IST, late PM rates
+    - cron: '30 3 * * *'      # 09:00 IST, catch-up and revisions
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: live-data
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install pdftotext
+        run: which pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
+      - run: node scripts/data/update-gold.mjs
+      - name: Commit if anything changed
+        if: always()
+        run: |
+          git config user.name "india-in-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live/gold.json data/raw/gold/today-unparsed-*.html 2>/dev/null || true
+          grep -q '"errors": \[\]' live/gold-log.json || git add live/gold-log.json
+          if git diff --cached --quiet; then echo "No new data."; exit 0; fi
+          git add live/gold-log.json
+          git commit -q -m "Gold rates $(TZ=Asia/Kolkata date +%F' '%H:%M) IST [skip netlify]"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
+      - name: Refresh CDN copy
+        run: curl -fsS "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/live/gold.json" > /dev/null || true
