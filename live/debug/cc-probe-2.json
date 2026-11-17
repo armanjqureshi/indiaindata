@@ -1,0 +1,55 @@
+{
+ "runAt": "2026-11-17T06:15:37.556Z",
+ "items": {
+  "axis_mitc": {
+   "url": "https://www.axisbank.com/docs/default-source/default-document-library/mitc-credit-cards.pdf",
+   "status": 200,
+   "finalUrl": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
+   "type": "application/pdf",
+   "lastModified": "Fri, 09 Oct 2026 04:31:59 GMT",
+   "bytes": 672800,
+   "isPdf": true,
+   "chars": 134802
+  },
+  "axis_mitc2": {
+   "url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
+   "status": 200,
+   "finalUrl": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
+   "type": "application/pdf",
+   "lastModified": "Fri, 09 Oct 2026 04:31:59 GMT",
+   "bytes": 672800,
+   "isPdf": true,
+   "chars": 134802
+  },
+  "amex_kfs": {
+   "url": "https://www.americanexpress.com/content/dam/amex/in/legal/mitc/key_fact_Statement.pdf",
+   "status": 200,
+   "finalUrl": "https://www.americanexpress.com/content/dam/amex/in/legal/mitc/key_fact_Statement.pdf",
+   "type": "application/pdf",
+   "lastModified": "Sun, 15 Nov 2026 14:13:26 GMT",
+   "bytes": 301505,
+   "isPdf": true,
+   "chars": 16010
+  },
+  "amex_lending": {
+   "url": "https://www.americanexpress.com/content/dam/amex/in/legal/mitc/Lending_MITC_English.pdf",
+   "status": 200,
+   "finalUrl": "https://www.americanexpress.com/content/dam/amex/in/legal/mitc/Lending_MITC_English.pdf",
+   "type": "application/pdf",
+   "lastModified": "Sun, 15 Nov 2026 05:47:39 GMT",
+   "bytes": 582843,
+   "isPdf": true,
+   "chars": 87094
+  },
+  "axis_kfs_lic": {
+   "url": "https://www.axis.bank.in/cards/credit-card/lic-axis-bank-platinum-credit-card",
+   "status": 200,
+   "finalUrl": "https://www.axis.bank.in/cards/credit-card/lic-axis-bank-platinum-credit-card",
+   "type": "text/html; charset=utf-8",
+   "lastModified": null,
+   "bytes": 682976,
+   "isPdf": false,
+   "chars": null
+  }
+ }
+}
