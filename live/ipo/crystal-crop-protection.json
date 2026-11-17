@@ -3,7 +3,7 @@
  "lotSize": 55,
  "faceValue": null,
  "issueType": "Book Building",
- "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 3,550.03 million and Offer for sale of up to 3,702,694 Equity Shares (Including Eligible Employee Reservation of up to Rs. 25 million)",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 3,550.03 million and Offer for sale of up to 3,702,694 Equity Shares (Including Eligible Employee Reservation of up to Rs. 25 million and Anchor Allocation portion of 49,98,708 Equity Shares)",
  "issueSize": {
   "freshCr": 355,
   "ofsCr": 100.71,
@@ -22,9 +22,10 @@
  "marketTimings": "10.00 a.m. to 5.00 p.m.",
  "documents": {
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_CRYSTALCP.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_CRYSTALCP.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_CRYSTALCP.zip"
  },
- "fetchedAt": "2026-11-16T12:35:37.822Z",
+ "fetchedAt": "2026-11-17T13:55:50.050Z",
  "slug": "crystal-crop-protection",
  "symbol": "CRYSTALCP",
  "board": "mainboard",
