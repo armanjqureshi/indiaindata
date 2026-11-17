@@ -96,37 +96,44 @@ function parsePrevious(html) {
   return rows
 }
 
-// "Today's rates": a table with Purity, AM and PM columns. When rates are not out yet the table
-// has id TodayRatesTableDataNo and a "will be uploaded soon" message. We take the date from the
-// page if it states one; otherwise today's date in India, but only on a weekday.
+// "Today's rates": table TodayRatesTableDataYes, rows Gold 999 ... Platinum 999 with AM and PM
+// cells (spans lblGold999_AM and so on). Before the day's rates are out, and on holidays, the page
+// has TodayRatesTableDataNo with a message instead. The table carries no date, so it is taken as
+// today in India, on weekdays only, and dropped if it simply repeats an earlier day's rates.
 function parseToday(html) {
   const tables = [...html.matchAll(/<table[^>]*id="(TodayRates[^"]*)"[^>]*>([\s\S]*?)<\/table>/g)]
   const t = tables.find((x) => !/No$/.test(x[1]))
-  if (!t) return { status: tables.length ? 'not published' : 'table not found' }
-  const body = t[2]
-  const around = strip(html.slice(Math.max(0, t.index - 3000), t.index) + body)
-  const dates = [...around.matchAll(/\b(\d{1,2}\/\d{1,2}\/\d{4}|\d{1,2}-[A-Za-z]{3}-\d{2,4})\b/g)].map((x) => isoDate(x[1])).filter(Boolean)
-  const today = todayIST()
-  let d = dates.length ? dates[dates.length - 1] : null
-  if (!d) {
-    const wd = new Date(today + 'T00:00:00Z').getUTCDay()
-    if (wd === 0 || wd === 6) return { status: 'no date on a weekend, skipped' }
-    d = today
+  if (!t) {
+    const msg = (html.match(/id="lbl_Message"[^>]*>([^<]*)</) || [])[1]
+    return { status: tables.length ? `not published${msg ? ` (${msg.trim()})` : ''}` : 'table not found' }
   }
-  if (d > today) return { status: `date ${d} is in the future, skipped` }
-  let n = 0
-  for (const r of body.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
+  const d = process.env.GOLD_TODAY || todayIST()
+  const wd = new Date(d + 'T00:00:00Z').getUTCDay()
+  if (wd === 0 || wd === 6) return { status: 'rates shown on a weekend, skipped' }
+  const found = []
+  for (const r of t[2].matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
     const cells = [...r[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((c) => strip(c[1]))
     if (cells.length < 2) continue
     const label = cells[0].toLowerCase()
     const pur = (label.match(/\b(999|995|916|750|585)\b/) || [])[1]
     const f = /silver/.test(label) ? 'silver' : /platinum/.test(label) ? 'platinum' : pur ? `g${pur}` : null
     if (!f) continue
-    const am = num(cells[1]), pm = num(cells[2])
-    if (am != null) { add(d, 'am', f, am, 'today'); n++ }
-    if (pm != null) { add(d, 'pm', f, pm, 'today'); n++ }
+    for (const [i, session] of [[1, 'am'], [2, 'pm']]) {
+      const v = num(cells[i])
+      if (v != null) found.push({ session, f, v })
+    }
   }
-  return { status: n ? 'parsed' : 'no values found', date: d, values: n, datedOnPage: dates.length > 0 }
+  if (!found.length) return { status: 'no values found' }
+  // stale check: the same numbers as an earlier day in the previous-dates table or PDF
+  for (const session of ['am', 'pm']) {
+    const mine = found.filter((x) => x.session === session)
+    if (mine.length < 3) continue
+    const earlier = [...new Set(obs.filter((o) => o.d < d && o.session === session).map((o) => o.d))]
+    const same = earlier.find((e) => mine.every((x) => obs.some((o) => o.d === e && o.session === session && o.field === x.f && o.value === x.v)))
+    if (same) return { status: `${session.toUpperCase()} rates repeat ${same}, skipped`, date: d }
+  }
+  for (const x of found) add(d, x.session, x.f, x.v, 'today')
+  return { status: 'parsed', date: d, am: found.some((x) => x.session === 'am'), pm: found.some((x) => x.session === 'pm') }
 }
 
 /* ---------- 4: the chart data (closing rates) ---------- */
@@ -233,12 +240,6 @@ async function main() {
   const prev = parsePrevious(html)
   if (!prev) log.errors.push('Previous dates table: no rows found')
   log.previousRows = prev
-  log.today = parseToday(html)
-  if (log.today.status === 'no values found' || log.today.status === 'table not found') {
-    fs.mkdirSync(RAW, { recursive: true })
-    fs.writeFileSync(path.join(RAW, `today-unparsed-${todayIST()}.html`), html)
-    log.errors.push(`Today's table: ${log.today.status}; page saved to data/raw/gold`)
-  }
   log.chartDays = parseCharts(html)
 
   const pdfHref = (html.match(/href="(?:\.\.\/)?(UploadedFiles\/30DaysPdf\/[^"]+\.pdf)"/i) || [])[1]
@@ -249,6 +250,13 @@ async function main() {
     if (buf && buf.subarray(0, 4).toString() === '%PDF') log.pdfRows = parsePdf(buf)
     else log.errors.push('30-day PDF not found')
   } catch (e) { log.errors.push(`30-day PDF: ${e.message}`) }
+
+  log.today = parseToday(html)
+  if (log.today.status === 'no values found' || log.today.status === 'table not found') {
+    fs.mkdirSync(RAW, { recursive: true })
+    fs.writeFileSync(path.join(RAW, `today-unparsed-${todayIST()}.html`), html)
+    log.errors.push(`Today's table: ${log.today.status}; page saved to data/raw/gold`)
+  }
 
   const days = build(stored)
   const last = days[days.length - 1]
