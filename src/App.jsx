@@ -25,6 +25,7 @@ import { MANDI_HUB } from './data/mandi.js'
 import { DistrictsHub, DistrictStatePage, DistrictPage } from './pages/DistrictPages.jsx'
 import { AqiHub, AqiCityPage } from './pages/AqiPages.jsx'
 import { PropertyHub, PropertyCityPage } from './pages/PropertyPages.jsx'
+import { GoldHub, GoldCityPage, SilverHub, SilverCityPage, PlatinumPage } from './pages/GoldPages.jsx'
 import IpoDashboardPage from './pages/IpoDashboardPage.jsx'
 import SmeGmpPage from './pages/SmeGmpPage.jsx'
 import IpoDetailPage from './pages/IpoDetailPage.jsx'
@@ -91,6 +92,11 @@ export default function App() {
           <Route path={OIL_PAGE.path} element={<EdibleOilPricePage />} />
           {PRICE_PAGES.map((p) => <Route key={p.path} path={p.path} element={<StaplePricePage path={p.path} />} />)}
           <Route path={MANDI_HUB.path} element={<MandiHub />} />
+          <Route path="/gold-rate-today" element={<GoldHub />} />
+          <Route path="/gold-rate-today/:city" element={<GoldCityPage />} />
+          <Route path="/silver-rate-today" element={<SilverHub />} />
+          <Route path="/silver-rate-today/:city" element={<SilverCityPage />} />
+          <Route path="/platinum-rate-today" element={<PlatinumPage />} />
           <Route path="/property-prices" element={<PropertyHub />} />
           <Route path="/property-prices/:city" element={<PropertyCityPage />} />
           <Route path="/aqi" element={<AqiHub />} />

@@ -43,6 +43,7 @@ const propertyFor = (slug) => propertyAll && {
   ...propertyAll,
   cities: propertyAll.cities.map((c) => (c.slug === slug ? c : { ...c, underConstruction: [] })),
 }
+const gold = first(import.meta.glob('/live/gold.json', { eager: true }), null)
 const archive = first(import.meta.glob('/live/ipos-archive.json', { eager: true }), { ipos: [] })
 const details = Object.fromEntries(
   Object.entries(import.meta.glob('/live/ipo/*.json', { eager: true })).map(([p, m]) => [p.split('/').pop().replace('.json', ''), m.default])
@@ -61,6 +62,7 @@ __setServerSource({
   aqi: aqiLatest,
   aqiCity: (slug) => aqiFiles[slug] || null,
   property: propertyFor,
+  gold,
   aqiSummary: (slug) => {
     if (!aqiLatest) return null
     const me = aqiLatest.cities.find((c) => c.slug === slug)

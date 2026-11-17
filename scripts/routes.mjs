@@ -11,6 +11,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { MANDI_COMMODITIES, MANDI_HUB, mandiPath, stateLabel } from '../src/data/mandi.js'
+import { GOLD_CITIES, UNITS } from '../src/data/gold.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const contentDir = path.resolve(__dirname, '../content')
@@ -254,6 +255,18 @@ export function getRoutes() {
   }
   routes.push({ path: '/edible-oil-price-today', title: 'Edible oil price today in India', description: 'All-India average retail and wholesale prices of mustard, groundnut, sunflower, soya and palm oil and vanaspati today, updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
   routes.push({ path: '/food-prices-today', title: 'Food prices today in India: vegetables, dal, atta, oil and milk', description: 'All-India average retail and wholesale prices of 23 kitchen staples today: tomato, onion, potato, rice, atta, dals, edible oils, sugar and milk. Updated daily from the Department of Consumer Affairs.', changefreq: 'daily', priority: 0.8 })
+
+  // Gold, silver and platinum rates (IBJA), from live/gold.json
+  if (fs.existsSync(path.join(contentDir, '..', 'live', 'gold.json'))) {
+    routes.push({ path: '/gold-rate-today', title: 'Gold rate today in India: 24 carat and 22 carat price per gram (IBJA)', description: "Today's gold rate in India for 24, 22, 18 and 14 carat gold per gram and per 10 grams, from the India Bullion and Jewellers Association, with the change since yesterday, the trend and a jewellery price calculator.", changefreq: 'daily', priority: 0.9 })
+    routes.push({ path: '/silver-rate-today', title: 'Silver rate today in India: price per gram and kg (IBJA)', description: "Today's silver rate in India per gram, 10 grams, 100 grams and kilogram for 999 silver, from the India Bullion and Jewellers Association, with GST, the change since yesterday and the trend.", changefreq: 'daily', priority: 0.8 })
+    routes.push({ path: '/platinum-rate-today', title: 'Platinum rate today in India: price per gram and 10 grams (IBJA)', description: "Today's platinum rate in India per gram and per 10 grams for 999 platinum, from the India Bullion and Jewellers Association, with GST, the change since yesterday and recent rates.", changefreq: 'daily', priority: 0.7 })
+    for (const c of GOLD_CITIES) {
+      const u = c.unit && UNITS[c.unit]
+      routes.push({ path: `/gold-rate-today/${c.slug}`, title: `Gold rate today in ${c.name}: 22 carat and 24 carat price per ${u ? `gram and ${c.unit}` : 'gram'}`, description: `Today's gold rate in ${c.name}${c.aka ? ` (${c.aka})` : ''} for 22, 24 and 18 carat gold per gram${u ? `, per ${u.name}` : ''} and per 10 grams, from IBJA's benchmark, with the change since yesterday, the trend and a jewellery price calculator.`, changefreq: 'daily', priority: 0.7 })
+      if (c.silver) routes.push({ path: `/silver-rate-today/${c.slug}`, title: `Silver rate today in ${c.name}: price per gram and kg (IBJA)`, description: `Today's silver rate in ${c.name} per gram, 10 grams, 100 grams and kilogram for 999 silver, from the India Bullion and Jewellers Association, with GST, the change since yesterday and the trend.`, changefreq: 'daily', priority: 0.6 })
+    }
+  }
 
   // City home prices (NHB RESIDEX), from live/property-cities.json
   {

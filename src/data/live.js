@@ -49,6 +49,7 @@ function snap(key) {
       : kind === 'aqicity' ? serverSource.aqiCity(arg)
       : kind === 'aqisummary' ? serverSource.aqiSummary(arg)
       : kind === 'property' ? serverSource.property(arg)
+      : kind === 'gold' ? serverSource.gold
       : kind === 'ipo' ? serverSource.details[arg] ?? null
       : kind === 'row' ? serverSource.rowsBySlug[arg] ?? null
       : null
@@ -182,6 +183,8 @@ export const useAqiCity = (slug) => useLive(`live/aqi/${slug}.json`, getAqiCityS
 export const useAqiFor = (slug) => useLive('live/aqi.json', snap(`aqisummary:${slug}`))
 // City home prices (NHB RESIDEX): one file; pages embed a trimmed copy
 export const useProperty = (slug) => useLive('live/property-cities.json', snap(slug ? `property:${slug}` : 'property'))
+// Gold, silver and platinum rates (IBJA): one small file, embedded whole
+export const useGold = () => useLive('live/gold.json', snap('gold'))
 
 // --- India-date helpers (IPO status rolls over at midnight IST) -------------
 export function todayIST() {
