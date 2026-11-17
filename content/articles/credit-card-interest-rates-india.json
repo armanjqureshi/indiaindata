@@ -1,0 +1,228 @@
+{
+  "id": 140,
+  "slug": "credit-card-interest-rates-india",
+  "title": "Credit card interest rates in India: what 12 issuers charge, and what the minimum due really costs",
+  "dek": "Nine of 12 large issuers charge 3.75% a month or more on standard cards, 53% a year with GST. Pay only the minimum on ₹50,000 and you still owe ₹14,900 to ₹27,400 five years later.",
+  "heroImage": null,
+  "section": "blogs",
+  "topics": [
+    "personal-finance",
+    "policy"
+  ],
+  "author": "sarah-qureshi",
+  "date": "2026-11-17",
+  "readingTime": 7,
+  "featured": false,
+  "charts": [
+    {
+      "type": "line",
+      "title": "What’s left of ₹50,000 when you pay only the minimum",
+      "subtitle": "Balance owed in ₹ by month, no new spending, interest at 3.75% a month plus 18% GST",
+      "source": "India in Data calculation from issuers’ minimum-due formulas",
+      "xKey": "month",
+      "dataKeys": [
+        "5% of balance (HDFC, ICICI)",
+        "2% plus interest (SBI Card, BOBCARD)",
+        "1% plus interest (Kotak, HSBC)",
+        "₹5,000 a month"
+      ],
+      "unit": "",
+      "data": "[{\"month\": \"0\", \"5% of balance (HDFC, ICICI)\": 50000, \"2% plus interest (SBI Card, BOBCARD)\": 50000, \"1% plus interest (Kotak, HSBC)\": 50000, \"₹5,000 a month\": 50000}, {\"month\": \"6\", \"5% of balance (HDFC, ICICI)\": 45840, \"2% plus interest (SBI Card, BOBCARD)\": 44292, \"1% plus interest (Kotak, HSBC)\": 47074, \"₹5,000 a month\": 31312}, {\"month\": \"12\", \"5% of balance (HDFC, ICICI)\": 42025, \"2% plus interest (SBI Card, BOBCARD)\": 39236, \"1% plus interest (Kotak, HSBC)\": 44319, \"₹5,000 a month\": 7080}, {\"month\": \"18\", \"5% of balance (HDFC, ICICI)\": 38528, \"2% plus interest (SBI Card, BOBCARD)\": 34757, \"1% plus interest (Kotak, HSBC)\": 41726, \"₹5,000 a month\": 0}, {\"month\": \"24\", \"5% of balance (HDFC, ICICI)\": 35322, \"2% plus interest (SBI Card, BOBCARD)\": 30789, \"1% plus interest (Kotak, HSBC)\": 39284, \"₹5,000 a month\": 0}, {\"month\": \"30\", \"5% of balance (HDFC, ICICI)\": 32383, \"2% plus interest (SBI Card, BOBCARD)\": 27274, \"1% plus interest (Kotak, HSBC)\": 36985, \"₹5,000 a month\": 0}, {\"month\": \"36\", \"5% of balance (HDFC, ICICI)\": 29689, \"2% plus interest (SBI Card, BOBCARD)\": 24161, \"1% plus interest (Kotak, HSBC)\": 34821, \"₹5,000 a month\": 0}, {\"month\": \"42\", \"5% of balance (HDFC, ICICI)\": 27218, \"2% plus interest (SBI Card, BOBCARD)\": 21403, \"1% plus interest (Kotak, HSBC)\": 32783, \"₹5,000 a month\": 0}, {\"month\": \"48\", \"5% of balance (HDFC, ICICI)\": 24954, \"2% plus interest (SBI Card, BOBCARD)\": 18959, \"1% plus interest (Kotak, HSBC)\": 30865, \"₹5,000 a month\": 0}, {\"month\": \"54\", \"5% of balance (HDFC, ICICI)\": 22877, \"2% plus interest (SBI Card, BOBCARD)\": 16795, \"1% plus interest (Kotak, HSBC)\": 29058, \"₹5,000 a month\": 0}, {\"month\": \"60\", \"5% of balance (HDFC, ICICI)\": 20974, \"2% plus interest (SBI Card, BOBCARD)\": 14878, \"1% plus interest (Kotak, HSBC)\": 27358, \"₹5,000 a month\": 0}]"
+    },
+    {
+      "type": "bar",
+      "title": "Interest and GST paid on ₹50,000 over five years",
+      "subtitle": "₹, no new spending, interest at 3.75% a month plus 18% GST",
+      "source": "India in Data calculation from issuers’ minimum-due formulas",
+      "xKey": "approach",
+      "dataKeys": [
+        "cost"
+      ],
+      "unit": "",
+      "data": "[{\"approach\": \"Pay ₹5,000 a month\", \"cost\": 17499}, {\"approach\": \"Minimum: 2% plus interest\", \"cost\": 77708}, {\"approach\": \"Minimum: 5% of balance\", \"cost\": 89351}, {\"approach\": \"Minimum: 1% plus interest\", \"cost\": 100192}]"
+    }
+  ],
+  "body": [
+    {
+      "type": "keypoints",
+      "title": "Key numbers",
+      "items": [
+        "3.75% a month, or 45% a year, is the standard rate at nine of the 12 card issuers we checked, including HDFC Bank, SBI Card, ICICI Bank and Axis Bank.",
+        "Interest attracts 18% GST, which makes the real cost 4.43% a month, or 53.1% a year.",
+        "Pay only the minimum due on ₹50,000 and five years later you still owe ₹14,900 to ₹27,400, after paying ₹77,700 to ₹1,00,200 in interest and GST.",
+        "Pay ₹5,000 a month instead and the same debt is cleared in 14 months, for ₹17,499 in interest and GST.",
+        "Late fees go up to ₹1,200 to ₹1,300, and RBI rules bar them until a payment is more than three days late."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Carry a balance on an Indian credit card and you will almost certainly pay 3.75% a month on it. That is the rate on standard cards in the published terms of HDFC Bank, SBI Card, ICICI Bank, Axis Bank, Kotak Mahindra Bank, BOBCARD, AU Small Finance Bank and HSBC. IndusInd Bank charges 3.83% to 3.95% on most of its cards. American Express is the cheapest of the large issuers at 3.5%. IDFC FIRST Bank and RBL Bank set a rate for each customer, from 0.71% and 3.35% a month up to 3.85% and 3.99%."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is no legal ceiling. On 20 December 2024 the Supreme Court set aside a 2008 ruling of the National Consumer Disputes Redressal Commission that had treated interest above 30% a year on credit card dues as an unfair trade practice, leaving rates to the banks and the Reserve Bank of India. Several issuers moved to 3.75% a month in the second half of 2024: HDFC Bank from August, ICICI Bank from November and Axis Bank, up from 3.6%, in December."
+    },
+    {
+      "type": "heading",
+      "text": "Credit card interest rates by bank"
+    },
+    {
+      "type": "table",
+      "caption": "Rates on standard retail cards, before 18% GST, from each issuer’s most important terms and conditions (MITC), key fact statement or schedule of charges, checked on 17 November 2026. Per year is the monthly rate times 12, as most issuers quote it; Axis Bank quotes the compounded figure, 55.55%. IDFC FIRST Bank and RBL Bank set a rate for each customer within the range shown. Premium, secured and co-branded cards can differ.",
+      "columns": [
+        "Issuer",
+        "Per month",
+        "Per year",
+        "Late fee, maximum",
+        "Cash withdrawal fee"
+      ],
+      "rows": "HDFC Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nSBI Card | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nICICI Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nAxis Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nKotak Mahindra Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nBOBCARD | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nAU Small Finance Bank | 3.75% | 45% | ₹1,300 | 2.5%, min ₹500\nHSBC | 3.75% | 45% | ₹1,200 | 2.5%, min ₹500\nIndusInd Bank | 3.83% to 3.95% | 46% to 47.4% | ₹1,300 | 2.5%, min ₹300\nRBL Bank | 3.35% to 3.99% | 40.2% to 47.88% | ₹1,300 | 2.5%, min ₹500\nIDFC FIRST Bank | 0.71% to 3.85% | 8.5% to 46.2% | ₹1,300 | ₹199\nAmerican Express | 3.5% | 42% | ₹1,250 | 3.5%, abroad only"
+    },
+    {
+      "type": "heading",
+      "text": "What 3.75% a month really costs"
+    },
+    {
+      "type": "paragraph",
+      "text": "On the simple basis banks use, 3.75% a month is 45% a year. GST at 18% is charged on interest, as it is on fees and late charges, which takes the cost to 4.43% a month, or 53.1% a year."
+    },
+    {
+      "type": "paragraph",
+      "text": "Interest also starts earlier than many cardholders expect. Pay less than the total amount due and the interest-free period is lost: interest runs on each purchase from the day it was made, and on new purchases from the day they are made, until the whole balance is cleared. RBI requires issuers to spell this out in their terms."
+    },
+    {
+      "type": "paragraph",
+      "text": "Banks work it out by the day: the balance, times the monthly rate, times 12, times the number of days, divided by 365. A ₹20,000 purchase carried for 40 days at 3.75% a month costs ₹986 in interest, plus ₹178 in GST."
+    },
+    {
+      "type": "heading",
+      "text": "How much should you pay on your credit card?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The total amount due, every month, if you can. It is the only payment that keeps the interest-free period. Paying at least the minimum amount due by the due date avoids a late fee and keeps the account from being reported as past due, but interest is still charged on everything else, from the original purchase dates."
+    },
+    {
+      "type": "paragraph",
+      "text": "The minimum is small by design. RBI requires it to be set so that the balance cannot grow if you pay it, so it covers all interest, fees and taxes, plus a small slice of what you borrowed. How small depends on the bank."
+    },
+    {
+      "type": "table",
+      "caption": "Our calculation: ₹50,000 owed with no new spending, interest at 3.75% a month on the amount borrowed and 18% GST on that interest, the minimum paid on time each month by each formula as set out in the issuers’ terms. Statements charge interest by the day from the purchase date and HDFC Bank rounds the minimum up to the next ₹10, so real figures differ slightly.",
+      "columns": [
+        "Minimum due formula",
+        "First minimum",
+        "Owed after 5 years",
+        "Interest and GST in 5 years"
+      ],
+      "rows": "5% of balance and interest, plus fees and GST (HDFC Bank, ICICI Bank) | ₹2,931 | ₹20,974 | ₹89,351\nAll interest, fees and GST, plus 2% of the balance (SBI Card, BOBCARD, IndusInd Bank) | ₹3,213 | ₹14,878 | ₹77,708\nAll interest, fees and GST, plus 1% of the balance (Kotak Mahindra Bank, HSBC) | ₹2,713 | ₹27,358 | ₹1,00,192\nFixed ₹5,000 a month, for comparison | ₹5,000 | Cleared in 14 months | ₹17,499"
+    },
+    {
+      "type": "chart",
+      "chartIndex": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "After five years of minimum payments the cardholder has paid ₹1.13 lakh to ₹1.23 lakh and still owes ₹14,900 to ₹27,400 of the original ₹50,000. Paying ₹5,000 a month clears the same debt in 14 months for ₹17,499 in interest and GST, less than a quarter of the cheapest minimum-only route. SBI Card’s own terms give a smaller example: ₹10,000 paid off at the minimum takes up to 52 months."
+    },
+    {
+      "type": "chart",
+      "chartIndex": 1
+    },
+    {
+      "type": "quote",
+      "text": "The minimum due is the payment that stops a late fee. It is not a plan to repay."
+    },
+    {
+      "type": "heading",
+      "text": "Credit card late payment charges"
+    },
+    {
+      "type": "paragraph",
+      "text": "Miss even the minimum and a late fee is added, with 18% GST on it. Under RBI rules an issuer may charge it only once a payment is more than three days past the due date, and only on the amount still unpaid after the due date, not on the whole bill. The same three-day rule decides when an account is reported as past due to credit bureaus."
+    },
+    {
+      "type": "table",
+      "caption": "Late fee slabs of HDFC Bank, ICICI Bank, Kotak Mahindra Bank and IndusInd Bank (IndusInd from 15 June 2026), before 18% GST.",
+      "columns": [
+        "Amount unpaid",
+        "Late fee"
+      ],
+      "rows": "Up to ₹100 | Nil\n₹101 to ₹500 | ₹100\n₹501 to ₹1,000 | ₹500\n₹1,001 to ₹5,000 | ₹600\n₹5,001 to ₹10,000 | ₹750\n₹10,001 to ₹25,000 | ₹900\n₹25,001 to ₹50,000 | ₹1,100\nAbove ₹50,000 | ₹1,300"
+    },
+    {
+      "type": "paragraph",
+      "text": "SBI Card and BOBCARD charge more in the middle of the range: ₹750 from ₹1,001 and ₹950 from ₹10,001. AU Small Finance Bank and IDFC FIRST Bank charge 15% of the amount due and RBL Bank 12.5%, each capped at ₹1,300. HSBC charges the full minimum due, between ₹250 and ₹1,200. SBI Card and Axis Bank add ₹100 for every cycle once the minimum has been missed twice in a row."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some issuers also raise the interest rate after a default. ICICI Bank can go up to 3.8% a month, American Express charges 3.99%, and IDFC FIRST Bank charges 3.99% until the minimum is paid."
+    },
+    {
+      "type": "heading",
+      "text": "Cash withdrawals: the most expensive way to use a card"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cash taken on a credit card has no interest-free period. Most issuers charge a fee of 2.5% of the amount, at least ₹500, and interest from the day of the withdrawal. Take ₹10,000 from an ATM and repay it in full 30 days later, and the fee of ₹500 and interest of ₹370, each with 18% GST, add up to ₹1,026: more than a tenth of the money, for one month."
+    },
+    {
+      "type": "paragraph",
+      "text": "IDFC FIRST Bank charges a flat ₹199 a withdrawal and IndusInd Bank sets its minimum at ₹300. American Express has suspended cash withdrawals in India."
+    },
+    {
+      "type": "heading",
+      "text": "Which credit cards charge less interest"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 3.75% rate applies to standard cards. Some premium cards carry far less: HDFC Bank charges 1.99% a month on its Infinia and Diners Black cards, IndusInd Bank 1.79% on Indulge and AU Small Finance Bank 1.99% on Zenith+. Cards issued against a fixed deposit are cheaper too, at 1.99% at HDFC Bank and 2.75% at SBI Card. IDFC FIRST Bank’s personalised rate starts at 0.71% a month."
+    },
+    {
+      "type": "paragraph",
+      "text": "None of it applies to a bill paid in full. At every issuer here, purchases cost nothing in interest when the total amount due is cleared by the due date."
+    },
+    {
+      "type": "faq",
+      "title": "Questions",
+      "items": [
+        {
+          "q": "What is the credit card interest rate in India?",
+          "a": "Most issuers charge 3.75% a month, or 45% a year, on standard cards, plus 18% GST on the interest. HDFC Bank, SBI Card, ICICI Bank, Axis Bank, Kotak Mahindra Bank, BOBCARD, AU Small Finance Bank and HSBC all charge 3.75%. IndusInd Bank charges 3.83% to 3.95% on most cards and American Express 3.5%. IDFC FIRST Bank and RBL Bank set a rate for each customer of up to 3.85% and 3.99% a month."
+        },
+        {
+          "q": "How is credit card interest calculated?",
+          "a": "By the day: the outstanding amount, times the monthly rate, times 12, times the number of days, divided by 365. If you do not pay the total amount due, interest runs from the date of each purchase, and new purchases attract interest from the day they are made until the balance is cleared. GST at 18% is added to the interest."
+        },
+        {
+          "q": "How much should you pay on your credit card?",
+          "a": "The total amount due, by the due date. That is the only way to pay no interest. Paying the minimum amount due avoids a late fee and keeps your credit report clean, but interest is charged on the rest at about 3.75% a month plus GST."
+        },
+        {
+          "q": "What happens if I pay only the minimum amount due?",
+          "a": "You avoid the late fee, but interest is charged on the whole balance from the purchase dates and on new spending from the day it is made. On ₹50,000 with no new spending, paying only the minimum leaves ₹14,900 to ₹27,400 still owed after five years, depending on the bank’s formula, after ₹77,700 to ₹1,00,200 in interest and GST."
+        },
+        {
+          "q": "Is GST charged on credit card interest?",
+          "a": "Yes. GST at 18% is charged on interest, late payment charges and other fees. It turns a 3.75% monthly rate into an effective 4.43%."
+        },
+        {
+          "q": "When is a credit card late payment fee charged?",
+          "a": "Only when at least the minimum amount due is not paid and the payment is more than three days past the due date, under RBI rules. It is charged on the amount unpaid after the due date. Most large issuers charge between ₹100 and ₹1,300 depending on that amount, plus 18% GST."
+        },
+        {
+          "q": "Which bank has the lowest credit card interest rate?",
+          "a": "Among standard cards from large issuers, American Express is the lowest at 3.5% a month. Premium cards such as HDFC Bank Infinia (1.99%), IndusInd Bank Indulge (1.79%) and AU Small Finance Bank Zenith+ (1.99%), and cards issued against a fixed deposit, charge less. IDFC FIRST Bank’s personalised rate starts at 0.71% a month."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Sources: each issuer’s published terms, checked on 17 November 2026. HDFC Bank, key fact statement and MITC version 2.3 (October 2024); SBI Card, MITC on sbicard.com; ICICI Bank, MITC last updated 10 July 2026; Axis Bank, fees and charges for the LIC Axis Bank Platinum card; Kotak Mahindra Bank, Fortune card key fact statement; BOBCARD, generic MITC 1.9 (January 2026); AU Small Finance Bank, schedule of charges updated 2 November 2026; HSBC India, important terms and conditions; American Express, schedule of fees and charges updated 15 November 2026; IndusInd Bank, MITC; IDFC FIRST Bank, MITC and dynamic APR page; RBL Bank, schedule of charges and key fact statement. Rules: Reserve Bank of India, Master Direction on credit and debit cards (2022) and its amendment of 7 March 2024. Repayment figures are India in Data calculations."
+    }
+  ],
+  "draft": false,
+  "chartOfWeek": false,
+  "seoTitle": "Credit card interest rate in India: bank-wise list (2026)",
+  "seoDescription": "Most Indian credit cards charge 3.75% a month, 45% a year, plus 18% GST. Bank-wise interest rates, late fees, cash charges and what paying only the minimum costs."
+}
