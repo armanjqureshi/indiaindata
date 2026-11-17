@@ -23,8 +23,15 @@ async function grab(key, url, opts = {}) {
   } catch (e) { out.items[key] = { url, error: String(e.cause?.code || e.message) } }
 }
 await grab('home', 'https://ibjarates.com/')
-await grab('home_www', 'https://www.ibjarates.com/')
-await grab('ibja_org', 'https://ibja.co/')
-await grab('ibja_in', 'https://www.ibja.co/')
+{
+  const t = fs.readFileSync(`${DIR}/home.html`, 'utf8')
+  const m = t.match(/href="\.\.\/(UploadedFiles\/30DaysPdf\/[^"]+\.pdf)"/)
+  if (m) {
+    const r = await fetch('https://ibjarates.com/' + encodeURI(m[1]), { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(60000) })
+    const buf = Buffer.from(await r.arrayBuffer())
+    out.items.pdf30 = { url: m[1], status: r.status, bytes: buf.length, isPdf: buf.subarray(0, 4).toString() === '%PDF' }
+    if (out.items.pdf30.isPdf) fs.writeFileSync(`${DIR}/last30.pdf`, buf)
+  }
+}
 fs.writeFileSync('live/debug/gold-probe.json', JSON.stringify(out, null, 1))
 console.log(JSON.stringify(out, null, 1).slice(0, 6000))
