@@ -1,0 +1,404 @@
+                                                                                          Key
+                                                                                           KeyFact
+                                                                                               FactStatement
+                                                                                                    Statement     Key
+                                                                                                                   KeyFact
+                                                                                                                       FactStatement
+                                                                                                        KEY FACT STATEMENT  Statement
+       Fee
+       Feetype
+           type              Sr.                 Fee
+                                                 Feetype
+                                                       type                                                                  Purchase Card /
+                             no.           Corporate
+                                            Corporatecards cards                       Purchase
+                                                                                   Corporate
+                                                                                         Purchase
+                                                                                     Corporate    cards
+                                                                                                    Card
+                                                                                                       Card
+                                                                                                   cards               Purchase
+                                                                                                                            Purchase
+                                                                                                                             Purchase
+                                                                                                                         Purchase
+                                                                                                                          Purchase    Card
+                                                                                                                                Card(Platform)
+                                                                                                                                        Card
+                                                                                                                                   Card(Platform)
+                                                                                                                                   Rewards Card         Purchase
+                                                                                                                                                         Purchase
+                                                                                                                                                          Purchase
+                                                                                                                                                           Purchase Control
+                                                                                                                                                                     Card(Platform) Executive
+                                                                                                                                                                   Card(Platform)
+                                                                                                                                                                      Control               Purchase
+                                                                                                                                                                                       ExecutiveCorporate
+                                                                                                                                                                                                Purchase Control
+                                                                                                                                                                                                    Corporate Card
+                                                                                                                                                                                                            Control
+                                                                                                                                                                                                                 Card     Executive
+                                                                                                                                                                                                                             ExecutiveCorporat
+                                                                                                                                                                                                                                          Corpo
+  ng
+  ing Fee
+        Fee                   1      Joining
+                                     Joining Fee
+                                              Fee NilNil                                    NilNilNil
+                                                                                              Nil                                NilNil
+                                                                                                                                    Nil                         NANANilNil                    Rs. Rs.
+                                                                                                                                                                                                  3500NA
+                                                                                                                                                                                                       3500
+                                                                                                                                                                                                         NA                             3500
+                                                                                                                                                                                                                                    Rs. Rs. 350
+  ual fee/Renewal
+ ual    fee/Renewal           22     Annual
+                                     Annual         Nil
+                                              fee/Renewal
+                                                     Nil
+                                               fee/Renewal                                  NilNilNil
+                                                                                              Nil                                NilNil
+                                                                                                                                    Nil                         NANANilNil                        3500
+                                                                                                                                                                                              Rs. Rs. NA
+                                                                                                                                                                                                       3500
+                                                                                                                                                                                                         NA                             3500
+                                                                                                                                                                                                                                    Rs. Rs. 350
+     ReplacementCharges
+ d Replacement       Charges 33      Card
+                                     Card Replacement
+                                                 Waived
+                                                  Waived Charges
+                                            Replacement       Charges                       Waived
+                                                                                         Waived
+                                                                                              Waived
+                                                                                           Waived                              Waived
+                                                                                                                                 Waived
+                                                                                                                                 Waived                          Waived
+                                                                                                                                                                NANAWaived                        Nil NA
+                                                                                                                                                                                                      NilNA                             Nil Nil
+    TransactionSurcharge
+   Transaction     Surcharge 44 1%1%of
+                                     Fuel
+                                       ofthe
+                                     Fuel    transaction
+                                           Transaction
+                                               transaction
+                                           Transaction
+                                          the              Surcharge
+                                                              amount
+                                                               amountoror 1%
+                                                           Surcharge       1%ofofthe
+                                                                                  thetransaction
+                                                                                       transactionamountamountoror                                                                  1%1%   transaction
+                                                                                                                                                                                        of of  transactionamount
+                                                                                                                                                                                                              amount      1%1%   transaction
+                                                                                                                                                                                                                              of of  transactio a
+                                      Rs.10
+                                     Rs.   10whichever
+                                              whicheverisishigher
+                                                                higher        Rs.
+                                                                               Rs.10
+                                                                                   10whichever
+                                                                                       whicheverisishigher
+                                                                                                         higher                                                                   refunded
+                                                                                                                                                                                     refunded    fuelfuel
+                                                                                                                                                                                             for for       transactions refunded
+                                                                                                                                                                                                       transactions        refundedfor for
+                                                                                                                                                                                                                                       fuelfuel
+                                                                                                                                                                                                                                             trant
+                                   (Refundedfor
+                                  (Refunded      forfuel
+                                                     fueltransactions
+                                                            transactions (Refunded
+                                                                            (Refundedfor forfuel
+                                                                                              fueltransactions
+                                                                                                    transactions                                                                    between
+                                                                                                                                                                                       between ₹400   andand
+                                                                                                                                                                                                   ₹400     ₹4000
+                                                                                                                                                                                                               ₹4000      between
+                                                                                                                                                                                                                             between ₹400   anda
+                                                                                                                                                                                                                                         ₹400
+                                   betweenRs.
+                                  between     Rs.400
+                                                   400andandRs.Rs.4,000)
+                                                                   4,000) between
+                                                                           betweenRs.  Rs.400
+                                                                                            400 and
+                                                                                               NA
+                                                                                                NAandRs.Rs.4,000)
+                                                                                                            4,000)                NANA
+                                                                                                                                   NA                           NANANANA             (Max.   ₹400  perNA
+                                                                                                                                                                                         (Max. ₹400 per  month)
+                                                                                                                                                                                                         NA month)         (Max.   ₹400   per
+                                                                                                                                                                                                                               (Max. ₹400 per  mo
+  ign   Currency
+ eign Currency                55     Foreign   Currency
+                                     Foreign Currency                            3.50%   of  the  transaction
+                                                                                  3.50% of the transaction             3.50%
+                                                                                                                        3.50% of thetransaction
+                                                                                                                             of the   transaction    3.50%  of the
+                                                                                                                                                        3.50%      transaction
+                                                                                                                                                               of the transaction       3.50%
+                                                                                                                                                                                           3.50%of the
+                                                                                                                                                                                                   of thetransaction
+                                                                                                                                                                                                            transaction
+   saction Fee
+nsaction     Fee                     Transaction
+                                     Transaction
+                                 3.50%              Fee
+                                                     Fee
+                                  3.50%of ofthe  transaction amount
+                                             the transaction              3.50%ofofthe
+                                                                  amount 3.50%            transaction
+                                                                                           amount
+                                                                                              amount amount
+                                                                                      the transaction      amount             amount
+                                                                                                                                  NANA
+                                                                                                                                 amount                      amount NANA
+                                                                                                                                                                 amount            2%  of the     amount
+                                                                                                                                                                                               transaction
+                                                                                                                                                                                      2% of the transaction
+                                                                                                                                                                                                      amount  value
+                                                                                                                                                                                                                 value   2%2%of the  transactio
+                                                                                                                                                                                                                                 of the  transac
+ que    Return
+ que Return or  or            66     Cheque    Return
+                                     Cheque Return or    or
+  onour
+   onour Fee
+           FeeororAuto-
+                    Auto-            Dishonour
+                                     Dishonour Fee Feeor orAuto-
+                                                             Auto-
+  tt Reversal
+     Reversal                        debit  Reversal
+                                                 Rs. 100
+                                                  Rs. 100
+                                     debit Reversal                                      Rs.Rs.
+                                                                                           Rs.100
+                                                                                                100
+                                                                                               100
+                                                                                              Rs.  100                         Rs.
+                                                                                                                                 Rs.
+                                                                                                                                Rs.100
+                                                                                                                                     100
+                                                                                                                                     100                          100
+                                                                                                                                                                 Rs.
+                                                                                                                                                              Rs.Rs. 100
+                                                                                                                                                                   Rs.
+                                                                                                                                                                     100100                       100
+                                                                                                                                                                                             Rs. Rs.
+                                                                                                                                                                                                 Rs.  100
+                                                                                                                                                                                                     Rs.
+                                                                                                                                                                                                       100100                             100100
+                                                                                                                                                                                                                                      Rs. Rs.
+hh Limit                      77     Cash  Limit    Nil                                     NilNil                               NilNil                         NilNil
+                                                                                                                                                                    NilNil        30%  of  overall   Nil
+                                                                                                                                                                                                     credit Limit          30%  of  overall credi
+     Limit                           Cash Limit Nil                                           NilNil                                Nil                                             30% of overallNil    credit Limit         30% of overall    cr
+     WithdrawalFee
+hh Withdrawal      Fee        88     Cash
+                                     Cash Withdrawal
+                                            WithdrawalFee    Fee                                                                                                                2.5%  of  the  Cash   Withdrawal
+                                                                                                                                                                                   2.5% of the Cash Withdrawal            2.5% of  the Cash
+                                                                                                                                                                                                                             2.5% of the Cash WitW
+                                                    NA
+                                                     NA                                     NA NA
+                                                                                              NANA                                 NANA
+                                                                                                                                     NA                            NANA
+                                                                                                                                                                NANA               Amount
+                                                                                                                                                                                       Amount  (Min. NARs.
+                                                                                                                                                                                                   (Min.   250)250)
+                                                                                                                                                                                                        NARs.                Amount
+                                                                                                                                                                                                                                Amount (Min.  Rs.
+                                                                                                                                                                                                                                           (Min.
+ r Limit Fee                  9      Over Limit FeeNIL                                      NILNIL                                NIL                          NILNIL                           NILNIL                                  NIL
+  r Limit Fee                  9     Over Limit Fee  NA
+                                                     NIL                                      NANA
+                                                                                              NIL
+                                                                                                NIL                                  NA
+                                                                                                                                     NA
+                                                                                                                                     NIL
+                                                                                                                                     NIL                             NA
+                                                                                                                                                                  NANIL
+                                                                                                                                                                  NIL                                NA NA
+                                                                                                                                                                                                     NILNIL                                 NA
+                                                                                                                                                                                                                                            NIL
+   Payment Fees              10 3% ofLate
+                                        the Total
+                                           Payment  Amount
+                                                       Fees Due (Min. 3% of3%   theofTotal
+                                                                                      the Total
+                                                                                            Amount Amount
+                                                                                                        Due Due
+                                                                                                              (Min.   3% of the Total Amount Due     3%
+                                                                                                                                                      3%of
+                                                                                                                                                         ofthe
+                                                                                                                                                            theTotal
+                                                                                                                                                                TotalAmount
+                                                                                                                                                                      Amount Due 3% of3%
+                                                                                                                                                                                       theofTotal
+                                                                                                                                                                                               the Total
+                                                                                                                                                                                                     AmountAmount
+                                                                                                                                                                                                              Due         3% of the Total Amo
+    Payment Fees             10 3% ofLatethe
+                                           Payment
+                                             Total Amount
+                                                        Fees Due (Min. 3% of3%   theofTotal
+                                                                                        the Total
+                                                                                              Amount  Amount
+                                                                                                          Due (Min.
+                                                                                                                Due    3%
+                                                                                                                       3%of       TotalAmount
+                                                                                                                              theTotal
+                                                                                                                           ofthe         AmountDue
+                                                                                                                                               Due     3%
+                                                                                                                                                       3% of
+                                                                                                                                                           of the
+                                                                                                                                                              the Total
+                                                                                                                                                                  Total Amount
+                                                                                                                                                                        Amount Due 3% of3%  theofTotal
+                                                                                                                                                                                                  the Total
+                                                                                                                                                                                                         Amount
+                                                                                                                                                                                                              Amount
+                                                                                                                                                                                                                  Due        3% of the Total A
+                                                Rs. 350)                               (Min.350)
+                                                                                         Rs.   Rs. 350)                      (Min. Rs. 350)            Due (Min.
+                                                                                                                                                             (Min.Rs.
+                                                                                                                                                                   Rs.350)
+                                                                                                                                                                       350)              (Min.
+                                                                                                                                                                                          Due Rs.
+                                                                                                                                                                                                (Min. 350)
+                                                                                                                                                                                                        Rs. 350)                  (Min. Rs. 350)
+                                                  Rs. 350)                               (Min.
+                                                                                          Rs.  350)
+                                                                                                  Rs. 350)                     (Min.
+                                                                                                                                (Min.Rs.
+                                                                                                                                      Rs.350)
+                                                                                                                                          350)            Due (Min.
+                                                                                                                                                               (Min. Rs.
+                                                                                                                                                                      Rs. 350)
+                                                                                                                                                                          350)               (Min. Rs.
+                                                                                                                                                                                             Due    (Min.350)
+                                                                                                                                                                                                           Rs. 350)                  (Min. Rs. 3
+   ge Slip Retrieval Fee 11          Charge Slip Retrieval Fee
+ rge Slip Retrieval Fee 11           Charge Slip    Retrieval Fee
+                                                 Waived                                  Waived
+                                                                                            Waived                               Waived                      Waived
+                                                                                                                                                                 Waived                      Waived
+                                                                                                                                                                                                 Waived                               Waived
+                                                  Waived                                   Waived
+                                                                                              Waived                              Waived
+                                                                                                                                   Waived                       Waived
+                                                                                                                                                                  Waived                         Waived
+                                                                                                                                                                                                     Waived                              Waived
+  ards Redemption            12      Rewards Redemption
+   ards Redemption           12      Rewards Redemption
+   ges                               Charges        Nil                                     NilNil                               NA
+                                                                                                                                 Nil                            NA NA                             Nil NA                                Nil
+ rges                                Charges         Nil                                      NilNil                              Nil
+                                                                                                                                   NA                             NANA                                NilNA                                   Nil
+   icate Statement           13      Duplicate Statement
+  licate Statement           13      Duplicate Statement
+   ges                               Charges Waived                                      Waived
+                                                                                            Waived                             Waived                           NA
+                                                                                                                                                                 Waived                         Waived
+                                                                                                                                                                                                    NA                               Waived
+ rges                                Charges Waived                                        Waived
+                                                                                              Waived                            Waived
+                                                                                                                                Waived                            NA
+                                                                                                                                                                  Waived                          Waived
+                                                                                                                                                                                                       NA                              Waived
+    Replacement Charges 14           Card Replacement
+                                                 Waived       Charges                    Waived
+                                                                                            Waived                             Waived                           NA
+                                                                                                                                                                 Waived                         Waived
+                                                                                                                                                                                                    NA                               Waived
+ d Replacement Charges 14            Card Replacement
+                                                  Waived      Charges                      Waived
+                                                                                              Waived                            Waived
+                                                                                                                                Waived                            NA
+                                                                                                                                                                  Waived                          Waived
+                                                                                                                                                                                                       NA                              Waived
+   tation Cheque             15      Outstation Cheque
+ station Cheque              15      Outstation Cheque
+  essing Charge                      ProcessingWaived
+                                                   Charge                                Waived
+                                                                                            Waived                             Waived                           NA
+                                                                                                                                                                 Waived                         Waived
+                                                                                                                                                                                                     NA                              Waived
+ cessing Charge                      ProcessingWaived
+                                                   Charge                                  Waived
+                                                                                              Waived                            Waived
+                                                                                                                                 Waived                            NA
+                                                                                                                                                                   Waived                         WaivedNA                             Waived
+ isiting charges             18      Hotlisiting Nil
+                                                  charges                                   NilNil                               NA
+                                                                                                                                 Nil                            NA NA                            Nil NA                               Nil
+   isiting charges           18      Hotlisiting Nil
+                                                   charges                                    NilNil                               Nil
+                                                                                                                                   NA                              NANA                              NilNA                                Nil
+  nce Enquiry Charges 19             Balance Enquiry
+                                                 WaivedCharges                           Waived
+                                                                                            Waived                             Waived
+                                                                                                                                 NA                             NA NA                           Waived
+                                                                                                                                                                                                     NA                              Waived
+   nce Enquiry Charges 19            Balance Enquiry
+                                                  WaivedCharges                            Waived
+                                                                                              Waived                            Waived
+                                                                                                                                   NA                              NANA                           WaivedNA                             Waived
+ ge Fee                      20      Usage Fee NA                                           NANA                           As perNA
+                                                                                                                                 business                    As per
+                                                                                                                                                                NA business                      NANA                                 NA
+ ge    Fee
+  harge on Purchase or
+                             20      Usage Fee NA
+                                     Surcharge on Purchase or
+                                                                                              NANA                           As perNAbusiness                  As per
+                                                                                                                                                                   NA business                       NANA                                 NA
+   harge   on  Purchase
+ cellation of Railway     or         Surcharge
+                                   AsCancellation
+                                      prescribed byon  Purchase
+                                                     of Railway    or
+                                                        IRCTC/Indian       As prescribed by IRCTC/Indian                                                                            As prescribed by IRCTC/Indian     As prescribed by IRCT
+ cellation of Railway
+ ets                         21 As   Cancellation
+                                       prescribed
+                                     Tickets          of
+                                                      by Railway
+                                                Railways  IRCTC/Indian       As prescribed     NAIRCTC/Indian
+                                                                                              by
+                                                                                        Railways                                 NA                             NA NA                  As prescribedNAby IRCTC/Indian
+                                                                                                                                                                                               Railways                  As prescribed  by IR
+                                                                                                                                                                                                                                 Railways
+  ets
+   ile Alerts for            21      Tickets     Railways
+                                     Mobile Alerts for                                   Railways
+                                                                                                NA                                NA
+                                                                                                                                  NA                              NANA                            Railways
+                                                                                                                                                                                                        NA                          Railway
+ bile   Alerts
+   sactions    for           22      Mobile    Alerts
+                                     TransactionsWaivedfor                               Waived
+                                                                                            Waived                             Waived                         Waived
+                                                                                                                                                                Waived                          Waived
+                                                                                                                                                                                                  Waived                             Waived
+nsactions                    22      Transactions Waived                                   Waived
+                                                                                              Waived                            Waived
+                                                                                                                                Waived                         Waived
+                                                                                                                                                                  Waived                          Waived
+                                                                                                                                                                                                     Waived                            Waived
+ ods and Services Tax Disclaimer:
+                      prescribed rates
+                                  Goodswill
+                                        and apply
+                                              Services
+                                                  on allTax
+                                                         fees.
+                                                            prescribed
+                                                               Interest and
+                                                                        ratesother
+                                                                              will apply
+                                                                                    charges.
+                                                                                         on all fees. Interest and other charges.
+

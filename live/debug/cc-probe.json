@@ -1,0 +1,267 @@
+{
+ "runAt": "2026-11-17T05:53:43.379Z",
+ "items": {
+  "hdfc": {
+   "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/mitc-1-64.pdf",
+   "status": 200,
+   "finalUrl": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/mitc-1-64.pdf",
+   "type": "application/pdf",
+   "lastModified": "Tue, 25 Feb 2025 14:18:05 GMT",
+   "bytes": 527675,
+   "isPdf": true,
+   "chars": 132072
+  },
+  "sbi_pdf": {
+   "url": "https://www.sbicard.com/sbi-card-en/assets/docs/pdf/most-important-terms-and-conditions/english-mitc.pdf",
+   "status": 200,
+   "finalUrl": "https://www.sbicard.com/sbi-card-en/assets/docs/pdf/most-important-terms-and-conditions/english-mitc.pdf",
+   "type": "application/pdf",
+   "lastModified": "Thu, 23 Feb 2017 06:48:58 GMT",
+   "bytes": 380095,
+   "isPdf": true,
+   "chars": 29954
+  },
+  "sbi_page": {
+   "url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
+   "status": 200,
+   "finalUrl": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
+   "type": "text/html; charset=UTF-8",
+   "lastModified": null,
+   "bytes": 513123,
+   "isPdf": false,
+   "chars": null
+  },
+  "sbi_rates": {
+   "url": "https://www.sbicard.com/en/personal/rates-and-fees.page",
+   "status": 404,
+   "finalUrl": "https://www.sbicard.com/en/personal/rates-and-fees.page",
+   "type": "text/html; charset=UTF-8",
+   "lastModified": null,
+   "bytes": 83768,
+   "isPdf": false,
+   "chars": null
+  },
+  "icici_amazon": {
+   "url": "https://www.icici.bank.in/terms-condition/tnc-for-amazon-pay",
+   "status": 200,
+   "finalUrl": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/revamp-page-images/docs/pdf/mitc-cc-gk-t.pdf",
+   "type": "application/pdf",
+   "lastModified": "Wed, 15 Jul 2026 10:35:22 GMT",
+   "bytes": 299182,
+   "isPdf": true,
+   "chars": 56316
+  },
+  "icici_blog": {
+   "url": "https://www.icici.bank.in/blogs/credit-card/interest-rates",
+   "status": 200,
+   "finalUrl": "https://www.icici.bank.in/personal-banking/blogs/card/credit-card/interest-rates",
+   "type": "text/html;charset=utf-8",
+   "lastModified": null,
+   "bytes": 404889,
+   "isPdf": false,
+   "chars": null
+  },
+  "axis_faq": {
+   "url": "https://www.axisbank.com/docs/default-source/default-document-library/credit-cards/faqs-for-credit-card.pdf",
+   "status": 404,
+   "finalUrl": "https://www.axis.bank.in/404-error?",
+   "type": "text/html; charset=utf-8",
+   "lastModified": null,
+   "bytes": 744564,
+   "isPdf": false,
+   "chars": null
+  },
+  "axis_soc": {
+   "url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc_schedule-of-charges.pdf",
+   "status": 200,
+   "finalUrl": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc_schedule-of-charges.pdf",
+   "type": "application/pdf",
+   "lastModified": "Tue, 30 Dec 2025 10:13:31 GMT",
+   "bytes": 191260,
+   "isPdf": true,
+   "chars": 53702
+  },
+  "axis_lic": {
+   "url": "https://www.axisbank.com/retail/cards/credit-card/lic-axis-bank-platinum-credit-card/fees-charges",
+   "status": 200,
+   "finalUrl": "https://www.axis.bank.in/cards/credit-card/lic-axis-bank-platinum-credit-card",
+   "type": "text/html; charset=utf-8",
+   "lastModified": null,
+   "bytes": 682976,
+   "isPdf": false,
+   "chars": null
+  },
+  "kotak_fortune": {
+   "url": "https://www.kotak.bank.in/content/dam/Kotak/Customer-Service/others/key-fact-statement-fortune-credit-card.pdf",
+   "status": 200,
+   "finalUrl": "https://www.kotak.bank.in/content/dam/Kotak/Customer-Service/others/key-fact-statement-fortune-credit-card.pdf",
+   "type": "application/pdf; charset=utf-8",
+   "lastModified": "Thu, 12 Nov 2026 20:12:54 GMT",
+   "bytes": 84915,
+   "isPdf": true,
+   "chars": 30217
+  },
+  "kotak_811": {
+   "url": "https://www.kotak.bank.in/content/dam/Kotak/files/key-fact-statement/key-fact-statement-kfs-kotak-811-super-money-creditcard.pdf",
+   "status": 200,
+   "finalUrl": "https://www.kotak.bank.in/content/dam/Kotak/files/key-fact-statement/key-fact-statement-kfs-kotak-811-super-money-creditcard.pdf",
+   "type": "application/pdf; charset=utf-8",
+   "lastModified": "Fri, 03 Apr 2026 20:48:15 GMT",
+   "bytes": 116835,
+   "isPdf": true,
+   "chars": 28810
+  },
+  "idfc": {
+   "url": "https://www.idfcfirst.bank.in/MITC.pdf",
+   "status": 200,
+   "finalUrl": "https://www.idfcfirst.bank.in/MITC.pdf",
+   "type": "application/pdf",
+   "lastModified": "Sat, 17 Oct 2026 10:48:57 GMT",
+   "bytes": 9819161,
+   "isPdf": true,
+   "chars": 6661
+  },
+  "idfc_apr": {
+   "url": "https://www.idfcfirst.bank.in/credit-card/apr-faq",
+   "status": 200,
+   "finalUrl": "https://www.idfcfirst.bank.in/credit-card/apr-faq",
+   "type": "text/html;charset=utf-8",
+   "lastModified": "Wed, 11 Nov 2026 13:16:35 GMT",
+   "bytes": 2050708,
+   "isPdf": false,
+   "chars": null
+  },
+  "indusind": {
+   "url": "https://www.indusind.bank.in/content/dam/indusind-corporate/schedule-of-charges/credit-cards/MITC_Premium.pdf",
+   "status": 200,
+   "finalUrl": "https://www.indusind.bank.in/content/dam/indusind-corporate/schedule-of-charges/credit-cards/MITC_Premium.pdf",
+   "type": "application/pdf",
+   "lastModified": "Wed, 14 Oct 2026 07:02:12 GMT",
+   "bytes": 323508,
+   "isPdf": true,
+   "chars": 89858
+  },
+  "rbl_soc": {
+   "url": "https://webassets.rbl.bank.in/document/Credit%20Cards/CardsScheduleCharges.pdf",
+   "status": 200,
+   "finalUrl": "https://webassets.rbl.bank.in/document/Credit%20Cards/CardsScheduleCharges.pdf",
+   "type": "application/pdf",
+   "lastModified": "Fri, 13 Nov 2026 10:54:14 GMT",
+   "bytes": 69096,
+   "isPdf": true,
+   "chars": 18875
+  },
+  "rbl_kfs499": {
+   "url": "https://webassets.rbl.bank.in/document/credit-cards/kfs-499.pdf",
+   "status": 200,
+   "finalUrl": "https://webassets.rbl.bank.in/document/credit-cards/kfs-499.pdf",
+   "type": "application/pdf",
+   "lastModified": "Wed, 05 Aug 2026 15:08:18 GMT",
+   "bytes": 139541,
+   "isPdf": true,
+   "chars": 8256
+  },
+  "bob_jan26": {
+   "url": "https://media.bobcard.co.in//media/gaudahay/bob_mitc_a4-booklet_ver-19jan26_15jan2026.pdf",
+   "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+  },
+  "bob_apr26": {
+   "url": "https://media.bobcard.co.in//media/gaudahay/bobcard-generic_mitc_4x8_ver-20_06apr26.pdf",
+   "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+  },
+  "au_soc": {
+   "url": "https://www.au.bank.in/content/dam/aubank/in/en/pdf/credit-card/Schedule-of-Charges-CC.pdf",
+   "status": 200,
+   "finalUrl": "https://www.au.bank.in/pdf/credit-card/Schedule-of-Charges-CC.pdf",
+   "type": "application/pdf",
+   "lastModified": "Tue, 03 Nov 2026 06:37:24 GMT",
+   "bytes": 772115,
+   "isPdf": true,
+   "chars": 19006
+  },
+  "hsbc": {
+   "url": "https://hsbc.co.in/content/dam/hsbc/in/documents/help/forms/mitc-t1.pdf",
+   "status": 200,
+   "finalUrl": "https://www.hsbc.co.in/content/dam/hsbc/in/documents/help/forms/mitc-t1.pdf",
+   "type": "application/pdf",
+   "lastModified": "Mon, 25 Nov 2024 08:53:57 GMT",
+   "bytes": 225773,
+   "isPdf": true,
+   "chars": 40620
+  },
+  "amex_soc": {
+   "url": "https://www.americanexpress.com/content/dam/amex/in/legal-disclosures/Schedule-of-Fee-and-Charges.pdf",
+   "status": 200,
+   "finalUrl": "https://www.americanexpress.com/content/dam/amex/in/legal-disclosures/Schedule-of-Fee-and-Charges.pdf",
+   "type": "application/pdf",
+   "lastModified": "Sun, 15 Nov 2026 06:59:14 GMT",
+   "bytes": 205307,
+   "isPdf": true,
+   "chars": 21884
+  },
+  "amex_fees": {
+   "url": "https://www.americanexpress.com/in/credit-know-how/credit-card-fees/",
+   "error": "UND_ERR_HEADERS_OVERFLOW"
+  },
+  "yes_mitc": {
+   "url": "https://www.yes.bank.in/pdf/mitc_credit_cards_english.pdf",
+   "status": 200,
+   "finalUrl": "https://www.yes.bank.in/pdf?name=mitc_credit_cards_english.pdf.pdf",
+   "type": "text/html; charset=UTF-8",
+   "lastModified": "Tue, 17 Nov 2026 05:54:16 GMT",
+   "bytes": 5640,
+   "isPdf": false,
+   "chars": null
+  },
+  "yes_mitc2": {
+   "url": "https://www.yesbank.in/pdf/mitc_credit_cards_english.pdf",
+   "status": 200,
+   "finalUrl": "https://www.yes.bank.in/pdf?name=mitc_credit_cards_english.pdf.pdf",
+   "type": "text/html; charset=UTF-8",
+   "lastModified": "Tue, 17 Nov 2026 05:54:16 GMT",
+   "bytes": 5640,
+   "isPdf": false,
+   "chars": null
+  },
+  "sc_mitc": {
+   "url": "https://av.sc.com/in/content/docs/in-mitc-credit-cards.pdf",
+   "status": 403,
+   "finalUrl": "https://av.sc.com/in/content/docs/in-mitc-credit-cards.pdf",
+   "type": "application/xml",
+   "lastModified": null,
+   "bytes": 111,
+   "isPdf": false,
+   "chars": null
+  },
+  "federal_kfs": {
+   "url": "https://www.federal.bank.in/documents/10180/0/MITC-credit-card.pdf",
+   "status": 404,
+   "finalUrl": "https://www.federal.bank.in/documents/10180/0/MITC-credit-card.pdf",
+   "type": "text/html;charset=UTF-8",
+   "lastModified": null,
+   "bytes": 425296,
+   "isPdf": false,
+   "chars": null
+  },
+  "rbi_md_amend": {
+   "url": "https://website.rbi.org.in/documents/87730/39710850/1.+Circular+-++Amendment+to+MD.pdf",
+   "status": 200,
+   "finalUrl": "https://www.rbi.org.in/",
+   "type": "text/html; charset=utf-8",
+   "lastModified": null,
+   "bytes": 154335,
+   "isPdf": false,
+   "chars": null
+  },
+  "rbi_notif": {
+   "url": "https://rbi.org.in/Scripts/NotificationUser.aspx?Id=12620",
+   "status": 200,
+   "finalUrl": "https://rbi.org.in/Scripts/NotificationUser.aspx?Id=12620",
+   "type": "text/html; charset=utf-8",
+   "lastModified": null,
+   "bytes": 137152,
+   "isPdf": false,
+   "chars": null
+  }
+ }
+}
