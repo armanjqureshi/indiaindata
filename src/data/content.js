@@ -28,6 +28,7 @@ const TOPIC_META = [
   { slug: 'policy', name: 'Policy', color: 'news', hex: 'rgb(var(--news))' },
   { slug: 'data-methods', name: 'Data methods', color: 'blogs', hex: 'rgb(var(--blogs))' },
   { slug: 'markets', name: 'Markets', color: 'market', hex: 'rgb(var(--market))' },
+  { slug: 'personal-finance', name: 'Personal finance', color: 'business', hex: 'rgb(var(--business))' },
 ]
 
 const INDICATOR_CATEGORY_META = [
@@ -230,4 +231,5 @@ export const sectionColorMap = {
   policy: { text: 'text-news', bg: 'bg-news', bgLight: 'bg-news-light', border: 'border-news', hex: 'rgb(var(--news))' },
   'data-methods': { text: 'text-blogs', bg: 'bg-blogs', bgLight: 'bg-blogs-light', border: 'border-blogs', hex: 'rgb(var(--blogs))' },
   markets: { text: 'text-market', bg: 'bg-market', bgLight: 'bg-market-light', border: 'border-market', hex: 'rgb(var(--market))' },
+  'personal-finance': { text: 'text-business', bg: 'bg-business', bgLight: 'bg-business-light', border: 'border-business', hex: 'rgb(var(--business))' },
 }

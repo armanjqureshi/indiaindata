@@ -158,7 +158,7 @@ export default function SectionPage({ slug }) {
               >
                 All topics
               </button>
-              {allTopics.slice(0, 4).map((t) => (
+              {allTopics.map((t) => (
                 <button
                   key={t.slug}
                   type="button"

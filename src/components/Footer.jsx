@@ -24,6 +24,7 @@ const BROWSE = [
   { label: 'Districts of India', to: '/districts' },
   { label: 'Economy', to: '/topic/economy' },
   { label: 'Society', to: '/topic/society' },
+  { label: 'Personal finance', to: '/topic/personal-finance' },
 ]
 
 const ABOUT = [

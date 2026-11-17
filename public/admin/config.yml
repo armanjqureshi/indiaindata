@@ -58,6 +58,7 @@ collections:
           - { label: "Policy", value: "policy" }
           - { label: "Data methods", value: "data-methods" }
           - { label: "Markets", value: "markets" }
+          - { label: "Personal finance", value: "personal-finance" }
       - label: "Author"
         name: "author"
         widget: "relation"
@@ -222,6 +223,7 @@ collections:
           - { label: "Policy", value: "policy" }
           - { label: "Data methods", value: "data-methods" }
           - { label: "Markets", value: "markets" }
+          - { label: "Personal finance", value: "personal-finance" }
       - label: "Chart"
         name: "chart"
         widget: "object"
@@ -283,6 +285,7 @@ collections:
           - { label: "Policy", value: "policy" }
           - { label: "Data methods", value: "data-methods" }
           - { label: "Markets", value: "markets" }
+          - { label: "Personal finance", value: "personal-finance" }
 
   - name: "team"
     label: "Team"

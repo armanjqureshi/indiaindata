@@ -23,6 +23,7 @@ const TOPIC_NAMES = {
   policy: 'Policy',
   'data-methods': 'Data methods',
   markets: 'Markets',
+  'personal-finance': 'Personal finance',
 }
 const INDICATOR_CATEGORY_NAMES = {
   prices: 'Prices & Inflation',
