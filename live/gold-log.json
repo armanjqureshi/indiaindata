@@ -1,19 +1,22 @@
 {
- "runAt": "2026-11-17T05:04:47.626Z",
+ "runAt": "2026-11-17T07:42:25.341Z",
  "notes": [
   "2026-11-04 am g585 = 85521 left out: 0.606 of 999 gold, expected about 0.585"
  ],
  "errors": [],
  "previousRows": 8,
  "chartDays": 82,
- "pdfRows": 33,
+ "pdfRows": 19,
  "today": {
-  "status": "not published (Rates will be uploaded soon)"
+  "status": "parsed",
+  "date": "2026-11-17",
+  "am": true,
+  "pm": false
  },
- "days": 101,
+ "days": 102,
  "latest": {
-  "d": "2026-11-16",
-  "session": "pm"
+  "d": "2026-11-17",
+  "session": "am"
  },
- "changed": false
+ "changed": true
 }
