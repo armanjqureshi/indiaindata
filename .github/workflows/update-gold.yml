@@ -32,7 +32,8 @@ jobs:
         run: |
           git config user.name "india-in-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add live/gold.json data/raw/gold/today-unparsed-*.html 2>/dev/null || true
+          git add live/gold.json
+          git add data/raw/gold/ 2>/dev/null || true
           grep -q '"errors": \[\]' live/gold-log.json || git add live/gold-log.json
           if git diff --cached --quiet; then echo "No new data."; exit 0; fi
           git add live/gold-log.json
