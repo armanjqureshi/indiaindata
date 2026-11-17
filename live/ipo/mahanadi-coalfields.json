@@ -1,0 +1,35 @@
+{
+ "subscription": null,
+ "lotSize": 110,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Offer for Sale of up to 661,836,300 Equity Shares",
+ "issueSize": {
+  "freshCr": 0,
+  "ofsCr": 9000.97,
+  "totalCr": 9000.97,
+  "method": "Calculated at ₹136 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "Rs. 6 per equity share to Eligible Employees",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "SBI Capital Markets Limited",
+  "Axis Capital Limited",
+  "BOB Capital Markets Limited",
+  "IDBI Capital Markets",
+  "Securities Limited",
+  "IIFL Capital Services Limited"
+ ],
+ "registrar": "KFin Technologies Limited",
+ "registrarContact": "Williams R, +91 4067162222/1800 309 4001 , mahanadi.ipo@kfintech.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MAHACOAL.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MAHACOAL.zip"
+ },
+ "fetchedAt": "2026-11-17T12:35:33.120Z",
+ "slug": "mahanadi-coalfields",
+ "symbol": "MAHACOAL",
+ "board": "mainboard",
+ "name": "Mahanadi Coalfields Limited"
+}

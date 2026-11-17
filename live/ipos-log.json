@@ -1,8 +1,8 @@
 {
- "runAt": "2026-11-16T12:35:24.428Z",
+ "runAt": "2026-11-17T12:35:25.335Z",
  "notes": [
   "NSE past issues: 1493; series {\"SME\":784,\"Equity\":577,\"DEBT\":118,\"InvIT\":8,\"REIT\":6}; keys companyName,ipoEndDate,ipoStartDate,issuePrice,listingDate,priceRange,securityType,symbol,company",
-  "1357 issues; 5 detail pages refreshed; last price session 2026-11-16"
+  "1358 issues; 4 detail pages refreshed; last price session 2026-11-17"
  ],
  "errors": []
 }
