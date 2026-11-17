@@ -1,9 +1,9 @@
 {
- "runAt": "2026-11-17T10:58:08.544Z",
+ "runAt": "2026-11-17T20:33:47.637Z",
  "accepted": [],
  "notes": [],
  "errors": [
-  "2026-11-17: fetch failed (UND_ERR_CONNECT_TIMEOUT Connect Timeout Error (attempted address: cpcb.nic.in:443, timeout: 10000ms))",
-  "2026-11-16: fetch failed (UND_ERR_CONNECT_TIMEOUT Connect Timeout Error (attempted address: cpcb.nic.in:443, timeout: 10000ms))"
+  "2026-11-18: fetch failed (UND_ERR_CONNECT_TIMEOUT Connect Timeout Error (attempted address: cpcb.nic.in:443, timeout: 10000ms))",
+  "2026-11-17: fetch failed (UND_ERR_CONNECT_TIMEOUT Connect Timeout Error (attempted address: cpcb.nic.in:443, timeout: 10000ms))"
  ]
 }
