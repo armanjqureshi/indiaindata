@@ -3,7 +3,7 @@
  "lotSize": 600,
  "faceValue": 0.1,
  "issueType": "Book Building",
- "issueSizeText": "Initial Public Offer comprising of fresh issue of up to 49,02,000 Equity Shares (including Market Maker portion of 2,52,000 Equity Shares)",
+ "issueSizeText": "Initial Public Offer comprising of fresh issue of up to 49,02,000 Equity Shares (including Market Maker portion of 2,52,000 Equity Shares Anchor Allocation portion of 13,86,000 Equity Shares)",
  "issueSize": {
   "freshCr": 120.1,
   "ofsCr": 0,
@@ -20,9 +20,10 @@
  "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
  "documents": {
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_WATRANA.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_WATRANA.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_WATRANA.zip"
  },
- "fetchedAt": "2026-11-16T12:35:32.700Z",
+ "fetchedAt": "2026-11-18T15:35:40.490Z",
  "slug": "watrana-rentals",
  "symbol": "WATRANA",
  "board": "sme",
