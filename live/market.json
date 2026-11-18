@@ -171,16 +171,16 @@
   },
   "brent-spot": {
    "label": "Brent crude spot (FOB)",
-   "value": 92.14,
-   "prev": 90.16,
-   "change": 1.98,
-   "changePct": 2.2,
-   "asOf": "2026-11-11",
+   "value": 92.94,
+   "prev": 92.9,
+   "change": 0.04,
+   "changePct": 0.04,
+   "asOf": "2026-11-17",
    "unit": "US$/bbl",
    "source": "US Energy Information Administration, Europe Brent spot price FOB",
    "sourceUrl": "https://www.eia.gov/dnav/pet/hist/rbrteD.htm",
    "note": "Physical spot price; EIA publishes it with a lag of several days. Futures prices quoted in the news can differ.",
-   "updatedAt": "2026-11-12T21:02:28.875Z"
+   "updatedAt": "2026-11-18T21:32:20.766Z"
   },
   "fpi-equity-mtd": {
    "label": "FPI net equity investment, month to date",
@@ -8061,6 +8061,22 @@
    [
     "2026-11-11",
     92.14
+   ],
+   [
+    "2026-11-12",
+    95.42
+   ],
+   [
+    "2026-11-13",
+    95.17
+   ],
+   [
+    "2026-11-16",
+    92.9
+   ],
+   [
+    "2026-11-17",
+    92.94
    ]
   ],
   "fpi-equity-mtd": [
@@ -8336,6 +8352,6 @@
    ]
   ]
  },
- "updatedAt": "2026-11-18T13:40:40.966Z",
+ "updatedAt": "2026-11-18T21:32:26.147Z",
  "session": "2026-11-18"
 }
