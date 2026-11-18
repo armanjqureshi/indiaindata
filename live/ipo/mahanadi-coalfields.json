@@ -3,7 +3,7 @@
  "lotSize": 110,
  "faceValue": null,
  "issueType": "Book Building",
- "issueSizeText": "Initial Public offer comprising of Offer for Sale of up to 661,836,300 Equity Shares",
+ "issueSizeText": "Initial Public offer comprising of Offer for Sale of up to 661,836,300 Equity Shares (Including Eligible Employee Reservation portion of up to 3,30,91,815 Equity Shares, Shareholders portion of up to 6,61,83,630 Equity Shares and Anchor Allocation portion of 16,87,68,255 Equity Shares)",
  "issueSize": {
   "freshCr": 0,
   "ofsCr": 9000.97,
@@ -25,9 +25,10 @@
  "marketTimings": "10.00 a.m. to 5.00 p.m.",
  "documents": {
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MAHACOAL.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MAHACOAL.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MAHACOAL.zip"
  },
- "fetchedAt": "2026-11-17T12:35:33.120Z",
+ "fetchedAt": "2026-11-18T18:35:35.905Z",
  "slug": "mahanadi-coalfields",
  "symbol": "MAHACOAL",
  "board": "mainboard",
