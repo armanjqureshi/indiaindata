@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T15:35:52.902Z",
+ "updatedAt": "2026-11-18T21:35:50.355Z",
  "lastPriceSession": "2026-11-18",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -16160,7 +16160,7 @@
    "slug": "pkh-ventures",
    "symbol": "PKH",
    "board": "mainboard",
-   "name": "PKH Ventures Limited - Issue Withdrawn",
+   "name": "PKH Ventures Limited",
    "status": "unlisted",
    "open": "2023-06-30",
    "close": "2023-07-04",
