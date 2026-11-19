@@ -1,59 +1,59 @@
 {
  "subscription": {
-  "total": 2.06,
+  "total": 2.57,
   "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
     "label": "QIB",
     "offered": 3406814,
-    "bid": 7047260,
-    "times": 2.07
+    "bid": 7423515,
+    "times": 2.18
    },
    {
     "key": "nii",
     "label": "NII",
     "offered": 2596928,
-    "bid": 4541295,
-    "times": 1.75
+    "bid": 6535375,
+    "times": 2.52
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 1731286,
-    "bid": 2674375,
-    "times": 1.54
+    "bid": 3849010,
+    "times": 2.22
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 865642,
-    "bid": 1866920,
-    "times": 2.16
+    "bid": 2686365,
+    "times": 3.1
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 6059497,
-    "bid": 13084005,
-    "times": 2.16
+    "bid": 16829835,
+    "times": 2.78
    },
    {
     "key": "employee",
     "label": "Employees",
     "offered": 106837,
-    "bid": 431145,
-    "times": 4.04
+    "bid": 491590,
+    "times": 4.6
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 12170076,
-    "bid": 25103705,
-    "times": 2.06
+    "bid": 31280315,
+    "times": 2.57
    }
   ],
-  "asOf": "19-Nov-2026 12:00:00",
+  "asOf": "19-Nov-2026 15:03:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 55,
@@ -81,7 +81,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_CRYSTALCP.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_CRYSTALCP.zip"
  },
- "fetchedAt": "2026-11-19T06:35:27.892Z",
+ "fetchedAt": "2026-11-19T09:35:37.359Z",
  "slug": "crystal-crop-protection",
  "symbol": "CRYSTALCP",
  "board": "mainboard",
