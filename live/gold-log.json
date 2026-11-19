@@ -1,12 +1,26 @@
 {
- "runAt": "2026-11-18T20:26:19.778Z",
+ "runAt": "2026-11-19T11:57:28.148Z",
  "notes": [
+  "2026-11-19 pm g999: revised from 131164 to 129531 (chart)",
+  "2026-11-19 pm g916: revised from 120146 to 118650 (chart)",
+  "2026-11-19 pm silver: revised from 163733 to 160439 (chart)",
+  "2026-11-19 am g999: revised from 131505 to 129985 (today)",
+  "2026-11-19 am g995: revised from 130978 to 129465 (today)",
+  "2026-11-19 pm g995: revised from 130639 to 129012 (today)",
+  "2026-11-19 am g916: revised from 120459 to 119066 (today)",
+  "2026-11-19 am g750: revised from 98629 to 97489 (today)",
+  "2026-11-19 pm g750: revised from 98373 to 97148 (today)",
+  "2026-11-19 am g585: revised from 76930 to 76041 (today)",
+  "2026-11-19 pm g585: revised from 76731 to 75776 (today)",
+  "2026-11-19 am silver: revised from 164506 to 161575 (today)",
+  "2026-11-19 am platinum: revised from 52643 to 50920 (today)",
+  "2026-11-19 pm platinum: revised from 51580 to 51000 (today)",
   "2026-11-04 am g585 = 85521 left out: 0.606 of 999 gold, expected about 0.585",
   "2026-11-17 am platinum = 49869, -10.2% from 2026-11-16 close (55547); as published by IBJA"
  ],
  "errors": [],
  "previousRows": 8,
- "chartDays": 83,
+ "chartDays": 84,
  "pdfRows": 21,
  "today": {
   "status": "parsed",
