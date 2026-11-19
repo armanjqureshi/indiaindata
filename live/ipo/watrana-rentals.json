@@ -1,9 +1,9 @@
 {
  "subscription": {
-  "total": 2.47,
+  "total": 3.47,
   "totalMethod": "NSE",
   "categories": [],
-  "asOf": "19-Nov-2026 15:00:00",
+  "asOf": "19-Nov-2026 17:00:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 600,
@@ -29,7 +29,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_WATRANA.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_WATRANA.zip"
  },
- "fetchedAt": "2026-11-19T09:35:32.490Z",
+ "fetchedAt": "2026-11-19T12:35:32.785Z",
  "slug": "watrana-rentals",
  "symbol": "WATRANA",
  "board": "sme",
