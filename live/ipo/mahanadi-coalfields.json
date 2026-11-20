@@ -1,66 +1,66 @@
 {
  "subscription": {
-  "total": 0.47,
+  "total": 0.48,
   "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
     "label": "QIB",
     "offered": 112512171,
-    "bid": 154312070,
+    "bid": 154362670,
     "times": 1.37
    },
    {
     "key": "nii",
     "label": "NII",
     "offered": 84384129,
-    "bid": 12734480,
-    "times": 0.15
+    "bid": 15207060,
+    "times": 0.18
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 56256086,
-    "bid": 6135470,
-    "times": 0.11
+    "bid": 7583510,
+    "times": 0.13
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 28128043,
-    "bid": 6599010,
-    "times": 0.23
+    "bid": 7623550,
+    "times": 0.27
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 196896300,
-    "bid": 44628650,
-    "times": 0.23
+    "bid": 47970670,
+    "times": 0.24
    },
    {
     "key": "employee",
     "label": "Employees",
     "offered": 33091815,
-    "bid": 2771230,
-    "times": 0.08
+    "bid": 2990570,
+    "times": 0.09
    },
    {
     "key": "shareholder",
     "label": "Shareholders",
     "offered": 66183630,
-    "bid": 16596690,
-    "times": 0.25
+    "bid": 18307630,
+    "times": 0.28
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 493068045,
-    "bid": 231043120,
-    "times": 0.47
+    "bid": 238838600,
+    "times": 0.48
    }
   ],
-  "asOf": "20-Nov-2026 15:03:00",
+  "asOf": "20-Nov-2026 17:03:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 110,
@@ -91,7 +91,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_MAHACOAL.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MAHACOAL.zip"
  },
- "fetchedAt": "2026-11-20T09:35:32.785Z",
+ "fetchedAt": "2026-11-20T12:35:35.307Z",
  "slug": "mahanadi-coalfields",
  "symbol": "MAHACOAL",
  "board": "mainboard",
