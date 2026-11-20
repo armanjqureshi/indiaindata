@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T13:40:38.286Z",
+ "updatedAt": "2026-11-20T18:35:40.022Z",
  "lastPriceSession": "2026-11-20",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -123,7 +123,7 @@
    "symbol": "CRYSTALCP",
    "board": "mainboard",
    "name": "Crystal Crop Protection Limited",
-   "status": "open",
+   "status": "closed",
    "open": "2026-11-18",
    "close": "2026-11-20",
    "listingDate": null,
