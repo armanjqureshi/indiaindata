@@ -1,0 +1,30 @@
+{
+ "subscription": null,
+ "lotSize": 1000,
+ "faceValue": 0.1,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising of fresh issue of up to 65,96,000 Equity Shares (including Market Maker portion of 3,30,000 Equity Shares)",
+ "issueSize": {
+  "freshCr": 93.66,
+  "ofsCr": 0,
+  "totalCr": 93.66,
+  "method": "Calculated at ₹142 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Erudore Capital Private Limited"
+ ],
+ "registrar": "Mas Services Limited",
+ "registrarContact": "N.C. Pal, 011-26387281, ipo@masserv.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SHREESIDHI.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SHREESIDHI.zip"
+ },
+ "fetchedAt": "2026-11-20T09:35:27.816Z",
+ "slug": "shree-siddhivinayak-greentech-industries",
+ "symbol": "SHREESIDHI",
+ "board": "sme",
+ "name": "Shree Siddhivinayak Greentech Industries Limited"
+}
