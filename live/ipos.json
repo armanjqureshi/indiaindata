@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T18:35:40.022Z",
+ "updatedAt": "2026-11-21T18:35:43.618Z",
  "lastPriceSession": "2026-11-20",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -8555,44 +8555,6 @@
    "lastClose": 84,
    "lastCloseDate": "2026-11-20",
    "gainPct": 50,
-   "hasDetail": false
-  },
-  {
-   "slug": "sudeep-pharma",
-   "symbol": "SUDEEPPHRM",
-   "board": "mainboard",
-   "name": "Sudeep Pharma Limited",
-   "status": "listed",
-   "open": "2025-11-21",
-   "close": "2025-11-25",
-   "listingDate": "2025-11-28",
-   "timetable": {
-    "open": "2025-11-21",
-    "close": "2025-11-25",
-    "allotment": null,
-    "refunds": null,
-    "demat": null,
-    "listing": "2025-11-28",
-    "expected": {}
-   },
-   "priceLow": 563,
-   "priceHigh": 593,
-   "issuePrice": 593,
-   "lotSize": null,
-   "lotValue": null,
-   "sizeCr": null,
-   "subscription": null,
-   "subscriptionAsOf": null,
-   "listing": {
-    "date": "2025-11-28",
-    "open": 730,
-    "close": 774.15,
-    "source": "NSE end-of-day file for the listing date"
-   },
-   "listingGainPct": 23.1,
-   "lastClose": 1191.5,
-   "lastCloseDate": "2026-11-20",
-   "gainPct": 100.9,
    "hasDetail": false
   }
  ]
