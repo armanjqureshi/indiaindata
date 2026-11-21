@@ -1,9 +1,9 @@
 {
- "runAt": "2026-11-20T21:53:56.753Z",
+ "runAt": "2026-11-21T10:02:43.409Z",
  "accepted": [],
  "notes": [],
  "errors": [
-  "2026-11-21: fetch failed (CERT_HAS_EXPIRED certificate has expired)",
-  "2026-11-20: fetch failed (CERT_HAS_EXPIRED certificate has expired)"
+  "2026-11-20: fetch failed (CERT_HAS_EXPIRED certificate has expired)",
+  "2026-11-21: fetch failed (CERT_HAS_EXPIRED certificate has expired)"
  ]
 }
