@@ -1,7 +1,7 @@
 {
- "runAt": "2026-11-23T15:28:01.537Z",
+ "runAt": "2026-11-23T18:35:24.831Z",
  "notes": [
-  "NSE past issues: 1494; series {\"Equity\":578,\"SME\":784,\"DEBT\":118,\"InvIT\":8,\"REIT\":6}; keys company,htmSym,ipoEndDate,ipoStartDate,issuePrice,linkRemovalDate,listingDate,priceRange,securityType,symbol",
+  "NSE past issues: 1496; series {\"Equity\":579,\"SME\":785,\"DEBT\":118,\"InvIT\":8,\"REIT\":6}; keys company,htmSym,ipoEndDate,ipoStartDate,issuePrice,linkRemovalDate,listingDate,priceRange,securityType,symbol",
   "1360 issues; 6 detail pages refreshed; last price session 2026-11-23"
  ],
  "errors": []
