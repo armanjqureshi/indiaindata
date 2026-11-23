@@ -1,0 +1,31 @@
+{
+ "subscription": null,
+ "lotSize": 78,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 1920 million and Offer for Sale of up to 8,835,382 Equity Shares",
+ "issueSize": {
+  "freshCr": 192,
+  "ofsCr": 168.76,
+  "totalCr": 360.76,
+  "method": "Calculated at ₹191 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Equirus Capital Limited (formerly known as Equirus Capital Private Limited)",
+  "JM Financial Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Shanti Gopalkrishnan, +91 81081 14949, foodlink.ipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_FOODLINK.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_FOODLINK.zip"
+ },
+ "fetchedAt": "2026-11-23T12:35:31.470Z",
+ "slug": "foodlink-f-and-b-holdings-india",
+ "symbol": "FOODLINK",
+ "board": "mainboard",
+ "name": "Foodlink F&B Holdings (India) Limited"
+}
