@@ -145,29 +145,29 @@
   },
   "dii-net": {
    "label": "DII net (cash market)",
-   "value": -4859.8,
-   "prev": -1356.57,
-   "change": -3503.23,
-   "changePct": 258.24,
-   "asOf": "2026-11-20",
+   "value": -2760.12,
+   "prev": -4859.8,
+   "change": 2099.68,
+   "changePct": -43.21,
+   "asOf": "2026-11-23",
    "unit": "₹ cr",
    "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined)",
    "sourceUrl": "https://www.nseindia.com/reports/fii-dii",
-   "note": "Buy ₹18492.63 cr, sell ₹23352.43 cr",
-   "updatedAt": "2026-11-20T13:40:57.738Z"
+   "note": "Buy ₹16505.75 cr, sell ₹19265.87 cr",
+   "updatedAt": "2026-11-24T01:09:47.985Z"
   },
   "fii-net": {
    "label": "FII/FPI net (cash market)",
-   "value": 10308.42,
-   "prev": 7411.41,
-   "change": 2897.01,
-   "changePct": 39.09,
-   "asOf": "2026-11-20",
+   "value": 5672.99,
+   "prev": 10308.42,
+   "change": -4635.43,
+   "changePct": -44.97,
+   "asOf": "2026-11-23",
    "unit": "₹ cr",
    "source": "NSE provisional FII/DII trading data (NSE, BSE and MSEI combined)",
    "sourceUrl": "https://www.nseindia.com/reports/fii-dii",
-   "note": "Buy ₹23596.4 cr, sell ₹13287.98 cr",
-   "updatedAt": "2026-11-20T13:40:57.738Z"
+   "note": "Buy ₹23473.67 cr, sell ₹17800.68 cr",
+   "updatedAt": "2026-11-24T01:09:47.992Z"
   },
   "brent-spot": {
    "label": "Brent crude spot (FOB)",
@@ -197,29 +197,29 @@
   },
   "gold-ibja": {
    "label": "Gold 999 (IBJA, per 10 g)",
-   "value": 123893,
-   "prev": 129531,
-   "change": -5638,
-   "changePct": -4.35,
-   "asOf": "2026-11-20",
+   "value": 124945,
+   "prev": 123893,
+   "change": 1052,
+   "changePct": 0.85,
+   "asOf": "2026-11-23",
    "unit": "₹",
    "source": "IBJA PM (closing) rate (excl. GST and making charges)",
    "sourceUrl": "https://ibjarates.com/",
    "note": null,
-   "updatedAt": "2026-11-21T04:30:45.632Z"
+   "updatedAt": "2026-11-24T01:09:49.390Z"
   },
   "silver-ibja": {
    "label": "Silver 999 (IBJA, per kg)",
-   "value": 152528,
-   "prev": 160439,
-   "change": -7911,
-   "changePct": -4.93,
-   "asOf": "2026-11-20",
+   "value": 152625,
+   "prev": 152528,
+   "change": 97,
+   "changePct": 0.06,
+   "asOf": "2026-11-23",
    "unit": "₹",
    "source": "IBJA PM (closing) rate (excl. GST and making charges)",
    "sourceUrl": "https://ibjarates.com/",
    "note": null,
-   "updatedAt": "2026-11-21T04:30:45.632Z"
+   "updatedAt": "2026-11-24T01:09:49.390Z"
   }
  },
  "history": {
@@ -7549,6 +7549,10 @@
    [
     "2026-11-20",
     -4859.8
+   ],
+   [
+    "2026-11-23",
+    -2760.12
    ]
   ],
   "fii-net": [
@@ -7643,6 +7647,10 @@
    [
     "2026-11-20",
     10308.42
+   ],
+   [
+    "2026-11-23",
+    5672.99
    ]
   ],
   "brent-spot": [
@@ -8421,6 +8429,10 @@
    [
     "2026-11-20",
     123893
+   ],
+   [
+    "2026-11-23",
+    124945
    ]
   ],
   "silver-ibja": [
@@ -8523,6 +8535,10 @@
    [
     "2026-11-20",
     152528
+   ],
+   [
+    "2026-11-23",
+    152625
    ]
   ],
   "fpi-equity-monthly": [
@@ -8532,6 +8548,6 @@
    ]
   ]
  },
- "updatedAt": "2026-11-23T13:40:38.563Z",
+ "updatedAt": "2026-11-24T01:09:53.868Z",
  "session": "2026-11-23"
 }
