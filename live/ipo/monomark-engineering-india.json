@@ -1,0 +1,30 @@
+{
+ "subscription": null,
+ "lotSize": 225,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offer comprising Fresh Issue of up to 2,70,00,000 equity shares",
+ "issueSize": {
+  "freshCr": 175.5,
+  "ofsCr": 0,
+  "totalCr": 175.5,
+  "method": "Calculated at ₹65 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Holani Consultants Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Mr. Sagar Pathare, +91 22-6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MONOMARK.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MONOMARK.zip"
+ },
+ "fetchedAt": "2026-11-25T12:35:34.991Z",
+ "slug": "monomark-engineering-india",
+ "symbol": "MONOMARK",
+ "board": "mainboard",
+ "name": "Monomark Engineering (India) Limited"
+}
