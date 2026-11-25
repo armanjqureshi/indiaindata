@@ -3,7 +3,7 @@
  "lotSize": 78,
  "faceValue": null,
  "issueType": "Book Building",
- "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 1920 million and Offer for Sale of up to 8,835,382 Equity Shares",
+ "issueSizeText": "Initial Public offer comprising of Fresh issue aggregating up to Rs. 1920 million and Offer for Sale of up to 8,835,382 Equity Shares (Anchor Allocation portion of 84,99,483 Equity Shares)",
  "issueSize": {
   "freshCr": 192,
   "ofsCr": 168.76,
@@ -21,9 +21,10 @@
  "marketTimings": "10.00 a.m. to 5.00 p.m.",
  "documents": {
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_FOODLINK.zip",
+  "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_FOODLINK.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_FOODLINK.zip"
  },
- "fetchedAt": "2026-11-23T12:35:31.470Z",
+ "fetchedAt": "2026-11-25T15:35:43.351Z",
  "slug": "foodlink-f-and-b-holdings-india",
  "symbol": "FOODLINK",
  "board": "mainboard",
