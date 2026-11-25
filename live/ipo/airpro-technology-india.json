@@ -1,0 +1,29 @@
+{
+ "subscription": null,
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Fixed Price",
+ "issueSizeText": "Initial Public Offer comprising of Fresh Issue up to 29,20,000 Equity Shares and Offer for Sales up to 6,80,000 Equity Shares (Including Market maker portion of 1,80,000 Equity Shares)",
+ "issueSize": {
+  "freshCr": 28.91,
+  "ofsCr": 6.73,
+  "totalCr": 35.64,
+  "method": "Calculated at ₹99 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": null,
+ "retailMax": null,
+ "leadManagers": [
+  "Horizon Management Private Limited"
+ ],
+ "registrar": "MUFG Intime India Private Limited",
+ "registrarContact": "Mr. Shanti Gopalkrishnan, 022-49186000, airprotechnology.smeipo@in.mpms.mufg.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m. (Bidding Timings on Issue Closure upto 4:00 P.M.)",
+ "documents": {
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_AIRPRO.zip"
+ },
+ "fetchedAt": "2026-11-25T09:35:31.027Z",
+ "slug": "airpro-technology-india",
+ "symbol": "AIRPRO",
+ "board": "sme",
+ "name": "Airpro Technology India Limited"
+}

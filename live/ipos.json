@@ -1,9 +1,47 @@
 {
- "updatedAt": "2026-11-24T18:36:04.433Z",
+ "updatedAt": "2026-11-25T09:35:58.125Z",
  "lastPriceSession": "2026-11-23",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
+  {
+   "slug": "airpro-technology-india",
+   "symbol": "AIRPRO",
+   "board": "sme",
+   "name": "Airpro Technology India Limited",
+   "status": "upcoming",
+   "open": "2026-11-27",
+   "close": "2026-12-01",
+   "listingDate": null,
+   "timetable": {
+    "open": "2026-11-27",
+    "close": "2026-12-01",
+    "allotment": "2026-12-02",
+    "refunds": "2026-12-03",
+    "demat": "2026-12-03",
+    "listing": "2026-12-04",
+    "expected": {
+     "listing": true,
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 99,
+   "priceHigh": 99,
+   "issuePrice": 99,
+   "lotSize": 1200,
+   "lotValue": 118800,
+   "sizeCr": 35.64,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": null,
+   "listingGainPct": null,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
+   "hasDetail": true
+  },
   {
    "slug": "foodlink-f-and-b-holdings-india",
    "symbol": "FOODLINK",
