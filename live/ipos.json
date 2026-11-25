@@ -1,9 +1,47 @@
 {
- "updatedAt": "2026-11-25T09:35:58.125Z",
+ "updatedAt": "2026-11-25T10:35:17.198Z",
  "lastPriceSession": "2026-11-23",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
  "ipos": [
+  {
+   "slug": "a-j-packaging",
+   "symbol": "AJPACK",
+   "board": "sme",
+   "name": "A J Packaging Limited",
+   "status": "upcoming",
+   "open": "2026-12-01",
+   "close": "2026-12-03",
+   "listingDate": null,
+   "timetable": {
+    "open": "2026-12-01",
+    "close": "2026-12-03",
+    "allotment": "2026-12-04",
+    "refunds": "2026-12-07",
+    "demat": "2026-12-07",
+    "listing": "2026-12-08",
+    "expected": {
+     "listing": true,
+     "demat": true,
+     "refunds": true,
+     "allotment": true
+    }
+   },
+   "priceLow": 175,
+   "priceHigh": 180,
+   "issuePrice": null,
+   "lotSize": 800,
+   "lotValue": 144000,
+   "sizeCr": 54,
+   "subscription": null,
+   "subscriptionAsOf": null,
+   "listing": null,
+   "listingGainPct": null,
+   "lastClose": null,
+   "lastCloseDate": null,
+   "gainPct": null,
+   "hasDetail": true
+  },
   {
    "slug": "airpro-technology-india",
    "symbol": "AIRPRO",
