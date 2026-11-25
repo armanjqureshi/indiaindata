@@ -1,0 +1,28 @@
+{
+ "subscription": {
+  "total": 172.28,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "03-Oct-2023 19:00:00",
+  "scope": "NSE and BSE combined"
+ },
+ "lotSize": 1200,
+ "faceValue": 0.1,
+ "issueType": "Fixed Priced",
+ "issueSizeText": "Initial Public offer of 1,000,800 Equity Shares (Including Market Maker portion of 52,800 Equity Shares)",
+ "issueSize": null,
+ "employeeDiscount": null,
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Fedex Securities Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Mr. Vinayak Morbale, +91 22 6263 8200 ; ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {},
+ "fetchedAt": "2026-11-25T18:35:56.484Z",
+ "slug": "oneclick-logistics-india",
+ "symbol": "OLIL",
+ "board": "sme",
+ "name": "Oneclick Logistics India Limited"
+}

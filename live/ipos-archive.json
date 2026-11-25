@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T12:36:07.666Z",
+ "updatedAt": "2026-11-25T18:36:04.692Z",
  "lastPriceSession": "2026-11-25",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -14484,25 +14484,25 @@
    "status": "listed",
    "open": "2023-09-27",
    "close": "2023-10-03",
-   "listingDate": "2023-10-11",
+   "listingDate": "2026-11-26",
    "priceLow": 99,
    "priceHigh": 99,
-   "issuePrice": 99,
-   "lotSize": null,
-   "lotValue": null,
+   "issuePrice": 363,
+   "lotSize": 1200,
+   "lotValue": 435600,
    "sizeCr": null,
-   "subscription": null,
-   "subscriptionAsOf": null,
+   "subscription": 172.28,
+   "subscriptionAsOf": "03-Oct-2023 19:00:00",
    "listing": {
     "date": "2023-10-11",
     "open": 140,
     "close": 133,
     "source": "NSE end-of-day file for the listing date"
    },
-   "listingGainPct": 41.4,
+   "listingGainPct": -61.4,
    "lastClose": 389.35,
    "lastCloseDate": "2026-11-25",
-   "gainPct": 293.3
+   "gainPct": 7.3
   },
   {
    "slug": "valiant-laboratories",
