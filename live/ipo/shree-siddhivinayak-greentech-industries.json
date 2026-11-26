@@ -1,5 +1,11 @@
 {
- "subscription": null,
+ "subscription": {
+  "total": 0.74,
+  "totalMethod": "NSE",
+  "categories": [],
+  "asOf": "26-Nov-2026 12:00:00",
+  "scope": "NSE and BSE combined"
+ },
  "lotSize": 1000,
  "faceValue": 0.1,
  "issueType": "Book Building",
@@ -22,7 +28,7 @@
   "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_SHREESIDHI.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_SHREESIDHI.zip"
  },
- "fetchedAt": "2026-11-20T09:35:27.816Z",
+ "fetchedAt": "2026-11-26T06:35:29.935Z",
  "slug": "shree-siddhivinayak-greentech-industries",
  "symbol": "SHREESIDHI",
  "board": "sme",
