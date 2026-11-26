@@ -1,52 +1,52 @@
 {
  "subscription": {
-  "total": 0.45,
+  "total": 1.08,
   "totalMethod": "NSE",
   "categories": [
    {
     "key": "qib",
     "label": "QIB",
     "offered": 5613270,
-    "bid": 0,
-    "times": 0
+    "bid": 5666310,
+    "times": 1.01
    },
    {
     "key": "nii",
     "label": "NII",
     "offered": 2916467,
-    "bid": 841386,
-    "times": 0.29
+    "bid": 1157052,
+    "times": 0.4
    },
    {
     "key": "bnii",
     "label": "NII above ₹10 lakh",
     "offered": 1944312,
-    "bid": 448188,
-    "times": 0.23
+    "bid": 645918,
+    "times": 0.33
    },
    {
     "key": "snii",
     "label": "NII ₹2–10 lakh",
     "offered": 972155,
-    "bid": 393198,
-    "times": 0.4
+    "bid": 511134,
+    "times": 0.53
    },
    {
     "key": "retail",
     "label": "Retail",
     "offered": 1944311,
-    "bid": 3906864,
-    "times": 2.01
+    "bid": 4524468,
+    "times": 2.33
    },
    {
     "key": "total",
     "label": "Total",
     "offered": 10474048,
-    "bid": 4748250,
-    "times": 0.45
+    "bid": 11347830,
+    "times": 1.08
    }
   ],
-  "asOf": "26-Nov-2026 15:00:00",
+  "asOf": "26-Nov-2026 17:00:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 78,
@@ -73,7 +73,7 @@
   "Anchor allocation": "https://nsearchives.nseindia.com/content/ipo/ANCHOR_FOODLINK.zip",
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_FOODLINK.zip"
  },
- "fetchedAt": "2026-11-26T09:35:33.927Z",
+ "fetchedAt": "2026-11-26T12:35:43.922Z",
  "slug": "foodlink-f-and-b-holdings-india",
  "symbol": "FOODLINK",
  "board": "mainboard",
