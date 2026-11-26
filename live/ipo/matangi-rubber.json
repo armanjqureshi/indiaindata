@@ -1,0 +1,30 @@
+{
+ "subscription": null,
+ "lotSize": 87,
+ "faceValue": null,
+ "issueType": "Book Building",
+ "issueSizeText": "Initial Public Offering comprising of Fresh Issue up to 57,61,831 Equity shares and Offer for Sale upto 15,15,150 Equity Shares.",
+ "issueSize": {
+  "freshCr": 99.1,
+  "ofsCr": 26.06,
+  "totalCr": 125.16,
+  "method": "Calculated at ₹172 per share from the issue size NSE publishes"
+ },
+ "employeeDiscount": "NA",
+ "retailMax": "Rs. 2,00,000",
+ "leadManagers": [
+  "Sarthi Capital Advisors Private Limited"
+ ],
+ "registrar": "Bigshare Services Private Limited",
+ "registrarContact": "Mr. Babu Raphael, +91 22 6263 8200, ipo@bigshareonline.com",
+ "marketTimings": "10.00 a.m. to 5.00 p.m.",
+ "documents": {
+  "Red herring prospectus": "https://nsearchives.nseindia.com/content/ipo/RHP_MATANGI.zip",
+  "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_MATANGI.zip"
+ },
+ "fetchedAt": "2026-11-26T09:35:28.181Z",
+ "slug": "matangi-rubber",
+ "symbol": "MATANGI",
+ "board": "mainboard",
+ "name": "Matangi Rubber Limited"
+}
