@@ -1,11 +1,12 @@
-// cpcb.nic.in has been serving an expired TLS certificate since November 2026, so Node's
+// cpcb.nic.in (which now redirects to cpcb.gov.in) has been serving an expired TLS certificate since November 2026, so Node's
 // fetch refuses it (CERT_HAS_EXPIRED). For CPCB's hosts only, this downloads a file while
 // accepting a certificate whose single fault is its expiry date: any other certificate
 // error, or a hostname mismatch, is still refused. Callers also check the body is a PDF.
 import https from 'node:https'
 import tls from 'node:tls'
 
-const ALLOWED = new Set(['cpcb.nic.in', 'www.cpcb.nic.in'])
+// cpcb.nic.in now redirects to cpcb.gov.in
+const ALLOWED = new Set(['cpcb.nic.in', 'www.cpcb.nic.in', 'cpcb.gov.in', 'www.cpcb.gov.in'])
 
 export const isExpiredCert = (e) => (e?.cause?.code || e?.code) === 'CERT_HAS_EXPIRED'
 
@@ -29,7 +30,7 @@ export function getAllowExpired(url, { headers = {}, timeout = 60000, redirects 
       }
       const chunks = []
       res.on('data', (c) => chunks.push(c))
-      res.on('end', () => resolve({ status: res.statusCode, buffer: Buffer.concat(chunks), expiredCert: certErr === 'CERT_HAS_EXPIRED' }))
+      res.on('end', () => resolve({ status: res.statusCode, url: u.href, buffer: Buffer.concat(chunks), expiredCert: certErr === 'CERT_HAS_EXPIRED' }))
       res.on('error', reject)
     })
     req.on('timeout', () => req.destroy(new Error('timeout')))
