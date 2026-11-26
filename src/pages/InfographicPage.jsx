@@ -17,7 +17,7 @@ export default function InfographicPage() {
   })
   if (!g) return <NotFound />
   const { Component } = g
-  const embed = `<a href="${SITE}/infographics/${g.slug}"><img src="${SITE}${g.image}" alt="${g.short}. Source: India in Data" width="800" /></a>\n<p>Source: <a href="${SITE}/infographics/${g.slug}">India in Data</a></p>`
+  const embed = `<a href="${SITE}/infographics/${g.slug}/"><img src="${SITE}${g.image}" alt="${g.short}. Source: India in Data" width="800" /></a>\n<p>Source: <a href="${SITE}/infographics/${g.slug}/">India in Data</a></p>`
   const copy = () => {
     try {
       navigator.clipboard.writeText(embed).then(() => { setCopied(true); setTimeout(() => setCopied(false), 2000) })

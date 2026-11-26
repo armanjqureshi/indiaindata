@@ -24,7 +24,9 @@ function escapeHtml(s) {
 function injectMeta(html, route) {
   const fullTitle = route.title ? `${route.title} — India in Data` : 'India in Data'
   const description = route.description || ''
-  const canonical = `${SITE_URL}${route.path === '/' ? '' : route.path}`
+  // Netlify serves /x/index.html at /x/ and 301-redirects /x to it, so the canonical (and og:url)
+  // must carry the trailing slash or Google is pointed at a redirect
+  const canonical = `${SITE_URL}${route.path === '/' ? '/' : route.path.replace(/\/?$/, '/')}`
 
   let out = html
     .replace(/<title id="seo-title">.*?<\/title>/, `<title id="seo-title">${escapeHtml(fullTitle)}</title>`)
@@ -41,6 +43,7 @@ function injectMeta(html, route) {
       `$1${escapeHtml(description)}$2`
     )
     .replace(/(<link id="seo-canonical"[^>]*href=")[^"]*(")/, `$1${canonical}$2`)
+    .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${canonical}$2`)
   if (route.image) {
     const img = SITE_URL + route.image
     out = out

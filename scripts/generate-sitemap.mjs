@@ -8,7 +8,7 @@ const clientDir = path.resolve(__dirname, '../dist/client')
 const SITE_URL = 'https://indiaindata.online'
 
 function urlEntry(route) {
-  const loc = `${SITE_URL}${route.path === '/' ? '/' : route.path}`
+  const loc = `${SITE_URL}${route.path === '/' ? '/' : route.path.replace(/\/?$/, '/')}`
   const lastmod = route.lastmod ? `\n    <lastmod>${route.lastmod}</lastmod>` : ''
   return `  <url>
     <loc>${loc}</loc>${lastmod}

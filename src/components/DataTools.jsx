@@ -5,6 +5,7 @@ import { useState } from 'react'
 // and AI answer engines can find the data and credit India in Data.
 
 const SITE = 'https://indiaindata.online'
+const pageUrl = (path) => `${SITE}${!path || path === '/' ? '/' : String(path).replace(/\/?$/, '/')}`
 const RAW = 'https://raw.githubusercontent.com/armanjqureshi/indiaindata/main/'
 
 const cell = (v) => {
@@ -62,7 +63,7 @@ const longDate = (iso) => {
 
 export function citation({ name, path, asOf, source }) {
   const when = longDate(asOf)
-  return `India in Data, "${name}"${when ? `, data as of ${when}` : ''}. ${SITE}${path}${source ? `. Original source: ${String(source).replace(/\.\s*$/, '')}.` : ''}`
+  return `India in Data, "${name}"${when ? `, data as of ${when}` : ''}. ${pageUrl(path)}${source ? `. Original source: ${String(source).replace(/\.\s*$/, '')}.` : ''}`
 }
 
 function datasetLd({ name, description, path, asOf, source, sourceUrl, temporalCoverage, variables, keywords, liveFile }) {
@@ -71,7 +72,7 @@ function datasetLd({ name, description, path, asOf, source, sourceUrl, temporalC
     '@type': 'Dataset',
     name,
     description,
-    url: `${SITE}${path}`,
+    url: pageUrl(path),
     creator: { '@type': 'Organization', name: 'India in Data', url: SITE },
     publisher: { '@type': 'Organization', name: 'India in Data', url: SITE },
     isAccessibleForFree: true,
