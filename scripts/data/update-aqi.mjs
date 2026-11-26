@@ -20,6 +20,7 @@ import { execFileSync } from 'node:child_process'
 import { parseBulletin } from './aqi-parse.mjs'
 import { todayIST } from './http.mjs'
 import { aqiSlug, aqiName, aqiCat, AQI_STATE, aqiTier } from '../../src/data/aqi.js'
+import { download } from './expired-cert-fetch.mjs'
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '../..')
 const DIR = path.join(ROOT, 'live', 'aqi')
@@ -33,6 +34,8 @@ const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Geck
 const SOURCE = { name: 'Central Pollution Control Board (CPCB), daily AQI bulletin', url: 'https://cpcb.nic.in/AQI_Bulletin.php' }
 
 const log = { runAt: new Date().toISOString(), accepted: [], notes: [], errors: [] }
+let certNoted = false
+const certNote = () => { if (!certNoted) { certNoted = true; log.notes.push('cpcb.nic.in certificate has expired; bulletins downloaded with the hostname checked and only the expiry ignored') } }
 const urlFor = (iso) => `https://cpcb.nic.in/upload/Downloads/AQI_Bulletin_${iso.replace(/-/g, '')}.pdf`
 const addDays = (iso, n) => new Date(Date.parse(iso + 'T00:00:00Z') + n * 864e5).toISOString().slice(0, 10)
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'aqi-'))
@@ -52,9 +55,9 @@ async function bulletin(iso) {
   let last
   for (let a = 1; a <= 3; a++) {
     try {
-      const r = await fetch(urlFor(iso), { redirect: 'follow', signal: AbortSignal.timeout(60000), headers: { 'User-Agent': UA } })
+      const r = await download(urlFor(iso), { headers: { 'User-Agent': UA }, onExpired: certNote })
       if (r.status === 404) return { missing: true }
-      const buf = Buffer.from(await r.arrayBuffer())
+      const buf = r.buffer
       if (r.status !== 200 || buf.subarray(0, 4).toString() !== '%PDF') return { missing: true, status: r.status }
       const f = path.join(tmp, `${iso}.pdf`)
       fs.writeFileSync(f, buf)

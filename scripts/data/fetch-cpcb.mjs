@@ -1,11 +1,13 @@
-// Runs on the self-hosted runner in India. Since 13 Nov 2026 cpcb.nic.in no longer answers
-// GitHub's own servers, so the PC downloads CPCB's daily AQI bulletins (PDF) into
+// Manual fallback only (no schedule). From 13 Nov 2026 CPCB downloads failed on GitHub's
+// servers; the cause was CPCB's expired certificate, now handled in expired-cert-fetch.mjs,
+// so update-aqi fetches directly again. If CPCB ever does block GitHub, the PC downloads CPCB's daily AQI bulletins (PDF) into
 // cpcb-pdfs/; the workflow uploads them as a run artifact and then asks update-aqi to parse
 // them on GitHub's servers (which have pdftotext). Nothing is committed from here.
 //   node scripts/data/fetch-cpcb.mjs fetch      download today and the previous DAYS days
 //   node scripts/data/fetch-cpcb.mjs dispatch   start update-aqi with this run's artifact
 import fs from 'node:fs'
 import path from 'node:path'
+import { download } from './expired-cert-fetch.mjs'
 
 const DIR = 'cpcb-pdfs'
 const DAYS = Number(process.env.DAYS || 4)
@@ -20,8 +22,8 @@ async function fetchAll() {
     const ymd = addDays(istToday(), -i).replace(/-/g, '')
     const url = `https://cpcb.nic.in/upload/Downloads/AQI_Bulletin_${ymd}.pdf`
     try {
-      const r = await fetch(url, { signal: AbortSignal.timeout(60000), headers: { 'User-Agent': UA } })
-      const buf = Buffer.from(await r.arrayBuffer())
+      const r = await download(url, { headers: { 'User-Agent': UA } })
+      const buf = r.buffer
       if (r.status === 200 && buf.subarray(0, 4).toString() === '%PDF') {
         fs.writeFileSync(path.join(DIR, `AQI_Bulletin_${ymd}.pdf`), buf)
         got++

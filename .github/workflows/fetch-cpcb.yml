@@ -1,13 +1,10 @@
 name: Fetch CPCB AQI bulletins (India runner)
-# cpcb.nic.in stopped answering GitHub's servers on 13 Nov 2026. This job runs on the
+# Manual fallback only. CPCB downloads failed from 13 Nov 2026 because cpcb.nic.in's certificate
+# expired, not because GitHub was blocked; update-aqi now handles that directly. This job runs on the
 # self-hosted runner in India, downloads the bulletins, stores them as a run artifact and
 # starts "Update city AQI", which parses them on GitHub's servers. If the PC is off, the
 # run waits in the queue and goes when it is back.
 on:
-  schedule:
-    - cron: '15 12 * * *'   # 17:45 IST
-    - cron: '45 14 * * *'   # 20:15 IST
-    - cron: '30 3 * * *'    # 09:00 IST
   workflow_dispatch:
 permissions:
   contents: read
