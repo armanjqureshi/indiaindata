@@ -387,7 +387,30 @@ export function getRoutes() {
     noSitemap: true, // prerendered so direct visits work, but not worth indexing
   })
 
+  for (const r of routes) {
+    const why = noindexReason(r.path)
+    if (why) { r.noindex = why; r.noSitemap = true }
+  }
   return routes
+}
+
+// Pages kept out of Google's index (noindex, follow) and out of the sitemap. The pages stay live
+// for visitors and links. Added 26 Nov 2026 after the site-wide demotion in Google's November 2026
+// core update: a six-week-old site had grown from about 150 pages to 1,600 template pages in a
+// week, some thin or stale. Remove a rule here to put a set back in the index.
+//  - districts: Census 2011 figures in one template per district (the /districts hub stays)
+//  - gold and silver city pages: one national IBJA price repeated per city (hubs stay)
+//  - aqi and mandi: data comes through the India runner and has been frozen since 12 and 11 Nov;
+//    put back once the runner is running again and the data is current
+const NOINDEX_RULES = [
+  [/^\/districts\/.+/, 'districts: Census 2011 template pages'],
+  [/^\/(gold|silver)-rate-today\/.+/, 'gold/silver city pages repeat the national rate'],
+  [/^\/aqi(\/|$)/, 'aqi: data frozen until the India runner is back'],
+  [/^\/mandi-price(\/|$)/, 'mandi: data frozen until the India runner is back'],
+]
+export function noindexReason(p) {
+  const hit = NOINDEX_RULES.find(([re]) => re.test(p))
+  return hit ? hit[1] : null
 }
 
 // Rendered separately to 404.html — excluded from the sitemap.

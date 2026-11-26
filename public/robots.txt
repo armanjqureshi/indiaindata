@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://indiaindata.online/sitemap.xml
+# Temporary (from 26 Nov 2026): pages moved to noindex, listed so Google recrawls them sooner
+Sitemap: https://indiaindata.online/sitemap-noindex.xml

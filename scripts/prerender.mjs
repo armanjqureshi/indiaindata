@@ -44,6 +44,7 @@ function injectMeta(html, route) {
     )
     .replace(/(<link id="seo-canonical"[^>]*href=")[^"]*(")/, `$1${canonical}$2`)
     .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${canonical}$2`)
+  if (route.noindex) out = out.replace('</head>', '    <meta name="robots" content="noindex, follow" />\n  </head>')
   if (route.image) {
     const img = SITE_URL + route.image
     out = out

@@ -26,6 +26,18 @@ ${routes.map(urlEntry).join('\n')}
 `
   fs.writeFileSync(path.join(clientDir, 'sitemap.xml'), xml)
   console.log(`sitemap.xml written with ${routes.length} URLs`)
+
+  // Temporary: pages switched to noindex on 2026-11-26, listed with that date so Google recrawls them
+  // soon and sees the noindex. Listed in robots.txt. Delete this block and the robots.txt line once
+  // Search Console shows them as "Excluded by noindex" (a few weeks).
+  const dropped = getRoutes().filter((r) => r.noindex)
+  const removed = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${dropped.map((r) => urlEntry({ ...r, lastmod: '2026-11-26' })).join('\n')}
+</urlset>
+`
+  fs.writeFileSync(path.join(clientDir, 'sitemap-noindex.xml'), removed)
+  console.log(`sitemap-noindex.xml written with ${dropped.length} URLs`)
 }
 
 main()
