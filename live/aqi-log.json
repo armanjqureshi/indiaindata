@@ -1,40 +1,12 @@
 {
- "runAt": "2026-11-26T12:33:13.453Z",
+ "runAt": "2026-11-26T21:03:00.043Z",
  "accepted": [
-  "2026-11-24: 283 cities",
-  "2026-11-25: 280 cities",
-  "2026-11-26: 285 cities",
-  "2026-11-23: 281 cities",
-  "2026-11-21: 280 cities",
-  "2026-11-22: 272 cities",
-  "2026-11-19: 284 cities",
-  "2026-11-18: 281 cities",
-  "2026-11-16: 273 cities",
-  "2026-11-17: 284 cities",
-  "2026-11-13: 280 cities",
-  "2026-11-15: 283 cities",
-  "2026-11-14: 288 cities",
-  "2026-11-11: 283 cities",
-  "2026-11-12: 285 cities",
-  "2026-11-20: 280 cities"
+  "2026-11-26: 285 cities"
  ],
  "notes": [
   "cpcb.nic.in certificate has expired; bulletins downloaded with the hostname checked and only the expiry ignored",
-  "2026-11-24: Kalyan listed twice (AQI 103 on 1 stations, 93 on 1); kept the one with more stations",
-  "2026-11-25: Kalyan listed twice (AQI 104 on 2 stations, 79 on 1); kept the one with more stations",
+  "2026-11-27: bulletin not published",
   "2026-11-26: Kalyan listed twice (AQI 102 on 2 stations, 110 on 1); kept the one with more stations",
-  "2026-11-21: Kalyan listed twice (AQI 112 on 2 stations, 106 on 1); kept the one with more stations",
-  "2026-11-22: Kalyan listed twice (AQI 155 on 2 stations, 145 on 1); kept the one with more stations",
-  "2026-11-19: Kalyan listed twice (AQI 113 on 2 stations, 98 on 1); kept the one with more stations",
-  "2026-11-18: Kalyan listed twice (AQI 125 on 1 stations, 103 on 1); kept the one with more stations",
-  "2026-11-16: Kalyan listed twice (AQI 96 on 2 stations, 92 on 1); kept the one with more stations",
-  "2026-11-17: Kalyan listed twice (AQI 117 on 2 stations, 139 on 1); kept the one with more stations",
-  "2026-11-13: Kalyan listed twice (AQI 94 on 2 stations, 99 on 1); kept the one with more stations",
-  "2026-11-15: Kalyan listed twice (AQI 105 on 2 stations, 124 on 1); kept the one with more stations",
-  "2026-11-14: Kalyan listed twice (AQI 98 on 2 stations, 92 on 1); kept the one with more stations",
-  "2026-11-11: Kalyan listed twice (AQI 125 on 2 stations, 121 on 1); kept the one with more stations",
-  "2026-11-12: Kalyan listed twice (AQI 110 on 2 stations, 81 on 1); kept the one with more stations",
-  "2026-11-20: Kalyan listed twice (AQI 98 on 2 stations, 106 on 1); kept the one with more stations",
   "no state on file for: bilaspur, pratapgarh, ramgarh"
  ],
  "errors": []
