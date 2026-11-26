@@ -400,16 +400,19 @@ export function getRoutes() {
 // week, some thin or stale. Remove a rule here to put a set back in the index.
 //  - districts: Census 2011 figures in one template per district (the /districts hub stays)
 //  - gold and silver city pages: one national IBJA price repeated per city (hubs stay)
-//  - aqi and mandi: data comes through the India runner and has been frozen since 12 and 11 Nov;
-//    put back once the runner is running again and the data is current
+//  - aqi: back in the index in batches now that it updates daily on GitHub again (26 Nov 2026: CPCB's
+//    expired certificate, not a block, had frozen it). Batch 1 = the hub plus the major cities that
+//    have gold-rate pages; the other ~240 towns stay out until batch 1 has held for 2-3 weeks.
+//  - mandi: data still depends on the PC runner and goes stale when it is off
+const AQI_BATCH_1 = new Set(GOLD_CITIES.map((c) => c.aqi).filter(Boolean))
 const NOINDEX_RULES = [
   [/^\/districts\/.+/, 'districts: Census 2011 template pages'],
   [/^\/(gold|silver)-rate-today\/.+/, 'gold/silver city pages repeat the national rate'],
-  [/^\/aqi(\/|$)/, 'aqi: data frozen until the India runner is back'],
-  [/^\/mandi-price(\/|$)/, 'mandi: data frozen until the India runner is back'],
+  [(p) => /^\/aqi\/.+/.test(p) && !AQI_BATCH_1.has(p.slice(5).replace(/\/$/, '')), 'aqi: town pages held back until batch 1 has held'],
+  [/^\/mandi-price(\/|$)/, 'mandi: data depends on the PC runner'],
 ]
 export function noindexReason(p) {
-  const hit = NOINDEX_RULES.find(([re]) => re.test(p))
+  const hit = NOINDEX_RULES.find(([rule]) => (typeof rule === 'function' ? rule(p) : rule.test(p)))
   return hit ? hit[1] : null
 }
 
