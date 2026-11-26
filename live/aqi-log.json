@@ -1,9 +1,25 @@
 {
- "runAt": "2026-11-26T11:17:23.900Z",
+ "runAt": "2026-11-26T12:30:45.467Z",
  "accepted": [],
- "notes": [],
+ "notes": [
+  "cpcb.nic.in certificate has expired; bulletins downloaded with the hostname checked and only the expiry ignored"
+ ],
  "errors": [
-  "2026-11-26: fetch failed (CERT_HAS_EXPIRED certificate has expired)",
-  "2026-11-25: fetch failed (CERT_HAS_EXPIRED certificate has expired)"
+  "2026-11-25: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-23: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-26: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-24: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-22: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-21: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-19: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-20: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-18: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-17: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-16: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-15: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-12: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-14: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-11: expired-certificate exception not allowed for cpcb.gov.in",
+  "2026-11-13: expired-certificate exception not allowed for cpcb.gov.in"
  ]
 }
