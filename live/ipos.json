@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T15:36:32.501Z",
+ "updatedAt": "2026-11-27T18:36:04.932Z",
  "lastPriceSession": "2026-11-27",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -237,7 +237,7 @@
    "symbol": "SHREESIDHI",
    "board": "sme",
    "name": "Shree Siddhivinayak Greentech Industries Limited",
-   "status": "open",
+   "status": "closed",
    "open": "2026-11-25",
    "close": "2026-11-27",
    "listingDate": null,
