@@ -1,9 +1,9 @@
 {
  "subscription": {
-  "total": 0.31,
+  "total": 0.57,
   "totalMethod": "NSE",
   "categories": [],
-  "asOf": "27-Nov-2026 12:03:00",
+  "asOf": "27-Nov-2026 15:03:00",
   "scope": "NSE and BSE combined"
  },
  "lotSize": 1200,
@@ -27,7 +27,7 @@
  "documents": {
   "Basis of issue price": "https://nsearchives.nseindia.com/content/ipo/RATIOS_AIRPRO.zip"
  },
- "fetchedAt": "2026-11-27T06:35:48.940Z",
+ "fetchedAt": "2026-11-27T09:35:50.869Z",
  "slug": "airpro-technology-india",
  "symbol": "AIRPRO",
  "board": "sme",
