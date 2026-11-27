@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T18:36:22.647Z",
+ "updatedAt": "2026-11-27T00:36:18.683Z",
  "lastPriceSession": "2026-11-26",
  "holidaysKnownFor": "2026",
  "coverage": "All public issues listed on NSE (mainboard and NSE Emerge SME) since 2015. Issues listed only on BSE are not included.",
@@ -237,10 +237,10 @@
    "symbol": "MAHACOAL",
    "board": "mainboard",
    "name": "Mahanadi Coalfields Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-11-19",
    "close": "2026-11-23",
-   "listingDate": null,
+   "listingDate": "2026-11-27",
    "timetable": {
     "open": "2026-11-19",
     "close": "2026-11-23",
@@ -249,7 +249,6 @@
     "demat": "2026-11-26",
     "listing": "2026-11-27",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -257,7 +256,7 @@
    },
    "priceLow": 129,
    "priceHigh": 136,
-   "issuePrice": null,
+   "issuePrice": 136,
    "lotSize": 110,
    "lotValue": 14960,
    "sizeCr": 9000.97,
@@ -275,10 +274,10 @@
    "symbol": "WATRANA",
    "board": "sme",
    "name": "Watrana Rentals Limited",
-   "status": "closed",
+   "status": "listed",
    "open": "2026-11-19",
    "close": "2026-11-23",
-   "listingDate": null,
+   "listingDate": "2026-11-27",
    "timetable": {
     "open": "2026-11-19",
     "close": "2026-11-23",
@@ -287,7 +286,6 @@
     "demat": "2026-11-26",
     "listing": "2026-11-27",
     "expected": {
-     "listing": true,
      "demat": true,
      "refunds": true,
      "allotment": true
@@ -295,7 +293,7 @@
    },
    "priceLow": 232,
    "priceHigh": 245,
-   "issuePrice": null,
+   "issuePrice": 245,
    "lotSize": 600,
    "lotValue": 147000,
    "sizeCr": 120.1,
