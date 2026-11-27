@@ -1,9 +1,8 @@
 {
- "runAt": "2026-11-27T10:12:07.951Z",
+ "runAt": "2026-11-27T12:35:25.623Z",
  "notes": [
   "NSE past issues: 1496; series {\"Equity\":579,\"SME\":785,\"DEBT\":118,\"InvIT\":8,\"REIT\":6}; keys company,htmSym,ipoEndDate,ipoStartDate,issuePrice,linkRemovalDate,listingDate,priceRange,securityType,symbol",
-  "main bhavcopy 2026-11-27: HTTP 404",
-  "1364 issues; 11 detail pages refreshed; last price session 2026-11-26"
+  "1364 issues; 11 detail pages refreshed; last price session 2026-11-27"
  ],
  "errors": []
 }
