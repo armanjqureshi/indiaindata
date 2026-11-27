@@ -1,13 +1,12 @@
 {
- "runAt": "2026-11-27T11:12:13.969Z",
+ "runAt": "2026-11-27T20:47:30.648Z",
  "accepted": [
-  "2026-11-27: 272 cities",
-  "2026-11-26: 285 cities"
+  "2026-11-27: 272 cities"
  ],
  "notes": [
   "cpcb.nic.in certificate has expired; bulletins downloaded with the hostname checked and only the expiry ignored",
+  "2026-11-28: bulletin not published",
   "2026-11-27: Kalyan listed twice (AQI 140 on 2 stations, 212 on 1); kept the one with more stations",
-  "2026-11-26: Kalyan listed twice (AQI 102 on 2 stations, 110 on 1); kept the one with more stations",
   "no state on file for: bilaspur, pratapgarh, ramgarh"
  ],
  "errors": []
